@@ -15,9 +15,9 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest]
-        browser: [chromium, webkit]
+        # browser: [chromium, webkit]
         # browser: [chromium]
-        # browser: [webkit]
+        browser: [webkit]
 
     env:
       CI: true
