@@ -23,12 +23,12 @@ jobs:
       CI: true
       TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
       TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
-      # TEST_LICENSE: SCB
+      TEST_LICENSE: SCB
       TEST_BROWSER: ${{ matrix.browser }}
-      TEST_LANG: de,zh,fr
-      TEST_USER: authorised
+      TEST_LANG: de,zh
+      # TEST_USER: authorised
       TEST_CTA: heroBanner
-      TEST_PAGE: markets,forex
+      # TEST_PAGE: markets,forex
       TEST_SMOKE: true
 
     steps:

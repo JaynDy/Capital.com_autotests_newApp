@@ -33,7 +33,26 @@ setup("authenticate", async ({ browser }, testInfo) => {
   });
 
   await context.storageState({ path: authFile });
+  console.log("AUTH FILE SIZE:", fs.statSync(authFile).size);
+  const authData = JSON.parse(fs.readFileSync(authFile, "utf8"));
+  console.log("COOKIES:", authData.cookies.length);
+  console.log("ORIGINS:", authData.origins.length);
+
   await context.close();
+
+  const verifyContext = await browser.newContext({
+    storageState: authFile,
+  });
+  const verifyPage = await verifyContext.newPage();
+  await verifyPage.goto(`${BASE_URL}/trading/platform`, {
+    waitUntil: "networkidle",
+  });
+  console.log("VERIFY URL:", verifyPage.url());
+  await verifyPage.screenshot({
+    path: "verify-auth.png",
+    fullPage: true,
+  });
+  await verifyContext.close();
 });
 
 // setup("authenticate", async ({ browser }, testInfo) => {
