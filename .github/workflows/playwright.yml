@@ -23,10 +23,11 @@ jobs:
       CI: true
       TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
       TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
-      TEST_LICENSE: SCB
+      # TEST_LICENSE: SCB
       TEST_BROWSER: ${{ matrix.browser }}
-      TEST_LANG: en
+      TEST_LANG: de,zh,fr
       TEST_USER: authorised
+      TEST_CTA: heroBanner
       TEST_SMOKE: true
 
     steps:
