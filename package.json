@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.6.0",
+    "allure-playwright": "^3.7.1",
+    "eslint": "^10.4.0",
+    "eslint-plugin-playwright": "^2.10.4",
+    "globals": "^17.6.0"
+  },
+  "scripts": {},
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}

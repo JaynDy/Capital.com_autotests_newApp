@@ -1,0 +1,16 @@
+
+# macOS
+.DS_Store
+
+# Playwright
+playwright-report/
+test-results/
+
+# Storage state
+storage/auth/*.json
+
+# Node
+node_modules/
+
+# Env
+.env
