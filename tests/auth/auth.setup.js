@@ -23,7 +23,10 @@ setup("authenticate", async ({ browser }, testInfo) => {
 
   fs.rmSync(authFile, { force: true });
 
-  const context = await browser.newContext({ baseURL: BASE_URL });
+  const context = await browser.newContext({
+    baseURL: BASE_URL,
+    storageState: undefined,
+  });
   const page = await context.newPage();
 
   await login(page, BASE_URL, {

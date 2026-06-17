@@ -2,9 +2,14 @@ import { expect } from "@playwright/test";
 import { PopupManager } from "../components/popups/popup.manager";
 
 export async function login(page, baseURL, user) {
-  page.on("response", (res) => {
-    if (res.url().includes("login")) {
-      console.log("LOGIN RESPONSE:", res.status(), res.url());
+  // page.on("response", (res) => {
+  //   if (res.url().includes("login")) {
+  //     console.log("LOGIN RESPONSE:", res.status(), res.url());
+  //   }
+  // });
+  page.on("request", (req) => {
+    if (req.url().includes("auth.login")) {
+      console.log("LOGIN REQUEST BODY:", req.postData());
     }
   });
 
@@ -34,6 +39,7 @@ export async function login(page, baseURL, user) {
 
   const continueBtn = page.getByRole("button", { name: "Continue" });
   await expect(continueBtn).toBeEnabled();
+  // await continueBtn.click();
 
   // await expect(page).toHaveURL(/trading\/platform/, {
   //   timeout: 3000,
