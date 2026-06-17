@@ -34,15 +34,6 @@ for (const testCase of CTA_TEST_CASES) {
 
     await marketPage.open(baseURL);
 
-    // if (testCase.sectionName === "tradingInstrument") {
-    //   const unavailable = await page
-    //     .locator("div.HGwk.rE2j")
-    //     .first()
-    //     .isVisible()
-    //     .catch(() => false);
-
-    //   test.skip(unavailable, "Trading instrument unavailable");
-    // }
     await marketPage.cta[testCase.sectionName].click(testCase.actionName);
 
     const action =
