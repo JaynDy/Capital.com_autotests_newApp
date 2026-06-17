@@ -15,8 +15,8 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest]
-        browser: [chromium, webkit]
-        # browser: [chromium]
+        # browser: [chromium, webkit]
+        browser: [chromium]
         # browser: [webkit]
 
     env:
@@ -25,7 +25,7 @@ jobs:
       TEST_BROWSER: ${{ matrix.browser }}
       TEST_LICENSE: FCA
       # TEST_LANG: de,zh
-      # TEST_USER: authorised
+      # TEST_USER: unauthorised,unregistered
       # TEST_CTA: heroBanner
       # TEST_PAGE: markets,forex
       TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
