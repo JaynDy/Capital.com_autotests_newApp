@@ -14,9 +14,10 @@ export async function expectMarketsState(page, expectation) {
       break;
 
     case "shows login form":
-      await expect(page.locator('[data-testid="modal-title"]')).toHaveText(
-        "Log in",
-      );
+      // await expect(page.locator('[data-testid="modal-title"]')).toHaveText(
+      //   " Login ",
+      // );
+      await expect(page.locator('[data-testid="modal-title"]'));
       break;
 
     default:

@@ -32,5 +32,4 @@ export async function login(page, baseURL, user) {
   await expect(page).toHaveURL(/trading\/platform/, {
     timeout: 3000,
   });
-  await page.waitForLoadState("networkidle");
 }

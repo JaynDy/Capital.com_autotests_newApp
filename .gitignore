@@ -14,3 +14,11 @@ node_modules/
 
 # Env
 .env
+
+# Allure raw results
+allure-results/
+
+# Generated Allure reports
+allure-report/
+allure-report-*/
+reports/

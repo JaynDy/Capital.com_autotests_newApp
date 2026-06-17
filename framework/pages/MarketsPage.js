@@ -27,27 +27,3 @@ export class MarketsPage {
     await this.popups.dismissAll();
   }
 }
-
-// import { BannerComponent } from "../components/banner.component";
-// // import { BlockComponent } from "../components/block.component";
-// import { PopupManager } from "../components/popups/popup.manager";
-
-// export class MarketsPage {
-//   constructor(page, bannerLocator) {
-//     this.page = page;
-//     this.banner = new BannerComponent(page, bannerLocator);
-//     this.popups = new PopupManager(page);
-//   }
-
-//   async open(baseURL) {
-//     await this.page.goto(`${baseURL}/markets`, {
-//       waitUntil: "domcontentloaded",
-//     });
-
-//     await this.page.waitForURL(/markets/);
-//     console.log("URL after goto:", this.page.url());
-
-//     await this.popups.dismissAll();
-//     await this.banner.expectVisible();
-//   }
-// }

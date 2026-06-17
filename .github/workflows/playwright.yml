@@ -15,21 +15,21 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest]
-        # browser: [chromium, webkit]
+        browser: [chromium, webkit]
         # browser: [chromium]
-        browser: [webkit]
+        # browser: [webkit]
 
     env:
       CI: true
+
+      TEST_BROWSER: ${{ matrix.browser }}
+      TEST_LICENSE: FCA
+      # TEST_LANG: de,zh
+      # TEST_USER: authorised
+      # TEST_CTA: heroBanner
+      # TEST_PAGE: markets,forex
       TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
       TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
-      TEST_LICENSE: SCB
-      TEST_BROWSER: ${{ matrix.browser }}
-      TEST_LANG: de,zh
-      # TEST_USER: authorised
-      TEST_CTA: heroBanner
-      # TEST_PAGE: markets,forex
-      TEST_SMOKE: true
 
     steps:
       - name: Checkout repository
@@ -49,9 +49,9 @@ jobs:
       - name: Run Playwright tests
         run: npx playwright test
 
-      - name: Upload Playwright report
+      - name: Upload Allure report
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: playwright-report-${{ matrix.browser }}
-          path: playwright-report/
+          name: allure-report-${{ matrix.license }}-${{ matrix.browser }}
+          path: allure-report/

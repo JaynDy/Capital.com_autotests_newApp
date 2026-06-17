@@ -1,5 +1,14 @@
 export const readyToJoinBlock = {
-  root: `div:has(h2:has-text("Ready to join a leading broker?"))`,
+  root: `[data-type="banner_with_steps"]`,
+
+  availability: {
+    marketPricing: { licenses: ["FCA", "CYSEC"] },
+    marketAnalysis: {
+      licenses: ["SCB"],
+      languages: ["en", "ar", "de", "es", "fr", "ru", "zh"], // SCB except MN,VI
+    },
+  },
+
   actions: {
     signupBtn: {
       locator: `[data-type="banner_with_steps"]`,

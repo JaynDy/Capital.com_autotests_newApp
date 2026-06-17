@@ -7,6 +7,8 @@ export class CTAComponent {
 
     this.actions = sectionConfig.actions || {};
     this.helpers = sectionConfig.helpers || {};
+    this.setup = sectionConfig.setup;
+    this.skipRootValidation = sectionConfig.skipRootValidation;
   }
 
   async expectVisible() {
@@ -28,7 +30,7 @@ export class CTAComponent {
     }
 
     if (typeof locatorConfig === "function") {
-      return locatorConfig(this.root);
+      return locatorConfig(this.page);
     }
 
     if (
@@ -49,40 +51,70 @@ export class CTAComponent {
     return this.resolveLocator(this.helpers[helperName]);
   }
 
+  async runSetup() {
+    if (!this.setup) {
+      return;
+    }
+
+    await this.setup({
+      page: this.page,
+      getHelper: this.getHelper.bind(this),
+    });
+  }
+
+  async runActionSetup(actionName) {
+    const action = this.actions[actionName];
+
+    if (!action?.setup) {
+      return;
+    }
+
+    await action.setup({
+      page: this.page,
+      getHelper: this.getHelper.bind(this),
+    });
+
+    console.log("ACTION SETUP DONE:", actionName);
+    console.log("URL:", this.page.url());
+  }
+
   async click(actionName) {
-    await this.expectVisible();
-    const locator = this.getActionLocator(actionName);
+    if (!this.skipRootValidation) {
+      await this.expectVisible();
+    }
+    await this.runSetup();
+    await this.runActionSetup(actionName);
+
+    const action = this.actions[actionName];
+    let locator = this.getActionLocator(actionName);
+
+    if (action.locatorIndex !== undefined) {
+      locator = locator.nth(action.locatorIndex);
+    }
+
+    await locator.waitFor({
+      state: "visible",
+      timeout: 5000,
+    });
+
     await locator.click();
   }
 }
 
-// import { expect } from "@playwright/test";
+// NEW
+// async checkTradingState() {
+//   const header = this.page.locator(
+//     'button[aria-label="Market Trading Hours (UTC)"]',
+//   );
 
-// export class BannerComponent {
-//   constructor(page, bannerLocator) {
-//     this.page = page;
-//     this.banner = page.locator(bannerLocator);
+//   const visible = await header.isVisible().catch(() => false);
+//   if (visible) return "AVAILABLE";
 
-//     this.createAccountButton = page.locator(
-//       `[data-type="fullscreen_banner_block_btn1_signup"]`,
-//     );
+//   return "UNAVAILABLE";
+// }
 
-//     this.tryDemoAccountButton = page.locator(
-//       `[data-type="fullscreen_banner_block_btn2_demo"]`,
-//     );
-//   }
-
-//   async expectVisible() {
-//     await expect(this.banner).toBeVisible({
-//       timeout: 20000,
-//     });
-//   }
-//   async clickCreateAccount() {
-//     await this.banner.waitFor({ state: "visible" });
-//     await this.createAccountButton.click();
-//   }
-//   async clickTryDemoAccount() {
-//     await this.banner.waitFor({ state: "visible" });
-//     await this.tryDemoAccountButton.click();
-//   }
+// NEW
+// const state = await this.checkTradingState();
+// if (state === "UNAVAILABLE") {
+//   return { skipped: true };
 // }

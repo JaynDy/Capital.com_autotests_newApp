@@ -44,14 +44,12 @@ setup("authenticate", async ({ browser }, testInfo) => {
     storageState: authFile,
   });
   const verifyPage = await verifyContext.newPage();
-  await verifyPage.goto(`${BASE_URL}/trading/platform`, {
-    waitUntil: "networkidle",
-  });
+  await verifyPage.goto(`${BASE_URL}/trading/platform`);
   console.log("VERIFY URL:", verifyPage.url());
-  await verifyPage.screenshot({
-    path: "verify-auth.png",
-    fullPage: true,
-  });
+  // await verifyPage.screenshot({
+  //   path: "verify-auth.png",
+  //   fullPage: true,
+  // });
   await verifyContext.close();
 });
 
