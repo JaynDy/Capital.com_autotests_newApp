@@ -25,7 +25,6 @@ setup("authenticate", async ({ browser }, testInfo) => {
 
   const context = await browser.newContext({
     baseURL: BASE_URL,
-    storageState: undefined,
   });
   const page = await context.newPage();
 

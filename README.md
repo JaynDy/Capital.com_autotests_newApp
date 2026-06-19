@@ -307,11 +307,11 @@ TEST_LICENSE=SCB TEST_BROWSER=chromium TEST_USER=unauthorised,unregistered TEST_
 
 # TEST_CTA=readyToJoinBlock
 
-TEST_LICENSE=SCB TEST_BROWSER=chromium TEST_USER=authorised TEST_CTA=readyToJoinBlock npx playwright test ---
-// 9 = (8 lang (except MN,VI) \* 1 page (marketAnalysis) + 1 auth)
+TEST_LICENSE=SCB TEST_BROWSER=chromium TEST_USER=authorised TEST_CTA=readyToJoinBlock npx playwright test +++
+// 11 (2 is skipped (MN,VI)) = (8 lang (except MN,VI) \* 1 page (marketAnalysis) + 1 auth)
 
 TEST_LICENSE=SCB TEST_BROWSER=chromium TEST_USER=unauthorised,unregistered TEST_CTA=readyToJoinBlock npx playwright test +++
-// 17 = (8 \* 2 + 1 auth)
+// 21 (4 is skipped (MN,VI)) = (8 \* 2 + 1 auth)
 
 6 skipped (because MN,VI don't have marketAnalysis page)
 

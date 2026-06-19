@@ -7,11 +7,11 @@ export async function login(page, baseURL, user) {
   //     console.log("LOGIN RESPONSE:", res.status(), res.url());
   //   }
   // });
-  page.on("request", (req) => {
-    if (req.url().includes("auth.login")) {
-      console.log("LOGIN REQUEST BODY:", req.postData());
-    }
-  });
+  // page.on("request", (req) => {
+  //   if (req.url().includes("auth.login")) {
+  //     console.log("LOGIN REQUEST BODY:", req.postData());
+  //   }
+  // });
 
   await page.goto(baseURL, { waitUntil: "domcontentloaded" });
 
@@ -28,25 +28,20 @@ export async function login(page, baseURL, user) {
   await email.fill(user.email);
   await password.fill(user.password);
 
-  // await page.getByRole("button", { name: "Continue" }).click(); // First click
+  await page.getByRole("button", { name: "Continue" }).click(); // First click
 
-  // try {
-  //   await expect(page).toHaveURL(/trading\/platform/, { timeout: 5000 });
-  //   return;
-  // } catch (e) {
-  //   console.log("First login attempt failed → retrying click");
-  // }
+  try {
+    await expect(page).toHaveURL(/trading\/platform/, { timeout: 5000 });
+    return;
+  } catch (e) {
+    console.log("First login attempt failed → retrying click");
+  }
 
   const continueBtn = page.getByRole("button", { name: "Continue" });
-  await expect(continueBtn).toBeEnabled();
-  // await continueBtn.click();
+  // await expect(continueBtn).toBeEnabled();
+  await continueBtn.click();
 
-  // await expect(page).toHaveURL(/trading\/platform/, {
-  //   timeout: 3000,
-  // });
-
-  await Promise.all([
-    page.waitForURL(/trading\/platform/, { timeout: 15000 }),
-    continueBtn.click(),
-  ]);
+  await expect(page).toHaveURL(/trading\/platform/, {
+    timeout: 3000,
+  });
 }

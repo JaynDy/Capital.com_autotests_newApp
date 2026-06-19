@@ -7,7 +7,7 @@ playwright-report/
 test-results/
 
 # Storage state
-storage/auth/*.json
+# storage/auth/*.json
 
 # Node
 node_modules/

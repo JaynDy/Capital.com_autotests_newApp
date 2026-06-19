@@ -45,6 +45,6 @@ for (const testCase of CTA_TEST_CASES) {
     console.log("USER:", projectUser);
     console.log("EXPtestCase.allowedLicenses &&ECTATION: ", expectation);
 
-    await expectMarketsState(page, expectation);
+    await expectMarketsState(page, expectation, testInfo);
   });
 }
