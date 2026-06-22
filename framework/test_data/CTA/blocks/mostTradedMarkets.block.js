@@ -3,7 +3,7 @@ export const mostTradedMarketsBlock = {
 
   availability: {
     marketAnalysis: {
-      licenses: ["ASIC", "SCB", "CYSEC", "CMA"],
+      licenses: ["ASIC", "SCB", "CySEC", "CMA"],
       languages: [
         "en",
         "ar",

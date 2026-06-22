@@ -9,7 +9,10 @@
     "eslint-plugin-playwright": "^2.10.4",
     "globals": "^17.6.0"
   },
-  "scripts": {},
+  "scripts": {
+    "test:markets": "TEST_CTA=heroBanner,mostTradeMarketsBlock,tradingInstrument,readyToJoinBlock npx playwright test",
+    "test:footer": "TEST_CTA=footer npx playwright test"
+  },
   "dependencies": {
     "dotenv": "^17.4.2"
   }

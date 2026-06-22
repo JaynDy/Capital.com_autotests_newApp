@@ -22,3 +22,6 @@ allure-results/
 allure-report/
 allure-report-*/
 reports/
+
+# Chrome profile for manual auth
+chrome-profile/

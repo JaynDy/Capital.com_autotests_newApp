@@ -2,7 +2,7 @@ export const readyToJoinBlock = {
   root: `[data-type="banner_with_steps"]`,
 
   availability: {
-    marketPricing: { licenses: ["FCA", "CYSEC"] },
+    marketPricing: { licenses: ["FCA", "CySEC"] },
     marketAnalysis: {
       licenses: ["SCB"],
       languages: ["en", "ar", "de", "es", "fr", "ru", "zh"], // SCB except MN,VI

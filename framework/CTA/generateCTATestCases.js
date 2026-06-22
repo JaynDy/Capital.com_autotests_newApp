@@ -1,4 +1,4 @@
-import { normalizeAvailability } from "../../helpers/normalizeAvailability";
+import { normalizeAvailability } from "../helpers/normalizeAvailability";
 
 export function generateCTATestCases(allPagesConfig) {
   const cases = [];
@@ -96,6 +96,7 @@ export function generateCTATestCases(allPagesConfig) {
         // });
 
         cases.push({
+          scope: "page",
           pageName,
           pagePath: pageData.path,
           sectionName,
@@ -103,7 +104,7 @@ export function generateCTATestCases(allPagesConfig) {
           allowedLicenses: actionAllowedLicenses,
           allowedLanguages: actionAllowedLanguages,
           expectations: actionConfig.expectation,
-          testName: `${pageName} | ${sectionName} | ${actionName}`,
+          testName: `${pageName} page | ${sectionName} | ${actionName}`,
         });
       }
     }

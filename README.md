@@ -188,10 +188,10 @@ TEST_LICENSE=ASIC TEST_BROWSER=chromium TEST_USER=unauthorised,unregistered TEST
 # TEST_CTA=readyToJoinBlock
 
 TEST_LICENSE=ASIC TEST_BROWSER=chromium TEST_USER=authorised TEST_CTA=readyToJoinBlock npx playwright test +++
-// 2 = (1 lang \* 0 page + 1 auth)
+// 1 = (1 lang \* 0 page + 1 auth)
 
 TEST_LICENSE=ASIC TEST_BROWSER=chromium TEST_USER=unauthorised,unregistered TEST_CTA=readyToJoinBlock npx playwright test +++
-// 3 = (0 \* 2 + 1 auth)
+// 1 = (0 \* 2 + 1 auth)
 
 # TEST_CTA=marketsBlock
 
@@ -363,44 +363,64 @@ TEST_LICENSE=CYSEC TEST_BROWSER=chromium TEST_USER=unauthorised,unregistered TES
 TEST_LICENSE=CYSEC TEST_BROWSER=chromium TEST_USER=authorised TEST_CTA=mostTradedMarketsBlock npx playwright test +++
 // 11 = (10 lang \* 1 page (marketAnalysis) + 1 auth)
 
-TEST_LICENSE=CYSEC TEST_BROWSER=chromium TEST_USER=unauthorised,unregistered TEST_CTA=mostTradedMarketsBlock npx playwright test
+TEST_LICENSE=CySEC TEST_BROWSER=chromium TEST_USER=unauthorised,unregistered TEST_CTA=mostTradedMarketsBlock npx playwright test
 // 21 = 10 \* 2 + 1 +++
 
 # TEST_CTA=readyToJoinBlock
 
-TEST_LICENSE=CYSEC TEST_BROWSER=chromium TEST_USER=authorised TEST_CTA=readyToJoinBlock npx playwright test +++
+TEST_LICENSE=CySEC TEST_BROWSER=chromium TEST_USER=authorised TEST_CTA=readyToJoinBlock npx playwright test +++
 // 11 = (10 lang \* 1 page (marketPricing) + 1 auth)
 
-TEST_LICENSE=CYSEC TEST_BROWSER=chromium TEST_USER=unauthorised,unregistered TEST_CTA=readyToJoinBlock npx playwright test +++
+TEST_LICENSE=CySEC TEST_BROWSER=chromium TEST_USER=unauthorised,unregistered TEST_CTA=readyToJoinBlock npx playwright test +++
 // 21 = (10 \* 2 + 1 auth)
 
 # TEST_CTA=marketsBlock
 
-TEST_LICENSE=CYSEC TEST_BROWSER=chromium TEST_USER=unauthorised TEST_CTA=tradingInstrument TEST_ACTION=addToFavouriteBtn npx playwright test +++
+TEST_LICENSE=CySEC TEST_BROWSER=chromium TEST_USER=unauthorised TEST_CTA=tradingInstrument TEST_ACTION=addToFavouriteBtn npx playwright test +++
 // 81 = 10 (lang) \* 8 (pages) + 1 (auth)
-TEST_LICENSE=CYSEC TEST_BROWSER=chromium TEST_USER=unauthorised TEST_CTA=tradingInstrument TEST_ACTION=longPositionGoToPlatformBtn npx playwright test
+TEST_LICENSE=CySEC TEST_BROWSER=chromium TEST_USER=unauthorised TEST_CTA=tradingInstrument TEST_ACTION=longPositionGoToPlatformBtn npx playwright test
 // 81 = 10 (lang) \* 8 (pages) + 1 (auth)
-TEST_LICENSE=CYSEC TEST_BROWSER=chromium TEST_USER=unauthorised TEST_CTA=tradingInstrument TEST_ACTION=shortPositionGoToPlatformBtn npx playwright test
+TEST_LICENSE=CySEC TEST_BROWSER=chromium TEST_USER=unauthorised TEST_CTA=tradingInstrument TEST_ACTION=shortPositionGoToPlatformBtn npx playwright test
 // 81 = 10 (lang) \* 8 (pages) + 1 (auth)
-TEST_LICENSE=CYSEC TEST_BROWSER=chromium TEST_USER=unauthorised TEST_CTA=tradingInstrument TEST_ACTION=viewDetailedChartBtn npx playwright test
+TEST_LICENSE=CySEC TEST_BROWSER=chromium TEST_USER=unauthorised TEST_CTA=tradingInstrument TEST_ACTION=viewDetailedChartBtn npx playwright test
 // 81 = 10 (lang) \* 8 (pages) + 1 (auth)
-TEST_LICENSE=CYSEC TEST_BROWSER=chromium TEST_USER=unauthorised TEST_CTA=tradingInstrument TEST_ACTION=sellBtn npx playwright test
+TEST_LICENSE=CySEC TEST_BROWSER=chromium TEST_USER=unauthorised TEST_CTA=tradingInstrument TEST_ACTION=sellBtn npx playwright test
 // 81 = 10 (lang) \* 8 (pages) + 1 (auth)
-TEST_LICENSE=CYSEC TEST_BROWSER=chromium TEST_USER=unauthorised TEST_CTA=tradingInstrument TEST_ACTION=buyBtn npx playwright test
+TEST_LICENSE=CySEC TEST_BROWSER=chromium TEST_USER=unauthorised TEST_CTA=tradingInstrument TEST_ACTION=buyBtn npx playwright test
 // 81 = 10 (lang) \* 8 (pages) + 1 (auth)
-TEST_LICENSE=CYSEC TEST_BROWSER=chromium TEST_USER=unauthorised TEST_CTA=tradingInstrument TEST_ACTION=alertBtn npx playwright test
+TEST_LICENSE=CySEC TEST_BROWSER=chromium TEST_USER=unauthorised TEST_CTA=tradingInstrument TEST_ACTION=alertBtn npx playwright test
 // 81 = 10 (lang) \* 8 (pages) + 1 (auth)
-TEST_LICENSE=CYSEC TEST_BROWSER=chromium TEST_USER=unauthorised TEST_CTA=tradingInstrument TEST_ACTION=tradedBtn npx playwright test +++
+TEST_LICENSE=CySEC TEST_BROWSER=chromium TEST_USER=unauthorised TEST_CTA=tradingInstrument TEST_ACTION=tradedBtn npx playwright test +++
 // 81 = 10 (lang) \* 8 (pages) + 1 (auth)
-TEST_LICENSE=CYSEC TEST_BROWSER=chromium TEST_USER=unauthorised TEST_CTA=tradingInstrument TEST_ACTION=readyToJoinSignUpBtn npx playwright test +++
+TEST_LICENSE=CySEC TEST_BROWSER=chromium TEST_USER=unauthorised TEST_CTA=tradingInstrument TEST_ACTION=readyToJoinSignUpBtn npx playwright test +++
 // 81 = 10 (lang) \* 8 (pages) + 1 (auth)
 
 // 721 = 10 (lang) \* 8 (pages) \* 9 (actions) = 720 + 1 (auth) // for one userState 2161 - 3 UserState
 
 TEST_LICENSE=CYSEC TEST_BROWSER=chromium npx playwright test --list === 2521 = 2482 and 39 - skipped (because MN,VI don't have marketAnalysis page and financeNews page only EN)
 
+/////////////////////////////// FOOTER
+
+TEST_LICENSE=FCA TEST_BROWSER=chromium TEST_USER=unregistered TEST_CTA=footer npx playwright test +++
+// 12 = 7 skipped (any social icons are not exist) + 4 (logo + 3 app store) + 1 auth
+
+TEST_LICENSE=ASIC TEST_BROWSER=chromium TEST_USER=unregistered TEST_CTA=footer npx playwright test +++
+// 12 = 2 skipped (tiktok and reddit are not exist) + 9 (logo + 5 social icons + 3 app store) + 1 auth
+
+TEST_LICENSE=CMA TEST_BROWSER=chromium TEST_USER=unregistered TEST_CTA=footer npx playwright test +++
+// 23 = 4 skipped (no: reddit, facebook \* 2 lang) + 18 ((logo + 5 social icons + 3 app store) \* 2 lang) + 1 auth
+
+TEST_LICENSE=SCB TEST_BROWSER=chromium TEST_USER=unregistered TEST_CTA=footer npx playwright test +++
+// 111 = 10 skipped (no: youtube \* 10 lang) + 100 ((logo + 6 social icons + 3 app store) \* 10 lang) + 1 auth
+
+TEST_LICENSE=CYSEC TEST_BROWSER=chromium TEST_USER=unregistered TEST_CTA=footer npx playwright test +++
+// 111 = 48 skipped (no: f, inst, tiktok, reddit, X (7 lang., except: de-de, it (no: X, twit, reddit) and ro: 0 icon)) + 54 ((logo + 2 social icons (all lang. exc. de-de) + 3 app store) \* 9 lang) + 8 (4 social icons \* 2 (de-de, it-it)) + 1 auth
+// TEST_BROWSER=chromium TEST_USER=unregistered TEST_CTA=footer npx playwright === 264 - 71 + 1 = 194 \* 3 = 582 (3 useeState)
+
 # AUTH
 
-TEST_BROWSER=chromium npx playwright test tests/auth
+<!-- TEST_BROWSER=chromium npx playwright test tests/auth -->
+
+node framework/auth/manual.js
 
 npx allure serve allure-results

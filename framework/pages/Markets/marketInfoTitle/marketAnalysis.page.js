@@ -1,5 +1,5 @@
-import { mostTradedMarketsBlock } from "../../blocks/mostTradedMarkets.block.js";
-import { readyToJoinBlock } from "../../blocks/readyToJoin.block.js";
+import { mostTradedMarketsBlock } from "../../../test_data/CTA/blocks/mostTradedMarkets.block.js";
+import { readyToJoinBlock } from "../../../test_data/CTA/blocks/readyToJoin.block.js";
 
 // console.log("mostTradedMarketsBlock =", mostTradedMarketsBlock);
 // console.log("readyToJoinBlock =", readyToJoinBlock);

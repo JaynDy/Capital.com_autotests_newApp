@@ -40,36 +40,29 @@ export default defineConfig({
     headless: !!process.env.CI,
     // headless: true, // NEW
     trace: "on-first-retry",
-    // screenshot: "only-on-failure",
-    // video: "retain-on-failure",
-    // userAgent:
-    //   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
-    // launchOptions: {
-    //   args: ["--disable-blink-features=AutomationControlled"],
-    // },
   },
 
   projects: [
     // AUTH PROJECTS
-    ...authBrowsers.map((browser) => ({
-      name: `auth-${browser}`,
-      testMatch: /.*auth\.setup\.js/,
+    // ...authBrowsers.map((browser) => ({
+    //   name: `auth-${browser}`,
+    //   testMatch: /.*auth\.setup\.js/,
 
-      use: {
-        ...devices[browser],
-        browserName: browser,
-        ...(browser === "chromium" ? { channel: "chrome" } : {}),
-        storageState: undefined,
-      },
-    })),
+    //   use: {
+    //     ...devices[browser],
+    //     browserName: browser,
+    //     ...(browser === "chromium" ? { channel: "chrome" } : {}),
+    //     storageState: undefined,
+    //   },
+    // })),
 
     // REGULAR PROJECTS
     ...filteredProjects.map((p) => ({
       name: p.name,
       use: p.use,
 
-      dependencies:
-        p.use.userState === "authorised" ? [`auth-${p.use.browserName}`] : [],
+      // dependencies:
+      //   p.use.userState === "authorised" ? [`auth-${p.use.browserName}`] : [],
     })),
   ],
 });

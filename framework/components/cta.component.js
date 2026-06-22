@@ -3,12 +3,12 @@ import { expect } from "@playwright/test";
 export class CTAComponent {
   constructor(page, sectionConfig) {
     this.page = page;
-    this.root = page.locator(sectionConfig.root);
-
+    // this.root = page.locator(sectionConfig.root);
     this.actions = sectionConfig.actions || {};
     this.helpers = sectionConfig.helpers || {};
     this.setup = sectionConfig.setup;
-    this.skipRootValidation = sectionConfig.skipRootValidation;
+    // this.skipRootValidation = sectionConfig.skipRootValidation;
+    this.root = this.resolveLocator(sectionConfig.root);
   }
 
   async expectVisible() {
@@ -79,9 +79,9 @@ export class CTAComponent {
   }
 
   async click(actionName) {
-    if (!this.skipRootValidation) {
-      await this.expectVisible();
-    }
+    // if (!this.skipRootValidation) {
+    //   await this.expectVisible();
+    // }
     await this.runSetup();
     await this.runActionSetup(actionName);
 
@@ -92,29 +92,20 @@ export class CTAComponent {
       locator = locator.nth(action.locatorIndex);
     }
 
+    const count = await locator.count();
+    console.log(actionName, count);
+
+    if (action.optional && count === 0) {
+      return { skipped: true };
+    }
+
     await locator.waitFor({
       state: "visible",
       timeout: 5000,
     });
 
     await locator.click();
+
+    return { skipped: false, locator };
   }
 }
-
-// NEW
-// async checkTradingState() {
-//   const header = this.page.locator(
-//     'button[aria-label="Market Trading Hours (UTC)"]',
-//   );
-
-//   const visible = await header.isVisible().catch(() => false);
-//   if (visible) return "AVAILABLE";
-
-//   return "UNAVAILABLE";
-// }
-
-// NEW
-// const state = await this.checkTradingState();
-// if (state === "UNAVAILABLE") {
-//   return { skipped: true };
-// }

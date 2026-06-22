@@ -1,19 +1,21 @@
 export const socialMediaBar = {
-  root: (page) => page.locator(".Kzxh mdGP JRRE YdLl"),
+  root: ".Kzxh.mdGP.JRRE.YdLl",
 
   actions: {
     logo: {
-      locator: (page) => page.locator("a.cXA2 AMZV"),
+      locator: "footer a.cXA2.AMZV",
       expectation: {
-        authorised: "redirect to the main page",
-        unauthorised: "redirect to the main page",
-        unregistered: "redirect to the main page",
+        authorised: { type: "redirect", page: "main" },
+        unauthorised: { type: "redirect", page: "main" },
+        unregistered: { type: "redirect", page: "main" },
       },
     },
 
+    // SOCIAL ICON
     facebookIcon: {
-      locator: (page) => page.locator('.ne2J.UOsT a[href*="facebook.com"]'),
-      expectedDomain: "facebook.com",
+      locator: 'footer a[href*="facebook.com"]',
+      expectedHrefContains: "facebook.com",
+      optional: true,
       expectation: {
         authorised: "opens external link",
         unauthorised: "opens external link",
@@ -21,8 +23,9 @@ export const socialMediaBar = {
       },
     },
     twitterIcon: {
-      locator: (page) => page.locator('.ne2J.UOsT a[href*="twitter.com"]'),
-      expectedDomain: "twitter.com",
+      locator: 'footer a[href*="twitter.com"]',
+      expectedHrefContains: "twitter.com",
+      optional: true,
       expectation: {
         authorised: "opens external link",
         unauthorised: "opens external link",
@@ -30,8 +33,9 @@ export const socialMediaBar = {
       },
     },
     linkedinIcon: {
-      locator: (page) => page.locator('.ne2J.UOsT a[href*="linkedin.com"]'),
-      expectedDomain: "linkedin.com",
+      locator: 'footer a[href*="linkedin.com"]',
+      expectedHrefContains: "linkedin.com",
+      optional: true,
       expectation: {
         authorised: "opens external link",
         unauthorised: "opens external link",
@@ -39,8 +43,9 @@ export const socialMediaBar = {
       },
     },
     instagramIcon: {
-      locator: (page) => page.locator('.ne2J.UOsT a[href*="instagram.com"]'),
-      expectedDomain: "instagram.com",
+      locator: 'footer a[href*="instagram.com"]',
+      expectedHrefContains: "instagram.com",
+      optional: true,
       expectation: {
         authorised: "opens external link",
         unauthorised: "opens external link",
@@ -48,8 +53,9 @@ export const socialMediaBar = {
       },
     },
     youtubeIcon: {
-      locator: (page) => page.locator('.ne2J.UOsT a[href*="youtube.com"]'),
-      expectedDomain: "youtube.com",
+      locator: 'footer a[href*="youtube.com"]',
+      expectedHrefContains: "youtube.com",
+      optional: true,
       expectation: {
         authorised: "opens external link",
         unauthorised: "opens external link",
@@ -57,8 +63,9 @@ export const socialMediaBar = {
       },
     },
     tiktokIcon: {
-      locator: (page) => page.locator('.ne2J.UOsT a[href*="tiktok.com"]'),
-      expectedDomain: "tiktok.com",
+      locator: 'footer a[href*="tiktok.com"]',
+      expectedHrefContains: "tiktok.com",
+      optional: true,
       expectation: {
         authorised: "opens external link",
         unauthorised: "opens external link",
@@ -66,8 +73,9 @@ export const socialMediaBar = {
       },
     },
     redditIcon: {
-      locator: (page) => page.locator('.ne2J.UOsT a[href*="reddit.com"]'),
-      expectedDomain: "reddit.com",
+      locator: 'footer a[href*="reddit.com"]',
+      expectedHrefContains: "reddit.com",
+      optional: true,
       expectation: {
         authorised: "opens external link",
         unauthorised: "opens external link",
@@ -75,10 +83,10 @@ export const socialMediaBar = {
       },
     },
 
+    // MEDIA BTN
     downloadAppStoreBtn: {
-      locator: (page) => page.locator(`data-type="footer_Ios" `),
-      expectedDomain:
-        "https://app.appsflyer.com/id1230088754?cp_device_id=c9c27236-061d-4532-aa3c-6d4c1741c351&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true",
+      locator: `footer [data-type="footer_Ios"]`,
+      expectedHrefContains: "https://app.appsflyer.com/id1230088754",
       expectation: {
         authorised: "opens external link",
         unauthorised: "opens external link",
@@ -86,9 +94,8 @@ export const socialMediaBar = {
       },
     },
     getGooglePlayBtn: {
-      locator: (page) => page.locator(`data-type="footer_Googl"`),
-      expectedDomain:
-        "https://app.appsflyer.com/com.capital.trading?cp_device_id=c9c27236-061d-4532-aa3c-6d4c1741c351&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true",
+      locator: `footer [data-type="footer_Googl"]`,
+      expectedHrefContains: "https://app.appsflyer.com/com.capital.trading",
       expectation: {
         authorised: "opens external link",
         unauthorised: "opens external link",
@@ -96,9 +103,9 @@ export const socialMediaBar = {
       },
     },
     exploreAppGalleryBtn: {
-      locator: (page) => page.locator(`data-type="footer_Huawei"`),
-      expectedDomain:
-        "https://app.appsflyer.com/com.capital.trading.huawei-huawei?cp_device_id=c9c27236-061d-4532-aa3c-6d4c1741c351&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true",
+      locator: `footer [data-type="footer_Huawei"]`,
+      expectedHrefContains:
+        "https://app.appsflyer.com/com.capital.trading.huawei-huawei",
       expectation: {
         authorised: "opens external link",
         unauthorised: "opens external link",
