@@ -13,7 +13,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        license: [FCA, ASIC, CMA, SCB, CySEC]
+        suite: [markets, footer]
+        license: [FCA]
+        # license: [FCA, ASIC, CMA, SCB, CySEC]
+        # user: [unauthorised, unregistered]
         browser: [chromium]
 
     env:

@@ -13,55 +13,55 @@ export const tradingInstrument = {
       },
     },
 
-    // longPositionGoToPlatformBtn: {
-    //   locator: (page) =>
-    //     page
-    //       .locator(".Cjf5")
-    //       .nth(1)
-    //       .locator('[data-type="market_go_to_platform_btn"]'),
+    longPositionGoToPlatformBtn: {
+      locator: (page) =>
+        page
+          .locator(".Cjf5")
+          .nth(1)
+          .locator('[data-type="market_go_to_platform_btn"]'),
 
-    //   setup: async ({ getHelper, page }) => {
-    //     await getHelper("longPositionToolTip").hover();
+      setup: async ({ getHelper, page }) => {
+        await getHelper("longPositionToolTip").hover();
 
-    //     const locator = page
-    //       .locator(".Cjf5")
-    //       .nth(1)
-    //       .locator('[data-type="market_go_to_platform_btn"]');
-    //     // console.log("VISIBLE:", await locator.isVisible());
+        const locator = page
+          .locator(".Cjf5")
+          .nth(1)
+          .locator('[data-type="market_go_to_platform_btn"]');
+        // console.log("VISIBLE:", await locator.isVisible());
 
-    //     await locator.scrollIntoViewIfNeeded();
+        await locator.scrollIntoViewIfNeeded();
 
-    //     // console.log("BOUNDING BOX:", await locator.boundingBox());
-    //     // console.log(
-    //     //   "COUNT:",
-    //     //   await page.locator('[data-type="market_go_to_platform_btn"]').count(),
-    //     // );
-    //   },
+        // console.log("BOUNDING BOX:", await locator.boundingBox());
+        // console.log(
+        //   "COUNT:",
+        //   await page.locator('[data-type="market_go_to_platform_btn"]').count(),
+        // );
+      },
 
-    //   expectation: {
-    //     authorised: "redirects to platform",
-    //     unauthorised: "shows signup form",
-    //     unregistered: "shows signup form",
-    //   },
-    // },
+      expectation: {
+        authorised: "redirects to platform",
+        unauthorised: "shows signup form",
+        unregistered: "shows signup form",
+      },
+    },
 
-    // shortPositionGoToPlatformBtn: {
-    //   locator: (page) =>
-    //     page
-    //       .locator(".Cjf5")
-    //       .nth(2)
-    //       .locator('[data-type="market_go_to_platform_btn"]'),
+    shortPositionGoToPlatformBtn: {
+      locator: (page) =>
+        page
+          .locator(".Cjf5")
+          .nth(2)
+          .locator('[data-type="market_go_to_platform_btn"]'),
 
-    //   setup: async ({ getHelper }) => {
-    //     await getHelper("shortPositionToolTip").hover();
-    //   },
+      setup: async ({ getHelper }) => {
+        await getHelper("shortPositionToolTip").hover();
+      },
 
-    //   expectation: {
-    //     authorised: "redirects to platform",
-    //     unauthorised: "shows signup form",
-    //     unregistered: "shows signup form",
-    //   },
-    // },
+      expectation: {
+        authorised: "redirects to platform",
+        unauthorised: "shows signup form",
+        unregistered: "shows signup form",
+      },
+    },
 
     viewDetailedChartBtn: {
       locator: `[data-type="market_view_chart"]`,
