@@ -2,36 +2,32 @@ name: Playwright Tests
 
 on:
   push:
-    branches: [main, master, dev, fix/auth-409]
+    branches: [main, master, dev, "ci/**"]
   pull_request:
-    branches: [main, master, dev, fix/auth-409]
+    branches: [main, master, dev, "ci/**"]
 
 jobs:
   test:
-    # timeout-minutes: 60
-    # runs-on: ${{ matrix.os }}
     runs-on: ubuntu-latest
 
     strategy:
       fail-fast: false
       matrix:
-        # os: [ubuntu-latest]
-        license: [FCA, ASIC, CMA, SCB, CYSEC]
+        license: [FCA, ASIC, CMA, SCB, CySEC]
         browser: [chromium]
-        # browser: [chromium, webkit]
-        # browser: [webkit]
 
     env:
       CI: true
       TEST_BROWSER: ${{ matrix.browser }}
       TEST_LICENSE: ${{ matrix.license }}
-      # TEST_LICENSE: FCA
+      # TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
+      # TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
+
+      # TEST_LICENSE: SCB
       # TEST_LANG: de,zh
       # TEST_USER: unauthorised,unregistered
       # TEST_CTA: heroBanner
       # TEST_PAGE: markets,forex
-      # TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
-      # TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
 
     steps:
       - uses: actions/checkout@v4
@@ -44,28 +40,22 @@ jobs:
       - run: npx playwright install --with-deps
 
       - name: Run tests
-        run: npx playwright test
+        run: npm run test:markets
 
-      # - name: Checkout repository
-      #   uses: actions/checkout@v4
+      - name: Generate Allure report
+        if: always()
+        run: npx allure generate allure-results --clean -o allure-report
 
-      # - name: Setup Node.js
-      #   uses: actions/setup-node@v4
-      #   with:
-      #     node-version: lts/*
+      - name: Upload Allure report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report-${{ matrix.license }}-${{ matrix.browser }}
+          path: allure-report/
 
-      # - name: Install dependencies
-      #   run: npm ci
-
-      # - name: Install Playwright browsers
-      #   run: npx playwright install --with-deps
-
-      # - name: Run Playwright tests
-      #   run: npx playwright test
-
-      # - name: Upload Allure report
-      #   if: always()
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: allure-report-${{ matrix.license }}-${{ matrix.browser }}
-      #     path: allure-report/
+      - name: Upload Allure results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results-${{ matrix.license }}
+          path: allure-results/

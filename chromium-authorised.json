@@ -2,7 +2,7 @@
   "cookies": [
     {
       "name": "capital-ingress-trading-web-cc-3-38-0-1781883471",
-      "value": "1782152408.406.3220.757601|fde5c659b726086ef250704795a767b5",
+      "value": "1782160179.197.3403.225987|fde5c659b726086ef250704795a767b5",
       "domain": "capital.com",
       "path": "/trading/platform",
       "expires": -1,
@@ -12,23 +12,13 @@
     },
     {
       "name": "_GRECAPTCHA",
-      "value": "09AKhCRwj06wvYysRjhbV3gyn2aryq8nv6tG9DpxrEVRUHTvUyLnC9Ad2u8nQKs_p7__lpTnFYiOm0UZuUanH6ZI4",
+      "value": "09AKhCRwhpNTx0VD7BqRRgeiQiZrf9O-_y3CKfqPuQdVEq8TQiGl2tGvsQatvL_TuovTObF_r1SBqUG6P5oGF3ZUw",
       "domain": "www.google.com",
       "path": "/recaptcha",
-      "expires": 1797704406.648991,
+      "expires": 1797712173.484731,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
-    },
-    {
-      "name": "__cp_dp",
-      "value": "0",
-      "domain": "capital.com",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
     },
     {
       "name": "visid_incap_2326300",
@@ -41,66 +31,6 @@
       "sameSite": "None"
     },
     {
-      "name": "nlbi_2326300",
-      "value": "1UtfQrVAfmgDLZCxxQSD8QAAAADqFjBvPS49Dn5btPYE2Y1X",
-      "domain": ".capital.com",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "incap_ses_656_2326300",
-      "value": "AiiDL/OeRl2e/6lOm5QaCbh8OWoAAAAAeV260N62wcAxLMS/lHHJYQ==",
-      "domain": ".capital.com",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "__cp_dc",
-      "value": "RS",
-      "domain": "capital.com",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "__cp_rip",
-      "value": "109.93.242.252",
-      "domain": "capital.com",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "__cp_sc",
-      "value": "RS",
-      "domain": "capital.com",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "__cp_deviceId",
-      "value": "3972833f-e36b-4be3-9a7c-7594f863ce9c",
-      "domain": "capital.com",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
       "name": "visid_incap_2784786",
       "value": "kBS2aaQdQIe3UR+5ZoNm4rh8OWoAAAAAQUIPAAAAAABHpYJ8WfvVv+7wtJ/SUW3q",
       "domain": ".capital.com",
@@ -109,26 +39,6 @@
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
-    },
-    {
-      "name": "incap_ses_649_2784786",
-      "value": "ES0dAYQXHRWvcaF/IrYBCbh8OWoAAAAAQVYBbCnqKPngXVHaxJdZdg==",
-      "domain": ".capital.com",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "uid",
-      "value": "3972833f-e36b-4be3-9a7c-7594f863ce9c",
-      "domain": "capital.com",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
     },
     {
       "name": "referrer",
@@ -145,17 +55,7 @@
       "value": "en",
       "domain": "capital.com",
       "path": "/",
-      "expires": 1813688380,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "g_state",
-      "value": "{\"i_l\":0,\"i_ll\":1782152381223,\"i_b\":\"LWTpgPQ/kmS2b+4jvWbV/QyN7X7+xQPoI1nk5KLwPhI\",\"i_e\":{\"enable_itp_optimization\":24},\"i_et\":1782152381223}",
-      "domain": "capital.com",
-      "path": "/",
-      "expires": 1797704381,
+      "expires": 1813696077,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -215,7 +115,7 @@
       "value": "Awkei_H7B03CkTuL4FPU1JY",
       "domain": ".amazon-adsystem.com",
       "path": "/",
-      "expires": 1798827586.087503,
+      "expires": 1798835284.325544,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
@@ -225,18 +125,8 @@
       "value": "0",
       "domain": ".amazon-adsystem.com",
       "path": "/",
-      "expires": 1816712386.090662,
+      "expires": 1816720084.325939,
       "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "SM",
-      "value": "C",
-      "domain": ".c.clarity.ms",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
@@ -261,132 +151,12 @@
       "sameSite": "None"
     },
     {
-      "name": "ANONCHK",
-      "value": "0",
-      "domain": ".c.clarity.ms",
-      "path": "/",
-      "expires": 1782152986.125247,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "_clsk",
-      "value": "n4vhy%5E1782152386535%5E1%5E1%5Er.clarity.ms%2Fcollect",
-      "domain": ".capital.com",
-      "path": "/",
-      "expires": 1782238786,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "AMP_23a2071c89",
-      "value": "JTdCJTIyZGV2aWNlSWQlMjIlM0ElMjIzOTcyODMzZi1lMzZiLTRiZTMtOWE3Yy03NTk0Zjg2M2NlOWMlMjIlMkMlMjJ1c2VySWQlMjIlM0ElMjIzNzA0ODY4NCUyMiUyQyUyMmRlZmVycmVkU2Vzc2lvbklkJTIyJTNBLTElMkMlMjJvcHRPdXQlMjIlM0F0cnVlJTJDJTIyY29va2llRG9tYWluJTIyJTNBJTIyLmNhcGl0YWwuY29tJTIyJTdE",
-      "domain": ".capital.com",
-      "path": "/",
-      "expires": 1813688406,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "__cp_at",
-      "value": "075f40bc-778b-47c2-ace9-c4e3fdc17951",
-      "domain": "capital.com",
-      "path": "/",
-      "expires": 1782757206,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "__cp_atd",
-      "value": "7",
-      "domain": "capital.com",
-      "path": "/",
-      "expires": 1782757206,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "__cp_att",
-      "value": "Mon%2C%2029%20Jun%202026%2018%3A20%3A06%20GMT",
-      "domain": "capital.com",
-      "path": "/",
-      "expires": 1782757206,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "__cp_sid",
-      "value": "61ca3b2b-ccac-47cc-8f02-9ed97d6c446a",
-      "domain": "capital.com",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "__cp_uid",
-      "value": "37048684",
-      "domain": "capital.com",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
       "name": "visid_incap_2859063",
       "value": "W90d8I3GTJiUkxsSOroQltZ8OWoAAAAAQUIPAAAAAABJHsLtzJmWIpxSOqtlfDkv",
       "domain": ".backend-capital.com",
       "path": "/",
       "expires": 1813620353.290315,
       "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "nlbi_2859063",
-      "value": "dI5NfV6BWGb6/m8yEbJTAwAAAADy8AI+bf4TWfwjWubLcgk6",
-      "domain": ".backend-capital.com",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "incap_ses_649_2859063",
-      "value": "bexVeciaUj4Ja6J/IrYBCdZ8OWoAAAAAsIRU9Sdb8n19U2MDQ/kVAw==",
-      "domain": ".backend-capital.com",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "AWSALBTGCORS",
-      "value": "6tF4N2zwTIG6Ggl18ekQs7OlQuSkDcg890zFRusmK//XTMMcTBGfjkgSeDOp1g6wR6KaAO3xJa8jO3PRWXZC9XhQdByJIUHKbubUXfNvnC5quQVT/qaLlb4jUr9NRvHBE3GkZVxlmx1yUAWW26eRCd8RzvnRJczoSU+Yi5sMhveOsv1qyfs=",
-      "domain": "api.backend-capital.com",
-      "path": "/",
-      "expires": 1782757209.674767,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "AWSALBCORS",
-      "value": "+4so2TXqWSqv6h5VJFf7gPpLRdLtgtEOtTtGtOqhga38f4+9pW23DdmnSrLdCbMsZ6O0XpOCpcnDo3KhZ9lAx5QgT3eZo9ovsi1Eglm5cxXP9fnuLAagDjU0jrpE",
-      "domain": "api.backend-capital.com",
-      "path": "/",
-      "expires": 1782757209.674889,
-      "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
@@ -405,7 +175,7 @@
       "value": "JcDxU0K9iWzvv8jw7bdynZCk3E16VrqL3e7s+ETECZg=",
       "domain": "mpsnare.iesnare.com",
       "path": "/",
-      "expires": 1813688412.497628,
+      "expires": 1813696193.422375,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None",
@@ -417,12 +187,232 @@
       "value": "nkhzla7bG7nVhFJDhSA90ro3AMNuWIKhGu9MihnIlvY=",
       "domain": "capital.com",
       "path": "/",
-      "expires": 1813688412.733024,
+      "expires": 1813696194.367043,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None",
       "partitionKey": "https://capital.com",
       "_crHasCrossSiteAncestor": false
+    },
+    {
+      "name": "__cp_dp",
+      "value": "0",
+      "domain": "capital.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "nlbi_2326300",
+      "value": "LMdiSa5EyA8a+A/dxQSD8QAAAADsSOUXSEW2Oqz3gqEyhdtw",
+      "domain": ".capital.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "incap_ses_649_2326300",
+      "value": "/+FvJHEWyiK9lJ2AIrYBCcSaOWoAAAAAagBBgnd5XeqyEbhb4GyoWQ==",
+      "domain": ".capital.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cp_dc",
+      "value": "RS",
+      "domain": "capital.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cp_rip",
+      "value": "109.93.242.252",
+      "domain": "capital.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cp_sc",
+      "value": "RS",
+      "domain": "capital.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cp_deviceId",
+      "value": "90549fa3-0d56-4f35-ae57-c81ddfbc33d6",
+      "domain": "capital.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "incap_ses_656_2326300",
+      "value": "cbz5FJqkL1WLEbRPm5QaCcmaOWoAAAAAV7FgzUOwVaZXLWOWtmgPVw==",
+      "domain": ".capital.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "uid",
+      "value": "3972833f-e36b-4be3-9a7c-7594f863ce9c",
+      "domain": "capital.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "AMP_23a2071c89",
+      "value": "JTdCJTIyZGV2aWNlSWQlMjIlM0ElMjI5MDU0OWZhMy0wZDU2LTRmMzUtYWU1Ny1jODFkZGZiYzMzZDYlMjIlMkMlMjJ1c2VySWQlMjIlM0ElMjIzNzA0ODY4NCUyMiUyQyUyMmRlZmVycmVkU2Vzc2lvbklkJTIyJTNBLTElMkMlMjJvcHRPdXQlMjIlM0F0cnVlJTJDJTIyY29va2llRG9tYWluJTIyJTNBJTIyLmNhcGl0YWwuY29tJTIyJTdE",
+      "domain": ".capital.com",
+      "path": "/",
+      "expires": 1813696081,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_clsk",
+      "value": "1hw7f8h%5E1782160088907%5E1%5E1%5Er.clarity.ms%2Fcollect",
+      "domain": ".capital.com",
+      "path": "/",
+      "expires": 1782246488,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "g_state",
+      "value": "{\"i_l\":0,\"i_ll\":1782160169260,\"i_b\":\"9XfSvfDBWqFbGyM5s5PeLRQLE0aMWo3iEJYtwZHgzKQ\",\"i_e\":{\"enable_itp_optimization\":24},\"i_et\":1782160169260}",
+      "domain": "capital.com",
+      "path": "/",
+      "expires": 1797712169,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__cp_at",
+      "value": "c8037ab9-12ec-4b97-a188-b8309a7750df",
+      "domain": "capital.com",
+      "path": "/",
+      "expires": 1782764974,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__cp_atd",
+      "value": "7",
+      "domain": "capital.com",
+      "path": "/",
+      "expires": 1782764974,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__cp_att",
+      "value": "Mon%2C%2029%20Jun%202026%2020%3A29%3A34%20GMT",
+      "domain": "capital.com",
+      "path": "/",
+      "expires": 1782764974,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__cp_sid",
+      "value": "b88e8777-a371-47fe-aa57-035d7609c741",
+      "domain": "capital.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__cp_uid",
+      "value": "37048684",
+      "domain": "capital.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "nlbi_2859063",
+      "value": "5j4FRyKskBrz+JeYEbJTAwAAAABJvK5xHtYWrw1mL2bPsDC8",
+      "domain": ".backend-capital.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "NID",
+      "value": "532=wez3RSIg5G9ELbad9uBxvd4HTc0M8bJ08s-GrjxGrm_s0fSPtJdMhRJMSa80SjI6il3HgddG1R40xg9flSWuQI2ZXCNPvJ6iz80wGD5dPu0dmycdsLNoo5ec82epLiyw8dQhN8cUeyy9sr8iBUOkohz8CH7k7rzEahP5rf5No6f6XxAsLAm7YBP9g9sejqj60WUUZcY",
+      "domain": ".google.com",
+      "path": "/",
+      "expires": 1797971378.296864,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "AWSALBTGCORS",
+      "value": "lObup6XTtgrQ419L2VnIbUPlWNzgVkyOFZcVYBkFmkh7K5+R3sDYTW4atl8x7ZkfQ+DcuXvthLWGYXRR7h6RqmZeGezdHBsXDi8KYV5tWzJLYBkDjHbvADOelWMWpyiV20nid6HicB0i5SAEuhUszQtjgXhdFFnQN/aWHTjjFFSyGNrZuA8=",
+      "domain": "api.backend-capital.com",
+      "path": "/",
+      "expires": 1782764989.048115,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "AWSALBCORS",
+      "value": "VGNNVM6mZTB2EVVQg/fN6V2DROMjDItIsgxN/RxVYdifKGhTOYTejXJybTI8MXqSsPNN7fpyhoZ7/QIdMYYHEN8QiezYYov0HF0jGW1gAtEXnvPNZH6FeToaNWmu",
+      "domain": "api.backend-capital.com",
+      "path": "/",
+      "expires": 1782764989.0484,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "incap_ses_649_2859063",
+      "value": "iEYvPWBkuAdlZKGAIrYBCTybOWoAAAAAx8yZiw78FfqONzN38UJA/A==",
+      "domain": ".backend-capital.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
     }
   ],
   "origins": [
@@ -435,7 +425,7 @@
         },
         {
           "name": "survi::ebcbe974fc901cd265e6d871c8a9dd2e::allvisitor",
-          "value": "{\"attributes\":{\"country\":{\"throttledTo\":null,\"timestamp\":1782152414338,\"value\":\"RS\"},\"isLoggedIn\":{\"throttledTo\":null,\"timestamp\":1782152414338,\"value\":\"true\"},\"ageGroup\":{\"throttledTo\":null,\"timestamp\":1782152414338,\"value\":\"N/A\"},\"isDemo\":{\"throttledTo\":null,\"timestamp\":1782152414338,\"value\":\"false\"},\"isVerified\":{\"throttledTo\":null,\"timestamp\":1782152414338,\"value\":\"false\"}},\"displayedSurveys\":[],\"engagedSurveys\":[],\"identities\":{\"api\":{\"id\":\"37048684\"}},\"initialSurveysEngagement\":[],\"tags\":[],\"uuid\":\"44def453-1263-456b-a53a-20dec22ed4ee\",\"validation\":{\"previousValidatedUserId\":null,\"timestamp\":null},\"visitsCount\":1}"
+          "value": "{\"attributes\":{\"country\":{\"throttledTo\":null,\"timestamp\":1782160196908,\"value\":\"RS\"},\"isLoggedIn\":{\"throttledTo\":null,\"timestamp\":1782160196908,\"value\":\"true\"},\"ageGroup\":{\"throttledTo\":null,\"timestamp\":1782160196908,\"value\":\"N/A\"},\"isDemo\":{\"throttledTo\":null,\"timestamp\":1782160196908,\"value\":\"false\"},\"isVerified\":{\"throttledTo\":null,\"timestamp\":1782160196908,\"value\":\"false\"}},\"displayedSurveys\":[],\"engagedSurveys\":[],\"identities\":{\"api\":{\"id\":\"37048684\"}},\"initialSurveysEngagement\":[],\"tags\":[],\"uuid\":\"44def453-1263-456b-a53a-20dec22ed4ee\",\"validation\":{\"previousValidatedUserId\":null,\"timestamp\":null},\"visitsCount\":2}"
         },
         {
           "name": "tvlocalstorage.available",
@@ -443,7 +433,7 @@
         },
         {
           "name": "ss_incoming_params",
-          "value": "[{\"af_ss_exp_at\":1782159583472}]"
+          "value": "[{\"af_ss_exp_at\":1782167282212}]"
         },
         {
           "name": "__anon_id",
@@ -455,7 +445,7 @@
         },
         {
           "name": "_grecaptcha",
-          "value": "09AKhCRwhe3xl72eSYnoA-RwFS-FCxVsqrUrrPQ_7TaUFWSUT6SaLsDbfBhWqTPJ3ixN2DQ8SMSBMglx8wmKx8C2LOhX1GQNp146qMXT_1pA_JVuK3JzuU_RDqojG1Kpb6"
+          "value": "09AKhCRwi3JUR70sPFcJ1TSQ1lZSKe3Q7tXVA7ECYqRTFIg-HwSjDBY1yUyC0QppmZ8vsS6aheSBRC06iXnIH9Z0JEgP25XgRovmbysAw1JqtzMkMEfl27EKXkZ7QG4Xl-"
         },
         {
           "name": "EXP_unsent_$default_instance",
@@ -475,7 +465,7 @@
         },
         {
           "name": "survi::ebcbe974fc901cd265e6d871c8a9dd2e::statusrequestHandler_contacts",
-          "value": "{\"handlerId\":\"d3b015c2-1845-4a70-ba27-96d90413f14b\",\"maximumTime\":1782152524534}"
+          "value": "{\"handlerId\":\"34790fa9-b690-4993-bcd9-61efdad866fd\",\"maximumTime\":1782160203589}"
         },
         {
           "name": "tradingview.trading.Broker",
@@ -487,11 +477,11 @@
         },
         {
           "name": "deviceProperties2",
-          "value": "{\"installationId\":\"3972833f-e36b-4be3-9a7c-7594f863ce9c\",\"launchCount\":1,\"installationVersion\":\"3.38.0\",\"currentVersionLaunchCount\":1,\"actualLaunchTime\":1782152408238,\"isPreviouslyLoggedIn\":false,\"language\":\"en\",\"chartType\":3,\"chartPeriod\":60000,\"drawingToolsPanelPosition\":\"{}\",\"drawingPanelPosition\":\"{}\",\"drawingPanelVisibility\":false,\"chartDrawings\":\"{}\",\"chartsState2\":\"{}\",\"keepMeLoggedIn\":true,\"theme\":\"black-theme\",\"priceTimeTerm\":{},\"toggledPortfolioGroups2\":{},\"toggledPortfolioOrderGroups\":{},\"collapsedTradePositionGroups\":{},\"collapsedTradeOrderGroups\":{},\"chartPanelSettings\":{},\"rememberedUserId\":37048684,\"usersAuthData\":{\"37048684\":{\"userId\":37048684,\"authTypes\":[0],\"authTypeChangeProposed\":false,\"email\":\"qa.auto.test234@gmail.com\"}},\"noRewardsBannerCloseCount\":0,\"closedLearnTradeOnexBanner\":false,\"shownProAccountBanner\":false,\"clickNumOnProAccountBanner\":0,\"inviteFriendsBannerCloseCount\":0,\"usersAcceptedCryptoDepositTerms\":[],\"noveltyList\":[{\"name\":\"STOCK_REPORTS\",\"isNovelty\":true,\"releaseVersion\":\"2.84.0\",\"content\":[]},{\"name\":\"MAJOR_NEWS\",\"isNovelty\":true,\"releaseVersion\":\"3.11.0\",\"content\":[]},{\"name\":\"FOR_YOU_NEWS\",\"isNovelty\":true,\"releaseVersion\":\"3.11.0\",\"content\":[]},{\"name\":\"QUICK_FEED\",\"isNovelty\":true,\"releaseVersion\":\"3.11.0\",\"content\":[]},{\"name\":\"ALL_NEWS\",\"isNovelty\":true,\"releaseVersion\":\"3.11.0\",\"content\":[]},{\"name\":\"NEW_NEWS\",\"isNovelty\":true,\"releaseVersion\":\"3.11.0\",\"content\":[]}],\"howDidYouHearBannerClosedCount\":0,\"waitingListBannerClosed\":{},\"proofsLastReminder\":{\"date\":1782152410359,\"proofs\":[]},\"numberOfVisitedInstruments\":0,\"isDemoTooltipShown\":false,\"lastLaunchVersion\":\"3.38.0\"}"
+          "value": "{\"installationId\":\"3972833f-e36b-4be3-9a7c-7594f863ce9c\",\"launchCount\":2,\"installationVersion\":\"3.38.0\",\"currentVersionLaunchCount\":2,\"actualLaunchTime\":1782160186753,\"isPreviouslyLoggedIn\":false,\"language\":\"en\",\"chartType\":3,\"chartPeriod\":60000,\"drawingToolsPanelPosition\":\"{}\",\"drawingPanelPosition\":\"{}\",\"drawingPanelVisibility\":false,\"chartDrawings\":\"{}\",\"chartsState2\":\"{}\",\"keepMeLoggedIn\":true,\"theme\":\"black-theme\",\"priceTimeTerm\":{},\"toggledPortfolioGroups2\":{},\"toggledPortfolioOrderGroups\":{},\"collapsedTradePositionGroups\":{},\"collapsedTradeOrderGroups\":{},\"chartPanelSettings\":{},\"rememberedUserId\":37048684,\"usersAuthData\":{\"37048684\":{\"userId\":37048684,\"authTypes\":[0],\"authTypeChangeProposed\":false,\"email\":\"qa.auto.test234@gmail.com\"}},\"noRewardsBannerCloseCount\":0,\"closedLearnTradeOnexBanner\":false,\"shownProAccountBanner\":false,\"clickNumOnProAccountBanner\":0,\"inviteFriendsBannerCloseCount\":0,\"usersAcceptedCryptoDepositTerms\":[],\"noveltyList\":[{\"name\":\"STOCK_REPORTS\",\"isNovelty\":true,\"releaseVersion\":\"2.84.0\",\"content\":[]},{\"name\":\"MAJOR_NEWS\",\"isNovelty\":true,\"releaseVersion\":\"3.11.0\",\"content\":[]},{\"name\":\"FOR_YOU_NEWS\",\"isNovelty\":true,\"releaseVersion\":\"3.11.0\",\"content\":[]},{\"name\":\"QUICK_FEED\",\"isNovelty\":true,\"releaseVersion\":\"3.11.0\",\"content\":[]},{\"name\":\"ALL_NEWS\",\"isNovelty\":true,\"releaseVersion\":\"3.11.0\",\"content\":[]},{\"name\":\"NEW_NEWS\",\"isNovelty\":true,\"releaseVersion\":\"3.11.0\",\"content\":[]}],\"howDidYouHearBannerClosedCount\":0,\"waitingListBannerClosed\":{},\"proofsLastReminder\":{\"date\":1782152410359,\"proofs\":[]},\"numberOfVisitedInstruments\":0,\"isDemoTooltipShown\":false,\"lastLaunchVersion\":\"3.38.0\",\"lastLaunchTime\":1782152408238}"
         },
         {
           "name": "AMP_remote_config_23a2071c89",
-          "value": "{\"remoteConfig\":{\"configs\":{\"diagnostics\":{\"browserSDK\":{\"sampleRate\":0.02}},\"sessionReplay\":{\"sr_interaction_config\":{\"batch\":false,\"enabled\":true},\"sr_targeting_config\":{\"variants\":{\"off\":{\"key\":\"off\"},\"on\":{\"key\":\"on\"}},\"key\":\"sr_targeting_config\",\"segments\":[{\"bucket\":{\"salt\":\"1069004515\",\"allocations\":[{\"range\":[0,100],\"distributions\":[{\"variant\":\"on\",\"range\":[0,42949673]}]}],\"selector\":[\"context\",\"session_id\"]},\"metadata\":{\"segmentId\":\"bf18f5f3-7b39-4835-8121-d208406e43fe\",\"segmentName\":\"test - product page\"},\"conditions\":[[{\"op\":\"is\",\"values\":[\"https://capital.com/en-int/ways-to-trade/cfd-trading\"],\"selector\":[\"context\",\"page\",\"url\"]}]]},{\"bucket\":{\"salt\":\"1131007488\",\"allocations\":[{\"range\":[0,100],\"distributions\":[{\"variant\":\"on\",\"range\":[0,42949673]}]}],\"selector\":[\"context\",\"session_id\"]},\"metadata\":{\"segmentId\":\"cc3e4582-4b91-4bba-8148-8b23a907e98c\",\"segmentName\":\"test - webplatform page\"},\"conditions\":[[{\"op\":\"is\",\"values\":[\"https://capital.com/en-int/trading-platforms/web-platform\"],\"selector\":[\"context\",\"page\",\"url\"]}]]},{\"bucket\":{\"salt\":\"-908778140\",\"allocations\":[{\"range\":[0,100],\"distributions\":[{\"variant\":\"on\",\"range\":[0,42949673]}]}],\"selector\":[\"context\",\"session_id\"]},\"metadata\":{\"segmentId\":\"__internal_random_sample__\",\"segmentName\":\"default random sample\"}},{\"variant\":\"off\"}]},\"sr_privacy_config\":{\"maskSelector\":[],\"blockSelector\":[],\"unmaskSelector\":[],\"defaultMaskLevel\":\"medium\"},\"sr_sampling_config\":{\"sample_rate\":1,\"capture_enabled\":true}},\"analyticsSDK\":{}}},\"lastFetch\":\"2026-06-22T18:19:40.959Z\"}"
+          "value": "{\"remoteConfig\":{\"configs\":{\"diagnostics\":{\"browserSDK\":{\"sampleRate\":0.02}},\"sessionReplay\":{\"sr_interaction_config\":{\"batch\":false,\"enabled\":true},\"sr_targeting_config\":{\"variants\":{\"off\":{\"key\":\"off\"},\"on\":{\"key\":\"on\"}},\"key\":\"sr_targeting_config\",\"segments\":[{\"bucket\":{\"salt\":\"1069004515\",\"allocations\":[{\"range\":[0,100],\"distributions\":[{\"variant\":\"on\",\"range\":[0,42949673]}]}],\"selector\":[\"context\",\"session_id\"]},\"metadata\":{\"segmentId\":\"bf18f5f3-7b39-4835-8121-d208406e43fe\",\"segmentName\":\"test - product page\"},\"conditions\":[[{\"op\":\"is\",\"values\":[\"https://capital.com/en-int/ways-to-trade/cfd-trading\"],\"selector\":[\"context\",\"page\",\"url\"]}]]},{\"bucket\":{\"salt\":\"1131007488\",\"allocations\":[{\"range\":[0,100],\"distributions\":[{\"variant\":\"on\",\"range\":[0,42949673]}]}],\"selector\":[\"context\",\"session_id\"]},\"metadata\":{\"segmentId\":\"cc3e4582-4b91-4bba-8148-8b23a907e98c\",\"segmentName\":\"test - webplatform page\"},\"conditions\":[[{\"op\":\"is\",\"values\":[\"https://capital.com/en-int/trading-platforms/web-platform\"],\"selector\":[\"context\",\"page\",\"url\"]}]]},{\"bucket\":{\"salt\":\"-908778140\",\"allocations\":[{\"range\":[0,100],\"distributions\":[{\"variant\":\"on\",\"range\":[0,42949673]}]}],\"selector\":[\"context\",\"session_id\"]},\"metadata\":{\"segmentId\":\"__internal_random_sample__\",\"segmentName\":\"default random sample\"}},{\"variant\":\"off\"}]},\"sr_privacy_config\":{\"maskSelector\":[],\"blockSelector\":[],\"unmaskSelector\":[],\"defaultMaskLevel\":\"medium\"},\"sr_sampling_config\":{\"sample_rate\":1,\"capture_enabled\":true}},\"analyticsSDK\":{}}},\"lastFetch\":\"2026-06-22T20:28:07.981Z\"}"
         },
         {
           "name": "ss_webReferrer",
@@ -507,11 +497,11 @@
         },
         {
           "name": "pusherTransportTLS",
-          "value": "{\"timestamp\":1782152379242,\"transport\":\"ws\",\"latency\":388}"
+          "value": "{\"timestamp\":1782160075298,\"transport\":\"ws\",\"latency\":694}"
         },
         {
           "name": "tabsCount",
-          "value": "0"
+          "value": "1"
         },
         {
           "name": "trading.active_broker",
@@ -531,7 +521,7 @@
         },
         {
           "name": "tabsLastCloseTimestamp",
-          "value": "1782152407126"
+          "value": "1782160177291"
         },
         {
           "name": "amp-exp-$default_instance-6XuNSE",
@@ -539,7 +529,7 @@
         },
         {
           "name": "survi::ebcbe974fc901cd265e6d871c8a9dd2e::statusrequestHandler_respondent",
-          "value": "{\"handlerId\":\"57a8601d-a2d9-4096-908f-8d9ee89ceb73\",\"maximumTime\":1782152529134}"
+          "value": "{\"handlerId\":\"22f619fe-7443-4258-94a5-bb613b4592eb\",\"maximumTime\":1782160203589}"
         },
         {
           "name": "tradingview.trading.orderWidgetMode.",
@@ -562,12 +552,12 @@
           "value": "{\"data\":{\"ae\":\"ar\",\"ar\":\"es\",\"at\":\"de\",\"au\":\"en\",\"az\":\"az\",\"be\":[\"nl\",\"fr\"],\"bg\":\"bg\",\"br\":\"pt\",\"by\":\"be\",\"ca\":[\"en\",\"fr\"],\"ch\":[\"de\",\"fr\",\"it\"],\"cl\":\"es\",\"cn\":\"zh\",\"cz\":\"cs\",\"de\":\"de\",\"dk\":\"da\",\"ee\":\"et\",\"eg\":\"ar\",\"es\":\"es\",\"fi\":\"fi\",\"fr\":\"fr\",\"ge\":\"ka\",\"gr\":\"el\",\"hk\":\"zh\",\"hr\":\"hr\",\"hu\":\"hu\",\"id\":\"id\",\"ie\":\"en\",\"il\":\"he\",\"in\":[\"hi\",\"en\"],\"is\":\"is\",\"it\":\"it\",\"jp\":\"ja\",\"kr\":\"ko\",\"kz\":\"kk\",\"lt\":\"lt\",\"lu\":[\"fr\",\"de\",\"lb\"],\"lv\":\"lv\",\"ma\":[\"ar\",\"fr\"],\"mx\":\"es\",\"my\":[\"ms\",\"en\"],\"nl\":\"nl\",\"no\":\"no\",\"nz\":\"en\",\"pe\":\"es\",\"ph\":[\"en\",\"tl\"],\"pl\":\"pl\",\"pt\":\"pt\",\"ro\":\"ro\",\"rs\":\"sr\",\"ru\":\"ru\",\"sa\":\"ar\",\"se\":\"sv\",\"sg\":[\"en\",\"ms\",\"zh\",\"ta\"],\"si\":\"sl\",\"sk\":\"sk\",\"th\":\"th\",\"tr\":\"tr\",\"tw\":\"zh\",\"ua\":\"uk\",\"uk\":\"en\",\"us\":\"en\",\"vn\":\"vi\",\"za\":[\"en\",\"af\",\"zu\",\"xh\"]},\"timestamp\":1782152414330}"
         },
         {
-          "name": "tradingview.chartproperties.mainSeriesProperties",
-          "value": "{\"style\":1,\"esdShowDividends\":true,\"esdShowSplits\":true,\"esdShowEarnings\":true,\"esdShowBreaks\":false,\"showContinuousContractSwitches\":true,\"showContinuousContractSwitchesBreaks\":false,\"showFuturesContractExpiration\":true,\"showLastNews\":true,\"showCountdown\":false,\"showPriceLine\":true,\"priceLineWidth\":1,\"showPrevClosePriceLine\":false,\"prevClosePriceLineWidth\":1,\"minTick\":\"default\",\"dividendsAdjustment\":{},\"backAdjustment\":false,\"settlementAsClose\":true,\"sessionId\":\"regular\",\"bidAsk\":{\"visible\":false,\"lineStyle\":1,\"lineWidth\":1,\"bidLineColor\":\"#2962FF\",\"askLineColor\":\"#F7525F\"},\"prePostMarket\":{\"visible\":true,\"lineStyle\":1,\"lineWidth\":1,\"preMarketColor\":\"#FB8C00\",\"postMarketColor\":\"#2962FF\"},\"highLowAvgPrice\":{\"highLowPriceLinesVisible\":false,\"highLowPriceLabelsVisible\":false,\"averageClosePriceLineVisible\":false,\"averageClosePriceLabelVisible\":false,\"highLowPriceLinesWidth\":1,\"averagePriceLineWidth\":1,\"highLowPriceLinesColor\":\"\",\"averagePriceLineColor\":\"\"},\"statusViewStyle\":{\"fontSize\":16,\"showExchange\":true,\"showInterval\":true,\"symbolTextSource\":\"ticker\"},\"lineStyle\":{\"linestyle\":0,\"linewidth\":2,\"priceSource\":\"close\",\"colorType\":\"gradient\",\"color\":\"#59a0e4\",\"gradientStartColor\":\"#D500F9\",\"gradientEndColor\":\"#00BCE5\"},\"lineWithMarkersStyle\":{\"linestyle\":0,\"linewidth\":2,\"priceSource\":\"close\",\"colorType\":\"gradient\",\"color\":\"#59a0e4\",\"gradientStartColor\":\"#D500F9\",\"gradientEndColor\":\"#00BCE5\"},\"steplineStyle\":{\"linestyle\":0,\"linewidth\":2,\"priceSource\":\"close\",\"colorType\":\"gradient\",\"color\":\"#59a0e4\",\"gradientStartColor\":\"#D500F9\",\"gradientEndColor\":\"#00BCE5\"},\"baselineStyle\":{\"topLineWidth\":2,\"bottomLineWidth\":2,\"topLineStyle\":0,\"bottomLineStyle\":0,\"priceSource\":\"close\",\"transparency\":40,\"baseLevelPercentage\":50,\"baselineColor\":\"rgba(117, 122, 142, 0.4)\",\"topFillColor1\":\"rgba(46, 135, 215, 0.1)\",\"topFillColor2\":\"rgba(46, 135, 215, 0.1)\",\"bottomFillColor1\":\"rgba(234, 59, 87, 0.1)\",\"bottomFillColor2\":\"rgba(234, 59, 87, 0.1)\",\"topLineColor\":\"#388EE3\",\"bottomLineColor\":\"#EB434E\"},\"areaStyle\":{\"linestyle\":0,\"linewidth\":2,\"priceSource\":\"close\",\"transparency\":100,\"color1\":\"rgba(89, 160, 228, 0.1)\",\"color2\":\"rgba(89, 160, 228, 0.1)\",\"linecolor\":\"#59a0e4\"},\"hlcAreaStyle\":{\"highLineVisible\":true,\"highLineStyle\":0,\"highLineWidth\":2,\"lowLineVisible\":true,\"lowLineStyle\":0,\"lowLineWidth\":2,\"closeLineStyle\":0,\"closeLineWidth\":2,\"highLineColor\":\"#388EE3\",\"lowLineColor\":\"#EB434E\",\"closeLineColor\":\"#7d7d7d\",\"highCloseFillColor\":\"rgba(56, 142, 227, 0.2)\",\"closeLowFillColor\":\"rgba(235, 67, 78, 0.2)\"},\"barStyle\":{\"barColorsOnPrevClose\":false,\"dontDrawOpen\":false,\"thinBars\":true,\"downColor\":\"#EB434E\",\"upColor\":\"#388EE3\"},\"hlcBarsStyle\":{\"thinBars\":true,\"color\":\"#2962FF\"},\"candleStyle\":{\"drawWick\":true,\"drawBorder\":false,\"barColorsOnPrevClose\":false,\"drawBody\":true,\"borderColor\":\"#378658\",\"upColor\":\"#388EE3\",\"wickColor\":\"#737375\",\"wickUpColor\":\"#388EE3\",\"wickDownColor\":\"#EB434E\",\"downColor\":\"#EB434E\",\"borderUpColor\":\"#388EE3\",\"borderDownColor\":\"#EB434E\"},\"volCandlesStyle\":{\"drawWick\":true,\"drawBorder\":true,\"barColorsOnPrevClose\":false,\"drawBody\":true,\"borderColor\":\"#378658\",\"upColor\":\"#388EE3\",\"wickColor\":\"#737375\",\"wickUpColor\":\"#388EE3\",\"wickDownColor\":\"#EB434E\",\"downColor\":\"#EB434E\",\"borderUpColor\":\"#388EE3\",\"borderDownColor\":\"#EB434E\"},\"hollowCandleStyle\":{\"drawWick\":true,\"drawBorder\":false,\"drawBody\":true,\"upColor\":\"#388EE3\",\"downColor\":\"#EB434E\",\"borderColor\":\"#388EE3\",\"borderUpColor\":\"#388EE3\",\"borderDownColor\":\"#388EE3\",\"wickColor\":\"#737375\",\"wickUpColor\":\"#388EE3\",\"wickDownColor\":\"#EB434E\"},\"haStyle\":{\"drawWick\":true,\"drawBorder\":true,\"showRealLastPrice\":false,\"barColorsOnPrevClose\":false,\"inputs\":{},\"inputInfo\":{},\"drawBody\":true,\"borderColor\":\"#378658\",\"upColor\":\"#388EE3\",\"wickColor\":\"#737375\",\"wickUpColor\":\"#388EE3\",\"wickDownColor\":\"#EB434E\",\"downColor\":\"#EB434E\",\"borderUpColor\":\"#388EE3\",\"borderDownColor\":\"#EB434E\"},\"hiloStyle\":{\"showBorders\":true,\"showLabels\":true,\"drawBody\":true,\"color\":\"#59a0e4\",\"borderColor\":\"#2962FF\",\"labelColor\":\"#2962FF\"},\"columnStyle\":{\"barColorsOnPrevClose\":true,\"priceSource\":\"close\",\"baselinePosition\":\"bottom\",\"upColor\":\"#388EE3\",\"downColor\":\"#EB434E\"},\"renkoStyle\":{\"inputs\":{\"source\":\"close\",\"sources\":\"Close\",\"boxSize\":3,\"style\":\"ATR\",\"atrLength\":14,\"percentageLTP\":1,\"wicks\":true},\"inputInfo\":{\"source\":{\"name\":\"Source\"},\"sources\":{\"name\":\"Source\"},\"boxSize\":{\"name\":\"Box size\"},\"style\":{\"name\":\"Style\"},\"atrLength\":{\"name\":\"ATR length\"},\"percentageLTP\":{\"name\":\"Percentage\"},\"wicks\":{\"name\":\"Wicks\"}},\"upColor\":\"#388EE3\",\"downColor\":\"#EB434E\",\"borderUpColor\":\"#388EE3\",\"borderDownColor\":\"#EB434E\",\"upColorProjection\":\"rgba(56, 142, 227, 0.6)\",\"downColorProjection\":\"rgba(235, 67, 78, 0.6)\",\"borderUpColorProjection\":\"rgba(56, 142, 227, 0.6)\",\"borderDownColorProjection\":\"rgba(235, 67, 78, 0.6)\",\"wickUpColor\":\"#388EE3\",\"wickDownColor\":\"#EB434E\"},\"pbStyle\":{\"inputs\":{\"lb\":3},\"inputInfo\":{\"lb\":{\"name\":\"Number of line\"}},\"upColor\":\"#388EE3\",\"downColor\":\"#EB434E\",\"borderUpColor\":\"#388EE3\",\"borderDownColor\":\"#EB434E\",\"upColorProjection\":\"rgba(56, 142, 227, 0.6)\",\"downColorProjection\":\"rgba(235, 67, 78, 0.6)\",\"borderUpColorProjection\":\"rgba(56, 142, 227, 0.6)\",\"borderDownColorProjection\":\"rgba(235, 67, 78, 0.6)\"},\"kagiStyle\":{\"inputs\":{\"style\":\"ATR\",\"atrLength\":14,\"percentageLTP\":1,\"reversalAmount\":1},\"inputInfo\":{\"style\":{\"name\":\"Style\"},\"atrLength\":{\"name\":\"ATR length\"},\"percentageLTP\":{\"name\":\"Percentage\"},\"reversalAmount\":{\"name\":\"Reversal amount\"}},\"downColor\":\"#EB434E\",\"upColor\":\"#388EE3\",\"upColorProjection\":\"rgba(56, 142, 227, 0.6)\",\"downColorProjection\":\"rgba(235, 67, 78, 0.6)\"},\"pnfStyle\":{\"inputs\":{\"sources\":\"Close\",\"reversalAmount\":3,\"boxSize\":1,\"style\":\"ATR\",\"atrLength\":14,\"percentageLTP\":1,\"oneStepBackBuilding\":false},\"inputInfo\":{\"sources\":{\"name\":\"Source\"},\"boxSize\":{\"name\":\"Box size\"},\"reversalAmount\":{\"name\":\"Reversal amount\"},\"style\":{\"name\":\"Style\"},\"atrLength\":{\"name\":\"ATR length\"},\"percentageLTP\":{\"name\":\"Percentage\"},\"oneStepBackBuilding\":{\"name\":\"One step back building\"}},\"downColor\":\"#F23645\",\"upColor\":\"#089981\",\"upColorProjection\":\"#336854\",\"downColorProjection\":\"#7f323f\"},\"rangeStyle\":{\"barStyle\":0,\"thinBars\":true,\"inputs\":{\"range\":10,\"phantomBars\":false},\"inputInfo\":{\"range\":{\"name\":\"Range\"},\"phantomBars\":{\"name\":\"Phantom bars\"}},\"upColor\":\"#089981\",\"downColor\":\"#F23645\",\"upColorProjection\":\"#336854\",\"downColorProjection\":\"#7f323f\",\"candlesUpColor\":\"#089981\",\"candlesDownColor\":\"#F23645\",\"candlesBorderUpColor\":\"#089981\",\"candlesBorderDownColor\":\"#F23645\",\"candlesWickUpColor\":\"#089981\",\"candlesWickDownColor\":\"#F23645\"},\"tpoStyle\":{},\"svpStyle\":{},\"volFootprintStyle\":{},\"baseLineColor\":\"#636363\",\"prevClosePriceLineColor\":\"#555555\",\"priceLineColor\":\"\",\"timeframe\":\"\",\"shortName\":\"GameStop Corp\",\"unitId\":null,\"metricId\":null,\"symbol\":\"126740190024900\",\"interval\":\"60\",\"priceAxisProperties\":{\"autoScale\":true,\"autoScaleDisabled\":false,\"lockScale\":false,\"percentage\":false,\"percentageDisabled\":false,\"log\":false,\"logDisabled\":false,\"alignLabels\":true,\"isInverted\":false,\"indexedTo100\":false}}"
-        },
-        {
           "name": "last-crosstab-monotonic-timestamp",
           "value": "1782152415775"
+        },
+        {
+          "name": "tradingview.chartproperties.mainSeriesProperties",
+          "value": "{\"style\":1,\"esdShowDividends\":true,\"esdShowSplits\":true,\"esdShowEarnings\":true,\"esdShowBreaks\":false,\"showContinuousContractSwitches\":true,\"showContinuousContractSwitchesBreaks\":false,\"showFuturesContractExpiration\":true,\"showLastNews\":true,\"showCountdown\":false,\"showPriceLine\":true,\"priceLineWidth\":1,\"showPrevClosePriceLine\":false,\"prevClosePriceLineWidth\":1,\"minTick\":\"default\",\"dividendsAdjustment\":{},\"backAdjustment\":false,\"settlementAsClose\":true,\"sessionId\":\"regular\",\"bidAsk\":{\"visible\":false,\"lineStyle\":1,\"lineWidth\":1,\"bidLineColor\":\"#2962FF\",\"askLineColor\":\"#F7525F\"},\"prePostMarket\":{\"visible\":true,\"lineStyle\":1,\"lineWidth\":1,\"preMarketColor\":\"#FB8C00\",\"postMarketColor\":\"#2962FF\"},\"highLowAvgPrice\":{\"highLowPriceLinesVisible\":false,\"highLowPriceLabelsVisible\":false,\"averageClosePriceLineVisible\":false,\"averageClosePriceLabelVisible\":false,\"highLowPriceLinesWidth\":1,\"averagePriceLineWidth\":1,\"highLowPriceLinesColor\":\"\",\"averagePriceLineColor\":\"\"},\"statusViewStyle\":{\"fontSize\":16,\"showExchange\":true,\"showInterval\":true,\"symbolTextSource\":\"ticker\"},\"lineStyle\":{\"linestyle\":0,\"linewidth\":2,\"priceSource\":\"close\",\"colorType\":\"gradient\",\"color\":\"#59a0e4\",\"gradientStartColor\":\"#D500F9\",\"gradientEndColor\":\"#00BCE5\"},\"lineWithMarkersStyle\":{\"linestyle\":0,\"linewidth\":2,\"priceSource\":\"close\",\"colorType\":\"gradient\",\"color\":\"#59a0e4\",\"gradientStartColor\":\"#D500F9\",\"gradientEndColor\":\"#00BCE5\"},\"steplineStyle\":{\"linestyle\":0,\"linewidth\":2,\"priceSource\":\"close\",\"colorType\":\"gradient\",\"color\":\"#59a0e4\",\"gradientStartColor\":\"#D500F9\",\"gradientEndColor\":\"#00BCE5\"},\"baselineStyle\":{\"topLineWidth\":2,\"bottomLineWidth\":2,\"topLineStyle\":0,\"bottomLineStyle\":0,\"priceSource\":\"close\",\"transparency\":40,\"baseLevelPercentage\":50,\"baselineColor\":\"rgba(117, 122, 142, 0.4)\",\"topFillColor1\":\"rgba(46, 135, 215, 0.1)\",\"topFillColor2\":\"rgba(46, 135, 215, 0.1)\",\"bottomFillColor1\":\"rgba(234, 59, 87, 0.1)\",\"bottomFillColor2\":\"rgba(234, 59, 87, 0.1)\",\"topLineColor\":\"#388EE3\",\"bottomLineColor\":\"#EB434E\"},\"areaStyle\":{\"linestyle\":0,\"linewidth\":2,\"priceSource\":\"close\",\"transparency\":100,\"color1\":\"rgba(89, 160, 228, 0.1)\",\"color2\":\"rgba(89, 160, 228, 0.1)\",\"linecolor\":\"#59a0e4\"},\"hlcAreaStyle\":{\"highLineVisible\":true,\"highLineStyle\":0,\"highLineWidth\":2,\"lowLineVisible\":true,\"lowLineStyle\":0,\"lowLineWidth\":2,\"closeLineStyle\":0,\"closeLineWidth\":2,\"highLineColor\":\"#388EE3\",\"lowLineColor\":\"#EB434E\",\"closeLineColor\":\"#7d7d7d\",\"highCloseFillColor\":\"rgba(56, 142, 227, 0.2)\",\"closeLowFillColor\":\"rgba(235, 67, 78, 0.2)\"},\"barStyle\":{\"barColorsOnPrevClose\":false,\"dontDrawOpen\":false,\"thinBars\":true,\"downColor\":\"#EB434E\",\"upColor\":\"#388EE3\"},\"hlcBarsStyle\":{\"thinBars\":true,\"color\":\"#2962FF\"},\"candleStyle\":{\"drawWick\":true,\"drawBorder\":false,\"barColorsOnPrevClose\":false,\"drawBody\":true,\"borderColor\":\"#378658\",\"upColor\":\"#388EE3\",\"wickColor\":\"#737375\",\"wickUpColor\":\"#388EE3\",\"wickDownColor\":\"#EB434E\",\"downColor\":\"#EB434E\",\"borderUpColor\":\"#388EE3\",\"borderDownColor\":\"#EB434E\"},\"volCandlesStyle\":{\"drawWick\":true,\"drawBorder\":true,\"barColorsOnPrevClose\":false,\"drawBody\":true,\"borderColor\":\"#378658\",\"upColor\":\"#388EE3\",\"wickColor\":\"#737375\",\"wickUpColor\":\"#388EE3\",\"wickDownColor\":\"#EB434E\",\"downColor\":\"#EB434E\",\"borderUpColor\":\"#388EE3\",\"borderDownColor\":\"#EB434E\"},\"hollowCandleStyle\":{\"drawWick\":true,\"drawBorder\":false,\"drawBody\":true,\"upColor\":\"#388EE3\",\"downColor\":\"#EB434E\",\"borderColor\":\"#388EE3\",\"borderUpColor\":\"#388EE3\",\"borderDownColor\":\"#388EE3\",\"wickColor\":\"#737375\",\"wickUpColor\":\"#388EE3\",\"wickDownColor\":\"#EB434E\"},\"haStyle\":{\"drawWick\":true,\"drawBorder\":true,\"showRealLastPrice\":false,\"barColorsOnPrevClose\":false,\"inputs\":{},\"inputInfo\":{},\"drawBody\":true,\"borderColor\":\"#378658\",\"upColor\":\"#388EE3\",\"wickColor\":\"#737375\",\"wickUpColor\":\"#388EE3\",\"wickDownColor\":\"#EB434E\",\"downColor\":\"#EB434E\",\"borderUpColor\":\"#388EE3\",\"borderDownColor\":\"#EB434E\"},\"hiloStyle\":{\"showBorders\":true,\"showLabels\":true,\"drawBody\":true,\"color\":\"#59a0e4\",\"borderColor\":\"#2962FF\",\"labelColor\":\"#2962FF\"},\"columnStyle\":{\"barColorsOnPrevClose\":true,\"priceSource\":\"close\",\"baselinePosition\":\"bottom\",\"upColor\":\"#388EE3\",\"downColor\":\"#EB434E\"},\"renkoStyle\":{\"inputs\":{\"source\":\"close\",\"sources\":\"Close\",\"boxSize\":3,\"style\":\"ATR\",\"atrLength\":14,\"percentageLTP\":1,\"wicks\":true},\"inputInfo\":{\"source\":{\"name\":\"Source\"},\"sources\":{\"name\":\"Source\"},\"boxSize\":{\"name\":\"Box size\"},\"style\":{\"name\":\"Style\"},\"atrLength\":{\"name\":\"ATR length\"},\"percentageLTP\":{\"name\":\"Percentage\"},\"wicks\":{\"name\":\"Wicks\"}},\"upColor\":\"#388EE3\",\"downColor\":\"#EB434E\",\"borderUpColor\":\"#388EE3\",\"borderDownColor\":\"#EB434E\",\"upColorProjection\":\"rgba(56, 142, 227, 0.6)\",\"downColorProjection\":\"rgba(235, 67, 78, 0.6)\",\"borderUpColorProjection\":\"rgba(56, 142, 227, 0.6)\",\"borderDownColorProjection\":\"rgba(235, 67, 78, 0.6)\",\"wickUpColor\":\"#388EE3\",\"wickDownColor\":\"#EB434E\"},\"pbStyle\":{\"inputs\":{\"lb\":3},\"inputInfo\":{\"lb\":{\"name\":\"Number of line\"}},\"upColor\":\"#388EE3\",\"downColor\":\"#EB434E\",\"borderUpColor\":\"#388EE3\",\"borderDownColor\":\"#EB434E\",\"upColorProjection\":\"rgba(56, 142, 227, 0.6)\",\"downColorProjection\":\"rgba(235, 67, 78, 0.6)\",\"borderUpColorProjection\":\"rgba(56, 142, 227, 0.6)\",\"borderDownColorProjection\":\"rgba(235, 67, 78, 0.6)\"},\"kagiStyle\":{\"inputs\":{\"style\":\"ATR\",\"atrLength\":14,\"percentageLTP\":1,\"reversalAmount\":1},\"inputInfo\":{\"style\":{\"name\":\"Style\"},\"atrLength\":{\"name\":\"ATR length\"},\"percentageLTP\":{\"name\":\"Percentage\"},\"reversalAmount\":{\"name\":\"Reversal amount\"}},\"downColor\":\"#EB434E\",\"upColor\":\"#388EE3\",\"upColorProjection\":\"rgba(56, 142, 227, 0.6)\",\"downColorProjection\":\"rgba(235, 67, 78, 0.6)\"},\"pnfStyle\":{\"inputs\":{\"sources\":\"Close\",\"reversalAmount\":3,\"boxSize\":1,\"style\":\"ATR\",\"atrLength\":14,\"percentageLTP\":1,\"oneStepBackBuilding\":false},\"inputInfo\":{\"sources\":{\"name\":\"Source\"},\"boxSize\":{\"name\":\"Box size\"},\"reversalAmount\":{\"name\":\"Reversal amount\"},\"style\":{\"name\":\"Style\"},\"atrLength\":{\"name\":\"ATR length\"},\"percentageLTP\":{\"name\":\"Percentage\"},\"oneStepBackBuilding\":{\"name\":\"One step back building\"}},\"downColor\":\"#F23645\",\"upColor\":\"#089981\",\"upColorProjection\":\"#336854\",\"downColorProjection\":\"#7f323f\"},\"rangeStyle\":{\"barStyle\":0,\"thinBars\":true,\"inputs\":{\"range\":10,\"phantomBars\":false},\"inputInfo\":{\"range\":{\"name\":\"Range\"},\"phantomBars\":{\"name\":\"Phantom bars\"}},\"upColor\":\"#089981\",\"downColor\":\"#F23645\",\"upColorProjection\":\"#336854\",\"downColorProjection\":\"#7f323f\",\"candlesUpColor\":\"#089981\",\"candlesDownColor\":\"#F23645\",\"candlesBorderUpColor\":\"#089981\",\"candlesBorderDownColor\":\"#F23645\",\"candlesWickUpColor\":\"#089981\",\"candlesWickDownColor\":\"#F23645\"},\"tpoStyle\":{},\"svpStyle\":{},\"volFootprintStyle\":{},\"baseLineColor\":\"#636363\",\"prevClosePriceLineColor\":\"#555555\",\"priceLineColor\":\"\",\"timeframe\":\"\",\"shortName\":\"GameStop Corp\",\"unitId\":null,\"metricId\":null,\"symbol\":\"126740190024900\",\"interval\":\"60\",\"priceAxisProperties\":{\"autoScale\":true,\"autoScaleDisabled\":false,\"lockScale\":false,\"percentage\":false,\"percentageDisabled\":false,\"log\":false,\"logDisabled\":false,\"alignLabels\":true,\"isInverted\":false,\"indexedTo100\":false}}"
         },
         {
           "name": "userManagementWebDeviceSettings2",
@@ -588,7 +578,7 @@
         },
         {
           "name": "rc::f",
-          "value": "0aAD5oO34rcxGm34TmQobfGXdfAhjZOUIBV2Y7_qbydvypJP2oFuZpccArmfS8T76l2XzqicM"
+          "value": "0aAD5oO36zuZdJmsWycgT_sBO5PNrJqX3GG3qhVx433G5VQylgT8F1VEtAcS8OMGtUnds8s_4"
         }
       ]
     }

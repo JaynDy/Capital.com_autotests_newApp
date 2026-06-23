@@ -424,3 +424,8 @@ TEST_LICENSE=CYSEC TEST_BROWSER=chromium TEST_USER=unregistered TEST_CTA=footer 
 node framework/auth/manual.js
 
 npx allure serve allure-results
+
+npm run test:markets -- --list // 4752
+npm run test:footer -- --list // 1368
+
+// 6120
