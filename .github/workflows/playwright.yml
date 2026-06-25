@@ -16,13 +16,15 @@ jobs:
         # suite: [markets, footer]
         license: [FCA]
         # license: [FCA, ASIC, CMA, SCB, CySEC]
-        # user: [unauthorised, unregistered]
+        user: [authorised]
+        # user: [authorised, unauthorised, unregistered]
         browser: [chromium]
 
     env:
       CI: true
       TEST_BROWSER: ${{ matrix.browser }}
       TEST_LICENSE: ${{ matrix.license }}
+      TEST_USER: ${{ matrix.user }}
       # TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
       # TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
 
