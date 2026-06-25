@@ -23,7 +23,8 @@ export async function expectPageState(
 
     case "shows signup form":
       await expect(
-        page.locator('form[data-sentry-component="SignUp"]'),
+        // page.locator('form[data-sentry-component="SignUp"]'),
+        page.locator('[data-type="SIGN_UP_close"]'),
       ).toBeVisible();
       break;
 

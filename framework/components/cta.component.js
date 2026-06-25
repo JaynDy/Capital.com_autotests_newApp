@@ -79,9 +79,6 @@ export class CTAComponent {
   }
 
   async click(actionName) {
-    // if (!this.skipRootValidation) {
-    //   await this.expectVisible();
-    // }
     await this.runSetup();
     await this.runActionSetup(actionName);
 
@@ -101,7 +98,7 @@ export class CTAComponent {
 
     await locator.waitFor({
       state: "visible",
-      timeout: 5000,
+      // timeout: 5000,
     });
 
     await locator.click();

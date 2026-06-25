@@ -1,9 +1,10 @@
 export const socialMediaBar = {
-  root: ".Kzxh.mdGP.JRRE.YdLl",
+  root: "footer",
 
   actions: {
     logo: {
-      locator: "footer a.cXA2.AMZV",
+      locator: `footer > div a`,
+      locatorIndex: 0,
       expectation: {
         authorised: { type: "redirect", page: "main" },
         unauthorised: { type: "redirect", page: "main" },

@@ -13,7 +13,7 @@ export const riskWarningBlock = {
       },
     },
     licenseText: {
-      locator: `.Kzxh.lgUb.LNih.QA01`,
+      locator: `#RW_bottom`,
       licenseText: {
         SCB: ["SIA-F245"],
         CySEC: ["HE 354252"],
@@ -33,7 +33,7 @@ export const riskWarningBlock = {
       },
     },
     sitemapLink: {
-      locator: `[data-sentry-component="Terms"] a[href*="/sitemap"]`,
+      locator: `footer a[href*="/sitemap"]`,
       expectation: {
         authorised: { type: "redirect", page: "sitemap" },
         unauthorised: { type: "redirect", page: "sitemap" },
@@ -41,7 +41,8 @@ export const riskWarningBlock = {
       },
     },
     termsAndPoliciesLink: {
-      locator: `[data-sentry-component="Terms"] a[href*="/terms-and-policies"]`,
+      locator: `footer a[href*="/terms-and-policies"]`,
+      locatorIndex: 1,
       expectation: {
         authorised: { type: "redirect", page: "termsAndPolicies" },
         unauthorised: { type: "redirect", page: "termsAndPolicies" },
@@ -49,7 +50,8 @@ export const riskWarningBlock = {
       },
     },
     complaintsProcedureLink: {
-      locator: `[data-sentry-component="Terms"] a[href*="/help/complaints"]`,
+      locator: `footer a[href*="/help/complaints"]`,
+      locatorIndex: 1,
       expectation: {
         authorised: { type: "redirect", page: "complaints" },
         unauthorised: { type: "redirect", page: "complaints" },

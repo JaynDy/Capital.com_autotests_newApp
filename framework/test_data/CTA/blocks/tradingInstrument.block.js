@@ -16,26 +16,15 @@ export const tradingInstrument = {
     longPositionGoToPlatformBtn: {
       locator: (page) =>
         page
-          .locator(".Cjf5")
-          .nth(1)
+          .locator("tbody tr")
+          .nth(2)
           .locator('[data-type="market_go_to_platform_btn"]'),
 
       setup: async ({ getHelper, page }) => {
-        await getHelper("longPositionToolTip").hover();
-
-        const locator = page
-          .locator(".Cjf5")
-          .nth(1)
-          .locator('[data-type="market_go_to_platform_btn"]');
-        // console.log("VISIBLE:", await locator.isVisible());
-
-        await locator.scrollIntoViewIfNeeded();
-
-        // console.log("BOUNDING BOX:", await locator.boundingBox());
-        // console.log(
-        //   "COUNT:",
-        //   await page.locator('[data-type="market_go_to_platform_btn"]').count(),
-        // );
+        const row = getHelper("longPositionToolTip");
+        await row.scrollIntoViewIfNeeded();
+        await page.mouse.wheel(0, 400); // Extra scroll is needed because the tooltip is taller than the viewport and the CTA button becomes visible only after additional scrolling.
+        await row.hover();
       },
 
       expectation: {
@@ -48,12 +37,15 @@ export const tradingInstrument = {
     shortPositionGoToPlatformBtn: {
       locator: (page) =>
         page
-          .locator(".Cjf5")
-          .nth(2)
+          .locator("tbody > tr")
+          .nth(5)
           .locator('[data-type="market_go_to_platform_btn"]'),
 
-      setup: async ({ getHelper }) => {
-        await getHelper("shortPositionToolTip").hover();
+      setup: async ({ getHelper, page }) => {
+        const row = getHelper("shortPositionToolTip");
+        await row.scrollIntoViewIfNeeded();
+        await page.mouse.wheel(0, 450);
+        await row.hover();
       },
 
       expectation: {
@@ -118,8 +110,11 @@ export const tradingInstrument = {
   helpers: {
     marketLink: `[data-type="markets_list_deep"]`, // On the market page
 
-    longPositionToolTip: (page) => page.locator(".Cjf5").nth(1), //  On the trading instrument page
-    shortPositionToolTip: (page) => page.locator(".Cjf5").nth(2), //  On the trading instrument page
+    longPositionToolTip: (page) =>
+      page.locator("tbody tr").nth(2).locator("td").first(), //  On the trading instrument page
+
+    shortPositionToolTip: (page) =>
+      page.locator("tbody tr").nth(5).locator("td").first(), //  On the trading instrument page
 
     relatedMarketWidget: `[data-type="wdg_most_traded"]`, //  On the trading instrument page
   },

@@ -401,7 +401,7 @@ TEST_LICENSE=CYSEC TEST_BROWSER=chromium npx playwright test --list === 2521 = 2
 
 /////////////////////////////// FOOTER
 
-TEST_LICENSE=FCA TEST_BROWSER=chromium TEST_USER=unregistered TEST_CTA=footer npx playwright test +++
+TEST_LICENSE=FCA TEST_BROWSER=chromium TEST_USER=authorised TEST_CTA=footer npx playwright test +++
 // 12 = 7 skipped (any social icons are not exist) + 4 (logo + 3 app store) + 1 auth
 
 TEST_LICENSE=ASIC TEST_BROWSER=chromium TEST_USER=unregistered TEST_CTA=footer npx playwright test +++
