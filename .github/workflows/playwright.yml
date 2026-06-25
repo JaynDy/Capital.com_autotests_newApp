@@ -16,7 +16,7 @@ jobs:
         # suite: [markets, footer]
         license: [FCA, ASIC, CMA, SCB, CySEC]
         # license: [FCA, ASIC, CMA, SCB, CySEC]
-        user: [unauthorised, unregistered]
+        # user: [unauthorised, unregistered]
         # user: [authorised, unauthorised, unregistered]
         browser: [chromium]
 
@@ -27,6 +27,12 @@ jobs:
       # TEST_USER: ${{ matrix.user }}
       # TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
       # TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
+
+      # TEST_LICENSE: SCB
+      # TEST_LANG: de,zh
+      TEST_USER: unauthorised,unregistered
+      # TEST_CTA: heroBanner
+      # TEST_PAGE: markets,forex
 
     steps:
       - uses: actions/checkout@v4
