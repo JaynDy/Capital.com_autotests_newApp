@@ -16,7 +16,7 @@ jobs:
         # suite: [markets, footer]
         license: [FCA]
         # license: [FCA, ASIC, CMA, SCB, CySEC]
-        user: [authorised]
+        user: [unauthorised, unregistered]
         # user: [authorised, unauthorised, unregistered]
         browser: [chromium]
 
