@@ -24,15 +24,9 @@ jobs:
       CI: true
       TEST_BROWSER: ${{ matrix.browser }}
       TEST_LICENSE: ${{ matrix.license }}
-      TEST_USER: ${{ matrix.user }}
+      # TEST_USER: ${{ matrix.user }}
       # TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
       # TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
-
-      # TEST_LICENSE: SCB
-      # TEST_LANG: de,zh
-      # TEST_USER: unauthorised,unregistered
-      # TEST_CTA: heroBanner
-      # TEST_PAGE: markets,forex
 
     steps:
       - uses: actions/checkout@v4
