@@ -15,8 +15,8 @@ export const riskWarningBlock = {
     licenseText: {
       locator: `#RW_bottom`,
       licenseText: {
-        SCB: ["SIA-F245"],
-        CySEC: ["HE 354252"],
+        SCB: ["F245"],
+        CySEC: ["354252"],
       },
       expectation: {
         authorised: "exist corresponding license",
@@ -51,7 +51,7 @@ export const riskWarningBlock = {
       },
     },
     complaintsProcedureLink: {
-      locator: `footer a[href*="/help/complaints"]`,
+      locator: `footer a[href*="/complaints"]`,
       locatorIndex: 1,
       expectation: {
         authorised: { type: "redirect", page: "complaints" },

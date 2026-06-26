@@ -33,7 +33,14 @@ export async function expectPageState(
       break;
 
     case "redirect": {
-      const pagePath = ctaRegistry[expectation.page].path;
+      const pageConfig = ctaRegistry[expectation.page].path;
+
+      // const pagePath = ctaRegistry[expectation.page].path;
+      const pagePath =
+        typeof pageConfig.path === "function"
+          ? pageConfig.path(currentLicense)
+          : pageConfig.path;
+
       const expectedURL = pagePath ? `${currentUrl}/${pagePath}` : currentUrl;
       await expect(page).toHaveURL(new RegExp(`${expectedURL}/?$`));
       break;
