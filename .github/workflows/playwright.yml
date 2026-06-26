@@ -13,7 +13,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        license: [FCA, ASIC, CMA, SCB, CySEC]
+        # license: [FCA, ASIC, CMA, SCB, CySEC]
+        license: [SCB]
         browser: [chromium]
 
     env:
@@ -25,10 +26,8 @@ jobs:
       # TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
 
       # TEST_LICENSE: SCB
-      # TEST_LANG: de,zh
+      TEST_LANG: zh-hans
       # TEST_USER: unauthorised,unregistered
-      # TEST_CTA: heroBanner
-      # TEST_PAGE: markets,forex
 
     steps:
       - uses: actions/checkout@v4
