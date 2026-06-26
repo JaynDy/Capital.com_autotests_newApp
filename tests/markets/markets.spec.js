@@ -18,12 +18,6 @@ for (const testCase of CTA_TEST_CASES) {
     const projectLicense = testInfo.project.use.licenseName;
     const projectLang = testInfo.project.use.lang;
 
-    // console.log({
-    //   projectLicense,
-    //   allowedLicenses: testCase.allowedLicenses,
-    //   allowedLanguages: testCase.allowedLanguages,
-    // });
-
     // SKIP by license
     test.skip(
       !isAllowed(projectLicense, testCase.allowedLicenses),
@@ -40,6 +34,47 @@ for (const testCase of CTA_TEST_CASES) {
     await marketPage.open(baseURL);
 
     // await marketPage.cta[testCase.sectionName].click(testCase.actionName);
+
+    // ===== DEBUG ONLY FOR SCB + zh-hans =====
+    if (projectLicense === "SCB" && projectLang === "zh-hans") {
+      console.log("================================");
+      console.log("TEST:", testCase.testName);
+      console.log("LICENSE:", projectLicense);
+      console.log("LANG:", projectLang);
+      console.log("USER:", projectUser);
+      console.log("URL AFTER OPEN:", page.url());
+      console.log("PAGE CLOSED:", page.isClosed());
+
+      try {
+        console.log("TITLE:", await page.title());
+      } catch (e) {
+        console.log("TITLE ERROR:", e.message);
+      }
+
+      try {
+        const bodyText = await page.locator("body").innerText();
+        console.log("BODY (first 1000 chars):", bodyText.slice(0, 1000));
+      } catch (e) {
+        console.log("BODY ERROR:", e.message);
+      }
+
+      try {
+        await page.screenshot({
+          path: `debug-${testInfo.project.name}.png`,
+          fullPage: true,
+        });
+
+        await fs.writeFile(
+          `debug-${testInfo.project.name}.html`,
+          await page.content(),
+        );
+      } catch (e) {
+        console.log("SCREENSHOT/HTML ERROR:", e.message);
+      }
+
+      console.log("================================");
+    }
+    // ========================================
 
     let component;
     let action;

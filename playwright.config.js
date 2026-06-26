@@ -37,8 +37,8 @@ export default defineConfig({
   ],
 
   use: {
-    headless: !!process.env.CI,
-    // headless: true, // NEW
+    // headless: !!process.env.CI,
+    headless: true, // NEW
     trace: "on-first-retry",
   },
 

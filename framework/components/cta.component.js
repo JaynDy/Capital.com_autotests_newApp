@@ -89,6 +89,10 @@ export class CTAComponent {
       locator = locator.nth(action.locatorIndex);
     }
 
+    console.log("ACTION:", actionName);
+    console.log("URL:", this.page.url());
+    console.log("PAGE CLOSED:", this.page.isClosed());
+
     const count = await locator.count();
     console.log(actionName, count);
 
