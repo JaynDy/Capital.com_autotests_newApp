@@ -17,7 +17,7 @@ jobs:
         license: [FCA, ASIC, CMA, SCB, CySEC]
         # license: [FCA, ASIC, CMA, SCB, CySEC]
         # user: [unauthorised, unregistered]
-        # user: [authorised, unauthorised, unregistered]
+        user: [authorised, unauthorised, unregistered]
         browser: [chromium]
 
     env:
@@ -30,7 +30,7 @@ jobs:
 
       # TEST_LICENSE: SCB
       # TEST_LANG: de,zh
-      TEST_USER: unauthorised,unregistered
+      # TEST_USER: unauthorised,unregistered
       # TEST_CTA: heroBanner
       # TEST_PAGE: markets,forex
 

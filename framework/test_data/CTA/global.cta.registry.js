@@ -7,8 +7,8 @@ export const globalCtaRegistry = {
     pages: ["main"],
 
     config: {
-      socialMediaBar,
-      regionalSettingsModalWindow,
+      // socialMediaBar,
+      // regionalSettingsModalWindow,
       riskWarningBlock,
     },
   },

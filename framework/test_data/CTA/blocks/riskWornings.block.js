@@ -34,6 +34,7 @@ export const riskWarningBlock = {
     },
     sitemapLink: {
       locator: `footer a[href*="/sitemap"]`,
+      optional: true, // ONLY SCB (MN,VI)
       expectation: {
         authorised: { type: "redirect", page: "sitemap" },
         unauthorised: { type: "redirect", page: "sitemap" },

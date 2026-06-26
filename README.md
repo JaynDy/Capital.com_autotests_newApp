@@ -410,7 +410,7 @@ TEST_LICENSE=ASIC TEST_BROWSER=chromium TEST_USER=unregistered TEST_CTA=footer n
 TEST_LICENSE=CMA TEST_BROWSER=chromium TEST_USER=unregistered TEST_CTA=footer npx playwright test +++
 // 23 = 4 skipped (no: reddit, facebook \* 2 lang) + 18 ((logo + 5 social icons + 3 app store) \* 2 lang) + 1 auth
 
-TEST_LICENSE=SCB TEST_BROWSER=chromium TEST_USER=unregistered TEST_CTA=footer npx playwright test +++
+TEST_LICENSE=SCB TEST_LANG=mn,vi TEST_BROWSER=chromium TEST_USER=unregistered TEST_CTA=footer npx playwright test +++
 // 111 = 10 skipped (no: youtube \* 10 lang) + 100 ((logo + 6 social icons + 3 app store) \* 10 lang) + 1 auth
 
 TEST_LICENSE=CYSEC TEST_BROWSER=chromium TEST_USER=unregistered TEST_CTA=footer npx playwright test +++
