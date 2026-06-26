@@ -1,0 +1,6 @@
+BASE URL: https://capital.com/vi-int
+PATH: markets
+sellBtn 1
+USER: unauthorised
+EXPtestCase.allowedLicenses &&ECTATION:  shows login form
+EXPECTATION ASSERTIONS shows login form

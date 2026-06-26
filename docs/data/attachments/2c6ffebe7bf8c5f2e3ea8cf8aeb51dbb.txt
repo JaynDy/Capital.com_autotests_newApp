@@ -1,0 +1,3 @@
+BASE URL: https://capital.com/fr-int
+PATH: markets/commodities
+tradedBtn 0

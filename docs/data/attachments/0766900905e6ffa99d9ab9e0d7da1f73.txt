@@ -1,0 +1,3 @@
+BASE URL: https://capital.com/ar-int
+PATH: markets/bonds
+tradedBtn 0

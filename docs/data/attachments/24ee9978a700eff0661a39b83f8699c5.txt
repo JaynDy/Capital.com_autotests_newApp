@@ -1,0 +1,8 @@
+BASE URL: https://capital.com/it-it
+PATH: markets/indices
+ACTION SETUP DONE: shortPositionGoToPlatformBtn
+URL: https://capital.com/it-it/markets/indices/us-tech-100-indice-1
+shortPositionGoToPlatformBtn 1
+USER: unauthorised
+EXPtestCase.allowedLicenses &&ECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

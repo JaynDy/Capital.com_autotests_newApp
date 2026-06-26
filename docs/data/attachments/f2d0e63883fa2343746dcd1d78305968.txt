@@ -1,0 +1,6 @@
+BASE URL: https://capital.com/es-int
+PATH: markets
+viewDetailedChartBtn 1
+USER: unauthorised
+EXPtestCase.allowedLicenses &&ECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

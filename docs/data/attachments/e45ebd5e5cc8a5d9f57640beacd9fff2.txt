@@ -1,0 +1,3 @@
+BASE URL: https://capital.com/ro-ro
+PATH: markets/shares
+signupBtn 0

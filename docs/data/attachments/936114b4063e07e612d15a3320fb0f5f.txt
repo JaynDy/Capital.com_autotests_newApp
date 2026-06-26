@@ -1,0 +1,6 @@
+BASE URL: https://capital.com/pl-pl
+PATH: about-us/how-our-markets-are-priced
+signupBtn 1
+USER: unauthorised
+EXPtestCase.allowedLicenses &&ECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

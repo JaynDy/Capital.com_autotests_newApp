@@ -1,0 +1,915 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: markets/markets.spec.js >> indices page | tradingInstrument | tradedBtn
+- Location: tests/markets/markets.spec.js:16:7
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: locator.waitFor: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('[data-type="wdg_most_traded_btn"]').first() to be visible
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e7]:
+      - text: Les CFD sont des instruments complexes et présentent un risque élevé de perte rapide en raison de l\'effet de levier.
+      - generic [ref=e8]:
+        - strong [ref=e9]: 78.48 % des comptes d’investisseurs particuliers perdent de l’argent en tradant des CFD avec ce fournisseur.
+        - text: Vous devez vous demander si vous comprenez le fonctionnement des CFD et si vous pouvez vous permettre de prendre le risque élevé de perdre votre argent.
+    - generic [ref=e11]:
+      - link [ref=e12] [cursor=pointer]:
+        - /url: /fr-int
+        - img [ref=e13]
+      - generic [ref=e18]:
+        - navigation [ref=e19]:
+          - button "Trading" [ref=e20]:
+            - button "Trading" [ref=e21]:
+              - generic [ref=e22]: Trading
+          - button "Marchés" [ref=e23]:
+            - button "Marchés" [ref=e24]:
+              - generic [ref=e25]: Marchés
+          - link "Tarification" [ref=e28] [cursor=pointer]:
+            - /url: /fr-int/ways-to-trade/fees-and-charges
+          - button "À propos de nous" [ref=e29]:
+            - button "À propos de nous" [ref=e30]:
+              - generic [ref=e31]: À propos de nous
+        - button "fr" [ref=e32] [cursor=pointer]:
+          - generic [ref=e34]: fr
+      - generic [ref=e36]:
+        - button "Se connecter" [ref=e37] [cursor=pointer]: Se connecter
+        - button "Ouvrir un compte" [ref=e38] [cursor=pointer]: Ouvrir un compte
+  - generic [ref=e39]:
+    - paragraph [ref=e42]:
+      - generic [ref=e43]:
+        - link "Accueil" [ref=e44] [cursor=pointer]:
+          - /url: /fr-int
+        - text: •
+      - generic [ref=e45]:
+        - link "Les marchés" [ref=e46] [cursor=pointer]:
+          - /url: /fr-int/markets
+        - text: •
+      - generic [ref=e47]:
+        - link "Indices" [ref=e48] [cursor=pointer]:
+          - /url: /fr-int/markets/indices
+        - text: •
+      - text: US Tech 100
+    - generic [ref=e49]:
+      - generic [ref=e52]:
+        - generic [ref=e54]:
+          - heading "Négociation US Tech 100 - US100 CFD" [level=1] [ref=e56]
+          - button "Ajouter aux favoris" [ref=e57] [cursor=pointer]: Ajouter aux favoris
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - generic [ref=e60]:
+              - generic [ref=e61]:
+                - strong [ref=e62]: "29895.1"
+                - generic [ref=e63]: +0.3%
+              - link [ref=e64] [cursor=pointer]:
+                - /url: ""
+            - generic [ref=e65]:
+              - generic [ref=e66]:
+                - generic [ref=e67]:
+                  - button "1 m" [ref=e68]
+                  - button "5 m" [ref=e69] [cursor=pointer]
+                  - button "15 m" [ref=e70] [cursor=pointer]
+                  - button "30 m" [ref=e71] [cursor=pointer]
+                  - button "1h" [ref=e72] [cursor=pointer]
+                  - button "4h" [ref=e73] [cursor=pointer]
+                  - button "1j" [ref=e74] [cursor=pointer]
+                  - button "1s" [ref=e75] [cursor=pointer]
+                - img [ref=e77]
+              - button "Voir le graphique détaillé" [ref=e78] [cursor=pointer]
+            - generic [ref=e79]:
+              - generic [ref=e80]:
+                - link "Vendre 29893.3" [ref=e81] [cursor=pointer]:
+                  - /url: /instrument?id=15839732013552836
+                  - text: Vendre
+                  - paragraph [ref=e82]: "29893.3"
+                - link "Acheter 29895.1" [ref=e83] [cursor=pointer]:
+                  - /url: /instrument?id=15839732013552836
+                  - text: Acheter
+                  - paragraph [ref=e84]: "29895.1"
+                - generic [ref=e85]: "1.8"
+              - generic [ref=e86]:
+                - generic [ref=e87]: "Bas: 28994.2"
+                - generic [ref=e88]: "Élevé: 29905"
+              - table [ref=e90]
+              - generic [ref=e91]:
+                - generic [ref=e92]:
+                  - generic [ref=e93]: "Vendeurs:"
+                  - generic [ref=e94]: 37.51%
+                - generic [ref=e95]:
+                  - generic [ref=e96]: "Acheteurs:"
+                  - generic [ref=e97]: 62.49%
+            - generic [ref=e98]:
+              - button "Heures de Trading du Marché (UTC)" [ref=e101]:
+                - generic [ref=e103] [cursor=pointer]:
+                  - paragraph [ref=e104]: Heures de Trading du Marché (UTC)
+                  - strong [ref=e105]: Ouvrir maintenant
+              - strong [ref=e107]: . Les cours des actions sont donnés à titre indicatif et peuvent différer des prix du marché en direct.
+          - generic [ref=e108]:
+            - generic [ref=e110]:
+              - button "Résumé" [ref=e111]: Résumé
+              - button "Données historiques" [ref=e112] [cursor=pointer]: Données historiques
+            - generic [ref=e116]:
+              - strong [ref=e117]: Conditions de trading
+              - table [ref=e118]:
+                - rowgroup [ref=e119]:
+                  - 'row "Type Ce marché financier est disponible pour le trading de CFD. En savoir plus sur : CFD CFD" [ref=e120]':
+                    - 'cell "Type Ce marché financier est disponible pour le trading de CFD. En savoir plus sur : CFD" [ref=e121]':
+                      - generic [ref=e122] [cursor=pointer]:
+                        - generic [ref=e124]: Type
+                        - generic [ref=e127]:
+                          - generic [ref=e128]: Ce marché financier est disponible pour le trading de CFD.
+                          - generic [ref=e129]:
+                            - generic [ref=e130]: "En savoir plus sur :"
+                            - link "CFD" [ref=e131]:
+                              - /url: /fr-int/ways-to-trade/cfd-trading
+                              - generic [ref=e132]: CFD
+                    - cell "CFD" [ref=e133]
+                  - row "Écart 1.8" [ref=e134]:
+                    - cell "Écart" [ref=e135]
+                    - cell "1.8" [ref=e136]
+                  - row "Frais de session nocturne pour une position longue Frais de session nocturne pour une position longue Marge. Votre investissement $1,000.00 Ajustement des fonds de overnight Frais sur la valeur totale de la position -0.021485 % (-$21.50) Taille de la position avec effet de levier ~$100,000.00 Valeur nominale avec effet de levier ~$99,000.00 Vers la plateforme -0.02149%" [ref=e137]:
+                    - cell "Frais de session nocturne pour une position longue Frais de session nocturne pour une position longue Marge. Votre investissement $1,000.00 Ajustement des fonds de overnight Frais sur la valeur totale de la position -0.021485 % (-$21.50) Taille de la position avec effet de levier ~$100,000.00 Valeur nominale avec effet de levier ~$99,000.00 Vers la plateforme" [ref=e138]:
+                      - generic [ref=e139] [cursor=pointer]:
+                        - generic [ref=e141]: Frais de session nocturne pour une position longue
+                        - generic [ref=e143]:
+                          - strong [ref=e144]: Frais de session nocturne pour une position longue
+                          - table [ref=e146]
+                          - separator [ref=e147]
+                          - generic [ref=e148]:
+                            - table [ref=e149]:
+                              - rowgroup [ref=e150]:
+                                - row "Marge. Votre investissement $1,000.00" [ref=e151]:
+                                  - cell "Marge. Votre investissement" [ref=e152]:
+                                    - generic [ref=e153]: Marge. Votre investissement
+                                  - cell "$1,000.00" [ref=e155]
+                                - row "Ajustement des fonds de overnight Frais sur la valeur totale de la position -0.021485 % (-$21.50)" [ref=e156]:
+                                  - cell "Ajustement des fonds de overnight Frais sur la valeur totale de la position" [ref=e157]:
+                                    - generic [ref=e158]:
+                                      - text: Ajustement des fonds de overnight
+                                      - generic [ref=e160]: Frais sur la valeur totale de la position
+                                  - cell "-0.021485 % (-$21.50)" [ref=e161]:
+                                    - generic [ref=e162]: "-0.021485 %"
+                                    - generic [ref=e163]: (-$21.50)
+                            - paragraph [ref=e164]:
+                              - strong [ref=e165]: Taille de la position avec effet de levier ~$100,000.00
+                            - paragraph [ref=e166]:
+                              - strong [ref=e167]: Valeur nominale avec effet de levier ~$99,000.00
+                          - separator [ref=e168]
+                          - link "Vers la plateforme" [ref=e170]:
+                            - /url: ""
+                            - generic [ref=e171]: Vers la plateforme
+                    - cell "-0.02149%" [ref=e172]:
+                      - generic [ref=e173]: "-0.02149%"
+                  - row "Frais de session nocturne pour une position courte Frais de session nocturne pour une position courte Marge. Votre investissement $1,000.00 Ajustement des fonds de overnight Frais sur la valeur totale de la position -0.000738 % (-$0.70) Taille de la position avec effet de levier ~$100,000.00 Valeur nominale avec effet de levier ~$99,000.00 Vers la plateforme -0.00074%" [ref=e174]:
+                    - cell "Frais de session nocturne pour une position courte Frais de session nocturne pour une position courte Marge. Votre investissement $1,000.00 Ajustement des fonds de overnight Frais sur la valeur totale de la position -0.000738 % (-$0.70) Taille de la position avec effet de levier ~$100,000.00 Valeur nominale avec effet de levier ~$99,000.00 Vers la plateforme" [ref=e175]:
+                      - generic [ref=e176] [cursor=pointer]:
+                        - generic [ref=e178]: Frais de session nocturne pour une position courte
+                        - generic [ref=e180]:
+                          - strong [ref=e181]: Frais de session nocturne pour une position courte
+                          - table [ref=e183]
+                          - separator [ref=e184]
+                          - generic [ref=e185]:
+                            - table [ref=e186]:
+                              - rowgroup [ref=e187]:
+                                - row "Marge. Votre investissement $1,000.00" [ref=e188]:
+                                  - cell "Marge. Votre investissement" [ref=e189]:
+                                    - generic [ref=e190]: Marge. Votre investissement
+                                  - cell "$1,000.00" [ref=e192]
+                                - row "Ajustement des fonds de overnight Frais sur la valeur totale de la position -0.000738 % (-$0.70)" [ref=e193]:
+                                  - cell "Ajustement des fonds de overnight Frais sur la valeur totale de la position" [ref=e194]:
+                                    - generic [ref=e195]:
+                                      - text: Ajustement des fonds de overnight
+                                      - generic [ref=e197]: Frais sur la valeur totale de la position
+                                  - cell "-0.000738 % (-$0.70)" [ref=e198]:
+                                    - generic [ref=e199]: "-0.000738 %"
+                                    - generic [ref=e200]: (-$0.70)
+                            - paragraph [ref=e201]:
+                              - strong [ref=e202]: Taille de la position avec effet de levier ~$100,000.00
+                            - paragraph [ref=e203]:
+                              - strong [ref=e204]: Valeur nominale avec effet de levier ~$99,000.00
+                          - separator [ref=e205]
+                          - link "Vers la plateforme" [ref=e207]:
+                            - /url: ""
+                            - generic [ref=e208]: Vers la plateforme
+                    - cell "-0.00074%" [ref=e209]:
+                      - generic [ref=e210]: "-0.00074%"
+                  - row "Horaires des frais de session nocturne 21:00 (UTC)" [ref=e211]:
+                    - cell "Horaires des frais de session nocturne" [ref=e212]
+                    - cell "21:00 (UTC)" [ref=e213]
+                  - row "Devise USD" [ref=e214]:
+                    - cell "Devise" [ref=e215]
+                    - cell "USD" [ref=e216]
+                  - row "Quantité minimale négociée 0.001" [ref=e217]:
+                    - cell "Quantité minimale négociée" [ref=e218]
+                    - cell "0.001" [ref=e219]
+                  - row "Marge 1.00%" [ref=e220]:
+                    - cell "Marge" [ref=e221]
+                    - cell "1.00%" [ref=e222]:
+                      - generic [ref=e223]: 1.00%
+                  - row "Bourse" [ref=e224]:
+                    - cell "Bourse" [ref=e225]
+                    - cell [ref=e226]
+                  - row "Commission sur trade1 0%" [ref=e227]:
+                    - cell "Commission sur trade1" [ref=e228]:
+                      - text: Commission sur trade
+                      - superscript [ref=e229]: "1"
+                    - cell "0%" [ref=e230]
+                  - row "Prime de stop garanti Des frais de stop-loss garanti (SLG) ne sont facturés que si le SLG est déclenché. Veuillez consulter la section 'Tarifs et Frais de notre site web pour plus de détails. 0.02%" [ref=e231]:
+                    - cell "Prime de stop garanti Des frais de stop-loss garanti (SLG) ne sont facturés que si le SLG est déclenché. Veuillez consulter la section 'Tarifs et Frais de notre site web pour plus de détails." [ref=e232]:
+                      - generic [ref=e233] [cursor=pointer]:
+                        - generic [ref=e235]: Prime de stop garanti
+                        - generic [ref=e238]:
+                          - text: Des frais de stop-loss garanti (SLG) ne sont facturés que si le SLG est déclenché. Veuillez consulter la section
+                          - link "'Tarifs et Frais" [ref=e239]:
+                            - /url: /fr-int/ways-to-trade/fees-and-charges
+                          - text: de notre site web pour plus de détails.
+                    - cell "0.02%" [ref=e240]:
+                      - generic [ref=e241]: 0.02%
+              - paragraph [ref=e242]:
+                - generic [ref=e243]:
+                  - superscript [ref=e244]: "1"
+                  - text: Notre rémunération pour l’exécution de votre trade correspond au spread, soit la différence entre le prix d’achat et le prix de vente. Veuillez consulter la section
+                  - link "Frais et Commissions" [ref=e245] [cursor=pointer]:
+                    - /url: https://capital.com/fr-int/ways-to-trade/fees-and-charges
+                  - text: sur notre site internet pour plus d’informations
+      - generic [ref=e247]:
+        - main [ref=e248]:
+          - heading "Négociation US Tech 100 - US100 CFD" [level=2] [ref=e251]
+          - generic [ref=e253]:
+            - generic [ref=e254]:
+              - strong
+            - generic [ref=e256]:
+              - generic [ref=e257]:
+                - generic [ref=e259]:
+                  - generic [ref=e260]: Reuters News
+                  - generic [ref=e261]: •
+                  - generic [ref=e262]: Europe
+                - link "MARCHÉS BOURSIERS AMÉRICAINS-Les contrats à terme sur le Nasdaq bondissent de 2 % alors que les prévisions de Micron et Qualcomm rassurent les investisseurs" [ref=e263] [cursor=pointer]:
+                  - /url: /fr-int/news/marches-boursiers-americains-les-contrats-a-terme-sur-le-nasdaq-bondissent
+                  - strong [ref=e264]: MARCHÉS BOURSIERS AMÉRICAINS-Les contrats à terme sur le Nasdaq bondissent de 2 % alors que les prévisions de Micron et Qualcomm rassurent les investisseurs
+              - generic [ref=e265]:
+                - generic [ref=e267]:
+                  - generic [ref=e268]: Reuters News
+                  - generic [ref=e269]: •
+                  - generic [ref=e270]: Europe
+                - link "MARCHÉS BOURSIERS AMÉRICAINS-Le Nasdaq et le S&P terminent en baisse en raison du recul des valeurs technologiques" [ref=e271] [cursor=pointer]:
+                  - /url: /fr-int/news/marches-boursiers-americains-le-nasdaq-et-le-s-p-terminent-en-baisse
+                  - strong [ref=e272]: MARCHÉS BOURSIERS AMÉRICAINS-Le Nasdaq et le S&P terminent en baisse en raison du recul des valeurs technologiques
+              - generic [ref=e273]:
+                - generic [ref=e275]:
+                  - generic [ref=e276]: Reuters News
+                  - generic [ref=e277]: •
+                  - generic [ref=e278]: Europe
+                - link "MARCHÉS BOURSIERS AMÉRICAINS-Le Nasdaq et le S&P reculent, les échanges sont agités en raison de la baisse des valeurs technologiques" [ref=e279] [cursor=pointer]:
+                  - /url: /fr-int/news/marches-boursiers-americains-le-nasdaq-et-le-s-p-reculent-les-echanges
+                  - strong [ref=e280]: MARCHÉS BOURSIERS AMÉRICAINS-Le Nasdaq et le S&P reculent, les échanges sont agités en raison de la baisse des valeurs technologiques
+              - generic [ref=e281]:
+                - generic [ref=e283]:
+                  - generic [ref=e284]: Reuters News
+                  - generic [ref=e285]: •
+                  - generic [ref=e286]: Europe
+                - link "MARCHÉS BOURSIERS AMÉRICAINS-Wall Street rebondit avec des hausses généralisées alors que le prix du pétrole chute fortement" [ref=e287] [cursor=pointer]:
+                  - /url: /fr-int/news/marches-boursiers-americains-wall-street-rebondit-avec-des-hausses-generalisees-alors
+                  - strong [ref=e288]: MARCHÉS BOURSIERS AMÉRICAINS-Wall Street rebondit avec des hausses généralisées alors que le prix du pétrole chute fortement
+              - generic [ref=e289]:
+                - generic [ref=e291]:
+                  - generic [ref=e292]: Reuters News
+                  - generic [ref=e293]: •
+                  - generic [ref=e294]: Europe
+                - link "MARCHÉS BOURSIERS AMÉRICAINS-Le S&P 500 et le Nasdaq progressent dans un marché agité, alors que le secteur technologique se stabilise et que les résultats de Micron sont au centre de l'attention" [ref=e295] [cursor=pointer]:
+                  - /url: /fr-int/news/marches-boursiers-americains-le-s-p-500-et-le-nasdaq-progressent-dans
+                  - strong [ref=e296]: MARCHÉS BOURSIERS AMÉRICAINS-Le S&P 500 et le Nasdaq progressent dans un marché agité, alors que le secteur technologique se stabilise et que les résultats de Micron sont au centre de l'attention
+              - generic [ref=e297]:
+                - generic [ref=e299]:
+                  - generic [ref=e300]: Reuters News
+                  - generic [ref=e301]: •
+                  - generic [ref=e302]: Europe
+                - link "MARCHÉS BOURSIERS AMÉRICAINS-Wall Street devrait ouvrir en hausse grâce au rebond du secteur technologique ; les résultats de Micron sont attendus avec impatience" [ref=e303] [cursor=pointer]:
+                  - /url: /fr-int/news/marches-boursiers-americains-wall-street-devrait-ouvrir-en-hausse-grace-au
+                  - strong [ref=e304]: MARCHÉS BOURSIERS AMÉRICAINS-Wall Street devrait ouvrir en hausse grâce au rebond du secteur technologique ; les résultats de Micron sont attendus avec impatience
+              - generic [ref=e305]:
+                - generic [ref=e306]:
+                  - generic [ref=e307]:
+                    - generic [ref=e308]: Reuters News
+                    - generic [ref=e309]: •
+                    - generic [ref=e310]: Europe
+                  - generic [ref=e311]: 09:37 (UTC), 18 Juin 2026
+                - link "MARCHÉS BOURSIERS AMÉRICAINS-Les contrats à terme de Wall Street rebondissent, l'optimisme autour de l'accord entre les États-Unis et l'Iran contrebalançant la position restrictive de la Fed ; Intel en hausse" [ref=e312] [cursor=pointer]:
+                  - /url: /fr-int/news/marches-boursiers-americains-les-contrats-a-terme-de-wall-street-rebondissent
+                  - strong [ref=e313]: MARCHÉS BOURSIERS AMÉRICAINS-Les contrats à terme de Wall Street rebondissent, l'optimisme autour de l'accord entre les États-Unis et l'Iran contrebalançant la position restrictive de la Fed ; Intel en hausse
+              - generic [ref=e314]:
+                - generic [ref=e315]:
+                  - generic [ref=e316]:
+                    - generic [ref=e317]: Reuters News
+                    - generic [ref=e318]: •
+                    - generic [ref=e319]: Europe
+                  - generic [ref=e320]: 13:13 (UTC), 16 Juin 2026
+                - link "MARCHÉS BOURSIERS AMÉRICAINS-Wall Street devrait ouvrir en demi-teinte dans l'attente de la décision de la Fed" [ref=e321] [cursor=pointer]:
+                  - /url: /fr-int/news/marches-boursiers-americains-wall-street-devrait-ouvrir-en-demi-teinte-dans-l-attente
+                  - strong [ref=e322]: MARCHÉS BOURSIERS AMÉRICAINS-Wall Street devrait ouvrir en demi-teinte dans l'attente de la décision de la Fed
+              - generic [ref=e323]:
+                - generic [ref=e324]:
+                  - generic [ref=e325]:
+                    - generic [ref=e326]: Reuters News
+                    - generic [ref=e327]: •
+                    - generic [ref=e328]: Europe
+                  - generic [ref=e329]: 10:37 (UTC), 15 Juin 2026
+                - link "OFFRE DU MATIN - AMÉRIQUES-« Que le pétrole coule à flots »" [ref=e330] [cursor=pointer]:
+                  - /url: /fr-int/news/offre-du-matin-ameriques-que-le-petrole-coule-a
+                  - strong [ref=e331]: OFFRE DU MATIN - AMÉRIQUES-« Que le pétrole coule à flots »
+              - generic [ref=e332]:
+                - generic [ref=e333]:
+                  - generic [ref=e334]:
+                    - generic [ref=e335]: Reuters News
+                    - generic [ref=e336]: •
+                    - generic [ref=e337]: Europe
+                  - generic [ref=e338]: 10:01 (UTC), 15 Juin 2026
+                - link "Quelle sera la prochaine étape pour l'action SpaceX après son entrée en bourse ?" [ref=e339] [cursor=pointer]:
+                  - /url: /fr-int/news/quelle-sera-la-prochaine-etape-pour-l-action-spacex-apres-son
+                  - strong [ref=e340]: Quelle sera la prochaine étape pour l'action SpaceX après son entrée en bourse ?
+        - complementary [ref=e341]
+      - generic [ref=e342]:
+        - generic [ref=e343]:
+          - generic [ref=e345]:
+            - heading "Avis et évaluations des utilisateurs" [level=2] [ref=e346]
+            - generic [ref=e347]: Consultez les commentaires de nos clients, quel que soit leur niveau d'expérience.
+          - generic [ref=e348]:
+            - region [ref=e349]:
+              - generic [ref=e351]:
+                - group [ref=e352]:
+                  - link [ref=e353] [cursor=pointer]:
+                    - /url: https://www.tradingview.com/broker/Capitalcom/
+                    - generic [ref=e356]: 2025-07-02
+                    - strong [ref=e357]: a****************
+                    - paragraph [ref=e359]: Très bonne app s'agissant du Trading , c'est app est fiable et meme conseillé par les tradeur eux meme
+                - group [ref=e361]:
+                  - link [ref=e362] [cursor=pointer]:
+                    - /url: https://www.tradingview.com/broker/Capitalcom/
+                    - generic [ref=e365]: 2025-06-29
+                    - strong [ref=e366]: b*********
+                    - paragraph [ref=e368]: Une bonne plateforme, répond à toutes mes exigences, une seule demande lors du retrait d'argent d'un compte de trading, j'aimerais le recevoir sur une carte bancaire plus rapidement, mais dans l'ensemble je suis satisfait.
+                - group [ref=e370]:
+                  - link [ref=e371] [cursor=pointer]:
+                    - /url: https://app.appsflyer.com/com.capital.trading
+                    - generic [ref=e374]: 2025-06-26
+                    - strong [ref=e375]: G*****
+                    - paragraph [ref=e377]: En bourse depuis plus de 20 ans et perdu une fortune. Ici chez Capital, je ressens que je pourrai récupérer une partie grâce à l' outil qui me plaît, et l' accueil vraiment bien Les "robots" sont super accueillants et nous placent dans une position d' un avenir sympathique possible.
+                - group [ref=e379]:
+                  - link [ref=e380] [cursor=pointer]:
+                    - /url: https://www.tradingview.com/broker/Capitalcom/
+                    - generic [ref=e383]: 2025-06-26
+                    - strong [ref=e384]: t***********
+                    - paragraph [ref=e386]: "Trop bien pour les débutants qui veulent se lancer dans le trading. Les spread son raisonnable et la plate-forme et facile d'accès et d'utilisation. Merci à capital.com pour tout ce qu'il a mis en place pour les débutants. Ex: cours de trading Merci infiniment."
+                - group [ref=e388]:
+                  - link [ref=e389] [cursor=pointer]:
+                    - /url: https://www.trustpilot.com/review/capital.com
+                    - generic [ref=e392]: 2025-06-10
+                    - strong [ref=e393]: A******** F*******
+                    - paragraph [ref=e395]: Bonjour je tenais vraiment a remercier le service client qui est actif et qui aide vraiment quand vous faites une erreur, a toute les personnes qui hésite, je vous le recommande a 100%. Un courtier très fiable et digne de cette 5 étoiles
+                - group [ref=e397]:
+                  - link [ref=e398] [cursor=pointer]:
+                    - /url: https://www.tradingview.com/broker/Capitalcom/
+                    - generic [ref=e401]: 2025-06-09
+                    - strong [ref=e402]: m**********
+                    - paragraph [ref=e404]: Très facile d’utilisation, service client impeccable pas de prise de tête, je n’ai pas rencontré de problème pour ma part depuis le début...
+                - group [ref=e406]:
+                  - link [ref=e407] [cursor=pointer]:
+                    - /url: https://www.tradingview.com/broker/Capitalcom/
+                    - generic [ref=e410]: 2025-06-15
+                    - strong [ref=e411]: s*******E**********
+                    - paragraph [ref=e413]: tres bien une fois bien pris en main. il manque un outil important pour valider l'étude, le market profil avec l'intégralité de ses paramètres modifiable comme son heure d'ouverture pour le près marché à 14h30 etc
+                - group [ref=e415]:
+                  - link [ref=e416] [cursor=pointer]:
+                    - /url: https://www.tradingview.com/broker/Capitalcom/
+                    - generic [ref=e419]: 2025-05-29
+                    - strong [ref=e420]: s*****
+                    - paragraph [ref=e422]: C'est vraiment un très bon brokers hyper simple à manipuler
+                - group [ref=e424]:
+                  - link [ref=e425] [cursor=pointer]:
+                    - /url: https://www.tradingview.com/broker/Capitalcom/
+                    - generic [ref=e428]: 2025-05-25
+                    - strong [ref=e429]: y********i*********D******
+                    - paragraph [ref=e431]: Je recommande vivement Capital.com pour la qualité de son service de courtage. L’interface est claire, rapide, et facile à utiliser, idéale autant pour les débutants que pour les traders expérimentés. Le service client est réactif et professionnel, et les spreads sont très compétitifs. Un broker fiable, transparent, et efficace. Très satisfait de mon expérience jusqu’à présent ! ✅
+                - group [ref=e433]:
+                  - link [ref=e434] [cursor=pointer]:
+                    - /url: https://app.appsflyer.com/com.capital.trading
+                    - generic [ref=e437]: 2025-05-12
+                    - strong [ref=e438]: N*****
+                    - paragraph [ref=e440]: j'ai mis longtemps a faire impeux d'argent mais maintenant c'est bon. je recommande pour toute les personnes super appli
+                - group [ref=e442]:
+                  - link [ref=e443] [cursor=pointer]:
+                    - /url: https://www.trustpilot.com/review/capital.com
+                    - generic [ref=e446]: 2025-04-11
+                    - strong [ref=e447]: F*****
+                    - paragraph [ref=e449]: Bonne interface compréhensible et userfriendly. Facile à utiliser. Les actualités sont biens aussi.
+                - group [ref=e451]:
+                  - link [ref=e452] [cursor=pointer]:
+                    - /url: https://www.trustpilot.com/review/capital.com
+                    - generic [ref=e455]: 2025-01-21
+                    - strong [ref=e456]: A**** C******
+                    - paragraph [ref=e458]: Très bon service, rapide et à l’écoute de tout, j’ai eu un soucis de banque il m’ont très bien indiquer ce que je devais faire et tout est rentré dans l’ordre
+                - group [ref=e460]:
+                  - link [ref=e461] [cursor=pointer]:
+                    - /url: https://app.appsflyer.com/com.capital.trading
+                    - generic [ref=e464]: 2025-01-02
+                    - strong [ref=e465]: J B G*****
+                    - paragraph [ref=e467]: Pas de problème pour moi , cash out rapide . à voir dans le temps. satisfait
+                - group "1 of 13" [ref=e469]:
+                  - link "2025-07-02 a**************** Très bonne app s'agissant du Trading , c'est app est fiable et meme conseillé par les tradeur eux meme" [ref=e470] [cursor=pointer]:
+                    - /url: https://www.tradingview.com/broker/Capitalcom/
+                    - generic [ref=e473]: 2025-07-02
+                    - strong [ref=e474]: a****************
+                    - paragraph [ref=e476]: Très bonne app s'agissant du Trading , c'est app est fiable et meme conseillé par les tradeur eux meme
+                - group "2 of 13" [ref=e478]:
+                  - link "2025-06-29 b********* Une bonne plateforme, répond à toutes mes exigences, une seule demande lors du retrait d'argent d'un compte de trading, j'aimerais le recevoir sur une carte bancaire plus rapidement, mais dans l'ensemble je suis satisfait." [ref=e479] [cursor=pointer]:
+                    - /url: https://www.tradingview.com/broker/Capitalcom/
+                    - generic [ref=e482]: 2025-06-29
+                    - strong [ref=e483]: b*********
+                    - paragraph [ref=e485]: Une bonne plateforme, répond à toutes mes exigences, une seule demande lors du retrait d'argent d'un compte de trading, j'aimerais le recevoir sur une carte bancaire plus rapidement, mais dans l'ensemble je suis satisfait.
+                - group "3 of 13" [ref=e487]:
+                  - link "2025-06-26 G***** En bourse depuis plus de 20 ans et perdu une fortune. Ici chez Capital, je ressens que je pourrai récupérer une partie grâce à l' outil qui me plaît, et l' accueil vraiment bien Les \"robots\" sont super accueillants et nous placent dans une position d' un avenir sympathique possible." [ref=e488] [cursor=pointer]:
+                    - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=83673749-91a6-4d9e-a69b-8acfb8c8551e&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                    - generic [ref=e491]: 2025-06-26
+                    - strong [ref=e492]: G*****
+                    - paragraph [ref=e494]: En bourse depuis plus de 20 ans et perdu une fortune. Ici chez Capital, je ressens que je pourrai récupérer une partie grâce à l' outil qui me plaît, et l' accueil vraiment bien Les "robots" sont super accueillants et nous placent dans une position d' un avenir sympathique possible.
+                - group [ref=e496]:
+                  - link [ref=e497] [cursor=pointer]:
+                    - /url: https://www.tradingview.com/broker/Capitalcom/
+                    - generic [ref=e500]: 2025-06-26
+                    - strong [ref=e501]: t***********
+                    - paragraph [ref=e503]: "Trop bien pour les débutants qui veulent se lancer dans le trading. Les spread son raisonnable et la plate-forme et facile d'accès et d'utilisation. Merci à capital.com pour tout ce qu'il a mis en place pour les débutants. Ex: cours de trading Merci infiniment."
+                - group [ref=e505]:
+                  - link [ref=e506] [cursor=pointer]:
+                    - /url: https://www.trustpilot.com/review/capital.com
+                    - generic [ref=e509]: 2025-06-10
+                    - strong [ref=e510]: A******** F*******
+                    - paragraph [ref=e512]: Bonjour je tenais vraiment a remercier le service client qui est actif et qui aide vraiment quand vous faites une erreur, a toute les personnes qui hésite, je vous le recommande a 100%. Un courtier très fiable et digne de cette 5 étoiles
+                - group [ref=e514]:
+                  - link [ref=e515] [cursor=pointer]:
+                    - /url: https://www.tradingview.com/broker/Capitalcom/
+                    - generic [ref=e518]: 2025-06-09
+                    - strong [ref=e519]: m**********
+                    - paragraph [ref=e521]: Très facile d’utilisation, service client impeccable pas de prise de tête, je n’ai pas rencontré de problème pour ma part depuis le début...
+                - group [ref=e523]:
+                  - link [ref=e524] [cursor=pointer]:
+                    - /url: https://www.tradingview.com/broker/Capitalcom/
+                    - generic [ref=e527]: 2025-06-15
+                    - strong [ref=e528]: s*******E**********
+                    - paragraph [ref=e530]: tres bien une fois bien pris en main. il manque un outil important pour valider l'étude, le market profil avec l'intégralité de ses paramètres modifiable comme son heure d'ouverture pour le près marché à 14h30 etc
+                - group [ref=e532]:
+                  - link [ref=e533] [cursor=pointer]:
+                    - /url: https://www.tradingview.com/broker/Capitalcom/
+                    - generic [ref=e536]: 2025-05-29
+                    - strong [ref=e537]: s*****
+                    - paragraph [ref=e539]: C'est vraiment un très bon brokers hyper simple à manipuler
+                - group [ref=e541]:
+                  - link [ref=e542] [cursor=pointer]:
+                    - /url: https://www.tradingview.com/broker/Capitalcom/
+                    - generic [ref=e545]: 2025-05-25
+                    - strong [ref=e546]: y********i*********D******
+                    - paragraph [ref=e548]: Je recommande vivement Capital.com pour la qualité de son service de courtage. L’interface est claire, rapide, et facile à utiliser, idéale autant pour les débutants que pour les traders expérimentés. Le service client est réactif et professionnel, et les spreads sont très compétitifs. Un broker fiable, transparent, et efficace. Très satisfait de mon expérience jusqu’à présent ! ✅
+                - group [ref=e550]:
+                  - link [ref=e551] [cursor=pointer]:
+                    - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=83673749-91a6-4d9e-a69b-8acfb8c8551e&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                    - generic [ref=e554]: 2025-05-12
+                    - strong [ref=e555]: N*****
+                    - paragraph [ref=e557]: j'ai mis longtemps a faire impeux d'argent mais maintenant c'est bon. je recommande pour toute les personnes super appli
+                - group [ref=e559]:
+                  - link [ref=e560] [cursor=pointer]:
+                    - /url: https://www.trustpilot.com/review/capital.com
+                    - generic [ref=e563]: 2025-04-11
+                    - strong [ref=e564]: F*****
+                    - paragraph [ref=e566]: Bonne interface compréhensible et userfriendly. Facile à utiliser. Les actualités sont biens aussi.
+                - group [ref=e568]:
+                  - link [ref=e569] [cursor=pointer]:
+                    - /url: https://www.trustpilot.com/review/capital.com
+                    - generic [ref=e572]: 2025-01-21
+                    - strong [ref=e573]: A**** C******
+                    - paragraph [ref=e575]: Très bon service, rapide et à l’écoute de tout, j’ai eu un soucis de banque il m’ont très bien indiquer ce que je devais faire et tout est rentré dans l’ordre
+                - group [ref=e577]:
+                  - link [ref=e578] [cursor=pointer]:
+                    - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=83673749-91a6-4d9e-a69b-8acfb8c8551e&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                    - generic [ref=e581]: 2025-01-02
+                    - strong [ref=e582]: J B G*****
+                    - paragraph [ref=e584]: Pas de problème pour moi , cash out rapide . à voir dans le temps. satisfait
+                - group [ref=e586]:
+                  - link [ref=e587] [cursor=pointer]:
+                    - /url: https://www.tradingview.com/broker/Capitalcom/
+                    - generic [ref=e590]: 2025-07-02
+                    - strong [ref=e591]: a****************
+                    - paragraph [ref=e593]: Très bonne app s'agissant du Trading , c'est app est fiable et meme conseillé par les tradeur eux meme
+                - group [ref=e595]:
+                  - link [ref=e596] [cursor=pointer]:
+                    - /url: https://www.tradingview.com/broker/Capitalcom/
+                    - generic [ref=e599]: 2025-06-29
+                    - strong [ref=e600]: b*********
+                    - paragraph [ref=e602]: Une bonne plateforme, répond à toutes mes exigences, une seule demande lors du retrait d'argent d'un compte de trading, j'aimerais le recevoir sur une carte bancaire plus rapidement, mais dans l'ensemble je suis satisfait.
+                - group [ref=e604]:
+                  - link [ref=e605] [cursor=pointer]:
+                    - /url: https://app.appsflyer.com/com.capital.trading
+                    - generic [ref=e608]: 2025-06-26
+                    - strong [ref=e609]: G*****
+                    - paragraph [ref=e611]: En bourse depuis plus de 20 ans et perdu une fortune. Ici chez Capital, je ressens que je pourrai récupérer une partie grâce à l' outil qui me plaît, et l' accueil vraiment bien Les "robots" sont super accueillants et nous placent dans une position d' un avenir sympathique possible.
+                - group [ref=e613]:
+                  - link [ref=e614] [cursor=pointer]:
+                    - /url: https://www.tradingview.com/broker/Capitalcom/
+                    - generic [ref=e617]: 2025-06-26
+                    - strong [ref=e618]: t***********
+                    - paragraph [ref=e620]: "Trop bien pour les débutants qui veulent se lancer dans le trading. Les spread son raisonnable et la plate-forme et facile d'accès et d'utilisation. Merci à capital.com pour tout ce qu'il a mis en place pour les débutants. Ex: cours de trading Merci infiniment."
+                - group [ref=e622]:
+                  - link [ref=e623] [cursor=pointer]:
+                    - /url: https://www.trustpilot.com/review/capital.com
+                    - generic [ref=e626]: 2025-06-10
+                    - strong [ref=e627]: A******** F*******
+                    - paragraph [ref=e629]: Bonjour je tenais vraiment a remercier le service client qui est actif et qui aide vraiment quand vous faites une erreur, a toute les personnes qui hésite, je vous le recommande a 100%. Un courtier très fiable et digne de cette 5 étoiles
+                - group [ref=e631]:
+                  - link [ref=e632] [cursor=pointer]:
+                    - /url: https://www.tradingview.com/broker/Capitalcom/
+                    - generic [ref=e635]: 2025-06-09
+                    - strong [ref=e636]: m**********
+                    - paragraph [ref=e638]: Très facile d’utilisation, service client impeccable pas de prise de tête, je n’ai pas rencontré de problème pour ma part depuis le début...
+                - group [ref=e640]:
+                  - link [ref=e641] [cursor=pointer]:
+                    - /url: https://www.tradingview.com/broker/Capitalcom/
+                    - generic [ref=e644]: 2025-06-15
+                    - strong [ref=e645]: s*******E**********
+                    - paragraph [ref=e647]: tres bien une fois bien pris en main. il manque un outil important pour valider l'étude, le market profil avec l'intégralité de ses paramètres modifiable comme son heure d'ouverture pour le près marché à 14h30 etc
+                - group [ref=e649]:
+                  - link [ref=e650] [cursor=pointer]:
+                    - /url: https://www.tradingview.com/broker/Capitalcom/
+                    - generic [ref=e653]: 2025-05-29
+                    - strong [ref=e654]: s*****
+                    - paragraph [ref=e656]: C'est vraiment un très bon brokers hyper simple à manipuler
+                - group [ref=e658]:
+                  - link [ref=e659] [cursor=pointer]:
+                    - /url: https://www.tradingview.com/broker/Capitalcom/
+                    - generic [ref=e662]: 2025-05-25
+                    - strong [ref=e663]: y********i*********D******
+                    - paragraph [ref=e665]: Je recommande vivement Capital.com pour la qualité de son service de courtage. L’interface est claire, rapide, et facile à utiliser, idéale autant pour les débutants que pour les traders expérimentés. Le service client est réactif et professionnel, et les spreads sont très compétitifs. Un broker fiable, transparent, et efficace. Très satisfait de mon expérience jusqu’à présent ! ✅
+                - group [ref=e667]:
+                  - link [ref=e668] [cursor=pointer]:
+                    - /url: https://app.appsflyer.com/com.capital.trading
+                    - generic [ref=e671]: 2025-05-12
+                    - strong [ref=e672]: N*****
+                    - paragraph [ref=e674]: j'ai mis longtemps a faire impeux d'argent mais maintenant c'est bon. je recommande pour toute les personnes super appli
+                - group [ref=e676]:
+                  - link [ref=e677] [cursor=pointer]:
+                    - /url: https://www.trustpilot.com/review/capital.com
+                    - generic [ref=e680]: 2025-04-11
+                    - strong [ref=e681]: F*****
+                    - paragraph [ref=e683]: Bonne interface compréhensible et userfriendly. Facile à utiliser. Les actualités sont biens aussi.
+                - group [ref=e685]:
+                  - link [ref=e686] [cursor=pointer]:
+                    - /url: https://www.trustpilot.com/review/capital.com
+                    - generic [ref=e689]: 2025-01-21
+                    - strong [ref=e690]: A**** C******
+                    - paragraph [ref=e692]: Très bon service, rapide et à l’écoute de tout, j’ai eu un soucis de banque il m’ont très bien indiquer ce que je devais faire et tout est rentré dans l’ordre
+                - group [ref=e694]:
+                  - link [ref=e695] [cursor=pointer]:
+                    - /url: https://app.appsflyer.com/com.capital.trading
+                    - generic [ref=e698]: 2025-01-02
+                    - strong [ref=e699]: J B G*****
+                    - paragraph [ref=e701]: Pas de problème pour moi , cash out rapide . à voir dans le temps. satisfait
+              - generic:
+                - button "Go to last slide" [ref=e703] [cursor=pointer]
+                - button "Next slide" [ref=e704] [cursor=pointer]
+            - paragraph [ref=e705]: Affichage de nos avis 4 et 5 étoiles. Les détails spécifiques des utilisateurs ont été intentionnellement anonymisés pour protéger leur vie privée conformément aux exigences du RGPD.
+          - generic [ref=e707]:
+            - link "4.6" [ref=e708] [cursor=pointer]:
+              - /url: https://www.tradingview.com/broker/Capitalcom/
+              - strong [ref=e711]: "4.6"
+            - link "Notes et Avis 4.7" [ref=e714] [cursor=pointer]:
+              - /url: https://app.appsflyer.com/id1230088754?cp_device_id=83673749-91a6-4d9e-a69b-8acfb8c8551e&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+              - strong [ref=e716]: Notes et Avis
+              - strong [ref=e718]: "4.7"
+            - link "Notes et Avis 4.7" [ref=e721] [cursor=pointer]:
+              - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=83673749-91a6-4d9e-a69b-8acfb8c8551e&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+              - strong [ref=e723]: Notes et Avis
+              - strong [ref=e725]: "4.7"
+            - link "4.6" [ref=e728] [cursor=pointer]:
+              - /url: https://www.trustpilot.com/review/capital.com
+              - strong [ref=e731]: "4.6"
+        - generic [ref=e735]:
+          - heading "Trois étapes pour commencer" [level=2] [ref=e737]
+          - generic [ref=e738]:
+            - button [ref=e740] [cursor=pointer]
+            - generic [ref=e743]: 1. Créez votre compte (sous réserve d'éligibilité)
+            - generic [ref=e744]: 2. Déposez à votre convenance
+            - generic [ref=e745]: 3. Tradez quand vous êtes prêt
+  - contentinfo [ref=e747]:
+    - generic [ref=e748]:
+      - link [ref=e749] [cursor=pointer]:
+        - /url: /fr-int
+        - img [ref=e750]
+      - generic [ref=e754]:
+        - link [ref=e755] [cursor=pointer]:
+          - /url: https://twitter.com/capitalcom
+        - link [ref=e756] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/capital.com/
+        - link [ref=e757] [cursor=pointer]:
+          - /url: https://www.instagram.com/capitalcom/
+        - link [ref=e758] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@capitalcom_international
+        - link [ref=e759] [cursor=pointer]:
+          - /url: https://www.facebook.com/capitalcom/
+        - link [ref=e760] [cursor=pointer]:
+          - /url: https://www.reddit.com/r/capitalcom/
+      - generic [ref=e761]:
+        - link [ref=e762] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/id1230088754?cp_device_id=83673749-91a6-4d9e-a69b-8acfb8c8551e&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e763] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=83673749-91a6-4d9e-a69b-8acfb8c8551e&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e764] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading.huawei-huawei?cp_device_id=83673749-91a6-4d9e-a69b-8acfb8c8551e&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+    - generic [ref=e765]:
+      - generic [ref=e766]:
+        - generic [ref=e767]:
+          - generic [ref=e768]:
+            - generic [ref=e769]: "Pays / Région:"
+            - button "Côte d'Ivoire" [ref=e770] [cursor=pointer]:
+              - generic [ref=e772]: Côte d'Ivoire
+          - generic [ref=e773]: •
+          - generic [ref=e774]:
+            - generic [ref=e775]: "Langue:"
+            - button "French" [ref=e776] [cursor=pointer]:
+              - generic [ref=e777]: French
+        - generic [ref=e778]:
+          - generic [ref=e779]: "Vous pouvez également nous contacter :"
+          - link "+442080899989" [ref=e782] [cursor=pointer]:
+            - /url: tel:+442080899989
+            - strong [ref=e783]: "+442080899989"
+            - strong
+          - generic [ref=e784]: •
+          - link "support@capital.com" [ref=e786] [cursor=pointer]:
+            - /url: mailto:support@capital.com
+            - strong [ref=e787]: support@capital.com
+      - generic [ref=e788]:
+        - generic [ref=e789]:
+          - strong [ref=e791]: Trading
+          - generic [ref=e792]:
+            - generic [ref=e793]:
+              - generic [ref=e794]: Trading
+              - generic [ref=e795]:
+                - generic [ref=e796]:
+                  - link "Trading de CFD" [ref=e797] [cursor=pointer]:
+                    - /url: /fr-int/ways-to-trade/cfd-trading
+                  - link "Calculateur de trading CFD" [ref=e800] [cursor=pointer]:
+                    - /url: /fr-int/ways-to-trade/cfd-trading/cfd-calculator
+                - link "Trading démo" [ref=e802] [cursor=pointer]:
+                  - /url: /fr-int/trading-platforms/demo-account
+                - link "Professionnel" [ref=e804] [cursor=pointer]:
+                  - /url: /fr-int/professional
+                - link "Remises pour tous les traders" [ref=e806] [cursor=pointer]:
+                  - /url: /fr-int/ways-to-trade/rebates
+            - generic [ref=e807]:
+              - generic [ref=e808]: Plateformes
+              - generic [ref=e809]:
+                - link "Plateforme web" [ref=e811] [cursor=pointer]:
+                  - /url: /fr-int/trading-platforms/web-platform
+                - link "Applications mobiles" [ref=e813] [cursor=pointer]:
+                  - /url: /fr-int/trading-platforms/mobile-apps
+                - link "TradingView" [ref=e815] [cursor=pointer]:
+                  - /url: /fr-int/trading-platforms/trading-view
+                - link "MT4" [ref=e817] [cursor=pointer]:
+                  - /url: /fr-int/trading-platforms/mt4
+            - generic [ref=e818]:
+              - generic [ref=e819]: Apprendre
+              - generic [ref=e820]:
+                - link "Stratégies de trading" [ref=e822] [cursor=pointer]:
+                  - /url: /fr-int/learn/trading-strategies
+                - link "Analyse technique" [ref=e824] [cursor=pointer]:
+                  - /url: /fr-int/learn/technical-analysis
+                - link "La psychologie du trading" [ref=e826] [cursor=pointer]:
+                  - /url: /fr-int/learn/trading-psychology
+                - generic [ref=e827]:
+                  - link "Apprendre" [ref=e828] [cursor=pointer]:
+                    - /url: /fr-int/learn
+                  - link "Trading d’IPO" [ref=e831] [cursor=pointer]:
+                    - /url: /fr-int/learn/ipo
+        - generic [ref=e832]:
+          - strong [ref=e834]: Marchés
+          - generic [ref=e835]:
+            - generic [ref=e836]:
+              - generic [ref=e837]: Nos marchés
+              - generic [ref=e838]:
+                - link "Les marchés" [ref=e840] [cursor=pointer]:
+                  - /url: /fr-int/markets
+                - link "Actions" [ref=e842] [cursor=pointer]:
+                  - /url: /fr-int/markets/shares
+                - link "Forex" [ref=e844] [cursor=pointer]:
+                  - /url: /fr-int/markets/forex
+                - link "Indices" [ref=e846] [cursor=pointer]:
+                  - /url: /fr-int/markets/indices
+                - link "Matières premières" [ref=e848] [cursor=pointer]:
+                  - /url: /fr-int/markets/commodities
+                - link "Cryptomonnaies" [ref=e850] [cursor=pointer]:
+                  - /url: /fr-int/markets/cryptocurrencies
+                - link "Obligations" [ref=e852] [cursor=pointer]:
+                  - /url: /fr-int/markets/bonds
+                - link "Taux d’intérêt" [ref=e854] [cursor=pointer]:
+                  - /url: /fr-int/markets/interest-rates
+            - generic [ref=e855]:
+              - generic [ref=e856]: Aperçus du marché
+              - link "Analyse du marché" [ref=e859] [cursor=pointer]:
+                - /url: /fr-int/analysis
+        - link "Tarification" [ref=e862] [cursor=pointer]:
+          - /url: /fr-int/ways-to-trade/fees-and-charges
+          - strong [ref=e863]: Tarification
+        - generic [ref=e864]:
+          - strong [ref=e866]: À propos de nous
+          - generic [ref=e867]:
+            - generic [ref=e868]:
+              - generic [ref=e869]: Qui nous sommes
+              - generic [ref=e870]:
+                - generic [ref=e871]:
+                  - link "À propos" [ref=e872] [cursor=pointer]:
+                    - /url: /fr-int/about-us
+                  - link "Viktor Prokopenya" [ref=e875] [cursor=pointer]:
+                    - /url: /fr-int/about-us/viktor-prokopenya
+                - link "Nos bureaux" [ref=e877] [cursor=pointer]:
+                  - /url: /fr-int/about-us/our-offices
+                - link "Capital.com est-il sûr ?" [ref=e879] [cursor=pointer]:
+                  - /url: /fr-int/security-measures
+                - link "Notre modèle économique" [ref=e881] [cursor=pointer]:
+                  - /url: /fr-int/about-us/how-capital-makes-money
+            - generic [ref=e882]:
+              - generic [ref=e883]: Travaillez avec nous
+              - generic [ref=e884]:
+                - link "Programmes de partenariat" [ref=e886] [cursor=pointer]:
+                  - /url: /fr-int/partnerships
+                - link "Parrainez un(e) ami(e)" [ref=e888] [cursor=pointer]:
+                  - /url: /fr-int/refer-a-friend
+            - generic [ref=e889]:
+              - generic [ref=e890]: Aide
+              - generic [ref=e891]:
+                - link "Aide" [ref=e893] [cursor=pointer]:
+                  - /url: /fr-int/help
+                - link "Vulnérabilité du client" [ref=e895] [cursor=pointer]:
+                  - /url: /fr-int/help/client-vulnerability
+                - link "Nous contacter" [ref=e897] [cursor=pointer]:
+                  - /url: /fr-int/contact-us
+            - generic [ref=e898]:
+              - generic [ref=e899]: Mentions légales
+              - generic [ref=e900]:
+                - link "Conditions générales et politiques" [ref=e902] [cursor=pointer]:
+                  - /url: /fr-int/terms-and-policies
+                - link "Réclamations" [ref=e904] [cursor=pointer]:
+                  - /url: /fr-int/help/complaints
+    - generic [ref=e906]:
+      - paragraph [ref=e907]:
+        - text: Les CFD sont des instruments complexes et présentent un risque élevé de perte rapide en raison de l\'effet de levier.
+        - generic [ref=e908]:
+          - strong [ref=e909]: 78.48 % des comptes d’investisseurs particuliers perdent de l’argent en tradant des CFD avec ce fournisseur.
+          - text: Vous devez vous demander si vous comprenez le fonctionnement des CFD et si vous pouvez vous permettre de prendre le risque élevé de perdre votre argent.
+      - paragraph
+      - paragraph [ref=e910]: "Capital Com Online Investments Ltd est une société à responsabilité limitée portant le numéro d\\'enregistrement 209236B. Capital Com Online Investments Ltd est une société enregistrée dans le Commonwealth des Bahamas et autorisée par la Commission des valeurs mobilières des Bahamas sous le numéro de licence SIA-F245. Le bureau enregistré de la société se situe au #3 Bayside Executive Park, Blake Road et West Bay Street, P. O. Box CB 13012, Nassau, Bahamas."
+    - generic [ref=e911]:
+      - paragraph [ref=e912]: © 2026 Capital Com Online Investments Ltd
+      - generic [ref=e913]:
+        - link "Plan du site" [ref=e914] [cursor=pointer]:
+          - /url: /fr-int/sitemap
+        - link "Paramètres des cookies" [ref=e915] [cursor=pointer]:
+          - /url: ""
+        - link:
+          - /url: /fr-int
+        - link "Conditions Générales et Politiques" [ref=e916] [cursor=pointer]:
+          - /url: /fr-int/terms-and-policies
+        - link "Procédure de réclamations (SCB)" [ref=e917] [cursor=pointer]:
+          - /url: /fr-int/help/complaints
+  - button [ref=e918] [cursor=pointer]
+  - alert [ref=e920]: Graphique Actuel US100 | Prix de l'indice US Tech 100 | Capital.com
+```
+
+# Test source
+
+```ts
+  1   | import { expect } from "@playwright/test";
+  2   | 
+  3   | export class CTAComponent {
+  4   |   constructor(page, sectionConfig) {
+  5   |     this.page = page;
+  6   |     // this.root = page.locator(sectionConfig.root);
+  7   |     this.actions = sectionConfig.actions || {};
+  8   |     this.helpers = sectionConfig.helpers || {};
+  9   |     this.setup = sectionConfig.setup;
+  10  |     // this.skipRootValidation = sectionConfig.skipRootValidation;
+  11  |     this.root = this.resolveLocator(sectionConfig.root);
+  12  |   }
+  13  | 
+  14  |   async expectVisible() {
+  15  |     await expect(this.root).toBeVisible({ timeout: 20000 });
+  16  |   }
+  17  | 
+  18  |   resolveLocator(locatorConfig) {
+  19  |     if (!locatorConfig) {
+  20  |       throw new Error("Locator is undefined in CTA config");
+  21  |     }
+  22  | 
+  23  |     if (
+  24  |       typeof locatorConfig !== "string" &&
+  25  |       typeof locatorConfig !== "function"
+  26  |     ) {
+  27  |       throw new Error(
+  28  |         `Invalid locator type: ${typeof locatorConfig}. Value: ${JSON.stringify(locatorConfig)}`,
+  29  |       );
+  30  |     }
+  31  | 
+  32  |     if (typeof locatorConfig === "function") {
+  33  |       return locatorConfig(this.page);
+  34  |     }
+  35  | 
+  36  |     if (
+  37  |       locatorConfig.startsWith(":scope") ||
+  38  |       locatorConfig.startsWith("xpath=")
+  39  |     ) {
+  40  |       return this.root.locator(locatorConfig);
+  41  |     }
+  42  | 
+  43  |     return this.page.locator(locatorConfig);
+  44  |   }
+  45  | 
+  46  |   getActionLocator(actionName) {
+  47  |     return this.resolveLocator(this.actions[actionName].locator);
+  48  |   }
+  49  | 
+  50  |   getHelper(helperName) {
+  51  |     return this.resolveLocator(this.helpers[helperName]);
+  52  |   }
+  53  | 
+  54  |   async runSetup() {
+  55  |     if (!this.setup) {
+  56  |       return;
+  57  |     }
+  58  | 
+  59  |     await this.setup({
+  60  |       page: this.page,
+  61  |       getHelper: this.getHelper.bind(this),
+  62  |     });
+  63  |   }
+  64  | 
+  65  |   async runActionSetup(actionName) {
+  66  |     const action = this.actions[actionName];
+  67  | 
+  68  |     if (!action?.setup) {
+  69  |       return;
+  70  |     }
+  71  | 
+  72  |     await action.setup({
+  73  |       page: this.page,
+  74  |       getHelper: this.getHelper.bind(this),
+  75  |     });
+  76  | 
+  77  |     console.log("ACTION SETUP DONE:", actionName);
+  78  |     console.log("URL:", this.page.url());
+  79  |   }
+  80  | 
+  81  |   async click(actionName) {
+  82  |     await this.runSetup();
+  83  |     await this.runActionSetup(actionName);
+  84  | 
+  85  |     const action = this.actions[actionName];
+  86  |     let locator = this.getActionLocator(actionName);
+  87  | 
+  88  |     if (action.locatorIndex !== undefined) {
+  89  |       locator = locator.nth(action.locatorIndex);
+  90  |     }
+  91  | 
+  92  |     const count = await locator.count();
+  93  |     console.log(actionName, count);
+  94  | 
+  95  |     if (action.optional && count === 0) {
+  96  |       return { skipped: true };
+  97  |     }
+  98  | 
+> 99  |     await locator.waitFor({
+      |                   ^ Error: locator.waitFor: Test timeout of 30000ms exceeded.
+  100 |       state: "visible",
+  101 |       // timeout: 5000,
+  102 |     });
+  103 | 
+  104 |     await locator.click();
+  105 | 
+  106 |     return { skipped: false, locator };
+  107 |   }
+  108 | }
+  109 | 
+```

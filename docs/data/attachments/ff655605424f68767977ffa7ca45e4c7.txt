@@ -1,0 +1,3 @@
+BASE URL: https://capital.com/zh-hant
+PATH: markets/cryptocurrencies
+tradedBtn 0

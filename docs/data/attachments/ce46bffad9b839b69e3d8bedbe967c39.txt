@@ -1,0 +1,8 @@
+BASE URL: https://capital.com/el-gr
+PATH: markets/forex
+ACTION SETUP DONE: longPositionGoToPlatformBtn
+URL: https://capital.com/el-gr/markets/forex/euro-us-dollar-isotimia-2
+longPositionGoToPlatformBtn 1
+USER: unauthorised
+EXPtestCase.allowedLicenses &&ECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

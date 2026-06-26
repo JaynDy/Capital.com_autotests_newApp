@@ -1,0 +1,3 @@
+BASE URL: https://capital.com/es-int
+PATH: markets/forex
+tradedBtn 0

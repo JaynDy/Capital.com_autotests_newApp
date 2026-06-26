@@ -1,0 +1,3 @@
+BASE URL: https://capital.com/ru-int
+PATH: markets/forex
+tradedBtn 0

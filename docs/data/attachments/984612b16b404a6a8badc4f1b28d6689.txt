@@ -1,0 +1,2 @@
+BASE URL: https://capital.com/zh-hans
+PATH: analysis

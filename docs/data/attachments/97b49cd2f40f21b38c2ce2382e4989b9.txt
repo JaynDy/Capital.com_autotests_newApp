@@ -1,0 +1,3 @@
+BASE URL: https://capital.com/pl-pl
+PATH: markets/shares
+signupBtn 0
