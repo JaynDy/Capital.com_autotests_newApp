@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.6.0",
+    "allure-commandline": "^2.42.1",
+    "allure-playwright": "^3.7.1",
+    "eslint": "^10.4.0",
+    "eslint-plugin-playwright": "^2.10.4",
+    "globals": "^17.6.0"
+  },
+  "scripts": {
+    "test:markets": "TEST_BROWSER=chromium TEST_CTA=heroBanner,mostTradedMarketsBlock,tradingInstrument,readyToJoinBlock npx playwright test",
+    "test:footer": "TEST_BROWSER=chromium TEST_CTA=footer npx playwright test"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}

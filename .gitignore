@@ -1,0 +1,31 @@
+
+# macOS
+.DS_Store
+
+# Playwright
+playwright-report/
+test-results/
+
+
+# Storage state
+# storage/auth/*.json
+
+# Node
+node_modules/
+
+# Env
+.env
+
+# Allure raw results
+allure-results/
+
+# Generated Allure reports
+allure-report/
+allure-report-*/
+reports/
+
+# Chrome profile for manual auth
+chrome-profile/
+
+# DOCS
+docs/
