@@ -415,7 +415,7 @@ TEST_LICENSE=CMA TEST_BROWSER=chromium TEST_USER=unregistered TEST_CTA=footer np
 TEST_LICENSE=SCB TEST_LANG=zh-hans TEST_BROWSER=chromium TEST_USER=unregistered TEST_CTA=footer npx playwright test +++
 // 111 = 10 skipped (no: youtube \* 10 lang) + 100 ((logo + 6 social icons + 3 app store) \* 10 lang) + 1 auth
 
-TEST_LICENSE=CYSEC TEST_BROWSER=chromium TEST_USER=unregistered TEST_CTA=footer npx playwright test +++
+TEST_LICENSE=CySEC TEST_BROWSER=chromium TEST_USER=authorised TEST_ACTION=termsAndPoliciesLink TEST_CTA=footer npx playwright test +++
 // 111 = 48 skipped (no: f, inst, tiktok, reddit, X (7 lang., except: de-de, it (no: X, twit, reddit) and ro: 0 icon)) + 54 ((logo + 2 social icons (all lang. exc. de-de) + 3 app store) \* 9 lang) + 8 (4 social icons \* 2 (de-de, it-it)) + 1 auth
 // TEST_BROWSER=chromium TEST_USER=unregistered TEST_CTA=footer npx playwright === 264 - 71 + 1 = 194 \* 3 = 582 (3 useeState)
 

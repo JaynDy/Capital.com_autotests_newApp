@@ -12,9 +12,9 @@ export class GeoPopup {
       });
 
       await this.stayHereButton.click();
-      console.log("GEO POPUP CLOSED");
+      // console.log("GEO POPUP CLOSED");
     } catch {
-      console.log("GEO POPUP NOT FOUND");
+      // console.log("GEO POPUP NOT FOUND");
     }
   }
 }

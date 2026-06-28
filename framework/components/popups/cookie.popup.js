@@ -19,9 +19,9 @@ export class CookiePopup {
       });
       await this.acceptButton.click();
 
-      console.log("COOKIE POPUP CLOSED");
+      // console.log("COOKIE POPUP CLOSED");
     } catch {
-      console.log("COOKIE POPUP NOT FOUND");
+      // console.log("COOKIE POPUP NOT FOUND");
     }
   }
 }

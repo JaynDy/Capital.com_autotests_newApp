@@ -42,8 +42,8 @@ export const riskWarningBlock = {
       },
     },
     termsAndPoliciesLink: {
-      locator: `footer a[href*="/terms-and-policies"]`,
-      locatorIndex: 1,
+      locator: `footer a[href$="/terms-and-policies"]`,
+      locatorIndex: 0,
       expectation: {
         authorised: { type: "redirect", page: "termsAndPolicies" },
         unauthorised: { type: "redirect", page: "termsAndPolicies" },

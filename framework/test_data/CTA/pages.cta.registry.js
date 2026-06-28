@@ -93,12 +93,7 @@ export const ctaRegistry = {
     config: sitemapConfig,
   },
   termsAndPolicies: {
-    path: (license) => {
-      if (license === "CySEC") {
-        return "terms-and-policies/complaints-procedure-cceu";
-      }
-      return "terms-and-policies";
-    },
+    path: "terms-and-policies",
     licenses: ["FCA", "ASIC", "SCB", "CySEC", "CMA"],
     config: termsAndPoliciesConfig,
   },
