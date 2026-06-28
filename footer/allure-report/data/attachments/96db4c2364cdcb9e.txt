@@ -1,0 +1,7 @@
+BASE URL: https://capital.com/fr-int
+PATH: 
+PAGE CLOSED: false
+instagramIcon 1
+USER: unregistered
+EXPtestCase.allowedLicenses &&ECTATION:  opens external link
+EXPECTATION ASSERTIONS opens external link

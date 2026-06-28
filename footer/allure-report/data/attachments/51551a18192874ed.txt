@@ -1,0 +1,7 @@
+BASE URL: https://capital.com/ru-int
+PATH: 
+PAGE CLOSED: false
+facebookIcon 1
+USER: unregistered
+EXPtestCase.allowedLicenses &&ECTATION:  opens external link
+EXPECTATION ASSERTIONS opens external link

@@ -1,0 +1,7 @@
+BASE URL: https://capital.com/ru-int
+PATH: 
+PAGE CLOSED: false
+termsAndPoliciesLink 1
+USER: authorised
+EXPtestCase.allowedLicenses &&ECTATION:  { type: 'redirect', page: 'termsAndPolicies' }
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'termsAndPolicies' }

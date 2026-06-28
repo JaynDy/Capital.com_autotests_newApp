@@ -1,0 +1,7 @@
+BASE URL: https://capital.com/ar-int
+PATH: 
+PAGE CLOSED: false
+redditIcon 1
+USER: unauthorised
+EXPtestCase.allowedLicenses &&ECTATION:  opens external link
+EXPECTATION ASSERTIONS opens external link

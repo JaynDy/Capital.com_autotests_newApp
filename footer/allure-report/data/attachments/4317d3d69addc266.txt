@@ -1,0 +1,7 @@
+BASE URL: https://capital.com/el-gr
+PATH: 
+PAGE CLOSED: false
+logo 1
+USER: authorised
+EXPtestCase.allowedLicenses &&ECTATION:  { type: 'redirect', page: 'main' }
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'main' }

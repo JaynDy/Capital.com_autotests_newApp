@@ -1,0 +1,4 @@
+BASE URL: https://capital.com/en-gb
+PATH: 
+PAGE CLOSED: false
+youtubeIcon 0

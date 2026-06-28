@@ -1,0 +1,7 @@
+BASE URL: https://capital.com/it-it
+PATH: 
+PAGE CLOSED: false
+licenseText 1
+USER: unauthorised
+EXPtestCase.allowedLicenses &&ECTATION:  exist corresponding license
+EXPECTATION ASSERTIONS exist corresponding license

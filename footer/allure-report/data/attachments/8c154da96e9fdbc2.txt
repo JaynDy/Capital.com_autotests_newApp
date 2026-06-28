@@ -1,0 +1,4 @@
+BASE URL: https://capital.com/hu-hu
+PATH: 
+PAGE CLOSED: false
+twitterIcon 0

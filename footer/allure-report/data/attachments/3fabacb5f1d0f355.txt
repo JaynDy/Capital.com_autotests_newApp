@@ -1,0 +1,4 @@
+BASE URL: https://capital.com/zh-hant
+PATH: 
+PAGE CLOSED: false
+riskDisclosureStatementLink 0

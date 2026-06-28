@@ -1,0 +1,7 @@
+BASE URL: https://capital.com/zh-hans
+PATH: 
+PAGE CLOSED: false
+cookieSettingsLink 1
+USER: authorised
+EXPtestCase.allowedLicenses &&ECTATION:  opens cookie menu
+EXPECTATION ASSERTIONS opens cookie menu

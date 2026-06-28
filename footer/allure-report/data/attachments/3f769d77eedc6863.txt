@@ -1,0 +1,7 @@
+BASE URL: https://capital.com/nl-nl
+PATH: 
+PAGE CLOSED: false
+cookieSettingsLink 1
+USER: unregistered
+EXPtestCase.allowedLicenses &&ECTATION:  opens cookie menu
+EXPECTATION ASSERTIONS opens cookie menu

@@ -1,0 +1,7 @@
+BASE URL: https://capital.com/en-au
+PATH: 
+PAGE CLOSED: false
+langSwitcherBtn 1
+USER: unauthorised
+EXPtestCase.allowedLicenses &&ECTATION:  opens regional settings window
+EXPECTATION ASSERTIONS opens regional settings window

@@ -1,0 +1,4 @@
+BASE URL: https://capital.com/fr-fr
+PATH: 
+PAGE CLOSED: false
+facebookIcon 0

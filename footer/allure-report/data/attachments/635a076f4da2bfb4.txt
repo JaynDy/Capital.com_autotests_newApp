@@ -1,0 +1,7 @@
+BASE URL: https://capital.com/de-int
+PATH: 
+PAGE CLOSED: false
+linkedinIcon 1
+USER: unregistered
+EXPtestCase.allowedLicenses &&ECTATION:  opens external link
+EXPECTATION ASSERTIONS opens external link

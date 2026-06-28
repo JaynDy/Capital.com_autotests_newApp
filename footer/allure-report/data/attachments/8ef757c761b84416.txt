@@ -1,0 +1,7 @@
+BASE URL: https://capital.com/nl-nl
+PATH: 
+PAGE CLOSED: false
+youtubeIcon 1
+USER: unregistered
+EXPtestCase.allowedLicenses &&ECTATION:  opens external link
+EXPECTATION ASSERTIONS opens external link

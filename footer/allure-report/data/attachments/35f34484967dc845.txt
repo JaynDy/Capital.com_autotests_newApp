@@ -1,0 +1,7 @@
+BASE URL: https://capital.com/pl-pl
+PATH: 
+PAGE CLOSED: false
+downloadAppStoreBtn 1
+USER: authorised
+EXPtestCase.allowedLicenses &&ECTATION:  opens external link
+EXPECTATION ASSERTIONS opens external link

@@ -1,0 +1,4 @@
+BASE URL: https://capital.com/pl-pl
+PATH: 
+PAGE CLOSED: false
+twitterIcon 0

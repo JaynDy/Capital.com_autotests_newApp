@@ -1,0 +1,4 @@
+BASE URL: https://capital.com/de-at
+PATH: 
+PAGE CLOSED: false
+tiktokIcon 0

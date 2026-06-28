@@ -1,0 +1,7 @@
+BASE URL: https://capital.com/en-au
+PATH: 
+PAGE CLOSED: false
+exploreAppGalleryBtn 1
+USER: unauthorised
+EXPtestCase.allowedLicenses &&ECTATION:  opens external link
+EXPECTATION ASSERTIONS opens external link

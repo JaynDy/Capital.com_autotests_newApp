@@ -1,0 +1,7 @@
+BASE URL: https://capital.com/de-at
+PATH: 
+PAGE CLOSED: false
+countrySwitcherBtn 1
+USER: unregistered
+EXPtestCase.allowedLicenses &&ECTATION:  opens regional settings window
+EXPECTATION ASSERTIONS opens regional settings window

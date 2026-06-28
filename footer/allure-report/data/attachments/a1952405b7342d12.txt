@@ -1,0 +1,4 @@
+BASE URL: https://capital.com/en-ae
+PATH: 
+PAGE CLOSED: false
+riskDisclosureStatementLink 0

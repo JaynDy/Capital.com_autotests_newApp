@@ -1,0 +1,7 @@
+BASE URL: https://capital.com/de-int
+PATH: 
+PAGE CLOSED: false
+sitemapLink 1
+USER: unauthorised
+EXPtestCase.allowedLicenses &&ECTATION:  { type: 'redirect', page: 'sitemap' }
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'sitemap' }

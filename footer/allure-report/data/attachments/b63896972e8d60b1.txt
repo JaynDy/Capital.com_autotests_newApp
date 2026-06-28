@@ -1,0 +1,4 @@
+BASE URL: https://capital.com/zh-hans
+PATH: 
+PAGE CLOSED: false
+youtubeIcon 0

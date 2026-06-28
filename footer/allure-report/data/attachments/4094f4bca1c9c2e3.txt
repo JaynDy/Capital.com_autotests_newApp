@@ -1,0 +1,7 @@
+BASE URL: https://capital.com/vi-int
+PATH: 
+PAGE CLOSED: false
+termsAndPoliciesLink 1
+USER: unregistered
+EXPtestCase.allowedLicenses &&ECTATION:  { type: 'redirect', page: 'termsAndPolicies' }
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'termsAndPolicies' }
