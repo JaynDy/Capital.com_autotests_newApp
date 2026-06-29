@@ -1,3 +1,4 @@
-2026/06/28-20:15:32.941 1c563f Reusing MANIFEST /Users/user/Desktop/automation_tests_V3/chrome-profile/Default/Local Storage/leveldb/MANIFEST-000001
-2026/06/28-20:15:32.950 1c563f Recovering log #4
-2026/06/28-20:15:32.965 1c563f Reusing old log /Users/user/Desktop/automation_tests_V3/chrome-profile/Default/Local Storage/leveldb/000004.log 
+2026/06/29-12:51:56.218 41240 Reusing MANIFEST /Users/user/Desktop/automation_tests_V3/chrome-profile/Default/Local Storage/leveldb/MANIFEST-000001
+2026/06/29-12:51:56.229 41240 Recovering log #4
+2026/06/29-12:51:56.235 41240 Reusing old log /Users/user/Desktop/automation_tests_V3/chrome-profile/Default/Local Storage/leveldb/000004.log 
+2026/06/29-12:51:56.236 41240 Delete type=0 #3

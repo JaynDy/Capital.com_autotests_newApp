@@ -1,4 +1,4 @@
-name: Playwright Tests
+name: Markets Tests
 
 on:
   push:
@@ -38,7 +38,7 @@ jobs:
       - run: npx playwright install --with-deps
 
       - name: Run tests
-        run: npm run test:footer
+        run: npm run test:markets
 
       # - name: Generate Allure report
       #   if: always()
@@ -86,11 +86,12 @@ jobs:
 
       - name: Prepare Pages structure
         run: |
-          mkdir -p public/footer
-          mv allure-report public/footer
+          mkdir -p public/markets
+          mv allure-report public/markets
 
       - name: Deploy report
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: public
+          keep_files: true
