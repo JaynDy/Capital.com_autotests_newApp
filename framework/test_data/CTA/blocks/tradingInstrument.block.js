@@ -57,6 +57,7 @@ export const tradingInstrument = {
 
     viewDetailedChartBtn: {
       locator: `[data-type="market_view_chart"]`,
+      optional: true,
       expectation: {
         authorised: "redirects to platform",
         unauthorised: "shows signup form", // "shows login form" (in Checklist)
@@ -65,6 +66,7 @@ export const tradingInstrument = {
     },
     sellBtn: {
       locator: `[data-type="market_sell_btn"]`,
+      optional: true,
       expectation: {
         authorised: "redirects to platform",
         unauthorised: "shows login form",
@@ -73,6 +75,7 @@ export const tradingInstrument = {
     },
     buyBtn: {
       locator: `[data-type="market_buy_btn"]`,
+      optional: true,
       expectation: {
         authorised: "redirects to platform",
         unauthorised: "shows login form",
@@ -81,6 +84,7 @@ export const tradingInstrument = {
     },
     alertBtn: {
       locator: `[data-type="market_alerts"]`,
+      optional: true,
       expectation: {
         authorised: "redirects to platform",
         unauthorised: "shows signup form", // "shows login form" (in Checklist)
