@@ -1,0 +1,553 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: markets/markets.spec.js >> shares page | heroBanner | signupBtn
+- Location: tests/markets/markets.spec.js:16:7
+
+# Error details
+
+```
+Error: expect(locator).toBeVisible() failed
+
+Locator: locator('[data-type="homepage_hero_banner_btn2_signup"]')
+Expected: visible
+Timeout: 5000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 5000ms
+  - waiting for locator('[data-type="homepage_hero_banner_btn2_signup"]')
+
+```
+
+```yaml
+- banner:
+  - text: CFD-urile sunt instrumente complexe și au un risc ridicat de a pierde rapid bani din cauza efectului de levier.
+  - strong: Între 74 și 89% din conturile investitorilor de retail pierd bani atunci când tranzacționează CFD-uri
+  - text: . Ar trebui să luați în considerare dacă înțelegeți modul în care funcționează CFDurile și dacă vă puteți permite să vă asumați riscul ridicat de a vă pierde banii. Consultați
+  - link "Declarația noastră deinformare privind riscurile":
+    - /url: https://capital.com/risk-disclosure-policy-cceu
+  - link:
+    - /url: /ro-ro
+    - img
+  - navigation:
+    - button "Tranzacționare":
+      - button "Tranzacționare"
+    - button "Pieţe":
+      - button "Pieţe"
+    - link "Prețuri":
+      - /url: /ro-ro/ways-to-trade/fees-and-charges
+    - button "Despre noi":
+      - button "Despre noi"
+  - button "ro"
+  - button "Conectare"
+  - button "Deschideți un cont"
+- paragraph:
+  - link "Acasă":
+    - /url: /ro-ro
+  - text: •
+  - link "Pieţe":
+    - /url: /ro-ro/markets
+  - text: •Acțiuni
+- heading "Piețele de acțiuni și ETF-uri" [level=2]
+- link "Pagina de ansamblu":
+  - /url: /ro-ro/markets/shares
+- button "CFD-uri"
+- button "Knock-out-uri"
+- button "Regiune Great Britain Norway Germany Switzerland Sweden France Poland Italy Singapore Ireland United Arab Emirates Netherlands Spain Hong Kong United States of America Greece Canada Australia Japan Saudi Arabia":
+  - button "Regiune":
+    - textbox "Regiune":
+      - /placeholder: " "
+    - text: Regiune
+  - button "Great Britain":
+    - checkbox "Great Britain"
+    - text: Great Britain
+  - button "Norway":
+    - checkbox "Norway"
+    - text: Norway
+  - button "Germany":
+    - checkbox "Germany"
+    - text: Germany
+  - button "Switzerland":
+    - checkbox "Switzerland"
+    - text: Switzerland
+  - button "Sweden":
+    - checkbox "Sweden"
+    - text: Sweden
+  - button "France":
+    - checkbox "France"
+    - text: France
+  - button "Poland":
+    - checkbox "Poland"
+    - text: Poland
+  - button "Italy":
+    - checkbox "Italy"
+    - text: Italy
+  - button "Singapore":
+    - checkbox "Singapore"
+    - text: Singapore
+  - button "Ireland":
+    - checkbox "Ireland"
+    - text: Ireland
+  - button "United Arab Emirates":
+    - checkbox "United Arab Emirates"
+    - text: United Arab Emirates
+  - button "Netherlands":
+    - checkbox "Netherlands"
+    - text: Netherlands
+  - button "Spain":
+    - checkbox "Spain"
+    - text: Spain
+  - button "Hong Kong":
+    - checkbox "Hong Kong"
+    - text: Hong Kong
+  - button "United States of America":
+    - checkbox "United States of America"
+    - text: United States of America
+  - button "Greece":
+    - checkbox "Greece"
+    - text: Greece
+  - button "Canada":
+    - checkbox "Canada"
+    - text: Canada
+  - button "Australia":
+    - checkbox "Australia"
+    - text: Australia
+  - button "Japan":
+    - checkbox "Japan"
+    - text: Japan
+  - button "Saudi Arabia":
+    - checkbox "Saudi Arabia"
+    - text: Saudi Arabia
+- button "Sector ETFs Technology Non-Cyclical Consumer Goods & Services Financials Cyclical Consumer Goods & Services Industrials Basic Materials Healthcare Telecommunications Services Energy Utilities":
+  - button "Sector":
+    - textbox "Sector":
+      - /placeholder: " "
+    - text: Sector
+  - button "ETFs":
+    - checkbox "ETFs"
+    - text: ETFs
+  - button "Technology":
+    - checkbox "Technology"
+    - text: Technology
+  - button "Non-Cyclical Consumer Goods & Services":
+    - checkbox "Non-Cyclical Consumer Goods & Services"
+    - text: Non-Cyclical Consumer Goods & Services
+  - button "Financials":
+    - checkbox "Financials"
+    - text: Financials
+  - button "Cyclical Consumer Goods & Services":
+    - checkbox "Cyclical Consumer Goods & Services"
+    - text: Cyclical Consumer Goods & Services
+  - button "Industrials":
+    - checkbox "Industrials"
+    - text: Industrials
+  - button "Basic Materials":
+    - checkbox "Basic Materials"
+    - text: Basic Materials
+  - button "Healthcare":
+    - checkbox "Healthcare"
+    - text: Healthcare
+  - button "Telecommunications Services":
+    - checkbox "Telecommunications Services"
+    - text: Telecommunications Services
+  - button "Energy":
+    - checkbox "Energy"
+    - text: Energy
+  - button "Utilities":
+    - checkbox "Utilities"
+    - text: Utilities
+- separator
+- button:
+  - textbox "marketlist_search":
+    - /placeholder: Search
+- text: Vânzare Cumpărare Ecart minim Variație % pe 1zi Grafice pe 1zi Vânzători Cumpărători
+- link "SPCX SpaceX 155.35 155.58 0.23 +2.290% 8.15% 91.85%":
+  - /url: /ro-ro/markets/shares/space-exploration-technologies-corp-pret-actiune
+  - text: SPCX SpaceX 155.35 155.58 0.23 +2.290%
+  - img
+  - text: 8.15% 91.85%
+- link "MU Micron Technology Inc 1065.73 1066.30 0.57 -5.630% 18.63% 81.37%":
+  - /url: /ro-ro/markets/shares/micron-technology-inc-share-price
+  - text: MU Micron Technology Inc 1065.73 1066.30 0.57 -5.630%
+  - img
+  - text: 18.63% 81.37%
+- link "TSLA Tesla Inc 397.56 397.76 0.20 +5.300% 12.49% 87.51%":
+  - /url: /ro-ro/markets/shares/tesla-inc-share-price
+  - text: TSLA Tesla Inc 397.56 397.76 0.20 +5.300%
+  - img
+  - text: 12.49% 87.51%
+- link "MSTR Strategy Inc 86.02 86.18 0.16 +5.370% 8.15% 91.85%":
+  - /url: /ro-ro/markets/shares/microstrategy-incorporated-share-price
+  - text: MSTR Strategy Inc 86.02 86.18 0.16 +5.370%
+  - img
+  - text: 8.15% 91.85%
+- link "SOXL Direxion Daily Semiconductor Bull 3X Shares 219.54 220.05 0.51 +4.120% 0% 100%":
+  - /url: /ro-ro/markets/shares/direxion-daily-semiconductor-bull-3x-shares-share-price
+  - text: SOXL Direxion Daily Semiconductor Bull 3X Shares 219.54 220.05 0.51 +4.120%
+  - img
+  - text: 0% 100%
+- link "NVDA NVIDIA Corp 194.79 194.91 0.12 +1.380% 6.11% 93.89%":
+  - /url: /ro-ro/markets/shares/nvidia-corp-share-price
+  - text: NVDA NVIDIA Corp 194.79 194.91 0.12 +1.380%
+  - img
+  - text: 6.11% 93.89%
+- link "SNDK SanDisk Corp 1934.95 1936.65 1.70 -7.020% 35.33% 64.67%":
+  - /url: /ro-ro/markets/shares/sandisk-corp-pret-actiune
+  - text: SNDK SanDisk Corp 1934.95 1936.65 1.70 -7.020%
+  - img
+  - text: 35.33% 64.67%
+- link "PLTR Palantir Technologies Inc 117.54 117.67 0.13 +4.690% 6.61% 93.39%":
+  - /url: /ro-ro/markets/shares/palantir-technologies-inc-share-price
+  - text: PLTR Palantir Technologies Inc 117.54 117.67 0.13 +4.690%
+  - img
+  - text: 6.61% 93.39%
+- link "AMD Advanced Micro Devices Inc 521.75 522.26 0.51 +0.830% 17.55% 82.45%":
+  - /url: /ro-ro/markets/shares/advanced-micro-devices-inc-share-price
+  - text: AMD Advanced Micro Devices Inc 521.75 522.26 0.51 +0.830%
+  - img
+  - text: 17.55% 82.45%
+- link "MSFT Microsoft Corp 372.32 372.48 0.16 +0.090% 3.37% 96.63%":
+  - /url: /ro-ro/markets/shares/microsoft-corp-share-price
+  - text: MSFT Microsoft Corp 372.32 372.48 0.16 +0.090%
+  - img
+  - text: 3.37% 96.63%
+- text: Prețurile acțiunilor sunt orientative și pot diferi de prețurile actuale de pe piață.
+- navigation "pagination":
+  - link "1":
+    - /url: /ro-ro/markets/shares?page=1
+  - link "2":
+    - /url: /ro-ro/markets/shares?page=2
+  - link "3":
+    - /url: /ro-ro/markets/shares?page=3
+  - text: ...
+  - link "602":
+    - /url: /ro-ro/markets/shares?page=602
+  - link "603":
+    - /url: /ro-ro/markets/shares?page=603
+  - link "Go to the next page":
+    - /url: /ro-ro/markets/shares?page=2
+- heading "Integrate în fiecare cont" [level=2]
+- heading "Toate datele, într-un singur loc" [level=3]
+- paragraph: Date despre piața bursieră, instrumente de analiză și context privind portofoliul. Structural pentru trader, nu pentru tranzacție.
+- link "Exploraţi platforma web":
+  - /url: https://capital.com/ro-ro/trading-platforms/web-platform
+- heading "Costuri clare, vizibilitate deplină" [level=3]
+- paragraph: Ecarturi transparente, fără taxe ascunse. O structură clară a costurilor înainte de a vă angaja.
+- link "Accesați Prețurile":
+  - /url: https://capital.com/ro-ro/ways-to-trade/pricing
+- heading "Program prelungit pentru acțiuni cheie" [level=3]
+- paragraph: Poziții pe acțiuni americane selectate, disponibile prin anunțurile despre rezultate, după închiderea pieței.
+- heading "Standarde globale, livrare localizată" [level=3]
+- paragraph: Reglementat în cinci jurisdicții. Asistență locală disponibilă în limba dvs.
+- heading "Toate instrumentele, fără capital necesar" [level=3]
+- paragraph: Fonduri virtuale, prețuri în timp real. Funcționalitățile unui cont real, înainte de a vă angaja.
+- link "Accesați Demo":
+  - /url: https://capital.com/ro-ro/trading-platforms/demo-account
+- heading "Instrumente de analiză și gestionare a riscurilor integrate" [level=3]
+- paragraph: Asistent IA și instrumente de analiză înainte de tranzacționare. Opțiuni de orprire a piererii* și luare a profitului pe tot parcursul tranzacției.
+- paragraph: "*Ordinele de oprire a pierderii nu sunt garantate. Sunt disponibile și ordine garantate de oprire a pierderii, dar acestea implică o taxă în cazul în care sunt declanșate."
+- heading "Feedback și evaluări ale utilizatorilor" [level=2]
+- text: Citiți feedback-ul clienților noștri*, indiferent de nivelul lor de experiență.
+- region:
+  - group "1 of 12":
+    - link "2024-12-27 S*** M**** Pana acum super aplicatia, suportul ok, depuneri instante, retrageri rapide ( a doua zi ). Recomand!":
+      - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=6a639e4d-4355-480e-898a-13df946a33c3&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+      - text: 2024-12-27
+      - strong: S*** M****
+      - paragraph: Pana acum super aplicatia, suportul ok, depuneri instante, retrageri rapide ( a doua zi ). Recomand!
+  - group "2 of 12":
+    - link "2023-09-13 I***** B******* Totul ok, intuitiva, ușor de folosit, utila":
+      - /url: https://www.trustpilot.com/review/capital.com
+      - text: 2023-09-13
+      - strong: I***** B*******
+      - paragraph: Totul ok, intuitiva, ușor de folosit, utila
+  - group "3 of 12":
+    - link "2025-01-19 G**** A***** Până în momentul de față experiența cu platforma este bună. Nu am avut probleme cu depunerile și retragerile.Au fost făcute instant.Posibil să aibă legătură cu folosirea unui cont de Revolut.":
+      - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=6a639e4d-4355-480e-898a-13df946a33c3&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+      - text: 2025-01-19
+      - strong: G**** A*****
+      - paragraph: Până în momentul de față experiența cu platforma este bună. Nu am avut probleme cu depunerile și retragerile.Au fost făcute instant.Posibil să aibă legătură cu folosirea unui cont de Revolut.
+  - button "Go to last slide"
+  - button "Next slide"
+- paragraph: "*Cifrele prezentate se referă la Capital Com Group. Se afișează recenziile noastre de 4 și 5 stele. Datele specifice ale utilizatorului au fost anonimizate în mod intenționat pentru a proteja confidențialitatea acestuia în conformitate cu cerințele GDPR."
+- link "4.6":
+  - /url: https://www.tradingview.com/broker/Capitalcom/
+  - strong: "4.6"
+- link "Evaluări și recenzii 4.7":
+  - /url: https://app.appsflyer.com/id1230088754?cp_device_id=6a639e4d-4355-480e-898a-13df946a33c3&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - strong: Evaluări și recenzii
+  - strong: "4.7"
+- link "Evaluări și recenzii 4.7":
+  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=6a639e4d-4355-480e-898a-13df946a33c3&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - strong: Evaluări și recenzii
+  - strong: "4.7"
+- link "4.6":
+  - /url: https://www.trustpilot.com/review/capital.com
+  - strong: "4.6"
+- heading "Întrebări frecvente despre acțiuni" [level=2]
+- group:
+  - heading "Cum funcționează tranzacționarea acțiunilor și ETF-urilor" [level=3]
+- group:
+  - heading "Ce oferă piețele de acțiuni și ETF-uri" [level=3]
+- group:
+  - heading "Tranzacționarea de acțiuni și ETF-uri pe Capital·com" [level=3]
+- paragraph:
+  - superscript: "1"
+  - text: Informațiile prezentate se referă la Capital Com Group.
+- contentinfo:
+  - link:
+    - /url: /ro-ro
+    - img
+  - link:
+    - /url: https://app.appsflyer.com/id1230088754?cp_device_id=6a639e4d-4355-480e-898a-13df946a33c3&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - link:
+    - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=6a639e4d-4355-480e-898a-13df946a33c3&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - link:
+    - /url: https://app.appsflyer.com/com.capital.trading.huawei-huawei?cp_device_id=6a639e4d-4355-480e-898a-13df946a33c3&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - text: "Țară / Regiune:"
+  - button "Romania"
+  - text: "• Limbă:"
+  - button "Romanian"
+  - text: "De asemenea, ne puteți contacta:"
+  - link "+357 25123646":
+    - /url: tel:+357 25123646
+    - strong: +357 25123646
+    - strong
+  - text: •
+  - link "support@capital.com":
+    - /url: mailto:support@capital.com
+    - strong: support@capital.com
+  - strong: Tranzacționare
+  - text: Tranzacționare
+  - link "Tranzacționare CFD":
+    - /url: /ro-ro/ways-to-trade/cfd-trading
+  - link "Knock-out-uri":
+    - /url: /ro-ro/ways-to-trade/knock-outs
+  - link "Tranzacționare demo":
+    - /url: /ro-ro/trading-platforms/demo-account
+  - link "Profesionist":
+    - /url: /ro-ro/professional-clients
+  - text: Platforme de tranzacționare
+  - link "Platformă web":
+    - /url: /ro-ro/trading-platforms/web-platform
+  - link "Aplicații mobile":
+    - /url: /ro-ro/trading-platforms/mobile-apps
+  - link "TradingView":
+    - /url: /ro-ro/trading-platforms/trading-view
+  - link "MT4":
+    - /url: /ro-ro/trading-platforms/mt4
+  - link "MT5":
+    - /url: /ro-ro/trading-platforms/mt5
+  - text: Învățați
+  - link "Învățați":
+    - /url: /ro-ro/learn
+  - strong: Pieţe
+  - text: Informații despre piață
+  - link "Prețurile piețelor":
+    - /url: /ro-ro/about-us/how-our-markets-are-priced
+  - link "Analiza pieței":
+    - /url: /ro-ro/analysis
+  - text: Piețele noastre
+  - link "Pieţe":
+    - /url: /ro-ro/markets
+  - link "Forex":
+    - /url: /ro-ro/markets/forex
+  - link "Acțiuni":
+    - /url: /ro-ro/markets/shares
+  - link "Indici":
+    - /url: /ro-ro/markets/indices
+  - link "Mărfuri":
+    - /url: /ro-ro/markets/commodities
+  - link "Criptomonede":
+    - /url: /ro-ro/markets/cryptocurrencies
+  - link "Obligațiuni":
+    - /url: /ro-ro/markets/bonds
+  - link "Rate ale dobânzii":
+    - /url: /ro-ro/markets/interest-rates
+  - link "Prețuri":
+    - /url: /ro-ro/ways-to-trade/fees-and-charges
+    - strong: Prețuri
+  - strong: Despre noi
+  - text: Cine suntem
+  - link "Despre":
+    - /url: /ro-ro/about-us
+  - link "Birourile noastre":
+    - /url: /ro-ro/about-us/our-offices
+  - link "Capital.com este sigur?":
+    - /url: /ro-ro/security-measures
+  - link "Modelul nostru de afaceri":
+    - /url: /ro-ro/about-us/how-capital-makes-money
+  - text: Lucrați cu noi
+  - link "Cariere":
+    - /url: /ro-ro/about-us/careers
+  - text: Primiți ajutor
+  - link "Ajutor":
+    - /url: /ro-ro/help
+  - link "Vulnerabilitatea clientului":
+    - /url: /ro-ro/help/client-vulnerability
+  - link "Contactați-ne":
+    - /url: /ro-ro/contact-us
+  - text: Documente oficiale
+  - link "Condiții și politici":
+    - /url: /ro-ro/terms-and-policies
+  - link "Procedura privind plângerile - Capital Com Group Ltd":
+    - /url: /ro-ro/terms-and-policies/complaints-procedure-cceu
+  - link "Procedura privind reclamațiile - Capital Com SV Investments Limited":
+    - /url: /ro-ro/terms-and-policies/complaints-procedure
+  - 'link "Conformitate și aspecte legale: tranzacționarea CFD-urilor"':
+    - /url: /ro-ro/terms-and-policies/compliance-and-legals
+  - paragraph:
+    - text: "Capital Com SV Investments Limited: CFD-urile sunt instrumente complexe și au un risc ridicat de a pierde rapid bani din cauza efectului de levier."
+    - strong: 73% din conturile investitorilor de retail pierd bani atunci când tranzacționează CFD-uri cu acest furnizor
+    - text: . Ar trebui să luați în considerare dacă înțelegeți modul în care funcționează CFDurile și dacă vă puteți permite să vă asumați riscul ridicat de a vă pierde banii. Consultați
+    - link "Declarația noastră deinformare privind riscurile":
+      - /url: https://capital.com/risk-disclosure-policy
+  - paragraph:
+    - text: "Capital Com Group Ltd: CFD-urile sunt instrumente complexe și prezintă un risc ridicat de a pierde rapid bani din cauza efectului de levier."
+    - strong: Între 74 și 89% din conturile investitorilor de retail pierd bani atunci când tranzacționează CFD-uri
+    - text: . Ar trebui să vă gândiți dacă înțelegeți cum funcționează CFD-urile și dacă vă puteți permite să vă asumați riscul ridicat de a vă pierde banii. Consultați
+    - link "Declarația noastră deinformare privind riscurile":
+      - /url: https://capital.com/risk-disclosure-policy-cceu
+  - paragraph: "Avertisment privind riscurile: Valoarea acțiunilor și a ETF-urilor cumpărate prin intermediul unui cont de tranzacționare cu acțiuni poate crește sau scădea, ceea ce înseamnă că s-ar putea să recuperați mai puțin decât ați investit inițial. Performanțele anterioare nu garantează rezultatele viitoare. Tranzacțiile cu instrumente extrabursiere nelivrabile, precum opțiunile knock-out și CFD-urile, sunt produse financiare complexe care prezintă un risc ridicat de pierdere a întregului capital investit. Astfel de produse nu sunt potrivite pentru toți investitorii, deoarece pot genera atât câștiguri, cât și pierderi semnificative. Înainte de a vă angaja în acest tip de tranzacționare, ar trebui să analizați cu atenție dacă înțelegeți modul în care funcționează aceste instrumente și dacă vă puteți permite să vă asumați riscul ridicat de a vă pierde banii. Pentru clienții profesioniști, există riscul de a pierde mai mult decât depozitul inițial. Informațiile de pe acest site web sunt de natură generală și nu iau în considerare situația financiară, obiectivele sau nevoile dumneavoastră. Consultați documentele noastre legale și asigurați-vă că înțelegeți pe deplin riscurile înainte de a lua orice decizie de tranzacționare. Vă încurajăm să utilizați serviciile de instruire ale companiei noastre pentru a înțelege mai bine riscurile înainte de a vă angaja în operațiuni de tranzacționare."
+  - paragraph: "Capital Com SV Investments Limited este o societate constituită în Republica Cipru cu numărul de înregistrare HE 354252 și este autorizată și reglementată de Comisia pentru valori mobiliare și burse din Cipru (numărul de licență 319/17). Sediul social: Str: Vasileiou Makedonos 8, Kinnis Business Center, 2nd floor, 3040, Limassol, Cipru."
+  - paragraph: "Capital Com Group Ltd este o societate constituită în Republica Cipru cu numărul de înregistrare ΗΕ 446198 și este autorizată și reglementată de Comisia pentru valori mobiliare și burse din Cipru (numărul de licență 463/25). Sediul social: Str: Vasileiou Makedonos 8, Kinnis Business Center, 2nd floor, 3040, Limassol, Cipru."
+  - paragraph: Informațiile de pe acest site nu se adresează rezidenților din Statele Unite, Canada și Belgia sau oricărei alte țări din afara SEE și nu sunt destinate distribuirii către sau utilizării de către orice persoană din orice țară sau jurisdicție în care o astfel de distribuire sau utilizare ar fi contrară legislației sau reglementărilor locale.
+  - paragraph: © 2026 Capital Com SV Investments Limited
+  - link "Harta site-ului":
+    - /url: /ro-ro/sitemap
+  - link "Setări module cookie":
+    - /url: ""
+  - link "Reglementări":
+    - /url: /ro-ro/terms-and-policies/regulations
+  - link "Condiții și politici":
+    - /url: /ro-ro/terms-and-policies
+  - link "Procedura privind reclamațiile":
+    - /url: /ro-ro/terms-and-policies/complaints-procedures
+- button
+- alert
+```
+
+# Test source
+
+```ts
+  8   |     this.helpers = sectionConfig.helpers || {};
+  9   |     this.setup = sectionConfig.setup;
+  10  |     // this.skipRootValidation = sectionConfig.skipRootValidation;
+  11  |     this.root = this.resolveLocator(sectionConfig.root);
+  12  |   }
+  13  | 
+  14  |   async expectVisible() {
+  15  |     await expect(this.root).toBeVisible({ timeout: 20000 });
+  16  |   }
+  17  | 
+  18  |   resolveLocator(locatorConfig) {
+  19  |     if (!locatorConfig) {
+  20  |       throw new Error("Locator is undefined in CTA config");
+  21  |     }
+  22  | 
+  23  |     if (
+  24  |       typeof locatorConfig !== "string" &&
+  25  |       typeof locatorConfig !== "function"
+  26  |     ) {
+  27  |       throw new Error(
+  28  |         `Invalid locator type: ${typeof locatorConfig}. Value: ${JSON.stringify(locatorConfig)}`,
+  29  |       );
+  30  |     }
+  31  | 
+  32  |     if (typeof locatorConfig === "function") {
+  33  |       return locatorConfig(this.page);
+  34  |     }
+  35  | 
+  36  |     if (
+  37  |       locatorConfig.startsWith(":scope") ||
+  38  |       locatorConfig.startsWith("xpath=")
+  39  |     ) {
+  40  |       return this.root.locator(locatorConfig);
+  41  |     }
+  42  | 
+  43  |     return this.page.locator(locatorConfig);
+  44  |   }
+  45  | 
+  46  |   getActionLocator(actionName) {
+  47  |     return this.resolveLocator(this.actions[actionName].locator);
+  48  |   }
+  49  | 
+  50  |   getHelper(helperName) {
+  51  |     return this.resolveLocator(this.helpers[helperName]);
+  52  |   }
+  53  | 
+  54  |   async runSetup() {
+  55  |     if (!this.setup) {
+  56  |       return;
+  57  |     }
+  58  | 
+  59  |     await this.setup({
+  60  |       page: this.page,
+  61  |       getHelper: this.getHelper.bind(this),
+  62  |     });
+  63  |   }
+  64  | 
+  65  |   async runActionSetup(actionName) {
+  66  |     const action = this.actions[actionName];
+  67  | 
+  68  |     if (!action?.setup) {
+  69  |       return;
+  70  |     }
+  71  | 
+  72  |     await action.setup({
+  73  |       page: this.page,
+  74  |       getHelper: this.getHelper.bind(this),
+  75  |     });
+  76  | 
+  77  |     // console.log("ACTION SETUP DONE:", actionName);
+  78  |     // console.log("URL:", this.page.url());
+  79  |   }
+  80  | 
+  81  |   async click(actionName) {
+  82  |     await this.runSetup();
+  83  |     await this.runActionSetup(actionName);
+  84  | 
+  85  |     const action = this.actions[actionName];
+  86  |     let locator = this.getActionLocator(actionName);
+  87  | 
+  88  |     if (action.locatorIndex !== undefined) {
+  89  |       locator = locator.nth(action.locatorIndex);
+  90  |     }
+  91  | 
+  92  |     // console.log("ACTION:", actionName);
+  93  |     // console.log("URL:", this.page.url());
+  94  |     // console.log("PAGE CLOSED:", this.page.isClosed());
+  95  | 
+  96  |     const count = await locator.count();
+  97  |     console.log(actionName, count);
+  98  | 
+  99  |     if (action.optional && count === 0) {
+  100 |       return { skipped: true };
+  101 |     }
+  102 | 
+  103 |     // await locator.waitFor({
+  104 |     //   state: "visible",
+  105 |     //   // timeout: 5000,
+  106 |     // });
+  107 |     // console.log("before wait");
+> 108 |     await expect(locator).toBeVisible();
+      |                           ^ Error: expect(locator).toBeVisible() failed
+  109 |     await expect(locator).toBeEnabled();
+  110 | 
+  111 |     // console.log("before click");
+  112 |     await locator.click({
+  113 |       timeout: 5000,
+  114 |     });
+  115 |     // console.log("after click");
+  116 | 
+  117 |     return { skipped: false, locator };
+  118 |   }
+  119 | }
+  120 | 
+```
