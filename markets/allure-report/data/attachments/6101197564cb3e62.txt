@@ -1,0 +1,7 @@
+BASE URL: https://capital.com/vi-int
+PATH: markets/indices
+PAGE CLOSED: false
+buyBtn 1
+USER: unregistered
+EXPtestCase.allowedLicenses &&ECTATION:  shows login form
+EXPECTATION ASSERTIONS shows login form

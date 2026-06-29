@@ -1,0 +1,7 @@
+BASE URL: https://capital.com/en-eu
+PATH: markets/shares
+PAGE CLOSED: false
+alertBtn 1
+USER: unregistered
+EXPtestCase.allowedLicenses &&ECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

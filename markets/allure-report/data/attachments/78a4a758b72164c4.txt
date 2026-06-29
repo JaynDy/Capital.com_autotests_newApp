@@ -1,0 +1,9 @@
+BASE URL: https://capital.com/ar-int
+PATH: markets/forex
+ACTION SETUP DONE: longPositionGoToPlatformBtn
+URL: https://capital.com/ar-int/markets/forex/euro-us-dollar-m-dl-2
+PAGE CLOSED: false
+longPositionGoToPlatformBtn 1
+USER: unregistered
+EXPtestCase.allowedLicenses &&ECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

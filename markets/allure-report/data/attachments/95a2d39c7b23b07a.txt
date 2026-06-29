@@ -1,0 +1,9 @@
+BASE URL: https://capital.com/en-au
+PATH: markets/commodities
+ACTION SETUP DONE: shortPositionGoToPlatformBtn
+URL: https://capital.com/en-au/markets/commodities/gold-spot-commodity
+PAGE CLOSED: false
+shortPositionGoToPlatformBtn 1
+USER: unauthorised
+EXPtestCase.allowedLicenses &&ECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

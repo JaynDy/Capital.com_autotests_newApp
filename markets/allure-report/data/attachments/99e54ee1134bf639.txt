@@ -1,0 +1,4 @@
+BASE URL: https://capital.com/en-gb
+PATH: markets/shares
+PAGE CLOSED: false
+sellBtn 0

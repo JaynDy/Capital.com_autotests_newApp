@@ -1,0 +1,9 @@
+BASE URL: https://capital.com/el-gr
+PATH: markets/commodities
+ACTION SETUP DONE: shortPositionGoToPlatformBtn
+URL: https://capital.com/el-gr/markets/commodities/gold-spot-emporeuma
+PAGE CLOSED: false
+shortPositionGoToPlatformBtn 1
+USER: unregistered
+EXPtestCase.allowedLicenses &&ECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

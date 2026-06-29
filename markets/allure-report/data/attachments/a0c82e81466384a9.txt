@@ -1,0 +1,4 @@
+BASE URL: https://capital.com/ro-ro
+PATH: markets/forex
+PAGE CLOSED: false
+tradedBtn 0

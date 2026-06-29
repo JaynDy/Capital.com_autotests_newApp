@@ -1,0 +1,7 @@
+BASE URL: https://capital.com/en-ae
+PATH: markets/indices
+PAGE CLOSED: false
+viewDetailedChartBtn 1
+USER: unregistered
+EXPtestCase.allowedLicenses &&ECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

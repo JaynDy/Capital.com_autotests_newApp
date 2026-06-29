@@ -1,0 +1,7 @@
+BASE URL: https://capital.com/fr-fr
+PATH: markets/cryptocurrencies
+PAGE CLOSED: false
+sellBtn 1
+USER: unauthorised
+EXPtestCase.allowedLicenses &&ECTATION:  shows login form
+EXPECTATION ASSERTIONS shows login form

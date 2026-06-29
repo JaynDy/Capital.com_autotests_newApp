@@ -1,0 +1,7 @@
+BASE URL: https://capital.com/ar-int
+PATH: markets
+PAGE CLOSED: false
+buyBtn 1
+USER: unregistered
+EXPtestCase.allowedLicenses &&ECTATION:  shows login form
+EXPECTATION ASSERTIONS shows login form

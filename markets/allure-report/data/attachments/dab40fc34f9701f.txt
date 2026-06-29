@@ -1,0 +1,9 @@
+BASE URL: https://capital.com/mn-int
+PATH: markets
+ACTION SETUP DONE: shortPositionGoToPlatformBtn
+URL: https://capital.com/mn-int/markets/commodities/gold-spot-commodity
+PAGE CLOSED: false
+shortPositionGoToPlatformBtn 1
+USER: unregistered
+EXPtestCase.allowedLicenses &&ECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

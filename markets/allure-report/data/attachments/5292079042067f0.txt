@@ -1,0 +1,9 @@
+BASE URL: https://capital.com/de-int
+PATH: markets/bonds
+ACTION SETUP DONE: shortPositionGoToPlatformBtn
+URL: https://capital.com/de-int/markets/bonds/us-treasury-bond-spot
+PAGE CLOSED: false
+shortPositionGoToPlatformBtn 1
+USER: unregistered
+EXPtestCase.allowedLicenses &&ECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

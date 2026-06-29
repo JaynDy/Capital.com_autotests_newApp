@@ -1,0 +1,9 @@
+BASE URL: https://capital.com/el-gr
+PATH: markets/cryptocurrencies
+ACTION SETUP DONE: shortPositionGoToPlatformBtn
+URL: https://capital.com/el-gr/markets/cryptocurrencies/bitcoin-to-us-dollar-graphema
+PAGE CLOSED: false
+shortPositionGoToPlatformBtn 1
+USER: unregistered
+EXPtestCase.allowedLicenses &&ECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

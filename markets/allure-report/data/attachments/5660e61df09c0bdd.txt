@@ -1,0 +1,7 @@
+BASE URL: https://capital.com/ar-ae
+PATH: markets/forex
+PAGE CLOSED: false
+addToFavouriteBtn 1
+USER: unauthorised
+EXPtestCase.allowedLicenses &&ECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

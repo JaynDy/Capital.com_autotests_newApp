@@ -1,0 +1,7 @@
+BASE URL: https://capital.com/hu-hu
+PATH: markets/bonds
+PAGE CLOSED: false
+buyBtn 1
+USER: unauthorised
+EXPtestCase.allowedLicenses &&ECTATION:  shows login form
+EXPECTATION ASSERTIONS shows login form

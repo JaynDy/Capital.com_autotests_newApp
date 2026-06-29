@@ -1,0 +1,9 @@
+BASE URL: https://capital.com/en-eu
+PATH: markets/indices
+ACTION SETUP DONE: longPositionGoToPlatformBtn
+URL: https://capital.com/en-eu/markets/indices/us-tech-100-index-1
+PAGE CLOSED: false
+longPositionGoToPlatformBtn 1
+USER: unregistered
+EXPtestCase.allowedLicenses &&ECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

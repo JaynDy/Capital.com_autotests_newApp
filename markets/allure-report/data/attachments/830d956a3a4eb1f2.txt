@@ -1,0 +1,7 @@
+BASE URL: https://capital.com/ar-int
+PATH: markets/forex
+PAGE CLOSED: false
+signupBtn 1
+USER: unregistered
+EXPtestCase.allowedLicenses &&ECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

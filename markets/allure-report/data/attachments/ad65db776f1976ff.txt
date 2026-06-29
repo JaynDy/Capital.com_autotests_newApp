@@ -1,0 +1,4 @@
+BASE URL: https://capital.com/ar-int
+PATH: markets/indices
+PAGE CLOSED: false
+tradedBtn 0

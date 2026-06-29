@@ -1,0 +1,9 @@
+BASE URL: https://capital.com/es-int
+PATH: markets/commodities
+ACTION SETUP DONE: longPositionGoToPlatformBtn
+URL: https://capital.com/es-int/markets/commodities/gold-spot-materia-prima
+PAGE CLOSED: false
+longPositionGoToPlatformBtn 1
+USER: unregistered
+EXPtestCase.allowedLicenses &&ECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

@@ -1,0 +1,955 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: markets/markets.spec.js >> shares page | heroBanner | signupBtn
+- Location: tests/markets/markets.spec.js:16:7
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: locator.waitFor: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('[data-type="homepage_hero_banner_btn2_signup"]') to be visible
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e7]:
+      - text: Kontrakty CFD to złożone instrumenty, które wiążą się z dużym ryzykiem gwałtownej straty środków na skutek zastosowania dźwigni finansowej.
+      - generic [ref=e8]:
+        - generic [ref=e9]:
+          - strong [ref=e10]: Od 74 do 89% rachunków inwestorów detalicznych odnotowuje straty na handlu kontraktami CFD
+          - text: .
+        - text: Powinieneś rozważyć, czy rozumiesz, jak działają kontrakty CFD i czy możesz sobie pozwolić na podjęcie wysokiego ryzyka utraty pieniędzy. Prosimy o zapoznanie się z naszym
+        - link "Oświadczeniem o ryzyku" [ref=e11] [cursor=pointer]:
+          - /url: https://capital.com/risk-disclosure-policy-cceu
+    - generic [ref=e13]:
+      - link [ref=e14] [cursor=pointer]:
+        - /url: /pl-pl
+        - img [ref=e15]
+      - generic [ref=e20]:
+        - navigation [ref=e21]:
+          - button "Handel" [ref=e22]:
+            - button "Handel" [ref=e23]:
+              - generic [ref=e24]: Handel
+          - button "Rynki" [ref=e25]:
+            - button "Rynki" [ref=e26]:
+              - generic [ref=e27]: Rynki
+          - link "Cennik" [ref=e30] [cursor=pointer]:
+            - /url: /pl-pl/ways-to-trade/fees-and-charges
+          - button "O nas" [ref=e31]:
+            - button "O nas" [ref=e32]:
+              - generic [ref=e33]: O nas
+        - button "pl" [ref=e34] [cursor=pointer]:
+          - generic [ref=e36]: pl
+      - generic [ref=e38]:
+        - button "Zaloguj się" [ref=e39] [cursor=pointer]: Zaloguj się
+        - button "Otwórz konto" [ref=e40] [cursor=pointer]: Otwórz konto
+  - generic [ref=e41]:
+    - paragraph [ref=e44]:
+      - generic [ref=e45]:
+        - link "Strona główna" [ref=e46] [cursor=pointer]:
+          - /url: /pl-pl
+        - text: •
+      - generic [ref=e47]:
+        - link "Rynki" [ref=e48] [cursor=pointer]:
+          - /url: /pl-pl/markets
+        - text: •
+      - text: Akcje
+    - generic [ref=e49]:
+      - generic [ref=e51]:
+        - heading "Rynki akcji i funduszy ETF" [level=2] [ref=e53]
+        - generic [ref=e54]:
+          - link "Strona przeglądu" [ref=e55] [cursor=pointer]:
+            - /url: /pl-pl/markets/shares
+          - link "Najczęściej handlowane" [ref=e56] [cursor=pointer]:
+            - /url: /pl-pl/markets/shares/most-active-shares
+          - link "Najbardziej zmienne" [ref=e57] [cursor=pointer]:
+            - /url: /pl-pl/markets/shares/most-volatile
+          - link "Największe wzrosty" [ref=e58] [cursor=pointer]:
+            - /url: /pl-pl/markets/shares/top-risers
+          - link "Największe spadki" [ref=e59] [cursor=pointer]:
+            - /url: /pl-pl/markets/shares/top-fallers
+        - generic [ref=e60]:
+          - generic [ref=e61]:
+            - generic [ref=e63]:
+              - button "Kontrakty CFD" [ref=e64]: Kontrakty CFD
+              - button "Opcje knock-out" [ref=e65] [cursor=pointer]: Opcje knock-out
+            - generic [ref=e66]:
+              - button "Województwo Great Britain Norway Germany Switzerland Sweden France Poland Italy Singapore Ireland United Arab Emirates Netherlands Spain Hong Kong United States of America Greece Canada Australia Japan Saudi Arabia" [ref=e68]:
+                - button "Województwo" [ref=e69]:
+                  - generic [ref=e70]:
+                    - textbox "Województwo":
+                      - /placeholder: " "
+                    - generic: Województwo
+                - generic:
+                  - generic:
+                    - button "Great Britain":
+                      - generic:
+                        - checkbox "Great Britain"
+                        - text: Great Britain
+                    - button "Norway":
+                      - generic:
+                        - checkbox "Norway"
+                        - text: Norway
+                    - button "Germany":
+                      - generic:
+                        - checkbox "Germany"
+                        - text: Germany
+                    - button "Switzerland":
+                      - generic:
+                        - checkbox "Switzerland"
+                        - text: Switzerland
+                    - button "Sweden":
+                      - generic:
+                        - checkbox "Sweden"
+                        - text: Sweden
+                    - button "France":
+                      - generic:
+                        - checkbox "France"
+                        - text: France
+                    - button "Poland":
+                      - generic:
+                        - checkbox "Poland"
+                        - text: Poland
+                    - button "Italy":
+                      - generic:
+                        - checkbox "Italy"
+                        - text: Italy
+                    - button "Singapore":
+                      - generic:
+                        - checkbox "Singapore"
+                        - text: Singapore
+                    - button "Ireland":
+                      - generic:
+                        - checkbox "Ireland"
+                        - text: Ireland
+                    - button "United Arab Emirates":
+                      - generic:
+                        - checkbox "United Arab Emirates"
+                        - text: United Arab Emirates
+                    - button "Netherlands":
+                      - generic:
+                        - checkbox "Netherlands"
+                        - text: Netherlands
+                    - button "Spain":
+                      - generic:
+                        - checkbox "Spain"
+                        - text: Spain
+                    - button "Hong Kong":
+                      - generic:
+                        - checkbox "Hong Kong"
+                        - text: Hong Kong
+                    - button "United States of America":
+                      - generic:
+                        - checkbox "United States of America"
+                        - text: United States of America
+                    - button "Greece":
+                      - generic:
+                        - checkbox "Greece"
+                        - text: Greece
+                    - button "Canada":
+                      - generic:
+                        - checkbox "Canada"
+                        - text: Canada
+                    - button "Australia":
+                      - generic:
+                        - checkbox "Australia"
+                        - text: Australia
+                    - button "Japan":
+                      - generic:
+                        - checkbox "Japan"
+                        - text: Japan
+                    - button "Saudi Arabia":
+                      - generic:
+                        - checkbox "Saudi Arabia"
+                        - text: Saudi Arabia
+              - button "Branża ETFs Technology Non-Cyclical Consumer Goods & Services Financials Cyclical Consumer Goods & Services Industrials Basic Materials Healthcare Telecommunications Services Energy Utilities" [ref=e72]:
+                - button "Branża" [ref=e73]:
+                  - generic [ref=e74]:
+                    - textbox "Branża":
+                      - /placeholder: " "
+                    - generic: Branża
+                - generic:
+                  - generic:
+                    - button "ETFs":
+                      - generic:
+                        - checkbox "ETFs"
+                        - text: ETFs
+                    - button "Technology":
+                      - generic:
+                        - checkbox "Technology"
+                        - text: Technology
+                    - button "Non-Cyclical Consumer Goods & Services":
+                      - generic:
+                        - checkbox "Non-Cyclical Consumer Goods & Services"
+                        - text: Non-Cyclical Consumer Goods & Services
+                    - button "Financials":
+                      - generic:
+                        - checkbox "Financials"
+                        - text: Financials
+                    - button "Cyclical Consumer Goods & Services":
+                      - generic:
+                        - checkbox "Cyclical Consumer Goods & Services"
+                        - text: Cyclical Consumer Goods & Services
+                    - button "Industrials":
+                      - generic:
+                        - checkbox "Industrials"
+                        - text: Industrials
+                    - button "Basic Materials":
+                      - generic:
+                        - checkbox "Basic Materials"
+                        - text: Basic Materials
+                    - button "Healthcare":
+                      - generic:
+                        - checkbox "Healthcare"
+                        - text: Healthcare
+                    - button "Telecommunications Services":
+                      - generic:
+                        - checkbox "Telecommunications Services"
+                        - text: Telecommunications Services
+                    - button "Energy":
+                      - generic:
+                        - checkbox "Energy"
+                        - text: Energy
+                    - button "Utilities":
+                      - generic:
+                        - checkbox "Utilities"
+                        - text: Utilities
+          - separator [ref=e75]
+          - generic [ref=e76]:
+            - generic [ref=e77]:
+              - button [ref=e80]:
+                - textbox "marketlist_search" [ref=e82]:
+                  - /placeholder: Search
+              - generic [ref=e83]: Sprzedaj
+              - generic [ref=e84]: Kup
+              - generic [ref=e85]: Spread
+              - generic [ref=e86]: 1D zmiana
+              - generic [ref=e87]: Wykresy 1D
+              - generic [ref=e88]:
+                - generic [ref=e89]: Sprzedawcy
+                - generic [ref=e90]: Kupujący
+            - generic [ref=e91]:
+              - link "SPCX SpaceX 156.82 157.05 0.23 +3.250% 8.15% 91.85%" [ref=e92] [cursor=pointer]:
+                - /url: /pl-pl/markets/shares/space-exploration-technologies-corp-cena-akcji
+                - generic [ref=e94]:
+                  - generic [ref=e95]: SPCX
+                  - generic [ref=e96]: SpaceX
+                - generic [ref=e97]: "156.82"
+                - generic [ref=e98]: "157.05"
+                - generic [ref=e99]: "0.23"
+                - generic [ref=e100]: +3.250%
+                - img [ref=e102]
+                - generic [ref=e109]:
+                  - generic [ref=e110]: 8.15%
+                  - generic [ref=e111]: 91.85%
+              - link "MU Micron Technology Inc 1123.60 1124.20 0.60 -0.510% 18.63% 81.37%" [ref=e112] [cursor=pointer]:
+                - /url: /pl-pl/markets/shares/micron-technology-inc-cena-akcji-1
+                - generic [ref=e114]:
+                  - generic [ref=e115]: MU
+                  - generic [ref=e116]: Micron Technology Inc
+                - generic [ref=e117]: "1123.60"
+                - generic [ref=e118]: "1124.20"
+                - generic [ref=e119]: "0.60"
+                - generic [ref=e120]: "-0.510%"
+                - img [ref=e122]
+                - generic [ref=e129]:
+                  - generic [ref=e130]: 18.63%
+                  - generic [ref=e131]: 81.37%
+              - link "TSLA Tesla Inc 382.75 382.97 0.22 +1.380% 12.49% 87.51%" [ref=e132] [cursor=pointer]:
+                - /url: /pl-pl/markets/shares/tesla-inc-cena-akcji-1
+                - generic [ref=e134]:
+                  - generic [ref=e135]: TSLA
+                  - generic [ref=e136]: Tesla Inc
+                - generic [ref=e137]: "382.75"
+                - generic [ref=e138]: "382.97"
+                - generic [ref=e139]: "0.22"
+                - generic [ref=e140]: +1.380%
+                - img [ref=e142]
+                - generic [ref=e149]:
+                  - generic [ref=e150]: 12.49%
+                  - generic [ref=e151]: 87.51%
+              - link "MSTR Strategy Inc 83.74 84.05 0.31 +2.760% 8.15% 91.85%" [ref=e152] [cursor=pointer]:
+                - /url: /pl-pl/markets/shares/microstrategy-incorporated-cena-akcji
+                - generic [ref=e154]:
+                  - generic [ref=e155]: MSTR
+                  - generic [ref=e156]: Strategy Inc
+                - generic [ref=e157]: "83.74"
+                - generic [ref=e158]: "84.05"
+                - generic [ref=e159]: "0.31"
+                - generic [ref=e160]: +2.760%
+                - img [ref=e162]
+                - generic [ref=e169]:
+                  - generic [ref=e170]: 8.15%
+                  - generic [ref=e171]: 91.85%
+              - link "SOXL Direxion Daily Semiconductor Bull 3X Shares 221.26 221.56 0.30 +4.830% 0% 100%" [ref=e172] [cursor=pointer]:
+                - /url: /pl-pl/markets/shares/direxion-daily-semiconductor-bull-3x-shares-cena-akcji
+                - generic [ref=e174]:
+                  - generic [ref=e175]: SOXL
+                  - generic [ref=e176]: Direxion Daily Semiconductor Bull 3X Shares
+                - generic [ref=e177]: "221.26"
+                - generic [ref=e178]: "221.56"
+                - generic [ref=e179]: "0.30"
+                - generic [ref=e180]: +4.830%
+                - img [ref=e182]
+                - generic [ref=e189]:
+                  - generic [ref=e190]: 0%
+                  - generic [ref=e191]: 100%
+              - link "NVDA NVIDIA Corp 194.28 194.50 0.22 +1.170% 6.11% 93.89%" [ref=e192] [cursor=pointer]:
+                - /url: /pl-pl/markets/shares/nvidia-corp-cena-akcji-1
+                - generic [ref=e194]:
+                  - generic [ref=e195]: NVDA
+                  - generic [ref=e196]: NVIDIA Corp
+                - generic [ref=e197]: "194.28"
+                - generic [ref=e198]: "194.50"
+                - generic [ref=e199]: "0.22"
+                - generic [ref=e200]: +1.170%
+                - img [ref=e202]
+                - generic [ref=e209]:
+                  - generic [ref=e210]: 6.11%
+                  - generic [ref=e211]: 93.89%
+              - link "SNDK SanDisk Corp 2074.95 2079.98 5.03 -0.140% 35.33% 64.67%" [ref=e212] [cursor=pointer]:
+                - /url: /pl-pl/markets/shares/sandisk-corp-cena-akcji
+                - generic [ref=e214]:
+                  - generic [ref=e215]: SNDK
+                  - generic [ref=e216]: SanDisk Corp
+                - generic [ref=e217]: "2074.95"
+                - generic [ref=e218]: "2079.98"
+                - generic [ref=e219]: "5.03"
+                - generic [ref=e220]: "-0.140%"
+                - img [ref=e222]
+                - generic [ref=e229]:
+                  - generic [ref=e230]: 35.33%
+                  - generic [ref=e231]: 64.67%
+              - link "PLTR Palantir Technologies Inc 116.88 117.03 0.15 +4.120% 6.61% 93.39%" [ref=e232] [cursor=pointer]:
+                - /url: /pl-pl/markets/shares/palantir-technologies-inc-cena-akcji
+                - generic [ref=e234]:
+                  - generic [ref=e235]: PLTR
+                  - generic [ref=e236]: Palantir Technologies Inc
+                - generic [ref=e237]: "116.88"
+                - generic [ref=e238]: "117.03"
+                - generic [ref=e239]: "0.15"
+                - generic [ref=e240]: +4.120%
+                - img [ref=e242]
+                - generic [ref=e249]:
+                  - generic [ref=e250]: 6.61%
+                  - generic [ref=e251]: 93.39%
+              - link "AMD Advanced Micro Devices Inc 527.16 527.83 0.67 +1.910% 17.55% 82.45%" [ref=e252] [cursor=pointer]:
+                - /url: /pl-pl/markets/shares/advanced-micro-devices-inc-cena-akcji-1
+                - generic [ref=e254]:
+                  - generic [ref=e255]: AMD
+                  - generic [ref=e256]: Advanced Micro Devices Inc
+                - generic [ref=e257]: "527.16"
+                - generic [ref=e258]: "527.83"
+                - generic [ref=e259]: "0.67"
+                - generic [ref=e260]: +1.910%
+                - img [ref=e262]
+                - generic [ref=e269]:
+                  - generic [ref=e270]: 17.55%
+                  - generic [ref=e271]: 82.45%
+              - link "MSFT Microsoft Corp 379.74 380.45 0.71 +2.230% 3.37% 96.63%" [ref=e272] [cursor=pointer]:
+                - /url: /pl-pl/markets/shares/microsoft-corp-cena-akcji-1
+                - generic [ref=e274]:
+                  - generic [ref=e275]: MSFT
+                  - generic [ref=e276]: Microsoft Corp
+                - generic [ref=e277]: "379.74"
+                - generic [ref=e278]: "380.45"
+                - generic [ref=e279]: "0.71"
+                - generic [ref=e280]: +2.230%
+                - img [ref=e282]
+                - generic [ref=e289]:
+                  - generic [ref=e290]: 3.37%
+                  - generic [ref=e291]: 96.63%
+          - generic [ref=e292]: Ceny akcji są orientacyjne i mogą różnić się od aktualnych cen rynkowych.
+        - navigation "pagination" [ref=e294]:
+          - link "1":
+            - /url: /pl-pl/markets/shares?page=1
+          - link "2" [ref=e295] [cursor=pointer]:
+            - /url: /pl-pl/markets/shares?page=2
+          - link "3" [ref=e296] [cursor=pointer]:
+            - /url: /pl-pl/markets/shares?page=3
+          - generic [ref=e297]: ...
+          - link "602" [ref=e298] [cursor=pointer]:
+            - /url: /pl-pl/markets/shares?page=602
+          - link "603" [ref=e299] [cursor=pointer]:
+            - /url: /pl-pl/markets/shares?page=603
+          - link "Go to the next page" [ref=e300] [cursor=pointer]:
+            - /url: /pl-pl/markets/shares?page=2
+      - generic [ref=e302]:
+        - heading "Wbudowane w każde konto" [level=2] [ref=e304]
+        - generic [ref=e305]:
+          - generic [ref=e307]:
+            - heading "Wszystkie dane w jednym miejscu" [level=3] [ref=e308]
+            - paragraph [ref=e310]: Dane giełdowe, narzędzia analityczne i informacje dotyczące portfolio. Zaprojektowany z myślą o handlu, a nie o pojedynczych transakcjach.
+            - link "Poznaj platformę internetową" [ref=e311] [cursor=pointer]:
+              - /url: https://capital.com/pl-pl/trading-platforms/web-platform
+              - generic [ref=e312]: Poznaj platformę internetową
+          - generic [ref=e314]:
+            - heading "Przejrzyste koszty, pełna transparentność" [level=3] [ref=e315]
+            - paragraph [ref=e317]: Przejrzyste stawki i brak ukrytych opłat. Przejrzysta struktura kosztów przed podjęciem decyzji.
+            - link "Przejdź do cennika" [ref=e318] [cursor=pointer]:
+              - /url: https://capital.com/pl-pl/ways-to-trade/pricing
+              - generic [ref=e319]: Przejdź do cennika
+          - generic [ref=e321]:
+            - heading "Wydłużone godziny na kluczowych akcjach" [level=3] [ref=e322]
+            - paragraph [ref=e324]: Pozycje na wybranych akcjach amerykańskich dostępne są w momencie ogłoszenia wyników finansowych, po zamknięciu sesji.
+          - generic [ref=e326]:
+            - heading "Międzynarodowe standardy, lokalna realizacja" [level=3] [ref=e327]
+            - paragraph [ref=e329]: Podlega regulacjom w pięciu jurysdykcjach. Pomoc lokalna dostępna w Twoim języku.
+          - generic [ref=e331]:
+            - heading "Wszystkie narzędzia – bez konieczności wkładu kapitałowego" [level=3] [ref=e332]
+            - paragraph [ref=e334]: Wirtualne środki, aktualne ceny. Funkcje konta rzeczywistego – zanim podejmiesz decyzję.
+            - link "Przejdź do wersji demo" [ref=e335] [cursor=pointer]:
+              - /url: https://capital.com/pl-pl/trading-platforms/demo-account
+              - generic [ref=e336]: Przejdź do wersji demo
+          - generic [ref=e338]:
+            - heading "Wbudowane narzędzia analityczne i narzędzia do oceny ryzyka" [level=3] [ref=e339]
+            - paragraph [ref=e341]: Asystent AI i narzędzia analityczne przed zawarciem transakcji. Zlecenia stop-loss* i take-profit na całej długości pozycji.
+      - paragraph [ref=e345]: "*Nie ma gwarancji dotyczących stop lossów. Dostępne są zlecenia stop-loss z gwarancją realizacji, jednak w przypadku ich wykonania pobierana jest opłata."
+      - generic [ref=e346]:
+        - generic [ref=e348]:
+          - heading "Opinie i oceny użytkowników" [level=2] [ref=e349]
+          - generic [ref=e350]:
+            - text: Przeczytaj opinie naszych klientów
+            - superscript [ref=e351]: "1"
+            - text: ", niezależnie od ich poziomu doświadczenia."
+        - generic [ref=e352]:
+          - region [ref=e353]:
+            - generic [ref=e355]:
+              - group [ref=e356]:
+                - link [ref=e357] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e360]: 2024-06-07
+                  - strong [ref=e361]: M***** S********
+                  - paragraph [ref=e363]: Działa ok prawie żadnych zastrzeżeń szybkie wypłaty i wpłaty porostu ok
+              - group [ref=e365]:
+                - link [ref=e366] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e369]: 2024-03-18
+                  - strong [ref=e370]: A*** R*****
+                  - paragraph [ref=e372]: Dopiero się uczę ale widzę że ta aplikacja jest prosta i łatwa w obsłudze już na wersji demo zarobiłem kilkanaście zł polecam bardzo
+              - group [ref=e374]:
+                - link [ref=e375] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e378]: 2025-02-15
+                  - strong [ref=e379]: M****** G
+                  - paragraph [ref=e381]: Jak na start z inwestowaniem w giełdę, to jest dobry wybór
+              - group [ref=e383]:
+                - link [ref=e384] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e387]: 2025-03-03
+                  - strong [ref=e388]: T***** W************
+                  - paragraph [ref=e390]: Daje możliwość poznania jak działa rynek
+              - group [ref=e392]:
+                - link [ref=e393] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e396]: 2024-04-16
+                  - strong [ref=e397]: P********* M****
+                  - paragraph [ref=e399]: Działa i to się liczy. Obsługa pomaga zawsze na czas.
+              - group [ref=e401]:
+                - link [ref=e402] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e405]: 2024-12-27
+                  - strong [ref=e406]: E******* B******-S*****
+                  - paragraph [ref=e408]: Świetna platforma do tredingu polecam
+              - group [ref=e410]:
+                - link [ref=e411] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e414]: 2025-07-06
+                  - strong [ref=e415]: P**** M*****
+                  - paragraph [ref=e417]: łatwa w obsłudze aplikacja dla inwestorów
+              - group [ref=e419]:
+                - link [ref=e420] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e423]: 2025-06-02
+                  - strong [ref=e424]: M*****
+                  - paragraph [ref=e426]: Naprawdę polecam capitala nawet przy tylu innych apek. Warto spróbować.
+              - group [ref=e428]:
+                - link [ref=e429] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e432]: 2025-02-05
+                  - strong [ref=e433]: A****** C**********
+                  - paragraph [ref=e435]: Przejrzyste wykresy, łatwe intuicyjne menu
+              - group [ref=e437]:
+                - link [ref=e438] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e441]: 2025-02-11
+                  - strong [ref=e442]: R****
+                  - paragraph [ref=e444]: Bardzo polecam tą platformę. Bardzo profesjonalne podejscie pracowników szczególnie Pani Iwony. Zawsze mogę na nią liczyć w każdej problematycznej dla mnie sprawie.
+              - group "1 of 10" [ref=e446]:
+                - link "2024-06-07 M***** S******** Działa ok prawie żadnych zastrzeżeń szybkie wypłaty i wpłaty porostu ok" [ref=e447] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=0846c7de-4cd0-4a47-a386-42d73a1061c9&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                  - generic [ref=e450]: 2024-06-07
+                  - strong [ref=e451]: M***** S********
+                  - paragraph [ref=e453]: Działa ok prawie żadnych zastrzeżeń szybkie wypłaty i wpłaty porostu ok
+              - group "2 of 10" [ref=e455]:
+                - link "2024-03-18 A*** R***** Dopiero się uczę ale widzę że ta aplikacja jest prosta i łatwa w obsłudze już na wersji demo zarobiłem kilkanaście zł polecam bardzo" [ref=e456] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=0846c7de-4cd0-4a47-a386-42d73a1061c9&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                  - generic [ref=e459]: 2024-03-18
+                  - strong [ref=e460]: A*** R*****
+                  - paragraph [ref=e462]: Dopiero się uczę ale widzę że ta aplikacja jest prosta i łatwa w obsłudze już na wersji demo zarobiłem kilkanaście zł polecam bardzo
+              - group "3 of 10" [ref=e464]:
+                - link "2025-02-15 M****** G Jak na start z inwestowaniem w giełdę, to jest dobry wybór" [ref=e465] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=0846c7de-4cd0-4a47-a386-42d73a1061c9&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                  - generic [ref=e468]: 2025-02-15
+                  - strong [ref=e469]: M****** G
+                  - paragraph [ref=e471]: Jak na start z inwestowaniem w giełdę, to jest dobry wybór
+              - group [ref=e473]:
+                - link [ref=e474] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=0846c7de-4cd0-4a47-a386-42d73a1061c9&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                  - generic [ref=e477]: 2025-03-03
+                  - strong [ref=e478]: T***** W************
+                  - paragraph [ref=e480]: Daje możliwość poznania jak działa rynek
+              - group [ref=e482]:
+                - link [ref=e483] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=0846c7de-4cd0-4a47-a386-42d73a1061c9&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                  - generic [ref=e486]: 2024-04-16
+                  - strong [ref=e487]: P********* M****
+                  - paragraph [ref=e489]: Działa i to się liczy. Obsługa pomaga zawsze na czas.
+              - group [ref=e491]:
+                - link [ref=e492] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e495]: 2024-12-27
+                  - strong [ref=e496]: E******* B******-S*****
+                  - paragraph [ref=e498]: Świetna platforma do tredingu polecam
+              - group [ref=e500]:
+                - link [ref=e501] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=0846c7de-4cd0-4a47-a386-42d73a1061c9&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                  - generic [ref=e504]: 2025-07-06
+                  - strong [ref=e505]: P**** M*****
+                  - paragraph [ref=e507]: łatwa w obsłudze aplikacja dla inwestorów
+              - group [ref=e509]:
+                - link [ref=e510] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e513]: 2025-06-02
+                  - strong [ref=e514]: M*****
+                  - paragraph [ref=e516]: Naprawdę polecam capitala nawet przy tylu innych apek. Warto spróbować.
+              - group [ref=e518]:
+                - link [ref=e519] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=0846c7de-4cd0-4a47-a386-42d73a1061c9&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                  - generic [ref=e522]: 2025-02-05
+                  - strong [ref=e523]: A****** C**********
+                  - paragraph [ref=e525]: Przejrzyste wykresy, łatwe intuicyjne menu
+              - group [ref=e527]:
+                - link [ref=e528] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e531]: 2025-02-11
+                  - strong [ref=e532]: R****
+                  - paragraph [ref=e534]: Bardzo polecam tą platformę. Bardzo profesjonalne podejscie pracowników szczególnie Pani Iwony. Zawsze mogę na nią liczyć w każdej problematycznej dla mnie sprawie.
+              - group [ref=e536]:
+                - link [ref=e537] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e540]: 2024-06-07
+                  - strong [ref=e541]: M***** S********
+                  - paragraph [ref=e543]: Działa ok prawie żadnych zastrzeżeń szybkie wypłaty i wpłaty porostu ok
+              - group [ref=e545]:
+                - link [ref=e546] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e549]: 2024-03-18
+                  - strong [ref=e550]: A*** R*****
+                  - paragraph [ref=e552]: Dopiero się uczę ale widzę że ta aplikacja jest prosta i łatwa w obsłudze już na wersji demo zarobiłem kilkanaście zł polecam bardzo
+              - group [ref=e554]:
+                - link [ref=e555] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e558]: 2025-02-15
+                  - strong [ref=e559]: M****** G
+                  - paragraph [ref=e561]: Jak na start z inwestowaniem w giełdę, to jest dobry wybór
+              - group [ref=e563]:
+                - link [ref=e564] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e567]: 2025-03-03
+                  - strong [ref=e568]: T***** W************
+                  - paragraph [ref=e570]: Daje możliwość poznania jak działa rynek
+              - group [ref=e572]:
+                - link [ref=e573] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e576]: 2024-04-16
+                  - strong [ref=e577]: P********* M****
+                  - paragraph [ref=e579]: Działa i to się liczy. Obsługa pomaga zawsze na czas.
+              - group [ref=e581]:
+                - link [ref=e582] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e585]: 2024-12-27
+                  - strong [ref=e586]: E******* B******-S*****
+                  - paragraph [ref=e588]: Świetna platforma do tredingu polecam
+              - group [ref=e590]:
+                - link [ref=e591] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e594]: 2025-07-06
+                  - strong [ref=e595]: P**** M*****
+                  - paragraph [ref=e597]: łatwa w obsłudze aplikacja dla inwestorów
+              - group [ref=e599]:
+                - link [ref=e600] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e603]: 2025-06-02
+                  - strong [ref=e604]: M*****
+                  - paragraph [ref=e606]: Naprawdę polecam capitala nawet przy tylu innych apek. Warto spróbować.
+              - group [ref=e608]:
+                - link [ref=e609] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e612]: 2025-02-05
+                  - strong [ref=e613]: A****** C**********
+                  - paragraph [ref=e615]: Przejrzyste wykresy, łatwe intuicyjne menu
+              - group [ref=e617]:
+                - link [ref=e618] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e621]: 2025-02-11
+                  - strong [ref=e622]: R****
+                  - paragraph [ref=e624]: Bardzo polecam tą platformę. Bardzo profesjonalne podejscie pracowników szczególnie Pani Iwony. Zawsze mogę na nią liczyć w każdej problematycznej dla mnie sprawie.
+            - generic:
+              - button "Go to last slide" [ref=e626] [cursor=pointer]
+              - button "Next slide" [ref=e627] [cursor=pointer]
+          - paragraph [ref=e628]: Wyświetlanie naszych 4 i 5-gwiazdkowych recenzji. Konkretne dane użytkownika pozostały celowo anonimowe, aby chronić jego prywatność zgodnie z wymogami RODO.
+        - generic [ref=e630]:
+          - link "4.6" [ref=e631] [cursor=pointer]:
+            - /url: https://www.tradingview.com/broker/Capitalcom/
+            - strong [ref=e634]: "4.6"
+          - link "Oceny i recenzje 4.7" [ref=e637] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/id1230088754?cp_device_id=0846c7de-4cd0-4a47-a386-42d73a1061c9&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+            - strong [ref=e639]: Oceny i recenzje
+            - strong [ref=e641]: "4.7"
+          - link "Oceny i recenzje 4.7" [ref=e644] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=0846c7de-4cd0-4a47-a386-42d73a1061c9&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+            - strong [ref=e646]: Oceny i recenzje
+            - strong [ref=e648]: "4.7"
+          - link "4.6" [ref=e651] [cursor=pointer]:
+            - /url: https://www.trustpilot.com/review/capital.com
+            - strong [ref=e654]: "4.6"
+      - heading "Często zadawane pytania dotyczące akcji" [level=2] [ref=e659]
+      - generic [ref=e661]:
+        - group [ref=e662]:
+          - generic "Jak działa handel akcjami i funduszami ETF" [ref=e663] [cursor=pointer]:
+            - heading "Jak działa handel akcjami i funduszami ETF" [level=3] [ref=e664]
+        - group [ref=e665]:
+          - generic "Co oferują rynki akcji i funduszy ETF" [ref=e666] [cursor=pointer]:
+            - heading "Co oferują rynki akcji i funduszy ETF" [level=3] [ref=e667]
+        - group [ref=e668]:
+          - generic "Handel akcjami i funduszami ETF na Capital·com" [ref=e669] [cursor=pointer]:
+            - heading "Handel akcjami i funduszami ETF na Capital·com" [level=3] [ref=e670]
+      - paragraph [ref=e674]:
+        - superscript [ref=e675]: "1"
+        - text: Przedstawione informacje dotyczą grupy Capital Com.
+  - contentinfo [ref=e677]:
+    - generic [ref=e678]:
+      - link [ref=e679] [cursor=pointer]:
+        - /url: /pl-pl
+        - img [ref=e680]
+      - generic [ref=e684]:
+        - link [ref=e685] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/capital.com/
+        - link [ref=e686] [cursor=pointer]:
+          - /url: https://www.youtube.com/@Capitaltrading/videos
+      - generic [ref=e687]:
+        - link [ref=e688] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/id1230088754?cp_device_id=0846c7de-4cd0-4a47-a386-42d73a1061c9&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e689] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=0846c7de-4cd0-4a47-a386-42d73a1061c9&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e690] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading.huawei-huawei?cp_device_id=0846c7de-4cd0-4a47-a386-42d73a1061c9&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+    - generic [ref=e691]:
+      - generic [ref=e692]:
+        - generic [ref=e693]:
+          - generic [ref=e694]:
+            - generic [ref=e695]: "Kraj / Region:"
+            - button "Poland" [ref=e696] [cursor=pointer]:
+              - generic [ref=e698]: Poland
+          - generic [ref=e699]: •
+          - generic [ref=e700]:
+            - generic [ref=e701]: "Język:"
+            - button "Polish" [ref=e702] [cursor=pointer]:
+              - generic [ref=e703]: Polish
+        - generic [ref=e704]:
+          - generic [ref=e705]: "Możesz również skontaktować się z nami:"
+          - link "+48 222304455" [ref=e708] [cursor=pointer]:
+            - /url: tel:+48 222304455
+            - strong [ref=e709]: +48 222304455
+            - strong
+          - generic [ref=e710]: •
+          - link "support@capital.com" [ref=e712] [cursor=pointer]:
+            - /url: mailto:support@capital.com
+            - strong [ref=e713]: support@capital.com
+      - generic [ref=e714]:
+        - generic [ref=e715]:
+          - strong [ref=e717]: Handel
+          - generic [ref=e718]:
+            - generic [ref=e719]:
+              - generic [ref=e720]: Handel
+              - generic [ref=e721]:
+                - link "Handel kontraktami CFD" [ref=e723] [cursor=pointer]:
+                  - /url: /pl-pl/ways-to-trade/cfd-trading
+                - link "Opcje knock-out" [ref=e725] [cursor=pointer]:
+                  - /url: /pl-pl/ways-to-trade/knock-outs
+                - link "Handel demonstracyjny" [ref=e727] [cursor=pointer]:
+                  - /url: /pl-pl/trading-platforms/demo-account
+                - link "Profesjonalny" [ref=e729] [cursor=pointer]:
+                  - /url: /pl-pl/professional-clients
+                - link "Doświadczony klient detaliczny" [ref=e731] [cursor=pointer]:
+                  - /url: /pl-pl/ways-to-trade/experienced-retail-trader
+            - generic [ref=e732]:
+              - generic [ref=e733]: Platforma handlowa
+              - generic [ref=e734]:
+                - link "Platforma internetowa" [ref=e736] [cursor=pointer]:
+                  - /url: /pl-pl/trading-platforms/web-platform
+                - link "Aplikacje mobilne" [ref=e738] [cursor=pointer]:
+                  - /url: /pl-pl/trading-platforms/mobile-apps
+                - link "TradingView" [ref=e740] [cursor=pointer]:
+                  - /url: /pl-pl/trading-platforms/trading-view
+                - link "MT4" [ref=e742] [cursor=pointer]:
+                  - /url: /pl-pl/trading-platforms/mt4
+                - link "MT5" [ref=e744] [cursor=pointer]:
+                  - /url: /pl-pl/trading-platforms/mt5
+            - generic [ref=e745]:
+              - generic [ref=e746]: Ucz się
+              - generic [ref=e747]:
+                - link "Strategie handlu" [ref=e749] [cursor=pointer]:
+                  - /url: /pl-pl/learn/trading-strategies
+                - link "Analiza techniczna" [ref=e751] [cursor=pointer]:
+                  - /url: /pl-pl/learn/technical-analysis
+                - link "Psychologia handlu" [ref=e753] [cursor=pointer]:
+                  - /url: /pl-pl/learn/trading-psychology
+                - link "Ucz się" [ref=e755] [cursor=pointer]:
+                  - /url: /pl-pl/learn
+        - generic [ref=e756]:
+          - strong [ref=e758]: Rynki
+          - generic [ref=e759]:
+            - generic [ref=e760]:
+              - generic [ref=e761]: Nasze rynki
+              - generic [ref=e762]:
+                - link "Rynki" [ref=e764] [cursor=pointer]:
+                  - /url: /pl-pl/markets
+                - link "Forex" [ref=e766] [cursor=pointer]:
+                  - /url: /pl-pl/markets/forex
+                - link "Akcje" [ref=e768] [cursor=pointer]:
+                  - /url: /pl-pl/markets/shares
+                - link "Indeksy" [ref=e770] [cursor=pointer]:
+                  - /url: /pl-pl/markets/indices
+                - link "Towary" [ref=e772] [cursor=pointer]:
+                  - /url: /pl-pl/markets/commodities
+                - link "Kryptowaluty" [ref=e774] [cursor=pointer]:
+                  - /url: /pl-pl/markets/cryptocurrencies
+                - link "Obligacje" [ref=e776] [cursor=pointer]:
+                  - /url: /pl-pl/markets/bonds
+                - link "Stopy procentowe" [ref=e778] [cursor=pointer]:
+                  - /url: /pl-pl/markets/interest-rates
+            - generic [ref=e779]:
+              - generic [ref=e780]: Analizy rynku
+              - generic [ref=e781]:
+                - link "Analiza Rynku" [ref=e783] [cursor=pointer]:
+                  - /url: /pl-pl/analysis
+                - link "Ceny rynkowe" [ref=e785] [cursor=pointer]:
+                  - /url: /pl-pl/about-us/how-our-markets-are-priced
+        - link "Cennik" [ref=e788] [cursor=pointer]:
+          - /url: /pl-pl/ways-to-trade/fees-and-charges
+          - strong [ref=e789]: Cennik
+        - generic [ref=e790]:
+          - strong [ref=e792]: O nas
+          - generic [ref=e793]:
+            - generic [ref=e794]:
+              - generic [ref=e795]: Kim jesteśmy
+              - generic [ref=e796]:
+                - link "O nas" [ref=e798] [cursor=pointer]:
+                  - /url: /pl-pl/about-us
+                - link "Nasze biura" [ref=e800] [cursor=pointer]:
+                  - /url: /pl-pl/about-us/our-offices
+                - link "Czy capital.com jest bezpieczny?" [ref=e802] [cursor=pointer]:
+                  - /url: /pl-pl/security-measures
+                - link "Nasz model biznesowy" [ref=e804] [cursor=pointer]:
+                  - /url: /pl-pl/about-us/how-capital-makes-money
+            - generic [ref=e805]:
+              - generic [ref=e806]: Pracuj z nami
+              - link "Kariera" [ref=e809] [cursor=pointer]:
+                - /url: /pl-pl/about-us/careers
+            - generic [ref=e810]:
+              - generic [ref=e811]: Uzyskaj pomoc
+              - generic [ref=e812]:
+                - link "Pomoc" [ref=e814] [cursor=pointer]:
+                  - /url: /pl-pl/help
+                - link "Obszary szczególnego narażenia" [ref=e816] [cursor=pointer]:
+                  - /url: /pl-pl/help/client-vulnerability
+                - link "Skontaktuj się z nami" [ref=e818] [cursor=pointer]:
+                  - /url: /pl-pl/contact-us
+            - generic [ref=e819]:
+              - generic [ref=e820]: Dokumentacja prawna
+              - generic [ref=e821]:
+                - link "Regulamin i zasady" [ref=e823] [cursor=pointer]:
+                  - /url: /pl-pl/terms-and-policies
+                - link "Procedura składania skarg — Capital Com Group Ltd" [ref=e825] [cursor=pointer]:
+                  - /url: /pl-pl/terms-and-policies/complaints-procedure-cceu
+                - link "Procedura rozpatrywania skarg - Capital Com SV Investments Limited" [ref=e827] [cursor=pointer]:
+                  - /url: /pl-pl/terms-and-policies/complaints-procedure
+                - 'link "Zgodność z przepisami i kwestie prawne: handel kontraktami CFD" [ref=e829] [cursor=pointer]':
+                  - /url: /pl-pl/terms-and-policies/compliance-and-legals
+    - generic [ref=e831]:
+      - paragraph [ref=e832]:
+        - text: "Capital Com SV Investments Limited:"
+        - text: Kontrakty CFD to złożone instrumenty, które wiążą się z dużym ryzykiem gwałtownej straty środków na skutek zastosowania dźwigni finansowej.
+        - generic [ref=e833]:
+          - generic [ref=e834]:
+            - strong [ref=e835]: 73% inwestorów detalicznych odnotowuje straty w handlu kontraktami CFD z tym dostawcą
+            - text: .
+          - text: Powinieneś rozważyć, czy rozumiesz, jak działają kontrakty CFD i czy możesz sobie pozwolić na podjęcie wysokiego ryzyka utraty pieniędzy. Prosimy o zapoznanie się z naszym
+          - link "Oświadczeniem o ryzyku" [ref=e836] [cursor=pointer]:
+            - /url: https://capital.com/risk-disclosure-policy
+      - paragraph [ref=e837]:
+        - text: "Capital Com Group Ltd:"
+        - text: Kontrakty CFD są złożonymi instrumentami i wiążą się z wysokim ryzykiem szybkiej utraty pieniędzy ze względu na mechanizm dźwigni finansowej.
+        - strong [ref=e838]: Od 74 do 89% rachunków inwestorów detalicznych odnotowuje straty na handlu kontraktami CFD
+        - text: . Powinieneś rozważyć, czy rozumiesz zasady działania kontraktów CFD i czy możesz sobie pozwolić na wysokie ryzyko utraty pieniędzy.
+        - generic [ref=e839]:
+          - text: Prosimy o zapoznanie się z naszym
+          - link "Oświadczeniem o ryzyku" [ref=e840] [cursor=pointer]:
+            - /url: https://capital.com/risk-disclosure-policy-cceu
+      - paragraph [ref=e841]:
+        - text: "Ostrzeżenie o ryzyku: wartość akcji i funduszy ETF nabytych za pośrednictwem rachunku transakcyjnego może rosnąć lub spadać, co może oznaczać, że zwrot z inwestycji będzie niższy od jej pierwotnej kwoty. Wyniki historyczne nie są gwarancją przyszłych rezultatów."
+        - text: Transakcje na pozagiełdowych instrumentach niepodlegających dostawie, takich jak opcje knock-out i kontrakty CFD, są złożonymi produktami finansowymi, które wiążą się z wysokim ryzykiem utraty całego zainwestowanego kapitału. Tego typu produkty nie są odpowiednie dla wszystkich inwestorów, ponieważ mogą przynosić zarówno zyski, jak i znaczne straty. Przed rozpoczęciem tego rodzaju handlu powinieneś dokładnie rozważyć, czy rozumiesz sposób działania tych instrumentów i czy możesz zaakceptować wysokie ryzyko straty pieniędzy.
+        - text: W przypadku klientów profesjonalnych istnieje ryzyko poniesienia straty przekraczającej początkowy depozyt. Informacje zawarte w tej witrynie mają charakter ogólny i nie uwzględniają sytuacji finansowej, celów ani potrzeb indywidualnego klienta. Przed podjęciem jakichkolwiek decyzji handlowych prosimy o zapoznanie się z naszymi dokumentami prawnymi i upewnienie się, że w pełni rozumiesz związane z nimi ryzyko. Zachęcamy do skorzystania z usług szkoleniowych naszej firmy, aby lepiej zrozumieć ryzyko przed przystąpieniem do operacji handlowych.
+      - paragraph [ref=e842]: "Capital Com SV Investments Limited jest spółką zarejestrowaną w Republice Cypru pod numerem wpisu HE 354252. Spółka posiada upoważnienie i podlega nadzorowi regulacyjnemu cypryjskiej Securities and Exchange Commission (numer licencji 319/17). Adres siedziby: Vasileiou Makedonos 8, Kinnis Business Center, 2nd floor, 3040, Limassol, Cypr."
+      - paragraph [ref=e843]: "Capital Com Group Ltd jest spółką zarejestrowaną w Republice Cypru pod numerem wpisu ΗΕ 446198. Spółka posiada upoważnienie i podlega nadzorowi regulacyjnemu cypryjskiej Securities and Exchange Commission (numer licencji 463/25). Adres siedziby: Vasileiou Makedonos 8, Kinnis Business Center, 2nd floor, 3040, Limassol, Cypr."
+      - paragraph [ref=e844]: Informacje zawarte na tej stronie nie są kierowane do mieszkańców Stanów Zjednoczonych, Kanady, Belgii, ani żadnego innego kraju spoza EOG i nie są przeznaczone do rozpowszechniania ani wykorzystywania przez osoby w dowolnym kraju lub jurysdykcji, w których takie rozpowszechnianie lub wykorzystywanie byłoby sprzeczne z lokalnymi przepisami lub regulacjami.
+    - generic [ref=e845]:
+      - paragraph [ref=e846]: © 2026 Capital Com SV Investments Limited
+      - generic [ref=e847]:
+        - link "Mapa witryny" [ref=e848] [cursor=pointer]:
+          - /url: /pl-pl/sitemap
+        - link "Ustawienia plików cookie" [ref=e849] [cursor=pointer]:
+          - /url: ""
+        - link "Przepisy prawne" [ref=e850] [cursor=pointer]:
+          - /url: /pl-pl/terms-and-policies/regulations
+        - link "Regulamin i zasady" [ref=e851] [cursor=pointer]:
+          - /url: /pl-pl/terms-and-policies
+        - link "Procedura rozpatrywania skarg" [ref=e852] [cursor=pointer]:
+          - /url: /pl-pl/terms-and-policies/complaints-procedures
+  - button [ref=e853] [cursor=pointer]
+  - alert [ref=e855]
+```
+
+# Test source
+
+```ts
+  3   | export class CTAComponent {
+  4   |   constructor(page, sectionConfig) {
+  5   |     this.page = page;
+  6   |     // this.root = page.locator(sectionConfig.root);
+  7   |     this.actions = sectionConfig.actions || {};
+  8   |     this.helpers = sectionConfig.helpers || {};
+  9   |     this.setup = sectionConfig.setup;
+  10  |     // this.skipRootValidation = sectionConfig.skipRootValidation;
+  11  |     this.root = this.resolveLocator(sectionConfig.root);
+  12  |   }
+  13  | 
+  14  |   async expectVisible() {
+  15  |     await expect(this.root).toBeVisible({ timeout: 20000 });
+  16  |   }
+  17  | 
+  18  |   resolveLocator(locatorConfig) {
+  19  |     if (!locatorConfig) {
+  20  |       throw new Error("Locator is undefined in CTA config");
+  21  |     }
+  22  | 
+  23  |     if (
+  24  |       typeof locatorConfig !== "string" &&
+  25  |       typeof locatorConfig !== "function"
+  26  |     ) {
+  27  |       throw new Error(
+  28  |         `Invalid locator type: ${typeof locatorConfig}. Value: ${JSON.stringify(locatorConfig)}`,
+  29  |       );
+  30  |     }
+  31  | 
+  32  |     if (typeof locatorConfig === "function") {
+  33  |       return locatorConfig(this.page);
+  34  |     }
+  35  | 
+  36  |     if (
+  37  |       locatorConfig.startsWith(":scope") ||
+  38  |       locatorConfig.startsWith("xpath=")
+  39  |     ) {
+  40  |       return this.root.locator(locatorConfig);
+  41  |     }
+  42  | 
+  43  |     return this.page.locator(locatorConfig);
+  44  |   }
+  45  | 
+  46  |   getActionLocator(actionName) {
+  47  |     return this.resolveLocator(this.actions[actionName].locator);
+  48  |   }
+  49  | 
+  50  |   getHelper(helperName) {
+  51  |     return this.resolveLocator(this.helpers[helperName]);
+  52  |   }
+  53  | 
+  54  |   async runSetup() {
+  55  |     if (!this.setup) {
+  56  |       return;
+  57  |     }
+  58  | 
+  59  |     await this.setup({
+  60  |       page: this.page,
+  61  |       getHelper: this.getHelper.bind(this),
+  62  |     });
+  63  |   }
+  64  | 
+  65  |   async runActionSetup(actionName) {
+  66  |     const action = this.actions[actionName];
+  67  | 
+  68  |     if (!action?.setup) {
+  69  |       return;
+  70  |     }
+  71  | 
+  72  |     await action.setup({
+  73  |       page: this.page,
+  74  |       getHelper: this.getHelper.bind(this),
+  75  |     });
+  76  | 
+  77  |     console.log("ACTION SETUP DONE:", actionName);
+  78  |     console.log("URL:", this.page.url());
+  79  |   }
+  80  | 
+  81  |   async click(actionName) {
+  82  |     await this.runSetup();
+  83  |     await this.runActionSetup(actionName);
+  84  | 
+  85  |     const action = this.actions[actionName];
+  86  |     let locator = this.getActionLocator(actionName);
+  87  | 
+  88  |     if (action.locatorIndex !== undefined) {
+  89  |       locator = locator.nth(action.locatorIndex);
+  90  |     }
+  91  | 
+  92  |     // console.log("ACTION:", actionName);
+  93  |     // console.log("URL:", this.page.url());
+  94  |     console.log("PAGE CLOSED:", this.page.isClosed());
+  95  | 
+  96  |     const count = await locator.count();
+  97  |     console.log(actionName, count);
+  98  | 
+  99  |     if (action.optional && count === 0) {
+  100 |       return { skipped: true };
+  101 |     }
+  102 | 
+> 103 |     await locator.waitFor({
+      |                   ^ Error: locator.waitFor: Test timeout of 30000ms exceeded.
+  104 |       state: "visible",
+  105 |       // timeout: 5000,
+  106 |     });
+  107 | 
+  108 |     await locator.click();
+  109 | 
+  110 |     return { skipped: false, locator };
+  111 |   }
+  112 | }
+  113 | 
+```

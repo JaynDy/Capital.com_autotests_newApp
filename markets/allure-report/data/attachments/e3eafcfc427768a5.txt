@@ -1,0 +1,9 @@
+BASE URL: https://capital.com/fr-fr
+PATH: markets/cryptocurrencies
+ACTION SETUP DONE: shortPositionGoToPlatformBtn
+URL: https://capital.com/fr-fr/markets/cryptocurrencies/graphique-de-bitcoin-to-us-dollar
+PAGE CLOSED: false
+shortPositionGoToPlatformBtn 1
+USER: unauthorised
+EXPtestCase.allowedLicenses &&ECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

@@ -1,0 +1,7 @@
+BASE URL: https://capital.com/ar-ae
+PATH: markets/forex
+PAGE CLOSED: false
+readyToJoinSignUpBtn 1
+USER: authorised
+EXPtestCase.allowedLicenses &&ECTATION:  redirects to platform
+EXPECTATION ASSERTIONS redirects to platform
