@@ -26,7 +26,7 @@ jobs:
       # TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
       # TEST_LICENSE: SCB
       # TEST_LANG: zh-hans
-      # TEST_USER: unauthorised,unregistered
+      TEST_USER: unauthorised,unregistered
 
     steps:
       - uses: actions/checkout@v4
