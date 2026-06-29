@@ -277,7 +277,7 @@ TEST_LICENSE=CMA TEST_BROWSER=chromium TEST_USER=unauthorised TEST_CTA=tradingIn
 
 // 73 = 8 (pages) \* 9 (actions) \* 2 (userState) = 72\*2 + 1 (auth) = 145
 
-TEST_LICENSE=CMA TEST_BROWSER=chromium TEST_CTA=heroBanner,mostTradedMarketsBlock,tradingInstrument,readyToJoinBlock npx playwright test --list === 493
+TEST_LICENSE=CMA TEST_BROWSER=chromium TEST_CTA=heroBanner,mostTradedMarketsBlock,tradingInstrument,readyToJoinBlock npx playwright test --list === 486
 
 # Runing: SCB
 

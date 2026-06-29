@@ -34,13 +34,14 @@ export class Page {
   }
 
   async open(baseURL) {
-    console.log("BASE URL:", baseURL);
-    console.log("PATH:", this.pagePath);
+    // console.log("BASE URL:", baseURL);
+    // console.log("PATH:", this.pagePath);
     // if (!this.pagePath) return;
 
     await this.page.goto(`${baseURL}/${this.pagePath}`, {
       waitUntil: "domcontentloaded",
     });
     await this.popups.dismissAll();
+    await this.page.waitForTimeout(2000);
   }
 }

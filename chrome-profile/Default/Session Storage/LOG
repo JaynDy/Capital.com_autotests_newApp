@@ -1,3 +1,6 @@
-2026/06/29-12:51:57.051 41240 Reusing MANIFEST /Users/user/Desktop/automation_tests_V3/chrome-profile/Default/Session Storage/MANIFEST-000001
-2026/06/29-12:51:57.052 41240 Recovering log #3
-2026/06/29-12:51:57.060 41240 Reusing old log /Users/user/Desktop/automation_tests_V3/chrome-profile/Default/Session Storage/000003.log 
+2026/06/29-15:57:56.386 67398 Reusing MANIFEST /Users/user/Desktop/automation_tests_V3/chrome-profile/Default/Session Storage/MANIFEST-000001
+2026/06/29-15:57:56.390 67398 Recovering log #3
+2026/06/29-15:57:56.392 67398 Reusing old log /Users/user/Desktop/automation_tests_V3/chrome-profile/Default/Session Storage/000003.log 
+2026/06/29-15:57:57.601 6739b Level-0 table #5: started
+2026/06/29-15:57:57.607 6739b Level-0 table #5: 23270 bytes OK
+2026/06/29-15:57:57.622 6739b Delete type=0 #3

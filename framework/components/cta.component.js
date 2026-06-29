@@ -74,8 +74,8 @@ export class CTAComponent {
       getHelper: this.getHelper.bind(this),
     });
 
-    console.log("ACTION SETUP DONE:", actionName);
-    console.log("URL:", this.page.url());
+    // console.log("ACTION SETUP DONE:", actionName);
+    // console.log("URL:", this.page.url());
   }
 
   async click(actionName) {
@@ -91,7 +91,7 @@ export class CTAComponent {
 
     // console.log("ACTION:", actionName);
     // console.log("URL:", this.page.url());
-    console.log("PAGE CLOSED:", this.page.isClosed());
+    // console.log("PAGE CLOSED:", this.page.isClosed());
 
     const count = await locator.count();
     console.log(actionName, count);
@@ -100,12 +100,19 @@ export class CTAComponent {
       return { skipped: true };
     }
 
-    await locator.waitFor({
-      state: "visible",
-      // timeout: 5000,
-    });
+    // await locator.waitFor({
+    //   state: "visible",
+    //   // timeout: 5000,
+    // });
+    // console.log("before wait");
+    await expect(locator).toBeVisible();
+    await expect(locator).toBeEnabled();
 
-    await locator.click();
+    // console.log("before click");
+    await locator.click({
+      timeout: 5000,
+    });
+    // console.log("after click");
 
     return { skipped: false, locator };
   }

@@ -125,7 +125,7 @@ for (const testCase of CTA_TEST_CASES) {
 
     const expectation = action.expectation[projectUser];
     console.log("USER:", projectUser);
-    console.log("EXPtestCase.allowedLicenses &&ECTATION: ", expectation);
+    console.log("EXPECTATION: ", expectation);
 
     await expectPageState(page, action, expectation, testInfo, result.locator);
   });
