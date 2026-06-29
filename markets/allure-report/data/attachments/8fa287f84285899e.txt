@@ -1,0 +1,4 @@
+tradedBtn 0
+USER: authorised
+EXPECTATION:  redirects to platform
+EXPECTATION ASSERTIONS redirects to platform

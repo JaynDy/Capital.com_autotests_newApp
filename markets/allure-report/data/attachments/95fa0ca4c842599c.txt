@@ -1,0 +1,4 @@
+tradedBtn 0
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

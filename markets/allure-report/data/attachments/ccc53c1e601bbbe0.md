@@ -1,0 +1,724 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: markets/markets.spec.js >> indices page | tradingInstrument | shortPositionGoToPlatformBtn
+- Location: tests/markets/markets.spec.js:16:7
+
+# Error details
+
+```
+Error: expect(page).toHaveURL(expected) failed
+
+Expected pattern: /trading\/platform/
+Received string:  "https://capital.com/en-gb/markets/indices/us-tech-100-index"
+Timeout: 5000ms
+
+Call log:
+  - Expect "toHaveURL" with timeout 5000ms
+    12 × unexpected value "https://capital.com/en-gb/markets/indices/us-tech-100-index"
+
+```
+
+```yaml
+- banner:
+  - text: Spread bets and CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage.
+  - strong: 61% of retail investor accounts lose money when trading spread bets and CFDs with this provider
+  - text: . You should consider whether you understand how spread bets and CFDs work and whether you can afford to take the high risk of losing your money.
+  - link:
+    - /url: /en-gb
+    - img
+  - navigation:
+    - button "Trading":
+      - button "Trading"
+    - button "Markets":
+      - button "Markets"
+    - link "Pricing":
+      - /url: /en-gb/ways-to-trade/fees-and-charges
+    - button "About":
+      - button "About"
+  - button "en"
+  - button "Log In"
+  - button "Open account"
+  - button "Search"
+- paragraph:
+  - link "Home":
+    - /url: /en-gb
+  - text: •
+  - link "Markets overview":
+    - /url: /en-gb/markets
+  - text: •
+  - link "Indices":
+    - /url: /en-gb/markets/indices
+  - text: •US Tech 100
+- heading "Trade US Tech 100 - US100 CFD" [level=1]
+- button "Add to favourite"
+- strong: "29161.0"
+- text: +0.6%
+- link:
+  - /url: ""
+- button "1m"
+- button "5m"
+- button "15m"
+- button "30m"
+- button "1h"
+- button "4h"
+- button "1d"
+- button "1w"
+- img
+- button "View detailed chart"
+- link "Sell 29159.2":
+  - /url: /instrument?id=15839732013552836
+  - text: Sell
+  - paragraph: "29159.2"
+- link "Buy 29161.0":
+  - /url: /instrument?id=15839732013552836
+  - text: Buy
+  - paragraph: "29161.0"
+- text: "1.8 Low: 28948.3 High: 29568.9"
+- table
+- text: "Sellers: 32.16% Buyers: 67.84%"
+- button "Market Trading Hours (UTC)":
+  - paragraph: Market Trading Hours (UTC)
+  - strong: Open Now
+- strong: Past performance is not a reliable indicator of future results. Share prices are indicative and may differ from live market prices.
+- button "Summary"
+- button "Historical Data"
+- strong: Trading Conditions
+- table:
+  - rowgroup:
+    - 'row "Type This financial market is available for CFD trading. Learn more about: CFDs CFD"':
+      - 'cell "Type This financial market is available for CFD trading. Learn more about: CFDs"':
+        - text: "Type This financial market is available for CFD trading. Learn more about:"
+        - link "CFDs":
+          - /url: /en-gb/ways-to-trade/cfd-trading
+      - cell "CFD"
+    - row "Spread 1.8":
+      - cell "Spread"
+      - cell "1.8"
+    - row "Long position overnight funding adjustment Long position overnight funding adjustment Margin. Your investment $1,000.00 Overnight funding adjustment Charges from full value of position -0.02154 % (-$4.30) Trade size with leverage ~ $20,000.00 Money from leverage ~$19,000.00 Go to platform -0.02154%":
+      - cell "Long position overnight funding adjustment Long position overnight funding adjustment Margin. Your investment $1,000.00 Overnight funding adjustment Charges from full value of position -0.02154 % (-$4.30) Trade size with leverage ~ $20,000.00 Money from leverage ~$19,000.00 Go to platform":
+        - text: Long position overnight funding adjustment
+        - strong: Long position overnight funding adjustment
+        - table
+        - separator
+        - table:
+          - rowgroup:
+            - row "Margin. Your investment $1,000.00":
+              - cell "Margin. Your investment"
+              - cell "$1,000.00"
+            - row "Overnight funding adjustment Charges from full value of position -0.02154 % (-$4.30)":
+              - cell "Overnight funding adjustment Charges from full value of position"
+              - cell "-0.02154 % (-$4.30)"
+        - paragraph:
+          - strong: Trade size with leverage ~ $20,000.00
+        - paragraph:
+          - strong: Money from leverage ~$19,000.00
+        - separator
+        - link "Go to platform":
+          - /url: ""
+      - cell "-0.02154%"
+    - row "Short position overnight funding adjustment Short position overnight funding adjustment Margin. Your investment $1,000.00 Overnight funding adjustment Charges from full value of position -0.000682 % (-$0.10) Trade size with leverage ~ $20,000.00 Money from leverage ~$19,000.00 Go to platform -0.00068%":
+      - cell "Short position overnight funding adjustment Short position overnight funding adjustment Margin. Your investment $1,000.00 Overnight funding adjustment Charges from full value of position -0.000682 % (-$0.10) Trade size with leverage ~ $20,000.00 Money from leverage ~$19,000.00 Go to platform":
+        - text: Short position overnight funding adjustment
+        - strong: Short position overnight funding adjustment
+        - table
+        - separator
+        - table:
+          - rowgroup:
+            - row "Margin. Your investment $1,000.00":
+              - cell "Margin. Your investment"
+              - cell "$1,000.00"
+            - row "Overnight funding adjustment Charges from full value of position -0.000682 % (-$0.10)":
+              - cell "Overnight funding adjustment Charges from full value of position"
+              - cell "-0.000682 % (-$0.10)"
+        - paragraph:
+          - strong: Trade size with leverage ~ $20,000.00
+        - paragraph:
+          - strong: Money from leverage ~$19,000.00
+        - separator
+        - link "Go to platform":
+          - /url: ""
+      - cell "-0.00068%"
+    - row "Overnight funding adjustment time 21:00 (UTC)":
+      - cell "Overnight funding adjustment time"
+      - cell "21:00 (UTC)"
+    - row "Currency USD":
+      - cell "Currency"
+      - cell "USD"
+    - row "Min traded quantity 0.001":
+      - cell "Min traded quantity"
+      - cell "0.001"
+    - row "Margin 5.00%":
+      - cell "Margin"
+      - cell "5.00%"
+    - row "Stock exchange":
+      - cell "Stock exchange"
+      - cell
+    - row "Commission on trade1 0%":
+      - cell "Commission on trade1":
+        - text: Commission on trade
+        - superscript: "1"
+      - cell "0%"
+    - row "Guaranteed stop premium A guaranteed stop-loss (GSL) fee is only charged if the GSL is triggered. Please consult the Charges and Fees section of our website for more details. 0.02%":
+      - cell "Guaranteed stop premium A guaranteed stop-loss (GSL) fee is only charged if the GSL is triggered. Please consult the Charges and Fees section of our website for more details.":
+        - text: Guaranteed stop premium A guaranteed stop-loss (GSL) fee is only charged if the GSL is triggered. Please consult the
+        - link "Charges and Fees":
+          - /url: /en-gb/ways-to-trade/fees-and-charges
+        - text: section of our website for more details.
+      - cell "0.02%"
+- paragraph:
+  - superscript: "1"
+  - text: Our charge for executing your trade is the spread, the difference between the buy and sell price. Please consult the
+  - link "Charges and Fees":
+    - /url: https://capital.com/en-gb/ways-to-trade/fees-and-charges
+  - text: section of our website for further information
+- main:
+  - heading "Trade US Tech 100 - US100" [level=2]
+  - paragraph:
+    - strong: The US Tech 100 is a tradeable market with Capital.com, enabling you to take a position on an index comprising the most highly capitalised US tech companies using CFDs.
+  - text: It is available for
+  - strong: 24/5 index CFD trading
+  - text: ", following the global technology market sessions."
+  - paragraph: The US Tech 100 is a US stock market index which tracks the performance of the top 100 blue-chip companies listed on the Nasdaq stock exchange.
+  - paragraph: Reviewed every quarter, the index comprises non-financial companies and arranges them with market capitalisation as a key criteria, meaning the most capitalised stocks are placed higher in the list. Inclusion is also dependent on liquidity.
+  - paragraph: As a closely-followed index, the US Tech 100 is often seen as a proxy for US stock market health and the domestic economy.
+  - paragraph:
+    - text: Some of the largest companies included in the US Tech 100 index at the time of writing are
+    - link "Apple":
+      - /url: https://capital.com/en-au/markets/shares/apple-inc-share-price
+    - text: (AAPL),
+    - link "Microsoft":
+      - /url: https://capital.com/en-au/markets/shares/microsoft-corp-share-price-1
+    - text: (MSFT) and
+    - link "Nvidia":
+      - /url: https://capital.com/en-au/markets/shares/nvidia-corp-share-price-1
+    - text: (NVDA). Given their size, these companies retain top index spots, but lesser-capitalised companies are more likely to change position in the index, or even drop out to be replaced by new stocks that have become sufficiently capitalised to join.
+  - paragraph:
+    - text: To learn more about the US Tech 100, you can visit our
+    - link "guide to trading the US Tech 100":
+      - /url: https://capital.com/en-au/learn/market-guides/trade-nasdaq
+    - text: . To trade our US Tech 100 market, you can open an account with us – or practise trading the other
+    - link "indices markets":
+      - /url: https://capital.com/en-au/markets/indices
+    - text: on a
+    - link "demo account":
+      - /url: https://capital.com/en-au/trading-platforms/demo-account
+    - text: .
+  - heading "Trade US Tech 100 (US100) CFDs" [level=2]
+  - paragraph: "US Tech 100 (ticker: US100) is an index that reflects the performance of a selected group of shares, usually tied to a specific market, region or sector. On Capital.com, it’s available to trade as a contract for difference (CFD), allowing you to speculate on price movements without owning any of the underlying shares. This means you can trade in either direction – rising or falling – depending on your view.*"
+  - paragraph: "*CFDs are traded on margin, leverage amplifies both profits and losses."
+  - heading "US Tech 100 price today" [level=2]
+  - paragraph: The index is quoted in $ and is currently trading around 29381.7.
+  - heading "Live price overview" [level=2]
+  - paragraph: Here’s an overview of the current US Tech 100 price and its recent trading ranges.
+  - list:
+    - listitem:
+      - text: •
+      - strong: "Daily range:"
+      - text: 28865.1 – 29593.4
+    - listitem:
+      - text: •
+      - strong: "Daily movement:"
+      - text: "-479.8 (-1.5684)"
+    - listitem:
+      - text: •
+      - strong: "Weekly range:"
+      - text: 28865.1 – 30652.1
+    - listitem:
+      - text: •
+      - strong: "Monthly range:"
+      - text: 28184.7 – 30758.3
+    - listitem:
+      - text: •
+      - strong: "Yearly range:"
+      - text: 22237.8 – 30758.3
+  - heading "Why trade index CFDs on the price of US Tech 100 with Capital.com?" [level=2]
+  - paragraph: Capital.com provides a technology-driven trading experience that supports informed decision-making.
+  - paragraph:
+    - strong: Advanced charting and analysis
+  - paragraph: Use interactive tools to study the US Tech 100 price chart in detail.
+  - list:
+    - listitem: • Access 100 technical indicators
+    - listitem: • Choose from 12 chart types
+    - listitem: • Analyse fast, intuitive charts powered by industry-leading tools
+  - paragraph:
+    - strong: Wide market offering
+  - paragraph: "Join over 864,000 global traders and explore more than:"
+  - list:
+    - listitem: • 4,500 stock CFDs
+    - listitem: • 65 commodity CFDs
+    - listitem: • 35 index CFDs
+    - listitem: • 120 forex pairs
+  - paragraph:
+    - strong: User-rated platforms
+  - list:
+    - listitem:
+      - text: •
+      - strong: "TradingView rating:"
+      - text: "4.6"
+    - listitem:
+      - text: •
+      - strong: "App Store rating:"
+      - text: "4.7"
+    - listitem:
+      - text: •
+      - strong: "Google Play rating:"
+      - text: "4.7"
+    - listitem:
+      - text: •
+      - strong: "Trustpilot score:"
+      - text: "4.6"
+  - heading "What influences the price of US Tech 100?" [level=2]
+  - paragraph: "The US Tech 100 (US100) price may be influenced by various market factors, including:"
+  - list:
+    - listitem:
+      - text: •
+      - strong: Performance of the companies within the index
+    - listitem:
+      - text: •
+      - strong: Macroeconomic indicators such as GDP, inflation, and employment data
+    - listitem:
+      - text: •
+      - strong: Central bank policy decisions
+    - listitem:
+      - text: •
+      - strong: Broader market sentiment and risk appetite
+    - listitem:
+      - text: •
+      - strong: Geopolitical events or global news
+  - heading "US Tech 100 forecasts" [level=2]
+  - paragraph: US Tech 100 forecasts commonly focus on news, sector updates, and broader market conditions rather than fixed price targets. Traders can combine technical analysis with fundamental insights to form expectations about future price movement.
+  - paragraph: Instead of relying on a single prediction, many traders monitor ongoing analysis and real-time data to adapt to changing market conditions.*
+  - paragraph: "*Analyst forecasts are often inaccurate and past performance isn’t a reliable indicator of future results."
+  - heading "How to trade US Tech 100 index CFDs" [level=2]
+  - paragraph: "Trading index CFDs allows you to speculate on price direction without owning the underlying shares:"
+  - list:
+    - listitem: • Go long (buy) if you think the index may rise
+    - listitem: • Go short (sell) if you think it may fall
+  - paragraph: As CFDs use leverage, both gains and losses are magnified.
+  - heading "Risks of trading index CFDs" [level=2]
+  - paragraph: "CFD trading carries a high level of risk. Key risks include:"
+  - list:
+    - listitem:
+      - text: •
+      - strong: Market volatility
+    - listitem:
+      - text: •
+      - strong: Leverage amplifying losses as well as profits
+    - listitem:
+      - text: •
+      - strong: Potential funding costs for overnight positions
+    - listitem:
+      - text: •
+      - strong: No ownership of any underlying assets
+  - heading "Latest indices articles" [level=2]
+  - link "US flag, wall street":
+    - /url: /en-gb/analysis/market-mondays-markets-finally-find-a-reason-to-pull-back
+    - img "US flag, wall street"
+  - 'link "Market Mondays: Markets finally find a reason to pull back"':
+    - /url: /en-gb/analysis/market-mondays-markets-finally-find-a-reason-to-pull-back
+  - text: Markets pull back from recent highs as positioning, rate expectations and geopolitics play into the momentum change. 12:40, 8 June 2026
+  - link "wall street":
+    - /url: /en-gb/analysis/markets-pause-for-breath-after-a-relentless-rally
+    - img "wall street"
+  - link "Markets pause for breath after a relentless rally":
+    - /url: /en-gb/analysis/markets-pause-for-breath-after-a-relentless-rally
+  - text: Global equities pull away from recent highs as markets reassess the latest moves and the developments in data, geopolitics, and earnings. 09:15, 5 June 2026
+  - link "Markets enter a correction phase as volatility rises and geopolitical risks re-emerge":
+    - /url: /en-gb/analysis/markets-enter-a-correction-phase-as-volatility-rises-and-geopolitical-risks-re-emerge
+    - img "Markets enter a correction phase as volatility rises and geopolitical risks re-emerge"
+  - link "Markets enter a correction phase as volatility rises and geopolitical risks re-emerge":
+    - /url: /en-gb/analysis/markets-enter-a-correction-phase-as-volatility-rises-and-geopolitical-risks-re-emerge
+  - text: Markets selloff across the board as investors de-risk and balance their portfolios heading into the weekend 11:53, 30 January 2026
+  - link "A key on a computer keyboard adapted to say NASDAQ 100, with a small gold bull charm sitting on it":
+    - /url: /en-gb/analysis/nasdaq-100-forecast
+    - img "A key on a computer keyboard adapted to say NASDAQ 100, with a small gold bull charm sitting on it"
+  - 'link "US100 forecast: Third-party targets"':
+    - /url: /en-gb/analysis/nasdaq-100-forecast
+  - text: The US Tech 100 reflects the performance of some of the largest non-financial companies listed on the Nasdaq and is often used as a reference point for movements in the US technology sector. 16:17, 19 January 2026
+  - strong: Related News
+  - button
+  - text: Reuters News • Europe 17 minutes ago
+  - link "US STOCKS-Wall St indexes climb as US, Iran halt attacks; Comcast surges on spin-off plan":
+    - /url: /en-gb/news/us-stocks-wall-st-indexes-climb-as-us-iran-halt-attacks
+    - strong: US STOCKS-Wall St indexes climb as US, Iran halt attacks; Comcast surges on spin-off plan
+  - button
+  - text: Reuters News • Europe an hour ago
+  - link "Strategy's enterprise value falls below bitcoin holdings as crypto sentiment sours":
+    - /url: /en-gb/news/strategy-s-enterprise-value-falls-below-bitcoin-holdings-as-crypto-sentiment
+    - strong: Strategy's enterprise value falls below bitcoin holdings as crypto sentiment sours
+  - button
+  - text: Reuters News • Europe 3 hours ago
+  - link "US STOCKS-Wall St climbs as Mideast tensions ease, Comcast surges on spin-off plan":
+    - /url: /en-gb/news/us-stocks-wall-st-climbs-as-mideast-tensions-ease-comcast-surges
+    - strong: US STOCKS-Wall St climbs as Mideast tensions ease, Comcast surges on spin-off plan
+  - button
+  - text: Reuters News • Europe 4 hours ago
+  - link "MORNING BID AMERICAS-Weekend wars":
+    - /url: /en-gb/news/morning-bid-americas-weekend-wars
+    - strong: MORNING BID AMERICAS-Weekend wars
+  - button
+  - text: Reuters News • Europe 5 hours ago
+  - link "US STOCKS-Nasdaq futures lead Wall St higher as Middle East tensions ease":
+    - /url: /en-gb/news/us-stocks-nasdaq-futures-lead-wall-st-higher-as-middle-east
+    - strong: US STOCKS-Nasdaq futures lead Wall St higher as Middle East tensions ease
+  - text: Reuters News • Europe 00:10 (UTC), 27 June 2026
+  - link "SpaceX set to join Nasdaq 100, paving way for wave of passive buying":
+    - /url: /en-gb/news/spacex-set-to-join-nasdaq-100-paving-way-for-wave
+    - strong: SpaceX set to join Nasdaq 100, paving way for wave of passive buying
+  - text: GlobeNewswire • Europe 00:00 (UTC), 27 June 2026
+  - link "Space Exploration Technologies Corporation to Join the Nasdaq-100 Index® Beginning July 7, 2026":
+    - /url: /en-gb/news/space-exploration-technologies-corporation-to-join-the-nasdaq-100-index-r-beginning
+    - strong: Space Exploration Technologies Corporation to Join the Nasdaq-100 Index® Beginning July 7, 2026
+  - text: CoinDesk • Europe 11:36 (UTC), 26 June 2026
+  - link "With crypto ending the first half in the red, bitcoin's solace is it beat Strategy":
+    - /url: /en-gb/news/with-crypto-ending-the-first-half-in-the-red-bitcoin-s
+    - strong: With crypto ending the first half in the red, bitcoin's solace is it beat Strategy
+  - button
+  - text: Reuters News • Europe 10:48 (UTC), 26 June 2026
+  - 'link "Weekend Reads: Labour''s growth pitch and Greenspan''s legacy"':
+    - /url: /en-gb/news/weekend-reads-labour-s-growth-pitch-and-greenspan-s-legacy
+    - strong: "Weekend Reads: Labour's growth pitch and Greenspan's legacy"
+  - button
+  - text: Reuters News • Europe 10:36 (UTC), 26 June 2026
+  - link "MORNING BID AMERICAS-When the chips are down and up and down":
+    - /url: /en-gb/news/morning-bid-americas-when-the-chips-are-down-and-up-and
+    - strong: MORNING BID AMERICAS-When the chips are down and up and down
+- complementary:
+  - strong: Related markets
+  - text: Tracking the stocks, indices, and assets making major moves.
+  - button "Most traded markets"
+  - button "Top risers"
+  - button "Top fallers"
+  - button "Most volatile"
+  - link "US Tech 100":
+    - /url: /en-gb/markets/indices/us-tech-100-index
+  - text: "29161.0"
+  - link "Japan 225":
+    - /url: /en-gb/markets/indices/japan-225-index
+  - text: 69083.2 -0.5%
+  - img
+  - link "US Wall Street 30":
+    - /url: /en-gb/markets/indices/us-wall-street-30-index-1
+  - text: "52145.5"
+  - link "Germany 40":
+    - /url: /en-gb/markets/indices/germany-40-index-1
+  - text: "24644.4"
+  - link "US 500":
+    - /url: /en-gb/markets/indices/sp-500-index
+  - text: 7375.8 Share prices are indicative and may differ from live market prices.
+- heading "User feedback and ratings" [level=2]
+- region:
+  - group "1 of 22":
+    - link "2025-07-01 Victor Flemming Nandwa Søder Great customer service I got to say that. They helped get my account back very fast, after i logged myself out by losing my old email, it was so fast you wouldn’t believe it thank you once again.":
+      - /url: https://www.trustpilot.com/review/capital.com
+      - text: 2025-07-01
+      - strong: Victor Flemming Nandwa Søder
+      - paragraph: Great customer service I got to say that. They helped get my account back very fast, after i logged myself out by losing my old email, it was so fast you wouldn’t believe it thank you once again.
+  - group "2 of 22":
+    - link "2025-07-01 Perry Reineke I'm learning the basics of stock investing. This platform is clear and pretty good. I've been using it for over 6 months.":
+      - /url: https://www.trustpilot.com/review/capital.com
+      - text: 2025-07-01
+      - strong: Perry Reineke
+      - paragraph: I'm learning the basics of stock investing. This platform is clear and pretty good. I've been using it for over 6 months.
+  - group "3 of 22":
+    - link "2025-06-30 Brigman Everything worked as expected from the 1 day. I didn’t have to search how to use the platform, it’s intuitive. The support chat was there when I had a tiny issue.":
+      - /url: https://www.trustpilot.com/review/capital.com
+      - text: 2025-06-30
+      - strong: Brigman
+      - paragraph: Everything worked as expected from the 1 day. I didn’t have to search how to use the platform, it’s intuitive. The support chat was there when I had a tiny issue.
+  - button "Go to last slide"
+  - button "Next slide"
+- paragraph: Showing our 4 & 5 star reviews.
+- link "4.6":
+  - /url: https://www.tradingview.com/broker/Capitalcom/
+  - strong: "4.6"
+- link "Ratings and Reviews 4.7":
+  - /url: https://app.appsflyer.com/id1230088754?cp_device_id=3972833f-e36b-4be3-9a7c-7594f863ce9c&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - strong: Ratings and Reviews
+  - strong: "4.7"
+- link "Ratings and Reviews 4.7":
+  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=3972833f-e36b-4be3-9a7c-7594f863ce9c&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - strong: Ratings and Reviews
+  - strong: "4.7"
+- link "4.6":
+  - /url: https://www.trustpilot.com/review/capital.com
+  - strong: "4.6"
+- heading "Ready to join a leading broker?" [level=2]
+- text: Join our community of traders worldwide
+- button
+- text: 1. Create your account 2. Make your first deposit 3. Start trading
+- paragraph:
+  - text: Start trading CFDs
+  - link "US100":
+    - /url: /en-gb/markets/indices/us-tech-100-index
+- text: 29159.2 29161.0
+- button "Get started"
+- button "Close sticky trading bar"
+- contentinfo:
+  - link:
+    - /url: /en-gb
+    - img
+  - link:
+    - /url: https://app.appsflyer.com/id1230088754?cp_device_id=3972833f-e36b-4be3-9a7c-7594f863ce9c&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - link:
+    - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=3972833f-e36b-4be3-9a7c-7594f863ce9c&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - link:
+    - /url: https://app.appsflyer.com/com.capital.trading.huawei-huawei?cp_device_id=3972833f-e36b-4be3-9a7c-7594f863ce9c&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - text: "Country / Region:"
+  - button "United Kingdom"
+  - text: "• Language:"
+  - button "English"
+  - text: "Also you can contact us:"
+  - link "+442030978888":
+    - /url: tel:+442030978888
+    - strong: "+442030978888"
+    - strong
+  - text: •
+  - link "support@capital.com":
+    - /url: mailto:support@capital.com
+    - strong: support@capital.com
+  - strong: Trading
+  - text: Trading
+  - link "Trade CFDs":
+    - /url: /en-gb/ways-to-trade/cfd-trading
+  - link "Spread betting":
+    - /url: /en-gb/ways-to-trade/spread-betting
+  - link "Get pro account":
+    - /url: /en-gb/professional
+  - link "Get demo account":
+    - /url: /en-gb/trading-platforms/demo-account
+  - link "1X":
+    - /url: /en-gb/ways-to-trade/1x
+  - text: Platforms
+  - link "Mobile app":
+    - /url: /en-gb/trading-platforms/mobile-apps
+  - link "Web platform":
+    - /url: /en-gb/trading-platforms/web-platform
+  - link "TradingView":
+    - /url: /en-gb/trading-platforms/trading-view
+  - link "MT4":
+    - /url: /en-gb/trading-platforms/mt4
+  - link "API access":
+    - /url: /en-gb/trading-platforms/api-development-guide
+  - text: Learn
+  - link "Trading strategies":
+    - /url: /en-gb/learn/trading-strategies
+  - link "Technical analysis":
+    - /url: /en-gb/learn/technical-analysis
+  - link "Trading psychology":
+    - /url: /en-gb/learn/trading-psychology
+  - link "All resources":
+    - /url: /en-gb/learn
+  - strong: Markets
+  - text: Our markets
+  - link "Markets overview":
+    - /url: /en-gb/markets
+  - link "Shares":
+    - /url: /en-gb/markets/shares
+  - link "Forex":
+    - /url: /en-gb/markets/forex
+  - link "Indices":
+    - /url: /en-gb/markets/indices
+  - link "Commodities":
+    - /url: /en-gb/markets/commodities
+  - link "Bonds":
+    - /url: /en-gb/markets/bonds
+  - link "Interest rates":
+    - /url: /en-gb/markets/interest-rates
+  - text: Market info
+  - link "Market analysis":
+    - /url: /en-gb/analysis
+  - link "Markets pricing":
+    - /url: /en-gb/about-us/how-our-markets-are-priced
+  - link "Pricing":
+    - /url: /en-gb/ways-to-trade/fees-and-charges
+    - strong: Pricing
+  - strong: About
+  - text: Who we are
+  - link "Company":
+    - /url: /en-gb/about-us
+  - link "Our offices":
+    - /url: /en-gb/about-us/our-offices
+  - link "Press centre":
+    - /url: /en-gb/media-centre
+  - link "Investor Relations":
+    - /url: /en-gb/about-us/investor-relations
+  - link "Is capital.com safe?":
+    - /url: /en-gb/security-measures
+  - link "Our business model":
+    - /url: /en-gb/about-us/how-capital-makes-money
+  - text: Work with us
+  - link "Careers":
+    - /url: /en-gb/about-us/careers
+  - link "Partnerships":
+    - /url: /en-gb/partnerships
+  - text: Help
+  - link "Help centre":
+    - /url: /en-gb/help
+  - link "Client vulnerability":
+    - /url: /en-gb/help/client-vulnerability
+  - link "Contact us":
+    - /url: /en-gb/contact-us
+  - text: Legal
+  - link "Terms & policies":
+    - /url: /en-gb/terms-and-policies
+  - link "Complaints":
+    - /url: /en-gb/help/complaints
+  - paragraph: Risk warning
+  - paragraph:
+    - strong: All Trading involves risk.
+    - text: Spread bets and CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage.
+    - strong: 61% of retail investor accounts lose money when trading spread bets and CFDs with this provider
+    - text: . You should consider whether you understand how spread bets and CFDs work and whether you can afford to take the high risk of losing your money. Professional clients can lose more than they deposit. Please refer to our
+    - link "Risk Disclosure Statement":
+      - /url: https://capital.com/risk-disclosure-statement-fca
+  - paragraph: 1X is a non-leveraged CFD. It is a derivative, and is therefore a complex product. The value of your investment can go down as well as up, and you may get back less than you invest. Crypto Derivatives are not available to Retail clients registered with Capital Com (UK) Ltd. The value of shares and ETFs bought through a share dealing account can fall as well as rise, which could mean getting back less than you originally put in. Past performance is no guarantee of future results. The information contained herein is not intended for distribution to residents in any country where such distribution or use would contravene any local law or regulatory requirement.
+  - paragraph
+  - paragraph: Capital Com (UK) Limited (“CCUK”) is registered in England and Wales with company registration number 10506220. CCUK is Authorised and regulated by the Financial Conduct Authority (“FCA”), under registration number 793714.
+  - paragraph: © 2026 Capital Com (UK) Limited
+  - link "Sitemap":
+    - /url: /en-gb/sitemap
+  - link "Cookie settings":
+    - /url: ""
+  - link "Clients Funds":
+    - /url: /en-gb/about-us/what-capital-does-with-your-money
+  - link "Terms and Policies":
+    - /url: /en-gb/terms-and-policies
+  - link "Complaints Procedure (CCUK)":
+    - /url: /en-gb/help/complaints
+- button "Close modal"
+- img
+- list:
+  - listitem: One app. 5,500+ markets
+  - listitem: 24/7 support to assist you in 10+ languages
+  - listitem: 75+ technical analysis indicators
+  - listitem: Free trading education to build your skills
+- strong: Sign up
+- paragraph:
+  - text: Already have an account?
+  - button "Login"
+- button "Email address Please enter a valid Email":
+  - button "Email address":
+    - textbox "email":
+      - /placeholder: " "
+    - text: Email address
+  - listitem: Please enter a valid Email
+- button "Password • At least one digit • At least one lower case letter • At least one special character • At least one upper case letter • Minimum 8 characters":
+  - button "Password":
+    - textbox "password":
+      - /placeholder: " "
+    - text: Password
+  - listitem: • At least one digit
+  - listitem: • At least one lower case letter
+  - listitem: • At least one special character
+  - listitem: • At least one upper case letter
+  - listitem: • Minimum 8 characters
+- button "Continue"
+- separator
+- text: OR
+- iframe
+- button
+- paragraph:
+  - text: By creating an account, I confirm that I have read and understood the
+  - strong:
+    - link "Privacy Policy":
+      - /url: /en-gb/terms-and-policies
+- button
+- alert: US Tech 100 Live Chart | US100 Index Price | Capital.com UK
+```
+
+# Test source
+
+```ts
+  1  | import { expect } from "@playwright/test";
+  2  | import { ctaRegistry } from "../test_data/CTA/pages.cta.registry";
+  3  | 
+  4  | export async function expectPageState(
+  5  |   page,
+  6  |   action,
+  7  |   expectation,
+  8  |   testInfo,
+  9  |   locator,
+  10 | ) {
+  11 |   console.log("EXPECTATION ASSERTIONS", expectation);
+  12 |   const currentUrl = testInfo.project.use.baseURL;
+  13 |   const currentLicense = testInfo.project.use.licenseName;
+  14 |   // console.log("Current URL: ", currentUrl);
+  15 | 
+  16 |   const expectationType =
+  17 |     typeof expectation === "string" ? expectation : expectation.type;
+  18 | 
+  19 |   switch (expectationType) {
+  20 |     case "redirects to platform":
+> 21 |       await expect(page).toHaveURL(/trading\/platform/);
+     |                          ^ Error: expect(page).toHaveURL(expected) failed
+  22 |       break;
+  23 | 
+  24 |     case "shows signup form":
+  25 |       await expect(
+  26 |         // page.locator('form[data-sentry-component="SignUp"]'),
+  27 |         page.locator('[data-type="SIGN_UP_close"]'),
+  28 |       ).toBeVisible();
+  29 |       break;
+  30 | 
+  31 |     case "shows login form":
+  32 |       await expect(page.locator('[data-testid="modal-title"]'));
+  33 |       break;
+  34 | 
+  35 |     case "redirect": {
+  36 |       const pageConfig = ctaRegistry[expectation.page].path;
+  37 | 
+  38 |       // const pagePath = ctaRegistry[expectation.page].path;
+  39 |       const pagePath =
+  40 |         typeof pageConfig === "function"
+  41 |           ? pageConfig(currentLicense)
+  42 |           : pageConfig;
+  43 | 
+  44 |       const expectedURL = pagePath ? `${currentUrl}/${pagePath}` : currentUrl;
+  45 |       await expect(page).toHaveURL(new RegExp(`${expectedURL}/?$`));
+  46 |       break;
+  47 |     }
+  48 | 
+  49 |     case "opens external link": {
+  50 |       const href = await locator.getAttribute("href");
+  51 |       await expect(locator).toHaveAttribute("target", "_blank");
+  52 |       expect(href).toContain(action.expectedHrefContains);
+  53 |       break;
+  54 |     }
+  55 | 
+  56 |     case "opens regional settings window": {
+  57 |       await expect(page.locator('[data-sentry-component="CountryLangSelect"]'));
+  58 |       break;
+  59 |     }
+  60 | 
+  61 |     case "exist corresponding license": {
+  62 |       const expectedLicenses = action.licenseText?.[currentLicense];
+  63 | 
+  64 |       if (expectedLicenses?.length) {
+  65 |         for (const text of expectedLicenses) {
+  66 |           await expect(locator).toContainText(text);
+  67 |         }
+  68 |       } else {
+  69 |         await expect(locator).toContainText(currentLicense);
+  70 |       }
+  71 | 
+  72 |       break;
+  73 |     }
+  74 | 
+  75 |     case "opens cookie menu": {
+  76 |       await expect(page.locator(".consent-pc-modal__content"));
+  77 |       break;
+  78 |     }
+  79 | 
+  80 |     default:
+  81 |       throw new Error(`Unknown expectation: ${expectation}`);
+  82 |   }
+  83 | }
+  84 | 
+```
