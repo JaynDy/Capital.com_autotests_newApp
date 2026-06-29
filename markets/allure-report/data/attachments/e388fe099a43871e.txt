@@ -1,0 +1,4 @@
+buyBtn 1
+USER: unregistered
+EXPECTATION:  shows login form
+EXPECTATION ASSERTIONS shows login form

@@ -1,0 +1,1 @@
+shortPositionGoToPlatformBtn 1
