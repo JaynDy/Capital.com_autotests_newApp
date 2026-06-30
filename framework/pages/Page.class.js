@@ -35,15 +35,6 @@ export class Page {
   }
 
   async open(baseURL) {
-    await this.page.goto(this.pageData?.urls?.[this.license], {
-      waitUntil: "domcontentloaded",
-    });
-
-    await this.page.screenshot({
-      path: `after-goto-${this.license}.png`,
-      fullPage: true,
-    });
-
     if (this.pageData.urls) {
       // console.log("License:", this.license);
       // console.log("Urls:", this.pageData.urls);

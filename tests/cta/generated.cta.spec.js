@@ -36,6 +36,11 @@ for (const testCase of CTA_TEST_CASES) {
     });
     await marketPage.open(baseURL);
 
+    await page.screenshot({
+      path: `page-loaded-${projectLicense}.png`,
+      fullPage: true,
+    });
+
     await page
       .locator("footer")
       .waitFor({
