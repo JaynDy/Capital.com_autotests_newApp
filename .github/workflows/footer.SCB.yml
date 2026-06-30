@@ -23,6 +23,7 @@ jobs:
       TEST_LICENSE: ${{ matrix.license }}
       TEST_LANG: zh-hans
       TEST_USER: unregistered
+      TEST_ACTION: logo
 
     steps:
       - uses: actions/checkout@v4
@@ -43,12 +44,21 @@ jobs:
           name: allure-results-${{ matrix.license }}
           path: allure-results/
 
-      - uses: actions/upload-artifact@v4
+      - name: Upload debug artifacts
         if: always()
+        uses: actions/upload-artifact@v4
         with:
-          name: screenshots
+          name: debug-artifacts
+          path: artifacts/
+
+      - name: Upload traces
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: traces
           path: |
-            **/*.png
+            test-results/**/*.zip
+            test-results/**
 
   # 2. REPORT (single job)
   report:

@@ -13,10 +13,15 @@ export class CountriesDisclaimerPopup {
         timeout: 5000,
       });
 
+      await this.page.screenshot({
+        path: "artifacts/closed-countries-disclaimer.png",
+        fullPage: true,
+      });
+
       await this.confirmButton.click();
       // console.log("CLOSED COUNTRIES DISCLAIMER CLOSED");
     } catch {
-      // console.log("CLOSED COUNTRIES DISCLAIMER NOT FOUND");
+      console.log("CLOSED COUNTRIES DISCLAIMER NOT FOUND");
     }
   }
 }
