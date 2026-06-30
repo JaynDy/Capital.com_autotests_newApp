@@ -1,0 +1,4 @@
+URL: https://capital.com/zh-hans
+TITLE: 使用我们屡获殊荣的交易平台进行在线交易 | Capital.com
+CLOSED COUNTRIES DISCLAIMER NOT FOUND
+PAGE CLOSED AFTER dismissAll()
