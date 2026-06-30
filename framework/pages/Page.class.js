@@ -4,9 +4,10 @@ import { PopupManager } from "../components/popups/popup.manager";
 import { globalCtaRegistry } from "../test_data/CTA/global.cta.registry";
 
 export class Page {
-  constructor(page, pageKey, scope = "page") {
+  constructor(page, pageKey, license, scope = "page") {
     this.page = page;
     this.pageKey = pageKey;
+    this.license = license;
     this.scope = scope;
     this.popups = new PopupManager(page);
 
@@ -37,6 +38,14 @@ export class Page {
     // console.log("BASE URL:", baseURL);
     // console.log("PATH:", this.pagePath);
     // if (!this.pagePath) return;
+
+    if (this.pageData.urls) {
+      await this.page.goto(this.pageData.urls[this.license], {
+        waitUntil: "domcontentloaded",
+      });
+      await this.popups.dismissAll();
+      return;
+    }
 
     await this.page.goto(`${baseURL}/${this.pagePath}`, {
       waitUntil: "domcontentloaded",

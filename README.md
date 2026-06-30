@@ -431,3 +431,7 @@ npm run test:markets -- --list // 6048 (2016)
 npm run test:footer -- --list // 1368 (456)
 
 // 7 416 (2472)
+
+# RETESTS
+
+TEST_LICENSE=CySEC,CMA TEST_LANG=en TEST_BROWSER=chromium TEST_USER=unauthorised TEST_CTA=socialMediaMyAccountBlock npx playwright test

@@ -25,7 +25,24 @@ jobs:
       # TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
       # TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
       # TEST_LICENSE: SCB
-      # TEST_LANG: zh-hans
+      TEST_LANG:
+        [
+          "en",
+          "ar",
+          "de",
+          "es",
+          "fr",
+          "mn",
+          "ru",
+          "vi",
+          "zh-hant",
+          "el",
+          "pl",
+          "nl",
+          "ro",
+          "hu",
+          "it",
+        ]
       TEST_USER: unauthorised,unregistered
 
     steps:

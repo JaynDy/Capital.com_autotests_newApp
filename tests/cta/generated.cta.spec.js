@@ -33,27 +33,6 @@ for (const testCase of CTA_TEST_CASES) {
     const marketPage = new Page(page, testCase.pageName);
     await marketPage.open(baseURL);
 
-    // page.on("close", () => {
-    //   console.log("PAGE EVENT: close");
-    // });
-
-    // page.on("crash", () => {
-    //   console.log("PAGE EVENT: crash");
-    // });
-
-    // page.on("pageerror", (error) => {
-    //   console.log("PAGE ERROR:", error.message);
-    // });
-
-    // page.on("console", (msg) => {
-    //   console.log(`BROWSER ${msg.type()}:`, msg.text());
-    // });
-    // page.on("framenavigated", (frame) => {
-    //   if (frame === page.mainFrame()) {
-    //     console.log("NAVIGATION:", frame.url());
-    //   }
-    // });
-
     await page
       .locator("footer")
       .waitFor({
@@ -61,40 +40,6 @@ for (const testCase of CTA_TEST_CASES) {
         timeout: 15000,
       })
       .catch(() => {});
-
-    // await marketPage.cta[testCase.sectionName].click(testCase.actionName);
-
-    // ===== DEBUG ONLY FOR SCB + zh-hans =====
-    // if (projectLicense === "SCB" && projectLang === "zh-hans") {
-    //   console.log("PAGE CLOSED:", page.isClosed());
-
-    //   try {
-    //     console.log("TITLE:", await page.title());
-    //   } catch (e) {
-    //     console.log("TITLE ERROR:", e.message);
-    //   }
-
-    //   try {
-    //     const bodyText = await page.locator("body").innerText();
-    //     console.log("BODY (first 1000 chars):", bodyText.slice(0, 1000));
-    //   } catch (e) {
-    //     console.log("BODY ERROR:", e.message);
-    //   }
-
-    //   try {
-    //     await page.screenshot({
-    //       path: `debug-${testInfo.project.name}.png`,
-    //       fullPage: true,
-    //     });
-
-    //     await fs.writeFile(
-    //       `debug-${testInfo.project.name}.html`,
-    //       await page.content(),
-    //     );
-    //   } catch (e) {
-    //     console.log("SCREENSHOT/HTML ERROR:", e.message);
-    //   }
-    // }
 
     let component;
     let action;

@@ -16,6 +16,7 @@ import { marketPricingPageConfig } from "../../pages/Markets/marketInfoTitle/mar
 import { sitemapConfig } from "../../pages/sitemap.page.js";
 import { termsAndPoliciesConfig } from "../../pages/termsAndPolicies.page.js";
 import { complaintsConfig } from "../../pages/complaints.page.js";
+import { helpCentreMyAccountConfig } from "../../pages/RetestPages/helpCentreMyAccount.page.js";
 
 export const ctaRegistry = {
   main: {
@@ -106,5 +107,16 @@ export const ctaRegistry = {
     },
     licenses: ["FCA", "ASIC", "SCB", "CySEC", "CMA"],
     config: complaintsConfig,
+  },
+
+  // RETEST PAGES
+  helpCentreMyAccount: {
+    urls: {
+      CMA: "https://help.capitalccbah.com/hc/en-us/categories/9622507722258-My-account",
+      CySEC:
+        "https://help.capitalccsv.com/hc/en-us/categories/4416956531474-YOUR-ACCOUNT",
+    },
+    licenses: ["CySEC", "CMA"],
+    config: helpCentreMyAccountConfig,
   },
 };
