@@ -20,7 +20,7 @@ export class Page {
         `No pageData found for key="${this.pageKey}" scope="${scope}"`,
       );
     }
-
+    this.pageData = pageData;
     this.pagePath = pageData.path;
     this.cta = {};
 
@@ -40,7 +40,7 @@ export class Page {
     // if (!this.pagePath) return;
 
     if (this.pageData.urls) {
-      await this.page.goto(this.pageData.urls[this.license], {
+      await this.page.goto(this.pageData?.urls?.[this.license], {
         waitUntil: "domcontentloaded",
       });
       await this.popups.dismissAll();

@@ -1,97 +1,86 @@
-# name: Footer Tests
+name: Footer Tests
 
-# on:
-#   push:
-#     branches: [main, master, dev, "ci/**"]
-#   pull_request:
-#     branches: [main, master, dev, "ci/**"]
+on:
+  push:
+    branches: [main, master, dev, "ci/**"]
+  pull_request:
+    branches: [main, master, dev, "ci/**"]
 
-# jobs:
-#   # 1. TESTS
-#   test:
-#     runs-on: ubuntu-latest
+jobs:
+  # 1. TESTS
+  test:
+    runs-on: ubuntu-latest
 
-#     strategy:
-#       fail-fast: false
-#       matrix:
-#         license: [FCA, ASIC, CMA, SCB, CySEC]
-#         browser: [chromium]
+    strategy:
+      fail-fast: false
+      matrix:
+        license: [FCA, ASIC, CMA, SCB, CySEC]
+        browser: [chromium]
 
-#     env:
-#       CI: true
-#       TEST_BROWSER: ${{ matrix.browser }}
-#       TEST_LICENSE: ${{ matrix.license }}
-#       # TEST_USER: ${{ matrix.user }}
-#       # TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
-#       # TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
-#       # TEST_LICENSE: SCB
-#       # TEST_LANG: zh-hans
-#       # TEST_USER: unauthorised,unregistered
+    env:
+      CI: true
+      TEST_BROWSER: ${{ matrix.browser }}
+      TEST_LICENSE: ${{ matrix.license }}
+      # TEST_USER: ${{ matrix.user }}
+      # TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
+      # TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
+      # TEST_LICENSE: SCB
+      # TEST_LANG: zh-hans
+      # TEST_USER: unauthorised,unregistered
 
-#     steps:
-#       - uses: actions/checkout@v4
-#       - uses: actions/setup-node@v4
-#         with:
-#           node-version: lts/*
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
 
-#       - run: npm ci
-#       - run: npx playwright install --with-deps
+      - run: npm ci
+      - run: npx playwright install --with-deps
 
-#       - name: Run tests
-#         run: npm run test:footer
+      - name: Run tests
+        run: npm run test:footer
 
-#       # - name: Generate Allure report
-#       #   if: always()
-#       #   run: npx allure generate allure-results --clean -o allure-report
+      - name: Upload Allure results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results-${{ matrix.license }}
+          path: allure-results/
 
-#       # - name: Upload Allure report
-#       #   if: always()
-#       #   uses: actions/upload-artifact@v4
-#       #   with:
-#       #     name: allure-report-${{ matrix.license }}-${{ matrix.browser }}
-#       #     path: allure-report/
+  # 2. REPORT (single job)
+  report:
+    needs: test
+    if: always()
+    runs-on: ubuntu-latest
 
-#       - name: Upload Allure results
-#         if: always()
-#         uses: actions/upload-artifact@v4
-#         with:
-#           name: allure-results-${{ matrix.license }}
-#           path: allure-results/
+    steps:
+      - uses: actions/checkout@v4
 
-#   # 2. REPORT (single job)
-#   report:
-#     needs: test
-#     if: always()
-#     runs-on: ubuntu-latest
+      - name: Download all allure results
+        uses: actions/download-artifact@v4
+        with:
+          path: allure-results
 
-#     steps:
-#       - uses: actions/checkout@v4
+      - name: Merge results
+        run: |
+          mkdir merged-results
+          cp -R allure-results/*/* merged-results/ 2>/dev/null || true
+          cp -R allure-results/* merged-results/ 2>/dev/null || true
 
-#       - name: Download all allure results
-#         uses: actions/download-artifact@v4
-#         with:
-#           path: allure-results
+      - name: Install Allure
+        run: npm install -g allure-commandline
 
-#       - name: Merge results
-#         run: |
-#           mkdir merged-results
-#           cp -R allure-results/*/* merged-results/ 2>/dev/null || true
-#           cp -R allure-results/* merged-results/ 2>/dev/null || true
+      - name: Generate Allure report
+        run: allure generate merged-results -o allure-report --clean
 
-#       - name: Install Allure
-#         run: npm install -g allure-commandline
+      - name: Prepare Pages structure
+        run: |
+          mkdir -p public/footer
+          mv allure-report public/footer
 
-#       - name: Generate Allure report
-#         run: allure generate merged-results -o allure-report --clean
-
-#       - name: Prepare Pages structure
-#         run: |
-#           mkdir -p public/footer
-#           mv allure-report public/footer
-
-#       - name: Deploy report
-#         uses: peaceiris/actions-gh-pages@v3
-#         with:
-#           github_token: ${{ secrets.GITHUB_TOKEN }}
-#           publish_dir: public
-#           keep_files: true
+      - name: Deploy report
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: public
+          keep_files: true
