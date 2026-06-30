@@ -1,0 +1,4 @@
+cookieSettingsLink 1
+USER: authorised
+EXPECTATION:  opens cookie menu
+EXPECTATION ASSERTIONS opens cookie menu

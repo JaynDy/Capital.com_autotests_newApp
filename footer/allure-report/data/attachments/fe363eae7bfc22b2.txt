@@ -1,0 +1,4 @@
+licenseText 1
+USER: unregistered
+EXPECTATION:  exist corresponding license
+EXPECTATION ASSERTIONS exist corresponding license

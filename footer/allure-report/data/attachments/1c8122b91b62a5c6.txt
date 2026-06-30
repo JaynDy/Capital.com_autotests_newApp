@@ -1,0 +1,4 @@
+logo 1
+USER: unauthorised
+EXPECTATION:  { type: 'redirect', page: 'main' }
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'main' }

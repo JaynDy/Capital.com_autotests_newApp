@@ -1,0 +1,4 @@
+langSwitcherBtn 1
+USER: authorised
+EXPECTATION:  opens regional settings window
+EXPECTATION ASSERTIONS opens regional settings window

@@ -1,0 +1,4 @@
+getGooglePlayBtn 1
+USER: unauthorised
+EXPECTATION:  opens external link
+EXPECTATION ASSERTIONS opens external link
