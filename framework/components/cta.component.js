@@ -100,19 +100,12 @@ export class CTAComponent {
       return { skipped: true };
     }
 
-    // await locator.waitFor({
-    //   state: "visible",
-    //   // timeout: 5000,
-    // });
-    // console.log("before wait");
     await expect(locator).toBeVisible();
     await expect(locator).toBeEnabled();
 
-    // console.log("before click");
     await locator.click({
       timeout: 5000,
     });
-    // console.log("after click");
 
     return { skipped: false, locator };
   }

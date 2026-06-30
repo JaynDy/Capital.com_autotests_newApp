@@ -4,20 +4,20 @@ import { PopupManager } from "../components/popups/popup.manager";
 import { globalCtaRegistry } from "../test_data/CTA/global.cta.registry";
 
 export class Page {
-  constructor(page, pageKey, license, scope = "page") {
+  constructor(page, pageKey, options = {}) {
     this.page = page;
     this.pageKey = pageKey;
-    this.license = license;
-    this.scope = scope;
+    this.license = options.license;
+    this.scope = options.scope ?? "page";
     this.popups = new PopupManager(page);
 
-    const registry = scope === "global" ? globalCtaRegistry : ctaRegistry;
+    // const registry = this.scope === "global" ? globalCtaRegistry : ctaRegistry;
 
-    const pageData = registry[this.pageKey];
+    const pageData = ctaRegistry[this.pageKey];
 
     if (!pageData) {
       throw new Error(
-        `No pageData found for key="${this.pageKey}" scope="${scope}"`,
+        `No pageData found for key="${this.pageKey}" scope="${this.scope}"`,
       );
     }
     this.pageData = pageData;
@@ -35,11 +35,19 @@ export class Page {
   }
 
   async open(baseURL) {
-    // console.log("BASE URL:", baseURL);
-    // console.log("PATH:", this.pagePath);
-    // if (!this.pagePath) return;
+    await this.page.goto(this.pageData?.urls?.[this.license], {
+      waitUntil: "domcontentloaded",
+    });
+
+    await this.page.screenshot({
+      path: `after-goto-${this.license}.png`,
+      fullPage: true,
+    });
 
     if (this.pageData.urls) {
+      // console.log("License:", this.license);
+      // console.log("Urls:", this.pageData.urls);
+
       await this.page.goto(this.pageData?.urls?.[this.license], {
         waitUntil: "domcontentloaded",
       });

@@ -10,6 +10,8 @@ export const socialMediaMyAccountBlock = {
         }),
       expectedHrefContains: "facebook.com",
       optional: true,
+      tags: ["retest"],
+      issue: "WEB 380",
       expectation: {
         authorised: "opens external link",
         unauthorised: "opens external link",
@@ -23,6 +25,8 @@ export const socialMediaMyAccountBlock = {
         }),
       expectedHrefContains: "twitter.com",
       optional: true,
+      tags: ["retest"],
+      issue: "WEB 380",
       expectation: {
         authorised: "opens external link",
         unauthorised: "opens external link",
@@ -36,6 +40,8 @@ export const socialMediaMyAccountBlock = {
         }),
       expectedHrefContains: "youtube.com",
       optional: true,
+      tags: ["retest"],
+      issue: "WEB 380",
       expectation: {
         authorised: "opens external link",
         unauthorised: "opens external link",
@@ -49,6 +55,8 @@ export const socialMediaMyAccountBlock = {
         }),
       expectedHrefContains: "linkedin.com",
       optional: true,
+      tags: ["retest"],
+      issue: "WEB 380",
       expectation: {
         authorised: "opens external link",
         unauthorised: "opens external link",
@@ -62,6 +70,8 @@ export const socialMediaMyAccountBlock = {
         }),
       expectedHrefContains: "instagram.com",
       optional: true,
+      tags: ["retest"],
+      issue: "WEB 380",
       expectation: {
         authorised: "opens external link",
         unauthorised: "opens external link",

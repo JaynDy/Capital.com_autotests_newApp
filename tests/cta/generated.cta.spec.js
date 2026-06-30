@@ -30,7 +30,10 @@ for (const testCase of CTA_TEST_CASES) {
       `Not available for ${projectLang}`,
     );
 
-    const marketPage = new Page(page, testCase.pageName);
+    const marketPage = new Page(page, testCase.pageName, {
+      license: projectLicense,
+      scope: testCase.scope,
+    });
     await marketPage.open(baseURL);
 
     await page
@@ -57,6 +60,22 @@ for (const testCase of CTA_TEST_CASES) {
         ctaRegistry[testCase.pageName].config[testCase.sectionName].actions[
           testCase.actionName
         ];
+    }
+
+    // FOR description RETESTS
+    if (action.tags?.includes("retest")) {
+      testInfo.annotations.push({
+        type: "tag",
+        description: "retest",
+      });
+      console.log(testInfo.annotations);
+    }
+    if (action.issue) {
+      testInfo.annotations.push({
+        type: "issue",
+        description: action.issue,
+      });
+      console.log(testInfo.annotations);
     }
 
     // await component.click(testCase.actionName);

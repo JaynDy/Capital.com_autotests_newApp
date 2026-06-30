@@ -23,7 +23,7 @@ export const licenses = [
       { code: "mn" },
       { code: "ru" },
       { code: "vi" },
-      // { code: "zh-hans", noPrefix: true },
+      { code: "zh-hans", noPrefix: true },
       { code: "zh-hant", noPrefix: true },
     ],
   },
