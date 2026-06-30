@@ -1,0 +1,8 @@
+NAVIGATED: https://capital.com/zh-hans
+URL: https://capital.com/zh-hans
+TITLE: 使用我们屡获殊荣的交易平台进行在线交易 | Capital.com
+NAVIGATED: https://capital.com/zh-hans
+PAGE CLOSED EVENT
+VISIBLE: false
+ENABLED: false
+ATTEMPT 1: locator.waitFor: Target page, context or browser has been closed
