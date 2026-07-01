@@ -1,0 +1,4 @@
+NAVIGATED: https://capital.com/zh-hans
+DOMCONTENTLOADED
+NAVIGATED: https://capital.com/zh-hans
+DISCLAIMER ERROR: page.waitForTimeout: Target page, context or browser has been closed
