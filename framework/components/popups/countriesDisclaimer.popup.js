@@ -22,32 +22,37 @@ export class CountriesDisclaimerPopup {
 
   async closeIfVisible() {
     const btn = this.confirmButton;
+    const popup = this.popup;
 
     try {
       await this.page.waitForLoadState("domcontentloaded");
-      await this.page.waitForTimeout(4000);
+      await this.page.waitForLoadState("networkidle").catch(() => {});
 
-      await btn.waitFor({
-        state: "visible",
-        timeout: 10000,
-      });
+      const visible = await btn.isVisible({ timeout: 5000 }).catch(() => false);
+
+      if (!visible) {
+        console.log("DISCLAIMER NOT PRESENT");
+        return;
+      }
 
       console.log("DISCLAIMER APPEARED");
 
-      const popup = btn.locator("..");
-
       await expect
-        .poll(async () => {
-          await popup.evaluate((popup) => {
-            const el = popup.firstElementChild;
-            if (el) {
-              console.log(el.scrollHeight);
-              console.log(el.clientHeight);
-            }
-          });
-          console.log("BUTTON ENABLED:");
-          return btn.isEnabled();
-        })
+        .poll(
+          async () => {
+            await popup.evaluate((popup) => {
+              const el = popup.firstElementChild;
+              if (el) {
+                el.scrollTop = el.scrollHeight;
+              }
+            });
+            console.log("BUTTON ENABLED:");
+            return btn.isEnabled();
+          },
+          {
+            timeout: 10000,
+          },
+        )
         .toBe(true);
 
       await btn.click();
