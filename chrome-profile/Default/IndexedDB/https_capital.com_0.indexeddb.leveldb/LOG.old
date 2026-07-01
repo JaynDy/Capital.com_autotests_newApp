@@ -1,3 +1,3 @@
-2026/06/29-14:23:25.759 53615 Reusing MANIFEST /Users/user/Desktop/automation_tests_V3/chrome-profile/Default/IndexedDB/https_capital.com_0.indexeddb.leveldb/MANIFEST-000001
-2026/06/29-14:23:25.762 53615 Recovering log #3
-2026/06/29-14:23:25.765 53615 Reusing old log /Users/user/Desktop/automation_tests_V3/chrome-profile/Default/IndexedDB/https_capital.com_0.indexeddb.leveldb/000003.log 
+2026/07/01-10:00:00.688 12d017 Reusing MANIFEST /Users/user/Desktop/automation_tests_V3/chrome-profile/Default/IndexedDB/https_capital.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/07/01-10:00:00.689 12d017 Recovering log #3
+2026/07/01-10:00:00.691 12d017 Reusing old log /Users/user/Desktop/automation_tests_V3/chrome-profile/Default/IndexedDB/https_capital.com_0.indexeddb.leveldb/000003.log 

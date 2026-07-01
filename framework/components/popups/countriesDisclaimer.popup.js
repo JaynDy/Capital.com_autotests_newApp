@@ -4,7 +4,7 @@ export class CountriesDisclaimerPopup {
   constructor(page) {
     this.page = page;
 
-    this.modalBox = page.locator(
+    this.popup = page.locator(
       'div:has(> [data-type="closed_countries_disclaimer_confirm"])',
     );
     this.confirmButton = page.locator(
@@ -13,43 +13,52 @@ export class CountriesDisclaimerPopup {
   }
 
   async closeIfVisible() {
+    const popup = this.popup;
+    const btn = this.confirmButton;
+
+    if (!(await popup.isVisible().catch(() => false))) {
+      console.log("DISCLAIMER NOT PRESENT");
+      return;
+    }
+
     try {
-      await this.confirmButton.waitFor({
+      await popup.waitFor({
         state: "visible",
         timeout: 5000,
       });
 
-      const hasScrollable = await this.modalBox.evaluate((modal) => {
-        const scrollable = [...modal.querySelectorAll("*")].find(
-          (el) => el.scrollHeight > el.clientHeight,
-        );
+      await this.page.waitForTimeout(5000);
 
-        if (scrollable) {
-          scrollable.scrollTop = scrollable.scrollHeight;
-          return true;
-        }
+      console.log("DISABLED:", await btn.getAttribute("disabled"));
 
-        return false;
-      });
+      await expect
+        .poll(
+          async () => {
+            await popup.evaluate((popup) => {
+              const scrollable = [...popup.querySelectorAll("*")].find(
+                (el) => el.scrollHeight > el.clientHeight,
+              );
 
-      console.log("SCROLLABLE FOUND:", hasScrollable);
+              if (scrollable) {
+                scrollable.scrollTop = scrollable.scrollHeight;
+              }
+            });
 
-      await this.page.waitForTimeout(300);
+            return await btn.isEnabled();
+          },
+          {
+            timeout: 5000,
+          },
+        )
+        .toBe(true);
 
-      console.log(
-        "DISABLED:",
-        await this.confirmButton.getAttribute("disabled"),
-      );
+      console.log("DISABLED:", await btn.getAttribute("disabled"));
 
-      await expect(this.confirmButton).toBeEnabled({
-        timeout: 5000,
-      });
+      await btn.click();
 
-      await this.confirmButton.click();
-
-      console.log("COUNTRIES DISCLAIMER CLOSED");
+      console.log("DISCLAIMER CLOSED");
     } catch (e) {
-      console.log("COUNTRIES DISCLAIMER ERROR:", e.message);
+      console.log("DISCLAIMER ERROR:", e.message);
     }
   }
 }
