@@ -57,6 +57,9 @@ export class Page {
     //   return;
     // }
 
-    await this.page.waitForTimeout(2000);
+    // await this.page.waitForTimeout(2000);
+    if (!this.page.isClosed()) {
+      await this.page.waitForLoadState("domcontentloaded").catch(() => {});
+    }
   }
 }

@@ -16,43 +16,38 @@ export class CountriesDisclaimerPopup {
     const popup = this.popup;
     const btn = this.confirmButton;
 
-    if (!(await popup.isVisible().catch(() => false))) {
-      console.log("DISCLAIMER NOT PRESENT");
-      return;
-    }
-
     try {
       await popup.waitFor({
         state: "visible",
-        timeout: 5000,
+        timeout: 8000,
       });
 
-      await this.page.waitForTimeout(5000);
-
-      console.log("DISABLED:", await btn.getAttribute("disabled"));
+      console.log("DISCLAIMER APPEARED");
 
       await expect
         .poll(
           async () => {
+            if (this.page.isClosed()) {
+              return false;
+            }
+
             await popup.evaluate((popup) => {
-              const scrollable = [...popup.querySelectorAll("*")].find(
-                (el) => el.scrollHeight > el.clientHeight,
-              );
+              const scrollable = popup.firstElementChild;
 
               if (scrollable) {
                 scrollable.scrollTop = scrollable.scrollHeight;
               }
             });
 
+            console.log("BUTTON DISABLED:", await btn.getAttribute("disabled"));
+
             return await btn.isEnabled();
           },
           {
-            timeout: 5000,
+            timeout: 15000,
           },
         )
         .toBe(true);
-
-      console.log("DISABLED:", await btn.getAttribute("disabled"));
 
       await btn.click();
 
