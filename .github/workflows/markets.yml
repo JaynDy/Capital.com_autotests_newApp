@@ -21,27 +21,6 @@ jobs:
       CI: true
       TEST_BROWSER: ${{ matrix.browser }}
       TEST_LICENSE: ${{ matrix.license }}
-      # TEST_USER: ${{ matrix.user }}
-      # TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
-      # TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
-      # TEST_LICENSE: SCB
-      # TEST_LANG:
-      #   [
-      #     "en",
-      #     "ar",
-      #     "de",
-      #     "es",
-      #     "mn",
-      #     "ru",
-      #     "vi",
-      #     "zh-hant",
-      #     "el",
-      #     "pl",
-      #     "nl",
-      #     "ro",
-      #     "hu",
-      #     "it",
-      #   ]
       TEST_USER: unauthorised,unregistered
 
     steps:

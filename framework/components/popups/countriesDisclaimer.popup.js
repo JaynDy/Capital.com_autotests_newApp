@@ -14,51 +14,39 @@ export class CountriesDisclaimerPopup {
   }
 
   async closeIfVisible() {
-    try {
-      console.log("Waiting for Countries Disclaimer...");
-      console.log(await this.page.content());
+    await this.confirmButton.waitFor({
+      state: "visible",
+      timeout: 10000,
+    });
 
-      await this.confirmButton.waitFor({
-        state: "visible",
-        timeout: 10000,
-      });
+    await expect
+      .poll(
+        async () => {
+          await this.popup.evaluate((popup) => {
+            const scrollable = [...popup.querySelectorAll("*")].find(
+              (el) => el.scrollHeight > el.clientHeight,
+            );
 
-      console.log("Countries Disclaimer appeared");
+            if (!scrollable) {
+              throw new Error("Scrollable element not found");
+            }
 
-      await expect
-        .poll(
-          async () => {
-            await this.popup.evaluate((popup) => {
-              const scrollable = [...popup.querySelectorAll("*")].find(
-                (el) => el.scrollHeight > el.clientHeight,
-              );
+            scrollable.scrollTop = scrollable.scrollHeight;
+            scrollable.dispatchEvent(new Event("scroll", { bubbles: true }));
+          });
 
-              if (!scrollable) {
-                throw new Error("Scrollable element not found");
-              }
+          const enabled = await this.confirmButton.isEnabled();
+          return enabled;
+        },
+        {
+          timeout: 10000,
+          intervals: [500],
+        },
+      )
+      .toBe(true);
 
-              scrollable.scrollTop = scrollable.scrollHeight;
-              scrollable.dispatchEvent(new Event("scroll", { bubbles: true }));
-            });
+    await this.confirmButton.click();
 
-            const enabled = await this.confirmButton.isEnabled();
-
-            console.log("Button enabled:", enabled);
-
-            return enabled;
-          },
-          {
-            timeout: 10000,
-            intervals: [500],
-          },
-        )
-        .toBe(true);
-
-      await this.confirmButton.click();
-
-      console.log("Countries Disclaimer closed");
-    } catch (e) {
-      console.log("Countries Disclaimer skipped:", e.message);
-    }
+    // console.log("Countries Disclaimer closed");
   }
 }
