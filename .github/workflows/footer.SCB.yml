@@ -23,7 +23,7 @@ jobs:
       TEST_LICENSE: ${{ matrix.license }}
       TEST_LANG: zh-hans
       TEST_USER: unregistered
-      TEST_ACTION: logo
+      # TEST_ACTION: logo
 
     steps:
       - uses: actions/checkout@v4

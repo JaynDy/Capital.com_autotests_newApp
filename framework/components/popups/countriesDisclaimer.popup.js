@@ -11,31 +11,6 @@ export class CountriesDisclaimerPopup {
     this.confirmButton = page.locator(
       '[data-type="closed_countries_disclaimer_confirm"]',
     );
-
-    // Debug listeners
-    this.page.on("close", () => {
-      console.log("PAGE CLOSED");
-    });
-
-    this.page.context().on("close", () => {
-      console.log("CONTEXT CLOSED");
-    });
-
-    this.page.context().on("page", (page) => {
-      console.log("NEW PAGE:", page.url());
-
-      page.on("close", () => {
-        console.log("NEW PAGE CLOSED");
-      });
-    });
-
-    this.page.on("framenavigated", (frame) => {
-      console.log("NAVIGATED:", frame.url());
-    });
-
-    this.page.on("domcontentloaded", () => {
-      console.log("DOMCONTENTLOADED");
-    });
   }
 
   async closeIfVisible() {
@@ -63,7 +38,6 @@ export class CountriesDisclaimerPopup {
               }
 
               scrollable.scrollTop = scrollable.scrollHeight;
-
               scrollable.dispatchEvent(new Event("scroll", { bubbles: true }));
             });
 

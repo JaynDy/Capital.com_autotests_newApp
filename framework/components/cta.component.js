@@ -82,22 +82,18 @@ export class CTAComponent {
     console.log("START CLICK", actionName);
 
     await this.runSetup();
-    // console.log("AFTER runSetup", this.page.isClosed());
 
     await this.runActionSetup(actionName);
-    // console.log("AFTER runActionSetup", this.page.isClosed());
 
     const action = this.actions[actionName];
     let locator = this.getActionLocator(actionName);
-
-    // console.log("AFTER getActionLocator", this.page.isClosed());
 
     if (action.locatorIndex !== undefined) {
       locator = locator.nth(action.locatorIndex);
     }
 
     const count = await locator.count();
-    // console.log("COUNT", actionName, count);
+    console.log("COUNT", actionName, count);
 
     if (action.optional && count === 0) {
       return { skipped: true };
