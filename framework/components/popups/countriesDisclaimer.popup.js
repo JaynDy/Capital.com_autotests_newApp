@@ -41,6 +41,7 @@ export class CountriesDisclaimerPopup {
   async closeIfVisible() {
     try {
       console.log("Waiting for Countries Disclaimer...");
+      console.log(await this.page.content());
 
       await this.confirmButton.waitFor({
         state: "visible",

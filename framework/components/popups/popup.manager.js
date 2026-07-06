@@ -11,7 +11,7 @@ export class PopupManager {
 
   async dismissAll() {
     await this.geo.closeIfVisible();
-    await this.cookie.closeIfVisible();
     await this.countriesDisclaimer.closeIfVisible();
+    await this.cookie.closeIfVisible();
   }
 }
