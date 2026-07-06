@@ -1,0 +1,8 @@
+NAVIGATED: https://capital.com/zh-hans
+DOMCONTENTLOADED
+NAVIGATED: https://capital.com/zh-hans
+PAGE CLOSED
+Waiting for Countries Disclaimer...
+CONTEXT CLOSED
+Countries Disclaimer skipped: locator.waitFor: Target page, context or browser has been closed
+START CLICK logo
