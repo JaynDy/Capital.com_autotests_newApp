@@ -7,9 +7,27 @@ export class CountriesDisclaimerPopup {
     this.popup = page.locator(
       'div:has(> [data-type="closed_countries_disclaimer_confirm"])',
     );
+
     this.confirmButton = page.locator(
       '[data-type="closed_countries_disclaimer_confirm"]',
     );
+
+    // Debug listeners
+    this.page.on("close", () => {
+      console.log("PAGE CLOSED");
+    });
+
+    this.page.context().on("close", () => {
+      console.log("CONTEXT CLOSED");
+    });
+
+    this.page.context().on("page", (page) => {
+      console.log("NEW PAGE:", page.url());
+
+      page.on("close", () => {
+        console.log("NEW PAGE CLOSED");
+      });
+    });
 
     this.page.on("framenavigated", (frame) => {
       console.log("NAVIGATED:", frame.url());
@@ -21,45 +39,51 @@ export class CountriesDisclaimerPopup {
   }
 
   async closeIfVisible() {
-    const btn = this.confirmButton;
-    const popup = this.popup;
-
     try {
-      await this.page.waitForLoadState("domcontentloaded");
-      await this.page.waitForLoadState("networkidle").catch(() => {});
+      console.log("Waiting for Countries Disclaimer...");
 
-      const visible = await btn.isVisible({ timeout: 5000 }).catch(() => false);
+      await this.confirmButton.waitFor({
+        state: "visible",
+        timeout: 10000,
+      });
 
-      if (!visible) {
-        console.log("DISCLAIMER NOT PRESENT");
-        return;
-      }
-
-      console.log("DISCLAIMER APPEARED");
+      console.log("Countries Disclaimer appeared");
 
       await expect
         .poll(
           async () => {
-            await popup.evaluate((popup) => {
-              const el = popup.firstElementChild;
-              if (el) {
-                el.scrollTop = el.scrollHeight;
+            await this.popup.evaluate((popup) => {
+              const scrollable = [...popup.querySelectorAll("*")].find(
+                (el) => el.scrollHeight > el.clientHeight,
+              );
+
+              if (!scrollable) {
+                throw new Error("Scrollable element not found");
               }
+
+              scrollable.scrollTop = scrollable.scrollHeight;
+
+              scrollable.dispatchEvent(new Event("scroll", { bubbles: true }));
             });
-            console.log("BUTTON ENABLED:");
-            return btn.isEnabled();
+
+            const enabled = await this.confirmButton.isEnabled();
+
+            console.log("Button enabled:", enabled);
+
+            return enabled;
           },
           {
             timeout: 10000,
+            intervals: [500],
           },
         )
         .toBe(true);
 
-      await btn.click();
+      await this.confirmButton.click();
 
-      console.log("DISCLAIMER CLOSED");
+      console.log("Countries Disclaimer closed");
     } catch (e) {
-      console.log("DISCLAIMER ERROR:", e.message);
+      console.log("Countries Disclaimer skipped:", e.message);
     }
   }
 }

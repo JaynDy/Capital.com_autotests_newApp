@@ -79,22 +79,25 @@ export class CTAComponent {
   }
 
   async click(actionName) {
+    console.log("START CLICK", actionName);
+
     await this.runSetup();
+    // console.log("AFTER runSetup", this.page.isClosed());
+
     await this.runActionSetup(actionName);
+    // console.log("AFTER runActionSetup", this.page.isClosed());
 
     const action = this.actions[actionName];
     let locator = this.getActionLocator(actionName);
+
+    // console.log("AFTER getActionLocator", this.page.isClosed());
 
     if (action.locatorIndex !== undefined) {
       locator = locator.nth(action.locatorIndex);
     }
 
-    // console.log("ACTION:", actionName);
-    // console.log("URL:", this.page.url());
-    // console.log("PAGE CLOSED:", this.page.isClosed());
-
     const count = await locator.count();
-    console.log(actionName, count);
+    // console.log("COUNT", actionName, count);
 
     if (action.optional && count === 0) {
       return { skipped: true };
