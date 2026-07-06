@@ -1,0 +1,865 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: cta/generated.cta.spec.js >> markets page | heroBanner | signupBtn
+- Location: tests/cta/generated.cta.spec.js:16:7
+
+# Error details
+
+```
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('[data-type="closed_countries_disclaimer_confirm"]') to be visible
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e7]:
+      - text: CFDs sind komplexe Instrumente und gehen wegen der Hebelwirkung mit dem hohen Risiko einher, schnell Geld zu verlieren.
+      - generic [ref=e8]:
+        - generic [ref=e9]:
+          - strong [ref=e10]: 73 % der Privatkundenkonten verlieren Geld beim CFD-Handel mit diesem Anbieter
+          - text: .
+        - text: Sie sollten überlegen, ob Sie verstehen, wie CFD funktionieren, und ob Sie es sich leisten können, das hohe Risiko einzugehen Ihr Geld zu verlieren. Bitte beachten Sie unsere
+        - link "Risikoaufklärung" [ref=e11] [cursor=pointer]:
+          - /url: https://capital.com/risk-disclosure-policy
+    - generic [ref=e13]:
+      - link [ref=e14] [cursor=pointer]:
+        - /url: /de-at
+        - img [ref=e15]
+      - generic [ref=e20]:
+        - navigation [ref=e21]:
+          - button "Trading" [ref=e22]:
+            - button "Trading" [ref=e23]:
+              - generic [ref=e24]: Trading
+          - button "Märkte" [ref=e25]:
+            - button "Märkte" [ref=e26]:
+              - generic [ref=e27]: Märkte
+          - link "Preisgestaltung" [ref=e30] [cursor=pointer]:
+            - /url: /de-at/ways-to-trade/fees-and-charges
+          - button "Über uns" [ref=e31]:
+            - button "Über uns" [ref=e32]:
+              - generic [ref=e33]: Über uns
+        - button "de" [ref=e34] [cursor=pointer]:
+          - generic [ref=e36]: de
+      - generic [ref=e38]:
+        - button "Anmelden" [ref=e39] [cursor=pointer]: Anmelden
+        - button "Konto eröffnen" [ref=e40] [cursor=pointer]: Konto eröffnen
+  - generic [ref=e41]:
+    - paragraph [ref=e44]:
+      - generic [ref=e45]:
+        - link "Startseite" [ref=e46] [cursor=pointer]:
+          - /url: /de-at
+        - text: •
+      - text: Märkte
+    - generic [ref=e47]:
+      - generic [ref=e53]:
+        - heading "5,500+ Märkte. Eine Plattform" [level=1] [ref=e54]
+        - paragraph [ref=e56]:
+          - text: CFD- und Knock-out-Trading mit Forex, Aktien, Indizes, Rohstoffen und mehr. Transparente Spreads, 100+ analytische Tools und TradingView-gestützte Analysen.
+          - text: Knock-out-Optionen stehen nur auf ausgewählten Märkten und in ausgewählten Ländern zur Verfügung. Knock-out-Optionen stehen nicht für Futures-Produkte zur Verfügung.
+        - button "Märkte entdecken" [ref=e58] [cursor=pointer]
+      - generic [ref=e60]:
+        - heading "CFD-Märkte nach Anlageklasse" [level=2] [ref=e62]
+        - generic [ref=e63]:
+          - generic [ref=e65]:
+            - heading "Indizes" [level=3] [ref=e66]
+            - paragraph [ref=e68]: Breites Marktexposure gegenüber 35+ globalen CFD-Indizes, einschließlich des US 500 und des UK 100.
+            - link "Indizes einsehen" [ref=e69] [cursor=pointer]:
+              - /url: /de-at/markets/indices
+              - generic [ref=e70]: Indizes einsehen
+          - generic [ref=e72]:
+            - heading "Aktien" [level=3] [ref=e73]
+            - paragraph [ref=e75]: Tausende globale CFD-Aktien, von Tesla und Amazon bis hin zu Meta.
+            - link "Aktien einsehen" [ref=e76] [cursor=pointer]:
+              - /url: /de-at/markets/shares
+              - generic [ref=e77]: Aktien einsehen
+          - generic [ref=e79]:
+            - heading "Rohstoffe" [level=3] [ref=e80]
+            - paragraph [ref=e82]: Energie-, Metall- und Agrar-CFD-Märkte einschließlich Gold, Öl und Erdgas.
+            - link "Rohstoffe einsehen" [ref=e83] [cursor=pointer]:
+              - /url: /de-at/markets/commodities
+              - generic [ref=e84]: Rohstoffe einsehen
+          - generic [ref=e86]:
+            - heading "Forex" [level=3] [ref=e87]
+            - paragraph [ref=e89]: 120+ Neben-, Haupt- und exotische CFD-Währungspaare, 24/5 verfügbar.
+            - link "Forex einsehen" [ref=e90] [cursor=pointer]:
+              - /url: /de-at/markets/forex
+              - generic [ref=e91]: Forex einsehen
+          - generic [ref=e93]:
+            - heading "Anleihen" [level=3] [ref=e94]
+            - paragraph [ref=e96]: Wichtige Anleihen-CFDs einschließlich US-Staatsanleihen und UK-Gilts.
+            - link "Anleihen einsehen" [ref=e97] [cursor=pointer]:
+              - /url: /de-at/markets/bonds
+              - generic [ref=e98]: Anleihen einsehen
+          - generic [ref=e100]:
+            - heading "Zinssätze" [level=3] [ref=e101]
+            - paragraph [ref=e103]: An globale Zinsänderungen gekoppelte Instrumente, die als CFDs gehandelt werden.
+            - link "Zinssätze einsehen" [ref=e104] [cursor=pointer]:
+              - /url: /de-at/markets/interest-rates
+              - generic [ref=e105]: Zinssätze einsehen
+          - generic [ref=e107]:
+            - heading "Kryptowährung" [level=3] [ref=e108]
+            - paragraph [ref=e110]: Eine Auswahl an Kryptos, von Bitcoin und Ether bis zu Cardano und Dogecoin.
+            - link "Kryptowährungen einsehen" [ref=e111] [cursor=pointer]:
+              - /url: /de-at/markets/cryptocurrencies
+              - generic [ref=e112]: Kryptowährungen einsehen
+      - generic [ref=e114]:
+        - heading "Alle verfügbaren Märkte" [level=2] [ref=e116]
+        - generic [ref=e117]:
+          - generic [ref=e118]:
+            - generic [ref=e120]:
+              - button "CFDs" [ref=e121]: CFDs
+              - button "Knock-outs" [ref=e122] [cursor=pointer]: Knock-outs
+            - button "Die meistgehandelten Sortieren Top-Absteiger Die meistgehandelten Top-Aufsteiger Die volatilsten" [ref=e125]:
+              - button "Die meistgehandelten Sortieren" [ref=e126] [cursor=pointer]:
+                - generic [ref=e127]:
+                  - textbox "Sortieren":
+                    - /placeholder: " "
+                    - text: Die meistgehandelten
+                  - generic: Sortieren
+              - generic:
+                - generic:
+                  - button "Top-Absteiger"
+                  - button "Die meistgehandelten"
+                  - button "Top-Aufsteiger"
+                  - button "Die volatilsten"
+          - separator [ref=e128]
+          - generic [ref=e129]:
+            - generic [ref=e130]:
+              - button [ref=e133]:
+                - textbox "marketlist_search" [ref=e135]:
+                  - /placeholder: Search
+              - generic [ref=e136]: Verkaufen
+              - generic [ref=e137]: Kaufen
+              - generic [ref=e138]: Spread
+              - generic [ref=e139]: 1T Änd.
+              - generic [ref=e140]: 1D Charts
+              - generic [ref=e141]:
+                - generic [ref=e142]: Verkäufer
+                - generic [ref=e143]: Käufer
+            - generic [ref=e144]:
+              - link "Gold Gold Spot 4159.30 4159.60 0.30 -0.380% 29.42% 70.58%" [ref=e145] [cursor=pointer]:
+                - /url: /de-at/markets/commodities/rohstoff-gold-spot
+                - generic [ref=e147]:
+                  - generic [ref=e148]: Gold
+                  - generic [ref=e149]: Gold Spot
+                - generic [ref=e150]: "4159.30"
+                - generic [ref=e151]: "4159.60"
+                - generic [ref=e152]: "0.30"
+                - generic [ref=e153]: "-0.380%"
+                - img [ref=e155]
+                - generic [ref=e162]:
+                  - generic [ref=e163]: 29.42%
+                  - generic [ref=e164]: 70.58%
+              - link "US100 US Tech 100 29672.4 29674.2 1.8 +0.100% 37.68% 62.32%" [ref=e165] [cursor=pointer]:
+                - /url: /de-at/markets/indices/us-tech-100-index-1
+                - generic [ref=e167]:
+                  - generic [ref=e168]: US100
+                  - generic [ref=e169]: US Tech 100
+                - generic [ref=e170]: "29672.4"
+                - generic [ref=e171]: "29674.2"
+                - generic [ref=e172]: "1.8"
+                - generic [ref=e173]: +0.100%
+                - img [ref=e175]
+                - generic [ref=e182]:
+                  - generic [ref=e183]: 37.68%
+                  - generic [ref=e184]: 62.32%
+              - link "BTC/USD Bitcoin to US Dollar 63616.30 63666.30 50.00 +1.610% 16.31% 83.69%" [ref=e185] [cursor=pointer]:
+                - /url: /de-at/markets/cryptocurrencies/chart-bitcoin-to-us-dollar
+                - generic [ref=e187]:
+                  - generic [ref=e188]: BTC/USD
+                  - generic [ref=e189]: Bitcoin to US Dollar
+                - generic [ref=e190]: "63616.30"
+                - generic [ref=e191]: "63666.30"
+                - generic [ref=e192]: "50.00"
+                - generic [ref=e193]: +1.610%
+                - img [ref=e195]
+                - generic [ref=e202]:
+                  - generic [ref=e203]: 16.31%
+                  - generic [ref=e204]: 83.69%
+              - link "XRP/USD Ripple to US Dollar 1.14609 1.15183 0.00574 +1.760% 4.7% 95.3%" [ref=e205] [cursor=pointer]:
+                - /url: /de-at/markets/cryptocurrencies/chart-ripple-to-us-dollar
+                - generic [ref=e207]:
+                  - generic [ref=e208]: XRP/USD
+                  - generic [ref=e209]: Ripple to US Dollar
+                - generic [ref=e210]: "1.14609"
+                - generic [ref=e211]: "1.15183"
+                - generic [ref=e212]: "0.00574"
+                - generic [ref=e213]: +1.760%
+                - img [ref=e215]
+                - generic [ref=e222]:
+                  - generic [ref=e223]: 4.7%
+                  - generic [ref=e224]: 95.3%
+              - link "ETH/USD Ethereum to US Dollar 1787.84 1789.59 1.75 +0.820% 12.82% 87.18%" [ref=e225] [cursor=pointer]:
+                - /url: /de-at/markets/cryptocurrencies/chart-ethereum-to-us-dollar
+                - generic [ref=e227]:
+                  - generic [ref=e228]: ETH/USD
+                  - generic [ref=e229]: Ethereum to US Dollar
+                - generic [ref=e230]: "1787.84"
+                - generic [ref=e231]: "1789.59"
+                - generic [ref=e232]: "1.75"
+                - generic [ref=e233]: +0.820%
+                - img [ref=e235]
+                - generic [ref=e242]:
+                  - generic [ref=e243]: 12.82%
+                  - generic [ref=e244]: 87.18%
+              - link "Oil - Crude US Crude Oil Spot 68.436 68.468 0.032 -0.390% 28.96% 71.04%" [ref=e245] [cursor=pointer]:
+                - /url: /de-at/markets/commodities/rohstoff-us-crude-oil-spot-1
+                - generic [ref=e247]:
+                  - generic [ref=e248]: Oil - Crude
+                  - generic [ref=e249]: US Crude Oil Spot
+                - generic [ref=e250]: "68.436"
+                - generic [ref=e251]: "68.468"
+                - generic [ref=e252]: "0.032"
+                - generic [ref=e253]: "-0.390%"
+                - img [ref=e255]
+                - generic [ref=e262]:
+                  - generic [ref=e263]: 28.96%
+                  - generic [ref=e264]: 71.04%
+              - link "J225 Japan 225 70027.3 70037.3 10.0 +0.700% 38.62% 61.38%" [ref=e265] [cursor=pointer]:
+                - /url: /de-at/markets/indices/japan-225-index-1
+                - generic [ref=e267]:
+                  - generic [ref=e268]: J225
+                  - generic [ref=e269]: Japan 225
+                - generic [ref=e270]: "70027.3"
+                - generic [ref=e271]: "70037.3"
+                - generic [ref=e272]: "10.0"
+                - generic [ref=e273]: +0.700%
+                - img [ref=e275]
+                - generic [ref=e282]:
+                  - generic [ref=e283]: 38.62%
+                  - generic [ref=e284]: 61.38%
+              - link "Silver Silver Spot 61.934 61.984 0.050 -0.630% 15.73% 84.27%" [ref=e285] [cursor=pointer]:
+                - /url: /de-at/markets/commodities/rohstoff-silver-spot
+                - generic [ref=e287]:
+                  - generic [ref=e288]: Silver
+                  - generic [ref=e289]: Silver Spot
+                - generic [ref=e290]: "61.934"
+                - generic [ref=e291]: "61.984"
+                - generic [ref=e292]: "0.050"
+                - generic [ref=e293]: "-0.630%"
+                - img [ref=e295]
+                - generic [ref=e302]:
+                  - generic [ref=e303]: 15.73%
+                  - generic [ref=e304]: 84.27%
+              - link "US30 US Wall Street 30 52886.5 52888.5 2.0 +0.100% 46.12% 53.88%" [ref=e305] [cursor=pointer]:
+                - /url: /de-at/markets/indices/us-wall-street-30-index-1
+                - generic [ref=e307]:
+                  - generic [ref=e308]: US30
+                  - generic [ref=e309]: US Wall Street 30
+                - generic [ref=e310]: "52886.5"
+                - generic [ref=e311]: "52888.5"
+                - generic [ref=e312]: "2.0"
+                - generic [ref=e313]: +0.100%
+                - img [ref=e315]
+                - generic [ref=e322]:
+                  - generic [ref=e323]: 46.12%
+                  - generic [ref=e324]: 53.88%
+              - link "DE40 Germany 40 25803.6 25805.1 1.5 - 57.35% 42.65%" [ref=e325] [cursor=pointer]:
+                - /url: /de-at/markets/indices/germany-40-index-1
+                - generic [ref=e327]:
+                  - generic [ref=e328]: DE40
+                  - generic [ref=e329]: Germany 40
+                - generic [ref=e330]: "25803.6"
+                - generic [ref=e331]: "25805.1"
+                - generic [ref=e332]: "1.5"
+                - generic [ref=e333]: "-"
+                - img [ref=e335]
+                - generic [ref=e342]:
+                  - generic [ref=e343]: 57.35%
+                  - generic [ref=e344]: 42.65%
+          - generic [ref=e345]: Die Aktienkurse sind indikativ und können von den aktuellen Marktpreisen abweichen.
+        - navigation "pagination" [ref=e347]:
+          - link "1":
+            - /url: /de-at/markets?page=1
+          - link "2" [ref=e348] [cursor=pointer]:
+            - /url: /de-at/markets?page=2
+          - link "3" [ref=e349] [cursor=pointer]:
+            - /url: /de-at/markets?page=3
+          - generic [ref=e350]: ...
+          - link "688" [ref=e351] [cursor=pointer]:
+            - /url: /de-at/markets?page=688
+          - link "689" [ref=e352] [cursor=pointer]:
+            - /url: /de-at/markets?page=689
+          - link "Go to the next page" [ref=e353] [cursor=pointer]:
+            - /url: /de-at/markets?page=2
+      - generic [ref=e355]:
+        - heading "In jedem Konto integriert" [level=2] [ref=e357]
+        - generic [ref=e358]:
+          - generic [ref=e360]:
+            - heading "Jeder Datenpunkt an einem Ort" [level=3] [ref=e361]
+            - paragraph [ref=e363]: Marktdaten, Analysetools und Portfolioübersicht. Strukturiert für den Trade, nicht für die Transaktion.
+            - link "Web-Plattform entdecken" [ref=e364] [cursor=pointer]:
+              - /url: /de-at/trading-platforms/web-platform
+              - generic [ref=e365]: Web-Plattform entdecken
+          - generic [ref=e367]:
+            - heading "Klare Kosten, volle Transparenz" [level=3] [ref=e368]
+            - paragraph [ref=e370]: Transparente Spreads und keine versteckten Gebühren. Eine klare Kostenstruktur, bevor Sie sich festlegen.
+            - link "Zur Preisgestaltung" [ref=e371] [cursor=pointer]:
+              - /url: /de-at/ways-to-trade/fees-and-charges
+              - generic [ref=e372]: Zur Preisgestaltung
+          - generic [ref=e374]:
+            - heading "TradingView und MT4/MT5" [level=3] [ref=e375]
+            - paragraph [ref=e377]: Die Tools, die Sie bereits nutzen — mit den Preisen und dem Support von Capital.com.
+            - link "Zu den Plattformen" [ref=e378] [cursor=pointer]:
+              - /url: /de-at/trading-platforms
+              - generic [ref=e379]: Zu den Plattformen
+          - generic [ref=e381]:
+            - heading "Globale Standards, lokale Umsetzung" [level=3] [ref=e382]
+            - paragraph [ref=e384]: In fünf Jurisdiktionen weltweit reguliert. Lokaler Support in Ihrer Sprache verfügbar.
+          - generic [ref=e386]:
+            - heading "Alle Tools, kein Kapital erforderlich" [level=3] [ref=e387]
+            - paragraph [ref=e389]: Virtuelle Gelder, Live-Preise. Die Funktionen eines Live-Kontos — bevor Sie sich festlegen.
+            - link "Zur Demo" [ref=e390] [cursor=pointer]:
+              - /url: /de-at/trading-platforms/demo-account
+              - generic [ref=e391]: Zur Demo
+          - generic [ref=e393]:
+            - heading "Integrierte Intelligenz- und Risikotools" [level=3] [ref=e394]
+            - paragraph [ref=e396]: KI-Assistent und Analysetools vor dem Trade. Stop-Losses und Take-Profit-Orders durchgehend verfügbar.
+      - generic [ref=e397]:
+        - generic [ref=e399]:
+          - heading "Nutzerfeedback und Bewertungen" [level=2] [ref=e400]
+          - generic [ref=e401]:
+            - text: Feedback unserer Kunden
+            - superscript [ref=e402]: "1"
+            - text: ", unabhängig von ihrem Erfahrungsstand."
+        - generic [ref=e403]:
+          - region [ref=e404]:
+            - generic [ref=e406]:
+              - group [ref=e407]:
+                - link [ref=e408] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e411]: 2025-06-27
+                  - strong [ref=e412]: W******* W*******
+                  - paragraph [ref=e414]: "Trade seit 3 Jahren und habe schon viele Trading Apps getestet. Für mich die beste App und der beste Broker. Was mir wichtig ist: Ein und Auszahlungen per Kreditkarte möglich. Auszahlungen immer schnell und problemlos. Hedgen möglich. Berichte, Auszüge OK. Eine Diagrammfunktion wie es bei Naga ist wäre wünschenswert."
+              - group [ref=e416]:
+                - link [ref=e417] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e420]: 2025-06-02
+                  - strong [ref=e421]: L******
+                  - paragraph [ref=e423]: Nutze es nur auf dem handy, läuft flüssig. Charts sehen gut aus.
+              - group [ref=e425]:
+                - link [ref=e426] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e429]: 2025-06-05
+                  - strong [ref=e430]: K****
+                  - paragraph [ref=e432]: Die Plattform ist sehr zu empfehlen, wenn man nach einem CFD-Broker sucht. Und der Service reagiert sehr schnell, kompetent und freundlich, wenn man Fragen hat. Insofern kann ich den Dienstleister uneingeschränkt empfehlen, sofern man sich der Risken des Tradens bewusst ist und vorher im Demokonto geübt hat. Ein kleiner Verbesserungsvorschlag für die App wäre es, die Schriftarten zu vergrößern!
+              - group [ref=e434]:
+                - link [ref=e435] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e438]: 2025-03-02
+                  - strong [ref=e439]: C***********
+                  - paragraph [ref=e441]: Die Übersichtlichkeit lässt nichts zu wünschen übrig. Man erkennt sofort alle Parameter in der jeweils eingestellten Währung. Ein absoluter Pluspunkt an dieser Stelle.
+              - group [ref=e443]:
+                - link [ref=e444] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e447]: 2025-06-16
+                  - strong [ref=e448]: K** G*******
+                  - paragraph [ref=e450]: "Ich bin begeistert vom neuen Design der Android App. Ich lobe besonders die neuen Einstellungsmöglichkeiten was Charts sowie Indikatoren betrifft. Seit dem neuesten Update sehe ich das man im 1Sekunden Timeframe Handeln kann, aber nur auf sein live Konto, ist das gewollt? Insgesamt für mich weiterhin der beste Broker, der ständig Verbesserungen erhält. Ein Vorschlag: Das ändern des Stopplos/Take Profit auch auf dem Chart, wie bei der Web Plattform."
+              - group [ref=e452]:
+                - link [ref=e453] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e456]: 2025-07-02
+                  - strong [ref=e457]: L*** B******
+                  - paragraph [ref=e459]: Der Wechsel von einem Hebel von 1:50 zu 1:200 hat meine Handelsstrategie komplett verändert. Die Risikomanagement-Tools sind solide und helfen dabei, eine übermäßige Risikoexposition bei volatilen Marktbedingungen zu vermeiden.
+              - group [ref=e461]:
+                - link [ref=e462] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e465]: 2025-04-09
+                  - strong [ref=e466]: r******
+                  - paragraph [ref=e468]: Gute Handhabung, Mit Traiding View kombinierbar und geringe kosten. Kostenfreie Webinare.
+              - group [ref=e470]:
+                - link [ref=e471] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e474]: 2025-03-13
+                  - strong [ref=e475]: S***** T*
+                  - paragraph [ref=e477]: Sehr cooles Design. Einfach zu verstehen und anfängerfreundlich. Hatte keine Probleme im Kundenservice und alles funktioniert so wie es soll. Kann ich nur weiterempfehlen.
+              - group [ref=e479]:
+                - link [ref=e480] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e483]: 2025-07-02
+                  - strong [ref=e484]: s****************
+                  - paragraph [ref=e486]: Ist einfach zum bedienen, keine Probleme beim Einzahlung und Auszahlung ist eine Sekunde. Ich bin sehr glücklich das ich die App gefunden habe. Ich empfehle es gerne weiter meine Freunde, Familien .
+              - group [ref=e488]:
+                - link [ref=e489] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e492]: 2025-05-19
+                  - strong [ref=e493]: N****** W*****
+                  - paragraph [ref=e495]: Es wurde mir sehr schnell bei meinem Verkaufs Problem über WhatsApp geholfen. Ich bedanke mich nochmals für eure Hilfe
+              - group [ref=e497]:
+                - link [ref=e498] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e501]: 2025-06-04
+                  - strong [ref=e502]: T***
+                  - paragraph [ref=e504]: Für Einsteiger die perfekte App, um sich mal mit der Materie vertraut zu machen, auch der Support funktiont super!!!! 5⭐️
+              - group [ref=e506]:
+                - link [ref=e507] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e510]: 2025-05-30
+                  - strong [ref=e511]: b***********
+                  - paragraph [ref=e513]: Klasse App! Die Watchlists sind übersichtlich, Alarme in meinem Tarif etwas etwas dünne. Ich kann die App auf meinem Handy inkl. Dauerlogin auf Capital den ganzen Tag im Hintergrund und stets verfügbar halten. Perfekt!
+              - group [ref=e515]:
+                - link [ref=e516] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e519]: 2025-04-25
+                  - strong [ref=e520]: B****** P*************
+                  - paragraph [ref=e522]: wunderbare App, Top Support alles klappt und mega Team sogar die App hat keine Bugs plus Mann kann Lang Zeit Investor werden.
+              - group "1 of 13" [ref=e524]:
+                - 'link "2025-06-27 W******* W******* Trade seit 3 Jahren und habe schon viele Trading Apps getestet. Für mich die beste App und der beste Broker. Was mir wichtig ist: Ein und Auszahlungen per Kreditkarte möglich. Auszahlungen immer schnell und problemlos. Hedgen möglich. Berichte, Auszüge OK. Eine Diagrammfunktion wie es bei Naga ist wäre wünschenswert." [ref=e525] [cursor=pointer]':
+                  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=a7bb65e8-f22a-433b-99bb-055d5eaf4b77&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                  - generic [ref=e528]: 2025-06-27
+                  - strong [ref=e529]: W******* W*******
+                  - paragraph [ref=e531]: "Trade seit 3 Jahren und habe schon viele Trading Apps getestet. Für mich die beste App und der beste Broker. Was mir wichtig ist: Ein und Auszahlungen per Kreditkarte möglich. Auszahlungen immer schnell und problemlos. Hedgen möglich. Berichte, Auszüge OK. Eine Diagrammfunktion wie es bei Naga ist wäre wünschenswert."
+              - group "2 of 13" [ref=e533]:
+                - link "2025-06-02 L****** Nutze es nur auf dem handy, läuft flüssig. Charts sehen gut aus." [ref=e534] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e537]: 2025-06-02
+                  - strong [ref=e538]: L******
+                  - paragraph [ref=e540]: Nutze es nur auf dem handy, läuft flüssig. Charts sehen gut aus.
+              - group "3 of 13" [ref=e542]:
+                - link "2025-06-05 K**** Die Plattform ist sehr zu empfehlen, wenn man nach einem CFD-Broker sucht. Und der Service reagiert sehr schnell, kompetent und freundlich, wenn man Fragen hat. Insofern kann ich den Dienstleister uneingeschränkt empfehlen, sofern man sich der Risken des Tradens bewusst ist und vorher im Demokonto geübt hat. Ein kleiner Verbesserungsvorschlag für die App wäre es, die Schriftarten zu vergrößern!" [ref=e543] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e546]: 2025-06-05
+                  - strong [ref=e547]: K****
+                  - paragraph [ref=e549]: Die Plattform ist sehr zu empfehlen, wenn man nach einem CFD-Broker sucht. Und der Service reagiert sehr schnell, kompetent und freundlich, wenn man Fragen hat. Insofern kann ich den Dienstleister uneingeschränkt empfehlen, sofern man sich der Risken des Tradens bewusst ist und vorher im Demokonto geübt hat. Ein kleiner Verbesserungsvorschlag für die App wäre es, die Schriftarten zu vergrößern!
+              - group [ref=e551]:
+                - link [ref=e552] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e555]: 2025-03-02
+                  - strong [ref=e556]: C***********
+                  - paragraph [ref=e558]: Die Übersichtlichkeit lässt nichts zu wünschen übrig. Man erkennt sofort alle Parameter in der jeweils eingestellten Währung. Ein absoluter Pluspunkt an dieser Stelle.
+              - group [ref=e560]:
+                - link [ref=e561] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=a7bb65e8-f22a-433b-99bb-055d5eaf4b77&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                  - generic [ref=e564]: 2025-06-16
+                  - strong [ref=e565]: K** G*******
+                  - paragraph [ref=e567]: "Ich bin begeistert vom neuen Design der Android App. Ich lobe besonders die neuen Einstellungsmöglichkeiten was Charts sowie Indikatoren betrifft. Seit dem neuesten Update sehe ich das man im 1Sekunden Timeframe Handeln kann, aber nur auf sein live Konto, ist das gewollt? Insgesamt für mich weiterhin der beste Broker, der ständig Verbesserungen erhält. Ein Vorschlag: Das ändern des Stopplos/Take Profit auch auf dem Chart, wie bei der Web Plattform."
+              - group [ref=e569]:
+                - link [ref=e570] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e573]: 2025-07-02
+                  - strong [ref=e574]: L*** B******
+                  - paragraph [ref=e576]: Der Wechsel von einem Hebel von 1:50 zu 1:200 hat meine Handelsstrategie komplett verändert. Die Risikomanagement-Tools sind solide und helfen dabei, eine übermäßige Risikoexposition bei volatilen Marktbedingungen zu vermeiden.
+              - group [ref=e578]:
+                - link [ref=e579] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e582]: 2025-04-09
+                  - strong [ref=e583]: r******
+                  - paragraph [ref=e585]: Gute Handhabung, Mit Traiding View kombinierbar und geringe kosten. Kostenfreie Webinare.
+              - group [ref=e587]:
+                - link [ref=e588] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=a7bb65e8-f22a-433b-99bb-055d5eaf4b77&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                  - generic [ref=e591]: 2025-03-13
+                  - strong [ref=e592]: S***** T*
+                  - paragraph [ref=e594]: Sehr cooles Design. Einfach zu verstehen und anfängerfreundlich. Hatte keine Probleme im Kundenservice und alles funktioniert so wie es soll. Kann ich nur weiterempfehlen.
+              - group [ref=e596]:
+                - link [ref=e597] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e600]: 2025-07-02
+                  - strong [ref=e601]: s****************
+                  - paragraph [ref=e603]: Ist einfach zum bedienen, keine Probleme beim Einzahlung und Auszahlung ist eine Sekunde. Ich bin sehr glücklich das ich die App gefunden habe. Ich empfehle es gerne weiter meine Freunde, Familien .
+              - group [ref=e605]:
+                - link [ref=e606] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e609]: 2025-05-19
+                  - strong [ref=e610]: N****** W*****
+                  - paragraph [ref=e612]: Es wurde mir sehr schnell bei meinem Verkaufs Problem über WhatsApp geholfen. Ich bedanke mich nochmals für eure Hilfe
+              - group [ref=e614]:
+                - link [ref=e615] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e618]: 2025-06-04
+                  - strong [ref=e619]: T***
+                  - paragraph [ref=e621]: Für Einsteiger die perfekte App, um sich mal mit der Materie vertraut zu machen, auch der Support funktiont super!!!! 5⭐️
+              - group [ref=e623]:
+                - link [ref=e624] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e627]: 2025-05-30
+                  - strong [ref=e628]: b***********
+                  - paragraph [ref=e630]: Klasse App! Die Watchlists sind übersichtlich, Alarme in meinem Tarif etwas etwas dünne. Ich kann die App auf meinem Handy inkl. Dauerlogin auf Capital den ganzen Tag im Hintergrund und stets verfügbar halten. Perfekt!
+              - group [ref=e632]:
+                - link [ref=e633] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=a7bb65e8-f22a-433b-99bb-055d5eaf4b77&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                  - generic [ref=e636]: 2025-04-25
+                  - strong [ref=e637]: B****** P*************
+                  - paragraph [ref=e639]: wunderbare App, Top Support alles klappt und mega Team sogar die App hat keine Bugs plus Mann kann Lang Zeit Investor werden.
+              - group [ref=e641]:
+                - link [ref=e642] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e645]: 2025-06-27
+                  - strong [ref=e646]: W******* W*******
+                  - paragraph [ref=e648]: "Trade seit 3 Jahren und habe schon viele Trading Apps getestet. Für mich die beste App und der beste Broker. Was mir wichtig ist: Ein und Auszahlungen per Kreditkarte möglich. Auszahlungen immer schnell und problemlos. Hedgen möglich. Berichte, Auszüge OK. Eine Diagrammfunktion wie es bei Naga ist wäre wünschenswert."
+              - group [ref=e650]:
+                - link [ref=e651] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e654]: 2025-06-02
+                  - strong [ref=e655]: L******
+                  - paragraph [ref=e657]: Nutze es nur auf dem handy, läuft flüssig. Charts sehen gut aus.
+              - group [ref=e659]:
+                - link [ref=e660] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e663]: 2025-06-05
+                  - strong [ref=e664]: K****
+                  - paragraph [ref=e666]: Die Plattform ist sehr zu empfehlen, wenn man nach einem CFD-Broker sucht. Und der Service reagiert sehr schnell, kompetent und freundlich, wenn man Fragen hat. Insofern kann ich den Dienstleister uneingeschränkt empfehlen, sofern man sich der Risken des Tradens bewusst ist und vorher im Demokonto geübt hat. Ein kleiner Verbesserungsvorschlag für die App wäre es, die Schriftarten zu vergrößern!
+              - group [ref=e668]:
+                - link [ref=e669] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e672]: 2025-03-02
+                  - strong [ref=e673]: C***********
+                  - paragraph [ref=e675]: Die Übersichtlichkeit lässt nichts zu wünschen übrig. Man erkennt sofort alle Parameter in der jeweils eingestellten Währung. Ein absoluter Pluspunkt an dieser Stelle.
+              - group [ref=e677]:
+                - link [ref=e678] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e681]: 2025-06-16
+                  - strong [ref=e682]: K** G*******
+                  - paragraph [ref=e684]: "Ich bin begeistert vom neuen Design der Android App. Ich lobe besonders die neuen Einstellungsmöglichkeiten was Charts sowie Indikatoren betrifft. Seit dem neuesten Update sehe ich das man im 1Sekunden Timeframe Handeln kann, aber nur auf sein live Konto, ist das gewollt? Insgesamt für mich weiterhin der beste Broker, der ständig Verbesserungen erhält. Ein Vorschlag: Das ändern des Stopplos/Take Profit auch auf dem Chart, wie bei der Web Plattform."
+              - group [ref=e686]:
+                - link [ref=e687] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e690]: 2025-07-02
+                  - strong [ref=e691]: L*** B******
+                  - paragraph [ref=e693]: Der Wechsel von einem Hebel von 1:50 zu 1:200 hat meine Handelsstrategie komplett verändert. Die Risikomanagement-Tools sind solide und helfen dabei, eine übermäßige Risikoexposition bei volatilen Marktbedingungen zu vermeiden.
+              - group [ref=e695]:
+                - link [ref=e696] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e699]: 2025-04-09
+                  - strong [ref=e700]: r******
+                  - paragraph [ref=e702]: Gute Handhabung, Mit Traiding View kombinierbar und geringe kosten. Kostenfreie Webinare.
+              - group [ref=e704]:
+                - link [ref=e705] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e708]: 2025-03-13
+                  - strong [ref=e709]: S***** T*
+                  - paragraph [ref=e711]: Sehr cooles Design. Einfach zu verstehen und anfängerfreundlich. Hatte keine Probleme im Kundenservice und alles funktioniert so wie es soll. Kann ich nur weiterempfehlen.
+              - group [ref=e713]:
+                - link [ref=e714] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e717]: 2025-07-02
+                  - strong [ref=e718]: s****************
+                  - paragraph [ref=e720]: Ist einfach zum bedienen, keine Probleme beim Einzahlung und Auszahlung ist eine Sekunde. Ich bin sehr glücklich das ich die App gefunden habe. Ich empfehle es gerne weiter meine Freunde, Familien .
+              - group [ref=e722]:
+                - link [ref=e723] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e726]: 2025-05-19
+                  - strong [ref=e727]: N****** W*****
+                  - paragraph [ref=e729]: Es wurde mir sehr schnell bei meinem Verkaufs Problem über WhatsApp geholfen. Ich bedanke mich nochmals für eure Hilfe
+              - group [ref=e731]:
+                - link [ref=e732] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e735]: 2025-06-04
+                  - strong [ref=e736]: T***
+                  - paragraph [ref=e738]: Für Einsteiger die perfekte App, um sich mal mit der Materie vertraut zu machen, auch der Support funktiont super!!!! 5⭐️
+              - group [ref=e740]:
+                - link [ref=e741] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e744]: 2025-05-30
+                  - strong [ref=e745]: b***********
+                  - paragraph [ref=e747]: Klasse App! Die Watchlists sind übersichtlich, Alarme in meinem Tarif etwas etwas dünne. Ich kann die App auf meinem Handy inkl. Dauerlogin auf Capital den ganzen Tag im Hintergrund und stets verfügbar halten. Perfekt!
+              - group [ref=e749]:
+                - link [ref=e750] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e753]: 2025-04-25
+                  - strong [ref=e754]: B****** P*************
+                  - paragraph [ref=e756]: wunderbare App, Top Support alles klappt und mega Team sogar die App hat keine Bugs plus Mann kann Lang Zeit Investor werden.
+            - generic:
+              - button "Go to last slide" [ref=e758] [cursor=pointer]
+              - button "Next slide" [ref=e759] [cursor=pointer]
+          - paragraph [ref=e760]: Unsere 4- und 5-Sterne-Bewertungen werden angezeigt. Die genauen Benutzerdaten wurden absichtlich anonymisiert, um die Privatsphäre gemäß den Anforderungen der DSGVO zu schützen.
+        - generic [ref=e762]:
+          - link "4.6" [ref=e763] [cursor=pointer]:
+            - /url: https://www.tradingview.com/broker/Capitalcom/
+            - strong [ref=e766]: "4.6"
+          - link "Bewertungen 4.7" [ref=e769] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/id1230088754?cp_device_id=a7bb65e8-f22a-433b-99bb-055d5eaf4b77&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+            - strong [ref=e771]: Bewertungen
+            - strong [ref=e773]: "4.7"
+          - link "Bewertungen 4.7" [ref=e776] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=a7bb65e8-f22a-433b-99bb-055d5eaf4b77&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+            - strong [ref=e778]: Bewertungen
+            - strong [ref=e780]: "4.7"
+          - link "4.6" [ref=e783] [cursor=pointer]:
+            - /url: https://www.trustpilot.com/review/capital.com
+            - strong [ref=e786]: "4.6"
+      - paragraph [ref=e791]:
+        - superscript [ref=e792]: "1"
+        - text: Die dargestellten Informationen beziehen sich auf die Capital Com Group.
+  - contentinfo [ref=e794]:
+    - generic [ref=e795]:
+      - link [ref=e796] [cursor=pointer]:
+        - /url: /de-at
+        - img [ref=e797]
+      - generic [ref=e801]:
+        - link [ref=e802] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/capital.com/
+        - link [ref=e803] [cursor=pointer]:
+          - /url: https://www.youtube.com/@Capitaltrading/videos
+      - generic [ref=e804]:
+        - link [ref=e805] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/id1230088754?cp_device_id=a7bb65e8-f22a-433b-99bb-055d5eaf4b77&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e806] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=a7bb65e8-f22a-433b-99bb-055d5eaf4b77&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e807] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading.huawei-huawei?cp_device_id=a7bb65e8-f22a-433b-99bb-055d5eaf4b77&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+    - generic [ref=e808]:
+      - generic [ref=e809]:
+        - generic [ref=e810]:
+          - generic [ref=e811]:
+            - generic [ref=e812]: "Land / Region:"
+            - button "Austria" [ref=e813] [cursor=pointer]:
+              - generic [ref=e815]: Austria
+          - generic [ref=e816]: •
+          - generic [ref=e817]:
+            - generic [ref=e818]: "Sprache:"
+            - button "German" [ref=e819] [cursor=pointer]:
+              - generic [ref=e820]: German
+        - generic [ref=e821]:
+          - generic [ref=e822]: "Unsere Kontakte:"
+          - link "+49 3046690292" [ref=e825] [cursor=pointer]:
+            - /url: tel:+49 3046690292
+            - strong [ref=e826]: +49 3046690292
+            - strong
+          - generic [ref=e827]: •
+          - link "support@capital.com" [ref=e829] [cursor=pointer]:
+            - /url: mailto:support@capital.com
+            - strong [ref=e830]: support@capital.com
+      - generic [ref=e831]:
+        - generic [ref=e832]:
+          - strong [ref=e834]: Trading
+          - generic [ref=e835]:
+            - generic [ref=e836]:
+              - generic [ref=e837]: Trading
+              - generic [ref=e838]:
+                - link "CFD-Trading" [ref=e840] [cursor=pointer]:
+                  - /url: /de-at/ways-to-trade/cfd-trading
+                - link "Knock-outs" [ref=e842] [cursor=pointer]:
+                  - /url: /de-at/ways-to-trade/knock-outs
+                - link "Demo-Trading" [ref=e844] [cursor=pointer]:
+                  - /url: /de-at/trading-platforms/demo-account
+                - link "Professionell" [ref=e846] [cursor=pointer]:
+                  - /url: /de-at/professional-clients
+            - generic [ref=e847]:
+              - generic [ref=e848]: Handelsplattformen
+              - generic [ref=e849]:
+                - link "Web-Plattform" [ref=e851] [cursor=pointer]:
+                  - /url: /de-at/trading-platforms/web-platform
+                - link "Mobile App" [ref=e853] [cursor=pointer]:
+                  - /url: /de-at/trading-platforms/mobile-apps
+                - link "TradingView" [ref=e855] [cursor=pointer]:
+                  - /url: /de-at/trading-platforms/trading-view
+                - link "MT4" [ref=e857] [cursor=pointer]:
+                  - /url: /de-at/trading-platforms/mt4
+                - link "MT5" [ref=e859] [cursor=pointer]:
+                  - /url: /de-at/trading-platforms/mt5
+            - generic [ref=e860]:
+              - generic [ref=e861]: Lernen
+              - generic [ref=e862]:
+                - link "Trading-Strategien" [ref=e864] [cursor=pointer]:
+                  - /url: /de-at/learn/trading-strategies
+                - link "Technische Analyse" [ref=e866] [cursor=pointer]:
+                  - /url: /de-at/learn/technical-analysis
+                - link "Trading-Psychologie" [ref=e868] [cursor=pointer]:
+                  - /url: /de-at/learn/trading-psychology
+                - link "Webinare" [ref=e870] [cursor=pointer]:
+                  - /url: /de-at/learn/webinars
+                - link "Lernen" [ref=e872] [cursor=pointer]:
+                  - /url: /de-at/learn
+        - generic [ref=e873]:
+          - strong [ref=e875]: Märkte
+          - generic [ref=e876]:
+            - generic [ref=e877]:
+              - generic [ref=e878]: Unsere Märkte
+              - generic [ref=e879]:
+                - link "Märkte" [ref=e881] [cursor=pointer]:
+                  - /url: /de-at/markets
+                - link "Forex" [ref=e883] [cursor=pointer]:
+                  - /url: /de-at/markets/forex
+                - link "Aktien" [ref=e885] [cursor=pointer]:
+                  - /url: /de-at/markets/shares
+                - link "Indizes" [ref=e887] [cursor=pointer]:
+                  - /url: /de-at/markets/indices
+                - link "Rohstoffe" [ref=e889] [cursor=pointer]:
+                  - /url: /de-at/markets/commodities
+                - link "Kryptowährungen" [ref=e891] [cursor=pointer]:
+                  - /url: /de-at/markets/cryptocurrencies
+                - link "Anleihen" [ref=e893] [cursor=pointer]:
+                  - /url: /de-at/markets/bonds
+                - link "Zinssätze" [ref=e895] [cursor=pointer]:
+                  - /url: /de-at/markets/interest-rates
+            - generic [ref=e896]:
+              - generic [ref=e897]: Marktinformationen
+              - generic [ref=e898]:
+                - link "Marktanalyse" [ref=e900] [cursor=pointer]:
+                  - /url: /de-at/analysis
+                - link "Preisgestaltung der Märkte" [ref=e902] [cursor=pointer]:
+                  - /url: /de-at/about-us/how-our-markets-are-priced
+        - link "Preisgestaltung" [ref=e905] [cursor=pointer]:
+          - /url: /de-at/ways-to-trade/fees-and-charges
+          - strong [ref=e906]: Preisgestaltung
+        - generic [ref=e907]:
+          - strong [ref=e909]: Über uns
+          - generic [ref=e910]:
+            - generic [ref=e911]:
+              - generic [ref=e912]: Über uns
+              - generic [ref=e913]:
+                - link "Über uns" [ref=e915] [cursor=pointer]:
+                  - /url: /de-at/about-us
+                - link "Unsere Niederlassungen" [ref=e917] [cursor=pointer]:
+                  - /url: /de-at/about-us/our-offices
+                - link "Ist capital.com sicher?" [ref=e919] [cursor=pointer]:
+                  - /url: /de-at/security-measures
+                - link "Unser Geschäftsmodell" [ref=e921] [cursor=pointer]:
+                  - /url: /de-at/about-us/how-capital-makes-money
+            - generic [ref=e922]:
+              - generic [ref=e923]: Arbeite mit uns
+              - link "Karriere" [ref=e926] [cursor=pointer]:
+                - /url: /de-at/about-us/careers
+            - generic [ref=e927]:
+              - generic [ref=e928]: Hilfe erhalten
+              - generic [ref=e929]:
+                - link "Hilfe" [ref=e931] [cursor=pointer]:
+                  - /url: /de-at/help
+                - link "Kundenvulnerabilität" [ref=e933] [cursor=pointer]:
+                  - /url: /de-at/help/client-vulnerability
+                - link "Kontaktieren Sie uns" [ref=e935] [cursor=pointer]:
+                  - /url: /de-at/contact-us
+            - generic [ref=e936]:
+              - generic [ref=e937]: Rechtliche Dokumentation
+              - generic [ref=e938]:
+                - link "Nutzungsbedingungen und Richtlinien" [ref=e940] [cursor=pointer]:
+                  - /url: /de-at/terms-and-policies
+                - link "Rechtliche Dokumentation" [ref=e942] [cursor=pointer]:
+                  - /url: /de-at/terms-and-policies
+                - link "Beschwerdeverfahren - Capital Com Group Ltd" [ref=e944] [cursor=pointer]:
+                  - /url: /de-at/terms-and-policies/complaints-procedure-cceu
+                - link "Beschwerdeverfahren - Capital Com SV Investments Limited" [ref=e946] [cursor=pointer]:
+                  - /url: /de-at/terms-and-policies/complaints-procedure
+                - 'link "Compliance & rechtliches: CFD-trading" [ref=e948] [cursor=pointer]':
+                  - /url: /de-at/terms-and-policies/compliance-and-legals
+    - generic [ref=e950]:
+      - paragraph [ref=e951]:
+        - text: "Capital Com SV Investments Limited:"
+        - text: CFDs sind komplexe Instrumente und gehen wegen der Hebelwirkung mit dem hohen Risiko einher, schnell Geld zu verlieren.
+        - generic [ref=e952]:
+          - generic [ref=e953]:
+            - strong [ref=e954]: 73 % der Privatkundenkonten verlieren Geld beim CFD-Handel mit diesem Anbieter
+            - text: .
+          - text: Sie sollten überlegen, ob Sie verstehen, wie CFD funktionieren, und ob Sie es sich leisten können, das hohe Risiko einzugehen Ihr Geld zu verlieren. Bitte beachten Sie unsere
+          - link "Risikoaufklärung" [ref=e955] [cursor=pointer]:
+            - /url: https://capital.com/risk-disclosure-policy
+      - paragraph [ref=e956]:
+        - text: "Capital Com Group Ltd:"
+        - text: CFDs sind komplexe Instrumente und gehen wegen der Hebelwirkung mit dem hohen Risiko einher, schnell Geld zu verlieren.
+        - generic [ref=e957]:
+          - generic:
+            - strong
+        - strong [ref=e958]: Der überwiegende Anteil der Privatkundenkonten verliert Geld beim CFD-Handel
+        - generic [ref=e959]:
+          - text: . Sie sollten überlegen, ob Sie verstehen, wie CFD funktionieren, und ob Sie es sich leisten können, das hohe Risiko einzugehen Ihr Geld zu verlieren. Bitte beachten Sie unsere
+          - link "Risikoaufklärung" [ref=e960] [cursor=pointer]:
+            - /url: https://capital.com/risk-disclosure-policy-cceu
+      - paragraph [ref=e961]:
+        - text: "Risikowarnung: Der Wert von Aktien und ETFs, die über ein Aktienhandelskonto gekauft werden, kann steigen und fallen. Die Wertentwicklung in der Vergangenheit ist keine Garantie für zukünftige Ergebnisse."
+        - text: Transaktionen mit nicht lieferbaren außerbörslichen Instrumenten wie Knock-out-Optionen und CFDs sind komplexe Finanzprodukte, die mit einem hohen Risiko verbunden sind, das gesamte investierte Kapital zu verlieren. Derartige Produkte sind nicht für alle Anleger geeignet, da sie sowohl zu Gewinnen als auch zu erheblichen Verlusten führen können. Bevor Sie sich an dieser Art des Handels beteiligen, sollten Sie sollten abwägen, ob Sie die Funktionsweise dieser Instrumente verstehen und ob Sie es sich leisten können, das hohe Risiko des Geldverlusts einzugehen.
+        - text: Für professionelle Kunden besteht das Risiko, mehr als die ursprüngliche Einzahlung zu verlieren. Die Informationen auf dieser Website sind allgemein gehalten und berücksichtigen weder Ihre finanzielle Situation noch Ihre Ziele oder Bedürfnisse. Bitte prüfen Sie unsere Rechtsdokumente und vergewissern Sie sich, dass Sie die Risiken vollständig verstehen, bevor Sie eine Handelsentscheidung treffen. Wir ermutigen Sie, die Schulungsdienste unseres Unternehmens in Anspruch zu nehmen, um die Risiken besser zu verstehen, bevor Sie sich an Handelsgeschäften beteiligen.
+      - paragraph [ref=e962]: "Capital Com SV Investments Limited ist ein in der Republik Zypern ansässiges Unternehmen mit der Registrierungsnummer HE 354252, welches von der Cyprus Securities and Exchange Commission (Lizenznummer 319/17) zugelassen und reguliert ist. Eingetragener Geschäftssitz: Vasileiou Makedonos 8, Kinnis Business Center, 2. Stock, 3040, Limassol, Zypern."
+      - paragraph [ref=e963]: "Capital Com Group Ltd ist ein in der Republik Zypern ansässiges Unternehmen mit der Registrierungsnummer ΗΕ 446198, welches von der Cyprus Securities and Exchange Commission (Lizenznummer 463/25) zugelassen und reguliert ist. Eingetragener Geschäftssitz: Vasileiou Makedonos 8, Kinnis Business Center, 2. Stock, 3040, Limassol, Zypern."
+      - paragraph [ref=e964]: Die Informationen auf dieser Seite richten sich nicht an Personen, die in den Vereinigten Staaten, Kanada und Belgien oder in einem anderen Land außerhalb des EWR leben. Zudem sind sie nicht für die Verbreitung an oder die Nutzung durch Personen in Ländern oder Gerichtsbarkeiten bestimmt, in denen eine solche Verbreitung oder Nutzung gegen die dort geltenden Gesetze oder Regulierungen verstoßen würde.
+      - paragraph [ref=e965]
+      - paragraph [ref=e966]
+      - paragraph [ref=e967]
+    - generic [ref=e968]:
+      - paragraph [ref=e969]: © 2026 Capital Com SV Investments Limited
+      - generic [ref=e970]:
+        - link "Sitemap" [ref=e971] [cursor=pointer]:
+          - /url: /de-at/sitemap
+        - link "Cookie-Einstellungen" [ref=e972] [cursor=pointer]:
+          - /url: ""
+        - link "Richtlinien" [ref=e973] [cursor=pointer]:
+          - /url: /de-at/terms-and-policies/regulations
+        - link "Nutzungsbedingungen und Richtlinien" [ref=e974] [cursor=pointer]:
+          - /url: /de-at/terms-and-policies
+        - link "Beschwerdeverfahren" [ref=e975] [cursor=pointer]:
+          - /url: /de-at/terms-and-policies/complaints-procedures
+  - button [ref=e976] [cursor=pointer]
+  - dialog "Cookie banner" [ref=e978]:
+    - generic [ref=e979]:
+      - paragraph [ref=e981]:
+        - text: We use cookies to enhance site navigation, personalise content and ads, and analyse site usage. You can change your cookie settings at any time. For more information, please see our
+        - link "More information about your privacy, opens in a new tab" [ref=e982] [cursor=pointer]:
+          - /url: https://capital.com/cookies-policy-cysec
+          - text: Cookie Policy
+        - text: .
+      - generic [ref=e983]:
+        - button "Reject all" [ref=e984] [cursor=pointer]
+        - button "Allow all cookies" [ref=e985] [cursor=pointer]
+        - button "Cookie settings" [ref=e986] [cursor=pointer]
+  - alert [ref=e987]
+```
+
+# Test source
+
+```ts
+  1  | import { expect } from "@playwright/test";
+  2  | 
+  3  | export class CountriesDisclaimerPopup {
+  4  |   constructor(page) {
+  5  |     this.page = page;
+  6  | 
+  7  |     this.popup = page.locator(
+  8  |       'div:has(> [data-type="closed_countries_disclaimer_confirm"])',
+  9  |     );
+  10 | 
+  11 |     this.confirmButton = page.locator(
+  12 |       '[data-type="closed_countries_disclaimer_confirm"]',
+  13 |     );
+  14 |   }
+  15 | 
+  16 |   async closeIfVisible() {
+> 17 |     await this.confirmButton.waitFor({
+     |                              ^ TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+  18 |       state: "visible",
+  19 |       timeout: 10000,
+  20 |     });
+  21 | 
+  22 |     await expect
+  23 |       .poll(
+  24 |         async () => {
+  25 |           await this.popup.evaluate((popup) => {
+  26 |             const scrollable = [...popup.querySelectorAll("*")].find(
+  27 |               (el) => el.scrollHeight > el.clientHeight,
+  28 |             );
+  29 | 
+  30 |             if (!scrollable) {
+  31 |               throw new Error("Scrollable element not found");
+  32 |             }
+  33 | 
+  34 |             scrollable.scrollTop = scrollable.scrollHeight;
+  35 |             scrollable.dispatchEvent(new Event("scroll", { bubbles: true }));
+  36 |           });
+  37 | 
+  38 |           const enabled = await this.confirmButton.isEnabled();
+  39 |           return enabled;
+  40 |         },
+  41 |         {
+  42 |           timeout: 10000,
+  43 |           intervals: [500],
+  44 |         },
+  45 |       )
+  46 |       .toBe(true);
+  47 | 
+  48 |     await this.confirmButton.click();
+  49 | 
+  50 |     // console.log("Countries Disclaimer closed");
+  51 |   }
+  52 | }
+  53 | 
+```
