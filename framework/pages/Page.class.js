@@ -1,8 +1,6 @@
 import { CTAComponent } from "../components/cta.component";
 import { ctaRegistry } from "../test_data/CTA/pages.cta.registry";
 import { PopupManager } from "../components/popups/popup.manager";
-import { globalCtaRegistry } from "../test_data/CTA/global.cta.registry";
-// import fs from "node:fs/promises";
 
 export class Page {
   constructor(page, pageKey, options = {}) {
@@ -11,8 +9,6 @@ export class Page {
     this.license = options.license;
     this.scope = options.scope ?? "page";
     this.popups = new PopupManager(page);
-
-    // const registry = this.scope === "global" ? globalCtaRegistry : ctaRegistry;
 
     const pageData = ctaRegistry[this.pageKey];
 
@@ -45,19 +41,8 @@ export class Page {
         waitUntil: "domcontentloaded",
       });
     }
-
-    // await this.page.goto(`${baseURL}/${this.pagePath}`, {
-    //   waitUntil: "domcontentloaded",
-    // });
-
     await this.popups.dismissAll();
 
-    // if (this.page.isClosed()) {
-    //   console.log("PAGE CLOSED AFTER dismissAll()");
-    //   return;
-    // }
-
-    // await this.page.waitForTimeout(2000);
     if (!this.page.isClosed()) {
       await this.page.waitForLoadState("domcontentloaded").catch(() => {});
     }

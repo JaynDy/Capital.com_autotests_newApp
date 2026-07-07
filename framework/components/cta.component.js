@@ -102,9 +102,7 @@ export class CTAComponent {
     await expect(locator).toBeVisible();
     await expect(locator).toBeEnabled();
 
-    await locator.click({
-      timeout: 5000,
-    });
+    await locator.click({ timeout: 2000 });
 
     return { skipped: false, locator };
   }

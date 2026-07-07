@@ -17,7 +17,7 @@ export class CountriesDisclaimerPopup {
     try {
       await this.confirmButton.waitFor({
         state: "visible",
-        timeout: 10000,
+        timeout: 5000,
       });
 
       await expect
@@ -43,7 +43,7 @@ export class CountriesDisclaimerPopup {
             return enabled;
           },
           {
-            timeout: 10000,
+            timeout: 1000,
             intervals: [500],
           },
         )

@@ -40,7 +40,7 @@ for (const testCase of CTA_TEST_CASES) {
       .locator("footer")
       .waitFor({
         state: "visible",
-        timeout: 15000,
+        // timeout: 15000,
       })
       .catch(() => {});
 

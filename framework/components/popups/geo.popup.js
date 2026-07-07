@@ -8,7 +8,7 @@ export class GeoPopup {
     try {
       await this.stayHereButton.waitFor({
         state: "visible",
-        timeout: 5000,
+        timeout: 2000,
       });
 
       await this.stayHereButton.click();
