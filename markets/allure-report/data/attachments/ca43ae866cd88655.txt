@@ -1,0 +1,3 @@
+Button enabled: true
+START CLICK viewDetailedChartBtn
+COUNT viewDetailedChartBtn 0

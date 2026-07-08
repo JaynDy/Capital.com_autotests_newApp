@@ -1,0 +1,2 @@
+START CLICK alertBtn
+COUNT alertBtn 0
