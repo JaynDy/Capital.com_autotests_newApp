@@ -1,0 +1,80 @@
+name: Footer Tests
+
+on:
+  push:
+    branches: [main, master, dev, "ci/**"]
+  pull_request:
+    branches: [main, master, dev, "ci/**"]
+
+jobs:
+  # 1. TESTS
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        license: [FCA, ASIC, CMA, SCB, CySEC]
+        browser: [chromium]
+
+    env:
+      CI: true
+      TEST_BROWSER: ${{ matrix.browser }}
+      TEST_LICENSE: ${{ matrix.license }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+
+      - run: npm ci
+      - run: npx playwright install --with-deps
+
+      - name: Run tests
+        run: npm run test:footer
+
+      - name: Upload Allure results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results-${{ matrix.license }}
+          path: allure-results/
+
+  # 2. REPORT (single job)
+  report:
+    needs: test
+    if: always()
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download all allure results
+        uses: actions/download-artifact@v4
+        with:
+          path: allure-results
+
+      - name: Merge results
+        run: |
+          mkdir merged-results
+          cp -R allure-results/*/* merged-results/ 2>/dev/null || true
+          cp -R allure-results/* merged-results/ 2>/dev/null || true
+
+      - name: Install Allure
+        run: npm install -g allure-commandline
+
+      - name: Generate Allure report
+        run: allure generate merged-results -o allure-report --clean
+
+      - name: Prepare Pages structure
+        run: |
+          mkdir -p public/footer
+          mv allure-report public/footer
+
+      - name: Deploy report
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: public
+          keep_files: true
