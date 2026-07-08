@@ -1,0 +1,5 @@
+START CLICK langSwitcherBtn
+COUNT langSwitcherBtn 1
+USER: unregistered
+EXPECTATION:  opens regional settings window
+EXPECTATION ASSERTIONS opens regional settings window

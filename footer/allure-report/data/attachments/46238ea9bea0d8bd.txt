@@ -1,0 +1,5 @@
+START CLICK riskDisclosureStatementLink
+COUNT riskDisclosureStatementLink 1
+USER: unregistered
+EXPECTATION:  opens external link
+EXPECTATION ASSERTIONS opens external link

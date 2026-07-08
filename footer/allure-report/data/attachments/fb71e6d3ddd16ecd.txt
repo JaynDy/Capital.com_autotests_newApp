@@ -1,0 +1,5 @@
+START CLICK termsAndPoliciesLink
+COUNT termsAndPoliciesLink 1
+USER: authorised
+EXPECTATION:  { type: 'redirect', page: 'termsAndPolicies' }
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'termsAndPolicies' }

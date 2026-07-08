@@ -1,0 +1,3 @@
+Button enabled: true
+START CLICK riskDisclosureStatementLink
+COUNT riskDisclosureStatementLink 0
