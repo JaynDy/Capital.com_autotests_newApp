@@ -1,0 +1,575 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: cta/generated.cta.spec.js >> markets page | tradingInstrument | viewDetailedChartBtn
+- Location: tests/cta/generated.cta.spec.js:16:7
+
+# Error details
+
+```
+Error: expect(locator).toBeVisible() failed
+
+Locator: locator('[data-type="SIGN_UP_close"]')
+Expected: visible
+Timeout: 5000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 5000ms
+  - waiting for locator('[data-type="SIGN_UP_close"]')
+
+```
+
+```yaml
+- banner:
+  - text: CFDs sind komplexe Instrumente und gehen wegen der Hebelwirkung mit dem hohen Risiko einher, schnell Geld zu verlieren.
+  - strong: 73 % der Privatkundenkonten verlieren Geld beim CFD-Handel mit diesem Anbieter
+  - text: . Sie sollten überlegen, ob Sie verstehen, wie CFD funktionieren, und ob Sie es sich leisten können, das hohe Risiko einzugehen Ihr Geld zu verlieren. Bitte beachten Sie unsere
+  - link "Risikoaufklärung":
+    - /url: https://capital.com/risk-disclosure-policy
+  - link:
+    - /url: /de-at
+    - img
+  - navigation:
+    - button "Trading":
+      - button "Trading"
+    - button "Märkte":
+      - button "Märkte"
+    - link "Preisgestaltung":
+      - /url: /de-at/ways-to-trade/fees-and-charges
+    - button "Über uns":
+      - button "Über uns"
+  - button "de"
+  - button "Anmelden"
+  - button "Konto eröffnen"
+- paragraph:
+  - link "Startseite":
+    - /url: /de-at
+  - text: •
+  - link "Märkte":
+    - /url: /de-at/markets
+  - text: •
+  - link "Rohstoffe":
+    - /url: /de-at/markets/commodities
+  - text: •Gold Spot
+- heading "Handeln Gold Spot CFD" [level=1]
+- button "Zu Favoriten hinzufügen"
+- strong: "4074.10"
+- text: "-1.11%"
+- link:
+  - /url: ""
+- button "1M"
+- button "5M"
+- button "15M"
+- button "30Min."
+- button "1St."
+- button "4St."
+- button "1T"
+- button "1W"
+- img
+- button "Detaillierten Chart anzeigen"
+- link "Verkaufen 4073.80":
+  - /url: /instrument?id=27045129890124996
+  - text: Verkaufen
+  - paragraph: "4073.80"
+- link "Kaufen 4074.10":
+  - /url: /instrument?id=27045129890124996
+  - text: Kaufen
+  - paragraph: "4074.10"
+- text: "0.30 Niedrig: 4053.45 Hoch: 4129.42"
+- table
+- text: "Verkäufer: 26.74% Käufer: 73.26%"
+- button "Markt-Handelszeiten (UTC)":
+  - paragraph: Markt-Handelszeiten (UTC)
+  - strong: Jetzt öffnen
+- strong: Frühere Wertentwicklungen sind kein zuverlässiger Indikator für zukünftige Ergebnisse. Die Aktienkurse sind indikativ und können von den aktuellen Marktpreisen abweichen.
+- button "Zusammenfassung"
+- button "Historische Daten"
+- strong: Trading-Bedingungen
+- table:
+  - rowgroup:
+    - 'row "Typ Dieses Finanzinstrument steht für das Traden über CFDs und Knock-outs zur Verfügung. Erfahren Sie mehr über: CFDs Knock-outs CFD Knock-out"':
+      - 'cell "Typ Dieses Finanzinstrument steht für das Traden über CFDs und Knock-outs zur Verfügung. Erfahren Sie mehr über: CFDs Knock-outs"':
+        - text: "Typ Dieses Finanzinstrument steht für das Traden über CFDs und Knock-outs zur Verfügung. Erfahren Sie mehr über:"
+        - link "CFDs":
+          - /url: /de-at/ways-to-trade/cfd-trading
+        - link "Knock-outs":
+          - /url: /de-at/ways-to-trade/knock-outs
+      - cell "CFD Knock-out":
+        - button "CFD"
+        - button "Knock-out"
+    - row "Spread 0.3":
+      - cell "Spread"
+      - cell "0.3"
+    - row "Anpassung der Übernachtfinanzierung für eine Long-Position Anpassung der Übernachtfinanzierung für eine Long-Position Margin. Ihre Investition $1,000.00 Anpassung der Übernachtfinanzierung Gebühren aus fremdfinanzierten Positionswert -0.015108 % (-$3.02) Positionsgröße mit Hebelwirkung ~$20,000.00 Geld aus Hebelwirkung ~$19,000.00 Zur Plattform -0.01511%":
+      - cell "Anpassung der Übernachtfinanzierung für eine Long-Position Anpassung der Übernachtfinanzierung für eine Long-Position Margin. Ihre Investition $1,000.00 Anpassung der Übernachtfinanzierung Gebühren aus fremdfinanzierten Positionswert -0.015108 % (-$3.02) Positionsgröße mit Hebelwirkung ~$20,000.00 Geld aus Hebelwirkung ~$19,000.00 Zur Plattform":
+        - text: Anpassung der Übernachtfinanzierung für eine Long-Position
+        - strong: Anpassung der Übernachtfinanzierung für eine Long-Position
+        - table
+        - separator
+        - table:
+          - rowgroup:
+            - row "Margin. Ihre Investition $1,000.00":
+              - cell "Margin. Ihre Investition"
+              - cell "$1,000.00"
+            - row "Anpassung der Übernachtfinanzierung Gebühren aus fremdfinanzierten Positionswert -0.015108 % (-$3.02)":
+              - cell "Anpassung der Übernachtfinanzierung Gebühren aus fremdfinanzierten Positionswert"
+              - cell "-0.015108 % (-$3.02)"
+        - paragraph:
+          - strong: Positionsgröße mit Hebelwirkung ~$20,000.00
+        - paragraph:
+          - strong: Geld aus Hebelwirkung ~$19,000.00
+        - separator
+        - link "Zur Plattform":
+          - /url: ""
+      - cell "-0.01511%"
+    - row "Anpassung der Übernachtfinanzierung für eine Short-Position Anpassung der Übernachtfinanzierung für eine Short-Position Margin. Ihre Investition $1,000.00 Anpassung der Übernachtfinanzierung Gebühren aus fremdfinanzierten Positionswert 0.006888 % ($1.38) Positionsgröße mit Hebelwirkung ~$20,000.00 Geld aus Hebelwirkung ~$19,000.00 Zur Plattform 0.00689%":
+      - cell "Anpassung der Übernachtfinanzierung für eine Short-Position Anpassung der Übernachtfinanzierung für eine Short-Position Margin. Ihre Investition $1,000.00 Anpassung der Übernachtfinanzierung Gebühren aus fremdfinanzierten Positionswert 0.006888 % ($1.38) Positionsgröße mit Hebelwirkung ~$20,000.00 Geld aus Hebelwirkung ~$19,000.00 Zur Plattform":
+        - text: Anpassung der Übernachtfinanzierung für eine Short-Position
+        - strong: Anpassung der Übernachtfinanzierung für eine Short-Position
+        - table
+        - separator
+        - table:
+          - rowgroup:
+            - row "Margin. Ihre Investition $1,000.00":
+              - cell "Margin. Ihre Investition"
+              - cell "$1,000.00"
+            - row "Anpassung der Übernachtfinanzierung Gebühren aus fremdfinanzierten Positionswert 0.006888 % ($1.38)":
+              - cell "Anpassung der Übernachtfinanzierung Gebühren aus fremdfinanzierten Positionswert"
+              - cell "0.006888 % ($1.38)"
+        - paragraph:
+          - strong: Positionsgröße mit Hebelwirkung ~$20,000.00
+        - paragraph:
+          - strong: Geld aus Hebelwirkung ~$19,000.00
+        - separator
+        - link "Zur Plattform":
+          - /url: ""
+      - cell "0.00689%"
+    - row "Zeit für die Anpassung der Übernachtfinanzierung 21:00 (UTC)":
+      - cell "Zeit für die Anpassung der Übernachtfinanzierung"
+      - cell "21:00 (UTC)"
+    - row "Währung USD":
+      - cell "Währung"
+      - cell "USD"
+    - row "Mind.-Handelsmenge 0.01":
+      - cell "Mind.-Handelsmenge"
+      - cell "0.01"
+    - row "Margin 5.00%":
+      - cell "Margin"
+      - cell "5.00%"
+    - row "Börse":
+      - cell "Börse"
+      - cell
+    - row "Provision auf Trade1 0%":
+      - cell "Provision auf Trade1":
+        - text: Provision auf Trade
+        - superscript: "1"
+      - cell "0%"
+    - row "Garantierte Stop-Prämie Eine Gebühr für den garantierten Stop-Loss (GSL) wird nur berechnet, wenn der GSL ausgelöst wird. Bitte beachten Sie den Bereich Kosten und Gebühren auf unserer Webseite für weitere Details. 0.03%":
+      - cell "Garantierte Stop-Prämie Eine Gebühr für den garantierten Stop-Loss (GSL) wird nur berechnet, wenn der GSL ausgelöst wird. Bitte beachten Sie den Bereich Kosten und Gebühren auf unserer Webseite für weitere Details.":
+        - text: Garantierte Stop-Prämie Eine Gebühr für den garantierten Stop-Loss (GSL) wird nur berechnet, wenn der GSL ausgelöst wird. Bitte beachten Sie den Bereich
+        - link "Kosten und Gebühren":
+          - /url: /de-at/ways-to-trade/fees-and-charges
+        - text: auf unserer Webseite für weitere Details.
+      - cell "0.03%"
+- paragraph:
+  - superscript: "1"
+  - text: Unsere Gebühr für die Ausführung Ihres Trades ist der Spread, die Differenz zwischen dem Kauf- und Verkaufspreis. Weitere Informationen finden Sie im Abschnitt zu den
+  - link "Kosten und Gebühren":
+    - /url: https://capital.com/de-at/ways-to-trade/fees-and-charges
+  - text: auf unserer Webseite
+- main:
+  - heading "Handeln Gold Spot" [level=2]
+  - heading "Entdecken Sie unseren Gold-Preis-Chart, um über alle aktuellen Informationen zum Gold-Kurs auf dem Laufenden zu bleiben" [level=3]
+  - paragraph: Gold ist ein glänzendes Edelmetall mit vielen einzigartigen Eigenschaften. Es verfügt über eine attraktive Farbe und Glanz, ist leicht bearbeitbar, beständig und man findet es in der Natur meist in einer relativ reinen Form. Weit über den industriellen Einsatz hinaus geschätzt, ist Gold einer der am häufigsten gehandelten Metallrohstoffe.
+  - paragraph: Gold hat eine geringere Korrelation zu vielen Assetklassen, was es zu einem beliebten Instrument der Diversifizierung macht. Über die Jahrzehnte hat das Metall internationale Investoren angezogen, die ihr Portfolio ausbalancieren und sich gegen jegliche finanzielle Unsicherheit, Inflation, Deflation oder Währungsabwertung absichern wollten. Im Vergleich zu anderen Edelmetallen, die für Investitionen verwendet werden, verfügt Gold über die effektivsten Eigenschaften eines sicheren Hafens in einer Reihe von Ländern.
+  - paragraph: Laut dem historischen Gold-Preis-Chart erreichte der Rohstoff am 5. September 2011 sein Allzeithoch von 1.895 $ pro Unze.
+  - paragraph: Um über den aktuellsten Gold-Preis immer auf dem neuesten Stand zu bleiben, registrieren Sie sich auf Capital.com.
+  - paragraph: Wie die meisten Rohstoffe wird der Gold-Preis von Angebot und Nachfrage bestimmt.
+  - paragraph: Goldvorkommen sind selten und schwer zu finden, was ihre Gewinnung in Minen zu einer zeitaufwendigen und kostspieligen Tätigkeit macht. China, Australien, Russland, die USA, Kanada, Indonesien, Peru und Südafrika sind die weltweit größten Produzenten des Metalls. Der wesentlichste Teil des jemals geförderten Goldes existiert jedoch immer noch in einer zugänglichen Form, wie Schmuck oder Barren, und kann wieder auf den Markt gebracht werden. Angesichts der großen Menge des unter der Erdoberfläche gelagerten Metalls, im Vergleich zu seiner Jahresproduktion, wird der Gold-Preis hauptsächlich von Stimmungsänderungen beeinflusst, die wiederum eine Auswirkung auf Marktangebot und Nachfrage haben. Der weltweite Goldverbrauch setzt sich hauptsächlich aus Schmuck, der etwa 50 % des Gesamtverbrauchs ausmacht, und Investitionen, die 40 % ausmachen, zusammen. Da Gold eine gute Formbarkeit, Duktilität, Korrosionsbeständigkeit und andere einzigartige Eigenschaften aufweist, kommen die restlichen 10 % des Bedarfs aus Industrie, bei der das Metall für technische Geräte, Zahnheilkunde und Hitzeschilden verwendet wird.
+  - paragraph: Beobachten Sie den Gold-Preis-Chart live auf Capital.com, um immer auf dem neuesten Stand der Marktentwicklungen zu bleiben.
+  - paragraph: Der Goldmarkt unterliegt Spekulation und Volatilität wie jeder andere Markt. Die Nachfrage nach Schmuck ist ziemlich konstant. Konjunktureinbrüche können jedoch zu einem vorübergehenden Rückgang der Nachfrage in dieser Branche führen.
+  - paragraph: Auf der anderen Seite neigt die Nachfrage der Anleger, einschließlich der Zentralbanken, dazu, sich invers zur Wirtschafts- und Marktstimmung zu entwickeln. So kaufen Investoren in Zeiten wirtschaftlicher Turbulenzen häufig Gold und erhöhen aufgrund der steigenden Nachfrage den Preis.
+  - paragraph: Bei Investitionen in Gold ist es entscheidend, eine grundlegende Analyse durchzuführen und dabei verschiedene internationale Wirtschaftsindikatoren wie BIP-Wachstumsraten, Zinssätze, Inflation, Produktivität und Energiepreise zu untersuchen.
+  - paragraph: Anhand vom umfangreichen Gold-Preis-Chart auf Capital.com haben Sie immen den Zugang zum aktuellsten Gold-Spot-Preis live und seinem historischen Wert über die Jahre.
+  - heading "Neueste Rohstoff-Artikel" [level=2]
+  - link "Goldbarren auf US-Dollar-Banknoten im Wert von 100 $":
+    - /url: /de-at/market-updates/gold-price-forecast-13-03-2026
+    - img "Goldbarren auf US-Dollar-Banknoten im Wert von 100 $"
+  - 'link "Goldpreis Prognose: Schwächerer CPI, festerer DXY"':
+    - /url: /de-at/market-updates/gold-price-forecast-13-03-2026
+  - text: Gold (XAU/USD) notiert nahe 5.190 $ nach schwächeren US-Verbraucherpreisen, mit DXY um 99,45 und Brent über 80 $. Gold-ETF-Zuflüsse im Januar beliefen sich laut WGC auf 18,7 Mrd. $. Die Wertentwicklung in der Vergangenheit ist kein verlässlicher Indikator für zukünftige Ergebnisse. 17:04, 13 März 2026
+  - link "Goldpreis-Prognose":
+    - /url: /de-at/market-updates/gold-price-forecast-03-03-2026
+    - img "Goldpreis-Prognose"
+  - 'link "Goldpreis Prognose: US-Israel-Angriffe, Ölversorgungssorgen"':
+    - /url: /de-at/market-updates/gold-price-forecast-03-03-2026
+  - text: Gold notiert nahe mehrwöchiger Hochs nach US-Israel-Angriffen auf Iran, wobei Safe-Haven-Zuflüsse. Die Wertentwicklung in der Vergangenheit ist kein zuverlässiger Indikator für zukünftige Ergebnisse. 13:01, 3 März 2026
+  - link:
+    - /url: /de-at/analysis/groenland-konflikt-2026-zwischen-diplomatie-und-us-anspruechen
+  - 'link "Grönland-Konflikt 2026: Zwischen Diplomatie und US-Ansprüchen"':
+    - /url: /de-at/analysis/groenland-konflikt-2026-zwischen-diplomatie-und-us-anspruechen
+  - text: Grönland ist seit jeher geopolitisch als auch wirtschaftlich von besonderer Bedeutung. Neben ihren Bodenschätzen ist die Arktisinsel aufgrund ihrer strategisch günstigen Lage von globalem Interesse. 13:33, 20 Februar 2026
+  - link:
+    - /url: /de-at/analysis/meistgehandelte-assets-in-deutschland-und-oesterreich-2025
+  - link "Meistgehandelte Assets in Deutschland und Österreich 2025 @ Capital.com":
+    - /url: /de-at/analysis/meistgehandelte-assets-in-deutschland-und-oesterreich-2025
+  - text: Die Finanzmärkte in Deutschland und Österreich haben sich in den vergangenen Jahren stark verändert. In den Fokus der Anleger rückten neben Rohstoffen insbesondere Kryptowerte sowie US-Indizes. 13:18, 20 Februar 2026
+  - strong: Ähnliche Nachrichten
+  - text: Reuters News • Europe Vor 3 Stunden
+  - link "Dax-Future unter Druck - Ölpreis springt an":
+    - /url: /de-at/news/dax-future-unter-druck-olpreis-springt-an
+    - strong: Dax-Future unter Druck - Ölpreis springt an
+  - text: Reuters News • Europe 21:00 (UTC), 9 Juli 2026
+  - link "Welcher Krieg? Dank der von der Chipbranche angeführten Kursrallye können die Märkte den immer wieder auflebenden und dann wieder zerbrechenden Waffenstillstand zwischen den USA und dem Iran ignorieren":
+    - /url: /de-at/news/welcher-krieg-dank-der-von-der-chipbranche-angefuhrten-kursrallye-konnen
+    - strong: Welcher Krieg? Dank der von der Chipbranche angeführten Kursrallye können die Märkte den immer wieder auflebenden und dann wieder zerbrechenden Waffenstillstand zwischen den USA und dem Iran ignorieren
+  - text: Reuters News • Europe 15:46 (UTC), 9 Juli 2026
+  - link "CFTC will CME-Plan für den 24/7-Handel mit Rohöl-Futures blockieren":
+    - /url: /de-at/news/cftc-will-cme-plan-fur-den-24/7-handel-mit-rohol-futures-blockieren
+    - strong: CFTC will CME-Plan für den 24/7-Handel mit Rohöl-Futures blockieren
+  - text: Reuters News • Europe 09:00 (UTC), 9 Juli 2026
+  - link "Kalshi führt Gespräche mit den Aufsichtsbehörden, um Derivate ohne Verfallsdatum auf neue Bereiche auszuweiten":
+    - /url: /de-at/news/kalshi-fuhrt-gesprache-mit-den-aufsichtsbehorden-um-derivate-ohne-verfallsdatum
+    - strong: Kalshi führt Gespräche mit den Aufsichtsbehörden, um Derivate ohne Verfallsdatum auf neue Bereiche auszuweiten
+  - text: Reuters News • Europe 06:50 (UTC), 9 Juli 2026
+  - link "Anleger erhalten einen „Weckruf“ in Sachen Inflation, da Trump die Ölpreise in die Höhe treibt":
+    - /url: /de-at/news/anleger-erhalten-einen-weckruf-in-sachen-inflation-da-trump-die
+    - strong: Anleger erhalten einen „Weckruf“ in Sachen Inflation, da Trump die Ölpreise in die Höhe treibt
+  - text: Reuters News • Europe 06:02 (UTC), 9 Juli 2026
+  - link "Dax-Future steigt - Euro etwas fester":
+    - /url: /de-at/news/dax-future-steigt-euro-etwas-fester
+    - strong: Dax-Future steigt - Euro etwas fester
+  - text: Reuters News • Europe 05:37 (UTC), 9 Juli 2026
+  - link "Asiatische Aktien schwanken, während der Ölpreis angesichts erneuter Feindseligkeiten am Golf in die Höhe schnellt":
+    - /url: /de-at/news/asiatische-aktien-schwanken-wahrend-der-olpreis-angesichts-erneuter-feindseligkeiten-am
+    - strong: Asiatische Aktien schwanken, während der Ölpreis angesichts erneuter Feindseligkeiten am Golf in die Höhe schnellt
+  - text: Reuters News • Europe 04:26 (UTC), 9 Juli 2026
+  - link "Fed-Protokolle zeigen wachsende Sorge der US-Währungshüter über Inflation":
+    - /url: /de-at/news/fed-protokolle-zeigen-wachsende-sorge-der-us-wahrungshuter-uber-inflation
+    - strong: Fed-Protokolle zeigen wachsende Sorge der US-Währungshüter über Inflation
+  - text: Reuters News • Europe 03:04 (UTC), 9 Juli 2026
+  - link "Konflikt im Golf treibt Ölpreis - Tech-Werte stützen Asiens Börsen":
+    - /url: /de-at/news/konflikt-im-golf-treibt-olpreis-tech-werte-stutzen-asiens-borsen
+    - strong: Konflikt im Golf treibt Ölpreis - Tech-Werte stützen Asiens Börsen
+  - text: Reuters News • Europe 01:47 (UTC), 9 Juli 2026
+  - link "Asiatische Aktien legen dank einer Rallye im Chip-Sektor zu, Ölpreis steigt nach Wiederaufnahme der Feindseligkeiten am Golf":
+    - /url: /de-at/news/asiatische-aktien-legen-dank-einer-rallye-im-chip-sektor-zu-olpreis
+    - strong: Asiatische Aktien legen dank einer Rallye im Chip-Sektor zu, Ölpreis steigt nach Wiederaufnahme der Feindseligkeiten am Golf
+- complementary:
+  - strong: Verwandte Märkte
+  - button "Die meistgehandelten"
+  - button "Top-Aufsteiger"
+  - button "Top-Absteiger"
+  - button "Die volatilsten"
+  - link "Gold":
+    - /url: /de-at/markets/commodities/rohstoff-gold-spot
+  - text: "4074.10"
+  - button "Handeln"
+  - text: "-1.11%"
+  - img
+  - link "Crude Oil Spot":
+    - /url: /de-at/markets/commodities/rohstoff-us-crude-oil-spot-1
+  - text: "72.914"
+  - button "Handeln"
+  - link "Silver":
+    - /url: /de-at/markets/commodities/rohstoff-silver-spot
+  - text: "58.733"
+  - button "Handeln"
+  - link "Brent Oil Spot":
+    - /url: /de-at/markets/commodities/rohstoff-brent-crude-oil-spot-1
+  - text: "77.747"
+  - button "Handeln"
+  - link "Natural Gas":
+    - /url: /de-at/markets/commodities/rohstoff-us-natural-gas-spot-1
+  - text: "2.8647"
+  - button "Handeln"
+  - text: Die Aktienkurse sind indikativ und können von den aktuellen Marktpreisen abweichen.
+- heading "Nutzerfeedback und Bewertungen" [level=2]
+- text: Feedback unserer Kunden
+- superscript: "1"
+- text: ", unabhängig von ihrem Erfahrungsstand."
+- region:
+  - group "1 of 13":
+    - 'link "2025-06-27 W******* W******* Trade seit 3 Jahren und habe schon viele Trading Apps getestet. Für mich die beste App und der beste Broker. Was mir wichtig ist: Ein und Auszahlungen per Kreditkarte möglich. Auszahlungen immer schnell und problemlos. Hedgen möglich. Berichte, Auszüge OK. Eine Diagrammfunktion wie es bei Naga ist wäre wünschenswert."':
+      - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=f7ffa559-0a1c-451f-86cb-186b445fdd0c&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+      - text: 2025-06-27
+      - strong: W******* W*******
+      - paragraph: "Trade seit 3 Jahren und habe schon viele Trading Apps getestet. Für mich die beste App und der beste Broker. Was mir wichtig ist: Ein und Auszahlungen per Kreditkarte möglich. Auszahlungen immer schnell und problemlos. Hedgen möglich. Berichte, Auszüge OK. Eine Diagrammfunktion wie es bei Naga ist wäre wünschenswert."
+  - group "2 of 13":
+    - link "2025-06-02 L****** Nutze es nur auf dem handy, läuft flüssig. Charts sehen gut aus.":
+      - /url: https://www.trustpilot.com/review/capital.com
+      - text: 2025-06-02
+      - strong: L******
+      - paragraph: Nutze es nur auf dem handy, läuft flüssig. Charts sehen gut aus.
+  - group "3 of 13":
+    - link "2025-06-05 K**** Die Plattform ist sehr zu empfehlen, wenn man nach einem CFD-Broker sucht. Und der Service reagiert sehr schnell, kompetent und freundlich, wenn man Fragen hat. Insofern kann ich den Dienstleister uneingeschränkt empfehlen, sofern man sich der Risken des Tradens bewusst ist und vorher im Demokonto geübt hat. Ein kleiner Verbesserungsvorschlag für die App wäre es, die Schriftarten zu vergrößern!":
+      - /url: https://www.trustpilot.com/review/capital.com
+      - text: 2025-06-05
+      - strong: K****
+      - paragraph: Die Plattform ist sehr zu empfehlen, wenn man nach einem CFD-Broker sucht. Und der Service reagiert sehr schnell, kompetent und freundlich, wenn man Fragen hat. Insofern kann ich den Dienstleister uneingeschränkt empfehlen, sofern man sich der Risken des Tradens bewusst ist und vorher im Demokonto geübt hat. Ein kleiner Verbesserungsvorschlag für die App wäre es, die Schriftarten zu vergrößern!
+  - button "Go to last slide"
+  - button "Next slide"
+- paragraph: Unsere 4- und 5-Sterne-Bewertungen werden angezeigt. Die genauen Benutzerdaten wurden absichtlich anonymisiert, um die Privatsphäre gemäß den Anforderungen der DSGVO zu schützen.
+- link "4.6":
+  - /url: https://www.tradingview.com/broker/Capitalcom/
+  - strong: "4.6"
+- link "Bewertungen 4.7":
+  - /url: https://app.appsflyer.com/id1230088754?cp_device_id=f7ffa559-0a1c-451f-86cb-186b445fdd0c&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - strong: Bewertungen
+  - strong: "4.7"
+- link "Bewertungen 4.6":
+  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=f7ffa559-0a1c-451f-86cb-186b445fdd0c&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - strong: Bewertungen
+  - strong: "4.6"
+- link "4.6":
+  - /url: https://www.trustpilot.com/review/capital.com
+  - strong: "4.6"
+- heading "Drei Schritte für den Einstieg" [level=2]
+- button
+- text: 1. Erstellen Sie Ihr Konto (vorbehaltlich der Eignung) 2. Zahlen Sie zu Ihren Bedingungen ein 3. Traden Sie, wenn Sie bereit sind
+- contentinfo:
+  - link:
+    - /url: /de-at
+    - img
+  - link:
+    - /url: https://www.linkedin.com/company/capital.com/
+  - link:
+    - /url: https://www.youtube.com/@Capitaltrading/videos
+  - link:
+    - /url: https://app.appsflyer.com/id1230088754?cp_device_id=f7ffa559-0a1c-451f-86cb-186b445fdd0c&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - link:
+    - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=f7ffa559-0a1c-451f-86cb-186b445fdd0c&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - link:
+    - /url: https://app.appsflyer.com/com.capital.trading.huawei-huawei?cp_device_id=f7ffa559-0a1c-451f-86cb-186b445fdd0c&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - text: "Land / Region:"
+  - button "Austria"
+  - text: "• Sprache:"
+  - button "German"
+  - text: "Unsere Kontakte:"
+  - link "+49 3046690292":
+    - /url: tel:+49 3046690292
+    - strong: +49 3046690292
+    - strong
+  - text: •
+  - link "support@capital.com":
+    - /url: mailto:support@capital.com
+    - strong: support@capital.com
+  - strong: Trading
+  - text: Trading
+  - link "CFDs traden":
+    - /url: /de-at/ways-to-trade/cfd-trading
+  - link "Knock-outs traden":
+    - /url: /de-at/ways-to-trade/knock-outs
+  - link "Demokonto":
+    - /url: /de-at/trading-platforms/demo-account
+  - link "Pro-Konto":
+    - /url: /de-at/professional-clients
+  - text: Handelsplattformen
+  - link "Web-Plattform":
+    - /url: /de-at/trading-platforms/web-platform
+  - link "Mobile App":
+    - /url: /de-at/trading-platforms/mobile-apps
+  - link "TradingView":
+    - /url: /de-at/trading-platforms/trading-view
+  - link "MT4":
+    - /url: /de-at/trading-platforms/mt4
+  - link "MT5":
+    - /url: /de-at/trading-platforms/mt5
+  - text: Lernen
+  - link "Trading-Strategien":
+    - /url: /de-at/learn/trading-strategies
+  - link "Technische Analyse":
+    - /url: /de-at/learn/technical-analysis
+  - link "Trading-Psychologie":
+    - /url: /de-at/learn/trading-psychology
+  - link "Webinare":
+    - /url: /de-at/learn/webinars
+  - link "Lernen":
+    - /url: /de-at/learn
+  - strong: Märkte
+  - text: Unsere Märkte
+  - link "Märkte":
+    - /url: /de-at/markets
+  - link "Forex":
+    - /url: /de-at/markets/forex
+  - link "Aktien":
+    - /url: /de-at/markets/shares
+  - link "Indizes":
+    - /url: /de-at/markets/indices
+  - link "Rohstoffe":
+    - /url: /de-at/markets/commodities
+  - link "Kryptowährungen":
+    - /url: /de-at/markets/cryptocurrencies
+  - link "Anleihen":
+    - /url: /de-at/markets/bonds
+  - link "Zinssätze":
+    - /url: /de-at/markets/interest-rates
+  - text: Marktinformationen
+  - link "Marktanalyse":
+    - /url: /de-at/analysis
+  - link "Preisgestaltung der Märkte":
+    - /url: /de-at/about-us/how-our-markets-are-priced
+  - link "Preisgestaltung":
+    - /url: /de-at/ways-to-trade/fees-and-charges
+    - strong: Preisgestaltung
+  - strong: Über uns
+  - text: Über uns
+  - link "Über uns":
+    - /url: /de-at/about-us
+  - link "Unsere Niederlassungen":
+    - /url: /de-at/about-us/our-offices
+  - link "Ist capital.com sicher?":
+    - /url: /de-at/security-measures
+  - link "Unser Geschäftsmodell":
+    - /url: /de-at/about-us/how-capital-makes-money
+  - text: Karriere
+  - link "Karriere":
+    - /url: /de-at/about-us/careers
+  - text: Hilfe erhalten
+  - link "Hilfe-Center":
+    - /url: /de-at/help
+  - link "Kundenvulnerabilität":
+    - /url: /de-at/help/client-vulnerability
+  - link "Kontaktieren Sie uns":
+    - /url: /de-at/contact-us
+  - text: Rechtliche Dokumentation
+  - link "Bedingungen & Richtlinien":
+    - /url: /de-at/terms-and-policies
+  - link "Rechtliche Dokumente":
+    - /url: /de-at/terms-and-policies
+  - link "Beschwerdeverfahren - Capital Com Group Ltd":
+    - /url: /de-at/terms-and-policies/complaints-procedure-cceu
+  - link "Beschwerdeverfahren - Capital Com SV Investments Limited":
+    - /url: /de-at/terms-and-policies/complaints-procedure
+  - 'link "Compliance & rechtliches: CFD-trading"':
+    - /url: /de-at/terms-and-policies/compliance-and-legals
+  - paragraph:
+    - text: "Capital Com SV Investments Limited: CFDs sind komplexe Instrumente und gehen wegen der Hebelwirkung mit dem hohen Risiko einher, schnell Geld zu verlieren."
+    - strong: 73 % der Privatkundenkonten verlieren Geld beim CFD-Handel mit diesem Anbieter
+    - text: . Sie sollten überlegen, ob Sie verstehen, wie CFD funktionieren, und ob Sie es sich leisten können, das hohe Risiko einzugehen Ihr Geld zu verlieren. Bitte beachten Sie unsere
+    - link "Risikoaufklärung":
+      - /url: https://capital.com/risk-disclosure-policy
+  - paragraph:
+    - text: "Capital Com Group Ltd: CFDs sind komplexe Instrumente und gehen wegen der Hebelwirkung mit dem hohen Risiko einher, schnell Geld zu verlieren."
+    - strong
+    - strong: Der überwiegende Anteil der Privatkundenkonten verliert Geld beim CFD-Handel
+    - text: . Sie sollten überlegen, ob Sie verstehen, wie CFD funktionieren, und ob Sie es sich leisten können, das hohe Risiko einzugehen Ihr Geld zu verlieren. Bitte beachten Sie unsere
+    - link "Risikoaufklärung":
+      - /url: https://capital.com/risk-disclosure-policy-cceu
+  - paragraph: "Risikowarnung: Der Wert von Aktien und ETFs, die über ein Aktienhandelskonto gekauft werden, kann steigen und fallen. Die Wertentwicklung in der Vergangenheit ist keine Garantie für zukünftige Ergebnisse. Transaktionen mit nicht lieferbaren außerbörslichen Instrumenten wie Knock-out-Optionen und CFDs sind komplexe Finanzprodukte, die mit einem hohen Risiko verbunden sind, das gesamte investierte Kapital zu verlieren. Derartige Produkte sind nicht für alle Anleger geeignet, da sie sowohl zu Gewinnen als auch zu erheblichen Verlusten führen können. Bevor Sie sich an dieser Art des Handels beteiligen, sollten Sie sollten abwägen, ob Sie die Funktionsweise dieser Instrumente verstehen und ob Sie es sich leisten können, das hohe Risiko des Geldverlusts einzugehen. Für professionelle Kunden besteht das Risiko, mehr als die ursprüngliche Einzahlung zu verlieren. Die Informationen auf dieser Website sind allgemein gehalten und berücksichtigen weder Ihre finanzielle Situation noch Ihre Ziele oder Bedürfnisse. Bitte prüfen Sie unsere Rechtsdokumente und vergewissern Sie sich, dass Sie die Risiken vollständig verstehen, bevor Sie eine Handelsentscheidung treffen. Wir ermutigen Sie, die Schulungsdienste unseres Unternehmens in Anspruch zu nehmen, um die Risiken besser zu verstehen, bevor Sie sich an Handelsgeschäften beteiligen."
+  - paragraph: "Capital Com SV Investments Limited ist ein in der Republik Zypern ansässiges Unternehmen mit der Registrierungsnummer HE 354252, welches von der Cyprus Securities and Exchange Commission (Lizenznummer 319/17) zugelassen und reguliert ist. Eingetragener Geschäftssitz: Vasileiou Makedonos 8, Kinnis Business Center, 2. Stock, 3040, Limassol, Zypern."
+  - paragraph: "Capital Com Group Ltd ist ein in der Republik Zypern ansässiges Unternehmen mit der Registrierungsnummer ΗΕ 446198, welches von der Cyprus Securities and Exchange Commission (Lizenznummer 463/25) zugelassen und reguliert ist. Eingetragener Geschäftssitz: Vasileiou Makedonos 8, Kinnis Business Center, 2. Stock, 3040, Limassol, Zypern."
+  - paragraph: Die Informationen auf dieser Seite richten sich nicht an Personen, die in den Vereinigten Staaten, Kanada und Belgien oder in einem anderen Land außerhalb des EWR leben. Zudem sind sie nicht für die Verbreitung an oder die Nutzung durch Personen in Ländern oder Gerichtsbarkeiten bestimmt, in denen eine solche Verbreitung oder Nutzung gegen die dort geltenden Gesetze oder Regulierungen verstoßen würde.
+  - paragraph
+  - paragraph
+  - paragraph
+  - paragraph: © 2026 Capital Com SV Investments Limited
+  - link "Sitemap":
+    - /url: /de-at/sitemap
+  - link "Cookie-Einstellungen":
+    - /url: ""
+  - link "Richtlinien":
+    - /url: /de-at/terms-and-policies/regulations
+  - link "Nutzungsbedingungen und Richtlinien":
+    - /url: /de-at/terms-and-policies
+  - link "Beschwerdeverfahren":
+    - /url: /de-at/terms-and-policies/complaints-procedures
+- button
+- alert
+```
+
+# Test source
+
+```ts
+  1  | import { expect } from "@playwright/test";
+  2  | import { ctaRegistry } from "../test_data/CTA/pages.cta.registry";
+  3  | 
+  4  | export async function expectPageState(
+  5  |   page,
+  6  |   action,
+  7  |   expectation,
+  8  |   testInfo,
+  9  |   locator,
+  10 | ) {
+  11 |   console.log("EXPECTATION ASSERTIONS", expectation);
+  12 |   const currentUrl = testInfo.project.use.baseURL;
+  13 |   const currentLicense = testInfo.project.use.licenseName;
+  14 |   // console.log("Current URL: ", currentUrl);
+  15 | 
+  16 |   const expectationType =
+  17 |     typeof expectation === "string" ? expectation : expectation.type;
+  18 | 
+  19 |   switch (expectationType) {
+  20 |     case "redirects to platform":
+  21 |       await expect(page).toHaveURL(/trading\/platform/);
+  22 |       break;
+  23 | 
+  24 |     case "shows signup form":
+  25 |       await expect(
+  26 |         // page.locator('form[data-sentry-component="SignUp"]'),
+  27 |         page.locator('[data-type="SIGN_UP_close"]'),
+> 28 |       ).toBeVisible();
+     |         ^ Error: expect(locator).toBeVisible() failed
+  29 |       break;
+  30 | 
+  31 |     case "shows login form":
+  32 |       await expect(page.locator('[data-testid="modal-title"]'));
+  33 |       break;
+  34 | 
+  35 |     case "redirect": {
+  36 |       const pageConfig = ctaRegistry[expectation.page].path;
+  37 | 
+  38 |       // const pagePath = ctaRegistry[expectation.page].path;
+  39 |       const pagePath =
+  40 |         typeof pageConfig === "function"
+  41 |           ? pageConfig(currentLicense)
+  42 |           : pageConfig;
+  43 | 
+  44 |       const expectedURL = pagePath ? `${currentUrl}/${pagePath}` : currentUrl;
+  45 |       await expect(page).toHaveURL(new RegExp(`${expectedURL}/?$`));
+  46 |       break;
+  47 |     }
+  48 | 
+  49 |     case "opens external link": {
+  50 |       const href = await locator.getAttribute("href");
+  51 |       await expect(locator).toHaveAttribute("target", "_blank");
+  52 |       expect(href).toContain(action.expectedHrefContains);
+  53 |       break;
+  54 |     }
+  55 | 
+  56 |     case "opens regional settings window": {
+  57 |       await expect(page.locator('[data-sentry-component="CountryLangSelect"]'));
+  58 |       break;
+  59 |     }
+  60 | 
+  61 |     case "exist corresponding license": {
+  62 |       const expectedLicenses = action.licenseText?.[currentLicense];
+  63 | 
+  64 |       if (expectedLicenses?.length) {
+  65 |         for (const text of expectedLicenses) {
+  66 |           await expect(locator).toContainText(text);
+  67 |         }
+  68 |       } else {
+  69 |         await expect(locator).toContainText(currentLicense);
+  70 |       }
+  71 | 
+  72 |       break;
+  73 |     }
+  74 | 
+  75 |     case "opens cookie menu": {
+  76 |       await expect(page.locator(".consent-pc-modal__content"));
+  77 |       break;
+  78 |     }
+  79 | 
+  80 |     default:
+  81 |       throw new Error(`Unknown expectation: ${expectation}`);
+  82 |   }
+  83 | }
+  84 | 
+```

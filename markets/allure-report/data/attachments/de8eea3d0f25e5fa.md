@@ -1,0 +1,682 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: cta/generated.cta.spec.js >> markets page | tradingInstrument | readyToJoinSignUpBtn
+- Location: tests/cta/generated.cta.spec.js:16:7
+
+# Error details
+
+```
+Error: expect(locator).toBeVisible() failed
+
+Locator: locator('[data-type="SIGN_UP_close"]')
+Expected: visible
+Timeout: 5000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 5000ms
+  - waiting for locator('[data-type="SIGN_UP_close"]')
+
+```
+
+```yaml
+- banner:
+  - text: CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. You should consider whether you understand how CFDs work and can afford the risks.
+  - link:
+    - /url: /en-au
+    - img
+  - navigation:
+    - button "Trading":
+      - button "Trading"
+    - button "Markets":
+      - button "Markets"
+    - link "Pricing":
+      - /url: /en-au/ways-to-trade/fees-and-charges
+    - button "About":
+      - button "About"
+  - button "en"
+  - button "Log In"
+  - button "Open account"
+  - button "Search"
+- paragraph:
+  - link "Home":
+    - /url: /en-au
+  - text: •
+  - link "Markets overview":
+    - /url: /en-au/markets
+  - text: •
+  - link "Commodities":
+    - /url: /en-au/markets/commodities
+  - text: •Gold Spot
+- heading "Trade Gold Spot CFD" [level=1]
+- button "Add to favourite"
+- strong: "4074.74"
+- text: "-1.09%"
+- link:
+  - /url: ""
+- button "1m"
+- button "5m"
+- button "15m"
+- button "30m"
+- button "1h"
+- button "4h"
+- button "1d"
+- button "1w"
+- img
+- button "View detailed chart"
+- link "Sell 4074.44":
+  - /url: /instrument?id=27045129890124996
+  - text: Sell
+  - paragraph: "4074.44"
+- link "Buy 4074.74":
+  - /url: /instrument?id=27045129890124996
+  - text: Buy
+  - paragraph: "4074.74"
+- text: "0.30 Low: 4053.7 High: 4129.42"
+- table
+- text: "Sellers: 26.74% Buyers: 73.26%"
+- button "Market Trading Hours (UTC)":
+  - paragraph: Market Trading Hours (UTC)
+  - strong: Open Now
+- strong: Past performance is not a reliable indicator of future results. Share prices are indicative and may differ from live market prices.
+- button "Summary"
+- button "Historical Data"
+- strong: Trading Conditions
+- table:
+  - rowgroup:
+    - 'row "Type This financial market is available for CFD trading. Learn more about: CFDs CFD"':
+      - 'cell "Type This financial market is available for CFD trading. Learn more about: CFDs"':
+        - text: "Type This financial market is available for CFD trading. Learn more about:"
+        - link "CFDs":
+          - /url: /en-au/ways-to-trade/cfd-trading
+      - cell "CFD"
+    - row "Spread 0.3":
+      - cell "Spread"
+      - cell "0.3"
+    - row "Long position overnight funding adjustment Long position overnight funding adjustment Margin. Your investment $1,000.00 Overnight funding adjustment Charges from full value of position -0.015108 % (-$3.02) Trade size with leverage ~ $20,000.00 Money from leverage ~ $19,000.00 Go to platform -0.01511%":
+      - cell "Long position overnight funding adjustment Long position overnight funding adjustment Margin. Your investment $1,000.00 Overnight funding adjustment Charges from full value of position -0.015108 % (-$3.02) Trade size with leverage ~ $20,000.00 Money from leverage ~ $19,000.00 Go to platform":
+        - text: Long position overnight funding adjustment
+        - strong: Long position overnight funding adjustment
+        - table
+        - separator
+        - table:
+          - rowgroup:
+            - row "Margin. Your investment $1,000.00":
+              - cell "Margin. Your investment"
+              - cell "$1,000.00"
+            - row "Overnight funding adjustment Charges from full value of position -0.015108 % (-$3.02)":
+              - cell "Overnight funding adjustment Charges from full value of position"
+              - cell "-0.015108 % (-$3.02)"
+        - paragraph:
+          - strong: Trade size with leverage ~ $20,000.00
+        - paragraph:
+          - strong: Money from leverage ~ $19,000.00
+        - separator
+        - link "Go to platform":
+          - /url: ""
+      - cell "-0.01511%"
+    - row "Short position overnight funding adjustment Short position overnight funding adjustment Margin. Your investment $1,000.00 Overnight funding adjustment Charges from full value of position 0.006888 % ($1.38) Trade size with leverage ~ $20,000.00 Money from leverage ~ $19,000.00 Go to platform 0.00689%":
+      - cell "Short position overnight funding adjustment Short position overnight funding adjustment Margin. Your investment $1,000.00 Overnight funding adjustment Charges from full value of position 0.006888 % ($1.38) Trade size with leverage ~ $20,000.00 Money from leverage ~ $19,000.00 Go to platform":
+        - text: Short position overnight funding adjustment
+        - strong: Short position overnight funding adjustment
+        - table
+        - separator
+        - table:
+          - rowgroup:
+            - row "Margin. Your investment $1,000.00":
+              - cell "Margin. Your investment"
+              - cell "$1,000.00"
+            - row "Overnight funding adjustment Charges from full value of position 0.006888 % ($1.38)":
+              - cell "Overnight funding adjustment Charges from full value of position"
+              - cell "0.006888 % ($1.38)"
+        - paragraph:
+          - strong: Trade size with leverage ~ $20,000.00
+        - paragraph:
+          - strong: Money from leverage ~ $19,000.00
+        - separator
+        - link "Go to platform":
+          - /url: ""
+      - cell "0.00689%"
+    - row "Overnight funding adjustment time 21:00 (UTC)":
+      - cell "Overnight funding adjustment time"
+      - cell "21:00 (UTC)"
+    - row "Currency USD":
+      - cell "Currency"
+      - cell "USD"
+    - row "Min traded quantity 0.01":
+      - cell "Min traded quantity"
+      - cell "0.01"
+    - row "Margin 5.00%":
+      - cell "Margin"
+      - cell "5.00%"
+    - row "Stock exchange":
+      - cell "Stock exchange"
+      - cell
+    - row "Commission on trade1 0%":
+      - cell "Commission on trade1":
+        - text: Commission on trade
+        - superscript: "1"
+      - cell "0%"
+    - row "Guaranteed stop premium A guaranteed stop-loss (GSL) fee is only charged if the GSL is triggered. Please consult the Charges and Fees section of our website for more details. 0.03%":
+      - cell "Guaranteed stop premium A guaranteed stop-loss (GSL) fee is only charged if the GSL is triggered. Please consult the Charges and Fees section of our website for more details.":
+        - text: Guaranteed stop premium A guaranteed stop-loss (GSL) fee is only charged if the GSL is triggered. Please consult the
+        - link "Charges and Fees":
+          - /url: /en-au/ways-to-trade/fees-and-charges
+        - text: section of our website for more details.
+      - cell "0.03%"
+- paragraph:
+  - superscript: "1"
+  - text: Our charge for executing your trade is the spread, the difference between the buy and sell price. Please consult the
+  - link "Charges and Fees":
+    - /url: https://capital.com/en-au/ways-to-trade/fees-and-charges
+  - text: section of our website for further information
+- main:
+  - heading "Trade Gold Spot" [level=2]
+  - paragraph: Gold is a lustrous precious metal with many unique properties. It is attractive in colour and brightness, highly malleable, durable and usually found in nature in a relatively pure form. Appreciated far beyond its industrial usage, gold is one of the most widely-traded metal commodities.
+  - paragraph: Gold has a lower correlation to many asset classes, making it a widely used tool for diversification. Over the decades, the metal has attracted international investors keen to balance their portfolio and hedge against any financial uncertainty, inflation, deflation or currency devaluation. Compared to other precious metals used for investment, gold has the most effective safe haven properties across a number of countries.
+  - paragraph: Like most commodities, the gold spot price is driven by the laws of supply and demand.
+  - paragraph: Gold deposits are rare and difficult to find, making its extraction from mines a time-consuming and expensive activity. China, Australia, Russia, the US, Canada, Indonesia, Peru and South Africa are the world’s largest producers of the metal.
+  - paragraph: However, most of the gold ever mined still exists in an accessible form, such as jewellery or bullion, and can be brought back onto the market. Given the large quantity of the metal stored above ground compared to its annual production, the gold price is mainly affected by changes in sentiment, which, in turn, influences market supply and demand accordingly.
+  - paragraph: The gold market is subject to speculation and volatility as any other market. The demand for jewellery is fairly constant. However, economic downturns may lead to some temporary reductions in demand from this industry.
+  - heading "Trade Gold Spot (Gold) CFDs" [level=2]
+  - paragraph: "Gold Spot (ticker: Gold) is a commodity market instrument that reflects the price of a specific raw material or natural resource. On Capital.com, it can be traded as a contract for difference (CFD) which lets you speculate on price changes without taking ownership of the physical asset. This means you can go long or short depending on how you think the market will move.*"
+  - paragraph: Many traders follow the Gold Spot price today to stay alert to short-term shifts in market sentiment.
+  - paragraph: "*CFDs are traded on margin. Leverage amplifies both profits and losses."
+  - heading "Gold Spot price today" [level=2]
+  - paragraph: The instrument is quoted in $ and is currently trading around 4076.04.
+  - heading "Live price overview" [level=2]
+  - paragraph: Below is an overview of the current Gold Spot price and its recent trading ranges.
+  - list:
+    - listitem:
+      - text: •
+      - strong: "Daily range:"
+      - text: 4043.78 – 4107.32
+    - listitem:
+      - text: •
+      - strong: "Daily movement:"
+      - text: "-50.46 (-1.2249%)"
+    - listitem:
+      - text: •
+      - strong: "Weekly range:"
+      - text: 4021.74 – 4202.98
+    - listitem:
+      - text: •
+      - strong: "Monthly range:"
+      - text: 3942.33 – 4382.1
+    - listitem:
+      - text: •
+      - strong: "Yearly range:"
+      - text: 3268.1 – 5595.25
+  - heading "Why trade commodity CFDs on the price of Gold Spot with Capital.com?" [level=2]
+  - paragraph: Capital.com provides tools and features designed to support informed decision-making when analysing live market prices.
+  - paragraph:
+    - strong: Advanced charting and analysis
+  - paragraph: Use interactive tools to study the Gold Spot price chart in detail.
+  - list:
+    - listitem: • Access 100 technical indicators
+    - listitem: • Choose from 12 chart types
+    - listitem: • Analyse fast, interactive charting tools
+  - paragraph:
+    - strong: Wide market offering
+  - paragraph: "Join over 864 global traders and explore a wide range of markets:"
+  - list:
+    - listitem: • 4,500 stock CFDs
+    - listitem: • 65 commodity CFDs
+    - listitem: • 35 index CFDs
+    - listitem: • 120 forex pairs
+    - listitem: • 450 crypto CFDs
+  - paragraph:
+    - strong: User-rated platforms
+  - list:
+    - listitem:
+      - text: •
+      - strong: "TradingView rating:"
+      - text: "4.6"
+    - listitem:
+      - text: •
+      - strong: "App Store rating:"
+      - text: "4.7"
+    - listitem:
+      - text: •
+      - strong: "Google Play rating:"
+      - text: "4.6"
+    - listitem:
+      - text: •
+      - strong: "Trustpilot score:"
+      - text: "4.6"
+  - heading "What influences the price of Gold Spot?" [level=2]
+  - paragraph: "The Gold Spot (Gold) price may be influenced by several market factors, including:"
+  - list:
+    - listitem:
+      - text: •
+      - strong: Supply and demand dynamics
+    - listitem:
+      - text: •
+      - strong: Global economic conditions
+    - listitem:
+      - text: •
+      - strong: Geopolitical events affecting production or transport
+    - listitem:
+      - text: •
+      - strong: Seasonal trends
+    - listitem:
+      - text: •
+      - strong: Market sentiment and risk appetite
+    - listitem:
+      - text: •
+      - strong: Currency fluctuations
+  - paragraph: These factors can interact in complex ways, contributing to both short-term movements and longer-term trends.
+  - heading "Gold Spot price forecasts" [level=2]
+  - paragraph: Gold Spot price forecasts commonly reference recent news, company updates, and broader economic factors rather than fixed price targets. You can use a combination of technical analysis and fundamental insights to form a view of potential future price movements. However, analyst forecasts are often inaccurate and past performance is not a reliable indicator of future results.
+  - paragraph: Instead of relying on a single outlook, some traders monitor ongoing analysis and real-time data to respond to changing market conditions.
+  - heading "How to trade Gold Spot commodity CFDs" [level=2]
+  - paragraph: "With CFDs, you can trade without owning the underlying physical commodity:"
+  - list:
+    - listitem: • Go long (buy) if you expect prices to rise
+    - listitem: • Go short (sell) if you expect prices to fall
+  - paragraph: Leverage allows increased exposure but also magnifies losses.
+  - heading "Risks of trading commodity CFDs" [level=2]
+  - paragraph: "Key risks include:"
+  - list:
+    - listitem:
+      - text: •
+      - strong: High market volatility
+    - listitem:
+      - text: •
+      - strong: Leverage amplifying both losses and gains
+    - listitem:
+      - text: •
+      - strong: Funding costs for holding positions overnight
+    - listitem:
+      - text: •
+      - strong: No ownership of the underlying commodity
+  - heading "Latest commodities articles" [level=2]
+  - link "Gold breaks below $4,000 as Warsh's Fed rewrites the narrative":
+    - /url: /en-au/analysis/gold-breaks-below-4-000-as-warsh-s-fed-rewrites-the-narrative
+    - img "Gold breaks below $4,000 as Warsh's Fed rewrites the narrative"
+  - link "Gold breaks below $4,000 as Warsh's Fed rewrites the narrative":
+    - /url: /en-au/analysis/gold-breaks-below-4-000-as-warsh-s-fed-rewrites-the-narrative
+  - text: Gold has fallen below the psychologically important $4,000 level for the first time in seven months, extending its correction as investors increasingly embrace a stronger dollar and a higher-for-longer interest-rate outlook. 11:05, 25 June 2026
+  - link "Federal Reserve Building":
+    - /url: /en-au/analysis/gold-equities-and-the-dollar-face-a-major-test-from-warsh-s-fed-debut
+    - img "Federal Reserve Building"
+  - link "Gold, equities and the dollar face a major test from Warsh’s Fed debut":
+    - /url: /en-au/analysis/gold-equities-and-the-dollar-face-a-major-test-from-warsh-s-fed-debut
+  - text: Markets await the first meeting from Governor Warsh to determine the likely path for interest rates. 08:40, 17 June 2026
+  - link "gold bar concept":
+    - /url: /en-au/analysis/the-real-driver-behind-gold-central-bank-demand
+    - img "gold bar concept"
+  - 'link "The real driver behind gold: central bank demand"':
+    - /url: /en-au/analysis/the-real-driver-behind-gold-central-bank-demand
+  - text: Central Banks across the globe are leaning into gold as a reserve asset as greater fragmentation, political risks, and fiscal deficits threaten the stability of international monetary systems. 11:49, 3 June 2026
+  - link "Gold bars":
+    - /url: /en-au/analysis/gold-breaks-lower-as-yields-and-the-dollar-regain-control
+    - img "Gold bars"
+  - link "Gold breaks lower as yields and the dollar regain control":
+    - /url: /en-au/analysis/gold-breaks-lower-as-yields-and-the-dollar-regain-control
+  - text: Gold struggles to regain upside momentum as higher yields and dollar weigh on the precious metal. 09:46, 28 May 2026
+  - strong: Related News
+  - button
+  - text: Reuters News • Europe 4 minutes ago
+  - link "Gold extends decline as Middle East tensions bolster higher-for-longer rate view":
+    - /url: /en-au/news/gold-extends-decline-as-middle-east-tensions-bolster-higher-for-longer-rate
+    - strong: Gold extends decline as Middle East tensions bolster higher-for-longer rate view
+  - button
+  - text: Reuters News • Europe 53 minutes ago
+  - link "Copper falls as Middle East fighting renews inflation risks":
+    - /url: /en-au/news/copper-falls-as-middle-east-fighting-renews-inflation-risks
+    - strong: Copper falls as Middle East fighting renews inflation risks
+  - text: TheNewswire • Europe an hour ago
+  - link "Total Metals Reports Remaining Results from Winter 2026 Exploration Program at its Electrolode Critical Metals Project":
+    - /url: /en-au/news/total-metals-reports-remaining-results-from-winter-2026-exploration-program
+    - strong: Total Metals Reports Remaining Results from Winter 2026 Exploration Program at its Electrolode Critical Metals Project
+  - button
+  - text: Reuters News • Europe an hour ago
+  - link "Gold slides over 1% as oil surges on Strait of Hormuz closure fears":
+    - /url: /en-au/news/gold-slides-over-1-as-oil-surges-on-strait-of
+    - strong: Gold slides over 1% as oil surges on Strait of Hormuz closure fears
+  - text: Public Technologies • Europe 3 hours ago
+  - link "Lappland Guld identifies two gold anomalies at Loparen drilling target in Sweden":
+    - /url: /en-au/news/lappland-guld-identifies-two-gold-anomalies-at-loparen-drilling-target
+    - strong: Lappland Guld identifies two gold anomalies at Loparen drilling target in Sweden
+  - text: GlobeNewswire • Europe 3 hours ago
+  - link "Gardaq A/S exploration JV funding secured":
+    - /url: /en-au/news/gardaq-a/s-exploration-jv-funding-secured
+    - strong: Gardaq A/S exploration JV funding secured
+  - text: Reuters News • Europe 3 hours ago
+  - link "Australia's Dateline Resources soars on US DOJ filing in Colosseum case":
+    - /url: /en-au/news/australia-s-dateline-resources-soars-on-us-doj-filing-in-colosseum
+    - strong: Australia's Dateline Resources soars on US DOJ filing in Colosseum case
+  - button
+  - text: Reuters News • Europe 3 hours ago
+  - link "Gold slides over 1% as oil surges on Strait of Hormuz closure fears":
+    - /url: /en-au/news/gold-slides-over-1-as-oil-surges-on-strait-of
+    - strong: Gold slides over 1% as oil surges on Strait of Hormuz closure fears
+  - text: CoinDesk • Europe 4 hours ago
+  - link "Bitcoin holds near $63,800 as war-driven selloff hits everything but crypto":
+    - /url: /en-au/news/bitcoin-holds-near-63-800-as-war-driven-selloff-hits-everything-but
+    - strong: Bitcoin holds near $63,800 as war-driven selloff hits everything but crypto
+  - text: Reuters News • Europe 5 hours ago
+  - link "MORNING BID EUROPE-Oil swept along on troubled waters":
+    - /url: /en-au/news/morning-bid-europe-oil-swept-along-on-troubled-waters
+    - strong: MORNING BID EUROPE-Oil swept along on troubled waters
+- complementary:
+  - strong: Related markets
+  - text: Tracking the stocks, indices, and assets making major moves.
+  - button "Most traded markets"
+  - button "Top risers"
+  - button "Top fallers"
+  - button "Most volatile"
+  - link "Gold":
+    - /url: /en-au/markets/commodities/gold-spot-commodity
+  - text: "4074.74"
+  - button "Trade"
+  - text: "-1.09%"
+  - img
+  - link "Crude Oil Spot":
+    - /url: /en-au/markets/commodities/us-crude-oil-spot-commodity-1
+  - text: "72.944"
+  - button "Trade"
+  - link "Silver":
+    - /url: /en-au/markets/commodities/silver-spot-commodity
+  - text: "58.743"
+  - button "Trade"
+  - link "Brent Oil Spot":
+    - /url: /en-au/markets/commodities/brent-crude-oil-spot-commodity-1
+  - text: "77.782"
+  - button "Trade"
+  - link "Natural Gas":
+    - /url: /en-au/markets/commodities/us-natural-gas-spot-commodity-1
+  - text: "2.8652"
+  - button "Trade"
+  - text: Share prices are indicative and may differ from live market prices.
+- heading "User feedback and ratings" [level=2]
+- region:
+  - group "1 of 15":
+    - link "2025-07-01 Victor Flemming Nandwa Søder Great customer service I got to say that. They helped get my account back very fast, after i logged myself out by losing my old email, it was so fast you wouldn’t believe it thank you once again.":
+      - /url: https://www.trustpilot.com/review/capital.com
+      - text: 2025-07-01
+      - strong: Victor Flemming Nandwa Søder
+      - paragraph: Great customer service I got to say that. They helped get my account back very fast, after i logged myself out by losing my old email, it was so fast you wouldn’t believe it thank you once again.
+  - group "2 of 15":
+    - link "2025-07-01 Perry Reineke I'm learning the basics of stock investing. This platform is clear and pretty good. I've been using it for over 6 months.":
+      - /url: https://www.trustpilot.com/review/capital.com
+      - text: 2025-07-01
+      - strong: Perry Reineke
+      - paragraph: I'm learning the basics of stock investing. This platform is clear and pretty good. I've been using it for over 6 months.
+  - group "3 of 15":
+    - link "2025-06-29 proinpro Capital is really great to be used on start, also beginner friendly broker! Great costumer support and it is quick!":
+      - /url: https://www.trustpilot.com/review/capital.com
+      - text: 2025-06-29
+      - strong: proinpro
+      - paragraph: Capital is really great to be used on start, also beginner friendly broker! Great costumer support and it is quick!
+  - button "Go to last slide"
+  - button "Next slide"
+- paragraph: Showing our 4 & 5 star reviews.
+- link "4.6":
+  - /url: https://www.tradingview.com/broker/Capitalcom/
+  - strong: "4.6"
+- link "Ratings and Reviews 4.7":
+  - /url: https://app.appsflyer.com/id1230088754?cp_device_id=c0e9aa96-db34-4a7a-b567-a4bd2c771f07&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - strong: Ratings and Reviews
+  - strong: "4.7"
+- link "Ratings and Reviews 4.6":
+  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=c0e9aa96-db34-4a7a-b567-a4bd2c771f07&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - strong: Ratings and Reviews
+  - strong: "4.6"
+- link "4.6":
+  - /url: https://www.trustpilot.com/review/capital.com
+  - strong: "4.6"
+- heading "Ready to join a leading broker?" [level=2]
+- text: Join our community of traders worldwide
+- button
+- text: 1. Create your account 2. Make your first deposit 3. Start trading CFDs
+- paragraph:
+  - text: Start trading CFDs
+  - link "Gold":
+    - /url: /en-au/markets/commodities/gold-spot-commodity
+- text: 4074.44 4074.74
+- button "Get started"
+- button "Close sticky trading bar"
+- contentinfo:
+  - link:
+    - /url: /en-au
+    - img
+  - link:
+    - /url: https://www.facebook.com/capitalcomau/
+  - link:
+    - /url: https://twitter.com/Capitalcomau
+  - link:
+    - /url: https://www.linkedin.com/company/capital.com
+  - link:
+    - /url: https://www.instagram.com/capitalcomau/
+  - link:
+    - /url: https://www.youtube.com/@capital.com.australia5770
+  - link:
+    - /url: https://app.appsflyer.com/id1230088754?cp_device_id=c0e9aa96-db34-4a7a-b567-a4bd2c771f07&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - link:
+    - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=c0e9aa96-db34-4a7a-b567-a4bd2c771f07&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - link:
+    - /url: https://app.appsflyer.com/com.capital.trading.huawei-huawei?cp_device_id=c0e9aa96-db34-4a7a-b567-a4bd2c771f07&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - text: "Country / Region:"
+  - button "Australia"
+  - text: "• Language:"
+  - button "English"
+  - text: "Also you can contact us:"
+  - link "+61 3 8658 0539":
+    - /url: tel:+61 3 8658 0539
+    - strong: +61 3 8658 0539
+    - strong
+  - text: •
+  - link "support.au@capital.com":
+    - /url: mailto:support.au@capital.com
+    - strong: support.au@capital.com
+  - strong: Trading
+  - text: Trading
+  - link "Trade CFDs":
+    - /url: /en-au/ways-to-trade/cfd-trading
+  - link "Get demo account":
+    - /url: /en-au/trading-platforms/demo-account
+  - link "Get pro account":
+    - /url: /en-au/professional
+  - link "Corporate account":
+    - /url: /en-au/corporate-accounts
+  - link "Premium services":
+    - /url: /en-au/ways-to-trade/premium-services
+  - text: Platforms
+  - link "Web platform":
+    - /url: /en-au/trading-platforms/web-platform
+  - link "Mobile app":
+    - /url: /en-au/trading-platforms/mobile-apps
+  - link "TradingView":
+    - /url: /en-au/trading-platforms/trading-view
+  - link "MT4":
+    - /url: /en-au/trading-platforms/mt4
+  - link "MT5":
+    - /url: /en-au/trading-platforms/mt5
+  - link "API access":
+    - /url: /en-au/trading-platforms/api-development-guide
+  - text: Learn
+  - link "Trading strategies":
+    - /url: /en-au/learn/trading-strategies
+  - link "Technical analysis":
+    - /url: /en-au/learn/technical-analysis
+  - link "Trading psychology":
+    - /url: /en-au/learn/trading-psychology
+  - link "All resources":
+    - /url: /en-au/learn
+  - strong: Markets
+  - text: Our markets
+  - link "Markets overview":
+    - /url: /en-au/markets
+  - link "Shares":
+    - /url: /en-au/markets/shares
+  - link "Forex":
+    - /url: /en-au/markets/forex
+  - link "Indices":
+    - /url: /en-au/markets/indices
+  - link "Commodities":
+    - /url: /en-au/markets/commodities
+  - link "Cryptocurrencies":
+    - /url: /en-au/markets/cryptocurrencies
+  - link "Bonds":
+    - /url: /en-au/markets/bonds
+  - link "Interest rates":
+    - /url: /en-au/markets/interest-rates
+  - text: Market info
+  - link "Market analysis":
+    - /url: /en-au/analysis
+  - link "Pricing":
+    - /url: /en-au/ways-to-trade/fees-and-charges
+    - strong: Pricing
+  - strong: About
+  - text: Who we are
+  - link "Company":
+    - /url: /en-au/about-us
+  - link "Our offices":
+    - /url: /en-au/about-us/our-offices
+  - link "Press centre":
+    - /url: /en-au/media-centre
+  - link "Whitepaper":
+    - /url: /whitepaper
+  - link "Investor Relations":
+    - /url: /en-au/about-us/investor-relations
+  - link "Is Capital.com safe?":
+    - /url: /en-au/security-measures
+  - link "Our business model":
+    - /url: /en-au/about-us/how-capital-makes-money
+  - text: Work with us
+  - link "Careers":
+    - /url: /en-au/about-us/careers
+  - text: Help
+  - link "Help centre":
+    - /url: /en-au/help
+  - link "Client vulnerability":
+    - /url: /en-au/help/client-vulnerability
+  - link "Contact us":
+    - /url: /en-au/contact-us
+  - text: Legal
+  - link "Terms & policies":
+    - /url: /en-au/terms-and-policies
+  - link "Complaints":
+    - /url: /en-au/help/complaints
+  - paragraph:
+    - text: CFDs are complex leveraged instruments and come with a high risk of losing money. These products are not suitable for everyone and you should therefore consider your objectives, financial situation, needs and experience with these products before investing in them. Our
+    - link "Product Disclosure Statement":
+      - /url: https://capital.com/product-disclosure-statement-asic
+    - text: (PDS) and
+    - link "Target Market Determination":
+      - /url: https://capital.com/target-market-determination-asic
+    - text: provides important information about our products and who our products are more likely to be suited to. Capital.com does not provide financial or investment advice and you should seek independent advice if you are unsure of the risks or whether our products are suitable for you.
+  - paragraph
+  - paragraph: Capital Com Australia Pty Ltd (ABN 47 625 601 489) is a company registered in Australia and regulated by the Australian Securities and Investments Commission (ASIC) under AFSL 513393.
+  - paragraph: © 2026 Capital Com Australia Pty Ltd
+  - link "Sitemap":
+    - /url: /en-au/sitemap
+  - link "Cookie Settings":
+    - /url: ""
+  - link "Clients Funds":
+    - /url: /en-au/about-us/what-capital-does-with-your-money
+  - link "Terms and Policies":
+    - /url: /en-au/terms-and-policies
+  - link "Complaints Procedure CCAU":
+    - /url: /en-au/help/complaints
+- button
+- alert
+```
+
+# Test source
+
+```ts
+  1  | import { expect } from "@playwright/test";
+  2  | import { ctaRegistry } from "../test_data/CTA/pages.cta.registry";
+  3  | 
+  4  | export async function expectPageState(
+  5  |   page,
+  6  |   action,
+  7  |   expectation,
+  8  |   testInfo,
+  9  |   locator,
+  10 | ) {
+  11 |   console.log("EXPECTATION ASSERTIONS", expectation);
+  12 |   const currentUrl = testInfo.project.use.baseURL;
+  13 |   const currentLicense = testInfo.project.use.licenseName;
+  14 |   // console.log("Current URL: ", currentUrl);
+  15 | 
+  16 |   const expectationType =
+  17 |     typeof expectation === "string" ? expectation : expectation.type;
+  18 | 
+  19 |   switch (expectationType) {
+  20 |     case "redirects to platform":
+  21 |       await expect(page).toHaveURL(/trading\/platform/);
+  22 |       break;
+  23 | 
+  24 |     case "shows signup form":
+  25 |       await expect(
+  26 |         // page.locator('form[data-sentry-component="SignUp"]'),
+  27 |         page.locator('[data-type="SIGN_UP_close"]'),
+> 28 |       ).toBeVisible();
+     |         ^ Error: expect(locator).toBeVisible() failed
+  29 |       break;
+  30 | 
+  31 |     case "shows login form":
+  32 |       await expect(page.locator('[data-testid="modal-title"]'));
+  33 |       break;
+  34 | 
+  35 |     case "redirect": {
+  36 |       const pageConfig = ctaRegistry[expectation.page].path;
+  37 | 
+  38 |       // const pagePath = ctaRegistry[expectation.page].path;
+  39 |       const pagePath =
+  40 |         typeof pageConfig === "function"
+  41 |           ? pageConfig(currentLicense)
+  42 |           : pageConfig;
+  43 | 
+  44 |       const expectedURL = pagePath ? `${currentUrl}/${pagePath}` : currentUrl;
+  45 |       await expect(page).toHaveURL(new RegExp(`${expectedURL}/?$`));
+  46 |       break;
+  47 |     }
+  48 | 
+  49 |     case "opens external link": {
+  50 |       const href = await locator.getAttribute("href");
+  51 |       await expect(locator).toHaveAttribute("target", "_blank");
+  52 |       expect(href).toContain(action.expectedHrefContains);
+  53 |       break;
+  54 |     }
+  55 | 
+  56 |     case "opens regional settings window": {
+  57 |       await expect(page.locator('[data-sentry-component="CountryLangSelect"]'));
+  58 |       break;
+  59 |     }
+  60 | 
+  61 |     case "exist corresponding license": {
+  62 |       const expectedLicenses = action.licenseText?.[currentLicense];
+  63 | 
+  64 |       if (expectedLicenses?.length) {
+  65 |         for (const text of expectedLicenses) {
+  66 |           await expect(locator).toContainText(text);
+  67 |         }
+  68 |       } else {
+  69 |         await expect(locator).toContainText(currentLicense);
+  70 |       }
+  71 | 
+  72 |       break;
+  73 |     }
+  74 | 
+  75 |     case "opens cookie menu": {
+  76 |       await expect(page.locator(".consent-pc-modal__content"));
+  77 |       break;
+  78 |     }
+  79 | 
+  80 |     default:
+  81 |       throw new Error(`Unknown expectation: ${expectation}`);
+  82 |   }
+  83 | }
+  84 | 
+```
