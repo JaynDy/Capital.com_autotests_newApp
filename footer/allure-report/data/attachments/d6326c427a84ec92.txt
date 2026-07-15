@@ -1,0 +1,3 @@
+Button enabled: true
+START CLICK youtubeIcon
+COUNT youtubeIcon 0

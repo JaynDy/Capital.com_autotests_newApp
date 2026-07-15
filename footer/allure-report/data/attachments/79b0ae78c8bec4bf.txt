@@ -1,0 +1,5 @@
+START CLICK facebookIcon
+COUNT facebookIcon 1
+USER: unregistered
+EXPECTATION:  opens external link
+EXPECTATION ASSERTIONS opens external link

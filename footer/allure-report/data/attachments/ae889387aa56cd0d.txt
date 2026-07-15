@@ -1,0 +1,2 @@
+START CLICK tiktokIcon
+COUNT tiktokIcon 0

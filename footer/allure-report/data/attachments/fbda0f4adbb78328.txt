@@ -1,0 +1,2 @@
+START CLICK redditIcon
+COUNT redditIcon 0

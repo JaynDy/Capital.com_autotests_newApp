@@ -1,0 +1,5 @@
+START CLICK countrySwitcherBtn
+COUNT countrySwitcherBtn 1
+USER: unauthorised
+EXPECTATION:  opens regional settings window
+EXPECTATION ASSERTIONS opens regional settings window

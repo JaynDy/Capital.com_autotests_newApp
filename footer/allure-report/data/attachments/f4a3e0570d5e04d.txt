@@ -1,0 +1,5 @@
+START CLICK logo
+COUNT logo 1
+USER: unregistered
+EXPECTATION:  { type: 'redirect', page: 'main' }
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'main' }
