@@ -1,0 +1,6 @@
+Button enabled: true
+START CLICK langSwitcherBtn
+COUNT langSwitcherBtn 1
+USER: unauthorised
+EXPECTATION:  opens regional settings window
+EXPECTATION ASSERTIONS opens regional settings window

@@ -1,0 +1,6 @@
+Button enabled: true
+START CLICK linkedinIcon
+COUNT linkedinIcon 1
+USER: unregistered
+EXPECTATION:  opens external link
+EXPECTATION ASSERTIONS opens external link

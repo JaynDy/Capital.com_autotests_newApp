@@ -1,0 +1,5 @@
+START CLICK sitemapLink
+COUNT sitemapLink 1
+USER: unauthorised
+EXPECTATION:  { type: 'redirect', page: 'sitemap' }
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'sitemap' }

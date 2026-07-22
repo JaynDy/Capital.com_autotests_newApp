@@ -1,0 +1,6 @@
+Button enabled: true
+START CLICK cookieSettingsLink
+COUNT cookieSettingsLink 1
+USER: unauthorised
+EXPECTATION:  opens cookie menu
+EXPECTATION ASSERTIONS opens cookie menu

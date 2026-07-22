@@ -1,0 +1,6 @@
+Button enabled: true
+START CLICK tiktokIcon
+COUNT tiktokIcon 1
+USER: unregistered
+EXPECTATION:  opens external link
+EXPECTATION ASSERTIONS opens external link
