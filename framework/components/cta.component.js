@@ -102,6 +102,23 @@ export class CTAComponent {
     await expect(locator).toBeVisible();
     await expect(locator).toBeEnabled();
 
+    console.log(
+      await locator.evaluate((el) => {
+        const rect = el.getBoundingClientRect();
+        const center = {
+          x: rect.left + rect.width / 2,
+          y: rect.top + rect.height / 2,
+        };
+
+        return {
+          text: el.textContent,
+          center,
+          elementAtPoint: document.elementFromPoint(center.x, center.y)
+            ?.outerHTML,
+        };
+      }),
+    );
+
     await locator.click({ timeout: 2000 });
 
     return { skipped: false, locator };

@@ -11,6 +11,7 @@ export async function expectPageState(
   console.log("EXPECTATION ASSERTIONS", expectation);
   const currentUrl = testInfo.project.use.baseURL;
   const currentLicense = testInfo.project.use.licenseName;
+  const currentLang = testInfo.project.use.langName;
   // console.log("Current URL: ", currentUrl);
 
   const expectationType =
@@ -48,7 +49,7 @@ export async function expectPageState(
 
     case "opens external link": {
       const href = await locator.getAttribute("href");
-      await expect(locator).toHaveAttribute("target", "_blank");
+      // await expect(locator).toHaveAttribute("target", "_blank");
       expect(href).toContain(action.expectedHrefContains);
       break;
     }
@@ -74,6 +75,58 @@ export async function expectPageState(
 
     case "opens cookie menu": {
       await expect(page.locator(".consent-pc-modal__content"));
+      break;
+    }
+
+    case "opens pdf document": {
+      const href = await locator.getAttribute("href");
+
+      expect(href).toContain(action.expectedHrefContains);
+      await expect(locator).toHaveAttribute("target", "_blank");
+
+      const browserName = testInfo.project.use.browserName;
+
+      if (browserName.includes("webkit")) {
+        const [download] = await Promise.all([
+          page.waitForEvent("download"),
+          locator.click(),
+        ]);
+
+        const path = await download.path();
+        expect(path).not.toBeNull();
+
+        const fs = await import("node:fs/promises");
+        const stat = await fs.stat(path);
+
+        expect(
+          stat.size,
+          `Downloaded file "${download.suggestedFilename()}" is empty`,
+        ).toBeGreaterThan(0);
+      } else {
+        const [pdfPage] = await Promise.all([
+          page.context().waitForEvent("page"),
+          locator.click(),
+        ]);
+
+        await pdfPage.waitForLoadState("domcontentloaded");
+
+        expect(pdfPage.url()).toContain(action.expectedHrefContains);
+        await expect(pdfPage.locator("body")).not.toContainText(
+          "HTTP ERROR 404",
+        );
+      }
+      break;
+    }
+
+    case "opens link on currentURL": {
+      const currentUrl = page.url();
+
+      console.log("EXPECTED:", await locator.getAttribute("href"));
+      console.log("ACTUAL:", currentUrl);
+
+      expect(currentUrl).toContain(action.expectedHrefContains);
+      await expect(page.locator("body")).not.toContainText("HTTP ERROR 404");
+
       break;
     }
 

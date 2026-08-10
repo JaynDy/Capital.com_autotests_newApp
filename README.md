@@ -434,4 +434,12 @@ npm run test:footer -- --list // 1368 (456)
 
 # RETESTS
 
-TEST_LICENSE=CySEC,CMA TEST_LANG=en TEST_BROWSER=chromium TEST_USER=unauthorised TEST_CTA=socialMediaMyAccountBlock npx playwright test
+TEST_LICENSE=CySEC,CMA TEST_LANG=en TEST_BROWSER=chromium TEST_TAG=retest TEST_USER=unauthorised TEST_CTA=socialMediaMyAccountBlock npx playwright test
+
+TEST_LICENSE=CySEC,SCB TEST_LANG=en TEST_BROWSER=chromium TEST_TAG=retest TEST_USER=unauthorised TEST_CTA=fyLink npx playwright test
+
+TEST_LICENSE=ASIC,CMA,CySEC,SCB TEST_LANG=en TEST_BROWSER=chromium TEST_TAG=retest TEST_USER=unauthorised TEST_CTA=yahooFinanceUKLink npx playwright test
+
+TEST_BROWSER=chromium TEST_TAG=retest TEST_USER=unauthorised TEST_CTA=tradePolkadotSharesLink npx playwright test
+
+TEST_LICENSE=SCB TEST_LANG=ru TEST_BROWSER=chromium TEST_TAG=retest TEST_USER=unauthorised TEST_CTA=projectedUSInterestRatesLink npx playwright test

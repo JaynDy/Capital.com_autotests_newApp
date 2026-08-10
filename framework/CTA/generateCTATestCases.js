@@ -19,6 +19,10 @@ export function generateCTATestCases(allPagesConfig) {
     ? process.env.TEST_ACTION.split(",").map((c) => c.trim())
     : null;
 
+  const tagFilter = process.env.TEST_TAG
+    ? process.env.TEST_TAG.split(",").map((t) => t.trim())
+    : null;
+
   const langFilter = process.env.TEST_LANG
     ? process.env.TEST_LANG.split(",").map((l) => l.trim())
     : null;
@@ -68,13 +72,22 @@ export function generateCTATestCases(allPagesConfig) {
         // ACTION NAME FILTER
         if (actionFilter && !actionFilter.includes(actionName)) continue;
 
+        if (
+          tagFilter &&
+          !actionConfig.tags?.some((tag) => tagFilter.includes(tag))
+        ) {
+          continue;
+        }
+
         // ACTION LICENSE OVERRIDE (if exists)
         const actionAllowedLicenses =
-          actionConfig.licenses ?? sectionAllowedLicenses;
+          actionConfig.licenses ?? sectionAllowedLicenses ?? pageData.licenses;
 
         // ACTION LANGUAGE OVERRIDE (if exists)
         const actionAllowedLanguages =
-          actionConfig.languages ?? sectionAllowedLanguages;
+          actionConfig.languages ??
+          sectionAllowedLanguages ??
+          pageData.languages;
 
         if (licenseFilter && actionAllowedLicenses) {
           const isAllowed = actionAllowedLicenses.some((l) =>
@@ -99,6 +112,8 @@ export function generateCTATestCases(allPagesConfig) {
           scope: "page",
           pageName,
           pagePath: pageData.path,
+          pageLicenses: pageData.licenses,
+          pageLanguages: pageData.languages,
           sectionName,
           actionName,
           allowedLicenses: actionAllowedLicenses,

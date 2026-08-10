@@ -12,11 +12,42 @@ import { globalCtaRegistry } from "../../framework/test_data/CTA/global.cta.regi
 // const CTA_TEST_CASES = generateCTATestCases(ctaRegistry);
 const CTA_TEST_CASES = generateAllCTATestCases();
 
-for (const testCase of CTA_TEST_CASES) {
+const PROJECT_LICENSES = process.env.TEST_LICENSE?.split(",");
+const PROJECT_LANGS = process.env.TEST_LANG?.split(",");
+
+const FILTERED_TEST_CASES = CTA_TEST_CASES.filter((testCase) => {
+  if (
+    PROJECT_LICENSES &&
+    testCase.pageLicenses &&
+    !testCase.pageLicenses.some((l) => PROJECT_LICENSES.includes(l))
+  ) {
+    return false;
+  }
+
+  if (
+    PROJECT_LANGS &&
+    testCase.pageLanguages &&
+    !testCase.pageLanguages.some((l) => PROJECT_LANGS.includes(l))
+  ) {
+    return false;
+  }
+
+  return true;
+});
+
+for (const testCase of FILTERED_TEST_CASES) {
+  // for (const testCase of CTA_TEST_CASES) {
   test(testCase.testName, async ({ page, baseURL }, testInfo) => {
     const projectUser = testInfo.project.use.userState;
     const projectLicense = testInfo.project.use.licenseName;
     const projectLang = testInfo.project.use.lang;
+
+    // console.log({
+    //   page: testCase.pageName,
+    //   projectLicense,
+    //   allowedLicenses: testCase.allowedLicenses,
+    //   allowedLanguages: testCase.allowedLanguages,
+    // });
 
     // SKIP by license
     test.skip(
@@ -81,7 +112,10 @@ for (const testCase of CTA_TEST_CASES) {
     // await component.click(testCase.actionName);
 
     // const locator = component.getActionLocator(testCase.actionName);
+
     const result = await component.click(testCase.actionName);
+
+    console.log("URL AFTER CLICK:", page.url());
 
     if (result.skipped) {
       return testInfo.skip(`${testCase.actionName} absent on page`);

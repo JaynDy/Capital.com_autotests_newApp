@@ -8,10 +8,13 @@ export const socialMediaMyAccountBlock = {
         page.locator("footer").getByRole("link", {
           name: "Facebook",
         }),
+
       expectedHrefContains: "facebook.com",
+
       optional: true,
       tags: ["retest"],
       issue: "WEB 380",
+
       expectation: {
         authorised: "opens external link",
         unauthorised: "opens external link",

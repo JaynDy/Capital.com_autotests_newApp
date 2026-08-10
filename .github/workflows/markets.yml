@@ -1,10 +1,11 @@
-name: Footer Tests
+name: Markets Tests
 
 on:
   push:
     branches: [main, master, dev, "ci/**"]
   pull_request:
     branches: [main, master, dev, "ci/**"]
+  workflow_dispatch:
 
 jobs:
   # 1. TESTS
@@ -21,6 +22,7 @@ jobs:
       CI: true
       TEST_BROWSER: ${{ matrix.browser }}
       TEST_LICENSE: ${{ matrix.license }}
+      TEST_USER: unauthorised,unregistered
 
     steps:
       - uses: actions/checkout@v4
@@ -32,7 +34,7 @@ jobs:
       - run: npx playwright install --with-deps
 
       - name: Run tests
-        run: npm run test:footer
+        run: npm run test:markets
 
       - name: Upload Allure results
         if: always()
@@ -69,8 +71,8 @@ jobs:
 
       - name: Prepare Pages structure
         run: |
-          mkdir -p public/footer
-          mv allure-report public/footer
+          mkdir -p public/markets
+          mv allure-report public/markets
 
       - name: Deploy report
         uses: peaceiris/actions-gh-pages@v3

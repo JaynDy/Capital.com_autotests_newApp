@@ -1,5 +1,6 @@
 import { mainPageConfig } from "../../pages/Main.page.js";
 
+// MARKETS
 import { sharesPageConfig } from "../../pages/Markets/ourMarketsTitle/shares.page.js";
 import { forexPageConfig } from "../../pages/Markets/ourMarketsTitle/forex.page.js";
 import { indicesPageConfig } from "../../pages/Markets/ourMarketsTitle/indices.page.js";
@@ -13,10 +14,17 @@ import { marketAnalysisPageConfig } from "../../pages/Markets/marketInfoTitle/ma
 import { financeNewsPageConfig } from "../../pages/Markets/marketInfoTitle/financeNews.page.js";
 import { marketPricingPageConfig } from "../../pages/Markets/marketInfoTitle/marketPricing.page.js";
 
+// FOOTER
 import { sitemapConfig } from "../../pages/sitemap.page.js";
 import { termsAndPoliciesConfig } from "../../pages/termsAndPolicies.page.js";
 import { complaintsConfig } from "../../pages/complaints.page.js";
+
+// Retests
 import { helpCentreMyAccountConfig } from "../../pages/RetestPages/helpCentreMyAccount.page.js";
+import { iagCfdInstrumentConfig } from "../../pages/RetestPages/iagCfdInstrument.page.js";
+import { rollsRoycePriceConfig } from "../../pages/RetestPages/rollsRoycePrice.page.js";
+import { tradeBitcoinConfig } from "../../pages/RetestPages/tradeBitcoin.page.js";
+import { projectedEcbRateRiseIn5YearsConfig } from "../../pages/RetestPages/projectedEcbRateRiseIn5Years.page.js";
 
 export const ctaRegistry = {
   main: {
@@ -110,6 +118,8 @@ export const ctaRegistry = {
   },
 
   // RETEST PAGES
+
+  //WEB 380
   helpCentreMyAccount: {
     urls: {
       CMA: "https://help.capitalccbah.com/hc/en-us/categories/9622507722258-My-account",
@@ -117,6 +127,49 @@ export const ctaRegistry = {
         "https://help.capitalccsv.com/hc/en-us/categories/4416956531474-YOUR-ACCOUNT",
     },
     licenses: ["CySEC", "CMA"],
+    languages: ["en"],
     config: helpCentreMyAccountConfig,
+  },
+
+  //WEB 32
+  iagCfdInstrument: {
+    path: "markets/shares/international-consolidated-airlines-group-sa-gbp-share-price-1",
+    licenses: ["SCB", "CySEC"],
+    languages: ["en"],
+    // availability: [
+    //   { license: "SCB", language: "en" },
+    //   { license: "CySEC", language: "en" },
+    // ],
+    config: iagCfdInstrumentConfig,
+  },
+
+  //WEB 240
+  rollsRoycePrice: {
+    path: "analysis/rolls-royce-share-price-prediction",
+    licenses: ["ASIC", "CMA", "SCB", "CySEC"],
+    languages: ["en"],
+    config: rollsRoycePriceConfig,
+  },
+
+  //WEB 247
+  tradeBitcoin: {
+    path: "learn/market-guides/trade-bitcoin",
+    licenses: ["FCA", "ASIC", "SCB", "CySEC", "CMA"],
+    config: tradeBitcoinConfig,
+  },
+
+  //------ web 297 - complaints link is not working in PDF document, so I can not locate the "link" in PDF document.
+  // complaintsHandlingProcedureWebsite: {
+  //   urls: "https://img.capital.com/docs/Complaints-Handling-Procedure-Website-June-2025-.pdf",
+  //   licenses: ["FCA"],
+  //   config: complaintsConfig,
+  // },
+
+  //LOC 388
+  projectedEcbRateRiseIn5Years: {
+    path: "analysis/projected-ecb-rate-rise-in-5-years",
+    licenses: ["SCB"],
+    languages: ["ru"],
+    config: projectedEcbRateRiseIn5YearsConfig,
   },
 };

@@ -9,6 +9,10 @@ export function generateGlobalCTATestCases(globalRegistry) {
     ? process.env.TEST_ACTION.split(",").map((c) => c.trim())
     : null;
 
+  const tagFilter = process.env.TEST_TAG
+    ? process.env.TEST_TAG.split(",").map((t) => t.trim())
+    : null;
+
   for (const [blockName, block] of Object.entries(globalRegistry)) {
     if (ctaFilter && !ctaFilter.includes(blockName)) continue;
 
@@ -16,6 +20,12 @@ export function generateGlobalCTATestCases(globalRegistry) {
       for (const [ctaName, cta] of Object.entries(block.config)) {
         for (const [actionName, actionConfig] of Object.entries(cta.actions)) {
           if (actionFilter && !actionFilter.includes(actionName)) continue;
+          if (
+            tagFilter &&
+            !actionConfig.tags?.some((tag) => tagFilter.includes(tag))
+          ) {
+            continue;
+          }
 
           cases.push({
             scope: "global",

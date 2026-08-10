@@ -1,3 +1,2 @@
-2026/07/01-12:26:13.282 1392b3 Reusing MANIFEST /Users/user/Desktop/automation_tests_V3/chrome-profile/Default/Session Storage/MANIFEST-000001
-2026/07/01-12:26:13.285 1392b3 Recovering log #4
-2026/07/01-12:26:13.286 1392b3 Reusing old log /Users/user/Desktop/automation_tests_V3/chrome-profile/Default/Session Storage/000004.log 
+2026/07/17-19:01:49.555 16e8db Creating DB /Users/user/Desktop/automation_tests_V3/chrome-profile/Default/Session Storage since it was missing.
+2026/07/17-19:01:49.705 16e8db Reusing MANIFEST /Users/user/Desktop/automation_tests_V3/chrome-profile/Default/Session Storage/MANIFEST-000001
