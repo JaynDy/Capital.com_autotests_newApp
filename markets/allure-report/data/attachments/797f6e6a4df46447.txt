@@ -1,0 +1,11 @@
+START CLICK tradedBtn
+COUNT tradedBtn 0
+{
+  text: 'Négociation',
+  center: { x: 1162.65625, y: 1471 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/fr-int/markets/cryptocurrencies/graphique-de-bitcoin-to-us-dollar
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

@@ -1,0 +1,3 @@
+START CLICK sellBtn
+COUNT sellBtn 0
+URL AFTER CLICK: https://capital.com/de-int/markets/shares/space-exploration-technologies-corp-aktienkurs

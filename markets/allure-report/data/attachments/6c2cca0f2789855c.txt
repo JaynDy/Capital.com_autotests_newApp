@@ -1,0 +1,11 @@
+START CLICK viewDetailedChartBtn
+COUNT viewDetailedChartBtn 1
+{
+  text: '查看詳細圖表',
+  center: { x: 224, y: 743 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/zh-hant/markets/cryptocurrencies/bitcoin-to-us-dollar-chart
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

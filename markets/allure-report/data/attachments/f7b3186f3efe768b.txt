@@ -1,0 +1,11 @@
+START CLICK shortPositionGoToPlatformBtn
+COUNT shortPositionGoToPlatformBtn 1
+{
+  text: 'Zur Plattform',
+  center: { x: 559.125, y: 596 },
+  elementAtPoint: '<span>Zur Plattform</span>'
+}
+URL AFTER CLICK: https://capital.com/de-de/markets/interest-rates/euribor-future
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

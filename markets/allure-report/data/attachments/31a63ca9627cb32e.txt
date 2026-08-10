@@ -1,0 +1,11 @@
+START CLICK buyBtn
+COUNT buyBtn 1
+{
+  text: 'Acheter134.85',
+  center: { x: 312, y: 808 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/trading/platform/charting?id=21674500919743684
+USER: unauthorised
+EXPECTATION:  shows login form
+EXPECTATION ASSERTIONS shows login form

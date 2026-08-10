@@ -1,0 +1,11 @@
+START CLICK tradedBtn
+COUNT tradedBtn 0
+{
+  text: 'Handeln',
+  center: { x: 1173.65625, y: 1445 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/de-int/markets/interest-rates/euribor-future
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

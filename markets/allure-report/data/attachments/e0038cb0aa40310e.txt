@@ -1,0 +1,11 @@
+START CLICK longPositionGoToPlatformBtn
+COUNT longPositionGoToPlatformBtn 1
+{
+  text: 'Accesați platforma',
+  center: { x: 579.921875, y: 573 },
+  elementAtPoint: '<span>Accesați platforma</span>'
+}
+URL AFTER CLICK: https://capital.com/ro-ro/markets/shares/space-exploration-technologies-corp-pret-actiune
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

@@ -1,0 +1,7 @@
+START CLICK readyToJoinSignUpBtn
+COUNT readyToJoinSignUpBtn 1
+{ text: '', center: { x: 1036, y: 3722.5 }, elementAtPoint: undefined }
+URL AFTER CLICK: https://capital.com/ar-ae/markets/shares/space-exploration-technologies-corp-as-ar-alashm
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

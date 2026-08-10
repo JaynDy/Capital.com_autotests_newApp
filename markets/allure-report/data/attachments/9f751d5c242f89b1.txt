@@ -1,0 +1,11 @@
+START CLICK tradedBtn
+COUNT tradedBtn 1
+{
+  text: 'Торговать',
+  center: { x: 1167.6328125, y: 756 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/ru-int/analysis
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

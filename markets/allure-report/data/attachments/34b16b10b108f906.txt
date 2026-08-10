@@ -1,0 +1,11 @@
+START CLICK buyBtn
+COUNT buyBtn 1
+{
+  text: 'Αγορά65197.85',
+  center: { x: 312, y: 850 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/trading/platform/charting?id=2604592722433220
+USER: unauthorised
+EXPECTATION:  shows login form
+EXPECTATION ASSERTIONS shows login form

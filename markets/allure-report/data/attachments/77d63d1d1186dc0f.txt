@@ -1,0 +1,11 @@
+START CLICK tradedBtn
+COUNT tradedBtn 0
+{
+  text: 'Trade',
+  center: { x: 98.2109375, y: 1429 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/ar-ae/markets/cryptocurrencies/btc-usd-chart
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

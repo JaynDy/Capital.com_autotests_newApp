@@ -1,0 +1,11 @@
+START CLICK shortPositionGoToPlatformBtn
+COUNT shortPositionGoToPlatformBtn 1
+{
+  text: 'Ga naar het platform',
+  center: { x: 587.9609375, y: 669 },
+  elementAtPoint: '<span>Ga naar het platform</span>'
+}
+URL AFTER CLICK: https://capital.com/nl-nl/markets/shares/space-exploration-technologies-corp-aandeelprijs
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

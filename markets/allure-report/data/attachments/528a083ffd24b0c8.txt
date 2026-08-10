@@ -1,0 +1,11 @@
+START CLICK viewDetailedChartBtn
+COUNT viewDetailedChartBtn 1
+{
+  text: 'Προβολή λεπτομερούς διαγράμματος',
+  center: { x: 223.9921875, y: 761 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/el-gr/markets/interest-rates/euribor-future
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

@@ -1,0 +1,11 @@
+START CLICK longPositionGoToPlatformBtn
+COUNT longPositionGoToPlatformBtn 1
+{
+  text: 'Đi đến nền tảng',
+  center: { x: 570.0234375, y: 625 },
+  elementAtPoint: '<span>Đi đến nền tảng</span>'
+}
+URL AFTER CLICK: https://capital.com/vi-int/markets/bonds/us-treasury-bond-spot
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

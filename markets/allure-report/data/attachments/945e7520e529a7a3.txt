@@ -1,0 +1,11 @@
+START CLICK tradedBtn
+COUNT tradedBtn 0
+{
+  text: 'Handelen',
+  center: { x: 1169.7265625, y: 1467 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/nl-nl/markets/cryptocurrencies/bitcoin-to-us-dollar-grafiek
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

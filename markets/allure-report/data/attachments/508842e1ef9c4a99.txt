@@ -1,0 +1,11 @@
+START CLICK viewDetailedChartBtn
+COUNT viewDetailedChartBtn 1
+{
+  text: 'View detailed chart',
+  center: { x: 224, y: 701 },
+  elementAtPoint: '<button class="c8S1d l_btn_to_platform js-analyticsClick" data-destination="/trading/platform/charting/2604592722433220" data-type="market_view_chart" type="button">View detailed chart<img alt="" loading="lazy" width="16" height="16" decoding="async" data-nimg="1" class="ETyz6" src="https://static.capital.com/capital-v-c-20260727-2/apps/capital/_next/static/media/long_up_right.2w4cjkem9n1nk.svg"></button>'
+}
+URL AFTER CLICK: https://capital.com/en-int/markets/cryptocurrencies/bitcoin-to-us-dollar-chart
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

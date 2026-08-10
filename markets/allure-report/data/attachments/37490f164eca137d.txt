@@ -1,0 +1,11 @@
+START CLICK tradedBtn
+COUNT tradedBtn 0
+{
+  text: 'Operar',
+  center: { x: 1177.9921875, y: 1366 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/es-int/markets/shares/space-exploration-technologies-corp-precio-por-accion
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

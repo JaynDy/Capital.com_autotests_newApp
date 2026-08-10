@@ -1,0 +1,11 @@
+START CLICK tradedBtn
+COUNT tradedBtn 1
+{
+  text: 'Trade',
+  center: { x: 98.2109375, y: 736 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/ar-ae/analysis
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

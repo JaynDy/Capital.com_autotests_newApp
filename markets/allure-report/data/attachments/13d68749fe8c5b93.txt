@@ -1,0 +1,11 @@
+START CLICK tradedBtn
+COUNT tradedBtn 0
+{
+  text: 'Арилжаа',
+  center: { x: 1170.6796875, y: 1497 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/mn-int/markets/cryptocurrencies/bitcoin-to-us-dollar-chart
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

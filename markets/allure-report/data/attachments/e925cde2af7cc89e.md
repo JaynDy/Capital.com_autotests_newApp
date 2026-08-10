@@ -1,0 +1,731 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: cta/generated.cta.spec.js >> commodities page | tradingInstrument | addToFavouriteBtn
+- Location: tests/cta/generated.cta.spec.js:40:7
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e7]:
+      - text: A CFD-k összetett eszközök, és a tőkeáttétel miatt nagy a kockázata a gyors pénzvesztésnek.
+      - generic [ref=e8]:
+        - generic [ref=e9]:
+          - strong [ref=e10]: A lakossági befektetői fiókok 74-89%-a veszít pénzt, amikor CFD-kkel kereskedik
+          - text: .
+        - text: Fontolja meg, hogy tisztában van-e a CFD-k működésével, és hogy megengedheti-e magának, hogy vállalja a pénzvesztés magas kockázatát. Kérjük, tekintse meg
+        - link "Kockázatfeltáró nyilatkozatunkat" [ref=e11] [cursor=pointer]:
+          - /url: https://capital.com/risk-disclosure-policy-cceu
+    - generic [ref=e13]:
+      - link [ref=e14] [cursor=pointer]:
+        - /url: /hu-hu
+        - img [ref=e15]
+      - generic [ref=e20]:
+        - navigation [ref=e21]:
+          - button "Kereskedés" [ref=e22]:
+            - button "Kereskedés" [ref=e23]:
+              - generic [ref=e24]: Kereskedés
+          - button "Piacok" [ref=e25]:
+            - button "Piacok" [ref=e26]:
+              - generic [ref=e27]: Piacok
+          - link "Árazás" [ref=e30] [cursor=pointer]:
+            - /url: /hu-hu/ways-to-trade/fees-and-charges
+          - button "Rólunk" [ref=e31]:
+            - button "Rólunk" [ref=e32]:
+              - generic [ref=e33]: Rólunk
+        - button "hu" [ref=e34] [cursor=pointer]:
+          - generic [ref=e36]: hu
+      - generic [ref=e38]:
+        - button "Bejelentkezés" [ref=e39] [cursor=pointer]: Bejelentkezés
+        - button "Nyisson fiókot" [ref=e40] [cursor=pointer]: Nyisson fiókot
+  - generic [ref=e41]:
+    - paragraph [ref=e44]:
+      - generic [ref=e45]:
+        - link "Start" [ref=e46] [cursor=pointer]:
+          - /url: /hu-hu
+        - text: •
+      - generic [ref=e47]:
+        - link "Piacok" [ref=e48] [cursor=pointer]:
+          - /url: /hu-hu/markets
+        - text: •
+      - text: Árucikkek
+    - generic [ref=e49]:
+      - generic [ref=e53]:
+        - generic [ref=e54]:
+          - heading "Árupiaci és határidős árupiaci kereskedés" [level=1] [ref=e55]
+          - generic [ref=e56]:
+            - paragraph [ref=e57]: Energia, fémek és mezőgazdaság. CFD- és knock-out kereskedés több mint 65 globális árupiacon, több mint 100 elemzőeszközzel.
+            - paragraph [ref=e58]:
+              - strong [ref=e59]: A knock-out opciók csak spot árupiaci termékekre érhetők el, és határidős ügyletekre nem elérhetők. Árupiaci határidős ügyletek esetén csak CFD-k érhetők el.
+          - button "Árupiaci kereskedés felfedezése" [ref=e62] [cursor=pointer]
+        - img "laptop" [ref=e65]
+      - generic [ref=e67]:
+        - heading "Árupiacaink és határidős árupiacaink" [level=2] [ref=e69]
+        - generic [ref=e70]:
+          - link "Áttekintő oldal" [ref=e71] [cursor=pointer]:
+            - /url: /hu-hu/markets/commodities#mlc
+          - link "Legtöbbször forgalmazott" [ref=e72] [cursor=pointer]:
+            - /url: /hu-hu/markets/commodities/most-traded#mlc
+          - link "Legvolatilisabb" [ref=e73] [cursor=pointer]:
+            - /url: /hu-hu/markets/commodities/most-volatile#mlc
+          - link "Emelkedők" [ref=e74] [cursor=pointer]:
+            - /url: /hu-hu/markets/commodities/top-risers#mlc
+          - link "Esők" [ref=e75] [cursor=pointer]:
+            - /url: /hu-hu/markets/commodities/top-fallers#mlc
+        - generic [ref=e76]:
+          - generic [ref=e79]:
+            - button "CFD-k" [ref=e80]: CFD-k
+            - button "Knock-outok" [ref=e81] [cursor=pointer]: Knock-outok
+          - separator [ref=e82]
+          - generic [ref=e83]:
+            - generic [ref=e84]:
+              - button [ref=e87]:
+                - textbox "marketlist_search" [ref=e89]:
+                  - /placeholder: Search
+              - generic [ref=e90]: Eladás
+              - generic [ref=e91]: Vásárlás
+              - generic [ref=e92]: Árrés
+              - generic [ref=e93]: 1n változás
+              - generic [ref=e94]: 1n grafikonok
+              - generic [ref=e95]:
+                - generic [ref=e96]: Kereskedő
+                - generic [ref=e97]: Vásárlók
+            - generic [ref=e98]:
+              - link "Gold Gold Spot 4347.28 4347.58 0.30 +0.120% 30.42% 69.58%" [ref=e99] [cursor=pointer]:
+                - /url: /hu-hu/markets/commodities/gold-spot-aru
+                - generic [ref=e101]:
+                  - generic [ref=e102]: Gold
+                  - generic [ref=e103]: Gold Spot
+                - generic [ref=e104]: "4347.28"
+                - generic [ref=e105]: "4347.58"
+                - generic [ref=e106]: "0.30"
+                - generic [ref=e107]: +0.120%
+                - img [ref=e109]
+                - generic [ref=e116]:
+                  - generic [ref=e117]: 30.42%
+                  - generic [ref=e118]: 69.58%
+              - link "Oil - Crude US Crude Oil Spot 78.275 78.307 0.032 +2.610% 39.85% 60.15%" [ref=e119] [cursor=pointer]:
+                - /url: /hu-hu/markets/commodities/us-crude-oil-spot-aru-1
+                - generic [ref=e121]:
+                  - generic [ref=e122]: Oil - Crude
+                  - generic [ref=e123]: US Crude Oil Spot
+                - generic [ref=e124]: "78.275"
+                - generic [ref=e125]: "78.307"
+                - generic [ref=e126]: "0.032"
+                - generic [ref=e127]: +2.610%
+                - img [ref=e129]
+                - generic [ref=e136]:
+                  - generic [ref=e137]: 39.85%
+                  - generic [ref=e138]: 60.15%
+              - link "Silver Silver Spot 64.190 64.240 0.050 +1.150% 16.72% 83.28%" [ref=e139] [cursor=pointer]:
+                - /url: /hu-hu/markets/commodities/silver-spot-aru
+                - generic [ref=e141]:
+                  - generic [ref=e142]: Silver
+                  - generic [ref=e143]: Silver Spot
+                - generic [ref=e144]: "64.190"
+                - generic [ref=e145]: "64.240"
+                - generic [ref=e146]: "0.050"
+                - generic [ref=e147]: +1.150%
+                - img [ref=e149]
+                - generic [ref=e156]:
+                  - generic [ref=e157]: 16.72%
+                  - generic [ref=e158]: 83.28%
+              - link "Oil - Brent Brent Crude Oil Spot 83.699 83.733 0.034 +2.700% 38.88% 61.12%" [ref=e159] [cursor=pointer]:
+                - /url: /hu-hu/markets/commodities/brent-crude-oil-spot-aru-1
+                - generic [ref=e161]:
+                  - generic [ref=e162]: Oil - Brent
+                  - generic [ref=e163]: Brent Crude Oil Spot
+                - generic [ref=e164]: "83.699"
+                - generic [ref=e165]: "83.733"
+                - generic [ref=e166]: "0.034"
+                - generic [ref=e167]: +2.700%
+                - img [ref=e169]
+                - generic [ref=e176]:
+                  - generic [ref=e177]: 38.88%
+                  - generic [ref=e178]: 61.12%
+              - link "Natural Gas US Natural Gas Spot 2.7937 2.7987 0.0050 +4.080% 14.07% 85.93%" [ref=e179] [cursor=pointer]:
+                - /url: /hu-hu/markets/commodities/us-natural-gas-spot-aru-1
+                - generic [ref=e181]:
+                  - generic [ref=e182]: Natural Gas
+                  - generic [ref=e183]: US Natural Gas Spot
+                - generic [ref=e184]: "2.7937"
+                - generic [ref=e185]: "2.7987"
+                - generic [ref=e186]: "0.0050"
+                - generic [ref=e187]: +4.080%
+                - img [ref=e189]
+                - generic [ref=e196]:
+                  - generic [ref=e197]: 14.07%
+                  - generic [ref=e198]: 85.93%
+              - link "US Cocoa US Cocoa Spot 5765.1 5773.0 7.9 -0.800% 26.86% 73.14%" [ref=e199] [cursor=pointer]:
+                - /url: /hu-hu/markets/commodities/us-cocoa-spot-aru
+                - generic [ref=e201]:
+                  - generic [ref=e202]: US Cocoa
+                  - generic [ref=e203]: US Cocoa Spot
+                - generic [ref=e204]: "5765.1"
+                - generic [ref=e205]: "5773.0"
+                - generic [ref=e206]: "7.9"
+                - generic [ref=e207]: "-0.800%"
+                - img [ref=e209]
+                - generic [ref=e216]:
+                  - generic [ref=e217]: 26.86%
+                  - generic [ref=e218]: 73.14%
+              - link "LCOV2026 Brent Oil Future 84.514 84.546 0.032 +2.870% 28.28% 71.72%" [ref=e219] [cursor=pointer]:
+                - /url: /hu-hu/markets/commodities/brent-oil-future-aru-2
+                - generic [ref=e221]:
+                  - generic [ref=e222]: LCOV2026
+                  - generic [ref=e223]: Brent Oil Future
+                - generic [ref=e224]: "84.514"
+                - generic [ref=e225]: "84.546"
+                - generic [ref=e226]: "0.032"
+                - generic [ref=e227]: +2.870%
+                - img [ref=e229]
+                - generic [ref=e236]:
+                  - generic [ref=e237]: 28.28%
+                  - generic [ref=e238]: 71.72%
+              - link "Copper Copper Spot 6.68987 6.69160 0.00173 +0.600% 20.9% 79.1%" [ref=e239] [cursor=pointer]:
+                - /url: /hu-hu/markets/commodities/copper-spot-aru
+                - generic [ref=e241]:
+                  - generic [ref=e242]: Copper
+                  - generic [ref=e243]: Copper Spot
+                - generic [ref=e244]: "6.68987"
+                - generic [ref=e245]: "6.69160"
+                - generic [ref=e246]: "0.00173"
+                - generic [ref=e247]: +0.600%
+                - img [ref=e249]
+                - generic [ref=e256]:
+                  - generic [ref=e257]: 20.9%
+                  - generic [ref=e258]: 79.1%
+              - link "CLU2026 Crude Oil Future 79.070 79.100 0.030 +2.620% 41.38% 58.62%" [ref=e259] [cursor=pointer]:
+                - /url: /hu-hu/markets/commodities/crude-oil-future-aru-2
+                - generic [ref=e261]:
+                  - generic [ref=e262]: CLU2026
+                  - generic [ref=e263]: Crude Oil Future
+                - generic [ref=e264]: "79.070"
+                - generic [ref=e265]: "79.100"
+                - generic [ref=e266]: "0.030"
+                - generic [ref=e267]: +2.620%
+                - img [ref=e269]
+                - generic [ref=e276]:
+                  - generic [ref=e277]: 41.38%
+                  - generic [ref=e278]: 58.62%
+              - link "GCZ2026 Gold Future 4406.15 4406.85 0.70 +0.140% 55.56% 44.44%" [ref=e279] [cursor=pointer]:
+                - /url: /hu-hu/markets/commodities/gold-future-aru-1
+                - generic [ref=e281]:
+                  - generic [ref=e282]: GCZ2026
+                  - generic [ref=e283]: Gold Future
+                - generic [ref=e284]: "4406.15"
+                - generic [ref=e285]: "4406.85"
+                - generic [ref=e286]: "0.70"
+                - generic [ref=e287]: +0.140%
+                - img [ref=e289]
+                - generic [ref=e296]:
+                  - generic [ref=e297]: 55.56%
+                  - generic [ref=e298]: 44.44%
+          - generic [ref=e299]: A részvényárak tájékoztató jellegűek, és eltérhetnek a piaci áraktól.
+        - navigation "pagination" [ref=e301]:
+          - link "1":
+            - /url: /hu-hu/markets/commodities?page=1
+          - link "2" [ref=e302] [cursor=pointer]:
+            - /url: /hu-hu/markets/commodities?page=2
+          - link "3" [ref=e303] [cursor=pointer]:
+            - /url: /hu-hu/markets/commodities?page=3
+          - generic [ref=e304]: ...
+          - link "7" [ref=e305] [cursor=pointer]:
+            - /url: /hu-hu/markets/commodities?page=7
+          - link "8" [ref=e306] [cursor=pointer]:
+            - /url: /hu-hu/markets/commodities?page=8
+          - link "Go to the next page" [ref=e307] [cursor=pointer]:
+            - /url: /hu-hu/markets/commodities?page=2
+      - generic [ref=e309]:
+        - heading "Minden fiókba beépítve" [level=2] [ref=e311]
+        - generic [ref=e312]:
+          - generic [ref=e314]:
+            - heading "Minden adatpont egy helyen" [level=3] [ref=e315]
+            - paragraph [ref=e317]: Piaci adatok, elemzőeszközök és portfóliókontextus. Kereskedésre szabva, nem egyszeri tranzakciókra.
+            - link "Webes platform felfedezése" [ref=e318] [cursor=pointer]:
+              - /url: /hu-hu/trading-platforms/web-platform
+              - generic [ref=e319]: Webes platform felfedezése
+          - generic [ref=e321]:
+            - heading "Világos költségek, teljes rálátás" [level=3] [ref=e322]
+            - paragraph [ref=e324]: Átlátható árrések, rejtett költségek nélkül. Világos költségstruktúra, mielőtt elkötelezi magát.
+            - link "Ugrás az Árazáshoz" [ref=e325] [cursor=pointer]:
+              - /url: /hu-hu/ways-to-trade/fees-and-charges
+              - generic [ref=e326]: Ugrás az Árazáshoz
+          - generic [ref=e328]:
+            - heading "TradingView és MT4/MT5" [level=3] [ref=e329]
+            - paragraph [ref=e331]: A megszokott eszközök, a Capital.com árazásával és támogatásával.
+            - link "Ugrás a Platformokhoz" [ref=e332] [cursor=pointer]:
+              - /url: /hu-hu/trading-platforms
+              - generic [ref=e333]: Ugrás a Platformokhoz
+          - generic [ref=e335]:
+            - heading "Globális sztenderdek, helyi kiszolgálás" [level=3] [ref=e336]
+            - paragraph [ref=e338]: Öt joghatóság alatt szabályozva. Helyi támogatás az Ön nyelvén.
+          - generic [ref=e340]:
+            - heading "65+ árupiaci CFD" [level=3] [ref=e341]
+            - paragraph [ref=e343]: Ahol az ellátási láncok, a betakarítás és a geopolitika alakítják az árakat. Nem a jegybankok.
+          - generic [ref=e345]:
+            - heading "Beépített elemzési és kockázatkezelési eszközök" [level=3] [ref=e346]
+            - paragraph [ref=e348]: AI-asszisztens és elemzőeszközök pozíciónyitás előtt. Stop-loss* és take-profit megbízások végig.
+      - paragraph [ref=e352]: "*A stop-loss megbízások nem garantáltak. Garantált stop-loss megbízások elérhetők, de teljesülés esetén díjat számítunk fel."
+      - generic [ref=e353]:
+        - generic [ref=e355]:
+          - heading "Felhasználói visszajelzések és értékelések" [level=2] [ref=e356]
+          - generic [ref=e357]:
+            - text: Olvassa el ügyfeleink visszajelzéseit
+            - superscript [ref=e358]: "1"
+            - text: ", függetlenül a tapasztalati szintjüktől."
+        - generic [ref=e359]:
+          - region [ref=e360]:
+            - generic [ref=e362]:
+              - group [ref=e363]:
+                - link [ref=e364] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e367]: 2023-01-30
+                  - strong [ref=e368]: G****
+                  - paragraph [ref=e370]: Érthető weboldal,egyszerű kezelés
+              - group [ref=e372]:
+                - link [ref=e373] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e376]: 2022-09-10
+                  - strong [ref=e377]: A*****
+                  - paragraph [ref=e379]: Nagyon pozitív. Nagyon tetszik. Nagyon jók a tapasztalataim, ajánlom mindenkinek.sztalatai és könnyen kezelhető oldal. Ajánlom mindenkinek.
+              - group [ref=e381]:
+                - link [ref=e382] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e385]: 2024-07-09
+                  - strong [ref=e386]: T**** N***
+                  - paragraph [ref=e388]: Szeintem nagyon felhasználó barát platform, főleg a legutóbbi frissítés óta. Szinte mindent tud. Viszont az megnehezíti a dolgot, hogy amikor a charton az egérrel a st-t vagy a tp-t akarom húzni, félúton vissza ugrik a kiindulási pontba. Ezt javíthatnák.
+              - group [ref=e390]:
+                - link [ref=e391] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e394]: 2023-04-18
+                  - strong [ref=e395]: L***** M****
+                  - paragraph [ref=e397]: Nagyon jó! Könnyű használni, felhasználó barát! Tetszik a demo fiók lehetősége és, hogy vannak oktató videók is!
+              - group [ref=e399]:
+                - link [ref=e400] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e403]: 2024-01-24
+                  - strong [ref=e404]: I*****
+                  - paragraph [ref=e406]: Fejlesztő készséggel és korrekt munkatársakkal dolgozik a cég és rugalmas segítőkész úgy tapasztaltam ezt
+              - group [ref=e408]:
+                - link [ref=e409] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e412]: 2024-01-24
+                  - strong [ref=e413]: S********* D****
+                  - paragraph [ref=e415]: Pénzt jó vele kereskedni
+              - group [ref=e417]:
+                - link [ref=e418] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e421]: 2022-09-10
+                  - strong [ref=e422]: A****
+                  - paragraph [ref=e424]: Nagyon pozitív. Nagyon tetszik. Nagyon jók a tapasztalataim, ajánlom mindenkinek.sztalatai és könnyen kezelhető oldal. Ajánlom mindenkinek.
+              - group [ref=e426]:
+                - link [ref=e427] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e430]: 2024-10-24
+                  - strong [ref=e431]: Z****** B*****
+                  - paragraph [ref=e433]: Szerintem nagyon frappáns applikáció. Nagyon sok mindent tudtam meg az árfolyamokról vagy a cégeknek a pénzbeviteleikről is. A legjobban visszonyt az egyszerűség tetszik benne. Szerintem már túlságosan is egyszerű. De ettől függetlenül 5 csillag.
+              - group [ref=e435]:
+                - link [ref=e436] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e439]: 2024-02-05
+                  - strong [ref=e440]: A*** P*****
+                  - paragraph [ref=e442]: A befegtetés jó könnyi portfóliója bő megkapod a pénzt demóban nem te ha rendesen akkor igen
+              - group [ref=e444]:
+                - link [ref=e445] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e448]: 2024-02-14
+                  - strong [ref=e449]: T**** B***
+                  - paragraph [ref=e451]: Átlátható, részletes. Legjobb!Nagyon pozitív. Nagyon tetszik. Nagyon jók a tapasztalataim, ajánlom mindenkinek.sztalatai és könnyen kezelhető oldal. Ajánlom mindenkinek.
+              - group [ref=e453]:
+                - link [ref=e454] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e457]: 2023-08-06
+                  - strong [ref=e458]: T****
+                  - paragraph [ref=e460]: Egy jó app. Ajánlani tudom.
+              - group "1 of 11" [ref=e462]:
+                - link "2023-01-30 G**** Érthető weboldal,egyszerű kezelés" [ref=e463] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e466]: 2023-01-30
+                  - strong [ref=e467]: G****
+                  - paragraph [ref=e469]: Érthető weboldal,egyszerű kezelés
+              - group "2 of 11" [ref=e471]:
+                - link "2022-09-10 A***** Nagyon pozitív. Nagyon tetszik. Nagyon jók a tapasztalataim, ajánlom mindenkinek.sztalatai és könnyen kezelhető oldal. Ajánlom mindenkinek." [ref=e472] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e475]: 2022-09-10
+                  - strong [ref=e476]: A*****
+                  - paragraph [ref=e478]: Nagyon pozitív. Nagyon tetszik. Nagyon jók a tapasztalataim, ajánlom mindenkinek.sztalatai és könnyen kezelhető oldal. Ajánlom mindenkinek.
+              - group "3 of 11" [ref=e480]:
+                - link "2024-07-09 T**** N*** Szeintem nagyon felhasználó barát platform, főleg a legutóbbi frissítés óta. Szinte mindent tud. Viszont az megnehezíti a dolgot, hogy amikor a charton az egérrel a st-t vagy a tp-t akarom húzni, félúton vissza ugrik a kiindulási pontba. Ezt javíthatnák." [ref=e481] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=669727ba-ef5e-4ddc-a25e-a6ba9ba1a85a&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                  - generic [ref=e484]: 2024-07-09
+                  - strong [ref=e485]: T**** N***
+                  - paragraph [ref=e487]: Szeintem nagyon felhasználó barát platform, főleg a legutóbbi frissítés óta. Szinte mindent tud. Viszont az megnehezíti a dolgot, hogy amikor a charton az egérrel a st-t vagy a tp-t akarom húzni, félúton vissza ugrik a kiindulási pontba. Ezt javíthatnák.
+              - group [ref=e489]:
+                - link [ref=e490] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=669727ba-ef5e-4ddc-a25e-a6ba9ba1a85a&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                  - generic [ref=e493]: 2023-04-18
+                  - strong [ref=e494]: L***** M****
+                  - paragraph [ref=e496]: Nagyon jó! Könnyű használni, felhasználó barát! Tetszik a demo fiók lehetősége és, hogy vannak oktató videók is!
+              - group [ref=e498]:
+                - link [ref=e499] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e502]: 2024-01-24
+                  - strong [ref=e503]: I*****
+                  - paragraph [ref=e505]: Fejlesztő készséggel és korrekt munkatársakkal dolgozik a cég és rugalmas segítőkész úgy tapasztaltam ezt
+              - group [ref=e507]:
+                - link [ref=e508] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e511]: 2024-01-24
+                  - strong [ref=e512]: S********* D****
+                  - paragraph [ref=e514]: Pénzt jó vele kereskedni
+              - group [ref=e516]:
+                - link [ref=e517] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e520]: 2022-09-10
+                  - strong [ref=e521]: A****
+                  - paragraph [ref=e523]: Nagyon pozitív. Nagyon tetszik. Nagyon jók a tapasztalataim, ajánlom mindenkinek.sztalatai és könnyen kezelhető oldal. Ajánlom mindenkinek.
+              - group [ref=e525]:
+                - link [ref=e526] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e529]: 2024-10-24
+                  - strong [ref=e530]: Z****** B*****
+                  - paragraph [ref=e532]: Szerintem nagyon frappáns applikáció. Nagyon sok mindent tudtam meg az árfolyamokról vagy a cégeknek a pénzbeviteleikről is. A legjobban visszonyt az egyszerűség tetszik benne. Szerintem már túlságosan is egyszerű. De ettől függetlenül 5 csillag.
+              - group [ref=e534]:
+                - link [ref=e535] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e538]: 2024-02-05
+                  - strong [ref=e539]: A*** P*****
+                  - paragraph [ref=e541]: A befegtetés jó könnyi portfóliója bő megkapod a pénzt demóban nem te ha rendesen akkor igen
+              - group [ref=e543]:
+                - link [ref=e544] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e547]: 2024-02-14
+                  - strong [ref=e548]: T**** B***
+                  - paragraph [ref=e550]: Átlátható, részletes. Legjobb!Nagyon pozitív. Nagyon tetszik. Nagyon jók a tapasztalataim, ajánlom mindenkinek.sztalatai és könnyen kezelhető oldal. Ajánlom mindenkinek.
+              - group [ref=e552]:
+                - link [ref=e553] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e556]: 2023-08-06
+                  - strong [ref=e557]: T****
+                  - paragraph [ref=e559]: Egy jó app. Ajánlani tudom.
+              - group [ref=e561]:
+                - link [ref=e562] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e565]: 2023-01-30
+                  - strong [ref=e566]: G****
+                  - paragraph [ref=e568]: Érthető weboldal,egyszerű kezelés
+              - group [ref=e570]:
+                - link [ref=e571] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e574]: 2022-09-10
+                  - strong [ref=e575]: A*****
+                  - paragraph [ref=e577]: Nagyon pozitív. Nagyon tetszik. Nagyon jók a tapasztalataim, ajánlom mindenkinek.sztalatai és könnyen kezelhető oldal. Ajánlom mindenkinek.
+              - group [ref=e579]:
+                - link [ref=e580] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e583]: 2024-07-09
+                  - strong [ref=e584]: T**** N***
+                  - paragraph [ref=e586]: Szeintem nagyon felhasználó barát platform, főleg a legutóbbi frissítés óta. Szinte mindent tud. Viszont az megnehezíti a dolgot, hogy amikor a charton az egérrel a st-t vagy a tp-t akarom húzni, félúton vissza ugrik a kiindulási pontba. Ezt javíthatnák.
+              - group [ref=e588]:
+                - link [ref=e589] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e592]: 2023-04-18
+                  - strong [ref=e593]: L***** M****
+                  - paragraph [ref=e595]: Nagyon jó! Könnyű használni, felhasználó barát! Tetszik a demo fiók lehetősége és, hogy vannak oktató videók is!
+              - group [ref=e597]:
+                - link [ref=e598] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e601]: 2024-01-24
+                  - strong [ref=e602]: I*****
+                  - paragraph [ref=e604]: Fejlesztő készséggel és korrekt munkatársakkal dolgozik a cég és rugalmas segítőkész úgy tapasztaltam ezt
+              - group [ref=e606]:
+                - link [ref=e607] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e610]: 2024-01-24
+                  - strong [ref=e611]: S********* D****
+                  - paragraph [ref=e613]: Pénzt jó vele kereskedni
+              - group [ref=e615]:
+                - link [ref=e616] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e619]: 2022-09-10
+                  - strong [ref=e620]: A****
+                  - paragraph [ref=e622]: Nagyon pozitív. Nagyon tetszik. Nagyon jók a tapasztalataim, ajánlom mindenkinek.sztalatai és könnyen kezelhető oldal. Ajánlom mindenkinek.
+              - group [ref=e624]:
+                - link [ref=e625] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e628]: 2024-10-24
+                  - strong [ref=e629]: Z****** B*****
+                  - paragraph [ref=e631]: Szerintem nagyon frappáns applikáció. Nagyon sok mindent tudtam meg az árfolyamokról vagy a cégeknek a pénzbeviteleikről is. A legjobban visszonyt az egyszerűség tetszik benne. Szerintem már túlságosan is egyszerű. De ettől függetlenül 5 csillag.
+              - group [ref=e633]:
+                - link [ref=e634] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e637]: 2024-02-05
+                  - strong [ref=e638]: A*** P*****
+                  - paragraph [ref=e640]: A befegtetés jó könnyi portfóliója bő megkapod a pénzt demóban nem te ha rendesen akkor igen
+              - group [ref=e642]:
+                - link [ref=e643] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e646]: 2024-02-14
+                  - strong [ref=e647]: T**** B***
+                  - paragraph [ref=e649]: Átlátható, részletes. Legjobb!Nagyon pozitív. Nagyon tetszik. Nagyon jók a tapasztalataim, ajánlom mindenkinek.sztalatai és könnyen kezelhető oldal. Ajánlom mindenkinek.
+              - group [ref=e651]:
+                - link [ref=e652] [cursor=pointer]:
+                  - /url: https://www.trustpilot.com/review/capital.com
+                  - generic [ref=e655]: 2023-08-06
+                  - strong [ref=e656]: T****
+                  - paragraph [ref=e658]: Egy jó app. Ajánlani tudom.
+            - generic:
+              - button "Go to last slide" [ref=e660] [cursor=pointer]
+              - button "Next slide" [ref=e661] [cursor=pointer]
+          - paragraph [ref=e662]: 4 és 5 csillagos értékeléseink mutatása. A felhasználók pontos adatai szándékosan lettek titkosítva, hogy megvédjük magánszférájukat az ÁAR rendelkezéseivel összhangban.
+        - generic [ref=e664]:
+          - link "4.6" [ref=e665] [cursor=pointer]:
+            - /url: https://www.tradingview.com/broker/Capitalcom/
+            - strong [ref=e668]: "4.6"
+          - link "Értékelések és áttekintések 4.7" [ref=e671] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/id1230088754?cp_device_id=669727ba-ef5e-4ddc-a25e-a6ba9ba1a85a&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+            - strong [ref=e673]: Értékelések és áttekintések
+            - strong [ref=e675]: "4.7"
+          - link "Értékelések és áttekintések 4.6" [ref=e678] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=669727ba-ef5e-4ddc-a25e-a6ba9ba1a85a&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+            - strong [ref=e680]: Értékelések és áttekintések
+            - strong [ref=e682]: "4.6"
+          - link "4.6" [ref=e685] [cursor=pointer]:
+            - /url: https://www.trustpilot.com/review/capital.com
+            - strong [ref=e688]: "4.6"
+      - heading "Árupiaci GYIK" [level=2] [ref=e693]
+      - generic [ref=e695]:
+        - group [ref=e696]:
+          - generic "Hogyan működik az árupiaci kereskedés" [ref=e697] [cursor=pointer]:
+            - heading "Hogyan működik az árupiaci kereskedés" [level=3] [ref=e698]
+        - group [ref=e699]:
+          - generic "Mit kínálnak az árupiacok" [ref=e700] [cursor=pointer]:
+            - heading "Mit kínálnak az árupiacok" [level=3] [ref=e701]
+        - group [ref=e702]:
+          - generic "Árupiaci kereskedés a Capital.com-on" [ref=e703] [cursor=pointer]:
+            - heading "Árupiaci kereskedés a Capital.com-on" [level=3] [ref=e704]
+      - paragraph [ref=e708]:
+        - superscript [ref=e709]: "1"
+        - text: A megjelenített információk a Capital Com Groupra vonatkoznak.
+  - contentinfo [ref=e711]:
+    - generic [ref=e712]:
+      - link [ref=e713] [cursor=pointer]:
+        - /url: /hu-hu
+        - img [ref=e714]
+      - generic [ref=e718]:
+        - link [ref=e719] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/capital.com/
+        - link [ref=e720] [cursor=pointer]:
+          - /url: https://www.youtube.com/@Capitaltrading/videos
+      - generic [ref=e721]:
+        - link [ref=e722] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/id1230088754?cp_device_id=669727ba-ef5e-4ddc-a25e-a6ba9ba1a85a&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e723] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=669727ba-ef5e-4ddc-a25e-a6ba9ba1a85a&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e724] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading.huawei-huawei?cp_device_id=669727ba-ef5e-4ddc-a25e-a6ba9ba1a85a&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+    - generic [ref=e725]:
+      - generic [ref=e726]:
+        - generic [ref=e727]:
+          - generic [ref=e728]:
+            - generic [ref=e729]: "Ország / Régió:"
+            - button "Hungary" [ref=e730] [cursor=pointer]:
+              - generic [ref=e732]: Hungary
+          - generic [ref=e733]: •
+          - generic [ref=e734]:
+            - generic [ref=e735]: "Nyelv:"
+            - button "Hungarian" [ref=e736] [cursor=pointer]:
+              - generic [ref=e737]: Hungarian
+        - generic [ref=e738]:
+          - generic [ref=e739]: "Felveheti velünk a kapcsolatot:"
+          - link "+357 25123646" [ref=e742] [cursor=pointer]:
+            - /url: tel:+357 25123646
+            - strong [ref=e743]: +357 25123646
+            - strong
+          - generic [ref=e744]: •
+          - link "support@capital.com" [ref=e746] [cursor=pointer]:
+            - /url: mailto:support@capital.com
+            - strong [ref=e747]: support@capital.com
+      - generic [ref=e748]:
+        - generic [ref=e749]:
+          - strong [ref=e751]: Kereskedés
+          - generic [ref=e752]:
+            - generic [ref=e753]:
+              - generic [ref=e754]: Kereskedés
+              - generic [ref=e755]:
+                - link "CFD-kereskedés" [ref=e757] [cursor=pointer]:
+                  - /url: /hu-hu/ways-to-trade/cfd-trading
+                - link "Knock-out-kereskedés" [ref=e759] [cursor=pointer]:
+                  - /url: /hu-hu/ways-to-trade/knock-outs
+                - link "Próbafiók" [ref=e761] [cursor=pointer]:
+                  - /url: /hu-hu/trading-platforms/demo-account
+                - link "Pro fiók" [ref=e763] [cursor=pointer]:
+                  - /url: /hu-hu/professional-clients
+            - generic [ref=e764]:
+              - generic [ref=e765]: Kereskedési platformok
+              - generic [ref=e766]:
+                - link "Webes platform" [ref=e768] [cursor=pointer]:
+                  - /url: /hu-hu/trading-platforms/web-platform
+                - link "Mobilalkalmazás" [ref=e770] [cursor=pointer]:
+                  - /url: /hu-hu/trading-platforms/mobile-apps
+                - link "TradingView" [ref=e772] [cursor=pointer]:
+                  - /url: /hu-hu/trading-platforms/trading-view
+                - link "MT4" [ref=e774] [cursor=pointer]:
+                  - /url: /hu-hu/trading-platforms/mt4
+                - link "MT5" [ref=e776] [cursor=pointer]:
+                  - /url: /hu-hu/trading-platforms/mt5
+            - generic [ref=e777]:
+              - generic [ref=e778]: Tanuljon
+              - generic [ref=e779]:
+                - link "Kereskedési stratégiák" [ref=e781] [cursor=pointer]:
+                  - /url: /hu-hu/learn/trading-strategies
+                - link "Technikai elemzés" [ref=e783] [cursor=pointer]:
+                  - /url: /hu-hu/learn/technical-analysis
+                - link "Kereskedési pszichológia" [ref=e785] [cursor=pointer]:
+                  - /url: /hu-hu/learn/trading-psychology
+                - link "Tanuljon" [ref=e787] [cursor=pointer]:
+                  - /url: /hu-hu/learn
+        - generic [ref=e788]:
+          - strong [ref=e790]: Piacok
+          - generic [ref=e791]:
+            - generic [ref=e792]:
+              - generic [ref=e793]: Piacaink
+              - generic [ref=e794]:
+                - link "Piacok" [ref=e796] [cursor=pointer]:
+                  - /url: /hu-hu/markets
+                - link "Deviza" [ref=e798] [cursor=pointer]:
+                  - /url: /hu-hu/markets/forex
+                - link "Részvények" [ref=e800] [cursor=pointer]:
+                  - /url: /hu-hu/markets/shares
+                - link "Indexek" [ref=e802] [cursor=pointer]:
+                  - /url: /hu-hu/markets/indices
+                - link "Árucikkek" [ref=e804] [cursor=pointer]:
+                  - /url: /hu-hu/markets/commodities
+                - link "Kriptovaluták" [ref=e806] [cursor=pointer]:
+                  - /url: /hu-hu/markets/cryptocurrencies
+                - link "Kötvények" [ref=e808] [cursor=pointer]:
+                  - /url: /hu-hu/markets/bonds
+                - link "Kamatlábak" [ref=e810] [cursor=pointer]:
+                  - /url: /hu-hu/markets/interest-rates
+            - generic [ref=e811]:
+              - generic [ref=e812]: Piaci információk
+              - generic [ref=e813]:
+                - link "Piaci elemzés" [ref=e815] [cursor=pointer]:
+                  - /url: /hu-hu/analysis
+                - link "Piacok árazása" [ref=e817] [cursor=pointer]:
+                  - /url: /hu-hu/about-us/how-our-markets-are-priced
+        - link "Árazás" [ref=e820] [cursor=pointer]:
+          - /url: /hu-hu/ways-to-trade/fees-and-charges
+          - strong [ref=e821]: Árazás
+        - generic [ref=e822]:
+          - strong [ref=e824]: Rólunk
+          - generic [ref=e825]:
+            - generic [ref=e826]:
+              - generic [ref=e827]: Rólunk
+              - generic [ref=e828]:
+                - link "Rólunk" [ref=e830] [cursor=pointer]:
+                  - /url: /hu-hu/about-us
+                - link "Irodáink" [ref=e832] [cursor=pointer]:
+                  - /url: /hu-hu/about-us/our-offices
+                - link "Biztonságos a capital.com?" [ref=e834] [cursor=pointer]:
+                  - /url: /hu-hu/security-measures
+                - link "Üzleti modellünk" [ref=e836] [cursor=pointer]:
+                  - /url: /hu-hu/about-us/how-capital-makes-money
+            - generic [ref=e837]:
+              - generic [ref=e838]: Dolgozzon velünk
+              - link "Karrier" [ref=e841] [cursor=pointer]:
+                - /url: /hu-hu/about-us/careers
+            - generic [ref=e842]:
+              - generic [ref=e843]: Segítség
+              - generic [ref=e844]:
+                - link "Súgóközpont" [ref=e846] [cursor=pointer]:
+                  - /url: /hu-hu/help
+                - link "Ügyfél-sebezhetőség" [ref=e848] [cursor=pointer]:
+                  - /url: /hu-hu/help/client-vulnerability
+                - link "Kapcsolat" [ref=e850] [cursor=pointer]:
+                  - /url: /hu-hu/contact-us
+            - generic [ref=e851]:
+              - generic [ref=e852]: Jogi dokumentumok
+              - generic [ref=e853]:
+                - link "Feltételek és szabályzatok" [ref=e855] [cursor=pointer]:
+                  - /url: /hu-hu/terms-and-policies
+                - link "Panaszkezelési eljárás - Capital Com Group Ltd" [ref=e857] [cursor=pointer]:
+                  - /url: /hu-hu/terms-and-policies/complaints-procedure-cceu
+                - link "Panasztételi eljárás - Capital Com SV Investments Limited" [ref=e859] [cursor=pointer]:
+                  - /url: /hu-hu/terms-and-policies/complaints-procedure
+                - 'link "Megfelelőség és jogi kérdések: CFD-kereskedés" [ref=e861] [cursor=pointer]':
+                  - /url: /hu-hu/terms-and-policies/compliance-and-legals
+    - generic [ref=e863]:
+      - paragraph [ref=e864]:
+        - text: "Capital Com SV Investments Limited:"
+        - text: A CFD-k összetett eszközök, és a tőkeáttétel miatt nagy a kockázata a gyors pénzvesztésnek.
+        - generic [ref=e865]:
+          - generic [ref=e866]:
+            - strong [ref=e867]: A lakossági befektetők 74%-a veszít pénzt a CFD-kereskedés során ennél a szolgáltatónál.
+            - text: .
+          - text: Fontolja meg, hogy tisztában van-e a CFD-k működésével, és hogy megengedheti-e magának, hogy vállalja a pénzvesztés magas kockázatát. Kérjük, tekintse meg
+          - link "Kockázatfeltáró nyilatkozatunkat" [ref=e868] [cursor=pointer]:
+            - /url: https://capital.com/risk-disclosure-policy
+      - paragraph [ref=e869]:
+        - text: "Capital Com Group Ltd:"
+        - text: A CFD-k összetett eszközök, és a tőkeáttétel miatt magas a kockázata annak, hogy gyorsan pénzt veszít.
+        - strong [ref=e870]: A lakossági befektetői fiókok 74-89%-a veszít pénzt, amikor CFD-kkel kereskedik
+        - text: . Fontolja meg, hogy érti-e, hogyan működnek a CFD-k, és megengedheti-e magának a pénzvesztés magas kockázatát.
+        - generic [ref=e871]:
+          - text: Kérjük, tekintse meg
+          - link "Kockázatfeltáró nyilatkozatunkat" [ref=e872] [cursor=pointer]:
+            - /url: https://capital.com/risk-disclosure-policy-cceu
+      - paragraph [ref=e873]:
+        - text: "Kockázati figyelmeztetés: A részvények és ETF-ek értéke, amelyeket egy részvénykereskedési fiókon keresztül vásárol, csökkenhet vagy nőhet, ami azt jelentheti, hogy kevesebbet kap vissza, mint amennyit eredetileg befektetett. A múltbeli teljesítmény nem jelent garanciát a jövőbeli eredményekre."
+        - text: A nem teljesíthető, tőzsdén kívüli eszközökkel – mint például knock-out opciók és CFD-k – végzett tranzakciók összetett pénzügyi termékek, amelyek az összes befektetett tőke elvesztésének magas kockázatát hordozzák. Ezek a termékek nem minden befektető számára megfelelőek, mivel jelentős nyereséget, de veszteséget is okozhatnak. Mielőtt ilyen típusú kereskedésbe kezdene, gondosan mérlegelnie kell, hogy érti-e, hogyan működnek ezek az eszközök, és megengedheti-e magának, hogy vállalja a pénze elvesztésének magas kockázatát.
+        - text: A szakmai ügyfelek esetében fennáll a kockázata annak, hogy az eredeti betétnél többet veszítenek. A weboldalon található információk általános jellegűek, nem veszik figyelembe az Ön pénzügyi helyzetét, céljait vagy szükségleteit. Kérjük, tekintse át jogi dokumentumainkat, és győződjön meg róla, hogy teljes mértékben megérti a kockázatokat, mielőtt bármilyen kereskedési döntést hozna. Javasoljuk, hogy használja cégünk képzési szolgáltatásait a kockázatok jobb megértése érdekében, mielőtt kereskedésbe kezdene.
+      - paragraph [ref=e874]: "A Capital Com SV Investments Limited egy Cipruson bejegyzett vállalat, amely a HE 354252 cégjegyzékszám alatt van bejegyezve, és amelyet a Ciprusi Értékpapír- és Tőzsdebizottság hagyott jóvá és szabályoz a 319/17 engedélyszám alatt. Bejegyzett székhely: Vasileiou Makedonos 8, Kinnis Üzletközpont, 2. emelet, 3040, Limassol, Ciprus."
+      - paragraph [ref=e875]: "Capital Com Group Ltd egy Cipruson bejegyzett vállalat, amely a ΗΕ 446198 cégjegyzékszám alatt van bejegyezve, és amelyet a Ciprusi Értékpapír- és Tőzsdebizottság hagyott jóvá és szabályoz a 463/25 engedélyszám alatt. Bejegyzett székhely: Vasileiou Makedonos 8, Kinnis Üzletközpont, 2. emelet, 3040, Limassol, Ciprus."
+      - paragraph [ref=e876]: A jelen oldalon található információk nem az Egyesült Államok, Kanada és Belgium vagy az EGT-n kívül eső bármely ország lakosainak szólnak, és nem megosztásra vagy használatra szolgálnak bármilyen személy által bármely országból vagy joghatóságból, ahol a megosztás vagy használat sértené a helyi jogszabályokat.
+    - generic [ref=e877]:
+      - paragraph [ref=e878]: © 2026 Capital Com SV Investments Limited
+      - generic [ref=e879]:
+        - link "Oldaltérkép" [ref=e880] [cursor=pointer]:
+          - /url: /hu-hu/sitemap
+        - link "Süti beállítások" [ref=e881] [cursor=pointer]:
+          - /url: ""
+        - link "Szabályozás" [ref=e882] [cursor=pointer]:
+          - /url: /hu-hu/terms-and-policies/regulations
+        - link "Felhasználási feltételek" [ref=e883] [cursor=pointer]:
+          - /url: /hu-hu/terms-and-policies
+        - link "Panasztételi eljárás" [ref=e884] [cursor=pointer]:
+          - /url: /hu-hu/terms-and-policies/complaints-procedures
+  - generic [ref=e887]:
+    - generic [ref=e888]:
+      - 'heading "Üdv! Úgy tűnik, hogy itt tartózkodik: United States of America" [level=3] [ref=e890]'
+      - paragraph [ref=e891]: "A weboldalon feltüntetett termékek és szolgáltatások nem érhetők el itt: United States of America."
+    - button "Maradok itt" [ref=e893] [cursor=pointer]
+  - button [ref=e894] [cursor=pointer]
+  - dialog "Cookie banner" [ref=e896]:
+    - generic [ref=e897]:
+      - paragraph [ref=e899]:
+        - text: We use cookies to enhance site navigation, personalise content and ads, and analyse site usage. You can change your cookie settings at any time. For more information, please see our
+        - link "More information about your privacy, opens in a new tab" [active] [ref=e900] [cursor=pointer]:
+          - /url: https://capital.com/cookies-policy-hu
+          - text: Cookie Policy
+        - text: .
+      - generic [ref=e901]:
+        - button "Reject all" [ref=e902] [cursor=pointer]
+        - button "Allow all cookies" [ref=e903] [cursor=pointer]
+        - button "Cookie settings" [ref=e904] [cursor=pointer]
+  - alert [ref=e905]
+```

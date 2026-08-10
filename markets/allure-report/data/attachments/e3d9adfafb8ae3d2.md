@@ -1,0 +1,613 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: cta/generated.cta.spec.js >> bonds page | tradingInstrument | viewDetailedChartBtn
+- Location: tests/cta/generated.cta.spec.js:40:7
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e7]:
+      - text: 差價合約 (CFD) 是一種複雜的金融工具，利用槓桿交易雖然可能放大收益，但同樣也會加劇虧損風險，導致資金快速流失。
+      - generic [ref=e8]:
+        - text: 數據顯示，
+        - strong [ref=e9]: 79.75% 的散戶投資者在使用該提供商服務進行差價合約交易時出現帳戶虧損。
+        - text: 在進行交易之前，請確保您充分了解差價合約的運作機制，並仔細評估自己是否有能力承擔資金虧損的高風險。
+    - generic [ref=e11]:
+      - link [ref=e12] [cursor=pointer]:
+        - /url: /zh-hant
+        - img [ref=e13]
+      - generic [ref=e18]:
+        - navigation [ref=e19]:
+          - button "交易" [ref=e20]:
+            - button "交易" [ref=e21]:
+              - generic [ref=e22]: 交易
+          - button "市場" [ref=e23]:
+            - button "市場" [ref=e24]:
+              - generic [ref=e25]: 市場
+          - link "定價" [ref=e28] [cursor=pointer]:
+            - /url: /zh-hant/ways-to-trade/fees-and-charges
+          - button "關於我們" [ref=e29]:
+            - button "關於我們" [ref=e30]:
+              - generic [ref=e31]: 關於我們
+        - button "zh" [ref=e32] [cursor=pointer]:
+          - generic [ref=e34]: zh
+      - generic [ref=e36]:
+        - button "登入" [ref=e37] [cursor=pointer]: 登入
+        - button "開設賬戶" [ref=e38] [cursor=pointer]: 開設賬戶
+  - generic [ref=e39]:
+    - paragraph [ref=e42]:
+      - generic [ref=e43]:
+        - link "首頁" [ref=e44] [cursor=pointer]:
+          - /url: /zh-hant
+        - text: •
+      - generic [ref=e45]:
+        - link "市場" [ref=e46] [cursor=pointer]:
+          - /url: /zh-hant/markets
+        - text: •
+      - text: 債券
+    - generic [ref=e47]:
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - heading "債券與債券期貨交易" [level=1] [ref=e53]
+          - paragraph [ref=e55]: 覆蓋主要經濟體的政府債券和公司債券。 以透明點差交易債券差價合約，並使用 100+ 種分析工具。
+          - button "探索債券交易" [ref=e58] [cursor=pointer]
+        - img "laptop" [ref=e61]
+      - generic [ref=e63]:
+        - heading "我們的債券和債券期貨市場" [level=2] [ref=e65]
+        - generic [ref=e66]:
+          - separator [ref=e67]
+          - generic [ref=e68]:
+            - generic [ref=e69]:
+              - button [ref=e72]:
+                - textbox "marketlist_search" [ref=e74]:
+                  - /placeholder: Search
+              - generic [ref=e75]: 賣出
+              - generic [ref=e76]: 買入
+              - generic [ref=e77]: 點差
+              - generic [ref=e78]: 1日變動，
+              - generic [ref=e79]: 1日圖表
+              - generic [ref=e80]:
+                - generic [ref=e81]: 賣方
+                - generic [ref=e82]: 買方
+            - generic [ref=e83]:
+              - link "US US Treasury Bond Spot 109.09 109.15 0.06 +0.020% 13.46% 86.54%" [ref=e84] [cursor=pointer]:
+                - /url: /zh-hant/markets/bonds/us-treasury-bond-spot
+                - generic [ref=e86]:
+                  - generic [ref=e87]: US
+                  - generic [ref=e88]: US Treasury Bond Spot
+                - generic [ref=e89]: "109.09"
+                - generic [ref=e90]: "109.15"
+                - generic [ref=e91]: "0.06"
+                - generic [ref=e92]: +0.020%
+                - img [ref=e94]
+                - generic [ref=e101]:
+                  - generic [ref=e102]: 13.46%
+                  - generic [ref=e103]: 86.54%
+              - link "USU2026 US Treasury Bond Future 109.46 109.52 0.06 +0.030% 11.11% 88.89%" [ref=e104] [cursor=pointer]:
+                - /url: /zh-hant/markets/bonds/us-treasury-bond-future-1
+                - generic [ref=e106]:
+                  - generic [ref=e107]: USU2026
+                  - generic [ref=e108]: US Treasury Bond Future
+                - generic [ref=e109]: "109.46"
+                - generic [ref=e110]: "109.52"
+                - generic [ref=e111]: "0.06"
+                - generic [ref=e112]: +0.030%
+                - img [ref=e114]
+                - generic [ref=e121]:
+                  - generic [ref=e122]: 11.11%
+                  - generic [ref=e123]: 88.89%
+              - link "TY US 10-Year T-Note Spot 108.42 108.48 0.06 - 15.38% 84.62%" [ref=e124] [cursor=pointer]:
+                - /url: /zh-hant/markets/bonds/us-10-year-t-note-spot
+                - generic [ref=e126]:
+                  - generic [ref=e127]: TY
+                  - generic [ref=e128]: US 10-Year T-Note Spot
+                - generic [ref=e129]: "108.42"
+                - generic [ref=e130]: "108.48"
+                - generic [ref=e131]: "0.06"
+                - generic [ref=e132]: "-"
+                - img [ref=e134]
+                - generic [ref=e141]:
+                  - generic [ref=e142]: 15.38%
+                  - generic [ref=e143]: 84.62%
+              - link "FGBXU2026 German Buxl Future 106.79 106.83 0.04 -0.110% 0% 100%" [ref=e144] [cursor=pointer]:
+                - /url: /zh-hant/markets/bonds/german-buxl-future-1
+                - generic [ref=e146]:
+                  - generic [ref=e147]: FGBXU2026
+                  - generic [ref=e148]: German Buxl Future
+                - generic [ref=e149]: "106.79"
+                - generic [ref=e150]: "106.83"
+                - generic [ref=e151]: "0.04"
+                - generic [ref=e152]: "-0.110%"
+                - img [ref=e154]
+                - generic [ref=e161]:
+                  - generic [ref=e162]: 0%
+                  - generic [ref=e163]: 100%
+              - link "FBTPU2026 Italian Long-Term BTP Future 117.13 117.18 0.05 +0.090% 0% 100%" [ref=e164] [cursor=pointer]:
+                - /url: /zh-hant/markets/bonds/italian-long-term-btp-future-1
+                - generic [ref=e166]:
+                  - generic [ref=e167]: FBTPU2026
+                  - generic [ref=e168]: Italian Long-Term BTP Future
+                - generic [ref=e169]: "117.13"
+                - generic [ref=e170]: "117.18"
+                - generic [ref=e171]: "0.05"
+                - generic [ref=e172]: +0.090%
+                - img [ref=e174]
+                - generic [ref=e181]:
+                  - generic [ref=e182]: 0%
+                  - generic [ref=e183]: 100%
+              - link "TYU2026 US 10-Year T-Note Future 108.62 108.68 0.06 +0.010% 16.67% 83.33%" [ref=e184] [cursor=pointer]:
+                - /url: /zh-hant/markets/bonds/us-10-year-t-note-future-1
+                - generic [ref=e186]:
+                  - generic [ref=e187]: TYU2026
+                  - generic [ref=e188]: US 10-Year T-Note Future
+                - generic [ref=e189]: "108.62"
+                - generic [ref=e190]: "108.68"
+                - generic [ref=e191]: "0.06"
+                - generic [ref=e192]: +0.010%
+                - img [ref=e194]
+                - generic [ref=e201]:
+                  - generic [ref=e202]: 16.67%
+                  - generic [ref=e203]: 83.33%
+              - link "FGBSU2026 German Schatz Future 105.56 105.58 0.02 -0.020% 16.67% 83.33%" [ref=e204] [cursor=pointer]:
+                - /url: /zh-hant/markets/bonds/german-schatz-future-1
+                - generic [ref=e206]:
+                  - generic [ref=e207]: FGBSU2026
+                  - generic [ref=e208]: German Schatz Future
+                - generic [ref=e209]: "105.56"
+                - generic [ref=e210]: "105.58"
+                - generic [ref=e211]: "0.02"
+                - generic [ref=e212]: "-0.020%"
+                - img [ref=e214]
+                - generic [ref=e221]:
+                  - generic [ref=e222]: 16.67%
+                  - generic [ref=e223]: 83.33%
+              - link "FLGU6 UK Long Gilt Future 87.51 87.53 0.02 - 50% 50%" [ref=e224] [cursor=pointer]:
+                - /url: /zh-hant/markets/bonds/uk-long-gilt-future-1
+                - generic [ref=e226]:
+                  - generic [ref=e227]: FLGU6
+                  - generic [ref=e228]: UK Long Gilt Future
+                - generic [ref=e229]: "87.51"
+                - generic [ref=e230]: "87.53"
+                - generic [ref=e231]: "0.02"
+                - generic [ref=e232]: "-"
+                - img [ref=e234]
+                - generic [ref=e241]:
+                  - generic [ref=e242]: 50%
+                  - generic [ref=e243]: 50%
+              - link "FOATU2026 French OAT Future 117.71 117.76 0.05 -0.080% 33.33% 66.67%" [ref=e244] [cursor=pointer]:
+                - /url: /zh-hant/markets/bonds/french-oat-future-1
+                - generic [ref=e246]:
+                  - generic [ref=e247]: FOATU2026
+                  - generic [ref=e248]: French OAT Future
+                - generic [ref=e249]: "117.71"
+                - generic [ref=e250]: "117.76"
+                - generic [ref=e251]: "0.05"
+                - generic [ref=e252]: "-0.080%"
+                - img [ref=e254]
+                - generic [ref=e261]:
+                  - generic [ref=e262]: 33.33%
+                  - generic [ref=e263]: 66.67%
+              - link "FBTSU2026 Italian Short-Term BTS Future 106.52 106.57 0.05 +0.040% 20% 80%" [ref=e264] [cursor=pointer]:
+                - /url: /zh-hant/markets/bonds/italian-short-term-bts-future-1
+                - generic [ref=e266]:
+                  - generic [ref=e267]: FBTSU2026
+                  - generic [ref=e268]: Italian Short-Term BTS Future
+                - generic [ref=e269]: "106.52"
+                - generic [ref=e270]: "106.57"
+                - generic [ref=e271]: "0.05"
+                - generic [ref=e272]: +0.040%
+                - img [ref=e274]
+                - generic [ref=e281]:
+                  - generic [ref=e282]: 20%
+                  - generic [ref=e283]: 80%
+          - generic [ref=e284]: 所示股價僅供參考，可能與實時市價存在差異。
+        - navigation "pagination" [ref=e286]:
+          - link "1":
+            - /url: /zh-hant/markets/bonds?page=1
+          - link "2" [ref=e287] [cursor=pointer]:
+            - /url: /zh-hant/markets/bonds?page=2
+          - link "Go to the next page" [ref=e288] [cursor=pointer]:
+            - /url: /zh-hant/markets/bonds?page=2
+      - generic [ref=e290]:
+        - heading "內置於每個帳戶中" [level=2] [ref=e292]
+        - generic [ref=e293]:
+          - generic [ref=e295]:
+            - heading "所有數據，集中一處" [level=3] [ref=e296]
+            - paragraph [ref=e298]: 市場數據、分析工具和投資組合相關資訊。 專為交易決策而構建，而不只是用於執行交易。
+            - link "探索網頁版平台" [ref=e299] [cursor=pointer]:
+              - /url: https://capital.com/zh-hant/trading-platforms/web-platform
+              - generic [ref=e300]: 探索網頁版平台
+          - generic [ref=e302]:
+            - heading "費用清晰，全程透明" [level=3] [ref=e303]
+            - paragraph [ref=e305]: 點差透明，無隱藏費用。 透明的費用結構，讓您安心交易。
+            - link "前往「定價」頁面" [ref=e306] [cursor=pointer]:
+              - /url: https://capital.com/zh-hant/ways-to-trade/pricing
+              - generic [ref=e307]: 前往「定價」頁面
+          - generic [ref=e309]:
+            - heading "TradingView 和 MT4/MT5" [level=3] [ref=e310]
+            - paragraph [ref=e312]: 沿用您熟悉的工具，同時享受 Capital.com 的定價與支援服務。
+            - link "前往「平台」頁面" [ref=e313] [cursor=pointer]:
+              - /url: https://capital.com/zh-hant/trading-platforms
+              - generic [ref=e314]: 前往「平台」頁面
+          - generic [ref=e316]:
+            - heading "全球標準，本地服務" [level=3] [ref=e317]
+            - paragraph [ref=e319]: 受五個司法管轄區監管。 以您的語言提供本地化支援。
+          - generic [ref=e321]:
+            - heading "工具齊全，無需投入資金" [level=3] [ref=e322]
+            - paragraph [ref=e324]: 虛擬資金，實時價格。 先體驗真實帳戶的各項功能，再決定是否投入真實資金。
+            - link "前往「模擬帳戶」" [ref=e325] [cursor=pointer]:
+              - /url: https://capital.com/zh-hant/trading-platforms/demo-account
+              - generic [ref=e326]: 前往「模擬帳戶」
+          - generic [ref=e328]:
+            - heading "內置智能分析與風險管理工具" [level=3] [ref=e329]
+            - paragraph [ref=e331]: 交易前可使用 AI 助手和分析工具。 全程支持止損單*和止盈單。
+      - paragraph [ref=e335]: "*止損單並不保證一定執行。 平台提供保證止損單，但如被觸發，將收取相關費用。"
+      - generic [ref=e336]:
+        - generic [ref=e338]:
+          - heading "用戶意見與評分" [level=2] [ref=e339]
+          - generic [ref=e340]: 閱讀我們的客戶回饋，無論他們的經驗水平如何。
+        - generic [ref=e341]:
+          - region [ref=e342]:
+            - generic [ref=e344]:
+              - group [ref=e345]:
+                - link [ref=e346] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e349]: 2024-08-29
+                  - strong [ref=e350]: d**********
+                  - paragraph [ref=e352]: 操作簡單，安全可靠！對新手太友好啦~已經推薦給周圍的朋友啦
+              - group [ref=e354]:
+                - link [ref=e355] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e358]: 2022-06-20
+                  - strong [ref=e359]: 黃**
+                  - paragraph [ref=e361]: 順滑介面
+              - group [ref=e363]:
+                - link [ref=e364] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e367]: 2024-06-15
+                  - strong [ref=e368]: 孫******
+                  - paragraph [ref=e370]: 很簡單
+              - group [ref=e372]:
+                - link [ref=e373] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e376]: 2023-07-16
+                  - strong [ref=e377]: 何**（A** H*）
+                  - paragraph [ref=e379]: 容易操作，有教學影片提示
+              - group [ref=e381]:
+                - link [ref=e382] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e385]: 2022-03-03
+                  - strong [ref=e386]: K*** C**
+                  - paragraph [ref=e388]: 可體驗，有中文。感覺挺好
+              - group [ref=e390]:
+                - link [ref=e391] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e394]: 2021-05-05
+                  - strong [ref=e395]: 曾***
+                  - paragraph [ref=e397]: 大家應該利用Credit card 入錢或提取按金, 我個人就試過, 非常快及方便。
+              - group [ref=e399]:
+                - link [ref=e400] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e403]: 2023-02-15
+                  - strong [ref=e404]: y*********
+                  - paragraph [ref=e406]: 帳號申請與審核快速，商品多樣，支援在台灣使用TradingView交易(有些經紀商不開放台灣用戶使用TradingView下單交易)
+              - group "1 of 7" [ref=e408]:
+                - link "2024-08-29 d********** 操作簡單，安全可靠！對新手太友好啦~已經推薦給周圍的朋友啦" [ref=e409] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e412]: 2024-08-29
+                  - strong [ref=e413]: d**********
+                  - paragraph [ref=e415]: 操作簡單，安全可靠！對新手太友好啦~已經推薦給周圍的朋友啦
+              - group "2 of 7" [ref=e417]:
+                - link "2022-06-20 黃** 順滑介面" [ref=e418] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=8192f3e3-63f9-480a-81e9-302495d668ba&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                  - generic [ref=e421]: 2022-06-20
+                  - strong [ref=e422]: 黃**
+                  - paragraph [ref=e424]: 順滑介面
+              - group "3 of 7" [ref=e426]:
+                - link "2024-06-15 孫****** 很簡單" [ref=e427] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=8192f3e3-63f9-480a-81e9-302495d668ba&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                  - generic [ref=e430]: 2024-06-15
+                  - strong [ref=e431]: 孫******
+                  - paragraph [ref=e433]: 很簡單
+              - group [ref=e435]:
+                - link [ref=e436] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=8192f3e3-63f9-480a-81e9-302495d668ba&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                  - generic [ref=e439]: 2023-07-16
+                  - strong [ref=e440]: 何**（A** H*）
+                  - paragraph [ref=e442]: 容易操作，有教學影片提示
+              - group [ref=e444]:
+                - link [ref=e445] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=8192f3e3-63f9-480a-81e9-302495d668ba&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                  - generic [ref=e448]: 2022-03-03
+                  - strong [ref=e449]: K*** C**
+                  - paragraph [ref=e451]: 可體驗，有中文。感覺挺好
+              - group [ref=e453]:
+                - link [ref=e454] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=8192f3e3-63f9-480a-81e9-302495d668ba&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                  - generic [ref=e457]: 2021-05-05
+                  - strong [ref=e458]: 曾***
+                  - paragraph [ref=e460]: 大家應該利用Credit card 入錢或提取按金, 我個人就試過, 非常快及方便。
+              - group [ref=e462]:
+                - link [ref=e463] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e466]: 2023-02-15
+                  - strong [ref=e467]: y*********
+                  - paragraph [ref=e469]: 帳號申請與審核快速，商品多樣，支援在台灣使用TradingView交易(有些經紀商不開放台灣用戶使用TradingView下單交易)
+              - group [ref=e471]:
+                - link [ref=e472] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e475]: 2024-08-29
+                  - strong [ref=e476]: d**********
+                  - paragraph [ref=e478]: 操作簡單，安全可靠！對新手太友好啦~已經推薦給周圍的朋友啦
+              - group [ref=e480]:
+                - link [ref=e481] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e484]: 2022-06-20
+                  - strong [ref=e485]: 黃**
+                  - paragraph [ref=e487]: 順滑介面
+              - group [ref=e489]:
+                - link [ref=e490] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e493]: 2024-06-15
+                  - strong [ref=e494]: 孫******
+                  - paragraph [ref=e496]: 很簡單
+              - group [ref=e498]:
+                - link [ref=e499] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e502]: 2023-07-16
+                  - strong [ref=e503]: 何**（A** H*）
+                  - paragraph [ref=e505]: 容易操作，有教學影片提示
+              - group [ref=e507]:
+                - link [ref=e508] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e511]: 2022-03-03
+                  - strong [ref=e512]: K*** C**
+                  - paragraph [ref=e514]: 可體驗，有中文。感覺挺好
+              - group [ref=e516]:
+                - link [ref=e517] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e520]: 2021-05-05
+                  - strong [ref=e521]: 曾***
+                  - paragraph [ref=e523]: 大家應該利用Credit card 入錢或提取按金, 我個人就試過, 非常快及方便。
+              - group [ref=e525]:
+                - link [ref=e526] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e529]: 2023-02-15
+                  - strong [ref=e530]: y*********
+                  - paragraph [ref=e532]: 帳號申請與審核快速，商品多樣，支援在台灣使用TradingView交易(有些經紀商不開放台灣用戶使用TradingView下單交易)
+            - generic:
+              - button "Go to last slide" [ref=e534] [cursor=pointer]
+              - button "Next slide" [ref=e535] [cursor=pointer]
+          - paragraph [ref=e536]: 展示我們的 4 星和 5 星好評。為遵守 GDPR 要求並保護用戶隱私，用戶的具體資料已被匿名處理
+        - generic [ref=e538]:
+          - link "4.6" [ref=e539] [cursor=pointer]:
+            - /url: https://www.tradingview.com/broker/Capitalcom/
+            - strong [ref=e542]: "4.6"
+          - link "評級和評論 4.7" [ref=e545] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/id1230088754?cp_device_id=8192f3e3-63f9-480a-81e9-302495d668ba&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+            - strong [ref=e547]: 評級和評論
+            - strong [ref=e549]: "4.7"
+          - link "評級和評論 4.6" [ref=e552] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=8192f3e3-63f9-480a-81e9-302495d668ba&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+            - strong [ref=e554]: 評級和評論
+            - strong [ref=e556]: "4.6"
+          - link "4.6" [ref=e559] [cursor=pointer]:
+            - /url: https://www.trustpilot.com/review/capital.com
+            - strong [ref=e562]: "4.6"
+      - heading "債券常見問題 (FAQ)" [level=2] [ref=e567]
+      - generic [ref=e569]:
+        - group [ref=e570]:
+          - generic "債券交易如何運作" [ref=e571] [cursor=pointer]:
+            - heading "債券交易如何運作" [level=3] [ref=e572]
+        - group [ref=e573]:
+          - generic "債券市場提供了什麼" [ref=e574] [cursor=pointer]:
+            - heading "債券市場提供了什麼" [level=3] [ref=e575]
+        - group [ref=e576]:
+          - generic "在 Capital.com 進行債券交易" [ref=e577] [cursor=pointer]:
+            - heading "在 Capital.com 進行債券交易" [level=3] [ref=e578]
+  - contentinfo [ref=e580]:
+    - generic [ref=e581]:
+      - link [ref=e582] [cursor=pointer]:
+        - /url: /zh-hant
+        - img [ref=e583]
+      - generic [ref=e587]:
+        - link [ref=e588] [cursor=pointer]:
+          - /url: https://twitter.com/capitalcom
+        - link [ref=e589] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/capital.com/
+        - link [ref=e590] [cursor=pointer]:
+          - /url: https://www.instagram.com/capitalcom/
+        - link [ref=e591] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@capitalcom_international
+        - link [ref=e592] [cursor=pointer]:
+          - /url: https://www.facebook.com/capitalcom/
+        - link [ref=e593] [cursor=pointer]:
+          - /url: https://www.reddit.com/r/capitalcom/
+      - generic [ref=e594]:
+        - link [ref=e595] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/id1230088754?cp_device_id=8192f3e3-63f9-480a-81e9-302495d668ba&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e596] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=8192f3e3-63f9-480a-81e9-302495d668ba&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e597] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading.huawei-huawei?cp_device_id=8192f3e3-63f9-480a-81e9-302495d668ba&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+    - generic [ref=e598]:
+      - generic [ref=e599]:
+        - generic [ref=e600]:
+          - generic [ref=e601]:
+            - generic [ref=e602]: "國家 / 地區:"
+            - button "Hong Kong" [ref=e603] [cursor=pointer]:
+              - generic [ref=e605]: Hong Kong
+          - generic [ref=e606]: •
+          - generic [ref=e607]:
+            - generic [ref=e608]: "語言:"
+            - button "Traditional Chinese" [ref=e609] [cursor=pointer]:
+              - generic [ref=e610]: Traditional Chinese
+        - generic [ref=e611]:
+          - generic [ref=e612]: 您還可以聯絡：
+          - link "+65 3125 2302" [ref=e615] [cursor=pointer]:
+            - /url: tel:+65 3125 2302
+            - strong [ref=e616]: +65 3125 2302
+            - strong
+          - generic [ref=e617]: •
+          - link "support@capital.com" [ref=e619] [cursor=pointer]:
+            - /url: mailto:support@capital.com
+            - strong [ref=e620]: support@capital.com
+      - generic [ref=e621]:
+        - generic [ref=e622]:
+          - strong [ref=e624]: 交易
+          - generic [ref=e625]:
+            - generic [ref=e626]:
+              - generic [ref=e627]: 交易
+              - generic [ref=e628]:
+                - link "交易差價合約 (CFD)" [ref=e630] [cursor=pointer]:
+                  - /url: /zh-hant/ways-to-trade/cfd-trading
+                - link "獲取模擬帳戶" [ref=e632] [cursor=pointer]:
+                  - /url: /zh-hant/trading-platforms/demo-account
+                - link "獲取專業帳戶" [ref=e634] [cursor=pointer]:
+                  - /url: /zh-hant/professional
+            - generic [ref=e635]:
+              - generic [ref=e636]: 平台
+              - generic [ref=e637]:
+                - link "網頁版平台" [ref=e639] [cursor=pointer]:
+                  - /url: /zh-hant/trading-platforms/web-platform
+                - link "流動版 App" [ref=e641] [cursor=pointer]:
+                  - /url: /zh-hant/trading-platforms/mobile-apps
+                - link "TradingView" [ref=e643] [cursor=pointer]:
+                  - /url: /zh-hant/trading-platforms/trading-view
+                - link "MT4" [ref=e645] [cursor=pointer]:
+                  - /url: /zh-hant/trading-platforms/mt4
+                - link "MT5" [ref=e647] [cursor=pointer]:
+                  - /url: /zh-hant/trading-platforms/mt5
+            - generic [ref=e648]:
+              - generic [ref=e649]: 學習
+              - generic [ref=e650]:
+                - link "交易策略" [ref=e652] [cursor=pointer]:
+                  - /url: /zh-hant/learn/trading-strategies
+                - link "技術分析" [ref=e654] [cursor=pointer]:
+                  - /url: /zh-hant/learn/technical-analysis
+                - link "交易心理" [ref=e656] [cursor=pointer]:
+                  - /url: /zh-hant/learn/trading-psychology
+                - link "學習" [ref=e658] [cursor=pointer]:
+                  - /url: /zh-hant/learn
+        - generic [ref=e659]:
+          - strong [ref=e661]: 市場
+          - generic [ref=e662]:
+            - generic [ref=e663]:
+              - generic [ref=e664]: 我們的市場
+              - generic [ref=e665]:
+                - link "市場" [ref=e667] [cursor=pointer]:
+                  - /url: /zh-hant/markets
+                - link "股票" [ref=e669] [cursor=pointer]:
+                  - /url: /zh-hant/markets/shares
+                - link "外匯" [ref=e671] [cursor=pointer]:
+                  - /url: /zh-hant/markets/forex
+                - link "指數" [ref=e673] [cursor=pointer]:
+                  - /url: /zh-hant/markets/indices
+                - link "大宗商品" [ref=e675] [cursor=pointer]:
+                  - /url: /zh-hant/markets/commodities
+                - link "加密貨幣" [ref=e677] [cursor=pointer]:
+                  - /url: /zh-hant/markets/cryptocurrencies
+                - link "債券" [ref=e679] [cursor=pointer]:
+                  - /url: /zh-hant/markets/bonds
+                - link "利率" [ref=e681] [cursor=pointer]:
+                  - /url: /zh-hant/markets/interest-rates
+            - generic [ref=e682]:
+              - generic [ref=e683]: 市場資訊
+              - link "市場分析" [ref=e686] [cursor=pointer]:
+                - /url: /zh-hant/analysis
+        - link "定價" [ref=e689] [cursor=pointer]:
+          - /url: /zh-hant/ways-to-trade/fees-and-charges
+          - strong [ref=e690]: 定價
+        - generic [ref=e691]:
+          - strong [ref=e693]: 關於我們
+          - generic [ref=e694]:
+            - generic [ref=e695]:
+              - generic [ref=e696]: 關於我們
+              - generic [ref=e697]:
+                - link "公司簡介" [ref=e699] [cursor=pointer]:
+                  - /url: /zh-hant/about-us
+                - link "我們的辦公室" [ref=e701] [cursor=pointer]:
+                  - /url: /zh-hant/about-us/our-offices
+                - link "Capital.com 安全嗎？" [ref=e703] [cursor=pointer]:
+                  - /url: /zh-hant/security-measures
+                - link "我們的商業模式" [ref=e705] [cursor=pointer]:
+                  - /url: /zh-hant/about-us/how-capital-makes-money
+            - generic [ref=e706]:
+              - generic [ref=e707]: 加入我們
+              - generic [ref=e708]:
+                - link "合作夥伴計劃" [ref=e710] [cursor=pointer]:
+                  - /url: /zh-hant/partnerships
+                - link "推薦好友" [ref=e712] [cursor=pointer]:
+                  - /url: /zh-hant/refer-a-friend
+            - generic [ref=e713]:
+              - generic [ref=e714]: 幫助
+              - generic [ref=e715]:
+                - link "說明中心" [ref=e717] [cursor=pointer]:
+                  - /url: /zh-hant/help
+                - link "客戶脆弱性" [ref=e719] [cursor=pointer]:
+                  - /url: /zh-hant/help/client-vulnerability
+                - link "聯絡我們" [ref=e721] [cursor=pointer]:
+                  - /url: /zh-hant/contact-us
+            - generic [ref=e722]:
+              - generic [ref=e723]: 法律資訊
+              - generic [ref=e724]:
+                - link "條款與政策" [ref=e726] [cursor=pointer]:
+                  - /url: /zh-hant/terms-and-policies
+                - link "投訴" [ref=e728] [cursor=pointer]:
+                  - /url: /zh-hant/help/complaints
+    - generic [ref=e730]:
+      - paragraph [ref=e731]:
+        - text: 差價合約 (CFD) 是一種複雜的金融工具，利用槓桿交易雖然可能放大收益，但同樣也會加劇虧損風險，導致資金快速流失。
+        - generic [ref=e732]:
+          - text: 數據顯示，
+          - strong [ref=e733]: 79.75% 的散戶投資者在使用該提供商服務進行差價合約交易時出現帳戶虧損。
+          - text: 在進行交易之前，請確保您充分了解差價合約的運作機制，並仔細評估自己是否有能力承擔資金虧損的高風險。
+      - paragraph
+      - paragraph [ref=e734]: Capital Com Online Investments Ltd 是一家有限責任公司，公司註冊號碼為 209236B。 Capital Com Online Investments Ltd 在巴哈馬國註冊，由巴哈馬證券委員會授權，許可證號為 SIA-F245。公司註冊辦公室地址是：#3 Bayside Executive Park, Blake Road and West Bay Street, P. O. Box CB 13012, Nassau, The Bahamas。
+    - generic [ref=e735]:
+      - paragraph [ref=e736]: © 2026 Capital Com Online Investments Ltd
+      - generic [ref=e737]:
+        - link "網站地圖" [ref=e738] [cursor=pointer]:
+          - /url: /zh-hant/sitemap
+        - link "Cookie 設定" [ref=e739] [cursor=pointer]:
+          - /url: ""
+        - link:
+          - /url: /zh-hant
+        - link "條款及條件" [ref=e740] [cursor=pointer]:
+          - /url: /zh-hant/terms-and-policies
+        - link "投訴程序 (SCB)" [ref=e741] [cursor=pointer]:
+          - /url: /zh-hant/help/complaints
+  - generic [ref=e744]:
+    - generic [ref=e745]:
+      - heading "嗨，看起來您在United States of America" [level=3] [ref=e747]
+      - paragraph [ref=e748]: 本網站所列的產品及服務在United States of America無法使用。
+    - button "留在此網頁" [ref=e750] [cursor=pointer]
+  - button [ref=e751] [cursor=pointer]
+  - dialog "Cookie banner" [ref=e753]:
+    - generic [ref=e754]:
+      - paragraph [ref=e756]:
+        - text: We use cookies to enhance site navigation, personalise content and ads, and analyse site usage. You can change your cookie settings at any time. For more information, please see our
+        - link "More information about your privacy, opens in a new tab" [active] [ref=e757] [cursor=pointer]:
+          - /url: https://capital.com/cookies_policy_bah
+          - text: Cookie Policy
+        - text: .
+      - generic [ref=e758]:
+        - button "Reject all" [ref=e759] [cursor=pointer]
+        - button "Allow all cookies" [ref=e760] [cursor=pointer]
+        - button "Cookie settings" [ref=e761] [cursor=pointer]
+  - alert [ref=e762]
+```

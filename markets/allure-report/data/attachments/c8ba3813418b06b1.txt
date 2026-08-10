@@ -1,0 +1,11 @@
+START CLICK signupBtn
+COUNT signupBtn 1
+{
+  text: '',
+  center: { x: 244, y: 3172.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/es-int/analysis
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

@@ -1,0 +1,11 @@
+START CLICK longPositionGoToPlatformBtn
+COUNT longPositionGoToPlatformBtn 1
+{
+  text: 'Go to platform',
+  center: { x: 563.859375, y: 557 },
+  elementAtPoint: '<span>Go to platform</span>'
+}
+URL AFTER CLICK: https://capital.com/en-gb/markets/bonds/us-treasury-bond-spot
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

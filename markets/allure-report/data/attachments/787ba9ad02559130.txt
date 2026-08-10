@@ -1,0 +1,11 @@
+START CLICK longPositionGoToPlatformBtn
+COUNT longPositionGoToPlatformBtn 1
+{
+  text: 'Ir a la plataforma',
+  center: { x: 573.78125, y: 601 },
+  elementAtPoint: '<span>Ir a la plataforma</span>'
+}
+URL AFTER CLICK: https://capital.com/es-int/markets/interest-rates/euribor-future
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

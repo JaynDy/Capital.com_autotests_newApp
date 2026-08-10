@@ -1,0 +1,11 @@
+START CLICK tradedBtn
+COUNT tradedBtn 0
+{
+  text: 'Trade',
+  center: { x: 1181.7890625, y: 1415 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/en-ae/markets/forex/eur-usd-rate
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form
