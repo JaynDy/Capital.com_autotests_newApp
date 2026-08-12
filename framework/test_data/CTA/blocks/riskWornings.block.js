@@ -11,6 +11,7 @@ export const riskWarningBlock = {
         unauthorised: "opens external link",
         unregistered: "opens external link",
       },
+      tags: "footer",
     },
     licenseText: {
       locator: `#RW_bottom`,
@@ -23,6 +24,7 @@ export const riskWarningBlock = {
         unauthorised: "exist corresponding license",
         unregistered: "exist corresponding license",
       },
+      tags: "footer",
     },
     cookieSettingsLink: {
       locator: `#cookie-settings-btn-handler`,
@@ -31,6 +33,7 @@ export const riskWarningBlock = {
         unauthorised: "opens cookie menu",
         unregistered: "opens cookie menu",
       },
+      tags: "footer",
     },
     sitemapLink: {
       locator: `footer a[href*="/sitemap"]`,
@@ -40,6 +43,7 @@ export const riskWarningBlock = {
         unauthorised: { type: "redirect", page: "sitemap" },
         unregistered: { type: "redirect", page: "sitemap" },
       },
+      tags: "footer",
     },
     termsAndPoliciesLink: {
       locator: `footer a[href$="/terms-and-policies"]`,
@@ -49,6 +53,7 @@ export const riskWarningBlock = {
         unauthorised: { type: "redirect", page: "termsAndPolicies" },
         unregistered: { type: "redirect", page: "termsAndPolicies" },
       },
+      tags: "footer",
     },
     complaintsProcedureLink: {
       locator: `footer a[href*="/complaints"]`,
@@ -58,6 +63,7 @@ export const riskWarningBlock = {
         unauthorised: { type: "redirect", page: "complaints" },
         unregistered: { type: "redirect", page: "complaints" },
       },
+      tags: "footer",
     },
   },
 };

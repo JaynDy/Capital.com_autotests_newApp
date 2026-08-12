@@ -10,6 +10,7 @@ export const socialMediaBar = {
         unauthorised: { type: "redirect", page: "main" },
         unregistered: { type: "redirect", page: "main" },
       },
+      tags: "footer",
     },
 
     // SOCIAL ICON
@@ -22,6 +23,7 @@ export const socialMediaBar = {
         unauthorised: "opens external link",
         unregistered: "opens external link",
       },
+      tags: "footer",
     },
     twitterIcon: {
       locator: 'footer a[href*="twitter.com"]',
@@ -32,6 +34,7 @@ export const socialMediaBar = {
         unauthorised: "opens external link",
         unregistered: "opens external link",
       },
+      tags: "footer",
     },
     linkedinIcon: {
       locator: 'footer a[href*="linkedin.com"]',
@@ -42,6 +45,7 @@ export const socialMediaBar = {
         unauthorised: "opens external link",
         unregistered: "opens external link",
       },
+      tags: "footer",
     },
     instagramIcon: {
       locator: 'footer a[href*="instagram.com"]',
@@ -52,6 +56,7 @@ export const socialMediaBar = {
         unauthorised: "opens external link",
         unregistered: "opens external link",
       },
+      tags: "footer",
     },
     youtubeIcon: {
       locator: 'footer a[href*="youtube.com"]',
@@ -62,6 +67,7 @@ export const socialMediaBar = {
         unauthorised: "opens external link",
         unregistered: "opens external link",
       },
+      tags: "footer",
     },
     tiktokIcon: {
       locator: 'footer a[href*="tiktok.com"]',
@@ -72,6 +78,7 @@ export const socialMediaBar = {
         unauthorised: "opens external link",
         unregistered: "opens external link",
       },
+      tags: "footer",
     },
     redditIcon: {
       locator: 'footer a[href*="reddit.com"]',
@@ -82,6 +89,7 @@ export const socialMediaBar = {
         unauthorised: "opens external link",
         unregistered: "opens external link",
       },
+      tags: "footer",
     },
 
     // MEDIA BTN
@@ -93,6 +101,7 @@ export const socialMediaBar = {
         unauthorised: "opens external link",
         unregistered: "opens external link",
       },
+      tags: "footer",
     },
     getGooglePlayBtn: {
       locator: `footer [data-type="footer_Googl"]`,
@@ -102,6 +111,7 @@ export const socialMediaBar = {
         unauthorised: "opens external link",
         unregistered: "opens external link",
       },
+      tags: "footer",
     },
     exploreAppGalleryBtn: {
       locator: `footer [data-type="footer_Huawei"]`,
@@ -112,6 +122,7 @@ export const socialMediaBar = {
         unauthorised: "opens external link",
         unregistered: "opens external link",
       },
+      tags: "footer",
     },
   },
 };

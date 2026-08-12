@@ -9,6 +9,7 @@ export const regionalSettingsModalWindow = {
         unauthorised: "opens regional settings window",
         unregistered: "opens regional settings window",
       },
+      tags: "footer",
     },
     langSwitcherBtn: {
       locator: `button[data-type="country_switcher_footer"] >> nth=1`,
@@ -17,6 +18,7 @@ export const regionalSettingsModalWindow = {
         unauthorised: "opens regional settings window",
         unregistered: "opens regional settings window",
       },
+      tags: "footer",
     },
 
     // countries: [
