@@ -1,4 +1,4 @@
-name: Markets Tests
+name: Footer Tests
 
 on:
   push:
@@ -22,7 +22,6 @@ jobs:
       CI: true
       TEST_BROWSER: ${{ matrix.browser }}
       TEST_LICENSE: ${{ matrix.license }}
-      TEST_USER: unauthorised,unregistered
 
     steps:
       - uses: actions/checkout@v4
@@ -34,7 +33,7 @@ jobs:
       - run: npx playwright install --with-deps
 
       - name: Run tests
-        run: npm run test:markets
+        run: npm run test:footer
 
       - name: Upload Allure results
         if: always()
@@ -71,8 +70,8 @@ jobs:
 
       - name: Prepare Pages structure
         run: |
-          mkdir -p public/markets
-          mv allure-report public/markets
+          mkdir -p public/footer
+          mv allure-report public/footer
 
       - name: Deploy report
         uses: peaceiris/actions-gh-pages@v3
