@@ -1,0 +1,11 @@
+START CLICK getGooglePlayBtn
+COUNT getGooglePlayBtn 1
+{
+  text: '',
+  center: { x: 1054, y: 10209.578125 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/en-int
+USER: unregistered
+EXPECTATION:  opens external link
+EXPECTATION ASSERTIONS opens external link

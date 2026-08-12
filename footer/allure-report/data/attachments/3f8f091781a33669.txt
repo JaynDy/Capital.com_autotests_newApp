@@ -1,0 +1,11 @@
+START CLICK complaintsProcedureLink
+COUNT complaintsProcedureLink 1
+{
+  text: 'Complaints procedure - Capital Com SV Investments Limited',
+  center: { x: 1085, y: 11036.75 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/en-eu
+USER: authorised
+EXPECTATION:  { type: 'redirect', page: 'complaints' }
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'complaints' }

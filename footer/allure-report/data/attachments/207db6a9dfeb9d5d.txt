@@ -1,0 +1,11 @@
+START CLICK sitemapLink
+COUNT sitemapLink 1
+{
+  text: 'Sitemap',
+  center: { x: 584.78125, y: 11538.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/en-ae
+USER: unauthorised
+EXPECTATION:  { type: 'redirect', page: 'sitemap' }
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'sitemap' }

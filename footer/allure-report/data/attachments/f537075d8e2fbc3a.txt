@@ -1,0 +1,11 @@
+START CLICK complaintsProcedureLink
+COUNT complaintsProcedureLink 1
+{
+  text: 'Санал гомдлын журам (SCB)',
+  center: { x: 1120.3359375, y: 11186.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/mn-int
+USER: unregistered
+EXPECTATION:  { type: 'redirect', page: 'complaints' }
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'complaints' }

@@ -1,0 +1,11 @@
+START CLICK cookieSettingsLink
+COUNT cookieSettingsLink 1
+{
+  text: 'Paramètres des cookies',
+  center: { x: 639.78125, y: 11251.921875 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/fr-int
+USER: unregistered
+EXPECTATION:  opens cookie menu
+EXPECTATION ASSERTIONS opens cookie menu

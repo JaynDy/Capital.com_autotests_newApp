@@ -1,0 +1,11 @@
+START CLICK exploreAppGalleryBtn
+COUNT exploreAppGalleryBtn 1
+{
+  text: '',
+  center: { x: 1170, y: 10335.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/en-gb
+USER: unregistered
+EXPECTATION:  opens external link
+EXPECTATION ASSERTIONS opens external link

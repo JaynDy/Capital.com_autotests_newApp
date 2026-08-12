@@ -1,0 +1,11 @@
+START CLICK cookieSettingsLink
+COUNT cookieSettingsLink 1
+{
+  text: 'إعدادات ملفات تعريف الارتباط',
+  center: { x: 583.4140625, y: 11406.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/ar-ae
+USER: authorised
+EXPECTATION:  opens cookie menu
+EXPECTATION ASSERTIONS opens cookie menu

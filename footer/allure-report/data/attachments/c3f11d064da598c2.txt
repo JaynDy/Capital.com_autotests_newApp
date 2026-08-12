@@ -1,0 +1,11 @@
+START CLICK cookieSettingsLink
+COUNT cookieSettingsLink 1
+{
+  text: 'Настройки файлов cookie',
+  center: { x: 660.1640625, y: 11214.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/ru-int
+USER: unregistered
+EXPECTATION:  opens cookie menu
+EXPECTATION ASSERTIONS opens cookie menu

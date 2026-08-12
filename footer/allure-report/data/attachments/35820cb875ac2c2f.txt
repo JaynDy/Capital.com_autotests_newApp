@@ -1,0 +1,15 @@
+START CLICK licenseText
+COUNT licenseText 1
+{
+  text: 'CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage.  79.75% of retail investor accounts lose money when trading CFDs with this provider. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money.\n' +
+    '\n' +
+    ' \n' +
+    '\n' +
+    'Capital Com Online Investments Ltd is a limited liability company with company number 209236B. Capital Com Online Investments Ltd is a Company registered in the Commonwealth of The Bahamas and authorised by the Securities Commission of The Bahamas with license number SIA-F245. The Company’s registered office is at #3 Bayside Executive Park, Blake Road and West Bay Street, P. O. Box CB 13012, Nassau, The Bahamas.\n',
+  center: { x: 640, y: 11030.578125 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/en-int
+USER: unregistered
+EXPECTATION:  exist corresponding license
+EXPECTATION ASSERTIONS exist corresponding license

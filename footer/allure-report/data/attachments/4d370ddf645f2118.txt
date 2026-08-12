@@ -1,0 +1,11 @@
+START CLICK youtubeIcon
+COUNT youtubeIcon 1
+{
+  text: '',
+  center: { x: 596, y: 10340.9375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/fr-fr
+USER: unregistered
+EXPECTATION:  opens external link
+EXPECTATION ASSERTIONS opens external link

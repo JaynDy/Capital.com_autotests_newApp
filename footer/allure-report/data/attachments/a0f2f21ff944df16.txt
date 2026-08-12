@@ -1,0 +1,27 @@
+START CLICK licenseText
+COUNT licenseText 1
+{
+  text: 'Capital Com SV Investments Limited:\n' +
+    'Kontrakty CFD to złożone instrumenty, które wiążą się z dużym ryzykiem gwałtownej straty środków na skutek zastosowania dźwigni finansowej.  74% inwestorów detalicznych odnotowuje straty w handlu kontraktami CFD z tym dostawcą. Powinieneś rozważyć, czy rozumiesz, jak działają kontrakty CFD i czy możesz sobie pozwolić na podjęcie wysokiego ryzyka utraty pieniędzy. Prosimy o zapoznanie się z naszym Oświadczeniem o ryzyku\n' +
+    '\n' +
+    'Capital Com Group Ltd:\n' +
+    'Kontrakty CFD są złożonymi instrumentami i wiążą się z wysokim ryzykiem szybkiej utraty pieniędzy ze względu na mechanizm dźwigni finansowej. Od 74 do 89% rachunków inwestorów detalicznych odnotowuje straty na handlu kontraktami CFD. Powinieneś rozważyć, czy rozumiesz zasady działania kontraktów CFD i czy możesz sobie pozwolić na wysokie ryzyko utraty pieniędzy. Prosimy o zapoznanie się z naszym Oświadczeniem o ryzyku\n' +
+    '\n' +
+    'Ostrzeżenie o ryzyku: wartość akcji i funduszy ETF nabytych za pośrednictwem rachunku transakcyjnego może rosnąć lub spadać, co może oznaczać, że zwrot z inwestycji będzie niższy od jej pierwotnej kwoty. Wyniki historyczne nie są gwarancją przyszłych rezultatów.\n' +
+    '\n' +
+    'Transakcje na pozagiełdowych instrumentach niepodlegających dostawie, takich jak opcje knock-out i kontrakty CFD, są złożonymi produktami finansowymi, które wiążą się z wysokim ryzykiem utraty całego zainwestowanego kapitału. Tego typu produkty nie są odpowiednie dla wszystkich inwestorów, ponieważ mogą przynosić zarówno zyski, jak i znaczne straty. Przed rozpoczęciem tego rodzaju handlu powinieneś dokładnie rozważyć, czy rozumiesz sposób działania tych instrumentów i czy możesz zaakceptować wysokie ryzyko straty pieniędzy.\n' +
+    '\n' +
+    'W przypadku klientów profesjonalnych istnieje ryzyko poniesienia straty przekraczającej początkowy depozyt. Informacje zawarte w tej witrynie mają charakter ogólny i nie uwzględniają sytuacji finansowej, celów ani potrzeb indywidualnego klienta. Przed podjęciem jakichkolwiek decyzji handlowych prosimy o zapoznanie się z naszymi dokumentami prawnymi i upewnienie się, że w pełni rozumiesz związane z nimi ryzyko. Zachęcamy do skorzystania z usług szkoleniowych naszej firmy, aby lepiej zrozumieć ryzyko przed przystąpieniem do operacji handlowych.\n' +
+    '\n' +
+    'Capital Com SV Investments Limited jest spółką zarejestrowaną w Republice Cypru pod numerem wpisu HE 354252. Spółka posiada upoważnienie i podlega nadzorowi regulacyjnemu cypryjskiej Securities and Exchange Commission (numer licencji 319/17). Adres siedziby: Vasileiou Makedonos 8, Kinnis Business Center, 2nd floor, 3040, Limassol, Cypr.\n' +
+    '\n' +
+    'Capital Com Group Ltd jest spółką zarejestrowaną w Republice Cypru pod numerem wpisu ΗΕ 446198. Spółka posiada upoważnienie i podlega nadzorowi regulacyjnemu cypryjskiej Securities and Exchange Commission (numer licencji 463/25). Adres siedziby: Vasileiou Makedonos 8, Kinnis Business Center, 2nd floor, 3040, Limassol, Cypr.\n' +
+    '\n' +
+    'Informacje zawarte na tej stronie nie są kierowane do mieszkańców Stanów Zjednoczonych, Kanady, Belgii, ani żadnego innego kraju spoza EOG i nie są przeznaczone do rozpowszechniania ani wykorzystywania przez osoby w dowolnym kraju lub jurysdykcji, w których takie rozpowszechnianie lub wykorzystywanie byłoby sprzeczne z lokalnymi przepisami lub regulacjami.\n',
+  center: { x: 640, y: 11406.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/pl-pl
+USER: authorised
+EXPECTATION:  exist corresponding license
+EXPECTATION ASSERTIONS exist corresponding license

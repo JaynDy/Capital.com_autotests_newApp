@@ -1,0 +1,11 @@
+START CLICK twitterIcon
+COUNT twitterIcon 1
+{
+  text: '',
+  center: { x: 428, y: 10340.921875 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/fr-int
+USER: authorised
+EXPECTATION:  opens external link
+EXPECTATION ASSERTIONS opens external link

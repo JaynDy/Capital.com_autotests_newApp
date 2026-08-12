@@ -1,0 +1,11 @@
+START CLICK cookieSettingsLink
+COUNT cookieSettingsLink 1
+{
+  text: 'Süti beállítások',
+  center: { x: 746.234375, y: 11762.75 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/hu-hu
+USER: unauthorised
+EXPECTATION:  opens cookie menu
+EXPECTATION ASSERTIONS opens cookie menu

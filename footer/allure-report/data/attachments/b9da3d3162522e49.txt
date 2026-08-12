@@ -1,0 +1,11 @@
+START CLICK cookieSettingsLink
+COUNT cookieSettingsLink 1
+{
+  text: 'Күүки тохиргоо',
+  center: { x: 622.3359375, y: 11186.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/mn-int
+USER: unregistered
+EXPECTATION:  opens cookie menu
+EXPECTATION ASSERTIONS opens cookie menu

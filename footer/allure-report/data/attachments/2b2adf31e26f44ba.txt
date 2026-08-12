@@ -1,0 +1,11 @@
+START CLICK sitemapLink
+COUNT sitemapLink 1
+{
+  text: '網站地圖',
+  center: { x: 847.609375, y: 11194.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/zh-hant
+USER: unauthorised
+EXPECTATION:  { type: 'redirect', page: 'sitemap' }
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'sitemap' }

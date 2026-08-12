@@ -1,0 +1,11 @@
+START CLICK countrySwitcherBtn
+COUNT countrySwitcherBtn 1
+{
+  text: 'Austria',
+  center: { x: 198.0078125, y: 10413.75 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/de-at
+USER: authorised
+EXPECTATION:  opens regional settings window
+EXPECTATION ASSERTIONS opens regional settings window

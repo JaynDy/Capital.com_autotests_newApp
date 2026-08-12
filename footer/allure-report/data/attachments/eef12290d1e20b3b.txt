@@ -1,0 +1,11 @@
+START CLICK complaintsProcedureLink
+COUNT complaintsProcedureLink 1
+{
+  text: 'Panasztételi eljárás - Capital Com SV Investments Limited',
+  center: { x: 1085, y: 10952.75 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/hu-hu
+USER: authorised
+EXPECTATION:  { type: 'redirect', page: 'complaints' }
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'complaints' }

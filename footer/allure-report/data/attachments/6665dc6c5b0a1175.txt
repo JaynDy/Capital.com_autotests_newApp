@@ -1,0 +1,26 @@
+START CLICK licenseText
+COUNT licenseText 1
+{
+  text: 'Capital Com SV Investments Limited:\n' +
+    'CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. 74% of retail investor accounts lose money when trading CFDs with this provider. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money. Please refer to our Risk Disclosure Statement\n' +
+    '\n' +
+    'Capital Com Group Ltd:\n' +
+    'CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. Between 74-89% of retail investor accounts lose money when trading CFDs. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money. Please refer to our Risk Disclosure Statement\n' +
+    '\n' +
+    'Risk warning: The value of shares and ETFs bought through a share dealing account can fall as well as rise, which could mean getting back less than you originally put in. Past performance is no guarantee of future results.\n' +
+    '\n' +
+    'Transactions in non-deliverable over-the-counter instruments, such as knock-out options and CFDs are complex financial products that carry a high risk of losing all invested capital. Such products are not suitable for all investors, as they may lead to both gains and significant losses. Before engaging in this type of trading, you should carefully consider whether you understand how these instruments work and whether you can afford to take the high risk of losing your money. \n' +
+    'For professional clients, there is a risk of losing more than the initial deposit. The information on this website is general in nature and does not consider your financial situation, objectives or needs. Please review our legal documents and ensure you fully understand the risks before making any trading decisions. We encourage you to use the training services of our company to better understand the risks before engaging in trading operations.\n' +
+    '\n' +
+    'Capital Com SV Investments Limited is a company incorporated in the Republic of Cyprus with registration number HE 354252 and is authorised and regulated by the Cyprus Securities and Exchange Commission (License Number 319/17). Registered Office: Vasileiou Makedonos 8, Kinnis Business Center, 2nd floor, 3040, Limassol, Cyprus.\n' +
+    '\n' +
+    'Capital Com Group Ltd is a company incorporated in the Republic of Cyprus with registration number ΗΕ 446198 and is authorised and regulated by the Cyprus Securities and Exchange Commission (License Number 463/25). Registered Office: Vasileiou Makedonos 8, Kinnis Business Center,  2nd floor, 3040, Limassol, Cyprus.\n' +
+    '\n' +
+    'The information on this site is not directed at residents of the United States, Canada and Belgium or any particular country outside the EEA, and is not intended for distribution to or use by, any person in any country or jurisdiction where such distribution or use would be contrary to local law or regulation.\n',
+  center: { x: 640, y: 11420.75 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/en-eu
+USER: unregistered
+EXPECTATION:  exist corresponding license
+EXPECTATION ASSERTIONS exist corresponding license

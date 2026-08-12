@@ -1,0 +1,11 @@
+START CLICK linkedinIcon
+COUNT linkedinIcon 1
+{
+  text: '',
+  center: { x: 484, y: 10371.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/zh-hant
+USER: unauthorised
+EXPECTATION:  opens external link
+EXPECTATION ASSERTIONS opens external link

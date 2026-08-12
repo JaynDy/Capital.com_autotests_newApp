@@ -1,0 +1,11 @@
+START CLICK langSwitcherBtn
+COUNT langSwitcherBtn 1
+{
+  text: 'Traditional Chinese',
+  center: { x: 357.78125, y: 10449.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/zh-hant
+USER: authorised
+EXPECTATION:  opens regional settings window
+EXPECTATION ASSERTIONS opens regional settings window

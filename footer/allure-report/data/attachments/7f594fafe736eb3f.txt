@@ -1,0 +1,11 @@
+START CLICK langSwitcherBtn
+COUNT langSwitcherBtn 1
+{
+  text: 'Simplified Chinese',
+  center: { x: 347.8203125, y: 10449.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/zh-hans
+USER: authorised
+EXPECTATION:  opens regional settings window
+EXPECTATION ASSERTIONS opens regional settings window

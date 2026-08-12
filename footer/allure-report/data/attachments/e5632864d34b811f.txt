@@ -1,0 +1,11 @@
+START CLICK countrySwitcherBtn
+COUNT countrySwitcherBtn 1
+{
+  text: 'Romania',
+  center: { x: 209.78125, y: 10413.75 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/ro-ro
+USER: authorised
+EXPECTATION:  opens regional settings window
+EXPECTATION ASSERTIONS opens regional settings window

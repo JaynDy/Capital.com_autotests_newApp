@@ -1,0 +1,11 @@
+START CLICK facebookIcon
+COUNT facebookIcon 1
+{
+  text: '',
+  center: { x: 652, y: 10382.53125 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/es-int
+USER: authorised
+EXPECTATION:  opens external link
+EXPECTATION ASSERTIONS opens external link

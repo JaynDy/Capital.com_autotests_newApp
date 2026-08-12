@@ -1,0 +1,11 @@
+START CLICK logo
+COUNT logo 1
+{
+  text: '',
+  center: { x: 148, y: 10335.75 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/de-at
+USER: authorised
+EXPECTATION:  { type: 'redirect', page: 'main' }
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'main' }

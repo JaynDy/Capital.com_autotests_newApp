@@ -1,0 +1,11 @@
+START CLICK countrySwitcherBtn
+COUNT countrySwitcherBtn 1
+{
+  text: 'France',
+  center: { x: 197.9921875, y: 10418.9375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/fr-fr
+USER: authorised
+EXPECTATION:  opens regional settings window
+EXPECTATION ASSERTIONS opens regional settings window

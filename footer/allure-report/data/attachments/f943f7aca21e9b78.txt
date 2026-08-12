@@ -1,0 +1,11 @@
+START CLICK langSwitcherBtn
+COUNT langSwitcherBtn 1
+{
+  text: 'English',
+  center: { x: 423.4453125, y: 10287.578125 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/en-int
+USER: unauthorised
+EXPECTATION:  opens regional settings window
+EXPECTATION ASSERTIONS opens regional settings window

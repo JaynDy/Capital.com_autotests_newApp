@@ -1,0 +1,11 @@
+START CLICK langSwitcherBtn
+COUNT langSwitcherBtn 1
+{
+  text: 'Mongolian',
+  center: { x: 333.75, y: 10449.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/mn-int
+USER: unregistered
+EXPECTATION:  opens regional settings window
+EXPECTATION ASSERTIONS opens regional settings window

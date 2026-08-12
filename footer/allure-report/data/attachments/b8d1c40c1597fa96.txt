@@ -1,0 +1,16 @@
+Button enabled: true
+START CLICK licenseText
+COUNT licenseText 1
+{
+  text: '差价合约 (CFD) 是一种复杂的金融工具，利用杠杆交易虽然可能放大收益，但同样也会加剧亏损风险，导致资金快速流失。数据显示，79.75% 的散户投资者在使用该提供商服务进行差价合约交易时出现账户亏损。在进行交易之前，请确保您充分了解差价合约的运作机制，并仔细评估自己是否有能力承担资金亏损的高风险。\n' +
+    '\n' +
+    ' \n' +
+    '\n' +
+    'Capital Com Online Investments Ltd 是一家有限责任公司，公司注册号为 209236B。Capital Com Online Investments Ltd 在巴哈马国注册，由巴哈马证券委员会授权，许可证号为 SIA-F245。公司注册办事处地址是：#3 Bayside Executive Park, Blake Road and West Bay Street, P. O. Box CB 13012, Nassau, The Bahamas。\n',
+  center: { x: 640, y: 11098.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/zh-hans
+USER: unauthorised
+EXPECTATION:  exist corresponding license
+EXPECTATION ASSERTIONS exist corresponding license

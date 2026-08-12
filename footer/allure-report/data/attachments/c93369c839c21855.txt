@@ -1,0 +1,12 @@
+Button enabled: true
+START CLICK cookieSettingsLink
+COUNT cookieSettingsLink 1
+{
+  text: 'Cookie 设置',
+  center: { x: 937.5859375, y: 11238.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/zh-hans
+USER: unregistered
+EXPECTATION:  opens cookie menu
+EXPECTATION ASSERTIONS opens cookie menu

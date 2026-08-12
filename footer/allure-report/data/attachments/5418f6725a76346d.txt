@@ -1,0 +1,11 @@
+START CLICK termsAndPoliciesLink
+COUNT termsAndPoliciesLink 1
+{
+  text: 'Nutzungsbedingungen und Richtlinien',
+  center: { x: 935.328125, y: 11782.75 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/de-de
+USER: authorised
+EXPECTATION:  { type: 'redirect', page: 'termsAndPolicies' }
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'termsAndPolicies' }

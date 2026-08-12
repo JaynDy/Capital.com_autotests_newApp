@@ -1,0 +1,25 @@
+START CLICK licenseText
+COUNT licenseText 1
+{
+  text: 'Risk warning\n' +
+    '\n' +
+    'All Trading involves risk. Spread bets and CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. 65% of retail investor accounts lose money when trading spread bets and CFDs with this provider. You should consider whether you understand how spread bets and CFDs work and whether you can afford to take the high risk of losing your money. Professional clients can lose more than they deposit. Please refer to our Risk Disclosure Statement\n' +
+    '\n' +
+    '1X is a non-leveraged CFD. It is a derivative, and is therefore a complex product. The value of your investment can go down as well as up, and you may get back less than you invest.\n' +
+    '\n' +
+    'Crypto Derivatives are not available to Retail clients registered with Capital Com (UK) Ltd.\n' +
+    '\n' +
+    'The value of shares and ETFs bought through a share dealing account can fall as well as rise, which could mean getting back less than you originally put in. Past performance is no guarantee of future results.\n' +
+    '\n' +
+    'The information contained herein is not intended for distribution to residents in any country where such distribution or use would contravene any local law or regulatory requirement.\n' +
+    '\n' +
+    ' \n' +
+    '\n' +
+    'Capital Com (UK) Limited (“CCUK”) is registered in England and Wales with company registration number 10506220. CCUK is Authorised and regulated by the Financial Conduct Authority (“FCA”), under registration number 793714.\n',
+  center: { x: 640, y: 11242.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/en-gb
+USER: unauthorised
+EXPECTATION:  exist corresponding license
+EXPECTATION ASSERTIONS exist corresponding license

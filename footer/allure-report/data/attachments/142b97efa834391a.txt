@@ -1,0 +1,11 @@
+START CLICK termsAndPoliciesLink
+COUNT termsAndPoliciesLink 1
+{
+  text: 'Warunki i zasady',
+  center: { x: 1085, y: 10866.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/pl-pl
+USER: authorised
+EXPECTATION:  { type: 'redirect', page: 'termsAndPolicies' }
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'termsAndPolicies' }

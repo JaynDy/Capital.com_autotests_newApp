@@ -1,0 +1,11 @@
+START CLICK cookieSettingsLink
+COUNT cookieSettingsLink 1
+{
+  text: 'Cài đặt cookie',
+  center: { x: 772.1953125, y: 11186.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/vi-int
+USER: authorised
+EXPECTATION:  opens cookie menu
+EXPECTATION ASSERTIONS opens cookie menu

@@ -1,0 +1,11 @@
+START CLICK termsAndPoliciesLink
+COUNT termsAndPoliciesLink 1
+{
+  text: 'Условия и правила',
+  center: { x: 1085, y: 10930.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/ru-int
+USER: authorised
+EXPECTATION:  { type: 'redirect', page: 'termsAndPolicies' }
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'termsAndPolicies' }

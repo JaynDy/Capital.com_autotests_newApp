@@ -1,0 +1,11 @@
+START CLICK countrySwitcherBtn
+COUNT countrySwitcherBtn 1
+{
+  text: 'Kazakhstan',
+  center: { x: 240.265625, y: 10449.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/ru-int
+USER: unregistered
+EXPECTATION:  opens regional settings window
+EXPECTATION ASSERTIONS opens regional settings window

@@ -1,0 +1,11 @@
+START CLICK langSwitcherBtn
+COUNT langSwitcherBtn 1
+{
+  text: 'Arabic',
+  center: { x: 856.09375, y: 10489.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/ar-ae
+USER: unregistered
+EXPECTATION:  opens regional settings window
+EXPECTATION ASSERTIONS opens regional settings window

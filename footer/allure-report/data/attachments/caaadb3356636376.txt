@@ -1,0 +1,3 @@
+START CLICK riskDisclosureStatementLink
+COUNT riskDisclosureStatementLink 0
+URL AFTER CLICK: https://capital.com/en-int

@@ -1,0 +1,4 @@
+Button enabled: true
+START CLICK youtubeIcon
+COUNT youtubeIcon 0
+URL AFTER CLICK: https://capital.com/zh-hans

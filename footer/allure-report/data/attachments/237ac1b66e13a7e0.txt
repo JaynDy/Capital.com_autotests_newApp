@@ -1,0 +1,11 @@
+START CLICK countrySwitcherBtn
+COUNT countrySwitcherBtn 1
+{
+  text: 'Greece & Cyrpus',
+  center: { x: 259.4921875, y: 10413.75 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/el-gr
+USER: unregistered
+EXPECTATION:  opens regional settings window
+EXPECTATION ASSERTIONS opens regional settings window

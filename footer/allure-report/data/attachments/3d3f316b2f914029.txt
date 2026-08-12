@@ -1,0 +1,11 @@
+START CLICK countrySwitcherBtn
+COUNT countrySwitcherBtn 1
+{
+  text: 'Poland',
+  center: { x: 191.703125, y: 10413.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/pl-pl
+USER: unauthorised
+EXPECTATION:  opens regional settings window
+EXPECTATION ASSERTIONS opens regional settings window

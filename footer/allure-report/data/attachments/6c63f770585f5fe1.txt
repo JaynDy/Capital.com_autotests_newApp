@@ -1,0 +1,11 @@
+START CLICK termsAndPoliciesLink
+COUNT termsAndPoliciesLink 1
+{
+  text: 'Terms & policies',
+  center: { x: 1085, y: 10950.75 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/en-eu
+USER: authorised
+EXPECTATION:  { type: 'redirect', page: 'termsAndPolicies' }
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'termsAndPolicies' }

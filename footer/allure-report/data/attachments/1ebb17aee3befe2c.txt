@@ -1,0 +1,11 @@
+START CLICK sitemapLink
+COUNT sitemapLink 1
+{
+  text: 'Χάρτης ιστότοπου',
+  center: { x: 618.609375, y: 11842.75 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/el-gr
+USER: unauthorised
+EXPECTATION:  { type: 'redirect', page: 'sitemap' }
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'sitemap' }

@@ -1,0 +1,11 @@
+START CLICK cookieSettingsLink
+COUNT cookieSettingsLink 1
+{
+  text: 'Setări module cookie',
+  center: { x: 703.0625, y: 11742.75 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/ro-ro
+USER: authorised
+EXPECTATION:  opens cookie menu
+EXPECTATION ASSERTIONS opens cookie menu

@@ -1,0 +1,11 @@
+START CLICK countrySwitcherBtn
+COUNT countrySwitcherBtn 1
+{
+  text: 'Netherlands',
+  center: { x: 206.265625, y: 10413.75 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/nl-nl
+USER: unauthorised
+EXPECTATION:  opens regional settings window
+EXPECTATION ASSERTIONS opens regional settings window

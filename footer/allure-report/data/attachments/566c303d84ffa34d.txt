@@ -1,0 +1,13 @@
+START CLICK licenseText
+COUNT licenseText 1
+{
+  text: 'CFD — это сложные инструменты, которые связаны с высоким риском быстрой потери средств из-за левереджа. 79.75% аккаунтов розничных инвесторов теряют деньги при торговле CFD с этим брокером. Убедитесь, что вы понимаете, как работают CFD, и можете позволить себе высокий риск потери средств.\n' +
+    '\n' +
+    'Capital Com Online Investments Ltd — это компания с ограниченной ответственностью, зарегистрированная под номером 209236B. Capital Com Online Investments Ltd зарегистрирована в Содружестве Багамских Островов и имеет разрешение Комиссии по ценным бумагам Багамских Островов (номер лицензии SIA-F245). Юридический адрес компании: #3 Bayside Executive Park, Blake Road and West Bay Street, P. O. Box CB 13012, Нассау, Багамские Острова.\n',
+  center: { x: 640, y: 11086.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/ru-int
+USER: unregistered
+EXPECTATION:  exist corresponding license
+EXPECTATION ASSERTIONS exist corresponding license

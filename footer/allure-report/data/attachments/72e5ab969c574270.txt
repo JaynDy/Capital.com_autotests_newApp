@@ -1,0 +1,27 @@
+START CLICK licenseText
+COUNT licenseText 1
+{
+  text: 'Capital Com SV Investments Limited:\n' +
+    "CFD's zijn complexe instrumenten en houden vanwege de hefboomwerking een hoog risico in op grote verliezen. 74% van de particuliere beleggers verliest geld bij de handel in CFD's met deze aanbieder.U moet nagaan of u wel degelijk begrijpt hoe CFD's werken en of u zich het hoge risico op geldverlies kunt veroorloven. Raadpleeg onze risicoverklaring\n" +
+    '\n' +
+    'Capital Com Group Ltd:\n' +
+    "CFD's zijn complexe instrumenten en brengen een hoog risico met zich mee om snel geld te verliezen door hefboomwerking. Tussen 74% en 89% van de rekeningen van particuliere beleggers verliest geld bij het handelen in CFD's. Je zou moeten overwegen of je begrijpt hoe CFD's werken en of je het hoge risico kunt dragen om je geld te verliezen. Raadpleeg onze risicoverklaring\n" +
+    '\n' +
+    "Waarschuwing: De waarde van aandelen en ETF's die u via een effectenrekening koopt, kan zowel dalen als stijgen. Dit betekent dat u mogelijk minder terugkrijgt dan u oorspronkelijk hebt ingelegd. Prestaties uit het verleden bieden geen garantie voor de toekomst.\n" +
+    '\n' +
+    "Transacties in niet-leverbare over-the-counter-instrumenten, zoals knock-outopties en CFD's, zijn complexe financiële producten met een hoog risico op verlies van het volledige geïnvesteerde kapitaal. Aangezien deze producten zowel winsten als aanzienlijke verliezen kunnen opleveren, zijn ze niet geschikt voor elke belegger. U moet nagaan of u wel degelijk begrijpt hoe CFD's werken en of u zich het hoge risico op verlies kunt veroorloven.\n" +
+    '\n' +
+    "Professionele klanten lopen het risico om meer te verliezen dan hun oorspronkelijke inleg. De informatie op deze website is van algemene aard en is niet afgestemd op uw financiële situatie, doelstellingen of behoeften. Raadpleeg onze juridische documenten en zorg ervoor dat u de risico's volledig begrijpt voordat u besluit om te handelen. Wij raden u aan om onze trainingen te volgen om een beter inzicht te krijgen in de risico's.\n" +
+    '\n' +
+    'Capital Com SV Investments Limited is een in Cyprus gevestigde onderneming met ondernemingsnummer HE 354252. Het bedrijf is erkend en staat onder toezicht van de Cyprus Securities and Exchange Commission (licentienummer 319/17). De maatschappelijke zetel bevindt zich op: Vasileiou Makedonos: Vasileiou Makedonos 8, Kinnis Business Center, 2nd floor, 3040, Limassol, Cyprus.\n' +
+    '\n' +
+    'Capital Com Group Ltd is een in Cyprus gevestigde onderneming met ondernemingsnummer ΗΕ 446198. Het bedrijf is erkend en staat onder toezicht van de Cyprus Securities and Exchange Commission (licentienummer 463/25). De maatschappelijke zetel bevindt zich op: Vasileiou Makedonos: Vasileiou Makedonos 8, Kinnis Business Center, 2nd floor, 3040, Limassol, Cyprus.\n' +
+    '\n' +
+    'De informatie op deze site is niet bestemd voor inwoners van de Verenigde Staten, Canada en België of enig ander land buiten de EER, en is niet bedoeld voor distributie aan of gebruik door personen in enig land of rechtsgebied waar deze distributie of dit gebruik in strijd zou zijn met de plaatselijke wet- of regelgeving.\n',
+  center: { x: 640, y: 11386.75 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/nl-nl
+USER: unregistered
+EXPECTATION:  exist corresponding license
+EXPECTATION ASSERTIONS exist corresponding license

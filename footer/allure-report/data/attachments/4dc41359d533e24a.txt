@@ -1,0 +1,11 @@
+START CLICK sitemapLink
+COUNT sitemapLink 1
+{
+  text: 'Mapa del sitio',
+  center: { x: 521.453125, y: 11225.53125 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/es-int
+USER: authorised
+EXPECTATION:  { type: 'redirect', page: 'sitemap' }
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'sitemap' }

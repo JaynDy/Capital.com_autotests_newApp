@@ -1,0 +1,11 @@
+START CLICK countrySwitcherBtn
+COUNT countrySwitcherBtn 1
+{
+  text: 'Serbia',
+  center: { x: 1089.8203125, y: 10413.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/ar-int
+USER: authorised
+EXPECTATION:  opens regional settings window
+EXPECTATION ASSERTIONS opens regional settings window

@@ -1,0 +1,11 @@
+START CLICK countrySwitcherBtn
+COUNT countrySwitcherBtn 1
+{
+  text: 'United Kingdom',
+  center: { x: 244.375, y: 10413.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/en-gb
+USER: unauthorised
+EXPECTATION:  opens regional settings window
+EXPECTATION ASSERTIONS opens regional settings window
