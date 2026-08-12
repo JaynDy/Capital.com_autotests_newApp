@@ -1,0 +1,18 @@
+[ { type: 'tag', description: 'retest' } ]
+[
+  { type: 'tag', description: 'retest' },
+  { type: 'issue', description: 'WEB 240' }
+]
+START CLICK yahooFinanceUKLink
+COUNT yahooFinanceUKLink 1
+{
+  text: 'Yahoo Finance UK',
+  center: { x: 134.71875, y: 2769 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/en-eu/analysis/rolls-royce-share-price-prediction
+USER: unregistered
+EXPECTATION:  opens link on currentURL
+EXPECTATION ASSERTIONS opens link on currentURL
+EXPECTED: https://uk.finance.yahoo.com/news/latest-rolls-royce-share-price-065013450.html
+ACTUAL: https://capital.com/en-eu/analysis/rolls-royce-share-price-prediction

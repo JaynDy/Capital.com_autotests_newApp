@@ -1,0 +1,17 @@
+Button enabled: true
+[ { type: 'tag', description: 'retest' } ]
+[
+  { type: 'tag', description: 'retest' },
+  { type: 'issue', description: 'WEB 247' }
+]
+START CLICK tradePolkadotSharesLink
+COUNT tradePolkadotSharesLink 1
+{
+  text: '交易 Polkadot 股票',
+  center: { x: 640, y: 8339.203125 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/zh-hans/learn/market-guides/trade-polkadot
+USER: unregistered
+EXPECTATION:  opens pdf document
+EXPECTATION ASSERTIONS opens pdf document

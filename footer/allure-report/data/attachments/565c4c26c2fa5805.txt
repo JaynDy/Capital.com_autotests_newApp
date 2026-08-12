@@ -1,0 +1,16 @@
+[ { type: 'tag', description: 'retest' } ]
+[
+  { type: 'tag', description: 'retest' },
+  { type: 'issue', description: 'WEB 380' }
+]
+START CLICK twitterIcon
+COUNT twitterIcon 1
+{
+  text: '\n        Twitter\n      ',
+  center: { x: 1078, y: 2257.15625 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://help.capitalccbah.com/hc/en-us/categories/9622507722258-My-account
+USER: unauthorised
+EXPECTATION:  opens external link
+EXPECTATION ASSERTIONS opens external link

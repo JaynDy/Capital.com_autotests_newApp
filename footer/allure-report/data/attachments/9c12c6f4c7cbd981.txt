@@ -1,0 +1,16 @@
+[ { type: 'tag', description: 'retest' } ]
+[
+  { type: 'tag', description: 'retest' },
+  { type: 'issue', description: 'Loc 388' }
+]
+START CLICK projectedUSInterestRatesLink
+COUNT projectedUSInterestRatesLink 1
+{
+  text: 'прогнозом процентных ставок в США',
+  center: { x: 429.3125, y: 3308.140625 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/en-ae/analysis/projected-interest-rates-in-5-years
+USER: unauthorised
+EXPECTATION:  opens link on currentURL
+EXPECTATION ASSERTIONS opens link on currentURL

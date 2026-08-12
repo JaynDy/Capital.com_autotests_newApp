@@ -1,0 +1,16 @@
+[ { type: 'tag', description: 'retest' } ]
+[
+  { type: 'tag', description: 'retest' },
+  { type: 'issue', description: 'WEB 32' }
+]
+START CLICK fyLink
+COUNT fyLink 1
+{
+  text: '(FY) 2020',
+  center: { x: 315.484375, y: 2022.5 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/en-int/markets/shares/international-consolidated-airlines-group-sa-gbp-share-price-1
+USER: unregistered
+EXPECTATION:  opens pdf document
+EXPECTATION ASSERTIONS opens pdf document

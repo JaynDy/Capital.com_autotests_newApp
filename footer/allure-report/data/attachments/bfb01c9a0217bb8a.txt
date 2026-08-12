@@ -1,0 +1,16 @@
+[ { type: 'tag', description: 'retest' } ]
+[
+  { type: 'tag', description: 'retest' },
+  { type: 'issue', description: 'WEB 247' }
+]
+START CLICK tradePolkadotSharesLink
+COUNT tradePolkadotSharesLink 1
+{
+  text: 'تداول أسهم بولكادوت',
+  center: { x: 640, y: 9159.203125 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/ar-ae/learn/market-guides/trade-bitcoin
+USER: unregistered
+EXPECTATION:  opens pdf document
+EXPECTATION ASSERTIONS opens pdf document

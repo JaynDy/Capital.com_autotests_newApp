@@ -1,0 +1,8 @@
+[ { type: 'tag', description: 'retest' } ]
+[
+  { type: 'tag', description: 'retest' },
+  { type: 'issue', description: 'WEB 247' }
+]
+START CLICK tradePolkadotSharesLink
+COUNT tradePolkadotSharesLink 0
+URL AFTER CLICK: https://capital.com/fr-int/learn/market-guides/trade-bitcoin

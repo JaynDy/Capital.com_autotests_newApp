@@ -1,0 +1,720 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: cta/generated.cta.spec.js >> tradeBitcoin page | tradePolkadotSharesLink | tradePolkadotSharesLink
+- Location: tests/cta/generated.cta.spec.js:40:7
+
+# Error details
+
+```
+Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: "learn/market-guides/trade-polkadot"
+Received string:    "/de-at/learn/market-guides/trade-trumpcoin"
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e7]:
+      - text: CFDs sind komplexe Instrumente und gehen wegen der Hebelwirkung mit dem hohen Risiko einher, schnell Geld zu verlieren.
+      - generic [ref=e8]:
+        - generic [ref=e9]:
+          - strong [ref=e10]: 74 % der Privatkundenkonten verlieren Geld beim CFD-Handel mit diesem Anbieter
+          - text: .
+        - text: Sie sollten überlegen, ob Sie verstehen, wie CFD funktionieren, und ob Sie es sich leisten können, das hohe Risiko einzugehen Ihr Geld zu verlieren. Bitte beachten Sie unsere
+        - link "Risikoaufklärung" [ref=e11] [cursor=pointer]:
+          - /url: https://capital.com/risk-disclosure-policy
+    - generic [ref=e13]:
+      - link [ref=e14] [cursor=pointer]:
+        - /url: /de-at
+        - img [ref=e15]
+      - generic [ref=e20]:
+        - navigation [ref=e21]:
+          - button "Trading" [ref=e22]:
+            - button "Trading" [ref=e23]:
+              - generic [ref=e24]: Trading
+          - button "Märkte" [ref=e25]:
+            - button "Märkte" [ref=e26]:
+              - generic [ref=e27]: Märkte
+          - link "Preisgestaltung" [ref=e30] [cursor=pointer]:
+            - /url: /de-at/ways-to-trade/fees-and-charges
+          - button "Über uns" [ref=e31]:
+            - button "Über uns" [ref=e32]:
+              - generic [ref=e33]: Über uns
+        - button "de" [ref=e34] [cursor=pointer]:
+          - generic [ref=e36]: de
+      - generic [ref=e38]:
+        - button "Anmelden" [ref=e39] [cursor=pointer]: Anmelden
+        - button "Konto eröffnen" [ref=e40] [cursor=pointer]: Konto eröffnen
+  - generic [ref=e41]:
+    - paragraph [ref=e44]:
+      - generic [ref=e45]:
+        - link "Startseite" [ref=e46] [cursor=pointer]:
+          - /url: /de-at
+        - text: •
+      - generic [ref=e47]:
+        - link "Lernen" [ref=e48] [cursor=pointer]:
+          - /url: /de-at/learn
+        - text: •
+      - generic [ref=e49]:
+        - link "Marktleitfäden" [ref=e50] [cursor=pointer]:
+          - /url: /de-at/learn/market-guides
+        - text: •
+      - text: Wie man TRUMP Coin traden kann
+    - generic [ref=e51]:
+      - generic [ref=e53]:
+        - main [ref=e54]:
+          - generic [ref=e56]:
+            - generic [ref=e57]:
+              - heading "Was ist TRUMP und wie kann ich es traden?" [level=1] [ref=e59]
+              - generic [ref=e62]:
+                - button "share on Twitter" [ref=e63] [cursor=pointer]
+                - button "share on Facebook" [ref=e64] [cursor=pointer]
+                - button "share on Linkedin" [ref=e65] [cursor=pointer]
+                - button "Copy the url of the current page." [ref=e66] [cursor=pointer]:
+                  - button "Copy the url of the current page." [ref=e67]
+            - figure [ref=e68]
+          - generic [ref=e71]:
+            - paragraph [ref=e72]: Erfahren Sie alles über den Krypto-Coin von Trump, einschließlich wie dieser funktioniert, TRUMP vs. MELANIA und wie Sie TRUMP/USD über CFDs traden können.
+            - paragraph [ref=e73]:
+              - link "Zur Marktseite" [ref=e74] [cursor=pointer]:
+                - /url: /de-at/markets/cryptocurrencies/chart-trump-to-us-dollar
+          - generic [ref=e76]:
+            - heading "Was ist TRUMP?" [level=2] [ref=e77]:
+              - strong [ref=e78]: Was ist TRUMP?
+            - paragraph [ref=e79]: TRUMP, alternativ auch „$Trump“ oder „Trump Coin“, ist eine dezentralisierte Kryptowährung, die von CIC Digital LLC und Fight Fight Fight LLC erstellt und von Donald Trump unterstützt wurde. Der TRUMP-Coin wurde am 17. Januar 2025, drei Tage vor Trumps Amtseinführung als 47. Präsident der Vereinigten Staaten veröffentlicht und trägt sein Abbild als zentrales Markenzeichen.
+            - paragraph [ref=e80]:
+              - text: Als „Memecoin“ bietet
+              - link "TRUMP" [ref=e81] [cursor=pointer]:
+                - /url: /de-at/markets/cryptocurrencies/chart-trump-to-us-dollar
+              - text: mit dem Branding als „‚Präsidenten-Coin‘“ eine unverwechselbare politische Dimension, wodurch er sich in der Welt der Kryptowährungen abhebt. Innerhalb weniger Tage nach der ersten Veröffentlichung erreichte TRUMP eine Marktkapitalisierung von über 10 Milliarden $ und stieg in die Top 20 der größten Kryptowährungen auf CoinMarketCap auf.
+            - paragraph [ref=e82]:
+              - strong [ref=e83]: Sehen Sie Ihren Trade auf $TRUMP?
+            - paragraph [ref=e84]: Gehen Sie Ihre Position auf $TRUMP und 270+ weitere Krypto-CFDs auf unserer benutzerfreundlichen Plattform ein.
+            - paragraph [ref=e85]:
+              - link "Konto erstellen" [ref=e86] [cursor=pointer]:
+                - /url: /trading/signup
+          - generic [ref=e88]:
+            - 'heading "TRUMP vs. MELANIA: Was sind die Unterschiede?" [level=2] [ref=e89]':
+              - strong [ref=e90]: "TRUMP vs. MELANIA: Was sind die Unterschiede?"
+            - paragraph [ref=e91]: "MELANIA ist eine weitere Kryptowährung, die von Melania Trump im Januar 2025 veröffentlicht wurde. TRUMP und MELANIA existieren in demselben Ökosystem der „politischen Memecoins“, aber sie weisen einige Unterschiede auf:"
+            - table [ref=e93]:
+              - rowgroup [ref=e94]:
+                - row "TRUMP MELANIA" [ref=e95]:
+                  - cell [ref=e96]
+                  - cell "TRUMP" [ref=e97]:
+                    - paragraph [ref=e98]:
+                      - strong [ref=e99]: TRUMP
+                  - cell "MELANIA" [ref=e100]:
+                    - paragraph [ref=e101]:
+                      - strong [ref=e102]: MELANIA
+                - row "Veröffentlichungsdatum 17. Januar 2025 19. Januar 2025" [ref=e103]:
+                  - cell "Veröffentlichungsdatum" [ref=e104]:
+                    - paragraph [ref=e105]:
+                      - strong [ref=e106]: Veröffentlichungsdatum
+                  - cell "17. Januar 2025" [ref=e107]:
+                    - paragraph [ref=e108]: 17. Januar 2025
+                  - cell "19. Januar 2025" [ref=e109]:
+                    - paragraph [ref=e110]: 19. Januar 2025
+                - row "Kryptos TRUMP MELANIA" [ref=e111]:
+                  - cell "Kryptos" [ref=e112]:
+                    - paragraph [ref=e113]:
+                      - strong [ref=e114]: Kryptos
+                  - cell "TRUMP" [ref=e115]:
+                    - paragraph [ref=e116]: TRUMP
+                  - cell "MELANIA" [ref=e117]:
+                    - paragraph [ref=e118]: MELANIA
+                - row "Maskottchen Donald Trump Melania Trump" [ref=e119]:
+                  - cell "Maskottchen" [ref=e120]:
+                    - paragraph [ref=e121]:
+                      - strong [ref=e122]: Maskottchen
+                  - cell "Donald Trump" [ref=e123]:
+                    - paragraph [ref=e124]: Donald Trump
+                  - cell "Melania Trump" [ref=e125]:
+                    - paragraph [ref=e126]: Melania Trump
+                - row "Blockchain Basiert auf Solana, SPL-Token-Standard. Basiert auf Solana, SPL-Token-Standard." [ref=e127]:
+                  - cell "Blockchain" [ref=e128]:
+                    - paragraph [ref=e129]:
+                      - strong [ref=e130]: Blockchain
+                  - cell "Basiert auf Solana, SPL-Token-Standard." [ref=e131]:
+                    - paragraph [ref=e132]: Basiert auf Solana, SPL-Token-Standard.
+                  - cell "Basiert auf Solana, SPL-Token-Standard." [ref=e133]:
+                    - paragraph [ref=e134]: Basiert auf Solana, SPL-Token-Standard.
+                - row "Maximales Token-Angebot 1 Milliarde Token, mit zunächst 200 Millionen im Umlauf. 500 Millionen Token, mit einer anfänglichen Freigabe von 100 Millionen Token." [ref=e135]:
+                  - cell "Maximales Token-Angebot" [ref=e136]:
+                    - paragraph [ref=e137]:
+                      - strong [ref=e138]: Maximales Token-Angebot
+                  - cell "1 Milliarde Token, mit zunächst 200 Millionen im Umlauf." [ref=e139]:
+                    - paragraph [ref=e140]: 1 Milliarde Token, mit zunächst 200 Millionen im Umlauf.
+                  - cell "500 Millionen Token, mit einer anfänglichen Freigabe von 100 Millionen Token." [ref=e141]:
+                    - paragraph [ref=e142]: 500 Millionen Token, mit einer anfänglichen Freigabe von 100 Millionen Token.
+                - row "Anwendungsfall Meme, Trading, politische Symbolik. Unterstützung von wohltätigen Initiativen, Trading." [ref=e143]:
+                  - cell "Anwendungsfall" [ref=e144]:
+                    - paragraph [ref=e145]:
+                      - strong [ref=e146]: Anwendungsfall
+                  - cell "Meme, Trading, politische Symbolik." [ref=e147]:
+                    - paragraph [ref=e148]: Meme, Trading, politische Symbolik.
+                  - cell "Unterstützung von wohltätigen Initiativen, Trading." [ref=e149]:
+                    - paragraph [ref=e150]: Unterstützung von wohltätigen Initiativen, Trading.
+                - row "Schwerpunkt Memecoin-zentriert, mit Ambitionen der Integration in politisches Fundraising und Merchandise-Verkäufe. Kombiniert karitative Spenden mit einer kleineren Memecoin-Präsenz." [ref=e151]:
+                  - cell "Schwerpunkt" [ref=e152]:
+                    - paragraph [ref=e153]:
+                      - strong [ref=e154]: Schwerpunkt
+                  - cell "Memecoin-zentriert, mit Ambitionen der Integration in politisches Fundraising und Merchandise-Verkäufe." [ref=e155]:
+                    - paragraph [ref=e156]: Memecoin-zentriert, mit Ambitionen der Integration in politisches Fundraising und Merchandise-Verkäufe.
+                  - cell "Kombiniert karitative Spenden mit einer kleineren Memecoin-Präsenz." [ref=e157]:
+                    - paragraph [ref=e158]: Kombiniert karitative Spenden mit einer kleineren Memecoin-Präsenz.
+                - row "Marktkapitalisierung Über 10 Milliarden $ innerhalb weniger Tage nach der Veröffentlichung.* Etwa 2 Milliarden $ in der ersten Woche.*" [ref=e159]:
+                  - cell "Marktkapitalisierung" [ref=e160]:
+                    - paragraph [ref=e161]:
+                      - strong [ref=e162]: Marktkapitalisierung
+                  - cell "Über 10 Milliarden $ innerhalb weniger Tage nach der Veröffentlichung.*" [ref=e163]:
+                    - paragraph [ref=e164]: Über 10 Milliarden $ innerhalb weniger Tage nach der Veröffentlichung.*
+                  - cell "Etwa 2 Milliarden $ in der ersten Woche.*" [ref=e165]:
+                    - paragraph [ref=e166]: Etwa 2 Milliarden $ in der ersten Woche.*
+                - row "Inflationsmodell Deflationär, mit regelmäßigen Token-Burns, wodurch sich das Angebot mit der Zeit verringert. Halb-Deflationär, wobei ein Teil jeder Transaktion an wohltätige Zwecke gespendet oder verbrannt wird." [ref=e167]:
+                  - cell "Inflationsmodell" [ref=e168]:
+                    - paragraph [ref=e169]:
+                      - strong [ref=e170]: Inflationsmodell
+                  - cell "Deflationär, mit regelmäßigen Token-Burns, wodurch sich das Angebot mit der Zeit verringert." [ref=e171]:
+                    - paragraph [ref=e172]: Deflationär, mit regelmäßigen Token-Burns, wodurch sich das Angebot mit der Zeit verringert.
+                  - cell "Halb-Deflationär, wobei ein Teil jeder Transaktion an wohltätige Zwecke gespendet oder verbrannt wird." [ref=e173]:
+                    - paragraph [ref=e174]: Halb-Deflationär, wobei ein Teil jeder Transaktion an wohltätige Zwecke gespendet oder verbrannt wird.
+            - paragraph [ref=e175]:
+              - superscript [ref=e176]: "*Basierend auf Daten von CoinMarketCap vom Januar 2025."
+            - paragraph [ref=e177]:
+              - strong [ref=e178]: Entdecken Sie den MELANIA Coin und wie dieser funktioniert –
+              - text: Lesen Sie unseren umfassenden MELANIA-Trading-Leitfaden.
+            - paragraph
+          - generic [ref=e180]:
+            - heading "Wie funktioniert TRUMP?" [level=2] [ref=e181]:
+              - strong [ref=e182]: Wie funktioniert TRUMP?
+            - paragraph [ref=e183]:
+              - link "TRUMP" [ref=e184] [cursor=pointer]:
+                - /url: /de-at/markets/cryptocurrencies/chart-trump-to-us-dollar
+              - text: wurde auf der Solana-Blockchain entwickelt und nutzt den „SPL“-Token-Standard. Dies stellt kryptografisch gesicherte TRUMP-Transaktionen und die Kompatibilität mit dezentralisierten Anwendungen (dApps) im Solana-Ökosystem sicher.
+            - paragraph [ref=e185]:
+              - text: Die übergeordnete Blockchain von TRUMP Coin,
+              - link "Solana" [ref=e186] [cursor=pointer]:
+                - /url: /de-at/learn/market-guides/trade-solana
+              - text: (
+              - link "SOL" [ref=e187] [cursor=pointer]:
+                - /url: /de-at/markets/cryptocurrencies/chart-sol-to-us-dollar-1
+              - text: ), funktioniert als leistungsstarke Proof-of-Stake-Blockchain, die eine Kombination von Proof-of-Stake (PoS) und Proof-of-History (PoH) nutzt, um das Netzwerk zu sichern und Transaktionen effizient zu verarbeiten. Die Validatoren staken SOL (den nativen Token von Solana), um die Integrität des Netzwerks aufrechtzuerhalten.
+            - paragraph [ref=e188]: Das Gesamtangebot von TRUMP ist auf eine Milliarde Token begrenzt, mit einer anfänglichen Freigabe von 200 Millionen Token für die Öffentlichkeit. CIC Digital LLC und Fight Fight Fight LLC halten 80 % des Gesamtangebots. Der noch verbleibende Teil des TRUMP-Angebots soll in den nächsten drei Jahren freigegeben werden.
+            - paragraph [ref=e189]:
+              - strong [ref=e190]: Erfahren Sie mehr über Memecoins
+            - paragraph [ref=e191]: Lesen Sie unseren umfassenden Memecoin-Trading-Leitfaden.
+            - paragraph [ref=e192]:
+              - strong [ref=e193]: Erfahren Sie mehr über die Solana-Blockchain
+            - paragraph [ref=e194]:
+              - text: Lesen Sie unseren umfassenden
+              - link "Solana (SOL) Trading-Leitfaden" [ref=e195] [cursor=pointer]:
+                - /url: /de-at/learn/market-guides/trade-solana
+              - text: .
+          - generic [ref=e197]:
+            - heading "Wie sieht die Kursentwicklung von TRUMP aus?" [level=2] [ref=e198]:
+              - strong [ref=e199]: Wie sieht die Kursentwicklung von TRUMP aus?
+            - paragraph [ref=e200]: Nach der Veröffentlichung am 17. Januar 2025 hatte TRUMP Coin sofort einen Einfluss auf den Kryptowährungsmarkt, wobei er innerhalb weniger Tage eine Marktkapitalisierung von über 10 Milliarden $ erreichte.
+          - generic [ref=e204]:
+            - paragraph [ref=e205]:
+              - strong [ref=e206]: Die Wertentwicklung der Vergangenheit ist kein zuverlässiger Indikator für zukünftige Ergebnisse
+            - paragraph [ref=e207]: TRUMP Coin konnte in den ersten Stunden des Tradings am 17. Januar 2025 sofort an Fahrt gewinnen. Als am nächsten Tag weitere Kryptobörsen TRUMP für das Trading einführten, stieg der Kurs deutlich an.
+            - paragraph [ref=e208]: Am 18. Januar 2025 stieg der TRUMP-Kurs bis 6:00 Uhr auf über 10 $, bis 10:00 Uhr auf über 20 $ und bis 16:00 Uhr auf über 30 $ an. Er wurde für den Rest des Tages in einem Bereich von 20 $ bis 30 $ gehandelt. Dann, am 19. Januar 2025, begann der Kurs von TRUMP erneut anzusteigen; er durchbrach um 4:00 Uhr die Marke von 30 $, um 7:00 Uhr die Marke von 40 $ und erreichte schließlich ein Allzeithoch von 75,35 $.
+            - paragraph [ref=e209]:
+              - text: Der
+              - link "TRUMP-Kurs" [ref=e210] [cursor=pointer]:
+                - /url: /de-at/markets/cryptocurrencies/chart-trump-to-us-dollar
+              - text: sank nach diesem Punkt und weist zum Zeitpunkt des Schreibens eine konstante Volatilität auf.
+          - generic [ref=e212]:
+            - heading "Welche Faktoren könnten den Realtime-Kurs von TRUMP beeinflussen?" [level=2] [ref=e213]:
+              - strong [ref=e214]: Welche Faktoren könnten den Realtime-Kurs von TRUMP beeinflussen?
+            - paragraph [ref=e215]:
+              - text: Der
+              - link "Realtime-Kurs von TRUMP" [ref=e216] [cursor=pointer]:
+                - /url: /de-at/markets/cryptocurrencies/chart-trump-to-us-dollar
+              - text: wird durch eine Kombination aus Markttrends, soziale Dynamiken und externe Ereignisse beeinflusst, was sowohl Chancen als auch Herausforderungen mit sich bringt.
+            - heading "Politische Ereignisse und Unterstützungen" [level=3] [ref=e217]:
+              - strong [ref=e218]: Politische Ereignisse und Unterstützungen
+            - paragraph [ref=e219]: Als politisch vermarkteter Memecoin könnte TRUMP direkt von den Entwicklungen in der Politik beeinflusst werden. Positive Ereignisse, wie Unterstützungen von Donald Trump, öffentliche Auftritte oder Ankündigungen von Initiativen in Verbindung mit dem Coin, könnten die Nachfrage anregen und den Kurs in die Höhe treiben. Andererseits führt die enge Verbindung des Tokens zu Trump auch zu Risiken, etwa durch politische Kontroversen, eine ungünstige Medienberichterstattung oder gespaltene Meinungen – dies führt potenziell zu Kursverlusten und einer erhöhten Volatilität.
+            - heading "Trends und Hype in den sozialen Medien" [level=3] [ref=e220]:
+              - strong [ref=e221]: Trends und Hype in den sozialen Medien
+            - paragraph [ref=e222]: Die sozialen Medien spielen für ein zunehmendes Interesse und die Kursaktivität von TRUMP eine Rolle. Virale Memes, Unterstützungen durch Influencer und angesagte Hashtags können die Sichtbarkeit und Nachfrage des Coins deutlich steigern. Doch die Abhängigkeit von der Online-Begeisterung macht TRUMP anfällig für ein nachlassendes Interesse oder Stimmungswandel, was mit der Zeit zu Kursrückgängen oder Stagnation führen könnte.
+            - heading "Breitere Trends des Kryptowährungsmarkts" [level=3] [ref=e223]:
+              - strong [ref=e224]: Breitere Trends des Kryptowährungsmarkts
+            - paragraph [ref=e225]:
+              - text: Die Kursentwicklung von TRUMP kann sich an die breiteren Bewegungen des Kryptowährungsmarkts anpassen. Während bullischer Phasen kann eine erhöhte Risikobereitschaft unter Tradern den
+              - link "TRUMP-Kurs" [ref=e226] [cursor=pointer]:
+                - /url: /de-at/markets/cryptocurrencies/chart-trump-to-us-dollar
+              - text: steigen lassen, da Trader nach spekulativen Möglichkeiten suchen. In bärischen Märkten könnte TRUMP einen Abwärtsdruck verzeichnen, da sich Trader etablierteren oder stabileren Vermögenswerten zuwenden, wodurch die Anfälligkeit für marktweite Stimmungsänderungen verdeutlicht wird.
+            - heading "Performance des Solana-Netzwerks" [level=3] [ref=e227]:
+              - strong [ref=e228]: Performance des Solana-Netzwerks
+            - paragraph [ref=e229]:
+              - text: Als ein auf der Solana-Blockchain basierender Token richten sich der Nutzen und die Attraktivität von TRUMP nach der Performance des Netzwerks. Geringe Transaktionsgebühren und eine hohe Geschwindigkeit können TRUMP-Transaktionen effizient und attraktiv für Trader machen. Gleichzeitig könnten Netzwerküberlastungen, Sicherheitsbedenken oder technische Probleme bei Solana die Trading-Aktivität beeinträchtigen und sich negativ auf den
+              - link "TRUMP-Kurs" [ref=e230] [cursor=pointer]:
+                - /url: /de-at/markets/cryptocurrencies/chart-trump-to-us-dollar
+              - text: auswirken.
+            - heading "Die Medienberichterstattung und öffentliche Wahrnehmung" [level=3] [ref=e231]:
+              - strong [ref=e232]: Die Medienberichterstattung und öffentliche Wahrnehmung
+            - paragraph [ref=e233]: Die Medienberichterstattung kann die potenziellen Vorteile und Risiken von TRUMP verstärken. Positive Berichte, etwa über das deflationäre Modell oder namhafte Unterstützungen, können für Begeisterung sorgen und neue Trader anziehen. Umgekehrt könnte sich eine negative Presse – wie Kritik an der Verbindung mit politischen Persönlichkeiten oder Bedenken über die Zentralisierung – auf das Vertrauen von Tradern auswirken und die Nachfrage verringern.
+            - heading "Das spekulative Trading und die Aktivität der Wale" [level=3] [ref=e234]:
+              - strong [ref=e235]: Das spekulative Trading und die Aktivität der Wale
+            - paragraph [ref=e236]: Wie auch andere Memecoins ist TRUMP auf ein spekulatives Interesse angewiesen, das zu erheblichen Kursschwankungen führen kann. Große Trades von den größten Inhabern, den „Walen“, können erhebliche Aufwärts- oder Abwärtsbewegungen verursachen und somit potenzielle Möglichkeiten für kurzfristige Gewinne schaffen. Dieses hohe Maß an Spekulation ist jedoch auch mit Risiken verbunden, da unerwartete Veränderungen der Stimmungslage oder des Handelsvolumens zu Kursschwankungen führen könnten.
+          - generic [ref=e238]:
+            - heading "Was sind die Handelszeiten für TRUMP?" [level=2] [ref=e239]:
+              - strong [ref=e240]: Was sind die Handelszeiten für TRUMP?
+            - paragraph [ref=e241]: TRUMP basiert auf einem dezentralisierten Blockchain-Netzwerk, das 24 Stunden am Tag, an sieben Tagen in der Woche aktiv ist. Das bedeutet, dass Sie TRUMP jederzeit traden können, auch an Wochenenden und Feiertagen.
+            - list [ref=e242]:
+              - listitem [ref=e243]:
+                - text: •
+                - paragraph [ref=e244]:
+                  - strong [ref=e245]: Kryptowährungsbörsen
+                  - text: – viele Börsen ermöglichen das 24/7-Trading, wodurch eine kontinuierliche Marktteilnahme möglich ist.
+              - listitem [ref=e246]:
+                - text: •
+                - paragraph [ref=e247]:
+                  - strong [ref=e248]: Online-Handelsplattformen
+                  - text: – einige zuverlässige und vertrauenswürdige Broker bieten das TRUMP-Trading über CFDs an.
+            - paragraph [ref=e249]:
+              - text: Wenn Sie sich für das Traden mit CFDs entscheiden, können Sie die Performance von TRUMP in Realtime in US-Dollar mit unserem umfassenden
+              - link "TRUMP/USD-Kurschart" [ref=e250] [cursor=pointer]:
+                - /url: /de-at/markets/cryptocurrencies/chart-trump-to-us-dollar
+              - text: verfolgen.
+            - paragraph [ref=e251]: Indem Sie die Kryptowährungsaktivitäten beobachten, können Sie wichtige fundamentale oder technische Ereignisse im Blick behalten, die sich auf die kurzfristige Wertentwicklung der Kryptowährung auswirken können.
+            - paragraph [ref=e252]:
+              - link "Ein Konto erstellen" [ref=e253] [cursor=pointer]:
+                - /url: /trading/signup
+              - link "Ein Demokonto eröffnen" [ref=e254] [cursor=pointer]:
+                - /url: /trading/signup?go=demo
+          - generic [ref=e256]:
+            - heading "Wie man TRUMP kaufen und traden kann" [level=2] [ref=e257]:
+              - strong [ref=e258]: Wie man TRUMP kaufen und traden kann
+            - paragraph [ref=e259]: TRUMP ist eine Kryptowährung, was bedeutet, dass Sie diese direkt auf einer Kryptowährungsbörse oder über Peer-to-Peer-Transaktionen traden können. Sie können sich ebenso dafür entscheiden, TRUMP über ein Derivat zu traden, ein Finanzprodukt, das seinen Wert aus dem Kurs des zugrundeliegenden Vermögenswerts bezieht (oder „ableitet“).
+            - paragraph [ref=e260]:
+              - text: Sie könnten einen
+              - link "Differenzkontrakt oder CFD" [ref=e261] [cursor=pointer]:
+                - /url: /de-at/ways-to-trade/cfd-trading
+              - text: verwenden, um auf den Kurs von TRUMP-Paaren zu traden. Ein CFD ist ein Kontrakt, üblicherweise zwischen einem Broker und einem Trader, bei dem sich eine Partei verpflichtet, der anderen die Differenz des Wertes eines Wertpapiers zwischen der Eröffnung und der Schließung eines Trades zu zahlen.
+            - paragraph [ref=e262]:
+              - text: Sie können
+              - link "CFDs" [ref=e263] [cursor=pointer]:
+                - /url: /de-at/ways-to-trade/cfd-trading/what-is-cfd-trading
+              - text: zum Traden nutzen, unabhängig davon, ob Sie denken, dass ein TRUMP-Paar steigen (als „long gehen“ bezeichnet) oder fallen wird („short gehen“). CFDs bieten Ihnen den Zugang zu einer Hebelwirkung, wodurch größere Positionen mit einem relativ geringen Einsatz möglich sind. Dadurch können potenzielle Gewinne verstärkt werden, aber auch potenzielle Verluste, was das CFD-Trading risikoreich macht.
+            - paragraph [ref=e264]:
+              - text: Sie können mehr über das Trading von
+              - link "Kryptowährungen" [ref=e265] [cursor=pointer]:
+                - /url: /de-at/markets/cryptocurrencies
+              - text: mit Capital.com in unserem umfassenden
+              - link "Leitfaden zum Kryptowährungshandel" [ref=e266] [cursor=pointer]:
+                - /url: /de-at/learn/market-guides/what-is-cryptocurrency-trading
+              - text: erfahren.
+            - paragraph [ref=e267]:
+              - text: Sie können TRUMP-Paare neben CFDs auch über Instrumente wie Futures, Optionen, ETFs und Investmentfonds handeln. Allesamt bieten jeweils eine Alternative zum CFD-Trading mit Hebel und sind für verschiedene Risikoprofile und
+              - link "Strategien" [ref=e268] [cursor=pointer]:
+                - /url: /de-at/analysis
+              - text: geeignet.
+            - paragraph [ref=e269]:
+              - link "Ein Konto erstellen" [ref=e270] [cursor=pointer]:
+                - /url: /trading/signup
+              - link "Ein Demokonto eröffnen" [ref=e271] [cursor=pointer]:
+                - /url: /trading/signup?go=demo
+          - heading "FAQ" [level=2] [ref=e274]:
+            - strong [ref=e275]: FAQ
+          - generic [ref=e277]:
+            - group [ref=e278]:
+              - generic "Was ist TRUMP Coin?" [ref=e279] [cursor=pointer]:
+                - heading "Was ist TRUMP Coin?" [level=3] [ref=e280]
+            - group [ref=e281]:
+              - generic "Was bedeutet Trump Coin für Krypto?" [ref=e282] [cursor=pointer]:
+                - heading "Was bedeutet Trump Coin für Krypto?" [level=3] [ref=e283]
+            - group [ref=e284]:
+              - generic "Wo kann ich TRUMP Coin traden?" [ref=e285] [cursor=pointer]:
+                - heading "Wo kann ich TRUMP Coin traden?" [level=3] [ref=e286]
+        - complementary [ref=e287]:
+          - navigation [ref=e291]:
+            - strong [ref=e292]: Inhalte
+            - separator
+            - generic [ref=e293]:
+              - link "Was ist TRUMP?" [ref=e295] [cursor=pointer]:
+                - /url: "#part_0"
+              - 'link "TRUMP vs. MELANIA: Was sind die Unterschiede?" [ref=e297] [cursor=pointer]':
+                - /url: "#part_1"
+              - link "Wie funktioniert TRUMP?" [ref=e299] [cursor=pointer]:
+                - /url: "#part_2"
+              - link "Wie sieht die Kursentwicklung von TRUMP aus?" [ref=e301] [cursor=pointer]:
+                - /url: "#part_3"
+              - link "Welche Faktoren könnten den Realtime-Kurs von TRUMP beeinflussen?" [ref=e303] [cursor=pointer]:
+                - /url: "#part_4"
+              - link "Was sind die Handelszeiten für TRUMP?" [ref=e305] [cursor=pointer]:
+                - /url: "#part_5"
+              - link "Wie man TRUMP kaufen und traden kann" [ref=e307] [cursor=pointer]:
+                - /url: "#part_6"
+              - link "FAQ" [ref=e309] [cursor=pointer]:
+                - /url: "#part_7"
+          - generic [ref=e310]:
+            - generic [ref=e312]:
+              - strong [ref=e313]: Die meistgehandelten
+              - generic [ref=e317]:
+                - button "Die meistgehandelten" [disabled]: Die meistgehandelten
+                - button "Top-Aufsteiger" [disabled]: Top-Aufsteiger
+                - button "Top-Absteiger" [disabled]: Top-Absteiger
+                - button "Die volatilsten" [disabled]: Die volatilsten
+            - text: Die Aktienkurse sind indikativ und können von den aktuellen Marktpreisen abweichen.
+      - generic [ref=e321]:
+        - heading "Drei Schritte für den Einstieg" [level=2] [ref=e323]
+        - generic [ref=e324]:
+          - button [ref=e326] [cursor=pointer]
+          - generic [ref=e329]: 1. Erstellen Sie Ihr Konto (vorbehaltlich der Eignung)
+          - generic [ref=e330]: 2. Zahlen Sie zu Ihren Bedingungen ein
+          - generic [ref=e331]: 3. Starten Sie, wenn Sie bereit sind
+  - contentinfo [ref=e333]:
+    - generic [ref=e334]:
+      - link [ref=e335] [cursor=pointer]:
+        - /url: /de-at
+        - img [ref=e336]
+      - generic [ref=e340]:
+        - link [ref=e341] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/capital.com/
+        - link [ref=e342] [cursor=pointer]:
+          - /url: https://www.youtube.com/@Capitaltrading/videos
+      - generic [ref=e343]:
+        - link [ref=e344] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/id1230088754?cp_device_id=3972833f-e36b-4be3-9a7c-7594f863ce9c&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e345] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=3972833f-e36b-4be3-9a7c-7594f863ce9c&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e346] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading.huawei-huawei?cp_device_id=3972833f-e36b-4be3-9a7c-7594f863ce9c&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+    - generic [ref=e347]:
+      - generic [ref=e348]:
+        - generic [ref=e349]:
+          - generic [ref=e350]:
+            - generic [ref=e351]: "Land / Region:"
+            - button "Austria" [ref=e352] [cursor=pointer]:
+              - generic [ref=e354]: Austria
+          - generic [ref=e355]: •
+          - generic [ref=e356]:
+            - generic [ref=e357]: "Sprache:"
+            - button "German" [ref=e358] [cursor=pointer]:
+              - generic [ref=e359]: German
+        - generic [ref=e360]:
+          - generic [ref=e361]: "Unsere Kontakte:"
+          - link "+49 3046690292" [ref=e364] [cursor=pointer]:
+            - /url: tel:+49 3046690292
+            - strong [ref=e365]: +49 3046690292
+            - strong
+          - generic [ref=e366]: •
+          - link "support@capital.com" [ref=e368] [cursor=pointer]:
+            - /url: mailto:support@capital.com
+            - strong [ref=e369]: support@capital.com
+      - generic [ref=e370]:
+        - generic [ref=e371]:
+          - strong [ref=e373]: Trading
+          - generic [ref=e374]:
+            - generic [ref=e375]:
+              - generic [ref=e376]: Trading
+              - generic [ref=e377]:
+                - link "CFDs traden" [ref=e379] [cursor=pointer]:
+                  - /url: /de-at/ways-to-trade/cfd-trading
+                - link "Knock-outs traden" [ref=e381] [cursor=pointer]:
+                  - /url: /de-at/ways-to-trade/knock-outs
+                - link "Demokonto" [ref=e383] [cursor=pointer]:
+                  - /url: /de-at/trading-platforms/demo-account
+                - link "Pro-Konto" [ref=e385] [cursor=pointer]:
+                  - /url: /de-at/professional-clients
+            - generic [ref=e386]:
+              - generic [ref=e387]: Handelsplattformen
+              - generic [ref=e388]:
+                - link "Web-Plattform" [ref=e390] [cursor=pointer]:
+                  - /url: /de-at/trading-platforms/web-platform
+                - link "Mobile App" [ref=e392] [cursor=pointer]:
+                  - /url: /de-at/trading-platforms/mobile-apps
+                - link "TradingView" [ref=e394] [cursor=pointer]:
+                  - /url: /de-at/trading-platforms/trading-view
+                - link "MT4" [ref=e396] [cursor=pointer]:
+                  - /url: /de-at/trading-platforms/mt4
+                - link "MT5" [ref=e398] [cursor=pointer]:
+                  - /url: /de-at/trading-platforms/mt5
+            - generic [ref=e399]:
+              - generic [ref=e400]: Lernen
+              - generic [ref=e401]:
+                - link "Trading-Strategien" [ref=e403] [cursor=pointer]:
+                  - /url: /de-at/learn/trading-strategies
+                - link "Technische Analyse" [ref=e405] [cursor=pointer]:
+                  - /url: /de-at/learn/technical-analysis
+                - link "Trading-Psychologie" [ref=e407] [cursor=pointer]:
+                  - /url: /de-at/learn/trading-psychology
+                - link "Webinare" [ref=e409] [cursor=pointer]:
+                  - /url: /de-at/learn/webinars
+                - link "Lernen" [ref=e411] [cursor=pointer]:
+                  - /url: /de-at/learn
+        - generic [ref=e412]:
+          - strong [ref=e414]: Märkte
+          - generic [ref=e415]:
+            - generic [ref=e416]:
+              - generic [ref=e417]: Unsere Märkte
+              - generic [ref=e418]:
+                - link "Märkte" [ref=e420] [cursor=pointer]:
+                  - /url: /de-at/markets
+                - link "Forex" [ref=e422] [cursor=pointer]:
+                  - /url: /de-at/markets/forex
+                - link "Aktien" [ref=e424] [cursor=pointer]:
+                  - /url: /de-at/markets/shares
+                - link "Indizes" [ref=e426] [cursor=pointer]:
+                  - /url: /de-at/markets/indices
+                - link "Rohstoffe" [ref=e428] [cursor=pointer]:
+                  - /url: /de-at/markets/commodities
+                - link "Kryptowährungen" [ref=e430] [cursor=pointer]:
+                  - /url: /de-at/markets/cryptocurrencies
+                - link "Anleihen" [ref=e432] [cursor=pointer]:
+                  - /url: /de-at/markets/bonds
+                - link "Zinssätze" [ref=e434] [cursor=pointer]:
+                  - /url: /de-at/markets/interest-rates
+            - generic [ref=e435]:
+              - generic [ref=e436]: Marktinformationen
+              - generic [ref=e437]:
+                - link "Marktanalyse" [ref=e439] [cursor=pointer]:
+                  - /url: /de-at/analysis
+                - link "Preisgestaltung der Märkte" [ref=e441] [cursor=pointer]:
+                  - /url: /de-at/about-us/how-our-markets-are-priced
+        - link "Preisgestaltung" [ref=e444] [cursor=pointer]:
+          - /url: /de-at/ways-to-trade/fees-and-charges
+          - strong [ref=e445]: Preisgestaltung
+        - generic [ref=e446]:
+          - strong [ref=e448]: Über uns
+          - generic [ref=e449]:
+            - generic [ref=e450]:
+              - generic [ref=e451]: Über uns
+              - generic [ref=e452]:
+                - link "Über uns" [ref=e454] [cursor=pointer]:
+                  - /url: /de-at/about-us
+                - link "Unsere Niederlassungen" [ref=e456] [cursor=pointer]:
+                  - /url: /de-at/about-us/our-offices
+                - link "Ist capital.com sicher?" [ref=e458] [cursor=pointer]:
+                  - /url: /de-at/security-measures
+                - link "Unser Geschäftsmodell" [ref=e460] [cursor=pointer]:
+                  - /url: /de-at/about-us/how-capital-makes-money
+            - generic [ref=e461]:
+              - generic [ref=e462]: Karriere
+              - link "Karriere" [ref=e465] [cursor=pointer]:
+                - /url: /de-at/about-us/careers
+            - generic [ref=e466]:
+              - generic [ref=e467]: Hilfe erhalten
+              - generic [ref=e468]:
+                - link "Hilfe-Center" [ref=e470] [cursor=pointer]:
+                  - /url: /de-at/help
+                - link "Kundenvulnerabilität" [ref=e472] [cursor=pointer]:
+                  - /url: /de-at/help/client-vulnerability
+                - link "Kontaktieren Sie uns" [ref=e474] [cursor=pointer]:
+                  - /url: /de-at/contact-us
+            - generic [ref=e475]:
+              - generic [ref=e476]: Rechtliche Dokumentation
+              - generic [ref=e477]:
+                - link "Bedingungen & Richtlinien" [ref=e479] [cursor=pointer]:
+                  - /url: /de-at/terms-and-policies
+                - link "Rechtliche Dokumente" [ref=e481] [cursor=pointer]:
+                  - /url: /de-at/terms-and-policies
+                - link "Beschwerdeverfahren - Capital Com Group Ltd" [ref=e483] [cursor=pointer]:
+                  - /url: /de-at/terms-and-policies/complaints-procedure-cceu
+                - link "Beschwerdeverfahren - Capital Com SV Investments Limited" [ref=e485] [cursor=pointer]:
+                  - /url: /de-at/terms-and-policies/complaints-procedure
+                - 'link "Compliance & rechtliches: CFD-trading" [ref=e487] [cursor=pointer]':
+                  - /url: /de-at/terms-and-policies/compliance-and-legals
+    - generic [ref=e489]:
+      - paragraph [ref=e490]:
+        - text: "Capital Com SV Investments Limited:"
+        - text: CFDs sind komplexe Instrumente und gehen wegen der Hebelwirkung mit dem hohen Risiko einher, schnell Geld zu verlieren.
+        - generic [ref=e491]:
+          - generic [ref=e492]:
+            - strong [ref=e493]: 74 % der Privatkundenkonten verlieren Geld beim CFD-Handel mit diesem Anbieter
+            - text: .
+          - text: Sie sollten überlegen, ob Sie verstehen, wie CFD funktionieren, und ob Sie es sich leisten können, das hohe Risiko einzugehen Ihr Geld zu verlieren. Bitte beachten Sie unsere
+          - link "Risikoaufklärung" [ref=e494] [cursor=pointer]:
+            - /url: https://capital.com/risk-disclosure-policy
+      - paragraph [ref=e495]:
+        - text: "Capital Com Group Ltd:"
+        - text: CFDs sind komplexe Instrumente und gehen wegen der Hebelwirkung mit dem hohen Risiko einher, schnell Geld zu verlieren.
+        - generic [ref=e496]:
+          - generic:
+            - strong
+        - strong [ref=e497]: Der überwiegende Anteil der Privatkundenkonten verliert Geld beim CFD-Handel
+        - generic [ref=e498]:
+          - text: . Sie sollten überlegen, ob Sie verstehen, wie CFD funktionieren, und ob Sie es sich leisten können, das hohe Risiko einzugehen Ihr Geld zu verlieren. Bitte beachten Sie unsere
+          - link "Risikoaufklärung" [ref=e499] [cursor=pointer]:
+            - /url: https://capital.com/risk-disclosure-policy-cceu
+      - paragraph [ref=e500]:
+        - text: "Risikowarnung: Der Wert von Aktien und ETFs, die über ein Aktienhandelskonto gekauft werden, kann steigen und fallen. Die Wertentwicklung in der Vergangenheit ist keine Garantie für zukünftige Ergebnisse."
+        - text: Transaktionen mit nicht lieferbaren außerbörslichen Instrumenten wie Knock-out-Optionen und CFDs sind komplexe Finanzprodukte, die mit einem hohen Risiko verbunden sind, das gesamte investierte Kapital zu verlieren. Derartige Produkte sind nicht für alle Anleger geeignet, da sie sowohl zu Gewinnen als auch zu erheblichen Verlusten führen können. Bevor Sie sich an dieser Art des Handels beteiligen, sollten Sie sollten abwägen, ob Sie die Funktionsweise dieser Instrumente verstehen und ob Sie es sich leisten können, das hohe Risiko des Geldverlusts einzugehen.
+        - text: Für professionelle Kunden besteht das Risiko, mehr als die ursprüngliche Einzahlung zu verlieren. Die Informationen auf dieser Website sind allgemein gehalten und berücksichtigen weder Ihre finanzielle Situation noch Ihre Ziele oder Bedürfnisse. Bitte prüfen Sie unsere Rechtsdokumente und vergewissern Sie sich, dass Sie die Risiken vollständig verstehen, bevor Sie eine Handelsentscheidung treffen. Wir ermutigen Sie, die Schulungsdienste unseres Unternehmens in Anspruch zu nehmen, um die Risiken besser zu verstehen, bevor Sie sich an Handelsgeschäften beteiligen.
+      - paragraph [ref=e501]: "Capital Com SV Investments Limited ist ein in der Republik Zypern ansässiges Unternehmen mit der Registrierungsnummer HE 354252, welches von der Cyprus Securities and Exchange Commission (Lizenznummer 319/17) zugelassen und reguliert ist. Eingetragener Geschäftssitz: Vasileiou Makedonos 8, Kinnis Business Center, 2. Stock, 3040, Limassol, Zypern."
+      - paragraph [ref=e502]: "Capital Com Group Ltd ist ein in der Republik Zypern ansässiges Unternehmen mit der Registrierungsnummer ΗΕ 446198, welches von der Cyprus Securities and Exchange Commission (Lizenznummer 463/25) zugelassen und reguliert ist. Eingetragener Geschäftssitz: Vasileiou Makedonos 8, Kinnis Business Center, 2. Stock, 3040, Limassol, Zypern."
+      - paragraph [ref=e503]: Die Informationen auf dieser Seite richten sich nicht an Personen, die in den Vereinigten Staaten, Kanada und Belgien oder in einem anderen Land außerhalb des EWR leben. Zudem sind sie nicht für die Verbreitung an oder die Nutzung durch Personen in Ländern oder Gerichtsbarkeiten bestimmt, in denen eine solche Verbreitung oder Nutzung gegen die dort geltenden Gesetze oder Regulierungen verstoßen würde.
+      - paragraph [ref=e504]
+      - paragraph [ref=e505]
+      - paragraph [ref=e506]
+    - generic [ref=e507]:
+      - paragraph [ref=e508]: © 2026 Capital Com SV Investments Limited
+      - generic [ref=e509]:
+        - link "Sitemap" [ref=e510] [cursor=pointer]:
+          - /url: /de-at/sitemap
+        - link "Cookie-Einstellungen" [ref=e511] [cursor=pointer]:
+          - /url: ""
+        - link "Richtlinien" [ref=e512] [cursor=pointer]:
+          - /url: /de-at/terms-and-policies/regulations
+        - link "Nutzungsbedingungen und Richtlinien" [ref=e513] [cursor=pointer]:
+          - /url: /de-at/terms-and-policies
+        - link "Beschwerdeverfahren" [ref=e514] [cursor=pointer]:
+          - /url: /de-at/terms-and-policies/complaints-procedures
+  - button [ref=e515] [cursor=pointer]
+  - alert [ref=e517]: Wie man TRUMP Coin traden kann | Capital.com | Capital.com Österreich
+```
+
+# Test source
+
+```ts
+  1   | import { expect } from "@playwright/test";
+  2   | import { ctaRegistry } from "../test_data/CTA/pages.cta.registry";
+  3   | 
+  4   | export async function expectPageState(
+  5   |   page,
+  6   |   action,
+  7   |   expectation,
+  8   |   testInfo,
+  9   |   locator,
+  10  | ) {
+  11  |   console.log("EXPECTATION ASSERTIONS", expectation);
+  12  |   const currentUrl = testInfo.project.use.baseURL;
+  13  |   const currentLicense = testInfo.project.use.licenseName;
+  14  |   const currentLang = testInfo.project.use.langName;
+  15  |   // console.log("Current URL: ", currentUrl);
+  16  | 
+  17  |   const expectationType =
+  18  |     typeof expectation === "string" ? expectation : expectation.type;
+  19  | 
+  20  |   switch (expectationType) {
+  21  |     case "redirects to platform":
+  22  |       await expect(page).toHaveURL(/trading\/platform/);
+  23  |       break;
+  24  | 
+  25  |     case "shows signup form":
+  26  |       await expect(
+  27  |         // page.locator('form[data-sentry-component="SignUp"]'),
+  28  |         page.locator('[data-type="SIGN_UP_close"]'),
+  29  |       ).toBeVisible();
+  30  |       break;
+  31  | 
+  32  |     case "shows login form":
+  33  |       await expect(page.locator('[data-testid="modal-title"]'));
+  34  |       break;
+  35  | 
+  36  |     case "redirect": {
+  37  |       const pageConfig = ctaRegistry[expectation.page].path;
+  38  | 
+  39  |       // const pagePath = ctaRegistry[expectation.page].path;
+  40  |       const pagePath =
+  41  |         typeof pageConfig === "function"
+  42  |           ? pageConfig(currentLicense)
+  43  |           : pageConfig;
+  44  | 
+  45  |       const expectedURL = pagePath ? `${currentUrl}/${pagePath}` : currentUrl;
+  46  |       await expect(page).toHaveURL(new RegExp(`${expectedURL}/?$`));
+  47  |       break;
+  48  |     }
+  49  | 
+  50  |     case "opens external link": {
+  51  |       const href = await locator.getAttribute("href");
+  52  |       // await expect(locator).toHaveAttribute("target", "_blank");
+  53  |       expect(href).toContain(action.expectedHrefContains);
+  54  |       break;
+  55  |     }
+  56  | 
+  57  |     case "opens regional settings window": {
+  58  |       await expect(page.locator('[data-sentry-component="CountryLangSelect"]'));
+  59  |       break;
+  60  |     }
+  61  | 
+  62  |     case "exist corresponding license": {
+  63  |       const expectedLicenses = action.licenseText?.[currentLicense];
+  64  | 
+  65  |       if (expectedLicenses?.length) {
+  66  |         for (const text of expectedLicenses) {
+  67  |           await expect(locator).toContainText(text);
+  68  |         }
+  69  |       } else {
+  70  |         await expect(locator).toContainText(currentLicense);
+  71  |       }
+  72  | 
+  73  |       break;
+  74  |     }
+  75  | 
+  76  |     case "opens cookie menu": {
+  77  |       await expect(page.locator(".consent-pc-modal__content"));
+  78  |       break;
+  79  |     }
+  80  | 
+  81  |     case "opens pdf document": {
+  82  |       const href = await locator.getAttribute("href");
+  83  | 
+> 84  |       expect(href).toContain(action.expectedHrefContains);
+      |                    ^ Error: expect(received).toContain(expected) // indexOf
+  85  |       await expect(locator).toHaveAttribute("target", "_blank");
+  86  | 
+  87  |       const browserName = testInfo.project.use.browserName;
+  88  | 
+  89  |       if (browserName.includes("webkit")) {
+  90  |         const [download] = await Promise.all([
+  91  |           page.waitForEvent("download"),
+  92  |           locator.click(),
+  93  |         ]);
+  94  | 
+  95  |         const path = await download.path();
+  96  |         expect(path).not.toBeNull();
+  97  | 
+  98  |         const fs = await import("node:fs/promises");
+  99  |         const stat = await fs.stat(path);
+  100 | 
+  101 |         expect(
+  102 |           stat.size,
+  103 |           `Downloaded file "${download.suggestedFilename()}" is empty`,
+  104 |         ).toBeGreaterThan(0);
+  105 |       } else {
+  106 |         const [pdfPage] = await Promise.all([
+  107 |           page.context().waitForEvent("page"),
+  108 |           locator.click(),
+  109 |         ]);
+  110 | 
+  111 |         await pdfPage.waitForLoadState("domcontentloaded");
+  112 | 
+  113 |         expect(pdfPage.url()).toContain(action.expectedHrefContains);
+  114 |         await expect(pdfPage.locator("body")).not.toContainText(
+  115 |           "HTTP ERROR 404",
+  116 |         );
+  117 |       }
+  118 |       break;
+  119 |     }
+  120 | 
+  121 |     case "opens link on currentURL": {
+  122 |       const currentUrl = page.url();
+  123 | 
+  124 |       console.log("EXPECTED:", await locator.getAttribute("href"));
+  125 |       console.log("ACTUAL:", currentUrl);
+  126 | 
+  127 |       expect(currentUrl).toContain(action.expectedHrefContains);
+  128 |       await expect(page.locator("body")).not.toContainText("HTTP ERROR 404");
+  129 | 
+  130 |       break;
+  131 |     }
+  132 | 
+  133 |     default:
+  134 |       throw new Error(`Unknown expectation: ${expectation}`);
+  135 |   }
+  136 | }
+  137 | 
+```

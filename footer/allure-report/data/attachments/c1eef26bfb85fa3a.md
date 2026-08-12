@@ -1,0 +1,858 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: cta/generated.cta.spec.js >> tradeBitcoin page | tradePolkadotSharesLink | tradePolkadotSharesLink
+- Location: tests/cta/generated.cta.spec.js:40:7
+
+# Error details
+
+```
+Error: expect(received).toContain(expected) // indexOf
+
+Matcher error: received value must not be null nor undefined
+
+Received has value: null
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e8]: Capital Com MENA Securities Trading LLC is regulated by the Capital Market Authority.
+    - generic [ref=e10]:
+      - link [ref=e11] [cursor=pointer]:
+        - /url: /en-ae
+        - img [ref=e12]
+      - generic [ref=e17]:
+        - navigation [ref=e18]:
+          - button "Trading" [ref=e19]:
+            - button "Trading" [ref=e20]:
+              - generic [ref=e21]: Trading
+          - button "Markets" [ref=e22]:
+            - button "Markets" [ref=e23]:
+              - generic [ref=e24]: Markets
+          - link "Pricing" [ref=e27] [cursor=pointer]:
+            - /url: /en-ae/ways-to-trade/fees-and-charges
+          - button "About" [ref=e28]:
+            - button "About" [ref=e29]:
+              - generic [ref=e30]: About
+        - button "en" [ref=e31] [cursor=pointer]:
+          - generic [ref=e33]: en
+      - generic [ref=e35]:
+        - button "Log In" [ref=e36] [cursor=pointer]: Log In
+        - button "Open account" [ref=e37] [cursor=pointer]: Open account
+      - button "Search" [ref=e38] [cursor=pointer]
+  - generic [ref=e39]:
+    - paragraph [ref=e42]:
+      - generic [ref=e43]:
+        - link "Home" [ref=e44] [cursor=pointer]:
+          - /url: /en-ae
+        - text: •
+      - generic [ref=e45]:
+        - link "All resources" [ref=e46] [cursor=pointer]:
+          - /url: /en-ae/learn
+        - text: •
+      - generic [ref=e47]:
+        - link "Market guides" [ref=e48] [cursor=pointer]:
+          - /url: /en-ae/learn/market-guides
+        - text: •
+      - text: What is bitcoin and how to trade it
+    - generic [ref=e49]:
+      - generic [ref=e51]:
+        - main [ref=e52]:
+          - generic [ref=e54]:
+            - generic [ref=e55]:
+              - heading "What is Bitcoin? A trader’s guide" [level=1] [ref=e57]
+              - generic [ref=e60]:
+                - button "share on Twitter" [ref=e61] [cursor=pointer]
+                - button "share on Facebook" [ref=e62] [cursor=pointer]
+                - button "share on Linkedin" [ref=e63] [cursor=pointer]
+                - button "Copy the url of the current page." [ref=e64] [cursor=pointer]:
+                  - button "Copy the url of the current page." [ref=e65]
+            - figure [ref=e66]
+          - generic [ref=e69]:
+            - paragraph [ref=e70]: Learn all about Bitcoin and the BTC price history, including how it works, and how to trade BTC/USD via CFDs.
+            - paragraph [ref=e71]:
+              - link "Go to market page" [ref=e72] [cursor=pointer]:
+                - /url: /en-ae/markets/cryptocurrencies/btc-usd-chart
+          - generic [ref=e74]:
+            - heading "What is Bitcoin?" [level=2] [ref=e75]
+            - paragraph [ref=e76]: Bitcoin (BTC) is the first-ever cryptocurrency, created in 2009 by an anonymous person, or group, known as Satoshi Nakamoto. BTC runs on a decentralised, peer-to-peer network called Bitcoin, where users can send and receive digital currency without intermediaries like governments or banks.
+            - paragraph [ref=e77]:
+              - text: As the first cryptocurrency, BTC introduced blockchain technology, a distributed ledger enforced by a network of computers, which ensures the security and integrity of transactions. Bitcoin's protocol limits its total supply to 21 million BTC, creating a sense of scarcity akin to precious metals like
+              - link "gold" [ref=e78] [cursor=pointer]:
+                - /url: /en-ae/markets/commodities/gold-price
+              - text: .
+            - paragraph [ref=e79]: Bitcoin serves both as a medium of exchange and a store of value. Its decentralised nature and finite supply have led many to view it as ‘digital gold.’ Over the years, Bitcoin has paved the way for thousands of alternative cryptocurrencies, commonly referred to as altcoins.
+            - paragraph [ref=e80]: As of December 2024, BTC consistently ranks as the largest cryptocurrency by market capitalisation.
+          - generic [ref=e82]:
+            - 'heading "Bitcoin vs Bitcoin Cash: what are the key differences?" [level=2] [ref=e83]'
+            - paragraph [ref=e84]: Bitcoin Cash is a 2017 Bitcoin hard fork, meaning a split in the blockchain due to incompatible rule changes, that resulted from scalability disagreements in the Bitcoin community regarding block size.
+            - paragraph [ref=e85]:
+              - text: Here’s an overview of the key similarities and differences between
+              - link "bitcoin cash (BCH)" [ref=e86] [cursor=pointer]:
+                - /url: /en-ae/markets/cryptocurrencies/bch-usd-chart
+              - text: and
+              - link "BTC" [ref=e87] [cursor=pointer]:
+                - /url: /en-ae/markets/cryptocurrencies/btc-usd-chart
+              - text: ":"
+            - table [ref=e89]:
+              - rowgroup [ref=e90]:
+                - row "Feature Bitcoin Bitcoin Cash" [ref=e91]:
+                  - cell "Feature" [ref=e92]:
+                    - paragraph [ref=e93]:
+                      - strong [ref=e94]: Feature
+                  - cell "Bitcoin" [ref=e95]:
+                    - paragraph [ref=e96]:
+                      - strong [ref=e97]: Bitcoin
+                  - cell "Bitcoin Cash" [ref=e98]:
+                    - paragraph [ref=e99]:
+                      - strong [ref=e100]: Bitcoin Cash
+                - row "Origin Created by Satoshi Nakamoto in 2009 A hard fork of Bitcoin, created in 2017" [ref=e101]:
+                  - cell "Origin" [ref=e102]:
+                    - paragraph [ref=e103]:
+                      - strong [ref=e104]: Origin
+                  - cell "Created by Satoshi Nakamoto in 2009" [ref=e105]:
+                    - paragraph [ref=e106]: Created by Satoshi Nakamoto in 2009
+                  - cell "A hard fork of Bitcoin, created in 2017" [ref=e107]:
+                    - paragraph [ref=e108]: A hard fork of Bitcoin, created in 2017
+                - row "Block size limit 1 MB Initially 8 MB, now up to 32 MB" [ref=e109]:
+                  - cell "Block size limit" [ref=e110]:
+                    - paragraph [ref=e111]:
+                      - strong [ref=e112]: Block size limit
+                  - cell "1 MB" [ref=e113]:
+                    - paragraph [ref=e114]: 1 MB
+                  - cell "Initially 8 MB, now up to 32 MB" [ref=e115]:
+                    - paragraph [ref=e116]: Initially 8 MB, now up to 32 MB
+                - row "Transactions (per second) 7 Roughly 116" [ref=e117]:
+                  - cell "Transactions (per second)" [ref=e118]:
+                    - paragraph [ref=e119]:
+                      - strong [ref=e120]: Transactions (per second)
+                  - cell "7" [ref=e121]:
+                    - paragraph [ref=e122]: "7"
+                  - cell "Roughly 116" [ref=e123]:
+                    - paragraph [ref=e124]: Roughly 116
+                - row "Transaction fees More expensive due to network congestion Cheaper due to larger blocks" [ref=e125]:
+                  - cell "Transaction fees" [ref=e126]:
+                    - paragraph [ref=e127]:
+                      - strong [ref=e128]: Transaction fees
+                  - cell "More expensive due to network congestion" [ref=e129]:
+                    - paragraph [ref=e130]: More expensive due to network congestion
+                  - cell "Cheaper due to larger blocks" [ref=e131]:
+                    - paragraph [ref=e132]: Cheaper due to larger blocks
+                - row "Maximum token supply 21 million BTC 21 million BCH" [ref=e133]:
+                  - cell "Maximum token supply" [ref=e134]:
+                    - paragraph [ref=e135]:
+                      - strong [ref=e136]: Maximum token supply
+                  - cell "21 million BTC" [ref=e137]:
+                    - paragraph [ref=e138]: 21 million BTC
+                  - cell "21 million BCH" [ref=e139]:
+                    - paragraph [ref=e140]: 21 million BCH
+                - row "Consensus mechanism Proof-of-work (PoW) using SHA–256 algorithm Proof-of-work (PoW) using SHA–256 algorithm" [ref=e141]:
+                  - cell "Consensus mechanism" [ref=e142]:
+                    - paragraph [ref=e143]:
+                      - strong [ref=e144]: Consensus mechanism
+                  - cell "Proof-of-work (PoW) using SHA–256 algorithm" [ref=e145]:
+                    - paragraph [ref=e146]: Proof-of-work (PoW) using SHA–256 algorithm
+                  - cell "Proof-of-work (PoW) using SHA–256 algorithm" [ref=e147]:
+                    - paragraph [ref=e148]: Proof-of-work (PoW) using SHA–256 algorithm
+                - 'row "Market capitalisation #1 cryptocurrency by market cap Often ranks in the top #20" [ref=e149]':
+                  - cell "Market capitalisation" [ref=e150]:
+                    - paragraph [ref=e151]:
+                      - strong [ref=e152]: Market capitalisation
+                  - cell "#1 cryptocurrency by market cap" [ref=e153]:
+                    - paragraph [ref=e154]: "#1 cryptocurrency by market cap"
+                  - 'cell "Often ranks in the top #20" [ref=e155]':
+                    - paragraph [ref=e156]: "Often ranks in the top #20"
+                - row "Philosophy Decentralised money, store of value, ‘digital gold’ Peer-to-peer electronic cash, used for payments." [ref=e157]:
+                  - cell "Philosophy" [ref=e158]:
+                    - paragraph [ref=e159]:
+                      - strong [ref=e160]: Philosophy
+                  - cell "Decentralised money, store of value, ‘digital gold’" [ref=e161]:
+                    - paragraph [ref=e162]: Decentralised money, store of value, ‘digital gold’
+                  - cell "Peer-to-peer electronic cash, used for payments." [ref=e163]:
+                    - paragraph [ref=e164]: Peer-to-peer electronic cash, used for payments.
+                - row "Development focus Layer 2 solutions, such as lightning network On-chain scaling via larger blocks" [ref=e165]:
+                  - cell "Development focus" [ref=e166]:
+                    - paragraph [ref=e167]:
+                      - strong [ref=e168]: Development focus
+                  - cell "Layer 2 solutions, such as lightning network" [ref=e169]:
+                    - paragraph [ref=e170]: Layer 2 solutions, such as lightning network
+                  - cell "On-chain scaling via larger blocks" [ref=e171]:
+                    - paragraph [ref=e172]: On-chain scaling via larger blocks
+            - paragraph [ref=e173]:
+              - text: Beyond
+              - strong [ref=e174]: Bitcoin Cash
+              - text: ", other notable hard forks related to the original Bitcoin blockchain include Bitcoin SV, Bitcoin Classic and Bitcoin Gold."
+            - paragraph [ref=e175]:
+              - strong [ref=e176]: Discover more about bitcoin cash (BCH)
+              - text: ", including its origins, how it works, its price history and trading hours – read our"
+              - link "comprehensive trader’s guide to bitcoin cash (BCH)" [ref=e177] [cursor=pointer]:
+                - /url: /en-ae/learn/market-guides/trade-bitcoin-cash
+              - text: .
+          - generic [ref=e179]:
+            - heading "How does Bitcoin work?" [level=2] [ref=e180]
+            - paragraph [ref=e181]:
+              - text: Bitcoin is a blockchain, a publicly accessible digital ledger, and its native cryptocurrency is called
+              - link "BTC" [ref=e182] [cursor=pointer]:
+                - /url: /en-ae/markets/cryptocurrencies/btc-usd-chart
+              - text: A decentralised network of computers called nodes record and verify all transactions to its distributed ledger to ensure transparency and immutability. This means that once a transaction is recorded, it can’t be altered or deleted.
+            - paragraph [ref=e183]: Proof-of-work (PoW) is the consensus mechanism on Bitcoin. Consensus mechanisms are a set of rules which govern and maintain a blockchain’s integrity. With PoW blockchains like Bitcoin, users called ‘miners’ validate transactions and secure the network. New BTC is generated every time a miner creates a new block, which they’re rewarded as an incentive.
+            - paragraph [ref=e184]: "Here's how the Bitcoin mining process works:"
+            - list [ref=e185]:
+              - listitem [ref=e186]:
+                - text: •
+                - paragraph [ref=e187]:
+                  - strong [ref=e188]: Transaction initiation
+                  - text: ": A user initiates a transaction by sending BTC from their wallet to another user's wallet. This transaction is broadcast to the Bitcoin network, where it joins a pool of unconfirmed transactions."
+              - listitem [ref=e189]:
+                - text: •
+                - paragraph [ref=e190]:
+                  - strong [ref=e191]: Mining and validation
+                  - text: ": Miners collect these unconfirmed transactions and assemble them into a block. Using specialised hardware, miners compete to solve a complex mathematical puzzle associated with the block. This involves finding a unique value that – when hashed along with the block's data – produces a hash value that meets the network's difficulty criteria."
+              - listitem [ref=e192]:
+                - text: •
+                - paragraph [ref=e193]:
+                  - strong [ref=e194]: Block addition
+                  - text: ": The first miner to solve the puzzle broadcasts the newly mined block to the network. Other nodes verify the validity of the block and the transactions within it. If accepted, the block is added to the blockchain."
+              - listitem [ref=e195]:
+                - text: •
+                - paragraph [ref=e196]:
+                  - strong [ref=e197]: Reward and fees
+                  - text: ": The successful miner is rewarded with newly minted bitcoins, known as the block reward, as well as any transaction fees included in the block. This provides an incentive for miners to continue validating transactions."
+              - listitem [ref=e198]:
+                - text: •
+                - paragraph [ref=e199]:
+                  - strong [ref=e200]: Confirmation
+                  - text: ": The transaction receives confirmations as new blocks are added on top of the block containing it. More confirmations increase the security and finality of the transaction."
+            - paragraph [ref=e201]:
+              - text: Bitcoin has a fixed supply cap of 21 million BTC, embedded into its protocol to create scarcity and prevent inflation. ‘
+              - strong [ref=e202]:
+                - text: Bitcoin
+                - link "halving" [ref=e203] [cursor=pointer]:
+                  - /url: /en-ae/learn/market-guides/bitcoin-halving
+              - text: ’ occurs approximately every four years, reducing the block reward for miners by half. This could influence long-term price rises due to decreasing mining supply, due to potential for overdependence on secondary markets.
+            - paragraph [ref=e204]:
+              - text: There is no central authority controlling the Bitcoin network. Instead, it’s maintained by a global community of users, miners and developers who adhere to the protocol's rules. Altering the blockchain would require overwhelming the majority of the network's computational power, which helps make
+              - link "BTC" [ref=e205] [cursor=pointer]:
+                - /url: /en-ae/markets/cryptocurrencies/btc-usd-chart
+              - text: more resistant to censorship and fraud – relative to traditional financial systems.
+          - generic [ref=e207]:
+            - heading "What is the BTC price history?" [level=2] [ref=e208]
+            - paragraph [ref=e209]:
+              - text: The
+              - link "BTC price" [ref=e210] [cursor=pointer]:
+                - /url: /en-ae/markets/cryptocurrencies/btc-usd-chart
+              - text: history tells a tale of significant volatility, influenced by technological advancements, regulatory developments and market sentiment since its 2009 launch.
+            - paragraph [ref=e211]: Bitcoin was relatively worthless in its early days, traded among enthusiasts for fractions of a cent. In 2010, the famous ‘Bitcoin Pizza Day’ marked the first real-world transaction, when 10,000 BTC were exchanged for two pizzas.
+            - paragraph [ref=e212]:
+              - text: Mainstream attention escalated when BTC surpassed $1,000 for the first time in December 2013, influenced by media coverage and growing adoption. But this momentum was short-lived when hackers stole 850,000 BTC from Mt Gox – which was the largest BTC exchange at the time –leading to a significant price drop, and decreased market
+              - link "sentiment" [ref=e213] [cursor=pointer]:
+                - /url: /en-ae/learn/trading-psychology/sentiment-in-trading
+              - text: .
+          - generic [ref=e215]:
+            - generic [ref=e216]:
+              - button "1m" [ref=e217]
+              - button "5m" [ref=e218] [cursor=pointer]
+              - button "15m" [ref=e219] [cursor=pointer]
+              - button "30m" [ref=e220] [cursor=pointer]
+              - button "1h" [ref=e221] [cursor=pointer]
+              - button "4h" [ref=e222] [cursor=pointer]
+              - button "1d" [ref=e223] [cursor=pointer]
+              - button "1w" [ref=e224] [cursor=pointer]
+            - img [ref=e226]
+          - paragraph [ref=e229]:
+            - strong [ref=e230]: Past performance isn’t a reliable indicator of future results
+          - generic [ref=e232]:
+            - paragraph [ref=e233]: The BTC price accelerated in 2017 during the ‘crypto boom’ – rising to $20,000 in December as the cryptocurrency market experienced its first major bull run. Retail trader enthusiasm contributed to the boom, fueled by the rise of initial coin offerings (ICOs) and widespread media coverage. The CME and CBOE also launched Bitcoin futures trading in December 2017, introducing legitimate crypto derivatives products to the US market. The bubble burst in early 2018, leading to a prolonged bear market known as the ‘crypto winter,’ with Bitcoin's price dropping below $4,000 by the end of the year.
+            - paragraph [ref=e234]: The onset of the COVID-19 pandemic in 2020 triggered global economic uncertainty, and many traders sought alternatives to traditional financial markets. Institutional adoption increased, with companies like MicroStrategy, Square and Tesla pouring billions into BTC – which climbed to a high of around $64,000 in April 2021.
+            - paragraph [ref=e235]: Bitcoin (BTC) faced significant headwinds in 2021 as macroeconomic factors such as rising inflation, interest rate hikes by central banks and geopolitical tensions led to a broader market downturn. High-profile events like the bankruptcy of crypto exchange FTX eroded trader confidence, causing Bitcoin's price to fall below $20,000 in June 2022.
+            - paragraph [ref=e236]: By 2023, the market showed signs of stabilising. Institutional traders cautiously returned, and technological advancements like the Lightning Network improved transaction speeds and efficiency. These developments helped restore some confidence in the cryptocurrency market.
+            - paragraph [ref=e237]: "Now let’s look at 2024 in a little more detail:"
+            - list [ref=e238]:
+              - listitem [ref=e239]:
+                - text: •
+                - paragraph [ref=e240]:
+                  - strong [ref=e241]: January 2024
+                  - text: ": The U.S. Securities and Exchange Commission (SEC) approved 11 spot bitcoin ETFs, marking a significant milestone for institutional adoption. This approval provided regulated avenues for traders to gain exposure to bitcoin, boosting market confidence."
+              - listitem [ref=e242]:
+                - text: •
+                - paragraph [ref=e243]:
+                  - strong [ref=e244]: April 2024
+                  - text: ": BTC underwent its latest"
+                  - link "halving event" [ref=e245] [cursor=pointer]:
+                    - /url: /en-ae/learn/market-guides/bitcoin-halving
+                  - text: ", reducing the mining reward from 6.25 BTC to 3.125 BTC. Historically, halving events have led to price increases due to decreased supply. However, the 2024 halving did not immediately trigger a significant price surge, suggesting that market dynamics may be evolving."
+              - listitem [ref=e246]:
+                - text: •
+                - paragraph [ref=e247]:
+                  - strong [ref=e248]: November 2024
+                  - text: ": BTC achieved a new milestone by surpassing $90,000 for the first time on November 14. The momentum continued as it reached $94,800 on November 20 and surged to around $99,655.50 by November 22. This rapid appreciation intensified speculation about when bitcoin would hit the $100,000 mark, drawing significant media attention and trader interest."
+          - generic [ref=e250]:
+            - heading "Which factors might influence the BTC live price?" [level=2] [ref=e251]
+            - paragraph [ref=e252]:
+              - text: The
+              - link "BTC live price" [ref=e253] [cursor=pointer]:
+                - /url: /en-ae/markets/cryptocurrencies/btc-usd-chart
+              - text: "is influenced by factors unique to the Bitcoin blockchain, cryptocurrency market and broader economic trends. Here are some key elements that could contribute to its price movements:"
+            - heading "Halving events and supply scarcity" [level=3] [ref=e254]
+            - paragraph [ref=e255]: BTC has a fixed supply cap of 21 million coins. Approximately every four years, the reward for mining new blocks is halved in an event known as Bitcoin halving, which reduces the rate at which new bitcoins are mined, increasing scarcity.
+            - paragraph [ref=e256]: Historically, halving events have often preceded significant price surges, as – if BTC demand continues to grow as its supply shrinks – it could push BTC higher.*
+            - paragraph [ref=e257]:
+              - strong [ref=e258]: "*Past performance is not an indicator of future results."
+            - heading "Technological advancements and network upgrades" [level=3] [ref=e259]
+            - paragraph [ref=e260]: While Bitcoin's core protocol remains relatively stable, developments aimed at improving scalability and transaction efficiency can possibly impact its price.
+            - paragraph [ref=e261]:
+              - text: Technologies like the Lightning Network accelerate transaction-speeds and minimise fees, which enhances Bitcoin's appeal as a medium of exchange. Conversely, unsuccessful implementations or a lack of adoption could decrease network usage and demand, influencing the
+              - link "BTC price" [ref=e262] [cursor=pointer]:
+                - /url: /en-ae/markets/cryptocurrencies/btc-usd-chart
+              - text: to decrease.
+            - heading "Macroeconomic factors and economic uncertainty" [level=3] [ref=e263]
+            - paragraph [ref=e264]:
+              - text: Bitcoin is often viewed as a hedge against
+              - link "inflation" [ref=e265] [cursor=pointer]:
+                - /url: /en-ae/learn/glossary/inflation-definition
+              - text: and economic instability. During periods of economic uncertainty, currency devaluation, or geopolitical tensions, traders may turn to Bitcoin as a store of value, increasing demand.
+            - paragraph [ref=e266]: Conversely, factors such as high-interest rates, quantitative tightening policies and increased market confidence in traditional financial systems – like the stock market – could push some traders away from cryptocurrencies like BTC.
+            - heading "Market sentiment and media influence" [level=3] [ref=e267]
+            - paragraph [ref=e268]:
+              - text: Public perception and media coverage may cause
+              - link "BTC price" [ref=e269] [cursor=pointer]:
+                - /url: /en-ae/markets/cryptocurrencies/btc-usd-chart
+              - text: fluctuations. Positive news can boost market sentiment and drive prices higher, such as endorsements from influential figures and announcements of major companies accepting BTC.
+            - paragraph [ref=e270]: Conversely, negative news, such as security breaches, fraud or critical remarks from regulators and public figures may erode confidence and influence BTC price decreases.
+            - heading "Mining dynamics and energy consumption" [level=3] [ref=e271]
+            - paragraph [ref=e272]: Bitcoin's proof-of-work (PoW) consensus mechanism requires substantial computational power and energy. Changes in mining difficulty, hash rate and energy costs can affect miners' profitability and network security.
+            - paragraph [ref=e273]:
+              - text: Events like mining bans in countries – such as China – and shifts towards renewable energy sources can lead to lower hash rates, which could erode trader confidence. Environmental concerns regarding Bitcoin's energy consumption might also affect trader perception and could lead to regulatory actions impacting the
+              - link "BTC price" [ref=e274] [cursor=pointer]:
+                - /url: /en-ae/markets/cryptocurrencies/btc-usd-chart
+              - text: .
+            - paragraph [ref=e275]:
+              - strong [ref=e276]: Learn more about the potential future of Bitcoin prices
+            - paragraph [ref=e277]:
+              - text: Discover price targets and analysts’ commentary in our guide to
+              - link "BTC price predictions" [ref=e278] [cursor=pointer]:
+                - /url: /en-ae/analysis/bitcoin-price-prediction-2030-2050
+              - text: .
+          - generic [ref=e280]:
+            - heading "What are the BTC trading hours?" [level=2] [ref=e281]
+            - paragraph [ref=e282]: Bitcoin (BTC) runs on a decentralised blockchain network that is active 24 hours a day, seven days a week. This means you can trade BTC at any time, including weekends and holidays.
+            - list [ref=e283]:
+              - listitem [ref=e284]:
+                - text: •
+                - paragraph [ref=e285]:
+                  - strong [ref=e286]: Cryptocurrency exchanges
+                  - text: – many exchanges facilitate 24/7 trading, allowing for continuous market participation.
+              - listitem [ref=e287]:
+                - text: •
+                - paragraph [ref=e288]:
+                  - strong [ref=e289]: Online trading platforms
+                  - text: – some reliable and trusted brokerages provide BTC trading via CFDs.
+            - paragraph [ref=e290]:
+              - text: If you choose to trade CFDs, you can follow the BTC performance live in US dollars with our comprehensive
+              - link "BTC/USD price chart" [ref=e291] [cursor=pointer]:
+                - /url: /en-ae/markets/cryptocurrencies/btc-usd-chart
+              - text: .
+            - paragraph [ref=e292]:
+              - text: Alternatively, you can check out our
+              - link "ETH/BTC" [ref=e293] [cursor=pointer]:
+                - /url: /en-ae/markets/cryptocurrencies/eth-btc-chart
+              - text: ", BTC/GBP and"
+              - link "BTC/EUR price charts" [ref=e294] [cursor=pointer]:
+                - /url: /en-ae/markets/cryptocurrencies/btc-eur-chart
+              - text: .
+            - paragraph [ref=e295]: Monitoring the cryptocurrency’s activity can help you to keep an eye out for any key fundamental or technical events that may affect short-term movements in its value.
+            - paragraph [ref=e296]:
+              - link "Create an account" [ref=e297] [cursor=pointer]:
+                - /url: /trading/signup
+              - link "Open a demo account" [ref=e298] [cursor=pointer]:
+                - /url: /trading/signup?go=demo
+          - generic [ref=e300]:
+            - heading "How to trade BTC" [level=2] [ref=e301]
+            - paragraph [ref=e302]: Bitcoin (BTC) is a cryptocurrency, meaning that it can be traded directly on a cryptocurrency exchange or through peer-to-peer transactions. Traders may also choose to trade BTC via a derivative, a financial product that takes (or ‘derives’) its value from the price of the underlying asset.
+            - paragraph [ref=e303]:
+              - text: You could use a
+              - link "contract for difference, or CFD" [ref=e304] [cursor=pointer]:
+                - /url: /en-ae/ways-to-trade/cfd-trading
+              - text: ", to trade on the price of BTC pairs. A CFD is a contract, typically between a broker and a trader, where one party agrees to pay the other the difference in the value of a security, between the opening and closing of the trade."
+            - paragraph [ref=e305]:
+              - text: You can use
+              - link "CFDs" [ref=e306] [cursor=pointer]:
+                - /url: /en-ae/ways-to-trade/cfd-trading/what-is-cfd-trading
+              - text: to trade on whether you think an BTC pair will rise (called ‘going long’) or fall (‘going short’). CFDs give you access to leverage, allowing larger positions with a relatively small outlay. This amplifies your potential profits, but also your potential losses, making CFD trading risky.
+            - paragraph [ref=e307]:
+              - text: You can learn more about trading
+              - link "cryptocurrencies" [ref=e308] [cursor=pointer]:
+                - /url: /en-ae/markets/cryptocurrencies
+              - text: with Capital.com in our comprehensive
+              - link "guide to cryptocurrency trading" [ref=e309] [cursor=pointer]:
+                - /url: https://capital.com/en-ae/learn/market-guides/what-is-cryptocurrency-trading
+              - text: .
+            - paragraph [ref=e310]:
+              - text: Aside from CFDs, you can also trade BTC pairs through instruments like futures, options, ETFs and mutual funds. Each offers an alternative to the leveraged trading of CFDs, suiting different risk profiles and
+              - link "strategies" [ref=e311] [cursor=pointer]:
+                - /url: /en-ae/learn/technical-analysis
+              - text: .
+            - paragraph [ref=e312]:
+              - text: Want to learn more about crypto trading? Explore our step-by-step
+              - link "crypto course" [ref=e313] [cursor=pointer]:
+                - /url: /en-ae/learn/crypto-course
+              - text: designed to help you understand the basics to the advanced concepts.
+            - paragraph [ref=e314]:
+              - link "Create an account" [ref=e315] [cursor=pointer]:
+                - /url: /trading/signup
+              - link "Open a demo account" [ref=e316] [cursor=pointer]:
+                - /url: /trading/signup?go=demo
+            - paragraph [ref=e317]:
+              - text: "* Source:"
+              - link "https://coinmarketcap.com/" [ref=e318] [cursor=pointer]:
+                - /url: https://coinmarketcap.com/
+          - heading "FAQs" [level=2] [ref=e321]
+          - generic [ref=e323]:
+            - group [ref=e324]:
+              - generic "What is BTC trading?" [ref=e325] [cursor=pointer]:
+                - heading "What is BTC trading?" [level=3] [ref=e326]
+            - group [ref=e327]:
+              - generic "What is wrapped bitcoin (WBTC)?" [ref=e328] [cursor=pointer]:
+                - heading "What is wrapped bitcoin (WBTC)?" [level=3] [ref=e329]
+            - group [ref=e330]:
+              - generic "How does bitcoin trading work?" [ref=e331] [cursor=pointer]:
+                - heading "How does bitcoin trading work?" [level=3] [ref=e332]
+            - group [ref=e333]:
+              - generic "What are the best platforms to trade bitcoin?" [ref=e334] [cursor=pointer]:
+                - heading "What are the best platforms to trade bitcoin?" [level=3] [ref=e335]
+              - text: • • •
+          - generic [ref=e338]:
+            - heading "Visit our other complete guides" [level=2] [ref=e340]
+            - generic [ref=e341]:
+              - generic [ref=e344]:
+                - heading "How to trade Ethereum" [level=3] [ref=e345]
+                - generic [ref=e346]: Learn all about Ethereum and the ether (ETH) price history, including dApps, NFTs, and how to trade ETH/USD via CFDs on Capital.com
+                - link "Trade Ethereum shares" [ref=e347] [cursor=pointer]:
+                  - /url: https://capital.com/en-ae/learn/market-guides/trade-ethereum
+                  - generic [ref=e348]: Trade Ethereum shares
+              - generic [ref=e351]:
+                - heading "How to trade Polkadot" [level=3] [ref=e352]
+                - generic [ref=e353]: Learn about Polkadot and the DOT price history, how it compares with Ethereum, and how to trade DOT/USD via CFDs on Capital.com
+                - button "Trade Polkadot shares" [active] [ref=e354] [cursor=pointer]:
+                  - generic [ref=e355]: Trade Polkadot shares
+        - complementary [ref=e356]:
+          - navigation [ref=e360]:
+            - strong [ref=e361]: Contents
+            - separator
+            - generic [ref=e362]:
+              - link "What is Bitcoin?" [ref=e364] [cursor=pointer]:
+                - /url: "#part_0"
+              - 'link "Bitcoin vs Bitcoin Cash: what are the key differences?" [ref=e366] [cursor=pointer]':
+                - /url: "#part_1"
+              - link "How does Bitcoin work?" [ref=e368] [cursor=pointer]:
+                - /url: "#part_2"
+              - link "What is the BTC price history?" [ref=e370] [cursor=pointer]:
+                - /url: "#part_3"
+              - link "Which factors might influence the BTC live price?" [ref=e372] [cursor=pointer]:
+                - /url: "#part_4"
+              - link "What are the BTC trading hours?" [ref=e374] [cursor=pointer]:
+                - /url: "#part_5"
+              - link "How to trade BTC" [ref=e376] [cursor=pointer]:
+                - /url: "#part_6"
+              - link "FAQs" [ref=e378] [cursor=pointer]:
+                - /url: "#part_7"
+          - generic [ref=e379]:
+            - generic [ref=e381]:
+              - strong [ref=e382]: Most traded markets
+              - generic [ref=e383]: Tracking the stocks, indices, and assets making major moves.
+              - generic [ref=e387]:
+                - button "Most traded markets" [ref=e388]: Most traded markets
+                - button "Top risers" [ref=e389] [cursor=pointer]: Top risers
+                - button "Top fallers" [ref=e390] [cursor=pointer]: Top fallers
+                - button "Most volatile" [ref=e391] [cursor=pointer]: Most volatile
+              - generic [ref=e392]:
+                - generic [ref=e395]:
+                  - generic [ref=e397]:
+                    - link "Gold" [ref=e398] [cursor=pointer]:
+                      - /url: /en-ae/markets/commodities/gold-price
+                    - generic [ref=e399]: "4409.39"
+                  - button "Trade" [ref=e400] [cursor=pointer]
+                - generic [ref=e402]:
+                  - generic [ref=e403]:
+                    - generic [ref=e405]:
+                      - link "US Tech 100" [ref=e406] [cursor=pointer]:
+                        - /url: /en-ae/markets/indices/us-tech-100-index
+                      - generic [ref=e407]: "29704.4"
+                    - button "Trade" [ref=e408] [cursor=pointer]
+                  - generic [ref=e409]:
+                    - generic [ref=e411]: 0.6%
+                    - img [ref=e415]
+                - generic [ref=e418]:
+                  - generic [ref=e420]:
+                    - link "Bitcoin/USD" [ref=e421] [cursor=pointer]:
+                      - /url: /en-ae/markets/cryptocurrencies/btc-usd-chart
+                    - generic [ref=e422]: "64095.90"
+                  - button "Trade" [ref=e423] [cursor=pointer]
+                - generic [ref=e426]:
+                  - generic [ref=e428]:
+                    - link "Ripple/USD" [ref=e429] [cursor=pointer]:
+                      - /url: /en-ae/markets/cryptocurrencies/xrp-usd-chart
+                    - generic [ref=e430]: "1.02210"
+                  - button "Trade" [ref=e431] [cursor=pointer]
+                - generic [ref=e434]:
+                  - generic [ref=e436]:
+                    - link "Ethereum/USD" [ref=e437] [cursor=pointer]:
+                      - /url: /en-ae/markets/cryptocurrencies/eth-usd-chart
+                    - generic [ref=e438]: "1908.56"
+                  - button "Trade" [ref=e439] [cursor=pointer]
+            - text: Share prices are indicative and may differ from live market prices.
+          - generic [ref=e441]:
+            - heading "Quick links" [level=2] [ref=e443]
+            - generic [ref=e445]:
+              - link "#Inflation news" [ref=e446] [cursor=pointer]:
+                - /url: /en-ae/analysis/inflation-news
+              - link "#Gold news" [ref=e447] [cursor=pointer]:
+                - /url: /en-ae/analysis/gold-news
+              - link "#Silver news" [ref=e448] [cursor=pointer]:
+                - /url: /en-ae/analysis/silver-news
+              - link "#Oil news" [ref=e449] [cursor=pointer]:
+                - /url: /en-ae/analysis/oil-news
+              - link "#Bitcoin news" [ref=e450] [cursor=pointer]:
+                - /url: /en-ae/analysis/bitcoin-news
+              - link "#Capital.com Data" [ref=e451] [cursor=pointer]:
+                - /url: /en-ae/analysis/data-and-insights
+              - link "#Press releases" [ref=e452] [cursor=pointer]:
+                - /url: /en-ae/analysis/press-release
+              - link "#Corporate releases" [ref=e453] [cursor=pointer]:
+                - /url: /en-ae/analysis/corporate-release
+              - link "#Forecasts & predictions" [ref=e454] [cursor=pointer]:
+                - /url: /en-ae/analysis/forecasts-and-predictions
+              - link "#Technical analysis" [ref=e455] [cursor=pointer]:
+                - /url: /en-ae/analysis/technical-analysis
+      - generic [ref=e459]:
+        - heading "Ready to join a leading broker?" [level=2] [ref=e461]
+        - generic [ref=e462]:
+          - button [ref=e464] [cursor=pointer]
+          - generic [ref=e467]: 1. Create your account
+          - generic [ref=e468]: 2. Make your first deposit
+          - generic [ref=e469]: 3. Start when you’re ready
+  - contentinfo [ref=e471]:
+    - generic [ref=e472]:
+      - link [ref=e473] [cursor=pointer]:
+        - /url: /en-ae
+        - img [ref=e474]
+      - generic [ref=e478]:
+        - link [ref=e479] [cursor=pointer]:
+          - /url: https://twitter.com/capital_arabia
+        - link [ref=e480] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/capital.com
+        - link [ref=e481] [cursor=pointer]:
+          - /url: https://www.instagram.com/capitalcomarabia
+        - link [ref=e482] [cursor=pointer]:
+          - /url: https://www.youtube.com/@capital.com.287
+        - link [ref=e483] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@capitalcomarabia?lang=en
+      - generic [ref=e484]:
+        - link [ref=e485] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/id1230088754?cp_device_id=39deee9b-abe1-4241-840e-a273e0148dfd&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e486] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=39deee9b-abe1-4241-840e-a273e0148dfd&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e487] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading.huawei-huawei?cp_device_id=39deee9b-abe1-4241-840e-a273e0148dfd&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+    - generic [ref=e488]:
+      - generic [ref=e489]:
+        - generic [ref=e490]:
+          - generic [ref=e491]:
+            - generic [ref=e492]: "Country / Region:"
+            - button "United Arab Emirates" [ref=e493] [cursor=pointer]:
+              - generic [ref=e495]: United Arab Emirates
+          - generic [ref=e496]: •
+          - generic [ref=e497]:
+            - generic [ref=e498]: "Language:"
+            - button "English" [ref=e499] [cursor=pointer]:
+              - generic [ref=e500]: English
+        - generic [ref=e501]:
+          - generic [ref=e502]: "Also you can contact us:"
+          - link "+971 4 496 8000" [ref=e505] [cursor=pointer]:
+            - /url: tel:+971 4 496 8000
+            - strong [ref=e506]: +971 4 496 8000
+            - strong
+          - generic [ref=e507]: •
+          - link "support@capital.com" [ref=e509] [cursor=pointer]:
+            - /url: mailto:support@capital.com
+            - strong [ref=e510]: support@capital.com
+      - generic [ref=e511]:
+        - generic [ref=e512]:
+          - strong [ref=e514]: Trading
+          - generic [ref=e515]:
+            - generic [ref=e516]:
+              - generic [ref=e517]: Trading
+              - generic [ref=e518]:
+                - link "Trade CFDs" [ref=e520] [cursor=pointer]:
+                  - /url: /en-ae/ways-to-trade/cfd-trading
+                - link "Get demo account" [ref=e522] [cursor=pointer]:
+                  - /url: /en-ae/trading-platforms/demo-account
+            - generic [ref=e523]:
+              - generic [ref=e524]: Platforms
+              - generic [ref=e525]:
+                - link "Web platform" [ref=e527] [cursor=pointer]:
+                  - /url: /en-ae/trading-platforms/web-platform
+                - link "Mobile app" [ref=e529] [cursor=pointer]:
+                  - /url: /en-ae/trading-platforms/mobile-apps
+                - link "TradingView" [ref=e531] [cursor=pointer]:
+                  - /url: /en-ae/trading-platforms/trading-view
+                - link "MT4" [ref=e533] [cursor=pointer]:
+                  - /url: /en-ae/trading-platforms/mt4
+                - link "MT5" [ref=e535] [cursor=pointer]:
+                  - /url: /en-ae/trading-platforms/mt5
+                - link "API access" [ref=e537] [cursor=pointer]:
+                  - /url: /en-ae/trading-platforms/api-development-guide
+            - generic [ref=e538]:
+              - generic [ref=e539]: Learn
+              - generic [ref=e540]:
+                - link "Trading strategies" [ref=e542] [cursor=pointer]:
+                  - /url: /en-ae/learn/trading-strategies
+                - link "Technical analysis" [ref=e544] [cursor=pointer]:
+                  - /url: /en-ae/learn/technical-analysis
+                - link "Trading psychology" [ref=e546] [cursor=pointer]:
+                  - /url: /en-ae/learn/trading-psychology
+                - link "All resources" [ref=e548] [cursor=pointer]:
+                  - /url: /en-ae/learn
+        - generic [ref=e549]:
+          - strong [ref=e551]: Markets
+          - generic [ref=e552]:
+            - generic [ref=e553]:
+              - generic [ref=e554]: Our markets
+              - generic [ref=e555]:
+                - link "Markets overview" [ref=e557] [cursor=pointer]:
+                  - /url: /en-ae/markets
+                - link "Shares" [ref=e559] [cursor=pointer]:
+                  - /url: /en-ae/markets/shares
+                - link "Forex" [ref=e561] [cursor=pointer]:
+                  - /url: /en-ae/markets/forex
+                - link "Indices" [ref=e563] [cursor=pointer]:
+                  - /url: /en-ae/markets/indices
+                - link "Commodities" [ref=e565] [cursor=pointer]:
+                  - /url: /en-ae/markets/commodities
+                - link "Cryptocurrencies" [ref=e567] [cursor=pointer]:
+                  - /url: /en-ae/markets/cryptocurrencies
+                - link "Bonds" [ref=e569] [cursor=pointer]:
+                  - /url: /en-ae/markets/bonds
+                - link "Interest rates" [ref=e571] [cursor=pointer]:
+                  - /url: /en-ae/markets/interest-rates
+            - generic [ref=e572]:
+              - generic [ref=e573]: Market info
+              - link "Market analysis" [ref=e576] [cursor=pointer]:
+                - /url: /en-ae/analysis
+        - link "Pricing" [ref=e579] [cursor=pointer]:
+          - /url: /en-ae/ways-to-trade/fees-and-charges
+          - strong [ref=e580]: Pricing
+        - generic [ref=e581]:
+          - strong [ref=e583]: About
+          - generic [ref=e584]:
+            - generic [ref=e585]:
+              - generic [ref=e586]: Who we are
+              - generic [ref=e587]:
+                - link "Company" [ref=e589] [cursor=pointer]:
+                  - /url: /en-ae/about-us
+                - link "Our offices" [ref=e591] [cursor=pointer]:
+                  - /url: /en-ae/about-us/our-offices
+                - link "Press centre" [ref=e593] [cursor=pointer]:
+                  - /url: /en-ae/media-centre
+                - link "Whitepaper" [ref=e595] [cursor=pointer]:
+                  - /url: /whitepaper
+                - link "Investor Relations" [ref=e597] [cursor=pointer]:
+                  - /url: /en-ae/about-us/investor-relations
+                - link "Is capital.com safe?" [ref=e599] [cursor=pointer]:
+                  - /url: /en-ae/security-measures
+                - link "Our business model" [ref=e601] [cursor=pointer]:
+                  - /url: /en-ae/about-us/how-capital-makes-money
+            - generic [ref=e602]:
+              - generic [ref=e603]: Work with us
+              - generic [ref=e604]:
+                - link "Careers" [ref=e606] [cursor=pointer]:
+                  - /url: /en-ae/about-us/careers
+                - link "Partnerships" [ref=e608] [cursor=pointer]:
+                  - /url: /en-ae/partnerships
+            - generic [ref=e609]:
+              - generic [ref=e610]: Help
+              - generic [ref=e611]:
+                - link "Help centre" [ref=e613] [cursor=pointer]:
+                  - /url: /en-ae/help
+                - link "Client vulnerability" [ref=e615] [cursor=pointer]:
+                  - /url: /en-ae/help/client-vulnerability
+                - link "Contact us" [ref=e617] [cursor=pointer]:
+                  - /url: /en-ae/contact-us
+            - generic [ref=e618]:
+              - generic [ref=e619]: Legal
+              - generic [ref=e620]:
+                - link "Terms & policies" [ref=e622] [cursor=pointer]:
+                  - /url: /en-ae/terms-and-policies
+                - link "Complaints" [ref=e624] [cursor=pointer]:
+                  - /url: /en-ae/help/complaints
+    - generic [ref=e626]:
+      - paragraph [ref=e627]:
+        - strong [ref=e628]: Over-the-counter leveraged derivative contracts, including contracts for difference and spot foreign exchange products are complex financial instruments and carries a high degree of risk of losing money rapidly due to leverage. Trading Over-the-Counter leveraged derivatives may not be suitable for all investors. Before engaging in any trading activities, you should carefully consider your investment objectives, risk tolerance, and financial situation. Please seek independent financial advice before trading if necessary.
+      - paragraph [ref=e629]: Capital Com MENA Securities Trading L.L.C. is a limited liability company with company number 1994695. Capital Com MENA Securities Trading L.L.C. is a Company registered in Dubai, United Arab Emirates, and authorised by the CMA (Capital Market Authority) with license number 20200000176. The company engages in financial and investment activities under Category One – Dealing in Securities which include (a)Financial Products dealer, (b)Trading broker in the international markets and (c)Trading broker of OTC derivatives and currencies in the spot market. The Company’s registered office is at Jumeirah Emirates Towers, Emirates Towers Offices, Level L14, Unit 14C, Dubai, UAE. Capital Com MENA Securities Trading L.L.C. is an execution only service provider and does not provide investment advice. Capital Com MENA Securities Trading L.L.C. may publish general market commentary from time to time. Where it does, the material published does not constitute advice, or a solicitation, or a recommendation to a transaction in any financial instrument. Capital Com MENA Securities Trading L.L.C. accepts no responsibility for any use of the content presented and any consequences of that use. No representation or warranty is given as to the completeness of this information. Anyone acting on the information provided does so at their own risk. The information contained herein is not intended for distribution to residents in any country where such distribution or use would contravene any local law or regulatory requirement. Our products and services are not available to embargoed or sanctioned countries. The information is not intended for distribution to, or use by, any person in any country or jurisdiction where such distribution or use would be contrary to local law or regulation.
+    - generic [ref=e630]:
+      - paragraph [ref=e631]: © 2026 Capital Com Mena Securities Trading LLC
+      - generic [ref=e632]:
+        - link "Sitemap" [ref=e633] [cursor=pointer]:
+          - /url: /en-ae/sitemap
+        - link "Cookie Settings" [ref=e634] [cursor=pointer]:
+          - /url: ""
+        - link "Clients Funds" [ref=e635] [cursor=pointer]:
+          - /url: /en-ae/about-us/what-capital-does-with-your-money
+        - link "Terms and Policies" [ref=e636] [cursor=pointer]:
+          - /url: /en-ae/terms-and-policies
+        - link "Complaints Procedure CCMENA" [ref=e637] [cursor=pointer]:
+          - /url: /en-ae/help/complaints
+  - button [ref=e638] [cursor=pointer]
+  - alert [ref=e640]
+```
+
+# Test source
+
+```ts
+  1   | import { expect } from "@playwright/test";
+  2   | import { ctaRegistry } from "../test_data/CTA/pages.cta.registry";
+  3   | 
+  4   | export async function expectPageState(
+  5   |   page,
+  6   |   action,
+  7   |   expectation,
+  8   |   testInfo,
+  9   |   locator,
+  10  | ) {
+  11  |   console.log("EXPECTATION ASSERTIONS", expectation);
+  12  |   const currentUrl = testInfo.project.use.baseURL;
+  13  |   const currentLicense = testInfo.project.use.licenseName;
+  14  |   const currentLang = testInfo.project.use.langName;
+  15  |   // console.log("Current URL: ", currentUrl);
+  16  | 
+  17  |   const expectationType =
+  18  |     typeof expectation === "string" ? expectation : expectation.type;
+  19  | 
+  20  |   switch (expectationType) {
+  21  |     case "redirects to platform":
+  22  |       await expect(page).toHaveURL(/trading\/platform/);
+  23  |       break;
+  24  | 
+  25  |     case "shows signup form":
+  26  |       await expect(
+  27  |         // page.locator('form[data-sentry-component="SignUp"]'),
+  28  |         page.locator('[data-type="SIGN_UP_close"]'),
+  29  |       ).toBeVisible();
+  30  |       break;
+  31  | 
+  32  |     case "shows login form":
+  33  |       await expect(page.locator('[data-testid="modal-title"]'));
+  34  |       break;
+  35  | 
+  36  |     case "redirect": {
+  37  |       const pageConfig = ctaRegistry[expectation.page].path;
+  38  | 
+  39  |       // const pagePath = ctaRegistry[expectation.page].path;
+  40  |       const pagePath =
+  41  |         typeof pageConfig === "function"
+  42  |           ? pageConfig(currentLicense)
+  43  |           : pageConfig;
+  44  | 
+  45  |       const expectedURL = pagePath ? `${currentUrl}/${pagePath}` : currentUrl;
+  46  |       await expect(page).toHaveURL(new RegExp(`${expectedURL}/?$`));
+  47  |       break;
+  48  |     }
+  49  | 
+  50  |     case "opens external link": {
+  51  |       const href = await locator.getAttribute("href");
+  52  |       // await expect(locator).toHaveAttribute("target", "_blank");
+  53  |       expect(href).toContain(action.expectedHrefContains);
+  54  |       break;
+  55  |     }
+  56  | 
+  57  |     case "opens regional settings window": {
+  58  |       await expect(page.locator('[data-sentry-component="CountryLangSelect"]'));
+  59  |       break;
+  60  |     }
+  61  | 
+  62  |     case "exist corresponding license": {
+  63  |       const expectedLicenses = action.licenseText?.[currentLicense];
+  64  | 
+  65  |       if (expectedLicenses?.length) {
+  66  |         for (const text of expectedLicenses) {
+  67  |           await expect(locator).toContainText(text);
+  68  |         }
+  69  |       } else {
+  70  |         await expect(locator).toContainText(currentLicense);
+  71  |       }
+  72  | 
+  73  |       break;
+  74  |     }
+  75  | 
+  76  |     case "opens cookie menu": {
+  77  |       await expect(page.locator(".consent-pc-modal__content"));
+  78  |       break;
+  79  |     }
+  80  | 
+  81  |     case "opens pdf document": {
+  82  |       const href = await locator.getAttribute("href");
+  83  | 
+> 84  |       expect(href).toContain(action.expectedHrefContains);
+      |                    ^ Error: expect(received).toContain(expected) // indexOf
+  85  |       await expect(locator).toHaveAttribute("target", "_blank");
+  86  | 
+  87  |       const browserName = testInfo.project.use.browserName;
+  88  | 
+  89  |       if (browserName.includes("webkit")) {
+  90  |         const [download] = await Promise.all([
+  91  |           page.waitForEvent("download"),
+  92  |           locator.click(),
+  93  |         ]);
+  94  | 
+  95  |         const path = await download.path();
+  96  |         expect(path).not.toBeNull();
+  97  | 
+  98  |         const fs = await import("node:fs/promises");
+  99  |         const stat = await fs.stat(path);
+  100 | 
+  101 |         expect(
+  102 |           stat.size,
+  103 |           `Downloaded file "${download.suggestedFilename()}" is empty`,
+  104 |         ).toBeGreaterThan(0);
+  105 |       } else {
+  106 |         const [pdfPage] = await Promise.all([
+  107 |           page.context().waitForEvent("page"),
+  108 |           locator.click(),
+  109 |         ]);
+  110 | 
+  111 |         await pdfPage.waitForLoadState("domcontentloaded");
+  112 | 
+  113 |         expect(pdfPage.url()).toContain(action.expectedHrefContains);
+  114 |         await expect(pdfPage.locator("body")).not.toContainText(
+  115 |           "HTTP ERROR 404",
+  116 |         );
+  117 |       }
+  118 |       break;
+  119 |     }
+  120 | 
+  121 |     case "opens link on currentURL": {
+  122 |       const currentUrl = page.url();
+  123 | 
+  124 |       console.log("EXPECTED:", await locator.getAttribute("href"));
+  125 |       console.log("ACTUAL:", currentUrl);
+  126 | 
+  127 |       expect(currentUrl).toContain(action.expectedHrefContains);
+  128 |       await expect(page.locator("body")).not.toContainText("HTTP ERROR 404");
+  129 | 
+  130 |       break;
+  131 |     }
+  132 | 
+  133 |     default:
+  134 |       throw new Error(`Unknown expectation: ${expectation}`);
+  135 |   }
+  136 | }
+  137 | 
+```

@@ -1,0 +1,850 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: cta/generated.cta.spec.js >> tradeBitcoin page | tradePolkadotSharesLink | tradePolkadotSharesLink
+- Location: tests/cta/generated.cta.spec.js:40:7
+
+# Error details
+
+```
+Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: "learn/market-guides/trade-polkadot"
+Received string:    "/de-de/learn/market-guides/trade-trumpcoin"
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e7]:
+      - text: CFDs sind komplexe Instrumente und beinhalten wegen der Hebelwirkung ein hohes Risiko, schnell Geld zu verlieren.
+      - generic [ref=e8]:
+        - generic [ref=e9]:
+          - strong [ref=e10]: Zwischen 74 % und 89 % der Kleinanlegerkonten verlieren beim Handel mit CFD Geld
+          - text: .
+        - text: Sie sollten überlegen, ob Sie verstehen, wie CFD funktionieren und ob Sie es sich leisten können, das hohe Risiko einzugehen, Ihr Geld zu verlieren. Bitte beachten Sie unsere
+        - link "Risikoaufklärung" [ref=e11] [cursor=pointer]:
+          - /url: https://capital.com/risk-disclosure-policy-cceu
+    - generic [ref=e13]:
+      - link [ref=e14] [cursor=pointer]:
+        - /url: /de-de
+        - img [ref=e15]
+      - generic [ref=e20]:
+        - navigation [ref=e21]:
+          - button "Handel" [ref=e22]:
+            - button "Handel" [ref=e23]:
+              - generic [ref=e24]: Handel
+          - button "Märkte" [ref=e25]:
+            - button "Märkte" [ref=e26]:
+              - generic [ref=e27]: Märkte
+          - link "Preisgestaltung" [ref=e30] [cursor=pointer]:
+            - /url: /de-de/ways-to-trade/fees-and-charges
+          - button "Über uns" [ref=e31]:
+            - button "Über uns" [ref=e32]:
+              - generic [ref=e33]: Über uns
+        - button "de" [ref=e34] [cursor=pointer]:
+          - generic [ref=e36]: de
+      - generic [ref=e38]:
+        - button "Anmelden" [ref=e39] [cursor=pointer]: Anmelden
+        - button "Konto eröffnen" [ref=e40] [cursor=pointer]: Konto eröffnen
+  - generic [ref=e41]:
+    - paragraph [ref=e44]:
+      - generic [ref=e45]:
+        - link "Startseite" [ref=e46] [cursor=pointer]:
+          - /url: /de-de
+        - text: •
+      - generic [ref=e47]:
+        - link "Lernen" [ref=e48] [cursor=pointer]:
+          - /url: /de-de/learn
+        - text: •
+      - generic [ref=e49]:
+        - link "Marktleitfäden" [ref=e50] [cursor=pointer]:
+          - /url: /de-de/learn/market-guides
+        - text: •
+      - text: Was ist Bitcoin und wie man es traden kann
+    - generic [ref=e51]:
+      - generic [ref=e53]:
+        - main [ref=e54]:
+          - generic [ref=e56]:
+            - generic [ref=e57]:
+              - heading "Was ist Bitcoin? Ein Leitfaden für Trader" [level=1] [ref=e59]
+              - generic [ref=e62]:
+                - button "share on Twitter" [ref=e63] [cursor=pointer]
+                - button "share on Facebook" [ref=e64] [cursor=pointer]
+                - button "share on Linkedin" [ref=e65] [cursor=pointer]
+                - button "Copy the url of the current page." [ref=e66] [cursor=pointer]:
+                  - button "Copy the url of the current page." [ref=e67]
+            - figure [ref=e68]
+          - generic [ref=e71]:
+            - paragraph [ref=e72]: Erfahren Sie alles über Bitcoin und die bisherige Kursentwicklung von BTC, einschließlich der Funktionsweise und wie Sie BTC/USD über CFDs traden können.
+            - paragraph [ref=e73]:
+              - link "Zur Marktseite" [ref=e74] [cursor=pointer]:
+                - /url: /de-de/markets/cryptocurrencies/chart-bitcoin-to-us-dollar
+          - generic [ref=e76]:
+            - heading "Was ist Bitcoin?" [level=2] [ref=e77]
+            - paragraph [ref=e78]: Bitcoin (BTC) ist die allererste Kryptowährung, welche im Jahr 2009 von einer anonymen Person oder Gruppe namens Satoshi Nakamoto kreiert wurde. BTC basiert auf einem dezentralisierten Peer-to-Peer-Netzwerk namens Bitcoin, über das Nutzer digitale Währungen ohne Vermittler wie Regierungen oder Banken senden und empfangen können.
+            - paragraph [ref=e79]:
+              - text: Als erste Kryptowährung führte BTC die Blockchain-Technologie ein, einen verteilten Ledger, der von einem Computernetzwerk betrieben wird und die Sicherheit und Integrität von Transaktionen gewährleistet. Das Protokoll von Bitcoin begrenzt das Gesamtangebot auf 21 Millionen BTC, womit ein Gefühl der Knappheit entsteht, ähnlich wie bei Edelmetallen wie
+              - link "Gold" [ref=e80] [cursor=pointer]:
+                - /url: /de-de/markets/commodities/rohstoff-gold-spot
+              - text: .
+            - paragraph [ref=e81]: Bitcoin dient sowohl als Tauschmedium als auch als Wertanlage. Sein dezentralisierter Charakter und sein begrenztes Angebot führten dazu, dass es von vielen als „digitales Gold“ angesehen wird. Im Laufe der Jahre ebnete Bitcoin den Weg für Tausende von alternativen Kryptowährungen, die allgemein als Altcoins bezeichnet werden.
+            - paragraph [ref=e82]: Mit Stand vom Dezember 2024 ist BTC durchgehend die größte Kryptowährung nach Marktkapitalisierung.
+          - generic [ref=e84]:
+            - 'heading "Bitcoin vs. Bitcoin Cash: Was sind die wichtigsten Unterschiede?" [level=2] [ref=e85]'
+            - paragraph [ref=e86]: Bitcoin Cash ist eine Hard Fork von Bitcoin aus dem Jahr 2017, also eine Spaltung der Blockchain aufgrund von inkompatiblen Regeländerungen, die aus Skalierungsstreitigkeiten in der Bitcoin-Community bezüglich der Blockgröße resultierten.
+            - paragraph [ref=e87]:
+              - text: Hier finden Sie einen Überblick der wichtigsten Ähnlichkeiten und Unterschiede zwischen
+              - link "Bitcoin Cash (BCH)" [ref=e88] [cursor=pointer]:
+                - /url: /de-de/markets/cryptocurrencies/chart-bitcoin-cash-to-us-dollar
+              - text: und
+              - link "BTC" [ref=e89] [cursor=pointer]:
+                - /url: /de-de/markets/cryptocurrencies/chart-bitcoin-to-us-dollar
+              - text: ":"
+            - table [ref=e91]:
+              - rowgroup [ref=e92]:
+                - row "Eigenschaft Bitcoin Bitcoin Cash" [ref=e93]:
+                  - cell "Eigenschaft" [ref=e94]:
+                    - paragraph [ref=e95]:
+                      - strong [ref=e96]: Eigenschaft
+                  - cell "Bitcoin" [ref=e97]:
+                    - paragraph [ref=e98]:
+                      - strong [ref=e99]: Bitcoin
+                  - cell "Bitcoin Cash" [ref=e100]:
+                    - paragraph [ref=e101]:
+                      - strong [ref=e102]: Bitcoin Cash
+                - row "Entstehung Kreiert von Satoshi Nakamoto im Jahr 2009 Eine Hard Fork von Bitcoin, kreiert im Jahr 2017" [ref=e103]:
+                  - cell "Entstehung" [ref=e104]:
+                    - paragraph [ref=e105]:
+                      - strong [ref=e106]: Entstehung
+                  - cell "Kreiert von Satoshi Nakamoto im Jahr 2009" [ref=e107]:
+                    - paragraph [ref=e108]: Kreiert von Satoshi Nakamoto im Jahr 2009
+                  - cell "Eine Hard Fork von Bitcoin, kreiert im Jahr 2017" [ref=e109]:
+                    - paragraph [ref=e110]: Eine Hard Fork von Bitcoin, kreiert im Jahr 2017
+                - row "Begrenzung der Blockgröße 1 MB Ursprünglich 8 MB, jetzt bis zu 32 MB" [ref=e111]:
+                  - cell "Begrenzung der Blockgröße" [ref=e112]:
+                    - paragraph [ref=e113]:
+                      - strong [ref=e114]: Begrenzung der Blockgröße
+                  - cell "1 MB" [ref=e115]:
+                    - paragraph [ref=e116]: 1 MB
+                  - cell "Ursprünglich 8 MB, jetzt bis zu 32 MB" [ref=e117]:
+                    - paragraph [ref=e118]: Ursprünglich 8 MB, jetzt bis zu 32 MB
+                - row "Transaktionen (pro Sekunde) 7 Etwa 116" [ref=e119]:
+                  - cell "Transaktionen (pro Sekunde)" [ref=e120]:
+                    - paragraph [ref=e121]:
+                      - strong [ref=e122]: Transaktionen (pro Sekunde)
+                  - cell "7" [ref=e123]:
+                    - paragraph [ref=e124]: "7"
+                  - cell "Etwa 116" [ref=e125]:
+                    - paragraph [ref=e126]: Etwa 116
+                - row "Transaktionsgebühren Teurer aufgrund von Netzwerküberlastung Günstiger aufgrund größerer Blöcke" [ref=e127]:
+                  - cell "Transaktionsgebühren" [ref=e128]:
+                    - paragraph [ref=e129]:
+                      - strong [ref=e130]: Transaktionsgebühren
+                  - cell "Teurer aufgrund von Netzwerküberlastung" [ref=e131]:
+                    - paragraph [ref=e132]: Teurer aufgrund von Netzwerküberlastung
+                  - cell "Günstiger aufgrund größerer Blöcke" [ref=e133]:
+                    - paragraph [ref=e134]: Günstiger aufgrund größerer Blöcke
+                - row "Maximales Token-Angebot 21 Millionen BTC 21 Millionen BCH" [ref=e135]:
+                  - cell "Maximales Token-Angebot" [ref=e136]:
+                    - paragraph [ref=e137]:
+                      - strong [ref=e138]: Maximales Token-Angebot
+                  - cell "21 Millionen BTC" [ref=e139]:
+                    - paragraph [ref=e140]: 21 Millionen BTC
+                  - cell "21 Millionen BCH" [ref=e141]:
+                    - paragraph [ref=e142]: 21 Millionen BCH
+                - row "Konsensmechanismus Proof-of-Work (PoW) mit SHA-256-Algorithmus Proof-of-Work (PoW) mit SHA-256-Algorithmus" [ref=e143]:
+                  - cell "Konsensmechanismus" [ref=e144]:
+                    - paragraph [ref=e145]:
+                      - strong [ref=e146]: Konsensmechanismus
+                  - cell "Proof-of-Work (PoW) mit SHA-256-Algorithmus" [ref=e147]:
+                    - paragraph [ref=e148]: Proof-of-Work (PoW) mit SHA-256-Algorithmus
+                  - cell "Proof-of-Work (PoW) mit SHA-256-Algorithmus" [ref=e149]:
+                    - paragraph [ref=e150]: Proof-of-Work (PoW) mit SHA-256-Algorithmus
+                - 'row "Marktkapitalisierung #1 Kryptowährung nach Marktkapitalisierung Oft unter den Top #20" [ref=e151]':
+                  - cell "Marktkapitalisierung" [ref=e152]:
+                    - paragraph [ref=e153]:
+                      - strong [ref=e154]: Marktkapitalisierung
+                  - cell "#1 Kryptowährung nach Marktkapitalisierung" [ref=e155]:
+                    - paragraph [ref=e156]: "#1 Kryptowährung nach Marktkapitalisierung"
+                  - 'cell "Oft unter den Top #20" [ref=e157]':
+                    - paragraph [ref=e158]: "Oft unter den Top #20"
+                - row "Philosophie Dezentralisiertes Geld, Wertanlage, „digitales Gold“ Peer-to-Peer-Electronic-Cash, genutzt für Zahlungen." [ref=e159]:
+                  - cell "Philosophie" [ref=e160]:
+                    - paragraph [ref=e161]:
+                      - strong [ref=e162]: Philosophie
+                  - cell "Dezentralisiertes Geld, Wertanlage, „digitales Gold“" [ref=e163]:
+                    - paragraph [ref=e164]: Dezentralisiertes Geld, Wertanlage, „digitales Gold“
+                  - cell "Peer-to-Peer-Electronic-Cash, genutzt für Zahlungen." [ref=e165]:
+                    - paragraph [ref=e166]: Peer-to-Peer-Electronic-Cash, genutzt für Zahlungen.
+                - row "Entwicklungsschwerpunkt Layer-2-Lösungen, wie das Lightning-Netzwerk On-Chain-Skalierung über größere Blöcke" [ref=e167]:
+                  - cell "Entwicklungsschwerpunkt" [ref=e168]:
+                    - paragraph [ref=e169]:
+                      - strong [ref=e170]: Entwicklungsschwerpunkt
+                  - cell "Layer-2-Lösungen, wie das Lightning-Netzwerk" [ref=e171]:
+                    - paragraph [ref=e172]: Layer-2-Lösungen, wie das Lightning-Netzwerk
+                  - cell "On-Chain-Skalierung über größere Blöcke" [ref=e173]:
+                    - paragraph [ref=e174]: On-Chain-Skalierung über größere Blöcke
+            - paragraph [ref=e175]:
+              - text: Neben
+              - strong [ref=e176]: Bitcoin Cash
+              - text: gehören auch Bitcoin SV, Bitcoin Classic und Bitcoin Gold zu weiteren bedeutenden Hard Forks im Zusammenhang mit der originalen Bitcoin-Blockchain.
+            - paragraph [ref=e177]:
+              - strong [ref=e178]: Entdecken Sie mehr über Bitcoin Cash (BCH)
+              - text: ", einschließlich des Ursprungs, der Funktionsweise, der Kursentwicklung und der Handelszeiten – lesen Sie unseren"
+              - link "umfassenden Trader-Leitfaden zu Bitcoin Cash (BCH)" [ref=e179] [cursor=pointer]:
+                - /url: /de-de/learn/market-guides/trade-bitcoin-cash
+              - text: .
+          - generic [ref=e181]:
+            - heading "Wie funktioniert Bitcoin?" [level=2] [ref=e182]
+            - paragraph [ref=e183]:
+              - text: Bitcoin ist eine Blockchain, ein öffentlich zugänglicher digitaler Ledger, und die zugehörige native Kryptowährung heißt
+              - link "BTC" [ref=e184] [cursor=pointer]:
+                - /url: /de-de/markets/cryptocurrencies/chart-bitcoin-to-us-dollar
+              - text: . Ein dezentralisiertes Netzwerk von Computern, die als Nodes bezeichnet werden, zeichnet alle Transaktionen in seinem verteilten Ledger auf und verifiziert diese, um Transparenz und Unveränderlichkeit zu gewährleisten. Das bedeutet, dass eine Transaktion, sobald sie aufgezeichnet wurde, nicht mehr verändert oder gelöscht werden kann.
+            - paragraph [ref=e185]: Proof-of-Work (PoW) ist der Konsensmechanismus von Bitcoin. Konsensmechanismen sind eine Zusammenstellung von Regeln, die die Integrität einer Blockchain regeln und aufrechterhalten. Bei PoW-Blockchains wie Bitcoin validieren Nutzer, die als „Miner“ bezeichnet werden, Transaktionen und sichern das Netzwerk. Bei jeder Erstellung eines neuen Blocks durch einen Miner werden neue BTC generiert, die dieser als Anreiz vergütet bekommt.
+            - paragraph [ref=e186]: "So funktioniert der Bitcoin-Mining-Prozess:"
+            - list [ref=e187]:
+              - listitem [ref=e188]:
+                - text: •
+                - paragraph [ref=e189]:
+                  - strong [ref=e190]: Initiierung der Transaktion
+                  - text: ": Ein Nutzer initiiert eine Transaktion, indem er BTC von seiner Wallet an die Wallet eines anderen Nutzers sendet. Diese Transaktion wird an das Bitcoin-Netzwerk übertragen, wo sie sich in einen Pool von unbestätigten Transaktionen einreiht."
+              - listitem [ref=e191]:
+                - text: •
+                - paragraph [ref=e192]:
+                  - strong [ref=e193]: Mining und Validierung
+                  - text: ": Miner sammeln diese unbestätigten Transaktionen und führen sie in einem Block zusammen. Mithilfe spezialisierter Hardware konkurrieren Miner darum, ein komplexes mathematisches Rätsel im Zusammenhang mit dem Block zu lösen. Hierbei geht es darum, einen einzigartigen Wert zu finden, der – wenn er zusammen mit den Daten des Blocks gehasht wird – einen Hash-Wert ergibt, der die Schwierigkeitskriterien des Netzwerks erfüllt."
+              - listitem [ref=e194]:
+                - text: •
+                - paragraph [ref=e195]:
+                  - strong [ref=e196]: Hinzufügen von Blöcken
+                  - text: ": Der erste Miner, der das Rätsel löst, überträgt den neu erstellten Block an das Netzwerk. Weitere Nodes verifizieren die Gültigkeit des Blocks und der darin enthaltenen Transaktionen. Wenn der Block akzeptiert wird, wird er der Blockchain hinzugefügt."
+              - listitem [ref=e197]:
+                - text: •
+                - paragraph [ref=e198]:
+                  - strong [ref=e199]: Belohnung und Gebühren
+                  - text: ": Der erfolgreiche Miner wird mit neu generierten Bitcoins belohnt, die als Blockbelohnung bezeichnet werden, sowie mit den in dem Block enthaltenen Transaktionsgebühren. Dadurch wird ein Anreiz für die Miner geboten, weiterhin Transaktionen zu validieren."
+              - listitem [ref=e200]:
+                - text: •
+                - paragraph [ref=e201]:
+                  - strong [ref=e202]: Bestätigung
+                  - text: ": Die Transaktion erhält Bestätigungen, sobald neue Blöcke zu dem Block hinzugefügt werden, der die Transaktion enthält. Mehr Bestätigungen erhöhen die Sicherheit und Endgültigkeit der Transaktion."
+            - paragraph [ref=e203]:
+              - text: Bitcoin hat ein festes maximales Angebot von 21 Millionen BTC, welches im Protokoll verankert ist, um Knappheit zu schaffen und Inflation vorzubeugen. „
+              - strong [ref=e204]: Bitcoin-Halving
+              - text: “ findet etwa alle vier Jahre statt und reduziert die Blockbelohnung für Miner um die Hälfte. Dies könnte langfristige Preissteigerungen aufgrund des sinkenden Mining-Angebots beeinflussen, da das Potenzial für eine übermäßige Abhängigkeit von Sekundärmärkten besteht.
+            - paragraph [ref=e205]:
+              - text: Es gibt keine zentrale Instanz, die das Bitcoin-Netzwerk kontrolliert. Stattdessen wird es von einer globalen Community von Nutzern, Minern und Entwicklern betreut, die sich an die Regeln des Protokolls halten. Eine Änderung der Blockchain würde erfordern, die Mehrheit der Rechenleistung des Netzwerks zu überwältigen, weshalb
+              - link "BTC" [ref=e206] [cursor=pointer]:
+                - /url: /de-de/markets/cryptocurrencies/chart-bitcoin-to-us-dollar
+              - text: widerstandsfähiger gegen Zensur und Betrug ist – verglichen mit herkömmlichen Finanzsystemen.
+          - generic [ref=e208]:
+            - heading "Wie sieht die Kursentwicklung von BTC aus?" [level=2] [ref=e209]
+            - paragraph [ref=e210]:
+              - text: Die Entwicklung des
+              - link "BTC-Kurses" [ref=e211] [cursor=pointer]:
+                - /url: /de-de/markets/cryptocurrencies/chart-bitcoin-to-us-dollar
+              - text: zeigt eine Geschichte mit erheblicher Volatilität, die von technologischen Fortschritten, regulatorischen Entwicklungen und der Marktstimmung seit der Einführung im Jahr 2009 beeinflusst wurde.
+            - paragraph [ref=e212]: Bitcoin war in seiner Anfangszeit relativ wertlos und wurde unter Enthusiasten für Bruchteile eines Cents gehandelt. Im Jahr 2010 wurde die erste Transaktion in der realen Welt am berühmten „Bitcoin Pizza Day“ durchgeführt, als 10.000 BTC gegen zwei Pizzen getauscht wurden.
+            - paragraph [ref=e213]:
+              - text: Die Aufmerksamkeit der breiten Öffentlichkeit verstärkte sich, als BTC im Dezember 2013 zum ersten Mal die Marke von 1.000 $ überschritt, beeinflusst durch die Medienberichterstattung und die wachsende Akzeptanz. Dieses Momentum hielt jedoch nur kurz an, als Hacker 850.000 BTC von Mt Gox – der damals größten BTC-Börse – stahlen, was zu einem erheblichen Kursrückgang und einem Rückgang der
+              - link "Marktstimmung" [ref=e214] [cursor=pointer]:
+                - /url: /de-de/learn/trading-psychology/sentiment-in-trading
+              - text: führte.
+          - generic [ref=e216]:
+            - generic [ref=e217]:
+              - button "1M" [ref=e218]
+              - button "5M" [ref=e219] [cursor=pointer]
+              - button "15M" [ref=e220] [cursor=pointer]
+              - button "30Min." [ref=e221] [cursor=pointer]
+              - button "1St." [ref=e222] [cursor=pointer]
+              - button "4St." [ref=e223] [cursor=pointer]
+              - button "1T" [ref=e224] [cursor=pointer]
+              - button "1W" [ref=e225] [cursor=pointer]
+            - img [ref=e227]
+          - paragraph [ref=e230]:
+            - strong [ref=e231]: Die Wertentwicklung der Vergangenheit ist kein zuverlässiger Indikator für zukünftige Ergebnisse
+          - generic [ref=e233]:
+            - paragraph [ref=e234]: Der BTC-Kurs stieg im Jahr 2017 während des „Krypto-Booms“ auf 20.000 $ im Dezember an, als der Kryptowährungsmarkt seinen ersten großen Bullenmarkt erlebte. Der Enthusiasmus der Kleinanleger trug zum Boom bei, der durch das Aufkommen von Initial Coin Offerings (ICOs) und eine breite Medienberichterstattung angeheizt wurde. Die CME und die CBOE haben im Dezember 2017 außerdem den Handel mit Bitcoin-Futures eingeführt und somit legitime Krypto-Derivate auf dem US-Markt eingeführt. Die Blase platzte Anfang 2018 und führte zu einem lang anhaltenden Bärenmarkt, der auch als „Krypto-Winter“ bezeichnet wird, wobei der Bitcoin-Kurs bis zum Jahresende unter 4.000 $ fiel.
+            - paragraph [ref=e235]: Der Beginn der COVID-19-Pandemie im Jahr 2020 löste eine weltweite Wirtschaftsunsicherheit aus, und viele Trader suchten nach Alternativen zu den traditionellen Finanzmärkten. Die institutionelle Akzeptanz nahm zu, mit Unternehmen wie MicroStrategy, Square und Tesla, die Milliarden in BTC investierten – der Kurs stieg im April 2021 auf einen Höchststand von etwa 64.000 $.
+            - paragraph [ref=e236]: Im Jahr 2021 hatte Bitcoin (BTC) mit erheblichem Gegenwind zu kämpfen, da makroökonomische Faktoren wie die steigende Inflation, Zinserhöhungen durch die Zentralbanken und geopolitische Spannungen zu einem breiteren Marktrückgang führten. Markante Ereignisse wie der Konkurs der Kryptobörse FTX haben das Vertrauen der Trader erschüttert und dazu geführt, dass der Bitcoin-Kurs im Juni 2022 unter 20.000 $ fiel.
+            - paragraph [ref=e237]: Im Jahr 2023 zeigte der Markt Anzeichen einer Stabilisierung. Institutionelle Trader kehrten vorsichtig zurück, und technologische Fortschritte wie das Lightning Network verbesserten die Transaktionsgeschwindigkeiten und die Effizienz. Diese Entwicklungen haben geholfen, ein gewisses Vertrauen in den Kryptowährungsmarkt wiederherzustellen.
+            - paragraph [ref=e238]: "Betrachten wir nun das Jahr 2024 etwas genauer:"
+            - list [ref=e239]:
+              - listitem [ref=e240]:
+                - text: •
+                - paragraph [ref=e241]:
+                  - strong [ref=e242]: Januar 2024
+                  - text: ": Die U.S. Securities and Exchange Commission (SEC) hat 11 Spot-Bitcoin-ETFs zugelassen, was einen wichtigen Meilenstein für die institutionelle Akzeptanz darstellt. Diese Zulassung bot Tradern regulierte Möglichkeiten, ein Expusure zu Bitcoin aufzubauen, was das Marktvertrauen stärkte."
+              - listitem [ref=e243]:
+                - text: •
+                - paragraph [ref=e244]:
+                  - strong [ref=e245]: April 2024
+                  - text: ": BTC erlebte sein jüngstes"
+                  - link "Halving-Event" [ref=e246] [cursor=pointer]:
+                    - /url: /de-de/learn/market-guides/bitcoin-halving
+                  - text: ", das die Mining-Belohnung von 6,25 BTC auf 3,125 BTC reduzierte. Historisch betrachtet haben solche Halving-Events aufgrund der Reduzierung des Angebots zu Kursanstiegen geführt. Das Halving im Jahr 2024 löste jedoch nicht sofort einen deutlichen Kursanstieg aus, was darauf hindeutet, dass sich die Marktdynamik möglicherweise weiterentwickelt."
+              - listitem [ref=e247]:
+                - text: •
+                - paragraph [ref=e248]:
+                  - strong [ref=e249]: November 2024
+                  - text: ": BTC erreichte einen neuen Meilenstein, indem am 14. November zum ersten Mal die Marke von 90.000 $ überschritten wurde. Dieses Momentum setzte sich weiter fort, als der Kurs am 20. November 94.800 $ erreichte und bis zum 22. November auf etwa 99.655,50 $ anstieg. Dieses rasante Wachstum verstärkte die Spekulationen darüber, wann Bitcoin die Marke von 100.000 $ erreichen wird, was die Aufmerksamkeit der Medien und das Interesse der Trader auf sich zog."
+          - generic [ref=e251]:
+            - heading "Welche Faktoren könnten den Realtime-Kurs von BTC beeinflussen?" [level=2] [ref=e252]
+            - paragraph [ref=e253]:
+              - text: Der
+              - link "BTC-Live-Kurs" [ref=e254] [cursor=pointer]:
+                - /url: /de-de/markets/cryptocurrencies/chart-bitcoin-to-us-dollar
+              - text: "wird von spezifischen Faktoren der Bitcoin-Blockchain, des Kryptowährungsmarktes und allgemeiner wirtschaftlicher Trends beeinflusst. Hier sind einige Schlüsselelemente, die zu seinen Kursbewegungen beitragen können:"
+            - heading "Halving-Events und Angebotsknappheit" [level=3] [ref=e255]
+            - paragraph [ref=e256]: BTC hat ein festes Angebotslimit von 21 Millionen Coins. Ungefähr alle vier Jahre wird die Belohnung für das Mining neuer Blöcke halbiert, was als Bitcoin-Halving bekannt ist. Dies verringert die Rate, mit der neue Bitcoins generiert werden, und erhöht somit die Knappheit.
+            - paragraph [ref=e257]: Historisch betrachtet sind Halving-Events oft bedeutenden Kursanstiegen vorausgegangen, da – wenn die Nachfrage nach BTC weiter steigt, während das Angebot schrumpft – dies BTC weiter nach oben treiben könnte.*
+            - paragraph [ref=e258]:
+              - strong [ref=e259]: "*Die Wertentwicklung der Vergangenheit ist kein Indikator für zukünftige Ergebnisse."
+            - heading "Technologische Fortschritte und Netzwerk-Upgrades" [level=3] [ref=e260]
+            - paragraph [ref=e261]: Während das Kernprotokoll von Bitcoin relativ stabil bleibt, können sich Entwicklungen zur Verbesserung der Skalierbarkeit und der Transaktionseffizienz möglicherweise auf den Kurs auswirken.
+            - paragraph [ref=e262]:
+              - text: Technologien wie das Lightning Network beschleunigen die Transaktionsgeschwindigkeiten und minimieren die Gebühren, wodurch die Attraktivität von Bitcoin als Tauschmedium erhöht wird. Umgekehrt könnten fehlgeschlagene Implementierungen oder eine mangelnde Akzeptanz zu einem Rückgang der Netzwerknutzung und der Nachfrage führen, wodurch der
+              - link "BTC-Kurs" [ref=e263] [cursor=pointer]:
+                - /url: /de-de/markets/cryptocurrencies/chart-bitcoin-to-us-dollar
+              - text: sinken könnte.
+            - heading "Makroökonomische Faktoren und Wirtschaftsunsicherheit" [level=3] [ref=e264]
+            - paragraph [ref=e265]: Bitcoin wird häufig als ein Hedge gegen Inflation und wirtschaftliche Instabilität angesehen. In Zeiten von Wirtschaftsunsicherheit, Währungsabwertung oder geopolitischen Spannungen könnten sich Trader dem Bitcoin als Wertanlage zuwenden, was die Nachfrage erhöht.
+            - paragraph [ref=e266]: Andererseits könnten Faktoren wie hohe Zinssätze, eine quantitative Straffung der Geldpolitik und ein größeres Vertrauen in traditionelle Finanzsysteme – wie der Aktienmarkt – einige Trader von Kryptowährungen wie BTC abhalten.
+            - heading "Marktstimmung und Medieneinfluss" [level=3] [ref=e267]
+            - paragraph [ref=e268]:
+              - text: Die öffentliche Wahrnehmung und die Medienberichterstattung können Schwankungen des
+              - link "BTC-Kurses" [ref=e269] [cursor=pointer]:
+                - /url: /de-de/markets/cryptocurrencies/chart-bitcoin-to-us-dollar
+              - text: auslösen. Positive Nachrichten können die Marktstimmung stärken und die Kurse in die Höhe treiben. Hierzu zählen etwa die Befürwortung durch einflussreiche Persönlichkeiten oder die Ankündigung großer Unternehmen, BTC zu akzeptieren.
+            - paragraph [ref=e270]: Im Gegensatz dazu können negative Nachrichten, wie Sicherheitslücken, Betrug oder kritische Äußerungen von Regulierungsbehörden und Persönlichkeiten des öffentlichen Lebens das Vertrauen beeinträchtigen und einen Rückgang des BTC-Kurses verursachen.
+            - heading "Mining-Dynamik und Energieverbrauch" [level=3] [ref=e271]
+            - paragraph [ref=e272]: Der Proof-of-Work (PoW) Konsensmechanismus von Bitcoin benötigt eine erhebliche Rechenleistung und Energie. Veränderungen der Mining-Schwierigkeit, der Hash-Rate und der Energiekosten können sich auf die Rentabilität der Miner und die Netzwerksicherheit auswirken.
+            - paragraph [ref=e273]:
+              - text: Ereignisse wie Mining-Verbote in Ländern – wie China – und die Umstellung auf erneuerbare Energiequellen können zu niedrigeren Hash-Raten führen, was das Vertrauen der Trader schwächen könnte. Umweltbedenken hinsichtlich des Energieverbrauchs von Bitcoin könnten sich ebenfalls auf die Wahrnehmung der Trader auswirken und zu regulatorischen Maßnahmen führen, die sich auf den
+              - link "BTC-Kurs" [ref=e274] [cursor=pointer]:
+                - /url: /de-de/markets/cryptocurrencies/chart-bitcoin-to-us-dollar
+              - text: auswirken könnten.
+            - paragraph [ref=e275]:
+              - strong [ref=e276]: Erfahren Sie mehr über die potenzielle Zukunft des Bitcoin-Kurses
+            - paragraph [ref=e277]:
+              - text: Entdecken Sie in unserem Leitfaden zu den
+              - link "BTC-Kurs-Prognosen" [ref=e278] [cursor=pointer]:
+                - /url: /de-de/analysis/bitcoin-prognose
+              - text: Kursziele und Analystenkommentare.
+          - generic [ref=e280]:
+            - heading "Was sind die Handelszeiten für BTC?" [level=2] [ref=e281]
+            - paragraph [ref=e282]: Bitcoin (BTC) läuft auf einem dezentralisierten Blockchain-Netzwerk, das 24 Stunden am Tag, an sieben Tagen in der Woche aktiv ist. Das bedeutet, dass Sie BTC jederzeit traden können, auch an Wochenenden und Feiertagen.
+            - list [ref=e283]:
+              - listitem [ref=e284]:
+                - text: •
+                - paragraph [ref=e285]:
+                  - strong [ref=e286]: Kryptowährungsbörsen
+                  - text: – viele Börsen ermöglichen das 24/7-Trading, wodurch eine kontinuierliche Marktteilnahme möglich ist.
+              - listitem [ref=e287]:
+                - text: •
+                - paragraph [ref=e288]:
+                  - strong [ref=e289]: Online-Handelsplattformen
+                  - text: – einige zuverlässige und vertrauenswürdige Broker bieten das BTC-Trading über CFDs an.
+            - paragraph [ref=e290]:
+              - text: Wenn Sie sich für das Traden mit CFDs entscheiden, können Sie die Performance von BTC in Realtime in US-Dollar mit unserem umfassenden
+              - link "BTC/USD-Kurschart" [ref=e291] [cursor=pointer]:
+                - /url: /de-de/markets/cryptocurrencies/chart-bitcoin-to-us-dollar
+              - text: verfolgen.
+            - paragraph [ref=e292]:
+              - text: Alternativ können Sie unsere Kurscharts für
+              - link "ETH/BTC" [ref=e293] [cursor=pointer]:
+                - /url: /de-de/markets/cryptocurrencies/chart-ethereum-to-bitcoin
+              - text: ", BTC/GBP und"
+              - link "BTC/EUR" [ref=e294] [cursor=pointer]:
+                - /url: /de-de/markets/cryptocurrencies/chart-bitcoin-to-euro-1
+              - text: überprüfen.
+            - paragraph [ref=e295]: Indem Sie die Kryptowährungsaktivitäten beobachten, können Sie wichtige fundamentale oder technische Ereignisse im Blick behalten, die sich auf die kurzfristige Wertentwicklung der Kryptowährung auswirken können.
+            - paragraph [ref=e296]:
+              - link "Ein Konto erstellen" [ref=e297] [cursor=pointer]:
+                - /url: /trading/signup
+              - link "Ein Demokonto eröffnen" [ref=e298] [cursor=pointer]:
+                - /url: /trading/signup?go=demo
+          - generic [ref=e300]:
+            - heading "So traden Sie BTC" [level=2] [ref=e301]
+            - paragraph [ref=e302]: Bitcoin (BTC) ist eine Kryptowährung, was bedeutet, dass diese direkt auf einer Kryptowährungsbörse oder über Peer-to-Peer-Transaktionen gehandelt werden kann. Trader können sich ebenso dafür entscheiden, BTC über ein Derivat zu traden, ein Finanzprodukt, das seinen Wert aus dem Kurs des zugrundeliegenden Vermögenswerts bezieht (oder „ableitet“).
+            - paragraph [ref=e303]:
+              - text: Sie könnten einen
+              - link "Differenzkontrakt oder CFD" [ref=e304] [cursor=pointer]:
+                - /url: /de-de/ways-to-trade/cfd-trading
+              - text: verwenden, um auf den Kurs von BTC-Paaren zu traden. Ein CFD ist ein Kontrakt, üblicherweise zwischen einem Broker und einem Trader, bei dem sich eine Partei verpflichtet, der anderen die Differenz des Wertes eines Wertpapiers zwischen der Eröffnung und der Schließung eines Trades zu zahlen.
+            - paragraph [ref=e305]:
+              - text: Sie können
+              - link "CFDs" [ref=e306] [cursor=pointer]:
+                - /url: /de-de/ways-to-trade/cfd-trading/what-is-cfd-trading
+              - text: zum Traden nutzen, unabhängig davon, ob Sie denken, dass ein BTC-Paar steigen (als „long gehen“ bezeichnet) oder fallen wird („short gehen“). CFDs bieten Ihnen den Zugang zu einer Hebelwirkung, wodurch größere Positionen mit einem relativ geringen Einsatz möglich sind. Dadurch können potenzielle Gewinne verstärkt werden, aber auch potenzielle Verluste, was das CFD-Trading risikoreich macht.
+            - paragraph [ref=e307]:
+              - text: Sie können mehr über das Trading von [
+              - link "Kryptowährungen" [ref=e308] [cursor=pointer]:
+                - /url: /de-de/markets/cryptocurrencies
+              - text: mit Capital.com in unserem umfassenden
+              - link "Leitfaden zum Kryptowährungshandel" [ref=e309] [cursor=pointer]:
+                - /url: https://capital.com/en-au/learn/market-guides/what-is-cryptocurrency-trading
+              - text: erfahren.
+            - paragraph [ref=e310]:
+              - text: Neben CFDs können Sie BTC-Paare auch über Instrumente wie Futures, Optionen, ETFs und Investmentfonds handeln. Allesamt bieten jeweils eine Alternative zum CFD-Trading mit Hebel und sind für verschiedene Risikoprofile und
+              - link "Strategien" [ref=e311] [cursor=pointer]:
+                - /url: /de-de/learn/technical-analysis
+              - text: geeignet.
+            - paragraph [ref=e312]:
+              - link "Ein Konto erstellen" [ref=e313] [cursor=pointer]:
+                - /url: /trading/signup
+              - link "Ein Demokonto eröffnen" [ref=e314] [cursor=pointer]:
+                - /url: /trading/signup?go=demo
+            - paragraph [ref=e315]:
+              - text: "* Quelle:"
+              - link "https://coinmarketcap.com/" [ref=e316] [cursor=pointer]:
+                - /url: https://coinmarketcap.com/
+          - heading "Häufig gestellte Fragen" [level=2] [ref=e319]
+          - generic [ref=e321]:
+            - group [ref=e322]:
+              - generic "Was ist BTC-Trading?" [ref=e323] [cursor=pointer]:
+                - heading "Was ist BTC-Trading?" [level=3] [ref=e324]
+            - group [ref=e325]:
+              - generic "Was ist Wrapped Bitcoin (WBTC)?" [ref=e326] [cursor=pointer]:
+                - heading "Was ist Wrapped Bitcoin (WBTC)?" [level=3] [ref=e327]
+            - group [ref=e328]:
+              - generic "Wie funktioniert das Bitcoin-Trading?" [ref=e329] [cursor=pointer]:
+                - heading "Wie funktioniert das Bitcoin-Trading?" [level=3] [ref=e330]
+            - group [ref=e331]:
+              - generic "Was sind die besten Plattformen, um Bitcoin zu traden?" [ref=e332] [cursor=pointer]:
+                - heading "Was sind die besten Plattformen, um Bitcoin zu traden?" [level=3] [ref=e333]
+              - text: • • •
+          - generic [ref=e336]:
+            - heading "Besuchen Sie unsere weiteren vollständigen Leitfäden" [level=2] [ref=e338]
+            - generic [ref=e339]:
+              - generic [ref=e342]:
+                - heading "Wie man mit Ethereum handelt" [level=3] [ref=e343]
+                - generic [ref=e344]: Erfahren Sie alles über Ethereum und den Kursverlauf von Ether (ETH), einschließlich dApps, NFTs und wie Sie ETH/USD über CFDs auf Capital.com traden
+                - link "Ethereum traden" [ref=e345] [cursor=pointer]:
+                  - /url: https://capital.com/de-de/learn/market-guides/trade-ethereum
+                  - generic [ref=e346]: Ethereum traden
+              - generic [ref=e349]:
+                - heading "Wie Sie Polkadot traden können" [level=3] [ref=e350]
+                - generic [ref=e351]: Erfahren Sie mehr über Polkadot und die Kursentwicklung von DOT, wie es mit Ethereum verglichen werden kann und wie Sie DOT/USD über CFDs auf Capital.com traden können
+                - link "Polkadot traden" [active] [ref=e352] [cursor=pointer]:
+                  - /url: /de-de/learn/market-guides/trade-trumpcoin
+                  - generic [ref=e353]: Polkadot traden
+        - complementary [ref=e354]:
+          - navigation [ref=e358]:
+            - strong [ref=e359]: Inhalte
+            - separator
+            - generic [ref=e360]:
+              - link "Was ist Bitcoin?" [ref=e362] [cursor=pointer]:
+                - /url: "#part_0"
+              - 'link "Bitcoin vs. Bitcoin Cash: Was sind die wichtigsten Unterschiede?" [ref=e364] [cursor=pointer]':
+                - /url: "#part_1"
+              - link "Wie funktioniert Bitcoin?" [ref=e366] [cursor=pointer]:
+                - /url: "#part_2"
+              - link "Wie sieht die Kursentwicklung von BTC aus?" [ref=e368] [cursor=pointer]:
+                - /url: "#part_3"
+              - link "Welche Faktoren könnten den Realtime-Kurs von BTC beeinflussen?" [ref=e370] [cursor=pointer]:
+                - /url: "#part_4"
+              - link "Was sind die Handelszeiten für BTC?" [ref=e372] [cursor=pointer]:
+                - /url: "#part_5"
+              - link "So traden Sie BTC" [ref=e374] [cursor=pointer]:
+                - /url: "#part_6"
+              - link "Häufig gestellte Fragen" [ref=e376] [cursor=pointer]:
+                - /url: "#part_7"
+          - generic [ref=e377]:
+            - generic [ref=e379]:
+              - strong [ref=e380]: Die meistgehandelten
+              - generic [ref=e384]:
+                - button "Die meistgehandelten" [ref=e385]: Die meistgehandelten
+                - button "Top-Aufsteiger" [ref=e386] [cursor=pointer]: Top-Aufsteiger
+                - button "Top-Absteiger" [ref=e387] [cursor=pointer]: Top-Absteiger
+                - button "Die volatilsten" [ref=e388] [cursor=pointer]: Die volatilsten
+              - generic [ref=e389]:
+                - generic [ref=e392]:
+                  - generic [ref=e394]:
+                    - link "Gold" [ref=e395] [cursor=pointer]:
+                      - /url: /de-de/markets/commodities/rohstoff-gold-spot
+                    - generic [ref=e396]: "4410.23"
+                  - button "Handeln" [ref=e397] [cursor=pointer]
+                - generic [ref=e399]:
+                  - generic [ref=e400]:
+                    - generic [ref=e402]:
+                      - link "US Tech 100" [ref=e403] [cursor=pointer]:
+                        - /url: /de-de/markets/indices/us-tech-100-index-1
+                      - generic [ref=e404]: "29721.2"
+                    - button "Handeln" [ref=e405] [cursor=pointer]
+                  - generic [ref=e406]:
+                    - generic [ref=e408]: 0.6%
+                    - img [ref=e412]
+                - generic [ref=e415]:
+                  - generic [ref=e417]:
+                    - link "Bitcoin/USD" [ref=e418] [cursor=pointer]:
+                      - /url: /de-de/markets/cryptocurrencies/chart-bitcoin-to-us-dollar
+                    - generic [ref=e419]: "64116.05"
+                  - button "Handeln" [ref=e420] [cursor=pointer]
+                - generic [ref=e423]:
+                  - generic [ref=e425]:
+                    - link "Ripple/USD" [ref=e426] [cursor=pointer]:
+                      - /url: /de-de/markets/cryptocurrencies/chart-ripple-to-us-dollar
+                    - generic [ref=e427]: "1.02310"
+                  - button "Handeln" [ref=e428] [cursor=pointer]
+                - generic [ref=e431]:
+                  - generic [ref=e433]:
+                    - link "Ethereum/USD" [ref=e434] [cursor=pointer]:
+                      - /url: /de-de/markets/cryptocurrencies/chart-ethereum-to-us-dollar
+                    - generic [ref=e435]: "1909.84"
+                  - button "Handeln" [ref=e436] [cursor=pointer]
+            - text: Die Aktienkurse sind indikativ und können von den aktuellen Marktpreisen abweichen.
+      - generic [ref=e440]:
+        - heading "Drei Schritte für den Einstieg" [level=2] [ref=e442]
+        - generic [ref=e443]:
+          - button [ref=e445] [cursor=pointer]
+          - generic [ref=e448]: 1. Erstellen Sie Ihr Konto (vorbehaltlich der Eignung)
+          - generic [ref=e449]: 2. Zahlen Sie zu Ihren Bedingungen ein
+          - generic [ref=e450]: 3. Starten Sie, wenn Sie bereit sind
+  - contentinfo [ref=e452]:
+    - generic [ref=e453]:
+      - link [ref=e454] [cursor=pointer]:
+        - /url: /de-de
+        - img [ref=e455]
+      - generic [ref=e459]:
+        - link [ref=e460] [cursor=pointer]:
+          - /url: https://www.facebook.com/profile.php?id=100093678124596
+        - link [ref=e461] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/capital.com/
+        - link [ref=e462] [cursor=pointer]:
+          - /url: https://www.instagram.com/capitalcom_de/
+        - link [ref=e463] [cursor=pointer]:
+          - /url: https://www.youtube.com/channel/UCi0KTKzvmLkDunVCrD2-BAg
+      - generic [ref=e464]:
+        - link [ref=e465] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/id1230088754?cp_device_id=6c473d02-6457-46e7-be16-80a2041a86b9&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e466] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=6c473d02-6457-46e7-be16-80a2041a86b9&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e467] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading.huawei-huawei?cp_device_id=6c473d02-6457-46e7-be16-80a2041a86b9&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+    - generic [ref=e468]:
+      - generic [ref=e469]:
+        - generic [ref=e470]:
+          - generic [ref=e471]:
+            - generic [ref=e472]: "Land / Region:"
+            - button "Germany" [ref=e473] [cursor=pointer]:
+              - generic [ref=e475]: Germany
+          - generic [ref=e476]: •
+          - generic [ref=e477]:
+            - generic [ref=e478]: "Anmelden:"
+            - button "German" [ref=e479] [cursor=pointer]:
+              - generic [ref=e480]: German
+        - generic [ref=e481]:
+          - generic [ref=e482]: "Unsere Kontakte:"
+          - link "+49 3046690292" [ref=e485] [cursor=pointer]:
+            - /url: tel:+49 3046690292
+            - strong [ref=e486]: +49 3046690292
+            - strong
+          - generic [ref=e487]: •
+          - link "support@capital.com" [ref=e489] [cursor=pointer]:
+            - /url: mailto:support@capital.com
+            - strong [ref=e490]: support@capital.com
+      - generic [ref=e491]:
+        - generic [ref=e492]:
+          - strong [ref=e494]: Handel
+          - generic [ref=e495]:
+            - generic [ref=e496]:
+              - generic [ref=e497]: Handel
+              - generic [ref=e498]:
+                - link "CFDs traden" [ref=e500] [cursor=pointer]:
+                  - /url: /de-de/ways-to-trade/cfd-trading
+                - link "Knock-outs traden" [ref=e502] [cursor=pointer]:
+                  - /url: /de-de/ways-to-trade/knock-outs
+                - link "Demokonto" [ref=e504] [cursor=pointer]:
+                  - /url: /de-de/trading-platforms/demo-account
+                - link "Pro-Konto" [ref=e506] [cursor=pointer]:
+                  - /url: /de-de/professional-clients
+            - generic [ref=e507]:
+              - generic [ref=e508]: Handelsplattformen
+              - generic [ref=e509]:
+                - link "Web-Plattform" [ref=e511] [cursor=pointer]:
+                  - /url: /de-de/trading-platforms/web-platform
+                - link "Mobile App" [ref=e513] [cursor=pointer]:
+                  - /url: /de-de/trading-platforms/mobile-apps
+                - link "TradingView" [ref=e515] [cursor=pointer]:
+                  - /url: /de-de/trading-platforms/trading-view
+                - link "MT4" [ref=e517] [cursor=pointer]:
+                  - /url: /de-de/trading-platforms/mt4
+                - link "MT5" [ref=e519] [cursor=pointer]:
+                  - /url: /de-de/trading-platforms/mt5
+            - generic [ref=e520]:
+              - generic [ref=e521]: Lernen
+              - generic [ref=e522]:
+                - link "Trading-Strategien" [ref=e524] [cursor=pointer]:
+                  - /url: /de-de/learn/trading-strategies
+                - link "Technische Analyse" [ref=e526] [cursor=pointer]:
+                  - /url: /de-de/learn/technical-analysis
+                - link "Trading-Psychologie" [ref=e528] [cursor=pointer]:
+                  - /url: /de-de/learn/trading-psychology
+                - link "Webinare" [ref=e530] [cursor=pointer]:
+                  - /url: /de-de/learn/webinars
+                - link "Lernen" [ref=e532] [cursor=pointer]:
+                  - /url: /de-de/learn
+        - generic [ref=e533]:
+          - strong [ref=e535]: Märkte
+          - generic [ref=e536]:
+            - generic [ref=e537]:
+              - generic [ref=e538]: Unsere Märkte
+              - generic [ref=e539]:
+                - link "Märkte" [ref=e541] [cursor=pointer]:
+                  - /url: /de-de/markets
+                - link "Forex" [ref=e543] [cursor=pointer]:
+                  - /url: /de-de/markets/forex
+                - link "Aktien" [ref=e545] [cursor=pointer]:
+                  - /url: /de-de/markets/shares
+                - link "Indizes" [ref=e547] [cursor=pointer]:
+                  - /url: /de-de/markets/indices
+                - link "Rohstoffe" [ref=e549] [cursor=pointer]:
+                  - /url: /de-de/markets/commodities
+                - link "Kryptowährungen" [ref=e551] [cursor=pointer]:
+                  - /url: /de-de/markets/cryptocurrencies
+                - link "Anleihen" [ref=e553] [cursor=pointer]:
+                  - /url: /de-de/markets/bonds
+                - link "Zinssätze" [ref=e555] [cursor=pointer]:
+                  - /url: /de-de/markets/interest-rates
+            - generic [ref=e556]:
+              - generic [ref=e557]: Marktinformationen
+              - generic [ref=e558]:
+                - link "Marktanalyse" [ref=e560] [cursor=pointer]:
+                  - /url: /de-de/analysis
+                - link "Preisgestaltung der Märkte" [ref=e562] [cursor=pointer]:
+                  - /url: /de-de/about-us/how-our-markets-are-priced
+        - link "Preisgestaltung" [ref=e565] [cursor=pointer]:
+          - /url: /de-de/ways-to-trade/fees-and-charges
+          - strong [ref=e566]: Preisgestaltung
+        - generic [ref=e567]:
+          - strong [ref=e569]: Über uns
+          - generic [ref=e570]:
+            - generic [ref=e571]:
+              - generic [ref=e572]: Über uns
+              - generic [ref=e573]:
+                - link "Über uns" [ref=e575] [cursor=pointer]:
+                  - /url: /de-de/about-us
+                - link "Unsere Niederlassungen" [ref=e577] [cursor=pointer]:
+                  - /url: /de-de/about-us/our-offices
+                - link "Ist capital.com sicher?" [ref=e579] [cursor=pointer]:
+                  - /url: /de-de/security-measures
+                - link "Unser Geschäftsmodell" [ref=e581] [cursor=pointer]:
+                  - /url: /de-de/about-us/how-capital-makes-money
+            - generic [ref=e582]:
+              - generic [ref=e583]: Karriere
+              - link "Karriere" [ref=e586] [cursor=pointer]:
+                - /url: /de-de/about-us/careers
+            - generic [ref=e587]:
+              - generic [ref=e588]: Hilfe erhalten
+              - generic [ref=e589]:
+                - link "Hilfe-Center" [ref=e591] [cursor=pointer]:
+                  - /url: /de-de/help
+                - link "Kundenvulnerabilität" [ref=e593] [cursor=pointer]:
+                  - /url: /de-de/help/client-vulnerability
+                - link "Kontaktieren Sie uns" [ref=e595] [cursor=pointer]:
+                  - /url: /de-de/contact-us
+            - generic [ref=e596]:
+              - generic [ref=e597]: Rechtliche Dokumentation
+              - generic [ref=e598]:
+                - link "Beschwerdeverfahren - Capital Com Group Ltd" [ref=e600] [cursor=pointer]:
+                  - /url: /de-de/terms-and-policies/complaints-procedure-cceu
+                - link "Beschwerdeverfahren - Capital Com SV Investments Limited" [ref=e602] [cursor=pointer]:
+                  - /url: /de-de/terms-and-policies/complaints-procedure
+                - 'link "Compliance & Rechtliches: CFD-Trading" [ref=e604] [cursor=pointer]':
+                  - /url: /de-de/terms-and-policies/compliance-and-legals
+    - generic [ref=e606]:
+      - paragraph [ref=e607]:
+        - text: "Capital Com SV Investments Limited:"
+        - text: CFDs sind komplexe Instrumente und beinhalten wegen der Hebelwirkung ein hohes Risiko, schnell Geld zu verlieren.
+        - generic [ref=e608]:
+          - generic [ref=e609]:
+            - strong [ref=e610]: 74 % der Kleinanlegerkonten verlieren Geld beim CFD-Handel mit diesem Anbieter
+            - text: .
+          - text: Sie sollten überlegen, ob Sie verstehen, wie CFD funktionieren und ob Sie es sich leisten können, das hohe Risiko einzugehen, Ihr Geld zu verlieren. Bitte beachten Sie unsere
+          - link "Risikoaufklärung" [ref=e611] [cursor=pointer]:
+            - /url: https://capital.com/risk-disclosure-policy
+      - paragraph [ref=e612]:
+        - text: "Capital Com Group Ltd:"
+        - text: CFD sind komplexe Instrumente und beinhalten wegen der Hebelwirkung ein hohes Risiko, schnell Geld zu verlieren.
+        - strong [ref=e613]: Zwischen 74 % und 89 % der Kleinanlegerkonten verlieren beim Handel mit CFD Geld.
+        - text: Sie sollten überlegen, ob Sie verstehen, wie CFD funktionieren und ob Sie es sich leisten können, das hohe Risiko einzugehen, Ihr Geld zu verlieren.
+        - generic [ref=e614]:
+          - text: Bitte beachten Sie unsere
+          - link "Risikoaufklärung" [ref=e615] [cursor=pointer]:
+            - /url: https://capital.com/risk-disclosure-policy
+      - paragraph [ref=e616]:
+        - text: "Risikowarnung: Der Wert von Aktien und ETFs, die über ein Aktienhandelskonto gekauft werden, kann steigen und fallen. Die Wertentwicklung in der Vergangenheit ist keine Garantie für zukünftige Ergebnisse."
+        - text: Transaktionen mit nicht lieferbaren außerbörslichen Instrumenten wie Knock-out-Optionen und CFDs sind komplexe Finanzprodukte, die mit einem hohen Risiko verbunden sind, das gesamte investierte Kapital zu verlieren. Derartige Produkte sind nicht für alle Anleger geeignet, da sie sowohl zu Gewinnen als auch zu erheblichen Verlusten führen können. Bevor Sie sich an dieser Art des Handels beteiligen, sollten Sie sollten abwägen, ob Sie die Funktionsweise dieser Instrumente verstehen und ob Sie es sich leisten können, das hohe Risiko des Geldverlusts einzugehen.
+        - text: Für professionelle Kunden besteht das Risiko, mehr als die ursprüngliche Einzahlung zu verlieren. Die Informationen auf dieser Website sind allgemein gehalten und berücksichtigen weder Ihre finanzielle Situation noch Ihre Ziele oder Bedürfnisse. Bitte prüfen Sie unsere Rechtsdokumente und vergewissern Sie sich, dass Sie die Risiken vollständig verstehen, bevor Sie eine Handelsentscheidung treffen. Wir ermutigen Sie, die Schulungsdienste unseres Unternehmens in Anspruch zu nehmen, um die Risiken besser zu verstehen, bevor Sie sich an Handelsgeschäften beteiligen.
+      - paragraph [ref=e617]: "Capital Com SV Investments Limited ist ein in der Republik Zypern ansässiges Unternehmen mit der Registrierungsnummer HE 354252, welches von der Cyprus Securities and Exchange Commission (Lizenznummer 319/17) zugelassen und reguliert ist. Eingetragener Geschäftssitz: Vasileiou Makedonos 8, Kinnis Business Center, 2. Stock, 3040, Limassol, Zypern."
+      - paragraph [ref=e618]: "Capital Com Group Ltd ist ein in der Republik Zypern ansässiges Unternehmen mit der Registrierungsnummer ΗΕ 446198, welches von der Cyprus Securities and Exchange Commission (Lizenznummer 463/25) zugelassen und reguliert ist. Eingetragener Geschäftssitz: Vasileiou Makedonos 8, Kinnis Business Center, 2. Stock, 3040, Limassol, Zypern."
+      - paragraph [ref=e619]: Die Informationen auf dieser Seite richten sich nicht an Personen, die in den Vereinigten Staaten, Kanada und Belgien oder in einem anderen Land außerhalb des EWR leben. Zudem sind sie nicht für die Verbreitung an oder die Nutzung durch Personen in Ländern oder Gerichtsbarkeiten bestimmt, in denen eine solche Verbreitung oder Nutzung gegen die dort geltenden Gesetze oder Regulierungen verstoßen würde.
+    - generic [ref=e620]:
+      - paragraph [ref=e621]: © 2026 Capital Com SV Investments Limited
+      - generic [ref=e622]:
+        - link "Sitemap" [ref=e623] [cursor=pointer]:
+          - /url: /de-de/sitemap
+        - link "Cookie-Einstellungen" [ref=e624] [cursor=pointer]:
+          - /url: ""
+        - link "Richtlinien" [ref=e625] [cursor=pointer]:
+          - /url: /de-de/terms-and-policies/regulations
+        - link "Nutzungsbedingungen und Richtlinien" [ref=e626] [cursor=pointer]:
+          - /url: /de-de/terms-and-policies
+        - link "Beschwerdeverfahren" [ref=e627] [cursor=pointer]:
+          - /url: /de-de/terms-and-policies/complaints-procedures
+  - button [ref=e628] [cursor=pointer]
+  - alert [ref=e630]
+```
+
+# Test source
+
+```ts
+  1   | import { expect } from "@playwright/test";
+  2   | import { ctaRegistry } from "../test_data/CTA/pages.cta.registry";
+  3   | 
+  4   | export async function expectPageState(
+  5   |   page,
+  6   |   action,
+  7   |   expectation,
+  8   |   testInfo,
+  9   |   locator,
+  10  | ) {
+  11  |   console.log("EXPECTATION ASSERTIONS", expectation);
+  12  |   const currentUrl = testInfo.project.use.baseURL;
+  13  |   const currentLicense = testInfo.project.use.licenseName;
+  14  |   const currentLang = testInfo.project.use.langName;
+  15  |   // console.log("Current URL: ", currentUrl);
+  16  | 
+  17  |   const expectationType =
+  18  |     typeof expectation === "string" ? expectation : expectation.type;
+  19  | 
+  20  |   switch (expectationType) {
+  21  |     case "redirects to platform":
+  22  |       await expect(page).toHaveURL(/trading\/platform/);
+  23  |       break;
+  24  | 
+  25  |     case "shows signup form":
+  26  |       await expect(
+  27  |         // page.locator('form[data-sentry-component="SignUp"]'),
+  28  |         page.locator('[data-type="SIGN_UP_close"]'),
+  29  |       ).toBeVisible();
+  30  |       break;
+  31  | 
+  32  |     case "shows login form":
+  33  |       await expect(page.locator('[data-testid="modal-title"]'));
+  34  |       break;
+  35  | 
+  36  |     case "redirect": {
+  37  |       const pageConfig = ctaRegistry[expectation.page].path;
+  38  | 
+  39  |       // const pagePath = ctaRegistry[expectation.page].path;
+  40  |       const pagePath =
+  41  |         typeof pageConfig === "function"
+  42  |           ? pageConfig(currentLicense)
+  43  |           : pageConfig;
+  44  | 
+  45  |       const expectedURL = pagePath ? `${currentUrl}/${pagePath}` : currentUrl;
+  46  |       await expect(page).toHaveURL(new RegExp(`${expectedURL}/?$`));
+  47  |       break;
+  48  |     }
+  49  | 
+  50  |     case "opens external link": {
+  51  |       const href = await locator.getAttribute("href");
+  52  |       // await expect(locator).toHaveAttribute("target", "_blank");
+  53  |       expect(href).toContain(action.expectedHrefContains);
+  54  |       break;
+  55  |     }
+  56  | 
+  57  |     case "opens regional settings window": {
+  58  |       await expect(page.locator('[data-sentry-component="CountryLangSelect"]'));
+  59  |       break;
+  60  |     }
+  61  | 
+  62  |     case "exist corresponding license": {
+  63  |       const expectedLicenses = action.licenseText?.[currentLicense];
+  64  | 
+  65  |       if (expectedLicenses?.length) {
+  66  |         for (const text of expectedLicenses) {
+  67  |           await expect(locator).toContainText(text);
+  68  |         }
+  69  |       } else {
+  70  |         await expect(locator).toContainText(currentLicense);
+  71  |       }
+  72  | 
+  73  |       break;
+  74  |     }
+  75  | 
+  76  |     case "opens cookie menu": {
+  77  |       await expect(page.locator(".consent-pc-modal__content"));
+  78  |       break;
+  79  |     }
+  80  | 
+  81  |     case "opens pdf document": {
+  82  |       const href = await locator.getAttribute("href");
+  83  | 
+> 84  |       expect(href).toContain(action.expectedHrefContains);
+      |                    ^ Error: expect(received).toContain(expected) // indexOf
+  85  |       await expect(locator).toHaveAttribute("target", "_blank");
+  86  | 
+  87  |       const browserName = testInfo.project.use.browserName;
+  88  | 
+  89  |       if (browserName.includes("webkit")) {
+  90  |         const [download] = await Promise.all([
+  91  |           page.waitForEvent("download"),
+  92  |           locator.click(),
+  93  |         ]);
+  94  | 
+  95  |         const path = await download.path();
+  96  |         expect(path).not.toBeNull();
+  97  | 
+  98  |         const fs = await import("node:fs/promises");
+  99  |         const stat = await fs.stat(path);
+  100 | 
+  101 |         expect(
+  102 |           stat.size,
+  103 |           `Downloaded file "${download.suggestedFilename()}" is empty`,
+  104 |         ).toBeGreaterThan(0);
+  105 |       } else {
+  106 |         const [pdfPage] = await Promise.all([
+  107 |           page.context().waitForEvent("page"),
+  108 |           locator.click(),
+  109 |         ]);
+  110 | 
+  111 |         await pdfPage.waitForLoadState("domcontentloaded");
+  112 | 
+  113 |         expect(pdfPage.url()).toContain(action.expectedHrefContains);
+  114 |         await expect(pdfPage.locator("body")).not.toContainText(
+  115 |           "HTTP ERROR 404",
+  116 |         );
+  117 |       }
+  118 |       break;
+  119 |     }
+  120 | 
+  121 |     case "opens link on currentURL": {
+  122 |       const currentUrl = page.url();
+  123 | 
+  124 |       console.log("EXPECTED:", await locator.getAttribute("href"));
+  125 |       console.log("ACTUAL:", currentUrl);
+  126 | 
+  127 |       expect(currentUrl).toContain(action.expectedHrefContains);
+  128 |       await expect(page.locator("body")).not.toContainText("HTTP ERROR 404");
+  129 | 
+  130 |       break;
+  131 |     }
+  132 | 
+  133 |     default:
+  134 |       throw new Error(`Unknown expectation: ${expectation}`);
+  135 |   }
+  136 | }
+  137 | 
+```

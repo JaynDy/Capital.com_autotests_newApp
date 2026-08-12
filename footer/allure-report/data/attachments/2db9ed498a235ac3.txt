@@ -1,0 +1,16 @@
+[ { type: 'tag', description: 'retest' } ]
+[
+  { type: 'tag', description: 'retest' },
+  { type: 'issue', description: 'WEB 380' }
+]
+START CLICK linkedinIcon
+COUNT linkedinIcon 1
+{
+  text: '\n        LinkedIn\n      ',
+  center: { x: 1151, y: 2177.15625 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://help.capitalccsv.com/hc/en-us/categories/4416956531474-YOUR-ACCOUNT
+USER: unregistered
+EXPECTATION:  opens external link
+EXPECTATION ASSERTIONS opens external link
