@@ -1,0 +1,11 @@
+START CLICK signupBtn
+COUNT signupBtn 1
+{
+  text: 'Explorați piețe',
+  center: { x: 121.8671875, y: 486 },
+  elementAtPoint: '<button class="rZW9e cCezE lgE0 l_btn_signup js-analyticsVisible js-analyticsClick UzDSW" data-type="homepage_hero_banner_btn2_signup" type="button">Explorați piețe</button>'
+}
+URL AFTER CLICK: https://capital.com/ro-ro/markets
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

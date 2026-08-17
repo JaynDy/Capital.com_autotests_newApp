@@ -1,0 +1,11 @@
+START CLICK shortPositionGoToPlatformBtn
+COUNT shortPositionGoToPlatformBtn 1
+{
+  text: 'Idź do platformy',
+  center: { x: 570.4765625, y: 622 },
+  elementAtPoint: '<span>Idź do platformy</span>'
+}
+URL AFTER CLICK: https://capital.com/pl-pl/markets/cryptocurrencies/wykres-ethereum-to-us-dollar
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

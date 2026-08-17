@@ -1,0 +1,11 @@
+START CLICK shortPositionGoToPlatformBtn
+COUNT shortPositionGoToPlatformBtn 1
+{
+  text: 'انتقل إلى المنصة',
+  center: { x: 710.2734375, y: 548 },
+  elementAtPoint: '<span>انتقل إلى المنصة</span>'
+}
+URL AFTER CLICK: https://capital.com/ar-int/markets/commodities/gold-spot-sl-t
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

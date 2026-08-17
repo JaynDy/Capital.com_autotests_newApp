@@ -1,0 +1,11 @@
+START CLICK tradedBtn
+COUNT tradedBtn 0
+{
+  text: 'Handel',
+  center: { x: 1177.59375, y: 1470 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/pl-pl/markets/shares/space-exploration-technologies-corp-cena-akcji
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

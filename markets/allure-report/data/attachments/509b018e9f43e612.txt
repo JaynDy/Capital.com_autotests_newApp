@@ -1,0 +1,8 @@
+Button enabled: true
+START CLICK tradedBtn
+COUNT tradedBtn 0
+{ text: '交易', center: { x: 1186, y: 756 }, elementAtPoint: undefined }
+URL AFTER CLICK: https://capital.com/zh-hans/analysis
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

@@ -1,0 +1,7 @@
+START CLICK readyToJoinSignUpBtn
+COUNT readyToJoinSignUpBtn 1
+{ text: '', center: { x: 244, y: 3773.75 }, elementAtPoint: undefined }
+URL AFTER CLICK: https://capital.com/de-int/markets/cryptocurrencies/chart-eth-usd
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

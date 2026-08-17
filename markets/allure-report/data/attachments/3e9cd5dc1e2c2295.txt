@@ -1,0 +1,7 @@
+START CLICK readyToJoinSignUpBtn
+COUNT readyToJoinSignUpBtn 1
+{ text: '', center: { x: 244, y: 2131 }, elementAtPoint: undefined }
+URL AFTER CLICK: https://capital.com/vi-int/markets/shares/space-exploration-technologies-corp-gia-co-phieu
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

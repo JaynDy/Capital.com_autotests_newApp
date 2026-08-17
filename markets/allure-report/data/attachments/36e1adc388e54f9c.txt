@@ -1,0 +1,11 @@
+START CLICK alertBtn
+COUNT alertBtn 1
+{
+  text: '',
+  center: { x: 388, y: 383.5 },
+  elementAtPoint: '<img alt="" loading="lazy" width="16" height="16" decoding="async" data-nimg="1" class="ETyz6" src="https://static.capital.com/capital-v-c-20260727-3/apps/capital/_next/static/media/notification.2ls0ygy8xs_f1.svg">'
+}
+URL AFTER CLICK: https://capital.com/vi-int/markets/commodities/gold-spot-commodity
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

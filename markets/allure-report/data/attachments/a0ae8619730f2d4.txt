@@ -1,0 +1,11 @@
+START CLICK longPositionGoToPlatformBtn
+COUNT longPositionGoToPlatformBtn 1
+{
+  text: 'Vai alla piattaforma',
+  center: { x: 582.1328125, y: 627 },
+  elementAtPoint: '<span>Vai alla piattaforma</span>'
+}
+URL AFTER CLICK: https://capital.com/it-it/markets/cryptocurrencies/ethereum-to-us-dollar-tabella
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

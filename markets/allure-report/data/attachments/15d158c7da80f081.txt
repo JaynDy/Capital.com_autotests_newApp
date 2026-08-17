@@ -1,0 +1,11 @@
+START CLICK shortPositionGoToPlatformBtn
+COUNT shortPositionGoToPlatformBtn 1
+{
+  text: 'Vers la plateforme',
+  center: { x: 578.5078125, y: 610 },
+  elementAtPoint: '<span>Vers la plateforme</span>'
+}
+URL AFTER CLICK: https://capital.com/fr-fr/markets/interest-rates/euribor-future-2
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

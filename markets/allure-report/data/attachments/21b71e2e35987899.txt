@@ -1,0 +1,11 @@
+START CLICK shortPositionGoToPlatformBtn
+COUNT shortPositionGoToPlatformBtn 1
+{
+  text: 'Đi đến nền tảng',
+  center: { x: 570.0234375, y: 574 },
+  elementAtPoint: '<span>Đi đến nền tảng</span>'
+}
+URL AFTER CLICK: https://capital.com/vi-int/markets/forex/euro-us-dollar-rate-2
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

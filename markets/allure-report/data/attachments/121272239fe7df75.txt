@@ -1,0 +1,11 @@
+START CLICK viewDetailedChartBtn
+COUNT viewDetailedChartBtn 1
+{
+  text: 'Voir le graphique détaillé',
+  center: { x: 223.9921875, y: 761 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/fr-fr/markets/interest-rates/euribor-future-2
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

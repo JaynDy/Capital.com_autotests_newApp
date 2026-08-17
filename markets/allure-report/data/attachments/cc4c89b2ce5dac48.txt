@@ -1,0 +1,11 @@
+START CLICK tradedBtn
+COUNT tradedBtn 1
+{
+  text: 'Négociation',
+  center: { x: 1162.65625, y: 774 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/fr-fr/analysis
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

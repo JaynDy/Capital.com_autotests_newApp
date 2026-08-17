@@ -1,0 +1,11 @@
+START CLICK viewDetailedChartBtn
+COUNT viewDetailedChartBtn 1
+{
+  text: 'Detaillierten Chart anzeigen',
+  center: { x: 224, y: 761 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/de-int/markets/cryptocurrencies/chart-eth-usd
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

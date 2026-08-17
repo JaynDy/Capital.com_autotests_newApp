@@ -1,0 +1,7 @@
+START CLICK tradedBtn
+COUNT tradedBtn 1
+{ text: 'تداول', center: { x: 96, y: 774 }, elementAtPoint: undefined }
+URL AFTER CLICK: https://capital.com/ar-int/analysis
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

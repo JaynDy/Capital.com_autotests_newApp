@@ -1,0 +1,11 @@
+START CLICK viewDetailedChartBtn
+COUNT viewDetailedChartBtn 1
+{
+  text: 'Bekijk de uitgebreide grafiek',
+  center: { x: 223.9921875, y: 761 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/nl-nl/markets/cryptocurrencies/ethereum-to-us-dollar-grafiek
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

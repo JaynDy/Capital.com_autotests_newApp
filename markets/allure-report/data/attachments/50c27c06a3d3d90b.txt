@@ -1,0 +1,11 @@
+START CLICK buyBtn
+COUNT buyBtn 1
+{
+  text: 'الشراء4388.03',
+  center: { x: 968, y: 770 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/trading/platform/charting?id=27045129890124996
+USER: unauthorised
+EXPECTATION:  shows login form
+EXPECTATION ASSERTIONS shows login form

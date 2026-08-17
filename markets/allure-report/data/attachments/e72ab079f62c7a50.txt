@@ -1,0 +1,11 @@
+START CLICK buyBtn
+COUNT buyBtn 1
+{
+  text: 'Vásárlás4397.67',
+  center: { x: 312, y: 808 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/trading/platform/charting?id=27045129890124996
+USER: unregistered
+EXPECTATION:  shows login form
+EXPECTATION ASSERTIONS shows login form
