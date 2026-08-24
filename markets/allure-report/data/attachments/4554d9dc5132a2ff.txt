@@ -1,0 +1,11 @@
+START CLICK shortPositionGoToPlatformBtn
+COUNT shortPositionGoToPlatformBtn 1
+{
+  text: 'Ugrás a platformra',
+  center: { x: 580.390625, y: 641 },
+  elementAtPoint: '<span>Ugrás a platformra</span>'
+}
+URL AFTER CLICK: https://capital.com/hu-hu/markets/shares/space-exploration-technologies-corp-reszvenyar
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

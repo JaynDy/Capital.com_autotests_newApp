@@ -1,0 +1,11 @@
+START CLICK addToFavouriteBtn
+COUNT addToFavouriteBtn 1
+{
+  text: 'Add to favourite',
+  center: { x: 1102.4609375, y: 275 },
+  elementAtPoint: '<button color="primary" class="rZW9e cCezE qIlmS md4 l_btn_to_platform js-analyticsClick" data-type="market_add_fav" type="button">Add to favourite<img alt="" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="ETyz6" src="https://static.capital.com/capital-v-c-20260817-1/apps/capital/_next/static/media/add-circle.26x-k0fd_2mhf.svg"><div class="CTUHk AcUWh YSEkg sPYyQ"><img alt="" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="ETyz6 kP4jO" src="https://static.capital.com/capital-v-c-20260817-1/apps/capital/_next/static/media/loader.2x-0xrbuagadm.svg"></div></button>'
+}
+URL AFTER CLICK: https://capital.com/en-eu/markets/forex/euro-us-dollar-rate-2
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

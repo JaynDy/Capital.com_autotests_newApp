@@ -1,0 +1,3 @@
+START CLICK longPositionGoToPlatformBtn
+COUNT longPositionGoToPlatformBtn 1
+{ text: '前往平台', center: { x: 544, y: 847 }, elementAtPoint: undefined }

@@ -1,0 +1,11 @@
+START CLICK signupBtn
+COUNT signupBtn 1
+{
+  text: 'Криптовалютын арилжааг судлах',
+  center: { x: 199.7890625, y: 450.328125 },
+  elementAtPoint: '<button class="rZW9e cCezE lgE0 l_btn_signup js-analyticsVisible js-analyticsClick UzDSW" data-type="homepage_hero_banner_btn2_signup" type="button">Криптовалютын арилжааг судлах</button>'
+}
+URL AFTER CLICK: https://capital.com/mn-int/markets/cryptocurrencies
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

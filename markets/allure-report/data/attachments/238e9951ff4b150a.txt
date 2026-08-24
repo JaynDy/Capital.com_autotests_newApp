@@ -1,0 +1,11 @@
+START CLICK sellBtn
+COUNT sellBtn 1
+{
+  text: 'بيع95.9230',
+  center: { x: 1144, y: 850 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/trading/platform/charting?id=21663381249355920
+USER: unauthorised
+EXPECTATION:  shows login form
+EXPECTATION ASSERTIONS shows login form

@@ -1,0 +1,11 @@
+START CLICK signupBtn
+COUNT signupBtn 1
+{
+  text: 'Poznaj handel na rynku Forex',
+  center: { x: 180.9296875, y: 618 },
+  elementAtPoint: '<button class="rZW9e cCezE lgE0 l_btn_signup js-analyticsVisible js-analyticsClick UzDSW" data-type="homepage_hero_banner_btn2_signup" type="button">Poznaj handel na rynku Forex</button>'
+}
+URL AFTER CLICK: https://capital.com/pl-pl/markets/forex
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

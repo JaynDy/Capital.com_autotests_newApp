@@ -1,0 +1,11 @@
+START CLICK tradedBtn
+COUNT tradedBtn 0
+{
+  text: 'Handeln',
+  center: { x: 1173.921875, y: 1487 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/de-de/markets/cryptocurrencies/chart-bitcoin-to-us-dollar
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

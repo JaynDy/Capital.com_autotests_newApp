@@ -1,0 +1,11 @@
+START CLICK signupBtn
+COUNT signupBtn 1
+{
+  text: 'Εξερευνήστε τη διαπραγμάτευση forex',
+  center: { x: 212.953125, y: 528 },
+  elementAtPoint: '<button class="rZW9e cCezE lgE0 l_btn_signup js-analyticsVisible js-analyticsClick UzDSW" data-type="homepage_hero_banner_btn2_signup" type="button">Εξερευνήστε τη διαπραγμάτευση forex</button>'
+}
+URL AFTER CLICK: https://capital.com/el-gr/markets/forex
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

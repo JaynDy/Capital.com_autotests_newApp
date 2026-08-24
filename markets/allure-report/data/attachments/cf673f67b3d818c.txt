@@ -1,0 +1,7 @@
+START CLICK signupBtn
+COUNT signupBtn 1
+{ text: '', center: { x: 244, y: 6272 }, elementAtPoint: undefined }
+URL AFTER CLICK: https://capital.com/pl-pl/about-us/how-our-markets-are-priced
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

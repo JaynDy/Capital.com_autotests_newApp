@@ -1,0 +1,11 @@
+START CLICK tradedBtn
+COUNT tradedBtn 1
+{
+  text: 'Operar',
+  center: { x: 1178.2109375, y: 774 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/es-int/analysis
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

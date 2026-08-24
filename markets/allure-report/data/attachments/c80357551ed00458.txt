@@ -1,0 +1,11 @@
+START CLICK tradedBtn
+COUNT tradedBtn 0
+{
+  text: 'Negozia',
+  center: { x: 1174.3125, y: 1216 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/it-it/markets/interest-rates/3-month-sonia-future-3
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

@@ -1,0 +1,3 @@
+START CLICK viewDetailedChartBtn
+COUNT viewDetailedChartBtn 0
+URL AFTER CLICK: https://capital.com/zh-hant/markets/shares/space-exploration-technologies-corp-share-price

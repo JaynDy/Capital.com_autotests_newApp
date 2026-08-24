@@ -1,0 +1,3 @@
+START CLICK buyBtn
+COUNT buyBtn 0
+URL AFTER CLICK: https://capital.com/vi-int/markets/interest-rates/3-month-sonia-future-3

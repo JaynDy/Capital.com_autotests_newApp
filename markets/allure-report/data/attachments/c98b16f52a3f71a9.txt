@@ -1,0 +1,11 @@
+START CLICK shortPositionGoToPlatformBtn
+COUNT shortPositionGoToPlatformBtn 1
+{
+  text: 'Πηγαίνετε στην πλατφόρμα',
+  center: { x: 612.4375, y: 594 },
+  elementAtPoint: '<span>Πηγαίνετε στην πλατφόρμα</span>'
+}
+URL AFTER CLICK: https://capital.com/el-gr/markets/interest-rates/3-month-sonia-future-3
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

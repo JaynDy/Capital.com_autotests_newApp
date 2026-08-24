@@ -1,0 +1,11 @@
+START CLICK tradedBtn
+COUNT tradedBtn 0
+{
+  text: 'Giao dịch',
+  center: { x: 1170.421875, y: 1449 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/vi-int/markets/bonds/us-treasury-bond-spot
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

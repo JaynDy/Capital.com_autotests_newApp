@@ -1,0 +1,11 @@
+START CLICK shortPositionGoToPlatformBtn
+COUNT shortPositionGoToPlatformBtn 1
+{
+  text: 'Ir a la plataforma',
+  center: { x: 573.78125, y: 570 },
+  elementAtPoint: '<span>Ir a la plataforma</span>'
+}
+URL AFTER CLICK: https://capital.com/es-int/markets/interest-rates/3-month-sonia-future-3
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

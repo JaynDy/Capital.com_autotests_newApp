@@ -1,0 +1,11 @@
+START CLICK longPositionGoToPlatformBtn
+COUNT longPositionGoToPlatformBtn 1
+{
+  text: 'Idź do platformy',
+  center: { x: 570.4765625, y: 559 },
+  elementAtPoint: '<span>Idź do platformy</span>'
+}
+URL AFTER CLICK: https://capital.com/pl-pl/markets/interest-rates/3-month-sonia-future-3
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form
