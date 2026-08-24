@@ -1,0 +1,11 @@
+START CLICK viewDetailedChartBtn
+COUNT viewDetailedChartBtn 1
+{
+  text: 'Ver gráfico detallado',
+  center: { x: 224, y: 719 },
+  elementAtPoint: '<button class="c8S1d l_btn_to_platform js-analyticsClick" data-destination="/trading/platform/charting/27045129890124996" data-type="market_view_chart" type="button">Ver gráfico detallado<img alt="" loading="lazy" width="16" height="16" decoding="async" data-nimg="1" class="ETyz6" src="https://static.capital.com/capital-v-c-20260817-1/apps/capital/_next/static/media/long_up_right.2w4cjkem9n1nk.svg"></button>'
+}
+URL AFTER CLICK: https://capital.com/es-int/markets/commodities/gold-spot-materia-prima
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

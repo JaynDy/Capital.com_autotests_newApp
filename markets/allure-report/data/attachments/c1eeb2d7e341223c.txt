@@ -1,0 +1,12 @@
+Button enabled: true
+START CLICK shortPositionGoToPlatformBtn
+COUNT shortPositionGoToPlatformBtn 1
+{
+  text: '前往平台',
+  center: { x: 544, y: 502 },
+  elementAtPoint: '<span>前往平台</span>'
+}
+URL AFTER CLICK: https://capital.com/zh-hans/markets/commodities/gold-spot-shang-pin
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

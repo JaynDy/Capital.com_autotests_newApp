@@ -1,0 +1,11 @@
+START CLICK shortPositionGoToPlatformBtn
+COUNT shortPositionGoToPlatformBtn 1
+{
+  text: 'Đi đến nền tảng',
+  center: { x: 570.0234375, y: 574 },
+  elementAtPoint: '<span>Đi đến nền tảng</span>'
+}
+URL AFTER CLICK: https://capital.com/vi-int/markets/commodities/gold-spot-commodity
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

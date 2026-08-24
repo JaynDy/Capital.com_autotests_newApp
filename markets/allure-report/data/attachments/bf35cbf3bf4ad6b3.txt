@@ -1,0 +1,7 @@
+START CLICK readyToJoinSignUpBtn
+COUNT readyToJoinSignUpBtn 1
+{ text: '', center: { x: 244, y: 7059 }, elementAtPoint: undefined }
+URL AFTER CLICK: https://capital.com/en-au/markets/cryptocurrencies/bitcoin-to-us-dollar-chart
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

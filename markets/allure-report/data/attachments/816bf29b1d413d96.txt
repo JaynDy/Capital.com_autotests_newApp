@@ -1,0 +1,11 @@
+START CLICK sellBtn
+COUNT sellBtn 1
+{
+  text: 'Зарах4642.47',
+  center: { x: 136, y: 790 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/trading/platform/charting?id=27045129890124996
+USER: unauthorised
+EXPECTATION:  shows login form
+EXPECTATION ASSERTIONS shows login form

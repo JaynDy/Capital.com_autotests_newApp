@@ -1,0 +1,11 @@
+START CLICK shortPositionGoToPlatformBtn
+COUNT shortPositionGoToPlatformBtn 1
+{
+  text: 'Перейти на платформу',
+  center: { x: 602.4609375, y: 641 },
+  elementAtPoint: '<span>Перейти на платформу</span>'
+}
+URL AFTER CLICK: https://capital.com/ru-int/markets/shares/space-exploration-technologies-corp-cena-akcii
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

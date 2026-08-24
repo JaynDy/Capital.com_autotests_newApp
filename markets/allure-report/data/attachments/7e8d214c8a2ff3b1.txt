@@ -1,0 +1,11 @@
+START CLICK tradedBtn
+COUNT tradedBtn 0
+{
+  text: 'Kereskedés',
+  center: { x: 1163.03125, y: 1467 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/hu-hu/markets/bonds/us-treasury-bond-spot
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

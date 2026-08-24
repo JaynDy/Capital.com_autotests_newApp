@@ -1,0 +1,11 @@
+START CLICK shortPositionGoToPlatformBtn
+COUNT shortPositionGoToPlatformBtn 1
+{
+  text: 'Платформ руу орох',
+  center: { x: 587.9921875, y: 622 },
+  elementAtPoint: '<span>Платформ руу орох</span>'
+}
+URL AFTER CLICK: https://capital.com/mn-int/markets/shares/space-exploration-technologies-corp-share-price
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

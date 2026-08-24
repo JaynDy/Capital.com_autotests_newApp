@@ -1,0 +1,11 @@
+START CLICK shortPositionGoToPlatformBtn
+COUNT shortPositionGoToPlatformBtn 1
+{
+  text: 'Vai alla piattaforma',
+  center: { x: 582.1328125, y: 608 },
+  elementAtPoint: '<span>Vai alla piattaforma</span>'
+}
+URL AFTER CLICK: https://capital.com/it-it/markets/shares/space-exploration-technologies-corp-prezzo-azione
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

@@ -1,0 +1,11 @@
+START CLICK tradedBtn
+COUNT tradedBtn 0
+{
+  text: 'Comerț',
+  center: { x: 1177.046875, y: 1144 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/ro-ro/markets/interest-rates/3-month-sonia-future-3
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

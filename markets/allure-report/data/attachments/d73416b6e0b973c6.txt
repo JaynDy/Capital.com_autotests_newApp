@@ -1,0 +1,11 @@
+START CLICK tradedBtn
+COUNT tradedBtn 0
+{
+  text: 'Handeln',
+  center: { x: 1173.921875, y: 1454 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/de-int/markets/shares/space-exploration-technologies-corp-aktienkurs
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

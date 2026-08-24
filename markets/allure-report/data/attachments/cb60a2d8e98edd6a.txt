@@ -1,0 +1,11 @@
+START CLICK tradedBtn
+COUNT tradedBtn 0
+{
+  text: 'Négociation',
+  center: { x: 1163.03125, y: 1449 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/fr-fr/markets/commodities/produit-de-base-gold-spot
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

@@ -1,0 +1,3 @@
+START CLICK alertBtn
+COUNT alertBtn 0
+URL AFTER CLICK: https://capital.com/pl-pl/markets/shares/space-exploration-technologies-corp-cena-akcji

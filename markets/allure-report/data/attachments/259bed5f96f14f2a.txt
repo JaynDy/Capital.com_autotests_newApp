@@ -1,0 +1,3 @@
+START CLICK buyBtn
+COUNT buyBtn 0
+URL AFTER CLICK: https://capital.com/it-it/markets/shares/space-exploration-technologies-corp-prezzo-azione

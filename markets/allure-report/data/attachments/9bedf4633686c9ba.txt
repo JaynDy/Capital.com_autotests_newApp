@@ -1,0 +1,12 @@
+Button enabled: true
+START CLICK buyBtn
+COUNT buyBtn 1
+{
+  text: '买入97.39',
+  center: { x: 312, y: 790 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/trading/platform/charting?id=5952184722150738
+USER: unregistered
+EXPECTATION:  shows login form
+EXPECTATION ASSERTIONS shows login form

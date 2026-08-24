@@ -1,0 +1,11 @@
+START CLICK sellBtn
+COUNT sellBtn 1
+{
+  text: 'Bán97.37',
+  center: { x: 136, y: 832 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/trading/platform/charting?id=5952184722150738
+USER: unregistered
+EXPECTATION:  shows login form
+EXPECTATION ASSERTIONS shows login form

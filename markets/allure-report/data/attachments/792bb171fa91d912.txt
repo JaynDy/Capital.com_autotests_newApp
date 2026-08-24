@@ -1,0 +1,11 @@
+START CLICK tradedBtn
+COUNT tradedBtn 0
+{
+  text: 'Kereskedés',
+  center: { x: 1163.03125, y: 1216 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/hu-hu/markets/interest-rates/3-month-sonia-future-3
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

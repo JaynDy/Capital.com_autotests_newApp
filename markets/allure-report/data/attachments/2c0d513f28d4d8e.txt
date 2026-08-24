@@ -1,0 +1,11 @@
+START CLICK tradedBtn
+COUNT tradedBtn 0
+{
+  text: 'Συναλλαγές',
+  center: { x: 1163.359375, y: 1491 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/el-gr/markets/cryptocurrencies/bitcoin-to-us-dollar-graphema
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

@@ -1,0 +1,11 @@
+START CLICK signupBtn
+COUNT signupBtn 1
+{
+  text: 'Исследовать торговлю на процентной ставке',
+  center: { x: 246.6484375, y: 504.328125 },
+  elementAtPoint: '<button class="rZW9e cCezE lgE0 l_btn_signup js-analyticsVisible js-analyticsClick UzDSW" data-type="homepage_hero_banner_btn2_signup" type="button">Исследовать торговлю на процентной ставке</button>'
+}
+URL AFTER CLICK: https://capital.com/ru-int/markets/interest-rates
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

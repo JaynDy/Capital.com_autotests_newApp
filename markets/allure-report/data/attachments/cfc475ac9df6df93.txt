@@ -1,0 +1,11 @@
+START CLICK longPositionGoToPlatformBtn
+COUNT longPositionGoToPlatformBtn 1
+{
+  text: 'Ga naar het platform',
+  center: { x: 587.9609375, y: 607 },
+  elementAtPoint: '<span>Ga naar het platform</span>'
+}
+URL AFTER CLICK: https://capital.com/nl-nl/markets/interest-rates/3-month-sonia-future-3
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

@@ -1,0 +1,11 @@
+START CLICK tradedBtn
+COUNT tradedBtn 0
+{
+  text: 'Арилжаа',
+  center: { x: 1170.96875, y: 1455 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/mn-int/markets/shares/space-exploration-technologies-corp-share-price
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

@@ -1,0 +1,8 @@
+Button enabled: true
+START CLICK readyToJoinSignUpBtn
+COUNT readyToJoinSignUpBtn 1
+{ text: '', center: { x: 244, y: 4169.75 }, elementAtPoint: undefined }
+URL AFTER CLICK: https://capital.com/zh-hans/markets/cryptocurrencies/btc-usd-hangqing
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

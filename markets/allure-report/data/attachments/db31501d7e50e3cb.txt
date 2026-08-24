@@ -1,0 +1,11 @@
+START CLICK shortPositionGoToPlatformBtn
+COUNT shortPositionGoToPlatformBtn 1
+{
+  text: 'Accesați platforma',
+  center: { x: 579.921875, y: 622 },
+  elementAtPoint: '<span>Accesați platforma</span>'
+}
+URL AFTER CLICK: https://capital.com/ro-ro/markets/cryptocurrencies/bitcoin-to-us-dollar-chart
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

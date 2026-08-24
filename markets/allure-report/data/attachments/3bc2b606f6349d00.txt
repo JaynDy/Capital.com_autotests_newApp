@@ -1,0 +1,11 @@
+START CLICK readyToJoinSignUpBtn
+COUNT readyToJoinSignUpBtn 1
+{
+  text: '',
+  center: { x: 1036, y: 3860.75 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/ar-ae/markets/forex/eur-usd-rate
+USER: unauthorised
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

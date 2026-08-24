@@ -1,0 +1,11 @@
+START CLICK tradedBtn
+COUNT tradedBtn 0
+{
+  text: 'Handelen',
+  center: { x: 1170.03125, y: 1425 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/nl-nl/markets/indices/us-tech-100-index-1
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form

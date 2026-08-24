@@ -1,0 +1,11 @@
+START CLICK signupBtn
+COUNT signupBtn 1
+{
+  text: 'Anleihen-Trading entdecken',
+  center: { x: 174.0078125, y: 513.328125 },
+  elementAtPoint: '<button class="rZW9e cCezE lgE0 l_btn_signup js-analyticsVisible js-analyticsClick UzDSW" data-type="homepage_hero_banner_btn2_signup" type="button">Anleihen-Trading entdecken</button>'
+}
+URL AFTER CLICK: https://capital.com/de-at/markets/bonds
+USER: unregistered
+EXPECTATION:  shows signup form
+EXPECTATION ASSERTIONS shows signup form
