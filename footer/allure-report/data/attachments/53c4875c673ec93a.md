@@ -1,0 +1,623 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: cta/generated.cta.spec.js >> GLOBAL | main page | footer | socialMediaBar | twitterIcon
+- Location: tests/cta/generated.cta.spec.js:37:7
+
+# Error details
+
+```
+Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: "twitter.com"
+Received string:    "https://x.com/Capitalcomau"
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e7]: CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. You should consider whether you understand how CFDs work and can afford the risks.
+    - generic [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /en-au
+        - img [ref=e11]
+      - generic [ref=e16]:
+        - navigation [ref=e17]:
+          - button "Trading" [ref=e18]:
+            - button "Trading" [ref=e19]:
+              - generic [ref=e20]: Trading
+          - button "Markets" [ref=e21]:
+            - button "Markets" [ref=e22]:
+              - generic [ref=e23]: Markets
+          - link "Pricing" [ref=e26] [cursor=pointer]:
+            - /url: /en-au/ways-to-trade/fees-and-charges
+          - button "About" [ref=e27]:
+            - button "About" [ref=e28]:
+              - generic [ref=e29]: About
+        - button "en" [ref=e30] [cursor=pointer]:
+          - generic [ref=e32]: en
+      - generic [ref=e34]:
+        - button "Log In" [ref=e35] [cursor=pointer]: Log In
+        - button "Open account" [ref=e36] [cursor=pointer]: Open account
+      - button "Search" [ref=e37] [cursor=pointer]
+  - generic [ref=e40]:
+    - generic [ref=e41]:
+      - generic [ref=e42]:
+        - generic [ref=e47]:
+          - generic [ref=e49]:
+            - heading "In a market built for noise, we build for better decisions" [level=1] [ref=e50]
+            - generic [ref=e52]:
+              - text: Global
+              - text: CFD trading platform
+              - text: 5,500+ instruments
+            - button "Open an account" [ref=e53] [cursor=pointer]: Open an account
+          - generic [ref=e54]:
+            - generic:
+              - generic:
+                - img "Hero slide 1 Bottom"
+          - generic [ref=e56]:
+            - link "Android" [ref=e57] [cursor=pointer]:
+              - /url: /en-au/trading-platforms/mobile-apps
+            - link "IOS" [ref=e58] [cursor=pointer]:
+              - /url: /en-au/trading-platforms/mobile-apps
+            - link "MT4" [ref=e59] [cursor=pointer]:
+              - /url: /en-au/trading-platforms/mt4
+            - link "MT5" [ref=e60] [cursor=pointer]:
+              - /url: /en-au/trading-platforms/mt5
+            - link "TradingView" [ref=e61] [cursor=pointer]:
+              - /url: /en-au/trading-platforms/trading-view
+            - link "Web Terminal" [ref=e62] [cursor=pointer]:
+              - /url: /en-au/trading-platforms/web-platform
+        - generic [ref=e65]:
+          - heading "Supported locally. Connected globally." [level=2] [ref=e66]:
+            - generic [ref=e67]: Supported locally.
+            - text: Connected globally.
+          - paragraph [ref=e69]: Licensed and regulated by the Australian Securities and Investments Commission (ASIC)
+      - generic [ref=e71]:
+        - img "MarketsFeature background" [ref=e73]
+        - generic [ref=e74]:
+          - generic [ref=e75]:
+            - heading "5,500+ instruments. One decision environment" [level=2] [ref=e76]:
+              - text: 5,500+ instruments.
+              - text: One decision environment
+            - link "Explore CFD markets" [ref=e77] [cursor=pointer]:
+              - /url: /en-au/markets
+          - list [ref=e81]:
+            - listitem [ref=e82]:
+              - button "Commodities" [ref=e83] [cursor=pointer]:
+                - heading "Commodities" [level=3] [ref=e86]
+            - listitem [ref=e87]:
+              - button "Crypto" [ref=e88] [cursor=pointer]:
+                - heading "Crypto" [level=3] [ref=e91]
+            - listitem [ref=e92]:
+              - button "Forex" [ref=e93] [cursor=pointer]:
+                - heading "Forex" [level=3] [ref=e96]
+            - listitem [ref=e97]:
+              - button "Shares" [ref=e98] [cursor=pointer]:
+                - heading "Shares" [level=3] [ref=e101]
+            - listitem [ref=e102]:
+              - button "Bonds" [ref=e103] [cursor=pointer]:
+                - heading "Bonds" [level=3] [ref=e106]
+            - listitem [ref=e107]:
+              - button "ETF" [ref=e108] [cursor=pointer]:
+                - heading "ETF" [level=3] [ref=e111]
+            - listitem [ref=e112]:
+              - button "Indices" [ref=e113] [cursor=pointer]:
+                - heading "Indices" [level=3] [ref=e116]
+            - listitem [ref=e117]:
+              - button "Interest rates" [ref=e118] [cursor=pointer]:
+                - heading "Interest rates" [level=3] [ref=e121]
+            - listitem [ref=e122]:
+              - button "Commodities" [ref=e123] [cursor=pointer]:
+                - heading "Commodities" [level=3] [ref=e126]
+            - listitem [ref=e127]:
+              - button "Crypto" [ref=e128] [cursor=pointer]:
+                - heading "Crypto" [level=3] [ref=e131]
+            - listitem [ref=e132]:
+              - button "Forex" [ref=e133] [cursor=pointer]:
+                - heading "Forex" [level=3] [ref=e136]
+            - listitem [ref=e137]:
+              - button "Shares" [ref=e138] [cursor=pointer]:
+                - heading "Shares" [level=3] [ref=e141]
+            - listitem [ref=e142]:
+              - button "Bonds" [ref=e143] [cursor=pointer]:
+                - heading "Bonds" [level=3] [ref=e146]
+            - listitem [ref=e147]:
+              - button "ETF" [ref=e148] [cursor=pointer]:
+                - heading "ETF" [level=3] [ref=e151]
+            - listitem [ref=e152]:
+              - button "Indices" [ref=e153] [cursor=pointer]:
+                - heading "Indices" [level=3] [ref=e156]
+            - listitem [ref=e157]:
+              - button "Interest rates" [ref=e158] [cursor=pointer]:
+                - heading "Interest rates" [level=3] [ref=e161]
+            - listitem [ref=e162]:
+              - button "Commodities" [ref=e163] [cursor=pointer]:
+                - heading "Commodities" [level=3] [ref=e166]
+            - listitem [ref=e167]:
+              - button "Crypto" [ref=e168] [cursor=pointer]:
+                - heading "Crypto" [level=3] [ref=e171]
+            - listitem [ref=e172]:
+              - button "Forex" [ref=e173] [cursor=pointer]:
+                - heading "Forex" [level=3] [ref=e176]
+            - listitem [ref=e177]:
+              - button "Shares" [ref=e178] [cursor=pointer]:
+                - heading "Shares" [level=3] [ref=e181]
+            - listitem [ref=e182]:
+              - button "Bonds" [ref=e183] [cursor=pointer]:
+                - heading "Bonds" [level=3] [ref=e186]
+            - listitem [ref=e187]:
+              - button "ETF" [ref=e188] [cursor=pointer]:
+                - heading "ETF" [level=3] [ref=e191]
+            - listitem [ref=e192]:
+              - button "Indices" [ref=e193] [cursor=pointer]:
+                - heading "Indices" [level=3] [ref=e196]
+            - listitem [ref=e197]:
+              - button "Interest rates" [ref=e198] [cursor=pointer]:
+                - heading "Interest rates" [level=3] [ref=e201]
+    - generic [ref=e202]:
+      - generic [ref=e204]:
+        - heading "Every screen. One system." [level=2] [ref=e205]:
+          - text: Every screen.
+          - generic [ref=e206]: One system.
+        - paragraph [ref=e208]: Multiple platforms, all markets, any device. Your trading infrastructure.
+        - generic [ref=e210]:
+          - button "Get the app" [ref=e211] [cursor=pointer]: Get the app
+          - link "Trade on desktop" [ref=e212] [cursor=pointer]:
+            - /url: /trading/platform/
+      - generic:
+        - generic:
+          - generic:
+            - img "Mobile platform"
+        - generic:
+          - generic:
+            - img "Web platform"
+    - generic [ref=e213]:
+      - img "PricingScreen background" [ref=e215]
+      - generic [ref=e217]:
+        - heading "A clear cost structure before you commit" [level=2] [ref=e218]
+        - generic [ref=e219]:
+          - list [ref=e220]:
+            - listitem [ref=e221]:
+              - heading "We earn through spreads on executed trades" [level=3] [ref=e222]
+              - paragraph [ref=e224]: Transparent before the position.
+            - listitem [ref=e225]:
+              - heading "No deposit or withdrawal fees" [level=3] [ref=e226]
+              - paragraph [ref=e228]: Trusted payments. Bank transfers, cards, digital wallets.
+          - generic [ref=e230]:
+            - paragraph [ref=e231]: Our full fee structure is available on our
+            - paragraph [ref=e232]:
+              - link "Charges and fees page." [ref=e233] [cursor=pointer]:
+                - /url: /en-au/ways-to-trade/fees-and-charges
+    - generic [ref=e234]:
+      - generic [ref=e236]:
+        - img "risk graph 1" [ref=e238]
+        - img "risk graph 2" [ref=e240]
+      - generic [ref=e241]:
+        - generic [ref=e243]:
+          - heading "Most traders lose money" [level=2] [ref=e245]
+          - heading "Markets play a part" [level=2] [ref=e247]
+          - heading "Decisions make the difference" [level=2] [ref=e249]
+        - generic [ref=e250]:
+          - generic [ref=e252]:
+            - heading "Set while calm." [level=2] [ref=e253]
+            - heading "Active under pressure." [level=2] [ref=e254]
+          - generic [ref=e255]:
+            - generic [ref=e256]:
+              - heading "Set stop-loss before trade" [level=3] [ref=e257]
+              - img "trading" [ref=e259]
+            - generic [ref=e260]:
+              - heading "Select leverage" [level=3] [ref=e261]
+              - img "cfd" [ref=e263]
+              - img "leverage" [ref=e265]
+            - generic [ref=e266]:
+              - heading "Confirm order" [level=3] [ref=e267]
+              - img "bottomSheet" [ref=e269]
+    - generic [ref=e270]:
+      - generic [ref=e271]:
+        - heading "Discipline is visible. So is trust." [level=2] [ref=e273]:
+          - text: Discipline is visible.
+          - text: So is trust.
+        - generic [ref=e274]:
+          - img "Secondary phone" [ref=e277]
+          - img "Main phone" [ref=e280]
+      - list [ref=e286]:
+        - listitem [ref=e287]:
+          - link "4.7 Ratings and Reviews" [ref=e288] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/id1230088754?cp_device_id=3972833f-e36b-4be3-9a7c-7594f863ce9c&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+            - generic [ref=e289]: "4.7"
+            - generic [ref=e290]: Ratings and Reviews
+        - listitem [ref=e291]:
+          - link "4.6 Ratings and Reviews" [ref=e292] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=3972833f-e36b-4be3-9a7c-7594f863ce9c&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+            - generic [ref=e293]: "4.6"
+            - generic [ref=e294]: Ratings and Reviews
+        - listitem [ref=e295]:
+          - link "4.6 TradingView" [ref=e296] [cursor=pointer]:
+            - /url: https://www.tradingview.com/broker/Capitalcom/
+            - generic [ref=e297]: "4.6"
+            - generic [ref=e298]: TradingView
+        - listitem [ref=e299]:
+          - link "4.6 Trustpilot" [ref=e300] [cursor=pointer]:
+            - /url: https://www.trustpilot.com/review/capital.com
+            - generic [ref=e301]: "4.6"
+            - generic [ref=e302]: Trustpilot
+        - listitem [ref=e303]:
+          - link "4.7 Ratings and Reviews" [ref=e304] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/id1230088754?cp_device_id=3972833f-e36b-4be3-9a7c-7594f863ce9c&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+            - generic [ref=e305]: "4.7"
+            - generic [ref=e306]: Ratings and Reviews
+        - listitem [ref=e307]:
+          - link "4.6 Ratings and Reviews" [ref=e308] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=3972833f-e36b-4be3-9a7c-7594f863ce9c&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+            - generic [ref=e309]: "4.6"
+            - generic [ref=e310]: Ratings and Reviews
+        - listitem [ref=e311]:
+          - link "4.6 TradingView" [ref=e312] [cursor=pointer]:
+            - /url: https://www.tradingview.com/broker/Capitalcom/
+            - generic [ref=e313]: "4.6"
+            - generic [ref=e314]: TradingView
+        - listitem [ref=e315]:
+          - link "4.6 Trustpilot" [ref=e316] [cursor=pointer]:
+            - /url: https://www.trustpilot.com/review/capital.com
+            - generic [ref=e317]: "4.6"
+            - generic [ref=e318]: Trustpilot
+        - listitem [ref=e319]:
+          - link "4.7 Ratings and Reviews" [ref=e320] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/id1230088754?cp_device_id=3972833f-e36b-4be3-9a7c-7594f863ce9c&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+            - generic [ref=e321]: "4.7"
+            - generic [ref=e322]: Ratings and Reviews
+        - listitem [ref=e323]:
+          - link "4.6 Ratings and Reviews" [ref=e324] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=3972833f-e36b-4be3-9a7c-7594f863ce9c&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+            - generic [ref=e325]: "4.6"
+            - generic [ref=e326]: Ratings and Reviews
+        - listitem [ref=e327]:
+          - link "4.6 TradingView" [ref=e328] [cursor=pointer]:
+            - /url: https://www.tradingview.com/broker/Capitalcom/
+            - generic [ref=e329]: "4.6"
+            - generic [ref=e330]: TradingView
+        - listitem [ref=e331]:
+          - link "4.6 Trustpilot" [ref=e332] [cursor=pointer]:
+            - /url: https://www.trustpilot.com/review/capital.com
+            - generic [ref=e333]: "4.6"
+            - generic [ref=e334]: Trustpilot
+  - contentinfo [ref=e336]:
+    - generic [ref=e337]:
+      - link [ref=e338] [cursor=pointer]:
+        - /url: /en-au
+        - img [ref=e339]
+      - generic [ref=e343]:
+        - link [ref=e344] [cursor=pointer]:
+          - /url: https://www.facebook.com/capitalcomau/
+        - link [active] [ref=e345] [cursor=pointer]:
+          - /url: https://twitter.com/Capitalcomau
+        - link [ref=e346] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/capital.com
+        - link [ref=e347] [cursor=pointer]:
+          - /url: https://www.instagram.com/capitalcomau/
+        - link [ref=e348] [cursor=pointer]:
+          - /url: https://www.youtube.com/@capital.com.australia5770
+      - generic [ref=e349]:
+        - link [ref=e350] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/id1230088754?cp_device_id=3972833f-e36b-4be3-9a7c-7594f863ce9c&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e351] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=3972833f-e36b-4be3-9a7c-7594f863ce9c&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e352] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading.huawei-huawei?cp_device_id=3972833f-e36b-4be3-9a7c-7594f863ce9c&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+    - generic [ref=e353]:
+      - generic [ref=e354]:
+        - generic [ref=e355]:
+          - generic [ref=e356]:
+            - generic [ref=e357]: "Country / Region:"
+            - button "Australia" [ref=e358] [cursor=pointer]:
+              - generic [ref=e360]: Australia
+          - generic [ref=e361]: •
+          - generic [ref=e362]:
+            - generic [ref=e363]: "Language:"
+            - button "English" [ref=e364] [cursor=pointer]:
+              - generic [ref=e365]: English
+        - generic [ref=e366]:
+          - generic [ref=e367]: "Also you can contact us:"
+          - link "+61 3 8658 0539" [ref=e370] [cursor=pointer]:
+            - /url: tel:+61 3 8658 0539
+            - strong [ref=e371]: +61 3 8658 0539
+            - strong
+          - generic [ref=e372]: •
+          - link "support.au@capital.com" [ref=e374] [cursor=pointer]:
+            - /url: mailto:support.au@capital.com
+            - strong [ref=e375]: support.au@capital.com
+      - generic [ref=e376]:
+        - generic [ref=e377]:
+          - strong [ref=e379]: Trading
+          - generic [ref=e380]:
+            - generic [ref=e381]:
+              - generic [ref=e382]: Trading
+              - generic [ref=e383]:
+                - link "Trade CFDs" [ref=e385] [cursor=pointer]:
+                  - /url: /en-au/ways-to-trade/cfd-trading
+                - link "Get demo account" [ref=e387] [cursor=pointer]:
+                  - /url: /en-au/trading-platforms/demo-account
+                - link "Get pro account" [ref=e389] [cursor=pointer]:
+                  - /url: /en-au//professional
+                - link "Corporate account" [ref=e391] [cursor=pointer]:
+                  - /url: /en-au/corporate-accounts
+                - link "Premium services" [ref=e393] [cursor=pointer]:
+                  - /url: /en-au/ways-to-trade/premium-services
+            - generic [ref=e394]:
+              - generic [ref=e395]: Platforms
+              - generic [ref=e396]:
+                - link "Web platform" [ref=e398] [cursor=pointer]:
+                  - /url: /en-au/trading-platforms/web-platform
+                - link "Mobile app" [ref=e400] [cursor=pointer]:
+                  - /url: /en-au/trading-platforms/mobile-apps
+                - link "TradingView" [ref=e402] [cursor=pointer]:
+                  - /url: /en-au/trading-platforms/trading-view
+                - link "MT4" [ref=e404] [cursor=pointer]:
+                  - /url: /en-au/trading-platforms/mt4
+                - link "MT5" [ref=e406] [cursor=pointer]:
+                  - /url: /en-au/trading-platforms/mt5
+                - link "API access" [ref=e408] [cursor=pointer]:
+                  - /url: /en-au/trading-platforms/api-development-guide
+            - generic [ref=e409]:
+              - generic [ref=e410]: Learn
+              - generic [ref=e411]:
+                - link "Trading strategies" [ref=e413] [cursor=pointer]:
+                  - /url: /en-au/learn/trading-strategies
+                - link "Technical analysis" [ref=e415] [cursor=pointer]:
+                  - /url: /en-au/learn/technical-analysis
+                - link "Trading psychology" [ref=e417] [cursor=pointer]:
+                  - /url: /en-au/learn/trading-psychology
+                - link "All resources" [ref=e419] [cursor=pointer]:
+                  - /url: /en-au/learn
+        - generic [ref=e420]:
+          - strong [ref=e422]: Markets
+          - generic [ref=e423]:
+            - generic [ref=e424]:
+              - generic [ref=e425]: Our markets
+              - generic [ref=e426]:
+                - link "Markets overview" [ref=e428] [cursor=pointer]:
+                  - /url: /en-au/markets
+                - link "Shares" [ref=e430] [cursor=pointer]:
+                  - /url: /en-au/markets/shares
+                - link "Forex" [ref=e432] [cursor=pointer]:
+                  - /url: /en-au/markets/forex
+                - link "Indices" [ref=e434] [cursor=pointer]:
+                  - /url: /en-au/markets/indices
+                - link "Commodities" [ref=e436] [cursor=pointer]:
+                  - /url: /en-au/markets/commodities
+                - link "Cryptocurrencies" [ref=e438] [cursor=pointer]:
+                  - /url: /en-au/markets/cryptocurrencies
+                - link "Bonds" [ref=e440] [cursor=pointer]:
+                  - /url: /en-au/markets/bonds
+                - link "Interest rates" [ref=e442] [cursor=pointer]:
+                  - /url: /en-au/markets/interest-rates
+            - generic [ref=e443]:
+              - generic [ref=e444]: Market info
+              - link "Market analysis" [ref=e447] [cursor=pointer]:
+                - /url: /en-au/analysis
+        - link "Pricing" [ref=e450] [cursor=pointer]:
+          - /url: /en-au/ways-to-trade/fees-and-charges
+          - strong [ref=e451]: Pricing
+        - generic [ref=e452]:
+          - strong [ref=e454]: About
+          - generic [ref=e455]:
+            - generic [ref=e456]:
+              - generic [ref=e457]: Who we are
+              - generic [ref=e458]:
+                - link "Company" [ref=e460] [cursor=pointer]:
+                  - /url: /en-au/about-us
+                - link "Our offices" [ref=e462] [cursor=pointer]:
+                  - /url: /en-au/about-us/our-offices
+                - link "Press centre" [ref=e464] [cursor=pointer]:
+                  - /url: /en-au/media-centre
+                - link "Whitepaper" [ref=e466] [cursor=pointer]:
+                  - /url: /whitepaper
+                - link "Investor Relations" [ref=e468] [cursor=pointer]:
+                  - /url: /en-au/about-us/investor-relations
+                - link "Is Capital.com safe?" [ref=e470] [cursor=pointer]:
+                  - /url: /en-au/security-measures
+                - link "Our business model" [ref=e472] [cursor=pointer]:
+                  - /url: /en-au/about-us/how-capital-makes-money
+            - generic [ref=e473]:
+              - generic [ref=e474]: Work with us
+              - link "Careers" [ref=e477] [cursor=pointer]:
+                - /url: /en-au/about-us/careers
+            - generic [ref=e478]:
+              - generic [ref=e479]: Help
+              - generic [ref=e480]:
+                - link "Help centre" [ref=e482] [cursor=pointer]:
+                  - /url: /en-au/help
+                - link "Client vulnerability" [ref=e484] [cursor=pointer]:
+                  - /url: /en-au/help/client-vulnerability
+                - link "Contact us" [ref=e486] [cursor=pointer]:
+                  - /url: /en-au/contact-us
+            - generic [ref=e487]:
+              - generic [ref=e488]: Legal
+              - generic [ref=e489]:
+                - link "Terms & policies" [ref=e491] [cursor=pointer]:
+                  - /url: /en-au/terms-and-policies
+                - link "Complaints" [ref=e493] [cursor=pointer]:
+                  - /url: /en-au/help/complaints
+    - generic [ref=e495]:
+      - paragraph [ref=e496]:
+        - text: CFDs are complex leveraged instruments and come with a high risk of losing money. These products are not suitable for everyone and you should therefore consider your objectives, financial situation, needs and experience with these products before investing in them. Our
+        - link "Product Disclosure Statement" [ref=e497] [cursor=pointer]:
+          - /url: https://capital.com/product-disclosure-statement-asic
+        - text: (PDS) and
+        - link "Target Market Determination" [ref=e498] [cursor=pointer]:
+          - /url: https://capital.com/target-market-determination-asic
+        - text: provides important information about our products and who our products are more likely to be suited to. Capital.com does not provide financial or investment advice and you should seek independent advice if you are unsure of the risks or whether our products are suitable for you.
+      - paragraph [ref=e499]
+      - paragraph [ref=e500]: Capital Com Australia Pty Ltd (ABN 47 625 601 489) is a company registered in Australia and regulated by the Australian Securities and Investments Commission (ASIC) under AFSL 513393.
+    - generic [ref=e501]:
+      - paragraph [ref=e502]: © 2026 Capital Com Australia Pty Ltd
+      - generic [ref=e503]:
+        - link "Sitemap" [ref=e504] [cursor=pointer]:
+          - /url: /en-au/sitemap
+        - link "Cookie Settings" [ref=e505] [cursor=pointer]:
+          - /url: ""
+        - link "Clients Funds" [ref=e506] [cursor=pointer]:
+          - /url: /en-au/about-us/what-capital-does-with-your-money
+        - link "Terms and Policies" [ref=e507] [cursor=pointer]:
+          - /url: /en-au/terms-and-policies
+        - link "Complaints Procedure CCAU" [ref=e508] [cursor=pointer]:
+          - /url: /en-au/help/complaints
+  - button [ref=e509] [cursor=pointer]
+  - alert [ref=e511]
+```
+
+# Test source
+
+```ts
+  1   | import { expect } from "@playwright/test";
+  2   | import { ctaRegistry } from "../test_data/CTA/pages.cta.registry";
+  3   | 
+  4   | export async function expectPageState(
+  5   |   page,
+  6   |   action,
+  7   |   expectation,
+  8   |   testInfo,
+  9   |   locator,
+  10  |   newPage,
+  11  | ) {
+  12  |   console.log("EXPECTATION ASSERTIONS", expectation);
+  13  |   const currentUrl = testInfo.project.use.baseURL;
+  14  |   const currentLicense = testInfo.project.use.licenseName;
+  15  |   const currentLang = testInfo.project.use.langName;
+  16  |   // console.log("Current URL: ", currentUrl);
+  17  | 
+  18  |   const expectationType =
+  19  |     typeof expectation === "string" ? expectation : expectation.type;
+  20  | 
+  21  |   switch (expectationType) {
+  22  |     case "redirects to platform":
+  23  |       await expect(page).toHaveURL(/trading\/platform/);
+  24  |       break;
+  25  | 
+  26  |     case "shows signup form":
+  27  |       await expect(
+  28  |         // page.locator('form[data-sentry-component="SignUp"]'),
+  29  |         page.locator('[data-type="SIGN_UP_close"]'),
+  30  |       ).toBeVisible();
+  31  |       break;
+  32  | 
+  33  |     case "shows login form":
+  34  |       await expect(page.locator('[data-testid="modal-title"]'));
+  35  |       break;
+  36  | 
+  37  |     case "redirect": {
+  38  |       const pageConfig = ctaRegistry[expectation.page].path;
+  39  | 
+  40  |       // const pagePath = ctaRegistry[expectation.page].path;
+  41  |       const pagePath =
+  42  |         typeof pageConfig === "function"
+  43  |           ? pageConfig(currentLicense)
+  44  |           : pageConfig;
+  45  | 
+  46  |       const expectedURL = pagePath ? `${currentUrl}/${pagePath}` : currentUrl;
+  47  |       await expect(page).toHaveURL(new RegExp(`${expectedURL}/?$`));
+  48  |       break;
+  49  |     }
+  50  | 
+  51  |     case "opens external link": {
+  52  |       const href = await locator.getAttribute("href");
+  53  |       expect(href).toContain(action.expectedHrefContains);
+  54  |       await expect(locator).toHaveAttribute("target", "_blank");
+  55  | 
+  56  |       await newPage.waitForLoadState("domcontentloaded");
+> 57  |       expect(newPage.url()).toContain(action.expectedHrefContains);
+      |                             ^ Error: expect(received).toContain(expected) // indexOf
+  58  |       await expect(newPage).not.toHaveTitle("404 Not Found");
+  59  |       break;
+  60  |     }
+  61  | 
+  62  |     case "opens regional settings window": {
+  63  |       await expect(page.locator('[data-sentry-component="CountryLangSelect"]'));
+  64  |       break;
+  65  |     }
+  66  | 
+  67  |     case "exist corresponding license": {
+  68  |       const expectedLicenses = action.licenseText?.[currentLicense];
+  69  | 
+  70  |       if (expectedLicenses?.length) {
+  71  |         for (const text of expectedLicenses) {
+  72  |           await expect(locator).toContainText(text);
+  73  |         }
+  74  |       } else {
+  75  |         await expect(locator).toContainText(currentLicense);
+  76  |       }
+  77  | 
+  78  |       break;
+  79  |     }
+  80  | 
+  81  |     case "opens cookie menu": {
+  82  |       await expect(page.locator(".consent-pc-modal__content"));
+  83  |       break;
+  84  |     }
+  85  | 
+  86  |     case "opens pdf document": {
+  87  |       const href = await locator.getAttribute("href");
+  88  | 
+  89  |       expect(href).toContain(action.expectedHrefContains);
+  90  |       await expect(locator).toHaveAttribute("target", "_blank");
+  91  | 
+  92  |       const browserName = testInfo.project.use.browserName;
+  93  | 
+  94  |       if (browserName.includes("webkit")) {
+  95  |         const [download] = await Promise.all([
+  96  |           page.waitForEvent("download"),
+  97  |           locator.click(),
+  98  |         ]);
+  99  | 
+  100 |         const path = await download.path();
+  101 |         expect(path).not.toBeNull();
+  102 | 
+  103 |         const fs = await import("node:fs/promises");
+  104 |         const stat = await fs.stat(path);
+  105 | 
+  106 |         expect(
+  107 |           stat.size,
+  108 |           `Downloaded file "${download.suggestedFilename()}" is empty`,
+  109 |         ).toBeGreaterThan(0);
+  110 |       } else {
+  111 |         const [pdfPage] = await Promise.all([
+  112 |           page.context().waitForEvent("page"),
+  113 |           locator.click(),
+  114 |         ]);
+  115 | 
+  116 |         await pdfPage.waitForLoadState("domcontentloaded");
+  117 | 
+  118 |         expect(pdfPage.url()).toContain(action.expectedHrefContains);
+  119 |         await expect(pdfPage.locator("body")).not.toContainText(
+  120 |           "HTTP ERROR 404",
+  121 |         );
+  122 |       }
+  123 |       break;
+  124 |     }
+  125 | 
+  126 |     case "opens link on currentURL": {
+  127 |       const currentUrl = page.url();
+  128 | 
+  129 |       console.log("EXPECTED:", await locator.getAttribute("href"));
+  130 |       console.log("ACTUAL:", currentUrl);
+  131 | 
+  132 |       expect(currentUrl).toContain(action.expectedHrefContains);
+  133 |       await expect(page.locator("body")).not.toContainText("HTTP ERROR 404");
+  134 | 
+  135 |       break;
+  136 |     }
+  137 | 
+  138 |     default:
+  139 |       throw new Error(`Unknown expectation: ${expectation}`);
+  140 |   }
+  141 | }
+  142 | 
+```

@@ -1,0 +1,6 @@
+USER: unregistered
+EXPECTATION:  { type: 'redirect', page: 'complaints' }
+START CLICK complaintsProcedureLink
+COUNT complaintsProcedureLink 1
+URL AFTER CLICK: https://capital.com/nl-nl
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'complaints' }
