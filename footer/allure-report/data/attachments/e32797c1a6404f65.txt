@@ -1,0 +1,6 @@
+USER: unregistered
+EXPECTATION:  opens external link
+START CLICK instagramIcon
+COUNT instagramIcon 1
+URL AFTER CLICK: https://capital.com/ar-ae
+EXPECTATION ASSERTIONS opens external link

@@ -1,0 +1,7 @@
+Button enabled: true
+USER: unregistered
+EXPECTATION:  exist corresponding license
+START CLICK licenseText
+COUNT licenseText 1
+URL AFTER CLICK: https://capital.com/zh-hans
+EXPECTATION ASSERTIONS exist corresponding license
