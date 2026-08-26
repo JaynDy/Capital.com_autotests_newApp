@@ -7,6 +7,7 @@ export async function expectPageState(
   expectation,
   testInfo,
   locator,
+  newPage,
 ) {
   console.log("EXPECTATION ASSERTIONS", expectation);
   const currentUrl = testInfo.project.use.baseURL;
@@ -49,8 +50,12 @@ export async function expectPageState(
 
     case "opens external link": {
       const href = await locator.getAttribute("href");
-      // await expect(locator).toHaveAttribute("target", "_blank");
       expect(href).toContain(action.expectedHrefContains);
+      await expect(locator).toHaveAttribute("target", "_blank");
+
+      await newPage.waitForLoadState("domcontentloaded");
+      expect(newPage.url()).toContain(action.expectedHrefContains);
+      await expect(newPage).not.toHaveTitle("404 Not Found");
       break;
     }
 

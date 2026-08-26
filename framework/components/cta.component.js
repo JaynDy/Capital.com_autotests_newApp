@@ -78,11 +78,10 @@ export class CTAComponent {
     // console.log("URL:", this.page.url());
   }
 
-  async click(actionName) {
+  async click(actionName, { waitForNewPage = false } = {}) {
     console.log("START CLICK", actionName);
 
     await this.runSetup();
-
     await this.runActionSetup(actionName);
 
     const action = this.actions[actionName];
@@ -102,25 +101,33 @@ export class CTAComponent {
     await expect(locator).toBeVisible();
     await expect(locator).toBeEnabled();
 
-    console.log(
-      await locator.evaluate((el) => {
-        const rect = el.getBoundingClientRect();
-        const center = {
-          x: rect.left + rect.width / 2,
-          y: rect.top + rect.height / 2,
-        };
+    let newPagePromise;
 
-        return {
-          text: el.textContent,
-          center,
-          elementAtPoint: document.elementFromPoint(center.x, center.y)
-            ?.outerHTML,
-        };
-      }),
-    );
+    if (waitForNewPage) {
+      // newPagePromise = this.page.context().waitForEvent("page");
+      newPagePromise = this.page.waitForEvent("popup");
+    }
+
+    // console.log(
+    //   await locator.evaluate((el) => {
+    //     const rect = el.getBoundingClientRect();
+    //     const center = {
+    //       x: rect.left + rect.width / 2,
+    //       y: rect.top + rect.height / 2,
+    //     };
+
+    //     return {
+    //       text: el.textContent,
+    //       center,
+    //       elementAtPoint: document.elementFromPoint(center.x, center.y)
+    //         ?.outerHTML,
+    //     };
+    //   }),
+    // );
 
     await locator.click({ timeout: 2000 });
+    const newPage = newPagePromise ? await newPagePromise : null;
 
-    return { skipped: false, locator };
+    return { skipped: false, locator, newPage };
   }
 }

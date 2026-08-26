@@ -1,15 +1,12 @@
-/* eslint-disable playwright/no-conditional-in-test */
 import { test } from "@playwright/test";
 import { Page } from "../../framework/pages/Page.class";
 import { expectPageState } from "../../framework/assertions/actions.assertions";
 import { ctaRegistry } from "../../framework/test_data/CTA/pages.cta.registry";
-// import { generateCTATestCases } from "../../framework/CTA/generateCTATestCases";
 import { isAllowed } from "../../framework/helpers/isAllowed";
 import { generateAllCTATestCases } from "../../framework/CTA/generateAllCTATestCases";
 import { CTAComponent } from "../../framework/components/cta.component";
 import { globalCtaRegistry } from "../../framework/test_data/CTA/global.cta.registry";
 
-// const CTA_TEST_CASES = generateCTATestCases(ctaRegistry);
 const CTA_TEST_CASES = generateAllCTATestCases();
 
 const PROJECT_LICENSES = process.env.TEST_LICENSE?.split(",");
@@ -41,13 +38,6 @@ for (const testCase of FILTERED_TEST_CASES) {
     const projectUser = testInfo.project.use.userState;
     const projectLicense = testInfo.project.use.licenseName;
     const projectLang = testInfo.project.use.lang;
-
-    // console.log({
-    //   page: testCase.pageName,
-    //   projectLicense,
-    //   allowedLicenses: testCase.allowedLicenses,
-    //   allowedLanguages: testCase.allowedLanguages,
-    // });
 
     // SKIP by license
     test.skip(
@@ -109,11 +99,13 @@ for (const testCase of FILTERED_TEST_CASES) {
       console.log(testInfo.annotations);
     }
 
-    // await component.click(testCase.actionName);
+    const expectation = action.expectation[projectUser];
+    console.log("USER:", projectUser);
+    console.log("EXPECTATION: ", expectation);
 
-    // const locator = component.getActionLocator(testCase.actionName);
-
-    const result = await component.click(testCase.actionName);
+    const result = await component.click(testCase.actionName, {
+      waitForNewPage: expectation === "opens external link",
+    });
 
     console.log("URL AFTER CLICK:", page.url());
 
@@ -121,10 +113,15 @@ for (const testCase of FILTERED_TEST_CASES) {
       return testInfo.skip(`${testCase.actionName} absent on page`);
     }
 
-    const expectation = action.expectation[projectUser];
-    console.log("USER:", projectUser);
-    console.log("EXPECTATION: ", expectation);
+    console.log("NEW PAGE URL:", result.newPage.url());
 
-    await expectPageState(page, action, expectation, testInfo, result.locator);
+    await expectPageState(
+      page,
+      action,
+      expectation,
+      testInfo,
+      result.locator,
+      result.newPage,
+    );
   });
 }
