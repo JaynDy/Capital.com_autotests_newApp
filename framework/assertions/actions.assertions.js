@@ -1,5 +1,6 @@
 import { expect } from "@playwright/test";
 import { ctaRegistry } from "../test_data/CTA/pages.cta.registry";
+import { expectNoPageError } from "../helpers/expectNoPageError";
 
 export async function expectPageState(
   page,
@@ -21,6 +22,7 @@ export async function expectPageState(
   switch (expectationType) {
     case "redirects to platform":
       await expect(page).toHaveURL(/trading\/platform/);
+      await expectNoPageError(page);
       break;
 
     case "shows signup form":
@@ -45,6 +47,7 @@ export async function expectPageState(
 
       const expectedURL = pagePath ? `${currentUrl}/${pagePath}` : currentUrl;
       await expect(page).toHaveURL(new RegExp(`${expectedURL}/?$`));
+      await expectNoPageError(page);
       break;
     }
 
@@ -61,12 +64,13 @@ export async function expectPageState(
         })
         .catch(() => {});
       // expect(newPage.url()).toContain(action.expectedHrefContains);
-      await expect(newPage).not.toHaveTitle("404 Not Found");
+      await expectNoPageError(newPage);
       break;
     }
 
     case "opens regional settings window": {
       await expect(page.locator('[data-sentry-component="CountryLangSelect"]'));
+      await expectNoPageError(page);
       break;
     }
 
@@ -86,6 +90,7 @@ export async function expectPageState(
 
     case "opens cookie menu": {
       await expect(page.locator(".consent-pc-modal__content"));
+      await expectNoPageError(page);
       break;
     }
 
@@ -125,6 +130,7 @@ export async function expectPageState(
         await expect(pdfPage.locator("body")).not.toContainText(
           "HTTP ERROR 404",
         );
+        await expectNoPageError(pdfPage);
       }
       break;
     }
@@ -136,7 +142,7 @@ export async function expectPageState(
       console.log("ACTUAL:", currentUrl);
 
       expect(currentUrl).toContain(action.expectedHrefContains);
-      await expect(page.locator("body")).not.toContainText("HTTP ERROR 404");
+      await expectNoPageError(page);
 
       break;
     }
