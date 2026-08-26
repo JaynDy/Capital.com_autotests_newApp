@@ -1,0 +1,6 @@
+USER: unauthorised
+EXPECTATION:  shows signup form
+START CLICK viewDetailedChartBtn
+COUNT viewDetailedChartBtn 1
+URL AFTER CLICK: https://capital.com/fr-fr/markets/shares/moderna-inc-prix-d-une-action-1
+EXPECTATION ASSERTIONS shows signup form

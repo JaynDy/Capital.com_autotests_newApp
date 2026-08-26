@@ -1,0 +1,6 @@
+USER: unregistered
+EXPECTATION:  shows login form
+START CLICK buyBtn
+COUNT buyBtn 1
+URL AFTER CLICK: https://capital.com/trading/platform/charting?id=5952184722150738
+EXPECTATION ASSERTIONS shows login form

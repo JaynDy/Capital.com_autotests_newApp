@@ -1,0 +1,6 @@
+USER: unregistered
+EXPECTATION:  shows signup form
+START CLICK addToFavouriteBtn
+COUNT addToFavouriteBtn 1
+URL AFTER CLICK: https://capital.com/it-it/markets/interest-rates/euribor-future-2
+EXPECTATION ASSERTIONS shows signup form

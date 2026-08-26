@@ -1,0 +1,503 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: cta/generated.cta.spec.js >> forex page | tradingInstrument | tradedBtn
+- Location: tests/cta/generated.cta.spec.js:37:7
+
+# Error details
+
+```
+Error: expect(locator).toBeVisible() failed
+
+Locator: locator('[data-type="wdg_most_traded_btn"]').first()
+Expected: visible
+Timeout: 5000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 5000ms
+  - waiting for locator('[data-type="wdg_most_traded_btn"]').first()
+
+```
+
+```yaml
+- banner:
+  - text: CFD-urile sunt instrumente complexe și au un risc ridicat de a pierde rapid bani din cauza efectului de levier.
+  - strong: Între 74 și 89% din conturile investitorilor de retail pierd bani atunci când tranzacționează CFD-uri
+  - text: . Ar trebui să luați în considerare dacă înțelegeți modul în care funcționează CFDurile și dacă vă puteți permite să vă asumați riscul ridicat de a vă pierde banii. Consultați
+  - link "Declarația noastră deinformare privind riscurile":
+    - /url: https://capital.com/risk-disclosure-policy-cceu
+  - link:
+    - /url: /ro-ro
+    - img
+  - navigation:
+    - button "Tranzacționare și investiții":
+      - button "Tranzacționare și investiții"
+    - button "Pieţe":
+      - button "Pieţe"
+    - link "Prețuri":
+      - /url: /ro-ro/ways-to-trade/fees-and-charges/stocks
+    - button "Despre noi":
+      - button "Despre noi"
+  - button "ro"
+  - button "Conectare"
+  - button "Deschideți un cont"
+- paragraph:
+  - link "Acasă":
+    - /url: /ro-ro
+  - text: •
+  - link "Pieţe":
+    - /url: /ro-ro/markets
+  - text: •
+  - link "Forex":
+    - /url: /ro-ro/markets/forex
+  - text: •Euro / US Dollar
+- heading "Comerț Euro / US Dollar CFD" [level=1]
+- button "Adăugare la favorite"
+- strong: "1.16474"
+- text: 0%
+- link:
+  - /url: ""
+- button "1m"
+- button "5m"
+- button "15m"
+- button "30m"
+- button "1h"
+- button "4h"
+- button "1zi"
+- button "1săpt"
+- img
+- button "Vedeți grafic detaliat"
+- link "Vânzare 1.16467":
+  - /url: /instrument?id=93810675766468
+  - text: Vânzare
+  - paragraph: "1.16467"
+- link "Cumpărare 1.16474":
+  - /url: /instrument?id=93810675766468
+  - text: Cumpărare
+  - paragraph: "1.16474"
+- text: "0.00007 Redusă: 1.16425 Ridicată: 1.16762"
+- table
+- text: "Vânzători: 56.67% Cumpărători: 43.33%"
+- button "Orar de tranzacționare piață (UTC)":
+  - paragraph: Orar de tranzacționare piață (UTC)
+  - strong: Deschideți acum
+- strong: Performanțele anterioare nu reprezintă un indicator fiabil al rezultatelor viitoare.. Prețurile acțiunilor sunt orientative și pot diferi de prețurile actuale de pe piață.
+- button "Rezumat"
+- button "Istoric date"
+- strong: Condiții de tranzacționare
+- table:
+  - rowgroup:
+    - 'row "Tip Acest instrument financiar este disponibil pentru tranzacționare prin CFD-uri și Knock-out-uri. Aflați mai multe despre: CFD-uri Knock-out-uri CFD Knock-out"':
+      - 'cell "Tip Acest instrument financiar este disponibil pentru tranzacționare prin CFD-uri și Knock-out-uri. Aflați mai multe despre: CFD-uri Knock-out-uri"':
+        - text: "Tip Acest instrument financiar este disponibil pentru tranzacționare prin CFD-uri și Knock-out-uri. Aflați mai multe despre:"
+        - link "CFD-uri":
+          - /url: /ro-ro/ways-to-trade/cfd-trading
+        - link "Knock-out-uri":
+          - /url: /ro-ro/ways-to-trade/knock-outs
+      - cell "CFD Knock-out":
+        - button "CFD"
+        - button "Knock-out"
+    - row "Ecart minim 0.00007":
+      - cell "Ecart minim"
+      - cell "0.00007"
+    - row "Ajustarea finanțării peste noapte a poziției lungi Ajustarea finanțării peste noapte a poziției lungi Marja. Investiția Dvs. $1,000.00 Ajustare finanțare peste noapte Taxat la valoarea totală a poziției -0.01626 % (-$4.88) Dimensiunea tranzacției cu efect de levier ~$30,000.03 Bani din efectul de levier ~ $$29,000.03 Accesați platforma -0.01626%":
+      - cell "Ajustarea finanțării peste noapte a poziției lungi Ajustarea finanțării peste noapte a poziției lungi Marja. Investiția Dvs. $1,000.00 Ajustare finanțare peste noapte Taxat la valoarea totală a poziției -0.01626 % (-$4.88) Dimensiunea tranzacției cu efect de levier ~$30,000.03 Bani din efectul de levier ~ $$29,000.03 Accesați platforma":
+        - text: Ajustarea finanțării peste noapte a poziției lungi
+        - strong: Ajustarea finanțării peste noapte a poziției lungi
+        - table
+        - separator
+        - table:
+          - rowgroup:
+            - row "Marja. Investiția Dvs. $1,000.00":
+              - cell "Marja. Investiția Dvs."
+              - cell "$1,000.00"
+            - row "Ajustare finanțare peste noapte Taxat la valoarea totală a poziției -0.01626 % (-$4.88)":
+              - cell "Ajustare finanțare peste noapte Taxat la valoarea totală a poziției"
+              - cell "-0.01626 % (-$4.88)"
+        - paragraph:
+          - strong: Dimensiunea tranzacției cu efect de levier ~$30,000.03
+        - paragraph:
+          - strong: Bani din efectul de levier ~ $$29,000.03
+        - separator
+        - link "Accesați platforma":
+          - /url: ""
+      - cell "-0.01626%"
+    - row "Ajustarea finanțării peste noapte a poziției scurte Ajustarea finanțării peste noapte a poziției scurte Marja. Investiția Dvs. $1,000.00 Ajustare finanțare peste noapte Taxat la valoarea totală a poziției 0.00804 % ($2.41) Dimensiunea tranzacției cu efect de levier ~$30,000.03 Bani din efectul de levier ~ $$29,000.03 Accesați platforma 0.00804%":
+      - cell "Ajustarea finanțării peste noapte a poziției scurte Ajustarea finanțării peste noapte a poziției scurte Marja. Investiția Dvs. $1,000.00 Ajustare finanțare peste noapte Taxat la valoarea totală a poziției 0.00804 % ($2.41) Dimensiunea tranzacției cu efect de levier ~$30,000.03 Bani din efectul de levier ~ $$29,000.03 Accesați platforma":
+        - text: Ajustarea finanțării peste noapte a poziției scurte
+        - strong: Ajustarea finanțării peste noapte a poziției scurte
+        - table
+        - separator
+        - table:
+          - rowgroup:
+            - row "Marja. Investiția Dvs. $1,000.00":
+              - cell "Marja. Investiția Dvs."
+              - cell "$1,000.00"
+            - row "Ajustare finanțare peste noapte Taxat la valoarea totală a poziției 0.00804 % ($2.41)":
+              - cell "Ajustare finanțare peste noapte Taxat la valoarea totală a poziției"
+              - cell "0.00804 % ($2.41)"
+        - paragraph:
+          - strong: Dimensiunea tranzacției cu efect de levier ~$30,000.03
+        - paragraph:
+          - strong: Bani din efectul de levier ~ $$29,000.03
+        - separator
+        - link "Accesați platforma":
+          - /url: ""
+      - cell "0.00804%"
+    - row "Oră ajustare finanțare peste noapte 21:00 (UTC)":
+      - cell "Oră ajustare finanțare peste noapte"
+      - cell "21:00 (UTC)"
+    - row "Monedă USD":
+      - cell "Monedă"
+      - cell "USD"
+    - row "Cantitate minimă tranzacționată 100":
+      - cell "Cantitate minimă tranzacționată"
+      - cell "100"
+    - row "Marjă 3.33%":
+      - cell "Marjă"
+      - cell "3.33%"
+    - row "Bursă":
+      - cell "Bursă"
+      - cell
+    - row "Comision tranzacționare1 0%":
+      - cell "Comision tranzacționare1":
+        - text: Comision tranzacționare
+        - superscript: "1"
+      - cell "0%"
+    - row "Prima de oprire garantată O taxă de oprire garantată a pierderii (GSL) este percepută doar dacă GSL este declanșat. Consultați secțiunea Taxe și Comisioane de pe site-ul nostru pentru mai multe detalii. 0.01%":
+      - cell "Prima de oprire garantată O taxă de oprire garantată a pierderii (GSL) este percepută doar dacă GSL este declanșat. Consultați secțiunea Taxe și Comisioane de pe site-ul nostru pentru mai multe detalii.":
+        - text: Prima de oprire garantată O taxă de oprire garantată a pierderii (GSL) este percepută doar dacă GSL este declanșat. Consultați secțiunea
+        - link "Taxe și Comisioane":
+          - /url: /ro-ro/ways-to-trade/fees-and-charges
+        - text: de pe site-ul nostru pentru mai multe detalii.
+      - cell "0.01%"
+- main:
+  - heading "Comerț Euro / US Dollar" [level=2]
+- complementary
+- heading "Feedback și evaluări ale utilizatorilor" [level=2]
+- text: Citiți feedback-ul clienților noștri
+- superscript: "1"
+- text: ", indiferent de nivelul lor de experiență."
+- region:
+  - group "1 of 12":
+    - link "2024-12-27 S*** M**** Pana acum super aplicatia, suportul ok, depuneri instante, retrageri rapide ( a doua zi ). Recomand!":
+      - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=9cf2ca7a-8807-4d61-92ea-7d4662efd925&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+      - text: 2024-12-27
+      - strong: S*** M****
+      - paragraph: Pana acum super aplicatia, suportul ok, depuneri instante, retrageri rapide ( a doua zi ). Recomand!
+  - group "2 of 12":
+    - link "2023-09-13 I***** B******* Totul ok, intuitiva, ușor de folosit, utila":
+      - /url: https://www.trustpilot.com/review/capital.com
+      - text: 2023-09-13
+      - strong: I***** B*******
+      - paragraph: Totul ok, intuitiva, ușor de folosit, utila
+  - group "3 of 12":
+    - link "2025-01-19 G**** A***** Până în momentul de față experiența cu platforma este bună. Nu am avut probleme cu depunerile și retragerile.Au fost făcute instant.Posibil să aibă legătură cu folosirea unui cont de Revolut.":
+      - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=9cf2ca7a-8807-4d61-92ea-7d4662efd925&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+      - text: 2025-01-19
+      - strong: G**** A*****
+      - paragraph: Până în momentul de față experiența cu platforma este bună. Nu am avut probleme cu depunerile și retragerile.Au fost făcute instant.Posibil să aibă legătură cu folosirea unui cont de Revolut.
+  - button "Go to last slide"
+  - button "Next slide"
+- paragraph: Cifrele prezentate se referă la Capital Com Group. Se afișează recenziile noastre de 4 și 5 stele. Datele specifice ale utilizatorului au fost anonimizate în mod intenționat pentru a proteja confidențialitatea acestuia în conformitate cu cerințele GDPR.
+- link "4.6":
+  - /url: https://www.tradingview.com/broker/Capitalcom/
+  - strong: "4.6"
+- link "Evaluări și recenzii 4.7":
+  - /url: https://app.appsflyer.com/id1230088754?cp_device_id=9cf2ca7a-8807-4d61-92ea-7d4662efd925&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - strong: Evaluări și recenzii
+  - strong: "4.7"
+- link "Evaluări și recenzii 4.6":
+  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=9cf2ca7a-8807-4d61-92ea-7d4662efd925&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - strong: Evaluări și recenzii
+  - strong: "4.6"
+- link "4.6":
+  - /url: https://www.trustpilot.com/review/capital.com
+  - strong: "4.6"
+- heading "Trei pași pentru a începe:" [level=2]
+- button
+- text: 1. Creați-vă contul (în funcție de îndeplinirea condițiilor) 2. Depuneți bani așa cum doriți 3. Începeți când sunteți gata
+- contentinfo:
+  - link:
+    - /url: /ro-ro
+    - img
+  - link:
+    - /url: https://app.appsflyer.com/id1230088754?cp_device_id=9cf2ca7a-8807-4d61-92ea-7d4662efd925&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - link:
+    - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=9cf2ca7a-8807-4d61-92ea-7d4662efd925&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - link:
+    - /url: https://app.appsflyer.com/com.capital.trading.huawei-huawei?cp_device_id=9cf2ca7a-8807-4d61-92ea-7d4662efd925&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - text: "Țară / Regiune:"
+  - button "Romania"
+  - text: "• Limbă:"
+  - button "Romanian"
+  - text: "De asemenea, ne puteți contacta:"
+  - link "+357 25123646":
+    - /url: tel:+357 25123646
+    - strong: +357 25123646
+    - strong
+  - text: •
+  - link "support@capital.com":
+    - /url: mailto:support@capital.com
+    - strong: support@capital.com
+  - strong: Tranzacționare și investiții
+  - text: Investiții
+  - link "Investiți în acțiuni":
+    - /url: /ro-ro/ways-to-trade/stocks-and-etfs
+  - text: Tranzacționare
+  - link "Tranzacționați CFD-uri":
+    - /url: /ro-ro/ways-to-trade/cfd-trading
+  - link "Tranzacționați knock-out-uri":
+    - /url: /ro-ro/ways-to-trade/knock-outs
+  - link "Tranzacționare demo":
+    - /url: /ro-ro/trading-platforms/demo-account
+  - link "Cont Pro":
+    - /url: /ro-ro/professional-clients
+  - text: Platforme de tranzacționare
+  - link "Platformă web":
+    - /url: /ro-ro/trading-platforms/web-platform
+  - link "Aplicație mobilă":
+    - /url: /ro-ro/trading-platforms/mobile-apps
+  - link "TradingView":
+    - /url: /ro-ro/trading-platforms/trading-view
+  - link "MT4":
+    - /url: /ro-ro/trading-platforms/mt4
+  - link "MT5":
+    - /url: /ro-ro/trading-platforms/mt5
+  - text: Învățați
+  - link "Învățați":
+    - /url: /ro-ro/learn
+  - strong: Pieţe
+  - text: Informaţii de piaţă
+  - link "Analiza pieței":
+    - /url: /ro-ro/analysis
+  - link "Prețurile piețelor":
+    - /url: /ro-ro/about-us/how-our-markets-are-priced
+  - text: Piețele noastre
+  - link "Pieţe":
+    - /url: /ro-ro/markets
+  - link "Forex":
+    - /url: /ro-ro/markets/forex
+  - link "Acțiuni":
+    - /url: /ro-ro/markets/shares
+  - link "Indici":
+    - /url: /ro-ro/markets/indices
+  - link "Mărfuri":
+    - /url: /ro-ro/markets/commodities
+  - link "Criptomonede":
+    - /url: /ro-ro/markets/cryptocurrencies
+  - link "Obligațiuni":
+    - /url: /ro-ro/markets/bonds
+  - link "Rate ale dobânzii":
+    - /url: /ro-ro/markets/interest-rates
+  - link "Prețuri":
+    - /url: /ro-ro/ways-to-trade/fees-and-charges/stocks
+    - strong: Prețuri
+  - strong: Despre noi
+  - text: Cine suntem
+  - link "Despre":
+    - /url: /ro-ro/about-us
+  - link "Birourile noastre":
+    - /url: /ro-ro/about-us/our-offices
+  - link "Capital.com este sigur?":
+    - /url: /ro-ro/security-measures
+  - link "Modelul nostru de afaceri":
+    - /url: /ro-ro/about-us/how-capital-makes-money
+  - text: Colaborați cu noi
+  - link "Cariere":
+    - /url: /ro-ro/about-us/careers
+  - text: Primiți ajutor
+  - link "Centru de ajutor":
+    - /url: /ro-ro/help
+  - link "Vulnerabilitatea clientului":
+    - /url: /ro-ro/help/client-vulnerability
+  - link "Contactați-ne":
+    - /url: /ro-ro/contact-us
+  - text: Documente oficiale
+  - link "Documentație legală":
+    - /url: /ro-ro/terms-and-policies
+  - link "Procedura privind plângerile - Capital Com Group Ltd":
+    - /url: /ro-ro/terms-and-policies/complaints-procedure-cceu
+  - link "Procedura privind reclamațiile - Capital Com SV Investments Limited":
+    - /url: /ro-ro/terms-and-policies/complaints-procedure
+  - 'link "Conformitate și aspecte legale: tranzacționarea CFD-urilor"':
+    - /url: /ro-ro/terms-and-policies/compliance-and-legals
+  - paragraph:
+    - text: "Capital Com SV Investments Limited: CFD-urile sunt instrumente complexe și au un risc ridicat de a pierde rapid bani din cauza efectului de levier."
+    - strong: 74% din conturile investitorilor de retail pierd bani atunci când tranzacționează CFD-uri cu acest furnizor
+    - text: . Ar trebui să luați în considerare dacă înțelegeți modul în care funcționează CFDurile și dacă vă puteți permite să vă asumați riscul ridicat de a vă pierde banii. Consultați
+    - link "Declarația noastră deinformare privind riscurile":
+      - /url: https://capital.com/risk-disclosure-policy
+  - paragraph:
+    - text: "Capital Com Group Ltd: CFD-urile sunt instrumente complexe și prezintă un risc ridicat de a pierde rapid bani din cauza efectului de levier."
+    - strong: Între 74 și 89% din conturile investitorilor de retail pierd bani atunci când tranzacționează CFD-uri
+    - text: . Ar trebui să vă gândiți dacă înțelegeți cum funcționează CFD-urile și dacă vă puteți permite să vă asumați riscul ridicat de a vă pierde banii. Consultați
+    - link "Declarația noastră deinformare privind riscurile":
+      - /url: https://capital.com/risk-disclosure-policy-cceu
+  - paragraph: "Avertisment privind riscurile: Valoarea acțiunilor și a ETF-urilor cumpărate prin intermediul unui cont de tranzacționare cu acțiuni poate crește sau scădea, ceea ce înseamnă că s-ar putea să recuperați mai puțin decât ați investit inițial. Performanțele anterioare nu garantează rezultatele viitoare. Tranzacțiile cu instrumente extrabursiere nelivrabile, precum opțiunile knock-out și CFD-urile, sunt produse financiare complexe care prezintă un risc ridicat de pierdere a întregului capital investit. Astfel de produse nu sunt potrivite pentru toți investitorii, deoarece pot genera atât câștiguri, cât și pierderi semnificative. Înainte de a vă angaja în acest tip de tranzacționare, ar trebui să analizați cu atenție dacă înțelegeți modul în care funcționează aceste instrumente și dacă vă puteți permite să vă asumați riscul ridicat de a vă pierde banii. Pentru clienții profesioniști, există riscul de a pierde mai mult decât depozitul inițial. Informațiile de pe acest site web sunt de natură generală și nu iau în considerare situația financiară, obiectivele sau nevoile dumneavoastră. Consultați documentele noastre legale și asigurați-vă că înțelegeți pe deplin riscurile înainte de a lua orice decizie de tranzacționare. Vă încurajăm să utilizați serviciile de instruire ale companiei noastre pentru a înțelege mai bine riscurile înainte de a vă angaja în operațiuni de tranzacționare."
+  - paragraph:
+    - strong: Atenție
+    - text: ": capital.com este singurul domeniu oficial de internet al ambelor companii de mai sus, așa cum poate fi verificat pe site-ul oficial CySEC (www.cysec.gov.cy). Toate paginile oficiale de internet Capital.com și serviciile, inclusiv versiunile în limba locală (de exemplu, capital.com/ro-ro/), sunt găzduite pe capital.com sau subdomeniile sale (adrese de internet care se termină în \".capital.com\", de exemplu, help.capital.com). Niciuna dintre companii nu este asociată cu, sau responsabilă pentru, niciun alt domeniu sau pagină de internet care pretinde că o reprezintă."
+  - paragraph: "Capital Com SV Investments Limited este o societate constituită în Republica Cipru cu numărul de înregistrare HE 354252 și este autorizată și reglementată de Comisia pentru valori mobiliare și burse din Cipru (numărul de licență 319/17). Sediul social: Str: Vasileiou Makedonos 8, Kinnis Business Center, 2nd floor, 3040, Limassol, Cipru."
+  - paragraph: "Capital Com Group Ltd este o societate constituită în Republica Cipru cu numărul de înregistrare ΗΕ 446198 și este autorizată și reglementată de Comisia pentru valori mobiliare și burse din Cipru (numărul de licență 463/25). Sediul social: Str: Vasileiou Makedonos 8, Kinnis Business Center, 2nd floor, 3040, Limassol, Cipru."
+  - paragraph: Informațiile de pe acest site nu se adresează rezidenților din Statele Unite, Canada și Belgia sau oricărei alte țări din afara SEE și nu sunt destinate distribuirii către sau utilizării de către orice persoană din orice țară sau jurisdicție în care o astfel de distribuire sau utilizare ar fi contrară legislației sau reglementărilor locale.
+  - paragraph: © 2026 Capital Com SV Investments Limited
+  - link "Harta site-ului":
+    - /url: /ro-ro/sitemap
+  - link "Setări module cookie":
+    - /url: ""
+  - link "Reglementări":
+    - /url: /ro-ro/terms-and-policies/regulations
+  - link "Condiții și politici":
+    - /url: /ro-ro/terms-and-policies
+  - link "Procedura privind reclamațiile":
+    - /url: /ro-ro/terms-and-policies/complaints-procedures
+- button
+- alert: Grafic EUR/USD | Curs Euro / US Dollar | Capital.com
+```
+
+# Test source
+
+```ts
+  1   | import { expect } from "@playwright/test";
+  2   | 
+  3   | export class CTAComponent {
+  4   |   constructor(page, sectionConfig) {
+  5   |     this.page = page;
+  6   |     // this.root = page.locator(sectionConfig.root);
+  7   |     this.actions = sectionConfig.actions || {};
+  8   |     this.helpers = sectionConfig.helpers || {};
+  9   |     this.setup = sectionConfig.setup;
+  10  |     // this.skipRootValidation = sectionConfig.skipRootValidation;
+  11  |     this.root = this.resolveLocator(sectionConfig.root);
+  12  |   }
+  13  | 
+  14  |   async expectVisible() {
+  15  |     await expect(this.root).toBeVisible({ timeout: 20000 });
+  16  |   }
+  17  | 
+  18  |   resolveLocator(locatorConfig) {
+  19  |     if (!locatorConfig) {
+  20  |       throw new Error("Locator is undefined in CTA config");
+  21  |     }
+  22  | 
+  23  |     if (
+  24  |       typeof locatorConfig !== "string" &&
+  25  |       typeof locatorConfig !== "function"
+  26  |     ) {
+  27  |       throw new Error(
+  28  |         `Invalid locator type: ${typeof locatorConfig}. Value: ${JSON.stringify(locatorConfig)}`,
+  29  |       );
+  30  |     }
+  31  | 
+  32  |     if (typeof locatorConfig === "function") {
+  33  |       return locatorConfig(this.page);
+  34  |     }
+  35  | 
+  36  |     if (
+  37  |       locatorConfig.startsWith(":scope") ||
+  38  |       locatorConfig.startsWith("xpath=")
+  39  |     ) {
+  40  |       return this.root.locator(locatorConfig);
+  41  |     }
+  42  | 
+  43  |     return this.page.locator(locatorConfig);
+  44  |   }
+  45  | 
+  46  |   getActionLocator(actionName) {
+  47  |     return this.resolveLocator(this.actions[actionName].locator);
+  48  |   }
+  49  | 
+  50  |   getHelper(helperName) {
+  51  |     return this.resolveLocator(this.helpers[helperName]);
+  52  |   }
+  53  | 
+  54  |   async runSetup() {
+  55  |     if (!this.setup) {
+  56  |       return;
+  57  |     }
+  58  | 
+  59  |     await this.setup({
+  60  |       page: this.page,
+  61  |       getHelper: this.getHelper.bind(this),
+  62  |     });
+  63  |   }
+  64  | 
+  65  |   async runActionSetup(actionName) {
+  66  |     const action = this.actions[actionName];
+  67  | 
+  68  |     if (!action?.setup) {
+  69  |       return;
+  70  |     }
+  71  | 
+  72  |     await action.setup({
+  73  |       page: this.page,
+  74  |       getHelper: this.getHelper.bind(this),
+  75  |     });
+  76  | 
+  77  |     // console.log("ACTION SETUP DONE:", actionName);
+  78  |     // console.log("URL:", this.page.url());
+  79  |   }
+  80  | 
+  81  |   async click(actionName, { waitForNewPage = false } = {}) {
+  82  |     console.log("START CLICK", actionName);
+  83  | 
+  84  |     await this.runSetup();
+  85  |     await this.runActionSetup(actionName);
+  86  | 
+  87  |     const action = this.actions[actionName];
+  88  |     let locator = this.getActionLocator(actionName);
+  89  | 
+  90  |     if (action.locatorIndex !== undefined) {
+  91  |       locator = locator.nth(action.locatorIndex);
+  92  |     }
+  93  | 
+  94  |     const count = await locator.count();
+  95  |     console.log("COUNT", actionName, count);
+  96  | 
+  97  |     if (action.optional && count === 0) {
+  98  |       return { skipped: true };
+  99  |     }
+  100 | 
+> 101 |     await expect(locator).toBeVisible();
+      |                           ^ Error: expect(locator).toBeVisible() failed
+  102 |     await expect(locator).toBeEnabled();
+  103 | 
+  104 |     let newPagePromise;
+  105 | 
+  106 |     if (waitForNewPage) {
+  107 |       // newPagePromise = this.page.context().waitForEvent("page");
+  108 |       newPagePromise = this.page.waitForEvent("popup");
+  109 |     }
+  110 | 
+  111 |     // console.log(
+  112 |     //   await locator.evaluate((el) => {
+  113 |     //     const rect = el.getBoundingClientRect();
+  114 |     //     const center = {
+  115 |     //       x: rect.left + rect.width / 2,
+  116 |     //       y: rect.top + rect.height / 2,
+  117 |     //     };
+  118 | 
+  119 |     //     return {
+  120 |     //       text: el.textContent,
+  121 |     //       center,
+  122 |     //       elementAtPoint: document.elementFromPoint(center.x, center.y)
+  123 |     //         ?.outerHTML,
+  124 |     //     };
+  125 |     //   }),
+  126 |     // );
+  127 | 
+  128 |     await locator.click({ timeout: 2000 });
+  129 |     const newPage = newPagePromise ? await newPagePromise : null;
+  130 | 
+  131 |     return { skipped: false, locator, newPage };
+  132 |   }
+  133 | }
+  134 | 
+```

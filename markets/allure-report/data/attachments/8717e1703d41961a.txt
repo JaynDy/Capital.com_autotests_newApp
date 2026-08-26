@@ -1,0 +1,6 @@
+USER: unregistered
+EXPECTATION:  shows signup form
+START CLICK shortPositionGoToPlatformBtn
+COUNT shortPositionGoToPlatformBtn 1
+URL AFTER CLICK: https://capital.com/ar-int/markets/shares/moderna-inc-as-ar-alashm-1
+EXPECTATION ASSERTIONS shows signup form

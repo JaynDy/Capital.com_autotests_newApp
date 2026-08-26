@@ -1,0 +1,6 @@
+USER: unauthorised
+EXPECTATION:  shows signup form
+START CLICK longPositionGoToPlatformBtn
+COUNT longPositionGoToPlatformBtn 1
+URL AFTER CLICK: https://capital.com/hu-hu/markets/commodities/gold-spot-aru
+EXPECTATION ASSERTIONS shows signup form

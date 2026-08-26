@@ -1,0 +1,7 @@
+Button enabled: true
+USER: unregistered
+EXPECTATION:  shows signup form
+START CLICK alertBtn
+COUNT alertBtn 1
+URL AFTER CLICK: https://capital.com/zh-hans/markets/indices/us-tech-100-index
+EXPECTATION ASSERTIONS shows signup form

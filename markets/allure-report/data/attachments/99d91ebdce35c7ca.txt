@@ -1,0 +1,6 @@
+USER: unregistered
+EXPECTATION:  shows signup form
+START CLICK addToFavouriteBtn
+COUNT addToFavouriteBtn 1
+URL AFTER CLICK: https://capital.com/es-int/markets/shares/moderna-inc-precio-por-accion-1
+EXPECTATION ASSERTIONS shows signup form

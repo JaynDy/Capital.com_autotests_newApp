@@ -1,0 +1,6 @@
+USER: unauthorised
+EXPECTATION:  shows signup form
+START CLICK longPositionGoToPlatformBtn
+COUNT longPositionGoToPlatformBtn 1
+URL AFTER CLICK: https://capital.com/en-au/markets/shares/moderna-inc-share-price-1
+EXPECTATION ASSERTIONS shows signup form

@@ -1,0 +1,6 @@
+USER: unregistered
+EXPECTATION:  shows signup form
+START CLICK alertBtn
+COUNT alertBtn 1
+URL AFTER CLICK: https://capital.com/zh-hant/markets/commodities/gold-spot-commodity
+EXPECTATION ASSERTIONS shows signup form
