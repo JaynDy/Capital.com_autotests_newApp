@@ -1,0 +1,7 @@
+USER: unregistered
+EXPECTATION:  opens external link
+START CLICK youtubeIcon
+COUNT youtubeIcon 1
+URL AFTER CLICK: https://capital.com/de-at
+NEW PAGE URL: https://www.youtube.com/@Capitaltrading/videos
+EXPECTATION ASSERTIONS opens external link

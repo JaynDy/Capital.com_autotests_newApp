@@ -1,0 +1,7 @@
+USER: unregistered
+EXPECTATION:  opens external link
+START CLICK redditIcon
+COUNT redditIcon 1
+URL AFTER CLICK: https://capital.com/en-int
+NEW PAGE URL: https://www.reddit.com/r/capitalcom/
+EXPECTATION ASSERTIONS opens external link

@@ -1,0 +1,7 @@
+USER: unregistered
+EXPECTATION:  opens external link
+START CLICK tiktokIcon
+COUNT tiktokIcon 1
+URL AFTER CLICK: https://capital.com/en-int
+NEW PAGE URL: https://www.tiktok.com/@capitalcom_international
+EXPECTATION ASSERTIONS opens external link

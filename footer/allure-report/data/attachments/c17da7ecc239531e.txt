@@ -1,0 +1,7 @@
+USER: unregistered
+EXPECTATION:  opens external link
+START CLICK exploreAppGalleryBtn
+COUNT exploreAppGalleryBtn 1
+URL AFTER CLICK: https://capital.com/de-at
+NEW PAGE URL: https://appgallery.huawei.com/app/C104737787?referrer=af_js_web%3Dtrue%26pid%3Dorganic_web%26af_tranid%3DMTYzNTQ1NTg0NjUxNDAxNzY2Njg%3D
+EXPECTATION ASSERTIONS opens external link

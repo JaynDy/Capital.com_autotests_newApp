@@ -1,0 +1,7 @@
+USER: unregistered
+EXPECTATION:  opens external link
+START CLICK instagramIcon
+COUNT instagramIcon 1
+URL AFTER CLICK: https://capital.com/en-au
+NEW PAGE URL: https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fcapitalcomau%2F&is_from_rle
+EXPECTATION ASSERTIONS opens external link
