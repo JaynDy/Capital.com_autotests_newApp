@@ -1,0 +1,7 @@
+Button enabled: true
+USER: unauthorised
+EXPECTATION:  { type: 'redirect', page: 'complaints' }
+START CLICK complaintsProcedureLink
+COUNT complaintsProcedureLink 1
+URL AFTER CLICK: https://capital.com/zh-hans
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'complaints' }

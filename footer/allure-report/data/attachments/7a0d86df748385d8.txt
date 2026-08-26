@@ -1,0 +1,6 @@
+USER: authorised
+EXPECTATION:  opens external link
+START CLICK instagramIcon
+COUNT instagramIcon 1
+URL AFTER CLICK: https://capital.com/ru-int
+EXPECTATION ASSERTIONS opens external link
