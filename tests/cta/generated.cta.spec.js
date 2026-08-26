@@ -113,8 +113,6 @@ for (const testCase of FILTERED_TEST_CASES) {
       return testInfo.skip(`${testCase.actionName} absent on page`);
     }
 
-    console.log("NEW PAGE URL:", result.newPage.url());
-
     await expectPageState(
       page,
       action,
