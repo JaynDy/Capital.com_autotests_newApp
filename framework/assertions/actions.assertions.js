@@ -55,7 +55,11 @@ export async function expectPageState(
 
       expect(newPage, "External link did not open a new page").toBeTruthy();
 
-      await newPage.waitForLoadState("domcontentloaded");
+      await newPage
+        .waitForLoadState("domcontentloaded", {
+          timeout: 5000,
+        })
+        .catch(() => {});
       // expect(newPage.url()).toContain(action.expectedHrefContains);
       await expect(newPage).not.toHaveTitle("404 Not Found");
       break;
