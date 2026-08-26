@@ -1,0 +1,11 @@
+START CLICK youtubeIcon
+COUNT youtubeIcon 1
+{
+  text: '',
+  center: { x: 602, y: 10339.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/pl-pl
+USER: unregistered
+EXPECTATION:  opens external link
+EXPECTATION ASSERTIONS opens external link

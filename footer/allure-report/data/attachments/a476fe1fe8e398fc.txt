@@ -1,0 +1,11 @@
+START CLICK countrySwitcherBtn
+COUNT countrySwitcherBtn 1
+{
+  text: "Côte d'Ivoire",
+  center: { x: 215.4609375, y: 10426.921875 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/fr-int
+USER: unauthorised
+EXPECTATION:  opens regional settings window
+EXPECTATION ASSERTIONS opens regional settings window

@@ -1,0 +1,11 @@
+START CLICK sitemapLink
+COUNT sitemapLink 1
+{
+  text: 'Oldaltérkép',
+  center: { x: 638.125, y: 11870.75 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/hu-hu
+USER: unregistered
+EXPECTATION:  { type: 'redirect', page: 'sitemap' }
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'sitemap' }

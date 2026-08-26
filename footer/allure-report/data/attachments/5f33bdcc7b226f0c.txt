@@ -1,0 +1,12 @@
+Button enabled: true
+START CLICK twitterIcon
+COUNT twitterIcon 1
+{
+  text: '',
+  center: { x: 434, y: 10375.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/zh-hans
+USER: unauthorised
+EXPECTATION:  opens external link
+EXPECTATION ASSERTIONS opens external link

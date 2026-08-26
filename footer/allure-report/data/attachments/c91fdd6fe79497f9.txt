@@ -1,0 +1,3 @@
+START CLICK linkedinIcon
+COUNT linkedinIcon 0
+URL AFTER CLICK: https://capital.com/en-gb

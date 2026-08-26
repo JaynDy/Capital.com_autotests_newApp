@@ -1,0 +1,11 @@
+START CLICK cookieSettingsLink
+COUNT cookieSettingsLink 1
+{
+  text: 'Ρυθμίσεις cookies',
+  center: { x: 755.6875, y: 11950.75 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/el-gr
+USER: unregistered
+EXPECTATION:  opens cookie menu
+EXPECTATION ASSERTIONS opens cookie menu

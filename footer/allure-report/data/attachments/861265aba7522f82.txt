@@ -1,0 +1,29 @@
+START CLICK licenseText
+COUNT licenseText 1
+{
+  text: 'Capital Com SV Investments Limited:\n' +
+    'I CFD sono strumenti complessi e comportano un rischio significativo di perdere denaro rapidamente a causa della leva finanziaria. Il 74 % dei conti degli investitori al dettaglio perde denaro nelle negoziazioni in CFD con questo fornitore. Valuti se comprende il funzionamento dei CFD e se può permettersi di correre l’elevato rischio di perdere il suo denaro. Informativa sui rischi.\n' +
+    '\n' +
+    'Capital Com Group Ltd:\n' +
+    'I CFD sono strumenti complessi e presentano un rischio significativo di perdere denaro rapidamente a causa della leva finanziaria. Il 74-89 % dei conti degli investitori al dettaglio subisce perdite monetarie in seguito a negoziazione in CFD. Valuti se comprende il funzionamento dei CFD e se può permettersi di correre l’elevato rischio di perdere il suo denaro. Informativa sui rischi.\n' +
+    '\n' +
+    "Avvertenza sui rischi: Il valore delle azioni e degli ETF acquistati mediante un account di negoziazione azionaria può aumentare o diminuire, motivo per cui è insito il rischio di guadagnare meno di quanto investito inizialmente. Le performance passate non costituiscono un indicatore affidabile dell'andamento futuro.\n" +
+    '\n' +
+    "Gli strumenti over-the-counter non-deliverable, come le opzioni knock-out e i CFD, sono prodotti finanziari complessi associati a un rischio elevato di perdita dell’intero capitale investito. Tali prodotti non sono indicati per tutti gli investitori, in quanto possono tradursi sia in profitti che in perdite ingenti. Prima di iniziare a praticare questa tipologia di trading, occorre valutare attentamente se si comprendono le modalità operative di tali strumenti e se ci si può permettere di correre l'elevato rischio di perdere il proprio denaro.\n" +
+    '\n' +
+    'Per i clienti professionali, è insito il rischio di perdere più di quanto depositato inizialmente. Le informazioni riportate in questo sito hanno carattere generale e non tengono conto della situazione finanziaria, degli obiettivi o delle esigenze individuali. Si raccomanda di consultare attentamente i documenti legali e di assicurarsi di aver compreso appieno i rischi insiti prima di prendere qualsivoglia decisione di trading. Si consiglia di far uso dei servizi didattici messi a disposizione dalla società, così da acquisire consapevolezza dei rischi prima di iniziare a effettuare operazioni di trading.\n' +
+    '\n' +
+    `Avviso: capital.com è l'unico dominio web ufficiale di entrambe le società sopra indicate, come è possibile verificare sul sito ufficiale della CySEC (www.cysec.gov.cy). Tutte le pagine web e i servizi ufficiali di Capital.com, comprese le versioni nelle lingue locali (ad esempio, capital.com/it-it/), sono ospitati su capital.com o sui suoi sottodomini (indirizzi web che terminano con ".capital.com", ad esempio, help.capital.com). Nessuna delle due società è collegata ad alcun altro dominio o sito web che affermi di rappresentarla e non ne è responsabile.\n` +
+    '\n' +
+    'Capital Com SV Investments Limited è una società costituita nella Repubblica di Cipro, con numero di registrazione HE 354252, autorizzata e regolamentata dalla Cyprus Securities and Exchange Commission (numero di licenza: 319/17). Sede legale: Vasileiou Makedonos 8, Kinnis Business Center, 2° piano, 3040, Limassol, Cipro.\n' +
+    '\n' +
+    'Capital Com Group Ltd è una società costituita nella Repubblica di Cipro, con numero di registrazione ΗΕ 446198, autorizzata e regolamentata dalla Cyprus Securities and Exchange Commission (numero di licenza: 463/25). Sede legale: Vasileiou Makedonos 8, Kinnis Business Center, 2° piano, 3040, Limassol, Cipro.\n' +
+    '\n' +
+    'Le informazioni riportate su questo sito non sono rivolte ai residenti di Stati Uniti, Canada e Belgio, o di qualsivoglia altro Paese al di fuori del SEE, e non sono concepite per la distribuzione o l’utilizzo da parte di soggetti di Paesi o giurisdizioni in cui tale distribuzione o utilizzo contravvengono alle normative o alle disposizioni localmente vigenti.\n',
+  center: { x: 640, y: 11442.75 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/it-it
+USER: unregistered
+EXPECTATION:  exist corresponding license
+EXPECTATION ASSERTIONS exist corresponding license

@@ -1,0 +1,11 @@
+START CLICK linkedinIcon
+COUNT linkedinIcon 1
+{
+  text: '',
+  center: { x: 546, y: 10339.75 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/nl-nl
+USER: unauthorised
+EXPECTATION:  opens external link
+EXPECTATION ASSERTIONS opens external link

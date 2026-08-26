@@ -1,0 +1,11 @@
+START CLICK complaintsProcedureLink
+COUNT complaintsProcedureLink 1
+{
+  text: 'Quy trình khiếu nại (SCB)',
+  center: { x: 1135.4375, y: 11190.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/vi-int
+USER: authorised
+EXPECTATION:  { type: 'redirect', page: 'complaints' }
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'complaints' }

@@ -1,0 +1,11 @@
+START CLICK sitemapLink
+COUNT sitemapLink 1
+{
+  text: 'Harta site-ului',
+  center: { x: 569.4140625, y: 11850.75 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/ro-ro
+USER: unregistered
+EXPECTATION:  { type: 'redirect', page: 'sitemap' }
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'sitemap' }

@@ -1,0 +1,11 @@
+START CLICK complaintsProcedureLink
+COUNT complaintsProcedureLink 1
+{
+  text: 'Procedimiento de reclamaciones (SCB)',
+  center: { x: 1092.2109375, y: 11182.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/es-int
+USER: authorised
+EXPECTATION:  { type: 'redirect', page: 'complaints' }
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'complaints' }

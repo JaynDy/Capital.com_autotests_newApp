@@ -1,0 +1,13 @@
+START CLICK licenseText
+COUNT licenseText 1
+{
+  text: 'Over-the-counter leveraged derivative contracts, including contracts for difference and spot foreign exchange products are complex financial instruments and carries a high degree of risk of losing money rapidly due to leverage. Trading Over-the-Counter leveraged derivatives may not be suitable for all investors. Before engaging in any trading activities, you should carefully consider your investment objectives, risk tolerance, and financial situation. Please seek independent financial advice before trading if necessary. \n' +
+    '\n' +
+    'Capital Com MENA Securities Trading L.L.C. is a limited liability company with company number 1994695. Capital Com MENA Securities Trading L.L.C. is a Company registered in Dubai, United Arab Emirates, and authorised by the CMA (Capital Market Authority) with license number 20200000176. The company engages in financial and investment activities under Category One – Dealing in Securities which include (a)Financial Products dealer, (b)Trading broker in the international markets and (c)Trading broker of OTC derivatives and currencies in the spot market. The Company’s registered office is at Jumeirah Emirates Towers, Emirates Towers Offices, Level L14, Unit 14C, Dubai, UAE. Capital Com MENA Securities Trading L.L.C. is an execution only service provider and does not provide investment advice. Capital Com MENA Securities Trading L.L.C. may publish general market commentary from time to time. Where it does, the material published does not constitute advice, or a solicitation, or a recommendation to a transaction in any financial instrument. Capital Com MENA Securities Trading L.L.C. accepts no responsibility for any use of the content presented and any consequences of that use. No representation or warranty is given as to the completeness of this information. Anyone acting on the information provided does so at their own risk. The information contained herein is not intended for distribution to residents in any country where such distribution or use would contravene any local law or regulatory requirement. Our products and services are not available to embargoed or sanctioned countries. The information is not intended for distribution to, or use by, any person in any country or jurisdiction where such distribution or use would be contrary to local law or regulation.\n',
+  center: { x: 640, y: 11314.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/en-ae
+USER: unregistered
+EXPECTATION:  exist corresponding license
+EXPECTATION ASSERTIONS exist corresponding license

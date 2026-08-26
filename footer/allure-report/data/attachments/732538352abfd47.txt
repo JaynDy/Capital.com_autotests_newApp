@@ -1,0 +1,13 @@
+START CLICK licenseText
+COUNT licenseText 1
+{
+  text: 'CFD là các công cụ phức tạp và đi kèm với rủi ro cao khiến bạn có thể nhanh chóng thua lỗ do sử dụng đòn bẩy. 79.75%  tài khoản nhà đầu tư nhỏ lẻ bị thua lỗ khi giao dịch CFD. Bạn nên cân nhắc liệu mình có hiểu cách thức hoạt động của CFD hay không và liệu bạn có đủ khả năng chấp nhận rủi ro cao mất tiền hay không.\n' +
+    '\n' +
+    'Công ty TNHH Đầu tư Trực tuyến Capital Com là công ty trách nhiệm hữu hạn với mã số đăng ký doanh nghiệp là 209236B. Công ty TNHH Đầu tư Trực tuyến Capital Com là công ty được đăng ký tại Khối Thịnh vượng chung Bahamas và được Ủy ban Chứng khoán Bahamas cấp phép với số giấy phép là SIA-F245. Trụ sở đăng ký của Công ty đặt tại số 3 Bayside Executive Park, đường Blake và đường West Bay, Hộp thư P.O. Box CB 13012, Nassau, Bahamas.\n',
+  center: { x: 640, y: 11062.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/vi-int
+USER: authorised
+EXPECTATION:  exist corresponding license
+EXPECTATION ASSERTIONS exist corresponding license

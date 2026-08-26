@@ -1,0 +1,11 @@
+START CLICK linkedinIcon
+COUNT linkedinIcon 1
+{
+  text: '',
+  center: { x: 490, y: 10375.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/zh-hans
+USER: authorised
+EXPECTATION:  opens external link
+EXPECTATION ASSERTIONS opens external link

@@ -1,0 +1,11 @@
+START CLICK countrySwitcherBtn
+COUNT countrySwitcherBtn 1
+{
+  text: 'Hong Kong',
+  center: { x: 229.4453125, y: 10291.578125 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/en-int
+USER: unauthorised
+EXPECTATION:  opens regional settings window
+EXPECTATION ASSERTIONS opens regional settings window

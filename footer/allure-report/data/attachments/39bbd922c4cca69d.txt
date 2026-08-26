@@ -1,0 +1,11 @@
+START CLICK tiktokIcon
+COUNT tiktokIcon 1
+{
+  text: '',
+  center: { x: 678, y: 10339.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/ar-int
+USER: unregistered
+EXPECTATION:  opens external link
+EXPECTATION ASSERTIONS opens external link

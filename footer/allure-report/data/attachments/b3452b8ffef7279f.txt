@@ -1,0 +1,11 @@
+START CLICK licenseText
+COUNT licenseText 1
+{
+  text: "Les CFD sont des instruments complexes et présentent un risque élevé de perte rapide en raison de l\\'effet de levier. 79.75 % des comptes d’investisseurs particuliers perdent de l’argent en tradant des CFD avec ce fournisseur. Vous devez vous demander si vous comprenez le fonctionnement des CFD et si vous pouvez vous permettre de prendre le risque élevé de perdre votre argent.Capital Com Online Investments Ltd est une société à responsabilité limitée portant le numéro d\\'enregistrement 209236B. Capital Com Online Investments Ltd est une société enregistrée dans le Commonwealth des Bahamas et autorisée par la Commission des valeurs mobilières des Bahamas sous le numéro de licence SIA-F245. Le bureau enregistré de la société se situe au #3 Bayside Executive Park, Blake Road et West Bay Street, P. O. Box CB 13012, Nassau, Bahamas.\n",
+  center: { x: 640, y: 11121.921875 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/fr-int
+USER: unauthorised
+EXPECTATION:  exist corresponding license
+EXPECTATION ASSERTIONS exist corresponding license

@@ -1,0 +1,29 @@
+START CLICK licenseText
+COUNT licenseText 1
+{
+  text: 'Capital Com SV Investments Limited:\n' +
+    'A CFD-k összetett eszközök, és a tőkeáttétel miatt nagy a kockázata a gyors pénzvesztésnek. A lakossági befektetők 74%-a veszít pénzt a CFD-kereskedés során ennél a szolgáltatónál..Fontolja meg, hogy tisztában van-e a CFD-k működésével, és hogy megengedheti-e magának, hogy vállalja a pénzvesztés magas kockázatát. Kérjük, tekintse meg Kockázatfeltáró nyilatkozatunkat\n' +
+    '\n' +
+    'Capital Com Group Ltd:\n' +
+    'A CFD-k összetett eszközök, és a tőkeáttétel miatt magas a kockázata annak, hogy gyorsan pénzt veszít.  A lakossági befektetői fiókok 74-89%-a veszít pénzt, amikor CFD-kkel kereskedik. Fontolja meg, hogy érti-e, hogyan működnek a CFD-k, és megengedheti-e magának a pénzvesztés magas kockázatát. Kérjük, tekintse meg Kockázatfeltáró nyilatkozatunkat\n' +
+    '\n' +
+    'Kockázati figyelmeztetés: A részvények és ETF-ek értéke, amelyeket egy részvénykereskedési fiókon keresztül vásárol, csökkenhet vagy nőhet, ami azt jelentheti, hogy kevesebbet kap vissza, mint amennyit eredetileg befektetett. A múltbeli teljesítmény nem jelent garanciát a jövőbeli eredményekre.\n' +
+    '\n' +
+    'A nem teljesíthető, tőzsdén kívüli eszközökkel – mint például knock-out opciók és CFD-k – végzett tranzakciók összetett pénzügyi termékek, amelyek az összes befektetett tőke elvesztésének magas kockázatát hordozzák. Ezek a termékek nem minden befektető számára megfelelőek, mivel jelentős nyereséget, de veszteséget is okozhatnak. Mielőtt ilyen típusú kereskedésbe kezdene, gondosan mérlegelnie kell, hogy érti-e, hogyan működnek ezek az eszközök, és megengedheti-e magának, hogy vállalja a pénze elvesztésének magas kockázatát.\n' +
+    '\n' +
+    'A szakmai ügyfelek esetében fennáll a kockázata annak, hogy az eredeti betétnél többet veszítenek. A weboldalon található információk általános jellegűek, nem veszik figyelembe az Ön pénzügyi helyzetét, céljait vagy szükségleteit. Kérjük, tekintse át jogi dokumentumainkat, és győződjön meg róla, hogy teljes mértékben megérti a kockázatokat, mielőtt bármilyen kereskedési döntést hozna. Javasoljuk, hogy használja cégünk képzési szolgáltatásait a kockázatok jobb megértése érdekében, mielőtt kereskedésbe kezdene.\n' +
+    '\n' +
+    'Figyelmeztetés: a capital.com a fenti mindkét társaság egyetlen hivatalos weboldaldomainje, amint az a CySEC hivatalos weboldalán (www.cysec.gov.cy) is ellenőrizhető. A Capital.com valamennyi hivatalos weboldala és szolgáltatása, beleértve a helyi nyelvű verziókat is (például capital.com/it-it/), a capital.com domainen vagy annak aldomainjein található (a „.capital.com” végződésű webcímeken, például help.capital.com). Egyik társaság sem áll kapcsolatban, illetve nem vállal felelősséget semmilyen más domainért vagy weboldalért, amely azt állítja, hogy őt képviseli.\n' +
+    '\n' +
+    'A Capital Com SV Investments Limited egy Cipruson bejegyzett vállalat, amely a HE 354252 cégjegyzékszám alatt van bejegyezve, és amelyet a Ciprusi Értékpapír- és Tőzsdebizottság hagyott jóvá és szabályoz a 319/17 engedélyszám alatt. Bejegyzett székhely: Vasileiou Makedonos 8, Kinnis Üzletközpont, 2. emelet, 3040, Limassol, Ciprus.\n' +
+    '\n' +
+    'Capital Com Group Ltd egy Cipruson bejegyzett vállalat, amely a ΗΕ 446198 cégjegyzékszám alatt van bejegyezve, és amelyet a Ciprusi Értékpapír- és Tőzsdebizottság hagyott jóvá és szabályoz a 463/25 engedélyszám alatt. Bejegyzett székhely: Vasileiou Makedonos 8, Kinnis Üzletközpont, 2. emelet, 3040, Limassol, Ciprus.\n' +
+    '\n' +
+    'A jelen oldalon található információk nem az Egyesült Államok, Kanada és Belgium vagy az EGT-n kívül eső bármely ország lakosainak szólnak, és nem megosztásra vagy használatra szolgálnak bármilyen személy által bármely országból vagy joghatóságból, ahol a megosztás vagy használat sértené a helyi jogszabályokat.\n',
+  center: { x: 640, y: 11442.75 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/hu-hu
+USER: authorised
+EXPECTATION:  exist corresponding license
+EXPECTATION ASSERTIONS exist corresponding license

@@ -1,0 +1,13 @@
+START CLICK licenseText
+COUNT licenseText 1
+{
+  text: 'CFD нь нарийн төвөгтэй хэрэгсэл бөгөөд хөшүүргийн улмаас мөнгөө хурдан алдах өндөр эрсдэлтэй байдаг. Жижиг хөрөнгө оруулагчдын  79.75%  нь CFD арилжаа хийх үедээ мөнгөө алддаг. Та CFD хэрхэн ажилладгийг ойлгож байгаа эсэх мөн мөнгөө алдах өндөр эрсдэл хүлээж чадах эсэхээ бодолцож үзэх хэрэгтэй.\n' +
+    '\n' +
+    'Capital Com Online Investments Ltd нь 209236B тоот компанийн дугаартай хязгаарлагдмал хариуцлагатай компани юм. Capital Com Online Investments Ltd нь Багамын хамтын нөхөрлөлд бүртгэлтэй бөгөөд Багамын Үнэт цаасны хорооноос SIA-F245 тоот лицензийн дугаартай зөвшөөрлөөр баталгаажсан компани юм. Компанийн бүртгэлтэй оффис #3 Bayside Executive Park, Blake Road and West Bay Street, ш/х CB 13012, Nassau Багамын арал дээр байрладаг.\n',
+  center: { x: 640, y: 11062.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/mn-int
+USER: authorised
+EXPECTATION:  exist corresponding license
+EXPECTATION ASSERTIONS exist corresponding license

@@ -1,0 +1,12 @@
+Button enabled: true
+START CLICK langSwitcherBtn
+COUNT langSwitcherBtn 1
+{
+  text: '',
+  center: { x: 248.375, y: 10451.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/zh-hans
+USER: unregistered
+EXPECTATION:  opens regional settings window
+EXPECTATION ASSERTIONS opens regional settings window

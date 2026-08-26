@@ -1,0 +1,11 @@
+START CLICK countrySwitcherBtn
+COUNT countrySwitcherBtn 1
+{
+  text: 'Italy',
+  center: { x: 205.46875, y: 10417.75 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/it-it
+USER: unregistered
+EXPECTATION:  opens regional settings window
+EXPECTATION ASSERTIONS opens regional settings window

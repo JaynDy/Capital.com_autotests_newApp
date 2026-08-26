@@ -1,0 +1,11 @@
+START CLICK countrySwitcherBtn
+COUNT countrySwitcherBtn 1
+{
+  text: 'United Arab Emirates',
+  center: { x: 260.875, y: 10493.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/en-ae
+USER: unauthorised
+EXPECTATION:  opens regional settings window
+EXPECTATION ASSERTIONS opens regional settings window

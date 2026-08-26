@@ -1,0 +1,29 @@
+START CLICK licenseText
+COUNT licenseText 1
+{
+  text: 'Capital Com SV Investments Limited:\n' +
+    'CFDs sind komplexe Instrumente und beinhalten wegen der Hebelwirkung ein hohes Risiko, schnell Geld zu verlieren.  74 % der Kleinanlegerkonten verlieren Geld beim CFD-Handel mit diesem Anbieter. Sie sollten überlegen, ob Sie verstehen, wie CFD funktionieren und ob Sie es sich leisten können, das hohe Risiko einzugehen, Ihr Geld zu verlieren. Bitte beachten Sie unsere Risikoaufklärung\n' +
+    '\n' +
+    'Capital Com Group Ltd:\n' +
+    'CFD sind komplexe Instrumente und beinhalten wegen der Hebelwirkung ein hohes Risiko, schnell Geld zu verlieren. Zwischen 74 % und 89 % der Kleinanlegerkonten verlieren beim Handel mit CFD Geld. Sie sollten überlegen, ob Sie verstehen, wie CFD funktionieren und ob Sie es sich leisten können, das hohe Risiko einzugehen, Ihr Geld zu verlieren. Bitte beachten Sie unsere Risikoaufklärung\n' +
+    '\n' +
+    'Risikowarnung: Der Wert von Aktien und ETFs, die über ein Aktienhandelskonto gekauft werden, kann steigen und fallen. Die Wertentwicklung in der Vergangenheit ist keine Garantie für zukünftige Ergebnisse.\n' +
+    '\n' +
+    'Transaktionen mit nicht lieferbaren außerbörslichen Instrumenten wie Knock-out-Optionen und CFDs sind komplexe Finanzprodukte, die mit einem hohen Risiko verbunden sind, das gesamte investierte Kapital zu verlieren. Derartige Produkte sind nicht für alle Anleger geeignet, da sie sowohl zu Gewinnen als auch zu erheblichen Verlusten führen können. Bevor Sie sich an dieser Art des Handels beteiligen, sollten Sie sollten abwägen, ob Sie die Funktionsweise dieser Instrumente verstehen und ob Sie es sich leisten können, das hohe Risiko des Geldverlusts einzugehen.\n' +
+    '\n' +
+    'Für professionelle Kunden besteht das Risiko, mehr als die ursprüngliche Einzahlung zu verlieren. Die Informationen auf dieser Website sind allgemein gehalten und berücksichtigen weder Ihre finanzielle Situation noch Ihre Ziele oder Bedürfnisse. Bitte prüfen Sie unsere Rechtsdokumente und vergewissern Sie sich, dass Sie die Risiken vollständig verstehen, bevor Sie eine Handelsentscheidung treffen. Wir ermutigen Sie, die Schulungsdienste unseres Unternehmens in Anspruch zu nehmen, um die Risiken besser zu verstehen, bevor Sie sich an Handelsgeschäften beteiligen.\n' +
+    '\n' +
+    'Warnung: capital.com ist die einzige offizielle Website-Domain der beiden oben genannten Unternehmen, wie auf der offiziellen Website der CySEC (www.cysec.gov.cy) überprüft werden kann. Alle offiziellen Webseiten und Services von Capital.com, einschließlich lokaler Sprachversionen (zum Beispiel capital.com/it-it/), werden auf capital.com oder dessen Subdomains gehostet (Webadressen, die auf „.capital.com“ enden, zum Beispiel help.capital.com). Keines der beiden Unternehmen steht mit anderen Domains oder Websites, die vorgeben, das jeweilige Unternehmen zu vertreten, in Verbindung oder ist für diese verantwortlich.\n' +
+    '\n' +
+    'Capital Com SV Investments Limited ist ein in der Republik Zypern ansässiges Unternehmen mit der Registrierungsnummer HE 354252, welches von der Cyprus Securities and Exchange Commission (Lizenznummer 319/17) zugelassen und reguliert ist. Eingetragener Geschäftssitz: Vasileiou Makedonos 8, Kinnis Business Center, 2. Stock, 3040, Limassol, Zypern.\n' +
+    '\n' +
+    'Capital Com Group Ltd ist ein in der Republik Zypern ansässiges Unternehmen mit der Registrierungsnummer ΗΕ 446198, welches von der Cyprus Securities and Exchange Commission (Lizenznummer 463/25) zugelassen und reguliert ist. Eingetragener Geschäftssitz: Vasileiou Makedonos 8, Kinnis Business Center, 2. Stock, 3040, Limassol, Zypern.\n' +
+    '\n' +
+    'Die Informationen auf dieser Seite richten sich nicht an Personen, die in den Vereinigten Staaten, Kanada und Belgien oder in einem anderen Land außerhalb des EWR leben. Zudem sind sie nicht für die Verbreitung an oder die Nutzung durch Personen in Ländern oder Gerichtsbarkeiten bestimmt, in denen eine solche Verbreitung oder Nutzung gegen die dort geltenden Gesetze oder Regulierungen verstoßen würde.\n',
+  center: { x: 640, y: 11496.75 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/de-de
+USER: unauthorised
+EXPECTATION:  exist corresponding license
+EXPECTATION ASSERTIONS exist corresponding license

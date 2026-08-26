@@ -1,0 +1,11 @@
+START CLICK licenseText
+COUNT licenseText 1
+{
+  text: 'CFDs sind komplexe Instrumente und aufgrund des Hebels mit einem hohen Risiko des schnellen Geldverlustes verbunden. 79.75 % der Kleinanlegerkonten verlieren Geld beim CFD-Handel mit diesem Anbieter. Sie sollten abwägen, ob Sie verstehen, wie CFDs funktionieren, und ob Sie es sich leisten können, das hohe Risiko des Geldverlustes einzugehen.Capital Com Online Investments Ltd ist eine Gesellschaft mit beschränkter Haftung mit der Unternehmensnummer 209236B. Capital Com Online Investments Ltd ist ein im Commonwealth der Bahamas eingetragenes Unternehmen, das von der Securities Commission of the Bahamas unter der Lizenznummer SIA-F245 zugelassen ist. Der eingetragene Unternehmenssitz befindet sich in #3 Bayside Executive Park, Blake Road and West Bay Street, P. O. Box CB 13012, Nassau, The Bahamas.\n',
+  center: { x: 640, y: 11074.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/de-int
+USER: unregistered
+EXPECTATION:  exist corresponding license
+EXPECTATION ASSERTIONS exist corresponding license

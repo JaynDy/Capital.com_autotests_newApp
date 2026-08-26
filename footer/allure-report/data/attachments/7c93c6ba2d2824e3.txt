@@ -1,0 +1,11 @@
+START CLICK countrySwitcherBtn
+COUNT countrySwitcherBtn 1
+{
+  text: 'Hungary',
+  center: { x: 208.9765625, y: 10417.75 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/hu-hu
+USER: authorised
+EXPECTATION:  opens regional settings window
+EXPECTATION ASSERTIONS opens regional settings window

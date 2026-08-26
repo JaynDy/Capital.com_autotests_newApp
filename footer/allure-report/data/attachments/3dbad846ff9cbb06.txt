@@ -1,0 +1,29 @@
+START CLICK licenseText
+COUNT licenseText 1
+{
+  text: 'Capital Com SV Investments Limited:\n' +
+    "Les CFD sont des instruments complexes et comportent un risque élevé de perte d'argent rapide en raison de l'effet de levier.  74% des comptes d'investisseurs particuliers perdent de l'argent en tradant des CFD avec ce fournisseur. Vous devez vous demander si vous comprenez le fonctionnement des CFD et si vous pouvez vous permettre de prendre le risque élevé de perdre votre capital. Veuillez vous référer à notre Déclaration de Divulgation des Risques\n" +
+    '\n' +
+    'Capital Com Group Ltd:\n' +
+    "Les CFD sont des instruments complexes et comportent un risque élevé de perte rapide d'argent en raison de l'effet de levier. Entre 74 et 89 % des comptes d'investisseurs particuliers perdent de l'argent en tradant des CFD. Vous devriez considérer si vous comprenez comment les CFD fonctionnent et si vous pouvez vous permettre de prendre le risque élevé de perdre votre argent. Veuillez vous référer à notre Déclaration de Divulgation des Risques.\n" +
+    '\n' +
+    'Avertissement sur les risques : La valeur des actions et des ETF achetés via un compte-titres peut baisser et augmenter, ce qui signifie que vous pourriez récupérer moins que le montant initialement investi. Les performances passées ne préjugent pas des résultats futurs.\n' +
+    '\n' +
+    "Les transactions sur instruments de gré à gré non livrables, tels que les options knock-out et les CFD, sont des produits financiers complexes qui présentent un risque élevé de perdre l'intégralité du capital investi. Ces produits ne conviennent pas à tous les investisseurs, car ils peuvent entraîner à la fois des gains et des pertes significatives. Avant de vous engager dans ce type de trading, vous devez examiner attentivement si vous comprenez le fonctionnement de ces instruments et si vous pouvez vous permettre de prendre le risque élevé de perdre votre argent.\n" +
+    '\n' +
+    'Pour les clients professionnels, il existe un risque de perdre plus que le dépôt initial. Les informations présentes sur ce site sont de nature générale et ne tiennent pas compte de votre situation financière, de vos objectifs ou de vos besoins. Veuillez consulter nos documents juridiques et vous assurer de bien comprendre les risques avant de prendre toute décision de trading. Nous vous encourageons à utiliser les services de formation de notre société pour mieux comprendre les risques avant de vous engager dans des opérations de trading.\n' +
+    '\n' +
+    `Avertissement : capital.com est le seul nom de domaine officiel des deux sociétés susmentionnées, comme il peut être vérifié sur le site officiel de la CySEC (www.cysec.gov.cy). Toutes les pages web et services officiels de Capital.com, y compris les versions en langues locales (par exemple, capital.com/it-it/), sont hébergés sur capital.com ou ses sous-domaines (adresses web se terminant par ".capital.com", par exemple, help.capital.com). Aucune des deux sociétés n'est associée à, ni responsable d'aucun autre domaine ou site web prétendant la représenter.\n` +
+    '\n' +
+    "Capital Com SV Investments Limited est une société enregistrée en République de Chypre sous le numéro d'enregistrement HE 354252 et est agrée et régulée par la Cyprus Securities and Exchange Commission (Numéro de licence 319/17). Siège social : Vasileiou Makedonos 8, Kinnis Business Center, 2e étage, 3040, Limassol, Chypre.\n" +
+    '\n' +
+    "Capital Com Group Ltd est une société enregistrée en République de Chypre sous le numéro d'enregistrement ΗΕ 446198 et est agrée et régulée par la Cyprus Securities and Exchange Commission (Numéro de licence 463/25). Siège social : Vasileiou Makedonos 8, Kinnis Business Center, 2e étage, 3040, Limassol, Chypre.\n" +
+    '\n' +
+    'Les informations sur ce site ne sont pas destinées aux résidents des États-Unis, du Canada et de la Belgique ou de tout autre pays en dehors de l’EEE, et ne sont pas destinées à être distribuées ou utilisées par toute personne dans un pays ou une juridiction où une telle distribution ou utilisation serait contraire à la législation ou à la réglementation locale.\n',
+  center: { x: 640, y: 11431.9375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/fr-fr
+USER: authorised
+EXPECTATION:  exist corresponding license
+EXPECTATION ASSERTIONS exist corresponding license

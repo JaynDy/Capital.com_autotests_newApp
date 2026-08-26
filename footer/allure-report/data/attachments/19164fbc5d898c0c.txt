@@ -1,0 +1,11 @@
+START CLICK licenseText
+COUNT licenseText 1
+{
+  text: '差價合約 (CFD) 是一種複雜的金融工具，利用槓桿交易雖然可能放大收益，但同樣也會加劇虧損風險，導致資金快速流失。數據顯示，79.75% 的散戶投資者在使用該提供商服務進行差價合約交易時出現帳戶虧損。在進行交易之前，請確保您充分了解差價合約的運作機制，並仔細評估自己是否有能力承擔資金虧損的高風險。Capital Com Online Investments Ltd 是一家有限責任公司，公司註冊號碼為 209236B。 Capital Com Online Investments Ltd 在巴哈馬國註冊，由巴哈馬證券委員會授權，許可證號為 SIA-F245。公司註冊辦公室地址是：#3 Bayside Executive Park, Blake Road and West Bay Street, P. O. Box CB 13012, Nassau, The Bahamas。\n',
+  center: { x: 640, y: 11080.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/zh-hant
+USER: authorised
+EXPECTATION:  exist corresponding license
+EXPECTATION ASSERTIONS exist corresponding license

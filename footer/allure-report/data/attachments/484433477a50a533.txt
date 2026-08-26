@@ -1,0 +1,11 @@
+START CLICK downloadAppStoreBtn
+COUNT downloadAppStoreBtn 1
+{
+  text: '',
+  center: { x: 958, y: 10348.9375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/fr-fr
+USER: unauthorised
+EXPECTATION:  opens external link
+EXPECTATION ASSERTIONS opens external link

@@ -1,0 +1,11 @@
+START CLICK countrySwitcherBtn
+COUNT countrySwitcherBtn 1
+{
+  text: 'Vietnam',
+  center: { x: 170.359375, y: 10453.734375 },
+  elementAtPoint: undefined
+}
+URL AFTER CLICK: https://capital.com/vi-int
+USER: unregistered
+EXPECTATION:  opens regional settings window
+EXPECTATION ASSERTIONS opens regional settings window
