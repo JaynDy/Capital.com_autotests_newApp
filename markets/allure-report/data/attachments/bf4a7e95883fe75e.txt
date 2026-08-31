@@ -1,0 +1,5 @@
+USER: unregistered
+EXPECTATION:  shows signup form
+START CLICK viewDetailedChartBtn
+COUNT viewDetailedChartBtn 0
+URL AFTER CLICK: https://capital.com/hu-hu/markets/shares/nvidia-corp-reszvenyar-1

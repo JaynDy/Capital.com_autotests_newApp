@@ -1,0 +1,530 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: cta/generated.cta.spec.js >> indices page | tradingInstrument | tradedBtn
+- Location: tests/cta/generated.cta.spec.js:37:7
+
+# Error details
+
+```
+Error: expect(locator).toBeVisible() failed
+
+Locator: locator('[data-type="wdg_most_traded_btn"]').first()
+Expected: visible
+Timeout: 5000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 5000ms
+  - waiting for locator('[data-type="wdg_most_traded_btn"]').first()
+
+```
+
+```yaml
+- banner:
+  - text: CFD — это сложные инструменты, которые связаны с высоким риском быстрой потери средств из-за левереджа.
+  - strong: 79.75% аккаунтов розничных инвесторов теряют деньги при торговле CFD с этим брокером.
+  - text: Убедитесь, что вы понимаете, как работают CFD, и можете позволить себе высокий риск потери средств.
+  - link:
+    - /url: /ru-int
+    - img
+  - navigation:
+    - button "Трейдинг":
+      - button "Трейдинг"
+    - button "Рынки":
+      - button "Рынки"
+    - link "Ценообразование":
+      - /url: /ru-int/ways-to-trade/fees-and-charges
+    - button "О нас":
+      - button "О нас"
+  - button "ru"
+  - button "Войти"
+  - button "Открыть аккаунт"
+- paragraph:
+  - link "Главная страница":
+    - /url: /ru-int
+  - text: •
+  - link "Рынки":
+    - /url: /ru-int/markets
+  - text: •
+  - link "Индексы":
+    - /url: /ru-int/markets/indices
+  - text: •US Tech 100
+- heading "Торговать US Tech 100 - US100 CFD" [level=1]
+- button "Добавить в избранное"
+- strong: "29468.6"
+- text: +0.1%
+- link:
+  - /url: ""
+- button "1мин"
+- button "5мин"
+- button "15мин"
+- button "30мин"
+- button "1ч"
+- button "4ч"
+- button "1д"
+- button "1н"
+- img
+- button "Посмотреть подробный график"
+- link "Продать 29466.8":
+  - /url: /instrument?id=15839732013552836
+  - text: Продать
+  - paragraph: "29466.8"
+- link "Купить 29468.6":
+  - /url: /instrument?id=15839732013552836
+  - text: Купить
+  - paragraph: "29468.6"
+- text: "1.8 Низкий: 29234.5 Высокий: 29694.5"
+- table
+- text: "Продавцы: 33.61% Покупатели: 66.39%"
+- button "Время торговли на рынке":
+  - paragraph: Время торговли на рынке
+  - strong: Открыть сейчас
+- strong: Результаты прошлых периодов не являются надежным показателем будущих результатов. Цены акций ориентировочные и могут отличаться от текущих рыночных.
+- button "Краткое содержание"
+- button "Исторические данные"
+- strong: Условия торговли
+- table:
+  - rowgroup:
+    - 'row "Тип Этот финансовый рынок доступен для торговли CFD. Подробнее о: CFD CFD"':
+      - 'cell "Тип Этот финансовый рынок доступен для торговли CFD. Подробнее о: CFD"':
+        - text: "Тип Этот финансовый рынок доступен для торговли CFD. Подробнее о:"
+        - link "CFD":
+          - /url: /ru-int/ways-to-trade/cfd-trading
+      - cell "CFD"
+    - row "Спред 1.8":
+      - cell "Спред"
+      - cell "1.8"
+    - row "Корректировка финансирования овернайт по длинным позициям Корректировка финансирования овернайт по длинным позициям Маржа. Ваши инвестиции $1,000.00 Корректировка за овернайт Сборы рассчитываются от полной стоимости позиции -0.02154 % (-$21.50) Размер сделки с левереджем ~$100,000.00 Средства от левереджа ~ $$99,000.00 Перейти на платформу -0.02154%":
+      - cell "Корректировка финансирования овернайт по длинным позициям Корректировка финансирования овернайт по длинным позициям Маржа. Ваши инвестиции $1,000.00 Корректировка за овернайт Сборы рассчитываются от полной стоимости позиции -0.02154 % (-$21.50) Размер сделки с левереджем ~$100,000.00 Средства от левереджа ~ $$99,000.00 Перейти на платформу":
+        - text: Корректировка финансирования овернайт по длинным позициям
+        - strong: Корректировка финансирования овернайт по длинным позициям
+        - table
+        - separator
+        - table:
+          - rowgroup:
+            - row "Маржа. Ваши инвестиции $1,000.00":
+              - cell "Маржа. Ваши инвестиции"
+              - cell "$1,000.00"
+            - row "Корректировка за овернайт Сборы рассчитываются от полной стоимости позиции -0.02154 % (-$21.50)":
+              - cell "Корректировка за овернайт Сборы рассчитываются от полной стоимости позиции"
+              - cell "-0.02154 % (-$21.50)"
+        - paragraph:
+          - strong: Размер сделки с левереджем ~$100,000.00
+        - paragraph:
+          - strong: Средства от левереджа ~ $$99,000.00
+        - separator
+        - link "Перейти на платформу":
+          - /url: ""
+      - cell "-0.02154%"
+    - row "Корректировка финансирования овернайт по коротким позициям Корректировка финансирования овернайт по коротким позициям Маржа. Ваши инвестиции $1,000.00 Корректировка за овернайт Сборы рассчитываются от полной стоимости позиции -0.000682 % (-$0.70) Размер сделки с левереджем ~$100,000.00 Средства от левереджа ~ $$99,000.00 Перейти на платформу -0.00068%":
+      - cell "Корректировка финансирования овернайт по коротким позициям Корректировка финансирования овернайт по коротким позициям Маржа. Ваши инвестиции $1,000.00 Корректировка за овернайт Сборы рассчитываются от полной стоимости позиции -0.000682 % (-$0.70) Размер сделки с левереджем ~$100,000.00 Средства от левереджа ~ $$99,000.00 Перейти на платформу":
+        - text: Корректировка финансирования овернайт по коротким позициям
+        - strong: Корректировка финансирования овернайт по коротким позициям
+        - table
+        - separator
+        - table:
+          - rowgroup:
+            - row "Маржа. Ваши инвестиции $1,000.00":
+              - cell "Маржа. Ваши инвестиции"
+              - cell "$1,000.00"
+            - row "Корректировка за овернайт Сборы рассчитываются от полной стоимости позиции -0.000682 % (-$0.70)":
+              - cell "Корректировка за овернайт Сборы рассчитываются от полной стоимости позиции"
+              - cell "-0.000682 % (-$0.70)"
+        - paragraph:
+          - strong: Размер сделки с левереджем ~$100,000.00
+        - paragraph:
+          - strong: Средства от левереджа ~ $$99,000.00
+        - separator
+        - link "Перейти на платформу":
+          - /url: ""
+      - cell "-0.00068%"
+    - row "Время корректировки финансирования овернайт 21:00 (UTC)":
+      - cell "Время корректировки финансирования овернайт"
+      - cell "21:00 (UTC)"
+    - row "Валюта USD":
+      - cell "Валюта"
+      - cell "USD"
+    - row "Минимальный объем торгов 0.001":
+      - cell "Минимальный объем торгов"
+      - cell "0.001"
+    - row "Маржа 1.00%":
+      - cell "Маржа"
+      - cell "1.00%"
+    - row "Фондовая биржа":
+      - cell "Фондовая биржа"
+      - cell
+    - row "Торговая комиссия1 0%":
+      - cell "Торговая комиссия1":
+        - text: Торговая комиссия
+        - superscript: "1"
+      - cell "0%"
+    - row "Плата за гарантированный стоп Плата за гарантированный стоп-лосс (GSL) взимается только в случае его срабатывания. Пожалуйста, смотрите раздел «Комиссии и сборы» на нашем сайте, если вам нужно больше подробной информации. 0.02%":
+      - cell "Плата за гарантированный стоп Плата за гарантированный стоп-лосс (GSL) взимается только в случае его срабатывания. Пожалуйста, смотрите раздел «Комиссии и сборы» на нашем сайте, если вам нужно больше подробной информации.":
+        - text: Плата за гарантированный стоп Плата за гарантированный стоп-лосс (GSL) взимается только в случае его срабатывания. Пожалуйста, смотрите раздел
+        - link "«Комиссии и сборы»":
+          - /url: /ru-int/ways-to-trade/fees-and-charges
+        - text: на нашем сайте, если вам нужно больше подробной информации.
+      - cell "0.02%"
+- paragraph:
+  - superscript: "1"
+  - text: Наша плата за исполнение вашей сделки - это спред, разница между ценой покупки и продажи. Пожалуйста, ознакомьтесь с разделом
+  - link "Комиссии и сборы":
+    - /url: https://capital.com/ru-int/ways-to-trade/fees-and-charges
+  - text: на нашем сайте для получения дополнительной информации
+- main:
+  - heading "Торговать US Tech 100 - US100" [level=2]
+  - heading "Последние статьи по индексам" [level=2]
+  - link "Торговля индексом Nasdaq 100 в преддверии отчетности Big Tech":
+    - /url: /ru-int/analysis/nasdaq100-apr272026-2
+    - img "Торговля индексом Nasdaq 100 в преддверии отчетности Big Tech"
+  - link "Торговля индексом Nasdaq 100 в преддверии отчетности Big Tech":
+    - /url: /ru-int/analysis/nasdaq100-apr272026-2
+  - text: Технические индикаторы демонстрируют бычий настрой на ключевых таймфреймах, в то время как крупные спекулянты остаются в длинных позициях, а розничные трейдеры преимущественно занимают короткие позиции. 11:11, 27 апрель 2026
+  - link:
+    - /url: /ru-int/trading-the-nasdaq-100-as-wti-flirts-with-100-again
+  - link "Настроения клиентов Capital.com по Nasdaq 100":
+    - /url: /ru-int/trading-the-nasdaq-100-as-wti-flirts-with-100-again
+  - text: Технические индикаторы на краткосрочных таймфреймах демонстрируют ухудшение, в то время как данные по настроениям показывают возвращение крупных спекулянтов к чистым длинным позициям согласно отчету Commitment of Traders (CoT). 09:38, 16 март 2026
+  - link "Торговля Nasdaq 100 на фоне «AI-паники»":
+    - /url: /ru-int/analysis/nasdaq100-february162026-2
+    - img "Торговля Nasdaq 100 на фоне «AI-паники»"
+  - link "Торговля Nasdaq 100 на фоне «AI-паники»":
+    - /url: /ru-int/analysis/nasdaq100-february162026-2
+  - text: Темы завышенных оценок, технологических сдвигов и ротации капитала в краткосрочной перспективе продолжают оказывать давление на техническую картину, однако по настроениям трейдеров по-прежнему преобладает покупка. 12:40, 16 февраль 2026
+  - link "Торговля Nasdaq 100 на фоне расследования в отношении председателя Пауэлла":
+    - /url: /ru-int/analysis/nasdaq100-january122026-2
+    - img "Торговля Nasdaq 100 на фоне расследования в отношении председателя Пауэлла"
+  - link "Торговля Nasdaq 100 на фоне расследования в отношении председателя Пауэлла":
+    - /url: /ru-int/analysis/nasdaq100-january122026-2
+  - text: Переход рынков в режим risk-off привёл к снижению фьючерсов, однако для подрыва долгосрочной позитивной технической картины и преобладающих покупательских настроений среди трейдеров потребуется нечто большее. 12:45, 12 Январь 2026
+  - strong
+  - text: Reuters News • Europe 12:02 (UTC), 25 Август 2026
+  - link "US STOCKS-Фьючерсы Уолл-стрит идут вверх в преддверии отчета Nvidia, данных об инфляции":
+    - /url: /ru-int/news/us-stocks-f-ucersy-uoll-strit-idut-vverh-v-preddverii-otceta-nvidia-dannyh
+    - strong: US STOCKS-Фьючерсы Уолл-стрит идут вверх в преддверии отчета Nvidia, данных об инфляции
+  - text: Reuters News • Europe 12:46 (UTC), 21 Август 2026
+  - link "US STOCKS-Фьючерсы на Уолл-стрит в плюсе после распродажи накануне":
+    - /url: /ru-int/news/us-stocks-f-ucersy-na-uoll-strit-v-pluse-posle-rasprodazi-nakanune
+    - strong: US STOCKS-Фьючерсы на Уолл-стрит в плюсе после распродажи накануне
+- complementary
+- heading "Мнения пользователей и рейтинги" [level=2]
+- text: Читайте отзывы наших клиентов с разным уровнем опыта.
+- region:
+  - group "1 of 12":
+    - link "2025-07-03 П**** Б**** супер удобное приложение. все интуитивно понятно. большой выбор языков, инструментов, удобная панель":
+      - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=072e21fa-df47-4473-8acf-22b349ed8610&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+      - text: 2025-07-03
+      - strong: П**** Б****
+      - paragraph: супер удобное приложение. все интуитивно понятно. большой выбор языков, инструментов, удобная панель
+  - group "2 of 12":
+    - link "2025-06-27 D**** Супер компания легко работать Деньги можно вывести быстро и различными способами служба поддержки клиентов работает":
+      - /url: https://www.trustpilot.com/review/capital.com
+      - text: 2025-06-27
+      - strong: D****
+      - paragraph: Супер компания легко работать Деньги можно вывести быстро и различными способами служба поддержки клиентов работает
+  - group "3 of 12":
+    - link "2025-06-09 Н** все понятно, без заморочек.Для новичков самое то!!!":
+      - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=072e21fa-df47-4473-8acf-22b349ed8610&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+      - text: 2025-06-09
+      - strong: Н**
+      - paragraph: все понятно, без заморочек.Для новичков самое то!!!
+  - button "Go to last slide"
+  - button "Next slide"
+- paragraph: Показаны наши отзывы с оценкой 4 и 5 звезд. Конкретные данные пользователей были намеренно анонимизированы для защиты их конфиденциальности в соответствии с требованиями GDPR
+- link "4.6":
+  - /url: https://www.tradingview.com/broker/Capitalcom/
+  - strong: "4.6"
+- link "Рейтинги и отзывы 4.7":
+  - /url: https://app.appsflyer.com/id1230088754?cp_device_id=072e21fa-df47-4473-8acf-22b349ed8610&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - strong: Рейтинги и отзывы
+  - strong: "4.7"
+- link "Рейтинги и отзывы 4.6":
+  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=072e21fa-df47-4473-8acf-22b349ed8610&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - strong: Рейтинги и отзывы
+  - strong: "4.6"
+- link "4.6":
+  - /url: https://www.trustpilot.com/review/capital.com
+  - strong: "4.6"
+- heading "Три шага для начала торговли" [level=2]
+- button
+- text: 1. Создайте аккаунт (применяется проверка) 2. Внесите депозит удобным способом 3. Начните, когда будете готовы
+- contentinfo:
+  - link:
+    - /url: /ru-int
+    - img
+  - link:
+    - /url: https://twitter.com/capitalcom
+  - link:
+    - /url: https://www.linkedin.com/company/capital.com/
+  - link:
+    - /url: https://www.instagram.com/capitalcom/
+  - link:
+    - /url: https://www.tiktok.com/@capitalcom_international
+  - link:
+    - /url: https://www.facebook.com/capitalcom/
+  - link:
+    - /url: https://www.reddit.com/r/capitalcom/
+  - link:
+    - /url: https://app.appsflyer.com/id1230088754?cp_device_id=072e21fa-df47-4473-8acf-22b349ed8610&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - link:
+    - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=072e21fa-df47-4473-8acf-22b349ed8610&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - link:
+    - /url: https://app.appsflyer.com/com.capital.trading.huawei-huawei?cp_device_id=072e21fa-df47-4473-8acf-22b349ed8610&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - text: "Страна / Область:"
+  - button "Kazakhstan"
+  - text: "• Язык:"
+  - button "Russian"
+  - text: "Вы также можете связаться с нами:"
+  - link "+7 727 357 4671":
+    - /url: tel:+7 727 357 4671
+    - strong: +7 727 357 4671
+    - strong
+  - text: •
+  - link "support@capital.com":
+    - /url: mailto:support@capital.com
+    - strong: support@capital.com
+  - strong: Трейдинг
+  - text: Трейдинг
+  - link "Торговать CFD":
+    - /url: /ru-int/ways-to-trade/cfd-trading
+  - link "Зарегистрировать демо-аккаунт":
+    - /url: /ru-int/trading-platforms/demo-account
+  - link "Перейти на Про-аккаунт":
+    - /url: /ru-int/professional
+  - text: Платформы
+  - link "Веб-платформа":
+    - /url: /ru-int/trading-platforms/web-platform
+  - link "Мобильные приложение":
+    - /url: /ru-int/trading-platforms/mobile-apps
+  - link "TradingView":
+    - /url: /ru-int/trading-platforms/trading-view
+  - link "MT4":
+    - /url: /ru-int/trading-platforms/mt4
+  - link "MT5":
+    - /url: /ru-int/trading-platforms/mt5
+  - text: Обучение
+  - link "Торговые стратегии":
+    - /url: /ru-int/learn/trading-strategies
+  - link "Технический анализ":
+    - /url: /ru-int/learn/technical-analysis
+  - link "Психология трейдинга":
+    - /url: /ru-int/learn/trading-psychology
+  - link "Обучение":
+    - /url: /ru-int/learn
+  - strong: Рынки
+  - text: Наши рынки
+  - link "Рынки":
+    - /url: /ru-int/markets
+  - link "Акции":
+    - /url: /ru-int/markets/shares
+  - link "Форекс":
+    - /url: /ru-int/markets/forex
+  - link "Индексы":
+    - /url: /ru-int/markets/indices
+  - link "Сырьевые товары":
+    - /url: /ru-int/markets/commodities
+  - link "Криптовалюты":
+    - /url: /ru-int/markets/cryptocurrencies
+  - link "Облигации":
+    - /url: /ru-int/markets/bonds
+  - link "Процентные ставки":
+    - /url: /ru-int/markets/interest-rates
+  - text: Информация о рынке
+  - link "Анализ рынка":
+    - /url: /ru-int/analysis
+  - link "Ценообразование":
+    - /url: /ru-int/ways-to-trade/fees-and-charges
+    - strong: Ценообразование
+  - strong: О нас
+  - text: О нас
+  - link "О нас":
+    - /url: /ru-int/about-us
+  - link "Наши офисы":
+    - /url: /ru-int/about-us/our-offices
+  - link "Безопасна ли платформа Capital.com?":
+    - /url: /ru-int/security-measures
+  - link "Наша бизнес-модель":
+    - /url: /ru-int/about-us/how-capital-makes-money
+  - text: Карьера
+  - link "Партнерские программы":
+    - /url: /ru-int/partnerships
+  - link "Пригласите друга":
+    - /url: /ru-int/refer-a-friend
+  - text: Помощь
+  - link "Центр помощи":
+    - /url: /ru-int/help
+  - link "Уязвимость клиента":
+    - /url: /ru-int/help/client-vulnerability
+  - link "Связаться с нами":
+    - /url: /ru-int/contact-us
+  - text: Правовая информация
+  - link "Условия и правила":
+    - /url: /ru-int/terms-and-policies
+  - link "Жалобы":
+    - /url: /ru-int/help/complaints
+  - paragraph:
+    - text: CFD — это сложные инструменты, которые связаны с высоким риском быстрой потери средств из-за левереджа.
+    - strong: 79.75% аккаунтов розничных инвесторов теряют деньги при торговле CFD с этим брокером.
+    - text: Убедитесь, что вы понимаете, как работают CFD, и можете позволить себе высокий риск потери средств.
+  - paragraph
+  - paragraph: "Capital Com Online Investments Ltd — это компания с ограниченной ответственностью, зарегистрированная под номером 209236B. Capital Com Online Investments Ltd зарегистрирована в Содружестве Багамских Островов и имеет разрешение Комиссии по ценным бумагам Багамских Островов (номер лицензии SIA-F245). Юридический адрес компании: #3 Bayside Executive Park, Blake Road and West Bay Street, P. O. Box CB 13012, Нассау, Багамские Острова."
+  - paragraph: © 2026 Capital Com Online Investments Ltd
+  - link "Карта сайта":
+    - /url: /ru-int/sitemap
+  - link "Настройки файлов cookie":
+    - /url: ""
+  - link:
+    - /url: /ru-int
+  - link "Условия и положения":
+    - /url: /ru-int/terms-and-policies
+  - link "Процедура рассмотрения жалоб (SCB)":
+    - /url: /ru-int/help/complaints
+- button
+- alert: График US100 в Реальном Времени | Цена Индекса US Tech 100 | Capital.com
+```
+
+# Test source
+
+```ts
+  1   | import { expect } from "@playwright/test";
+  2   | 
+  3   | export class CTAComponent {
+  4   |   constructor(page, sectionConfig) {
+  5   |     this.page = page;
+  6   |     // this.root = page.locator(sectionConfig.root);
+  7   |     this.actions = sectionConfig.actions || {};
+  8   |     this.helpers = sectionConfig.helpers || {};
+  9   |     this.setup = sectionConfig.setup;
+  10  |     // this.skipRootValidation = sectionConfig.skipRootValidation;
+  11  |     this.root = this.resolveLocator(sectionConfig.root);
+  12  |   }
+  13  | 
+  14  |   async expectVisible() {
+  15  |     await expect(this.root).toBeVisible({ timeout: 20000 });
+  16  |   }
+  17  | 
+  18  |   resolveLocator(locatorConfig) {
+  19  |     if (!locatorConfig) {
+  20  |       throw new Error("Locator is undefined in CTA config");
+  21  |     }
+  22  | 
+  23  |     if (
+  24  |       typeof locatorConfig !== "string" &&
+  25  |       typeof locatorConfig !== "function"
+  26  |     ) {
+  27  |       throw new Error(
+  28  |         `Invalid locator type: ${typeof locatorConfig}. Value: ${JSON.stringify(locatorConfig)}`,
+  29  |       );
+  30  |     }
+  31  | 
+  32  |     if (typeof locatorConfig === "function") {
+  33  |       return locatorConfig(this.page);
+  34  |     }
+  35  | 
+  36  |     if (
+  37  |       locatorConfig.startsWith(":scope") ||
+  38  |       locatorConfig.startsWith("xpath=")
+  39  |     ) {
+  40  |       return this.root.locator(locatorConfig);
+  41  |     }
+  42  | 
+  43  |     return this.page.locator(locatorConfig);
+  44  |   }
+  45  | 
+  46  |   getActionLocator(actionName) {
+  47  |     return this.resolveLocator(this.actions[actionName].locator);
+  48  |   }
+  49  | 
+  50  |   getHelper(helperName) {
+  51  |     return this.resolveLocator(this.helpers[helperName]);
+  52  |   }
+  53  | 
+  54  |   async runSetup() {
+  55  |     if (!this.setup) {
+  56  |       return;
+  57  |     }
+  58  | 
+  59  |     await this.setup({
+  60  |       page: this.page,
+  61  |       getHelper: this.getHelper.bind(this),
+  62  |     });
+  63  |   }
+  64  | 
+  65  |   async runActionSetup(actionName) {
+  66  |     const action = this.actions[actionName];
+  67  | 
+  68  |     if (!action?.setup) {
+  69  |       return;
+  70  |     }
+  71  | 
+  72  |     await action.setup({
+  73  |       page: this.page,
+  74  |       getHelper: this.getHelper.bind(this),
+  75  |     });
+  76  | 
+  77  |     // console.log("ACTION SETUP DONE:", actionName);
+  78  |     // console.log("URL:", this.page.url());
+  79  |   }
+  80  | 
+  81  |   async click(actionName, { waitForNewPage = false } = {}) {
+  82  |     console.log("START CLICK", actionName);
+  83  | 
+  84  |     await this.runSetup();
+  85  |     await this.runActionSetup(actionName);
+  86  | 
+  87  |     const action = this.actions[actionName];
+  88  |     let locator = this.getActionLocator(actionName);
+  89  | 
+  90  |     if (action.locatorIndex !== undefined) {
+  91  |       locator = locator.nth(action.locatorIndex);
+  92  |     }
+  93  | 
+  94  |     const count = await locator.count();
+  95  |     console.log("COUNT", actionName, count);
+  96  | 
+  97  |     if (action.optional && count === 0) {
+  98  |       return { skipped: true };
+  99  |     }
+  100 | 
+> 101 |     await expect(locator).toBeVisible();
+      |                           ^ Error: expect(locator).toBeVisible() failed
+  102 |     await expect(locator).toBeEnabled();
+  103 | 
+  104 |     let newPagePromise;
+  105 | 
+  106 |     if (waitForNewPage) {
+  107 |       // newPagePromise = this.page.context().waitForEvent("page");
+  108 |       newPagePromise = this.page.waitForEvent("popup");
+  109 |     }
+  110 | 
+  111 |     // console.log(
+  112 |     //   await locator.evaluate((el) => {
+  113 |     //     const rect = el.getBoundingClientRect();
+  114 |     //     const center = {
+  115 |     //       x: rect.left + rect.width / 2,
+  116 |     //       y: rect.top + rect.height / 2,
+  117 |     //     };
+  118 | 
+  119 |     //     return {
+  120 |     //       text: el.textContent,
+  121 |     //       center,
+  122 |     //       elementAtPoint: document.elementFromPoint(center.x, center.y)
+  123 |     //         ?.outerHTML,
+  124 |     //     };
+  125 |     //   }),
+  126 |     // );
+  127 | 
+  128 |     await locator.click({ timeout: 2000 });
+  129 |     const newPage = newPagePromise ? await newPagePromise : null;
+  130 | 
+  131 |     return { skipped: false, locator, newPage };
+  132 |   }
+  133 | }
+  134 | 
+```

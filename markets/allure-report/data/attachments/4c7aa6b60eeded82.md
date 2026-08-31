@@ -1,0 +1,558 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: cta/generated.cta.spec.js >> markets page | tradingInstrument | tradedBtn
+- Location: tests/cta/generated.cta.spec.js:37:7
+
+# Error details
+
+```
+Error: expect(locator).toBeVisible() failed
+
+Locator: locator('[data-type="wdg_most_traded_btn"]').first()
+Expected: visible
+Timeout: 5000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 5000ms
+  - waiting for locator('[data-type="wdg_most_traded_btn"]').first()
+
+```
+
+```yaml
+- banner:
+  - text: Les CFD sont des instruments complexes et présentent un risque élevé de perte rapide en raison de l\'effet de levier.
+  - strong: 79.75 % des comptes d’investisseurs particuliers perdent de l’argent en tradant des CFD avec ce fournisseur.
+  - text: Vous devez vous demander si vous comprenez le fonctionnement des CFD et si vous pouvez vous permettre de prendre le risque élevé de perdre votre argent.
+  - link:
+    - /url: /fr-int
+    - img
+  - navigation:
+    - button "Trading":
+      - button "Trading"
+    - button "Marchés":
+      - button "Marchés"
+    - link "Tarification":
+      - /url: /fr-int/ways-to-trade/fees-and-charges
+    - button "À propos de nous":
+      - button "À propos de nous"
+  - button "fr"
+  - button "Se connecter"
+  - button "Ouvrir un compte"
+- paragraph:
+  - link "Accueil":
+    - /url: /fr-int
+  - text: •
+  - link "Les marchés":
+    - /url: /fr-int/markets
+  - text: •
+  - link "Matières premières":
+    - /url: /fr-int/markets/commodities
+  - text: •Gold Spot
+- heading "Négociation Gold Spot CFD" [level=1]
+- button "Ajouter aux favoris"
+- strong: "4436.89"
+- text: "-0.43%"
+- link:
+  - /url: ""
+- button "1 m"
+- button "5 m"
+- button "15 m"
+- button "30 m"
+- button "1h"
+- button "4h"
+- button "1j"
+- button "1s"
+- img
+- button "Voir le graphique détaillé"
+- link "Vendre 4436.39":
+  - /url: /instrument?id=27045129890124996
+  - text: Vendre
+  - paragraph: "4436.39"
+- link "Acheter 4436.89":
+  - /url: /instrument?id=27045129890124996
+  - text: Acheter
+  - paragraph: "4436.89"
+- text: "0.50 Bas: 4401.4 Élevé: 4611.69"
+- table
+- text: "Vendeurs: 24.78% Acheteurs: 75.22%"
+- button "Heures de Trading du Marché (UTC)":
+  - paragraph: Heures de Trading du Marché (UTC)
+  - strong: Ouvrir maintenant
+- strong: . Les cours des actions sont donnés à titre indicatif et peuvent différer des prix du marché en direct.
+- button "Résumé"
+- button "Données historiques"
+- strong: Conditions de trading
+- table:
+  - rowgroup:
+    - 'row "Type Ce marché financier est disponible pour le trading de CFD. En savoir plus sur : CFD CFD"':
+      - 'cell "Type Ce marché financier est disponible pour le trading de CFD. En savoir plus sur : CFD"':
+        - text: "Type Ce marché financier est disponible pour le trading de CFD. En savoir plus sur :"
+        - link "CFD":
+          - /url: /fr-int/ways-to-trade/cfd-trading
+      - cell "CFD"
+    - row "Écart 0.5":
+      - cell "Écart"
+      - cell "0.5"
+    - row "Frais de session nocturne pour une position longue Frais de session nocturne pour une position longue Marge. Votre investissement $1,000.00 Ajustement des fonds de overnight Frais sur la valeur totale de la position -0.015778 % (-$15.78) Taille de la position avec effet de levier ~$100,000.00 Valeur nominale avec effet de levier ~$99,000.00 Vers la plateforme -0.01578%":
+      - cell "Frais de session nocturne pour une position longue Frais de session nocturne pour une position longue Marge. Votre investissement $1,000.00 Ajustement des fonds de overnight Frais sur la valeur totale de la position -0.015778 % (-$15.78) Taille de la position avec effet de levier ~$100,000.00 Valeur nominale avec effet de levier ~$99,000.00 Vers la plateforme":
+        - text: Frais de session nocturne pour une position longue
+        - strong: Frais de session nocturne pour une position longue
+        - table
+        - separator
+        - table:
+          - rowgroup:
+            - row "Marge. Votre investissement $1,000.00":
+              - cell "Marge. Votre investissement"
+              - cell "$1,000.00"
+            - row "Ajustement des fonds de overnight Frais sur la valeur totale de la position -0.015778 % (-$15.78)":
+              - cell "Ajustement des fonds de overnight Frais sur la valeur totale de la position"
+              - cell "-0.015778 % (-$15.78)"
+        - paragraph:
+          - strong: Taille de la position avec effet de levier ~$100,000.00
+        - paragraph:
+          - strong: Valeur nominale avec effet de levier ~$99,000.00
+        - separator
+        - link "Vers la plateforme":
+          - /url: ""
+      - cell "-0.01578%"
+    - row "Frais de session nocturne pour une position courte Frais de session nocturne pour une position courte Marge. Votre investissement $1,000.00 Ajustement des fonds de overnight Frais sur la valeur totale de la position 0.007558 % ($7.56) Taille de la position avec effet de levier ~$100,000.00 Valeur nominale avec effet de levier ~$99,000.00 Vers la plateforme 0.00756%":
+      - cell "Frais de session nocturne pour une position courte Frais de session nocturne pour une position courte Marge. Votre investissement $1,000.00 Ajustement des fonds de overnight Frais sur la valeur totale de la position 0.007558 % ($7.56) Taille de la position avec effet de levier ~$100,000.00 Valeur nominale avec effet de levier ~$99,000.00 Vers la plateforme":
+        - text: Frais de session nocturne pour une position courte
+        - strong: Frais de session nocturne pour une position courte
+        - table
+        - separator
+        - table:
+          - rowgroup:
+            - row "Marge. Votre investissement $1,000.00":
+              - cell "Marge. Votre investissement"
+              - cell "$1,000.00"
+            - row "Ajustement des fonds de overnight Frais sur la valeur totale de la position 0.007558 % ($7.56)":
+              - cell "Ajustement des fonds de overnight Frais sur la valeur totale de la position"
+              - cell "0.007558 % ($7.56)"
+        - paragraph:
+          - strong: Taille de la position avec effet de levier ~$100,000.00
+        - paragraph:
+          - strong: Valeur nominale avec effet de levier ~$99,000.00
+        - separator
+        - link "Vers la plateforme":
+          - /url: ""
+      - cell "0.00756%"
+    - row "Horaires des frais de session nocturne 21:00 (UTC)":
+      - cell "Horaires des frais de session nocturne"
+      - cell "21:00 (UTC)"
+    - row "Devise USD":
+      - cell "Devise"
+      - cell "USD"
+    - row "Quantité minimale négociée 0.01":
+      - cell "Quantité minimale négociée"
+      - cell "0.01"
+    - row "Marge 1.00%":
+      - cell "Marge"
+      - cell "1.00%"
+    - row "Bourse":
+      - cell "Bourse"
+      - cell
+    - row "Commission sur trade1 0%":
+      - cell "Commission sur trade1":
+        - text: Commission sur trade
+        - superscript: "1"
+      - cell "0%"
+    - row "Prime de stop garanti Des frais de stop-loss garanti (SLG) ne sont facturés que si le SLG est déclenché. Veuillez consulter la section 'Tarifs et Frais de notre site web pour plus de détails. 0.03%":
+      - cell "Prime de stop garanti Des frais de stop-loss garanti (SLG) ne sont facturés que si le SLG est déclenché. Veuillez consulter la section 'Tarifs et Frais de notre site web pour plus de détails.":
+        - text: Prime de stop garanti Des frais de stop-loss garanti (SLG) ne sont facturés que si le SLG est déclenché. Veuillez consulter la section
+        - link "'Tarifs et Frais":
+          - /url: /fr-int/ways-to-trade/fees-and-charges
+        - text: de notre site web pour plus de détails.
+      - cell "0.03%"
+- paragraph:
+  - superscript: "1"
+  - text: Notre rémunération pour l’exécution de votre trade correspond au spread, soit la différence entre le prix d’achat et le prix de vente. Veuillez consulter la section
+  - link "Frais et Commissions":
+    - /url: https://capital.com/fr-int/ways-to-trade/fees-and-charges
+  - text: sur notre site internet pour plus d’informations
+- main:
+  - heading "Négociation Gold Spot" [level=2]
+  - heading "Derniers articles sur les matières premières" [level=2]
+  - link "Barres de cuivre":
+    - /url: /fr-int/analysis/copper-price-prediction
+    - img "Barres de cuivre"
+  - 'link "Prévisions du prix du cuivre : perspectives tierces"':
+    - /url: /fr-int/analysis/copper-price-prediction
+  - text: Les prix du cuivre sont revenus au centre de l'attention début 2026 après une période de forte volatilité, les mouvements récents plaçant le métal près de niveaux jamais atteints auparavant sur les principales bourses. 09:53, 15 Janvier 2026
+  - link "Prévisions sur le prix de l’aluminium":
+    - /url: /fr-int/analysis/aluminium-price-forecast
+    - img "Prévisions sur le prix de l’aluminium"
+  - 'link "Prévisions sur le prix de l’aluminium : que se passera-t-il après les sommets atteints en 10 ans ?"':
+    - /url: /fr-int/analysis/aluminium-price-forecast
+  - text: La forte demande et les contraintes de l’offre en Chine continueront-elles à faire grimper les prix de l’aluminium ? 11:01, 2 Décembre 2021
+  - strong
+  - text: Reuters News • Europe
+  - link "MARCHÉS MONDI AUX-Les actions chutent en Asie alors que le pétrole grimpe et que les taux de rendement restent élevés":
+    - /url: /fr-int/news/marches-mondi-aux-les-actions-chutent-en-asie-alors-que-le
+    - strong: MARCHÉS MONDI AUX-Les actions chutent en Asie alors que le pétrole grimpe et que les taux de rendement restent élevés
+  - text: Reuters News • Europe
+  - link "MARCHÉS MONDI AUX-Les actions chutent en Asie alors que le pétrole et les rendements restent élevés":
+    - /url: /fr-int/news/marches-mondi-aux-les-actions-chutent-en-asie-alors-que-le
+    - strong: MARCHÉS MONDI AUX-Les actions chutent en Asie alors que le pétrole et les rendements restent élevés
+  - text: Reuters News • Europe 21:17 (UTC), 28 Août 2026
+  - link "MARCHÉS MONDI AUX-Les actions reculent tandis que le dollar et les rendements obligataires progressent, Warsh alimentant les anticipations d'une hausse des taux":
+    - /url: /fr-int/news/marches-mondi-aux-les-actions-reculent-tandis-que-le-dollar-et
+    - strong: MARCHÉS MONDI AUX-Les actions reculent tandis que le dollar et les rendements obligataires progressent, Warsh alimentant les anticipations d'une hausse des taux
+  - text: Reuters News • Europe 15:48 (UTC), 28 Août 2026
+  - link "MARCHÉS MONDI AUX-Les actions progressent, tout comme les rendements à 2 ans et le dollar, alors que les anticipations de hausse des taux s'intensifient après le discours de Warsh":
+    - /url: /fr-int/news/marches-mondi-aux-les-actions-progressent-tout-comme-les-rendements-a
+    - strong: MARCHÉS MONDI AUX-Les actions progressent, tout comme les rendements à 2 ans et le dollar, alors que les anticipations de hausse des taux s'intensifient après le discours de Warsh
+  - text: Reuters News • Europe 12:20 (UTC), 28 Août 2026
+  - link "MARCHÉS MONDI AUX-Les actions devraient afficher une hausse hebdomadaire ; les marchés des changes et obligataires attendent les premières déclarations de Warsh à Jackson Hole":
+    - /url: /fr-int/news/marches-mondi-aux-les-actions-devraient-afficher-une-hausse-hebdomadaire
+    - strong: MARCHÉS MONDI AUX-Les actions devraient afficher une hausse hebdomadaire ; les marchés des changes et obligataires attendent les premières déclarations de Warsh à Jackson Hole
+  - text: Reuters News • Europe 08:49 (UTC), 28 Août 2026
+  - link "MARCHÉS MONDI AUX-Les actions devraient afficher une hausse hebdomadaire ; les marchés des changes et obligataires attendent les premiers pas de Warsh à Jackson Hole":
+    - /url: /fr-int/news/marches-mondi-aux-les-actions-devraient-afficher-une-hausse-hebdomadaire
+    - strong: MARCHÉS MONDI AUX-Les actions devraient afficher une hausse hebdomadaire ; les marchés des changes et obligataires attendent les premiers pas de Warsh à Jackson Hole
+  - text: Reuters News • Europe 05:33 (UTC), 28 Août 2026
+  - link "MARCHÉS MONDI AUX-Les marchés boursiers font preuve de prudence à la veille des premiers propos de Warsh à Jackson Hole ; les marchés des changes et obligataires retiennent leur souffle":
+    - /url: /fr-int/news/marches-mondi-aux-les-marches-boursiers-font-preuve-de-prudence-a
+    - strong: MARCHÉS MONDI AUX-Les marchés boursiers font preuve de prudence à la veille des premiers propos de Warsh à Jackson Hole ; les marchés des changes et obligataires retiennent leur souffle
+  - button
+  - text: Reuters News • Europe 11:42 (UTC), 27 Août 2026
+  - link "MISE À JOUR N° 2-La société sud-africaine Harmony augmente son dividende après une forte hausse de ses bénéfices":
+    - /url: /fr-int/news/mise-a-jour-n-2-la-societe-sud-africaine-harmony-augmente-son
+    - strong: MISE À JOUR N° 2-La société sud-africaine Harmony augmente son dividende après une forte hausse de ses bénéfices
+  - text: Reuters News • Europe 06:30 (UTC), 27 Août 2026
+  - link "MARCHÉS MONDI AUX-Les marchés boursiers asiatiques progressent pour la troisième journée consécutive, Nvidia ayant dépassé les attentes":
+    - /url: /fr-int/news/marches-mondi-aux-les-marches-boursiers-asiatiques-progressent-pour-la-troisieme
+    - strong: MARCHÉS MONDI AUX-Les marchés boursiers asiatiques progressent pour la troisième journée consécutive, Nvidia ayant dépassé les attentes
+  - text: Reuters News • Europe 01:58 (UTC), 27 Août 2026
+  - link "MARCHÉS MONDI AUX-Les marchés boursiers asiatiques progressent pour la troisième journée consécutive, Nvidia ayant dépassé les attentes":
+    - /url: /fr-int/news/marches-mondi-aux-les-marches-boursiers-asiatiques-progressent-pour-la-troisieme
+    - strong: MARCHÉS MONDI AUX-Les marchés boursiers asiatiques progressent pour la troisième journée consécutive, Nvidia ayant dépassé les attentes
+- complementary
+- heading "Avis et évaluations des utilisateurs" [level=2]
+- text: Consultez les commentaires de nos clients, quel que soit leur niveau d'expérience.
+- region:
+  - group "1 of 13":
+    - link "2025-07-02 a**************** Très bonne app s'agissant du Trading , c'est app est fiable et meme conseillé par les tradeur eux meme":
+      - /url: https://www.tradingview.com/broker/Capitalcom/
+      - text: 2025-07-02
+      - strong: a****************
+      - paragraph: Très bonne app s'agissant du Trading , c'est app est fiable et meme conseillé par les tradeur eux meme
+  - group "2 of 13":
+    - link "2025-06-29 b********* Une bonne plateforme, répond à toutes mes exigences, une seule demande lors du retrait d'argent d'un compte de trading, j'aimerais le recevoir sur une carte bancaire plus rapidement, mais dans l'ensemble je suis satisfait.":
+      - /url: https://www.tradingview.com/broker/Capitalcom/
+      - text: 2025-06-29
+      - strong: b*********
+      - paragraph: Une bonne plateforme, répond à toutes mes exigences, une seule demande lors du retrait d'argent d'un compte de trading, j'aimerais le recevoir sur une carte bancaire plus rapidement, mais dans l'ensemble je suis satisfait.
+  - group "3 of 13":
+    - link "2025-06-26 G***** En bourse depuis plus de 20 ans et perdu une fortune. Ici chez Capital, je ressens que je pourrai récupérer une partie grâce à l' outil qui me plaît, et l' accueil vraiment bien Les \"robots\" sont super accueillants et nous placent dans une position d' un avenir sympathique possible.":
+      - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=2f87e749-32e0-4d11-9bbe-9f68ee9cfcbb&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+      - text: 2025-06-26
+      - strong: G*****
+      - paragraph: En bourse depuis plus de 20 ans et perdu une fortune. Ici chez Capital, je ressens que je pourrai récupérer une partie grâce à l' outil qui me plaît, et l' accueil vraiment bien Les "robots" sont super accueillants et nous placent dans une position d' un avenir sympathique possible.
+  - button "Go to last slide"
+  - button "Next slide"
+- paragraph: Affichage de nos avis 4 et 5 étoiles. Les détails spécifiques des utilisateurs ont été intentionnellement anonymisés pour protéger leur vie privée conformément aux exigences du RGPD.
+- link "4.6":
+  - /url: https://www.tradingview.com/broker/Capitalcom/
+  - strong: "4.6"
+- link "Notes et Avis 4.7":
+  - /url: https://app.appsflyer.com/id1230088754?cp_device_id=2f87e749-32e0-4d11-9bbe-9f68ee9cfcbb&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - strong: Notes et Avis
+  - strong: "4.7"
+- link "Notes et Avis 4.6":
+  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=2f87e749-32e0-4d11-9bbe-9f68ee9cfcbb&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - strong: Notes et Avis
+  - strong: "4.6"
+- link "4.6":
+  - /url: https://www.trustpilot.com/review/capital.com
+  - strong: "4.6"
+- heading "Trois étapes pour commencer" [level=2]
+- button
+- text: 1. Créez votre compte (sous réserve d'éligibilité) 2. Déposez à votre convenance 3. Commencez quand vous êtes prêt
+- contentinfo:
+  - link:
+    - /url: /fr-int
+    - img
+  - link:
+    - /url: https://twitter.com/capitalcom
+  - link:
+    - /url: https://www.linkedin.com/company/capital.com/
+  - link:
+    - /url: https://www.instagram.com/capitalcom/
+  - link:
+    - /url: https://www.tiktok.com/@capitalcom_international
+  - link:
+    - /url: https://www.facebook.com/capitalcom/
+  - link:
+    - /url: https://www.reddit.com/r/capitalcom/
+  - link:
+    - /url: https://app.appsflyer.com/id1230088754?cp_device_id=2f87e749-32e0-4d11-9bbe-9f68ee9cfcbb&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - link:
+    - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=2f87e749-32e0-4d11-9bbe-9f68ee9cfcbb&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - link:
+    - /url: https://app.appsflyer.com/com.capital.trading.huawei-huawei?cp_device_id=2f87e749-32e0-4d11-9bbe-9f68ee9cfcbb&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - text: "Pays / Région:"
+  - button "Côte d'Ivoire"
+  - text: "• Langue:"
+  - button "French"
+  - text: "Vous pouvez également nous contacter :"
+  - link "+442080899989":
+    - /url: tel:+442080899989
+    - strong: "+442080899989"
+    - strong
+  - text: •
+  - link "support@capital.com":
+    - /url: mailto:support@capital.com
+    - strong: support@capital.com
+  - strong: Trading
+  - text: Trading
+  - link "Trader des CFD":
+    - /url: /fr-int/ways-to-trade/cfd-trading
+  - link "Calculateur de trading CFD":
+    - /url: /fr-int/ways-to-trade/cfd-trading/cfd-calculator
+  - link "Obtenir un compte démo":
+    - /url: /fr-int/trading-platforms/demo-account
+  - link "Remises":
+    - /url: /fr-int/ways-to-trade/rebates
+  - link "Obtenir un compte pro":
+    - /url: /fr-int/professional
+  - text: Plateformes
+  - link "Plateforme web":
+    - /url: /fr-int/trading-platforms/web-platform
+  - link "Application mobile":
+    - /url: /fr-int/trading-platforms/mobile-apps
+  - link "TradingView":
+    - /url: /fr-int/trading-platforms/trading-view
+  - link "MT4":
+    - /url: /fr-int/trading-platforms/mt4
+  - text: Apprendre
+  - link "Stratégies de trading":
+    - /url: /fr-int/learn/trading-strategies
+  - link "Analyse technique":
+    - /url: /fr-int/learn/technical-analysis
+  - link "La psychologie du trading":
+    - /url: /fr-int/learn/trading-psychology
+  - link "Apprendre":
+    - /url: /fr-int/learn
+  - link "Trading d’IPO":
+    - /url: /fr-int/learn/ipo
+  - strong: Marchés
+  - text: Nos marchés
+  - link "Les marchés":
+    - /url: /fr-int/markets
+  - link "Actions":
+    - /url: /fr-int/markets/shares
+  - link "Forex":
+    - /url: /fr-int/markets/forex
+  - link "Indices":
+    - /url: /fr-int/markets/indices
+  - link "Matières premières":
+    - /url: /fr-int/markets/commodities
+  - link "Cryptomonnaies":
+    - /url: /fr-int/markets/cryptocurrencies
+  - link "Obligations":
+    - /url: /fr-int/markets/bonds
+  - link "Taux d’intérêt":
+    - /url: /fr-int/markets/interest-rates
+  - text: Infos marchés
+  - link "Analyse du marché":
+    - /url: /fr-int/analysis
+  - link "Tarification":
+    - /url: /fr-int/ways-to-trade/fees-and-charges
+    - strong: Tarification
+  - strong: À propos de nous
+  - text: Qui nous sommes
+  - link "À propos":
+    - /url: /fr-int/about-us
+  - link "Viktor Prokopenya":
+    - /url: /fr-int//about-us/viktor-prokopenya
+  - link "Nos bureaux":
+    - /url: /fr-int/about-us/our-offices
+  - link "Capital.com est-il sûr ?":
+    - /url: /fr-int/security-measures
+  - link "Notre modèle économique":
+    - /url: /fr-int/about-us/how-capital-makes-money
+  - text: Travailler avec nous
+  - link "Programmes de partenariat":
+    - /url: /fr-int/partnerships
+  - link "Parrainez un ami":
+    - /url: /fr-int/refer-a-friend
+  - text: Aide
+  - link "Centre d’aide":
+    - /url: /fr-int/help
+  - link "Vulnérabilité du client":
+    - /url: /fr-int/help/client-vulnerability
+  - link "Nous contacter":
+    - /url: /fr-int/contact-us
+  - text: Mentions légales
+  - link "Conditions et politiques":
+    - /url: /fr-int/terms-and-policies
+  - link "Réclamations":
+    - /url: /fr-int/help/complaints
+  - paragraph:
+    - text: Les CFD sont des instruments complexes et présentent un risque élevé de perte rapide en raison de l\'effet de levier.
+    - strong: 79.75 % des comptes d’investisseurs particuliers perdent de l’argent en tradant des CFD avec ce fournisseur.
+    - text: Vous devez vous demander si vous comprenez le fonctionnement des CFD et si vous pouvez vous permettre de prendre le risque élevé de perdre votre argent.
+  - paragraph
+  - paragraph: "Capital Com Online Investments Ltd est une société à responsabilité limitée portant le numéro d\\'enregistrement 209236B. Capital Com Online Investments Ltd est une société enregistrée dans le Commonwealth des Bahamas et autorisée par la Commission des valeurs mobilières des Bahamas sous le numéro de licence SIA-F245. Le bureau enregistré de la société se situe au #3 Bayside Executive Park, Blake Road et West Bay Street, P. O. Box CB 13012, Nassau, Bahamas."
+  - paragraph: © 2026 Capital Com Online Investments Ltd
+  - link "Plan du site":
+    - /url: /fr-int/sitemap
+  - link "Paramètres des cookies":
+    - /url: ""
+  - link:
+    - /url: /fr-int
+  - link "Conditions Générales et Politiques":
+    - /url: /fr-int/terms-and-policies
+  - link "Procédure de réclamations (SCB)":
+    - /url: /fr-int/help/complaints
+- button
+- alert: Graphique Des Prix Actuels du Gold | Commerce Du Gold Spot | Capital.com
+```
+
+# Test source
+
+```ts
+  1   | import { expect } from "@playwright/test";
+  2   | 
+  3   | export class CTAComponent {
+  4   |   constructor(page, sectionConfig) {
+  5   |     this.page = page;
+  6   |     // this.root = page.locator(sectionConfig.root);
+  7   |     this.actions = sectionConfig.actions || {};
+  8   |     this.helpers = sectionConfig.helpers || {};
+  9   |     this.setup = sectionConfig.setup;
+  10  |     // this.skipRootValidation = sectionConfig.skipRootValidation;
+  11  |     this.root = this.resolveLocator(sectionConfig.root);
+  12  |   }
+  13  | 
+  14  |   async expectVisible() {
+  15  |     await expect(this.root).toBeVisible({ timeout: 20000 });
+  16  |   }
+  17  | 
+  18  |   resolveLocator(locatorConfig) {
+  19  |     if (!locatorConfig) {
+  20  |       throw new Error("Locator is undefined in CTA config");
+  21  |     }
+  22  | 
+  23  |     if (
+  24  |       typeof locatorConfig !== "string" &&
+  25  |       typeof locatorConfig !== "function"
+  26  |     ) {
+  27  |       throw new Error(
+  28  |         `Invalid locator type: ${typeof locatorConfig}. Value: ${JSON.stringify(locatorConfig)}`,
+  29  |       );
+  30  |     }
+  31  | 
+  32  |     if (typeof locatorConfig === "function") {
+  33  |       return locatorConfig(this.page);
+  34  |     }
+  35  | 
+  36  |     if (
+  37  |       locatorConfig.startsWith(":scope") ||
+  38  |       locatorConfig.startsWith("xpath=")
+  39  |     ) {
+  40  |       return this.root.locator(locatorConfig);
+  41  |     }
+  42  | 
+  43  |     return this.page.locator(locatorConfig);
+  44  |   }
+  45  | 
+  46  |   getActionLocator(actionName) {
+  47  |     return this.resolveLocator(this.actions[actionName].locator);
+  48  |   }
+  49  | 
+  50  |   getHelper(helperName) {
+  51  |     return this.resolveLocator(this.helpers[helperName]);
+  52  |   }
+  53  | 
+  54  |   async runSetup() {
+  55  |     if (!this.setup) {
+  56  |       return;
+  57  |     }
+  58  | 
+  59  |     await this.setup({
+  60  |       page: this.page,
+  61  |       getHelper: this.getHelper.bind(this),
+  62  |     });
+  63  |   }
+  64  | 
+  65  |   async runActionSetup(actionName) {
+  66  |     const action = this.actions[actionName];
+  67  | 
+  68  |     if (!action?.setup) {
+  69  |       return;
+  70  |     }
+  71  | 
+  72  |     await action.setup({
+  73  |       page: this.page,
+  74  |       getHelper: this.getHelper.bind(this),
+  75  |     });
+  76  | 
+  77  |     // console.log("ACTION SETUP DONE:", actionName);
+  78  |     // console.log("URL:", this.page.url());
+  79  |   }
+  80  | 
+  81  |   async click(actionName, { waitForNewPage = false } = {}) {
+  82  |     console.log("START CLICK", actionName);
+  83  | 
+  84  |     await this.runSetup();
+  85  |     await this.runActionSetup(actionName);
+  86  | 
+  87  |     const action = this.actions[actionName];
+  88  |     let locator = this.getActionLocator(actionName);
+  89  | 
+  90  |     if (action.locatorIndex !== undefined) {
+  91  |       locator = locator.nth(action.locatorIndex);
+  92  |     }
+  93  | 
+  94  |     const count = await locator.count();
+  95  |     console.log("COUNT", actionName, count);
+  96  | 
+  97  |     if (action.optional && count === 0) {
+  98  |       return { skipped: true };
+  99  |     }
+  100 | 
+> 101 |     await expect(locator).toBeVisible();
+      |                           ^ Error: expect(locator).toBeVisible() failed
+  102 |     await expect(locator).toBeEnabled();
+  103 | 
+  104 |     let newPagePromise;
+  105 | 
+  106 |     if (waitForNewPage) {
+  107 |       // newPagePromise = this.page.context().waitForEvent("page");
+  108 |       newPagePromise = this.page.waitForEvent("popup");
+  109 |     }
+  110 | 
+  111 |     // console.log(
+  112 |     //   await locator.evaluate((el) => {
+  113 |     //     const rect = el.getBoundingClientRect();
+  114 |     //     const center = {
+  115 |     //       x: rect.left + rect.width / 2,
+  116 |     //       y: rect.top + rect.height / 2,
+  117 |     //     };
+  118 | 
+  119 |     //     return {
+  120 |     //       text: el.textContent,
+  121 |     //       center,
+  122 |     //       elementAtPoint: document.elementFromPoint(center.x, center.y)
+  123 |     //         ?.outerHTML,
+  124 |     //     };
+  125 |     //   }),
+  126 |     // );
+  127 | 
+  128 |     await locator.click({ timeout: 2000 });
+  129 |     const newPage = newPagePromise ? await newPagePromise : null;
+  130 | 
+  131 |     return { skipped: false, locator, newPage };
+  132 |   }
+  133 | }
+  134 | 
+```

@@ -1,0 +1,4 @@
+USER: unauthorised
+EXPECTATION:  shows login form
+START CLICK buyBtn
+COUNT buyBtn 1

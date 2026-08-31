@@ -1,0 +1,6 @@
+USER: unregistered
+EXPECTATION:  shows signup form
+START CLICK tradedBtn
+COUNT tradedBtn 0
+URL AFTER CLICK: https://capital.com/vi-int/markets/interest-rates/3-month-sonia-future-3
+EXPECTATION ASSERTIONS shows signup form

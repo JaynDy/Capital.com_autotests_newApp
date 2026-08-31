@@ -1,0 +1,5 @@
+USER: unauthorised
+EXPECTATION:  shows login form
+START CLICK sellBtn
+COUNT sellBtn 0
+URL AFTER CLICK: https://capital.com/fr-fr/markets/interest-rates/3-month-sonia-future-3

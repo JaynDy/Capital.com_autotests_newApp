@@ -1,0 +1,5 @@
+Button enabled: true
+USER: unauthorised
+EXPECTATION:  shows login form
+START CLICK sellBtn
+COUNT sellBtn 1

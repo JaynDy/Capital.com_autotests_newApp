@@ -1,0 +1,6 @@
+USER: unregistered
+EXPECTATION:  shows signup form
+START CLICK addToFavouriteBtn
+COUNT addToFavouriteBtn 1
+URL AFTER CLICK: https://capital.com/hu-hu/markets/shares/nvidia-corp-reszvenyar-1
+EXPECTATION ASSERTIONS shows signup form

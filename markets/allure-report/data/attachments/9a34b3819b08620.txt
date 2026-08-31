@@ -1,0 +1,5 @@
+USER: unregistered
+EXPECTATION:  shows signup form
+START CLICK viewDetailedChartBtn
+COUNT viewDetailedChartBtn 0
+URL AFTER CLICK: https://capital.com/el-gr/markets/shares/nvidia-corp-time-metoches-1

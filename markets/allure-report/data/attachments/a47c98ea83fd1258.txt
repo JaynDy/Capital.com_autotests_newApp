@@ -1,0 +1,5 @@
+USER: unauthorised
+EXPECTATION:  shows login form
+START CLICK sellBtn
+COUNT sellBtn 0
+URL AFTER CLICK: https://capital.com/en-ae/markets/shares/nvidia-share-price

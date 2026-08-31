@@ -1,0 +1,6 @@
+USER: unregistered
+EXPECTATION:  shows signup form
+START CLICK alertBtn
+COUNT alertBtn 1
+URL AFTER CLICK: https://capital.com/hu-hu/markets/forex/euro-us-dollar-arfolyam-2
+EXPECTATION ASSERTIONS shows signup form

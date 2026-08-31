@@ -1,0 +1,6 @@
+USER: unregistered
+EXPECTATION:  shows signup form
+START CLICK longPositionGoToPlatformBtn
+COUNT longPositionGoToPlatformBtn 1
+URL AFTER CLICK: https://capital.com/en-au/markets/interest-rates/3-month-sonia-future-3
+EXPECTATION ASSERTIONS shows signup form

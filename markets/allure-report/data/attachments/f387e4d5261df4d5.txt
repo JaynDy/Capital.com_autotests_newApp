@@ -1,0 +1,3 @@
+USER: unregistered
+EXPECTATION:  shows login form
+START CLICK sellBtn

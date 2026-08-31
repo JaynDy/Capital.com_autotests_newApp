@@ -1,0 +1,6 @@
+USER: unauthorised
+EXPECTATION:  shows signup form
+START CLICK shortPositionGoToPlatformBtn
+COUNT shortPositionGoToPlatformBtn 1
+URL AFTER CLICK: https://capital.com/en-eu/markets/cryptocurrencies/bitcoin-to-us-dollar-chart
+EXPECTATION ASSERTIONS shows signup form

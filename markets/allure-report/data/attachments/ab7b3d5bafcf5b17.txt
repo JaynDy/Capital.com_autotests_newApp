@@ -1,0 +1,6 @@
+USER: unregistered
+EXPECTATION:  shows signup form
+START CLICK alertBtn
+COUNT alertBtn 1
+URL AFTER CLICK: https://capital.com/nl-nl/markets/commodities/gold-spot-handelswaren
+EXPECTATION ASSERTIONS shows signup form

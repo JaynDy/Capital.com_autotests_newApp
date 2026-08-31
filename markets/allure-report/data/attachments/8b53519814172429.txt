@@ -1,0 +1,5 @@
+USER: unauthorised
+EXPECTATION:  shows signup form
+START CLICK alertBtn
+COUNT alertBtn 0
+URL AFTER CLICK: https://capital.com/en-gb/markets/shares/nvidia-share-price

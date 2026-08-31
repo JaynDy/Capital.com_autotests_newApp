@@ -1,0 +1,141 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: cta/generated.cta.spec.js >> bonds page | tradingInstrument | buyBtn
+- Location: tests/cta/generated.cta.spec.js:37:7
+
+# Error details
+
+```
+TimeoutError: locator.click: Timeout 2000ms exceeded.
+Call log:
+  - waiting for locator('[data-type="market_buy_btn"]')
+    - locator resolved to <a data-type="market_buy_btn" href="/instrument?id=7096806391502020" class="sYXsF js-analyticsClick js-analyticsClick qAcWB">…</a>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - performing click action
+    - click action done
+    - waiting for scheduled navigations to finish
+
+```
+
+# Test source
+
+```ts
+  28  |         `Invalid locator type: ${typeof locatorConfig}. Value: ${JSON.stringify(locatorConfig)}`,
+  29  |       );
+  30  |     }
+  31  | 
+  32  |     if (typeof locatorConfig === "function") {
+  33  |       return locatorConfig(this.page);
+  34  |     }
+  35  | 
+  36  |     if (
+  37  |       locatorConfig.startsWith(":scope") ||
+  38  |       locatorConfig.startsWith("xpath=")
+  39  |     ) {
+  40  |       return this.root.locator(locatorConfig);
+  41  |     }
+  42  | 
+  43  |     return this.page.locator(locatorConfig);
+  44  |   }
+  45  | 
+  46  |   getActionLocator(actionName) {
+  47  |     return this.resolveLocator(this.actions[actionName].locator);
+  48  |   }
+  49  | 
+  50  |   getHelper(helperName) {
+  51  |     return this.resolveLocator(this.helpers[helperName]);
+  52  |   }
+  53  | 
+  54  |   async runSetup() {
+  55  |     if (!this.setup) {
+  56  |       return;
+  57  |     }
+  58  | 
+  59  |     await this.setup({
+  60  |       page: this.page,
+  61  |       getHelper: this.getHelper.bind(this),
+  62  |     });
+  63  |   }
+  64  | 
+  65  |   async runActionSetup(actionName) {
+  66  |     const action = this.actions[actionName];
+  67  | 
+  68  |     if (!action?.setup) {
+  69  |       return;
+  70  |     }
+  71  | 
+  72  |     await action.setup({
+  73  |       page: this.page,
+  74  |       getHelper: this.getHelper.bind(this),
+  75  |     });
+  76  | 
+  77  |     // console.log("ACTION SETUP DONE:", actionName);
+  78  |     // console.log("URL:", this.page.url());
+  79  |   }
+  80  | 
+  81  |   async click(actionName, { waitForNewPage = false } = {}) {
+  82  |     console.log("START CLICK", actionName);
+  83  | 
+  84  |     await this.runSetup();
+  85  |     await this.runActionSetup(actionName);
+  86  | 
+  87  |     const action = this.actions[actionName];
+  88  |     let locator = this.getActionLocator(actionName);
+  89  | 
+  90  |     if (action.locatorIndex !== undefined) {
+  91  |       locator = locator.nth(action.locatorIndex);
+  92  |     }
+  93  | 
+  94  |     const count = await locator.count();
+  95  |     console.log("COUNT", actionName, count);
+  96  | 
+  97  |     if (action.optional && count === 0) {
+  98  |       return { skipped: true };
+  99  |     }
+  100 | 
+  101 |     await expect(locator).toBeVisible();
+  102 |     await expect(locator).toBeEnabled();
+  103 | 
+  104 |     let newPagePromise;
+  105 | 
+  106 |     if (waitForNewPage) {
+  107 |       // newPagePromise = this.page.context().waitForEvent("page");
+  108 |       newPagePromise = this.page.waitForEvent("popup");
+  109 |     }
+  110 | 
+  111 |     // console.log(
+  112 |     //   await locator.evaluate((el) => {
+  113 |     //     const rect = el.getBoundingClientRect();
+  114 |     //     const center = {
+  115 |     //       x: rect.left + rect.width / 2,
+  116 |     //       y: rect.top + rect.height / 2,
+  117 |     //     };
+  118 | 
+  119 |     //     return {
+  120 |     //       text: el.textContent,
+  121 |     //       center,
+  122 |     //       elementAtPoint: document.elementFromPoint(center.x, center.y)
+  123 |     //         ?.outerHTML,
+  124 |     //     };
+  125 |     //   }),
+  126 |     // );
+  127 | 
+> 128 |     await locator.click({ timeout: 2000 });
+      |                   ^ TimeoutError: locator.click: Timeout 2000ms exceeded.
+  129 |     const newPage = newPagePromise ? await newPagePromise : null;
+  130 | 
+  131 |     return { skipped: false, locator, newPage };
+  132 |   }
+  133 | }
+  134 | 
+```

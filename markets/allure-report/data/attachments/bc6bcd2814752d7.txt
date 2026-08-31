@@ -1,0 +1,5 @@
+USER: unregistered
+EXPECTATION:  shows signup form
+START CLICK alertBtn
+COUNT alertBtn 0
+URL AFTER CLICK: https://capital.com/it-it/markets/shares/nvidia-corp-prezzo-azione-1

@@ -1,0 +1,5 @@
+USER: unregistered
+EXPECTATION:  shows login form
+START CLICK buyBtn
+COUNT buyBtn 0
+URL AFTER CLICK: https://capital.com/ar-int/markets/shares/nvidia-corp-as-ar-alashm-1

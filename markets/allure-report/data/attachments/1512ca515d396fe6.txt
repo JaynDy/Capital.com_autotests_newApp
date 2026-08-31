@@ -1,0 +1,6 @@
+USER: unauthorised
+EXPECTATION:  shows signup form
+START CLICK tradedBtn
+COUNT tradedBtn 0
+URL AFTER CLICK: https://capital.com/fr-fr/markets/forex/euro-us-dollar-taux-2
+EXPECTATION ASSERTIONS shows signup form

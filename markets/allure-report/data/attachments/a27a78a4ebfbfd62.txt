@@ -1,0 +1,5 @@
+USER: unregistered
+EXPECTATION:  shows login form
+START CLICK sellBtn
+COUNT sellBtn 0
+URL AFTER CLICK: https://capital.com/fr-fr/markets/shares/nvidia-corp-prix-d-une-action-1

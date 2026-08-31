@@ -1,0 +1,6 @@
+USER: unauthorised
+EXPECTATION:  shows signup form
+START CLICK viewDetailedChartBtn
+COUNT viewDetailedChartBtn 1
+URL AFTER CLICK: https://capital.com/el-gr/markets/forex/euro-us-dollar-isotimia-2
+EXPECTATION ASSERTIONS shows signup form
