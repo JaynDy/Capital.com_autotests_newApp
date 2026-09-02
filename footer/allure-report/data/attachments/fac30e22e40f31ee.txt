@@ -1,0 +1,6 @@
+USER: unauthorised
+EXPECTATION:  opens cookie menu
+START CLICK cookieSettingsLink
+COUNT cookieSettingsLink 1
+URL AFTER CLICK: https://capital.com/fr-int
+EXPECTATION ASSERTIONS opens cookie menu

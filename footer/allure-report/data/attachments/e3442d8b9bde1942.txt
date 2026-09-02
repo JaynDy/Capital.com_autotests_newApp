@@ -1,0 +1,6 @@
+USER: authorised
+EXPECTATION:  { type: 'redirect', page: 'main' }
+START CLICK logo
+COUNT logo 1
+URL AFTER CLICK: https://capital.com/en-gb
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'main' }

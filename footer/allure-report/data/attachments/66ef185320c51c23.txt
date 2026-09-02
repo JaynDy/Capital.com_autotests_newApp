@@ -1,0 +1,5 @@
+USER: authorised
+EXPECTATION:  opens external link
+START CLICK instagramIcon
+COUNT instagramIcon 0
+URL AFTER CLICK: https://capital.com/fr-fr

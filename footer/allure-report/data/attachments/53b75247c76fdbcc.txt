@@ -1,0 +1,6 @@
+USER: unauthorised
+EXPECTATION:  opens external link
+START CLICK linkedinIcon
+COUNT linkedinIcon 1
+URL AFTER CLICK: https://capital.com/vi-int
+EXPECTATION ASSERTIONS opens external link
