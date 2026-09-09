@@ -1,0 +1,5 @@
+USER: unauthorised
+EXPECTATION:  { type: 'redirect', page: 'sitemap' }
+START CLICK sitemapLink
+COUNT sitemapLink 0
+URL AFTER CLICK: https://capital.com/mn-int

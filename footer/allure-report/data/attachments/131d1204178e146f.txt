@@ -1,0 +1,6 @@
+USER: unauthorised
+EXPECTATION:  { type: 'redirect', page: 'sitemap' }
+START CLICK sitemapLink
+COUNT sitemapLink 1
+URL AFTER CLICK: https://capital.com/en-ae
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'sitemap' }

@@ -1,0 +1,6 @@
+USER: unauthorised
+EXPECTATION:  { type: 'redirect', page: 'main' }
+START CLICK logo
+COUNT logo 1
+URL AFTER CLICK: https://capital.com/zh-hant
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'main' }
