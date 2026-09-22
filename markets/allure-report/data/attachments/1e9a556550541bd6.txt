@@ -1,0 +1,6 @@
+USER: unregistered
+EXPECTATION:  shows signup form
+START CLICK signupBtn
+COUNT signupBtn 1
+URL AFTER CLICK: https://capital.com/nl-nl/markets/commodities
+EXPECTATION ASSERTIONS shows signup form
