@@ -1,0 +1,6 @@
+USER: authorised
+EXPECTATION:  opens external link
+START CLICK riskDisclosureStatementLink
+COUNT riskDisclosureStatementLink 1
+URL AFTER CLICK: https://capital.com/en-gb
+EXPECTATION ASSERTIONS opens external link

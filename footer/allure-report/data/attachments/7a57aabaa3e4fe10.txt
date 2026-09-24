@@ -1,0 +1,6 @@
+USER: unregistered
+EXPECTATION:  opens regional settings window
+START CLICK langSwitcherBtn
+COUNT langSwitcherBtn 1
+URL AFTER CLICK: https://capital.com/de-int
+EXPECTATION ASSERTIONS opens regional settings window
