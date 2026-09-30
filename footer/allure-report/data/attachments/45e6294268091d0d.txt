@@ -1,0 +1,6 @@
+USER: authorised
+EXPECTATION:  { type: 'redirect', page: 'termsAndPolicies' }
+START CLICK termsAndPoliciesLink
+COUNT termsAndPoliciesLink 1
+URL AFTER CLICK: https://capital.com/ar-ae
+EXPECTATION ASSERTIONS { type: 'redirect', page: 'termsAndPolicies' }

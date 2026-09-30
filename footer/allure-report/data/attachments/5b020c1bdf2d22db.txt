@@ -1,0 +1,6 @@
+USER: authorised
+EXPECTATION:  opens regional settings window
+START CLICK countrySwitcherBtn
+COUNT countrySwitcherBtn 1
+URL AFTER CLICK: https://capital.com/it-it
+EXPECTATION ASSERTIONS opens regional settings window

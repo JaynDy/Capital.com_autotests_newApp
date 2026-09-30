@@ -1,0 +1,6 @@
+USER: unregistered
+EXPECTATION:  exist corresponding license
+START CLICK licenseText
+COUNT licenseText 1
+URL AFTER CLICK: https://capital.com/en-ae
+EXPECTATION ASSERTIONS exist corresponding license

@@ -1,0 +1,5 @@
+USER: unregistered
+EXPECTATION:  opens external link
+START CLICK tiktokIcon
+COUNT tiktokIcon 0
+URL AFTER CLICK: https://capital.com/it-it
