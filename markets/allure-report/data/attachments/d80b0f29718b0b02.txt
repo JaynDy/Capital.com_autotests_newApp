@@ -1,0 +1,6 @@
+USER: unregistered
+EXPECTATION:  shows signup form
+START CLICK readyToJoinSignUpBtn
+COUNT readyToJoinSignUpBtn 1
+URL AFTER CLICK: https://capital.com/de-de/markets/cryptocurrencies/chart-bitcoin-to-us-dollar
+EXPECTATION ASSERTIONS shows signup form

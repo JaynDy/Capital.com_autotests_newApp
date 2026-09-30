@@ -1,0 +1,6 @@
+USER: unauthorised
+EXPECTATION:  shows signup form
+START CLICK readyToJoinSignUpBtn
+COUNT readyToJoinSignUpBtn 1
+URL AFTER CLICK: https://capital.com/es-int/markets/forex/euro-us-dollar-tipo-2
+EXPECTATION ASSERTIONS shows signup form

@@ -1,0 +1,6 @@
+USER: unauthorised
+EXPECTATION:  shows signup form
+START CLICK signupBtn
+COUNT signupBtn 1
+URL AFTER CLICK: https://capital.com/fr-fr/markets/forex
+EXPECTATION ASSERTIONS shows signup form

@@ -1,0 +1,6 @@
+USER: unregistered
+EXPECTATION:  shows signup form
+START CLICK tradedBtn
+COUNT tradedBtn 0
+URL AFTER CLICK: https://capital.com/vi-int/markets/cryptocurrencies/bitcoin-to-us-dollar-chart
+EXPECTATION ASSERTIONS shows signup form
