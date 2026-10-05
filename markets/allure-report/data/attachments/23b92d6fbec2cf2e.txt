@@ -1,0 +1,7 @@
+Button enabled: true
+USER: unauthorised
+EXPECTATION:  shows login form
+START CLICK sellBtn
+COUNT sellBtn 1
+URL AFTER CLICK: https://capital.com/trading/platform/charting?id=15839732013552836
+EXPECTATION ASSERTIONS shows login form

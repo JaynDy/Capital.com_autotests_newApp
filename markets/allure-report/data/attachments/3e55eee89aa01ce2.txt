@@ -1,0 +1,7 @@
+Button enabled: true
+USER: unauthorised
+EXPECTATION:  shows signup form
+START CLICK longPositionGoToPlatformBtn
+COUNT longPositionGoToPlatformBtn 1
+URL AFTER CLICK: https://capital.com/zh-hans/markets/bonds/us-treasury-bond-spot
+EXPECTATION ASSERTIONS shows signup form

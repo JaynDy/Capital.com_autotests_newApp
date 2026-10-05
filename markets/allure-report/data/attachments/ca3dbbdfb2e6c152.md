@@ -1,0 +1,1683 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: cta/generated.cta.spec.js >> financeNews page | mostTradedMarketsBlock | tradedBtn
+- Location: tests/cta/generated.cta.spec.js:37:7
+
+# Error details
+
+```
+Error: expect(locator).toBeVisible() failed
+
+Locator: locator('[data-type="wdg_most_traded_btn"]').first()
+Expected: visible
+Timeout: 5000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 5000ms
+  - waiting for locator('[data-type="wdg_most_traded_btn"]').first()
+
+```
+
+```yaml
+- banner:
+  - text: CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage.
+  - strong: 79.75% of retail investor accounts lose money when trading CFDs with this provider.
+  - text: You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money.
+  - link:
+    - /url: /en-int
+    - img
+  - navigation:
+    - button "Trading":
+      - button "Trading"
+    - button "Markets":
+      - button "Markets"
+    - link "Pricing":
+      - /url: /en-int/ways-to-trade/fees-and-charges
+    - button "About":
+      - button "About"
+  - button "en"
+  - button "Log In"
+  - button "Open account"
+- paragraph:
+  - link "Home":
+    - /url: /en-int
+  - text: •Finance news
+- heading "News and Analysis" [level=1]
+- paragraph: Latest updates on markets, finance, politics, and more — all in one place.
+- link "All":
+  - /url: /en-int/news
+- link "Forex":
+  - /url: /en-int/news?category=forex
+- link "Shares":
+  - /url: /en-int/news?category=stocks
+- link "Indices":
+  - /url: /en-int/news?category=indices
+- link "Commodities":
+  - /url: /en-int/news?category=commodities
+- link "Cryptocurrencies":
+  - /url: /en-int/news?category=cryptocurrencies
+- main:
+  - heading "Main headlines" [level=2]
+  - paragraph: The biggest stories making headlines right now - breaking events and top news as they happen.
+  - link:
+    - /url: /en-int/news/france-s-government-bond-yields-hit-highest-since-2002-ahead-of
+    - img
+  - button "Breaking news"
+  - text: Published by Reuters News •
+  - paragraph: 08:01 (UTC), 1 October 2026
+  - link "France's government bond yields hit highest since 2002 ahead of budget":
+    - /url: /en-int/news/france-s-government-bond-yields-hit-highest-since-2002-ahead-of
+    - heading "France's government bond yields hit highest since 2002 ahead of budget" [level=3]
+  - separator
+  - link:
+    - /url: /en-int/news/india-s-top-court-disposes-of-fortis-petition-against-court-ordered-forensic
+    - img
+  - button
+  - text: by Reuters News •
+  - paragraph: 11:22 (UTC), 28 September 2026
+  - link "India's top court disposes of Fortis' petition against court-ordered forensic audit":
+    - /url: /en-int/news/india-s-top-court-disposes-of-fortis-petition-against-court-ordered-forensic
+    - heading "India's top court disposes of Fortis' petition against court-ordered forensic audit" [level=3]
+  - heading "News roundup" [level=2]
+  - text: The top business and political stories moving markets and making headlines worldwide.
+  - button
+  - text: Reuters News 3 hours ago
+  - link "Gold gains as October Fed rate hike prospects fade":
+    - /url: /en-int/news/gold-gains-as-october-fed-rate-hike-prospects-fade
+    - strong: Gold gains as October Fed rate hike prospects fade
+  - button "Gold -0.13%"
+  - button "Silver +0.41%"
+  - button "Palladium +0.39%"
+  - text: Reuters News 6 hours ago
+  - 'link "The energy transition is starting to feed itself: Maguire"':
+    - /url: /en-int/news/the-energy-transition-is-starting-to-feed-itself-maguire
+    - strong: "The energy transition is starting to feed itself: Maguire"
+  - button "TSLA -0.11%"
+  - button "VIE +0.86%"
+  - button "NUE +0.25%"
+  - button
+  - text: Reuters News 8 hours ago
+  - link "Soccer-Portugal secure place in Nations League quarter-finals":
+    - /url: /en-int/news/soccer-portugal-secure-place-in-nations-league-quarter-finals
+    - strong: Soccer-Portugal secure place in Nations League quarter-finals
+  - button
+  - text: Reuters News 15 hours ago
+  - link "Brazilians head to polls in high-stakes, polarized election":
+    - /url: /en-int/news/brazilians-head-to-polls-in-high-stakes-polarized-election
+    - strong: Brazilians head to polls in high-stakes, polarized election
+  - button
+  - text: Reuters News 15 hours ago
+  - link "Tennis-Djokovic rallies past Zverev in thriller to reach China Open semi-finals":
+    - /url: /en-int/news/tennis-djokovic-rallies-past-zverev-in-thriller-to-reach-china-open
+    - strong: Tennis-Djokovic rallies past Zverev in thriller to reach China Open semi-finals
+  - button
+  - text: Reuters News 19 hours ago
+  - link "Motor racing-Verstappen wins chaotic rain-delayed Bahrain Grand Prix in Malaysia":
+    - /url: /en-int/news/motor-racing-verstappen-wins-chaotic-rain-delayed-bahrain-grand-prix-in-malaysia
+    - strong: Motor racing-Verstappen wins chaotic rain-delayed Bahrain Grand Prix in Malaysia
+  - button "HIMS 0%"
+  - button "IBRX 0%"
+  - button "RACE 0%"
+  - button
+  - text: Reuters News 21 hours ago
+  - link "Motor racing-Bahrain Grand Prix gets underway at Sepang after long rain delay":
+    - /url: /en-int/news/motor-racing-bahrain-grand-prix-gets-underway-at-sepang-after-long
+    - strong: Motor racing-Bahrain Grand Prix gets underway at Sepang after long rain delay
+  - button
+  - text: Reuters News 22:47 (UTC), 3 October 2026
+  - link "Soccer-UAE beat Oman to reach Gulf Cup final against Saudi":
+    - /url: /en-int/news/soccer-uae-beat-oman-to-reach-gulf-cup-final-against-saudi
+    - strong: Soccer-UAE beat Oman to reach Gulf Cup final against Saudi
+  - text: Reuters News 16:10 (UTC), 3 October 2026
+  - link "ShinyHunters hacker in FBI data theft detained in Jordan, cooperating with bureau, sources say":
+    - /url: /en-int/news/shinyhunters-hacker-in-fbi-data-theft-detained-in-jordan-cooperating
+    - strong: ShinyHunters hacker in FBI data theft detained in Jordan, cooperating with bureau, sources say
+  - button "GME +3.95%"
+  - button "AMZN -0.11%"
+  - button
+  - text: Reuters News 03:37 (UTC), 3 October 2026
+  - link "'Handful' of G20 countries reject US stance on excess industrial capacity":
+    - /url: /en-int/news/handful-of-g20-countries-reject-us-stance-on-excess-industrial
+    - strong: "'Handful' of G20 countries reject US stance on excess industrial capacity"
+  - button "Load more"
+- complementary:
+  - strong: Latest News
+  - text: Zawya an hour ago
+  - 'link "SNG: Oraya Developer enters UAE with debut Marjan Beach project"':
+    - /url: /en-int/news/sng-oraya-developer-enters-uae-with-debut-marjan-beach-project
+    - strong: "SNG: Oraya Developer enters UAE with debut Marjan Beach project"
+  - button "DVLT 2.17%"
+  - button "QBTS -3.62%"
+  - button "HIMS 0%"
+  - button
+  - text: Reuters News an hour ago
+  - link "India's HDFC Bank rises after CEO appointment":
+    - /url: /en-int/news/india-s-hdfc-bank-rises-after-ceo-appointment
+    - strong: India's HDFC Bank rises after CEO appointment
+  - button "HDB -0.53%"
+  - button "IBN +0.99%"
+  - button
+  - text: Reuters News an hour ago
+  - link "Copper ticks up as Fed rate hike bets cool":
+    - /url: /en-int/news/copper-ticks-up-as-fed-rate-hike-bets-cool
+    - strong: Copper ticks up as Fed rate hike bets cool
+  - button "Natural Gas +0.4%"
+  - button "Copper -0.27%"
+  - button "Nickel -0.3%"
+  - button
+  - text: Reuters News an hour ago
+  - link "Egypt non-oil downturn deepens in September as orders slump, PMI shows":
+    - /url: /en-int/news/egypt-non-oil-downturn-deepens-in-september-as-orders-slump-pmi
+    - strong: Egypt non-oil downturn deepens in September as orders slump, PMI shows
+  - button "SPGI +0.76%"
+  - text: Zawya an hour ago
+  - 'link "SNG: Riyadh Air unveils first Boeing 787-9 plane in Indigo livery"':
+    - /url: /en-int/news/sng-riyadh-air-unveils-first-boeing-787-9-plane-in-indigo
+    - strong: "SNG: Riyadh Air unveils first Boeing 787-9 plane in Indigo livery"
+  - text: Reuters News an hour ago
+  - link "Snapdeal parent AceVector drops 11.5% in market debut after over $50 million IPO":
+    - /url: /en-int/news/snapdeal-parent-acevector-drops-11-5-in-market-debut-after-over
+    - strong: Snapdeal parent AceVector drops 11.5% in market debut after over $50 million IPO
+  - button "GME +3.95%"
+  - button "AMZN -0.11%"
+  - text: Public Technologies an hour ago
+  - link "OKP Holdings says associated company Chong Kuo Development liquidation is completed, entity dissolved":
+    - /url: /en-int/news/okp-holdings-says-associated-company-chong-kuo-development-liquidation-is
+    - strong: OKP Holdings says associated company Chong Kuo Development liquidation is completed, entity dissolved
+  - button "S68sg +0.19%"
+  - button
+  - text: Reuters News an hour ago
+  - link "Indian central bank likely intervenes to support rupee, traders say":
+    - /url: /en-int/news/indian-central-bank-likely-intervenes-to-support-rupee-traders-say
+    - strong: Indian central bank likely intervenes to support rupee, traders say
+  - button "USD/INR -0.11%"
+  - button
+  - text: Reuters News an hour ago
+  - link "Accenture forecast boosts Indian IT stocks, lifts Nifty IT index":
+    - /url: /en-int/news/accenture-forecast-boosts-indian-it-stocks-lifts-nifty-it-index
+    - strong: Accenture forecast boosts Indian IT stocks, lifts Nifty IT index
+  - button "GME +3.95%"
+  - button "MSTR +0.56%"
+  - button "AMZN -0.11%"
+  - button
+  - text: Reuters News an hour ago
+  - link "Saudi non-oil growth hits seven-month high in September, PMI shows":
+    - /url: /en-int/news/saudi-non-oil-growth-hits-seven-month-high-in-september-pmi-shows
+    - strong: Saudi non-oil growth hits seven-month high in September, PMI shows
+  - button "1010 -0.65%"
+  - text: Reuters News an hour ago
+  - link "Gaw Capital seeks Hong Kong listing for real estate private debt fund":
+    - /url: /en-int/news/gaw-capital-seeks-hong-kong-listing-for-real-estate-private
+    - strong: Gaw Capital seeks Hong Kong listing for real estate private debt fund
+  - button "3968 +0.4%"
+  - text: GlobeNewswire an hour ago
+  - 'link "Crypto News: AlphaPepe Presale Nears Binance Listing While XRP Price Prediction Targets $28"':
+    - /url: /en-int/news/crypto-news-alphapepe-presale-nears-binance-listing-while-xrp-price
+    - strong: "Crypto News: AlphaPepe Presale Nears Binance Listing While XRP Price Prediction Targets $28"
+  - button "GME +3.95%"
+  - button "AMZN -0.11%"
+  - text: ACCESS Newswire an hour ago
+  - 'link "Papa John''s International, Inc. (PZZA) Class Action Lawsuit: Levi & Korsinsky Reminds Investors of November 2, 2026 Deadline"':
+    - /url: /en-int/news/papa-john-s-international-inc-pzza-class-action-lawsuit-levi
+    - strong: "Papa John's International, Inc. (PZZA) Class Action Lawsuit: Levi & Korsinsky Reminds Investors of November 2, 2026 Deadline"
+  - button "HIMS 0%"
+  - button "PZZA +0.05%"
+  - button "IBRX 0%"
+  - button
+  - text: Reuters News an hour ago
+  - link "Turkey - Factors to Watch on Oct 5":
+    - /url: /en-int/news/turkey-factors-to-watch-on-oct-5
+    - strong: Turkey - Factors to Watch on Oct 5
+  - button "USD/TRY 0%"
+  - text: Zawya an hour ago
+  - link "Saudi Energy affiliate secures $2.58bln debt package for Rabigh 2 expansion":
+    - /url: /en-int/news/saudi-energy-affiliate-secures-2-58bln-debt-package-for-rabigh-2
+    - strong: Saudi Energy affiliate secures $2.58bln debt package for Rabigh 2 expansion
+  - button "HSBA 0%"
+  - button "HSBC 0%"
+  - button "0005 0%"
+  - text: ACCESS Newswire an hour ago
+  - link "Did You Lose Money on Aardvark Therapeutics, Inc. (AARD)? Levi & Korsinsky Urges Investors to Act Before October 13, 2026":
+    - /url: /en-int/news/did-you-lose-money-on-aardvark-therapeutics-inc-aard-levi
+    - strong: Did You Lose Money on Aardvark Therapeutics, Inc. (AARD)? Levi & Korsinsky Urges Investors to Act Before October 13, 2026
+  - text: Public Technologies an hour ago
+  - link "Honda develops in-motion wireless EV charging road technology for large commercial vehicles":
+    - /url: /en-int/news/honda-develops-in-motion-wireless-ev-charging-road-technology-for-large
+    - strong: Honda develops in-motion wireless EV charging road technology for large commercial vehicles
+  - button "HIMS 0%"
+  - button "IBRX 0%"
+  - button "7267 -0.03%"
+  - text: Public Technologies an hour ago
+  - link "Honda showcases Honda CI-powered driver assist smartphone app at CEATEC 2026":
+    - /url: /en-int/news/honda-showcases-honda-ci-powered-driver-assist-smartphone-app-at-ceatec
+    - strong: Honda showcases Honda CI-powered driver assist smartphone app at CEATEC 2026
+  - button "HIMS 0%"
+  - button "IBRX 0%"
+  - button "7267 -0.03%"
+  - text: Public Technologies an hour ago
+  - link "Mitsubishi Heavy wins follow-up order for 8 two-car trains for Singapore SPLRT":
+    - /url: /en-int/news/mitsubishi-heavy-wins-follow-up-order-for-8-two-car-trains-for
+    - strong: Mitsubishi Heavy wins follow-up order for 8 two-car trains for Singapore SPLRT
+  - button "7011 -0.67%"
+  - text: Public Technologies an hour ago
+  - link "Dura completes acquisitions of PSI Services and KTV Group Øst":
+    - /url: /en-int/news/dura-completes-acquisitions-of-psi-services-and-ktv-group-ost
+    - strong: Dura completes acquisitions of PSI Services and KTV Group Øst
+  - text: ACCESS Newswire an hour ago
+  - link "Contact Levi & Korsinsky by October 13, 2026 to Join Class Action Against The Simply Good Foods Company (SMPL)":
+    - /url: /en-int/news/contact-levi-korsinsky-by-october-13-2026-to-join
+    - strong: Contact Levi & Korsinsky by October 13, 2026 to Join Class Action Against The Simply Good Foods Company (SMPL)
+  - button "SMPL 0%"
+  - text: Reuters News an hour ago
+  - link "Former Prince Andrew takes police to court over Epstein files arrest, Telegraph says":
+    - /url: /en-int/news/former-prince-andrew-takes-police-to-court-over-epstein-files
+    - strong: Former Prince Andrew takes police to court over Epstein files arrest, Telegraph says
+  - text: Zawya an hour ago
+  - 'link "SNG: Al Othaim unveils $4.3bln Saudi real estate investment plans"':
+    - /url: /en-int/news/sng-al-othaim-unveils-4-3bln-saudi-real-estate-investment-plans
+    - strong: "SNG: Al Othaim unveils $4.3bln Saudi real estate investment plans"
+  - button "DVLT 2.17%"
+  - button "QBTS -3.62%"
+  - button "HIMS 0%"
+  - text: Newsfile an hour ago
+  - 'link "RETRANSMISSION: Advanced Gold Signs MOU to Acquire Corcoran Silver Gold Property with Historical Inferred Silver Resource"':
+    - /url: /en-int/news/retransmission-advanced-gold-signs-mou-to-acquire-corcoran-silver-gold
+    - strong: "RETRANSMISSION: Advanced Gold Signs MOU to Acquire Corcoran Silver Gold Property with Historical Inferred Silver Resource"
+  - button "Gold -0.13%"
+  - button
+  - text: Zawya an hour ago
+  - 'link "SNG: Eskan Bank signs up First Bahrain for sale of Salman City residences"':
+    - /url: /en-int/news/sng-eskan-bank-signs-up-first-bahrain-for-sale-of
+    - strong: "SNG: Eskan Bank signs up First Bahrain for sale of Salman City residences"
+  - text: Public Technologies an hour ago
+  - link "MedX Health names Monaderm as European sales agent for SkinSecure platform":
+    - /url: /en-int/news/medx-health-names-monaderm-as-european-sales-agent-for-skinsecure
+    - strong: MedX Health names Monaderm as European sales agent for SkinSecure platform
+  - text: Public Technologies an hour ago
+  - link "Green Rain Energy taps FG Relations to expand investor outreach across Europe and US":
+    - /url: /en-int/news/green-rain-energy-taps-fg-relations-to-expand-investor-outreach
+    - strong: Green Rain Energy taps FG Relations to expand investor outreach across Europe and US
+  - button "NDAQ -0.97%"
+  - text: Modular Finance an hour ago
+  - link "DURA COMPLETES ACQUISITIONS OF PSI SERVICES AB AND KTV GROUP ØST AS":
+    - /url: /en-int/news/dura-completes-acquisitions-of-psi-services-ab-and-ktv-group
+    - strong: DURA COMPLETES ACQUISITIONS OF PSI SERVICES AB AND KTV GROUP ØST AS
+  - button "GME +3.95%"
+  - button "MSTR +0.56%"
+  - button "AMZN -0.11%"
+  - text: Reuters News an hour ago
+  - link "Italy - Factors to watch on October 5":
+    - /url: /en-int/news/italy-factors-to-watch-on-october-5
+    - strong: Italy - Factors to watch on October 5
+  - button
+  - text: GlobeNewswire an hour ago
+  - link "Portnoy Law Firm Announces Class Action on Behalf of Papa John’s International, Inc. Investors":
+    - /url: /en-int/news/portnoy-law-firm-announces-class-action-on-behalf-of-papa
+    - strong: Portnoy Law Firm Announces Class Action on Behalf of Papa John’s International, Inc. Investors
+  - button "HIMS 0%"
+  - button "PZZA +0.05%"
+  - button "IBRX 0%"
+  - text: GlobeNewswire an hour ago
+  - link "Green Rain Energy Holdings Engages FG Relations to Expand Investor Communications Across Europe and the United States":
+    - /url: /en-int/news/green-rain-energy-holdings-engages-fg-relations-to-expand-investor
+    - strong: Green Rain Energy Holdings Engages FG Relations to Expand Investor Communications Across Europe and the United States
+  - button
+  - text: Reuters News an hour ago
+  - link "Smoky Singapore gears up to talk money ahead of F1":
+    - /url: /en-int/news/smoky-singapore-gears-up-to-talk-money-ahead-of-f1
+    - strong: Smoky Singapore gears up to talk money ahead of F1
+  - button "FWONAus +1.32%"
+  - text: Reuters News an hour ago
+  - link "IMF, Sri Lanka strike staff-level pact on funding of $345 million":
+    - /url: /en-int/news/imf-sri-lanka-strike-staff-level-pact-on-funding-of-345
+    - strong: IMF, Sri Lanka strike staff-level pact on funding of $345 million
+  - text: Public Technologies an hour ago
+  - link "Eco World Development issues 58,180 shares via warrant exercises at MYR 1.16 each":
+    - /url: /en-int/news/eco-world-development-issues-58-180-shares-via-warrant-exercises-at
+    - strong: Eco World Development issues 58,180 shares via warrant exercises at MYR 1.16 each
+  - button
+  - text: Reuters News an hour ago
+  - link "GLOBAL MARKETS-Stocks upbeat, dollar rises at euro's expense":
+    - /url: /en-int/news/global-markets-stocks-upbeat-dollar-rises-at-euro-s-expense
+    - strong: GLOBAL MARKETS-Stocks upbeat, dollar rises at euro's expense
+  - button "MSCI 0%"
+  - button "Gold -0.13%"
+  - button "Oil - Crude 0%"
+  - button
+  - text: Reuters News an hour ago
+  - link "India's HDFC Bank rises after CEO appointment":
+    - /url: /en-int/news/india-s-hdfc-bank-rises-after-ceo-appointment
+    - strong: India's HDFC Bank rises after CEO appointment
+  - button "HDB -0.53%"
+  - button
+  - text: Reuters News an hour ago
+  - link "INDIA STOCKS-Indian shares open higher as Fed-hike fears, oil prices ease; financials lead":
+    - /url: /en-int/news/india-stocks-indian-shares-open-higher-as-fed-hike-fears-oil-prices
+    - strong: INDIA STOCKS-Indian shares open higher as Fed-hike fears, oil prices ease; financials lead
+  - button "HIMS 0%"
+  - button "IBRX 0%"
+  - button "HDB -0.53%"
+  - text: Public Technologies an hour ago
+  - link "New World Development earns AA+ ESG rating, retains Hang Seng Corporate Sustainability Benchmark Index spot":
+    - /url: /en-int/news/new-world-development-earns-aa-esg-rating-retains-hang-seng
+    - strong: New World Development earns AA+ ESG rating, retains Hang Seng Corporate Sustainability Benchmark Index spot
+  - button "0017 0%"
+  - button "2600 0%"
+  - text: Reuters News an hour ago
+  - link "African Markets - Factors to watch on October 5":
+    - /url: /en-int/news/african-markets-factors-to-watch-on-october-5
+    - strong: African Markets - Factors to watch on October 5
+  - text: CoinDesk an hour ago
+  - link "Ether's bitcoin-beating Q3 rally came with a catch. Liquidity thinned.":
+    - /url: /en-int/news/ether-s-bitcoin-beating-q3-rally-came-with-a-catch-liquidity-thinned
+    - strong: Ether's bitcoin-beating Q3 rally came with a catch. Liquidity thinned.
+  - text: Reuters News an hour ago
+  - link "Euro slides as French fiscal worries grip markets":
+    - /url: /en-int/news/euro-slides-as-french-fiscal-worries-grip-markets
+    - strong: Euro slides as French fiscal worries grip markets
+  - button "EUR/USD 0%"
+  - button "USD/JPY 0%"
+  - button "GBP/USD 0%"
+  - text: ACCESS Newswire an hour ago
+  - 'link "Shareholders of UWM Holdings Corporation (UWMC): Protect Your Rights Before October 13, 2026 - Contact Levi & Korsinsky"':
+    - /url: /en-int/news/shareholders-of-uwm-holdings-corporation-uwmc-protect-your-rights-before
+    - strong: "Shareholders of UWM Holdings Corporation (UWMC): Protect Your Rights Before October 13, 2026 - Contact Levi & Korsinsky"
+  - button "UWMC 0%"
+  - text: Newsfile an hour ago
+  - 'link "SMPL DEADLINE: ROSEN, A TOP-RANKED LAW FIRM, Encourages The Simply Good Foods Company Investors to Secure Counsel Before Important October 13 Deadline in Securities Class Action - SMPL"':
+    - /url: /en-int/news/smpl-deadline-rosen-a-top-ranked-law-firm-encourages-the-simply
+    - strong: "SMPL DEADLINE: ROSEN, A TOP-RANKED LAW FIRM, Encourages The Simply Good Foods Company Investors to Secure Counsel Before Important October 13 Deadline in Securities Class Action - SMPL"
+  - button "SMPL 0%"
+  - text: Reuters News an hour ago
+  - link "Australia's Heavy Minerals soars as WA project drilling points to garnet-rich resource":
+    - /url: /en-int/news/australia-s-heavy-minerals-soars-as-wa-project-drilling-points-to
+    - strong: Australia's Heavy Minerals soars as WA project drilling points to garnet-rich resource
+  - button "DVLT 2.17%"
+  - button "QBTS -3.62%"
+  - button "HIMS 0%"
+  - button
+  - text: Reuters News an hour ago
+  - link "Australia's IODM set for best day in a month on revenue growth":
+    - /url: /en-int/news/australia-s-iodm-set-for-best-day-in-a-month-on
+    - strong: Australia's IODM set for best day in a month on revenue growth
+  - button "GME +3.95%"
+  - button "AMZN -0.11%"
+  - text: Reuters News 2 hours ago
+  - link "Australia's Zenith Minerals gains on funding offer from Aurenne Group":
+    - /url: /en-int/news/australia-s-zenith-minerals-gains-on-funding-offer-from-aurenne-group
+    - strong: Australia's Zenith Minerals gains on funding offer from Aurenne Group
+  - button "MINau -0.76%"
+  - button "Gold -0.13%"
+  - text: Public Technologies 2 hours ago
+  - link "Automotive Ventures urges legacy automakers to partner with Chinese EV makers to cut costs, speed development":
+    - /url: /en-int/news/automotive-ventures-urges-legacy-automakers-to-partner-with-chinese-ev
+    - strong: Automotive Ventures urges legacy automakers to partner with Chinese EV makers to cut costs, speed development
+  - button "7203 0%"
+  - text: Public Technologies 2 hours ago
+  - link "1982 Ventures-backed IPID raises USD 16 million Series A led by Foundation Capital":
+    - /url: /en-int/news/1982-ventures-backed-ipid-raises-usd-16-million-series-a-led
+    - strong: 1982 Ventures-backed IPID raises USD 16 million Series A led by Foundation Capital
+  - button "HSBA 0%"
+  - button "HSBC 0%"
+  - button "0005 0%"
+  - button
+  - text: Reuters News 2 hours ago
+  - link "BOJ says AI boom may have eased financial conditions, warns of market risks":
+    - /url: /en-int/news/boj-says-ai-boom-may-have-eased-financial-conditions-warns
+    - strong: BOJ says AI boom may have eased financial conditions, warns of market risks
+  - button "USD/JPY 0%"
+  - text: Newsfile 2 hours ago
+  - link "ROSEN, SKILLED INVESTOR COUNSEL, Encourages The Ensign Group, Inc. Investors to Inquire About Securities Class Action Investigation - ENSG":
+    - /url: /en-int/news/rosen-skilled-investor-counsel-encourages-the-ensign-group-inc-investors
+    - strong: ROSEN, SKILLED INVESTOR COUNSEL, Encourages The Ensign Group, Inc. Investors to Inquire About Securities Class Action Investigation - ENSG
+  - button "DB1 0%"
+  - button "ENSG 0%"
+  - button "SXRWd 0%"
+  - button
+  - text: Reuters News 2 hours ago
+  - link "Budweiser Brewing at record low as tax charge, provision set to hit profit":
+    - /url: /en-int/news/budweiser-brewing-at-record-low-as-tax-charge-provision-set
+    - strong: Budweiser Brewing at record low as tax charge, provision set to hit profit
+  - button "1876 0%"
+  - button "BUD 0%"
+  - button "ABI 0%"
+  - text: Newsfile 2 hours ago
+  - 'link "XTI AEROSPACE DEADLINE: ROSEN, A RANKED AND LEADING LAW FIRM, Encourages XTI Aerospace, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - XTIA"':
+    - /url: /en-int/news/xti-aerospace-deadline-rosen-a-ranked-and-leading-law-firm
+    - strong: "XTI AEROSPACE DEADLINE: ROSEN, A RANKED AND LEADING LAW FIRM, Encourages XTI Aerospace, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - XTIA"
+  - text: GlobeNewswire 2 hours ago
+  - 'link "UWMC DEADLINE: ROSEN, LEADING INVESTOR COUNSEL, Encourages UWM Holdings Corporation Investors to Secure Counsel Before Important October 13 Deadline in Securities Class Action - UWMC"':
+    - /url: /en-int/news/uwmc-deadline-rosen-leading-investor-counsel-encourages-uwm-holdings-corporation
+    - strong: "UWMC DEADLINE: ROSEN, LEADING INVESTOR COUNSEL, Encourages UWM Holdings Corporation Investors to Secure Counsel Before Important October 13 Deadline in Securities Class Action - UWMC"
+  - button "UWMC 0%"
+  - button
+  - text: Reuters News 2 hours ago
+  - link "Petrovietnam Gas seeks spot LNG cargo of 1.1 million MMBtu for October 15-30 delivery":
+    - /url: /en-int/news/petrovietnam-gas-seeks-spot-lng-cargo-of-1-1-million-mmbtu
+    - strong: Petrovietnam Gas seeks spot LNG cargo of 1.1 million MMBtu for October 15-30 delivery
+  - button "Natural Gas +0.4%"
+  - text: Newsfile 2 hours ago
+  - link "ROSEN, REGARDED INVESTOR COUNSEL, Encourages Elauwit Connection, Inc. Investors to Inquire About Securities Class Action Investigation - ELWT":
+    - /url: /en-int/news/rosen-regarded-investor-counsel-encourages-elauwit-connection-inc-investors-to
+    - strong: ROSEN, REGARDED INVESTOR COUNSEL, Encourages Elauwit Connection, Inc. Investors to Inquire About Securities Class Action Investigation - ELWT
+  - button "GME +3.95%"
+  - button "AMZN -0.11%"
+  - button "DB1 0%"
+  - text: Newsfile 2 hours ago
+  - 'link "HYLN DEADLINE: ROSEN, NATIONALLY REGARDED INVESTOR COUNSEL, Encourages Hyliion Holdings Corp. Investors to Secure Counsel Before Important Deadline in Securities Class Action - HYLN"':
+    - /url: /en-int/news/hyln-deadline-rosen-nationally-regarded-investor-counsel-encourages-hyliion-holdings
+    - strong: "HYLN DEADLINE: ROSEN, NATIONALLY REGARDED INVESTOR COUNSEL, Encourages Hyliion Holdings Corp. Investors to Secure Counsel Before Important Deadline in Securities Class Action - HYLN"
+  - button "HYLN 0%"
+  - text: Newsfile 2 hours ago
+  - link "ROSEN, REGARDED INVESTOR COUNSEL, Encourages Tigo Energy, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action First Filed by the Firm - TYGO":
+    - /url: /en-int/news/rosen-regarded-investor-counsel-encourages-tigo-energy-inc-investors-to
+    - strong: ROSEN, REGARDED INVESTOR COUNSEL, Encourages Tigo Energy, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action First Filed by the Firm - TYGO
+  - button "GME +3.95%"
+  - button "AMZN -0.11%"
+  - button
+  - text: Reuters News 2 hours ago
+  - 'link "Japan chief cabinet secretary: no plans for fresh release from national oil reserves"':
+    - /url: /en-int/news/japan-chief-cabinet-secretary-no-plans-for-fresh-release-from
+    - strong: "Japan chief cabinet secretary: no plans for fresh release from national oil reserves"
+  - button "Natural Gas +0.4%"
+  - text: Public Technologies 2 hours ago
+  - link "Krait Critical Minerals raises $1.51 million in non-brokered private placement":
+    - /url: /en-int/news/krait-critical-minerals-raises-1-51-million-in-non-brokered-private-placement
+    - strong: Krait Critical Minerals raises $1.51 million in non-brokered private placement
+  - text: Newsfile 2 hours ago
+  - link "ROSEN, A LONGSTANDING FIRM, Encourages York Space Systems Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - YSS":
+    - /url: /en-int/news/rosen-a-longstanding-firm-encourages-york-space-systems-inc-investors
+    - strong: ROSEN, A LONGSTANDING FIRM, Encourages York Space Systems Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - YSS
+  - button "YSS 0%"
+  - text: Newsfile 2 hours ago
+  - link "ROSEN, RECOGNIZED INVESTOR COUNSEL, Encourages Disc Medicine, Inc. Investors to Inquire About Securities Class Action Investigation - IRON":
+    - /url: /en-int/news/rosen-recognized-investor-counsel-encourages-disc-medicine-inc-investors-to
+    - strong: ROSEN, RECOGNIZED INVESTOR COUNSEL, Encourages Disc Medicine, Inc. Investors to Inquire About Securities Class Action Investigation - IRON
+  - button "IRON 0%"
+  - text: Newsfile 2 hours ago
+  - link "Krait Critical Minerals Closes Second Tranche of Private Placement; Aggregate Proceeds Reach $1.51 Million":
+    - /url: /en-int/news/krait-critical-minerals-closes-second-tranche-of-private-placement-aggregate
+    - strong: Krait Critical Minerals Closes Second Tranche of Private Placement; Aggregate Proceeds Reach $1.51 Million
+  - text: Newsfile 2 hours ago
+  - link "ROSEN, TRUSTED TRIAL COUNSEL, Encourages Unicycive Therapeutics, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - UNCY":
+    - /url: /en-int/news/rosen-trusted-trial-counsel-encourages-unicycive-therapeutics-inc-investors-to
+    - strong: ROSEN, TRUSTED TRIAL COUNSEL, Encourages Unicycive Therapeutics, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - UNCY
+  - text: Newsfile 2 hours ago
+  - link "ROSEN, GLOBAL INVESTOR RIGHTS COUNSEL, Encourages Gildan Activewear Inc. Investors to Inquire About Securities Class Action Investigation - GIL":
+    - /url: /en-int/news/rosen-global-investor-rights-counsel-encourages-gildan-activewear-inc-investors
+    - strong: ROSEN, GLOBAL INVESTOR RIGHTS COUNSEL, Encourages Gildan Activewear Inc. Investors to Inquire About Securities Class Action Investigation - GIL
+  - button "DVLT 2.17%"
+  - button "QBTS -3.62%"
+  - button "HIMS 0%"
+  - text: Zawya 2 hours ago
+  - 'link "SNG: Egypt property market enters new phase as GCC capital, inflation reshape sector"':
+    - /url: /en-int/news/sng-egypt-property-market-enters-new-phase-as-gcc-capital
+    - strong: "SNG: Egypt property market enters new phase as GCC capital, inflation reshape sector"
+  - button
+  - text: Public Technologies 2 hours ago
+  - link "Standard Chartered VCC platform assets under management top USD 2.6 billion":
+    - /url: /en-int/news/standard-chartered-vcc-platform-assets-under-management-top-usd-2-6
+    - strong: Standard Chartered VCC platform assets under management top USD 2.6 billion
+  - button "STAN -1.74%"
+  - text: Newsfile 2 hours ago
+  - link "ROSEN, SKILLED INVESTOR COUNSEL, Encourages Lincoln Educational Services Corporation Investors to Secure Counsel Before Important Deadline in Securities Class Action - LINC":
+    - /url: /en-int/news/rosen-skilled-investor-counsel-encourages-lincoln-educational-services-corporation-investors
+    - strong: ROSEN, SKILLED INVESTOR COUNSEL, Encourages Lincoln Educational Services Corporation Investors to Secure Counsel Before Important Deadline in Securities Class Action - LINC
+  - text: Zawya 2 hours ago
+  - 'link "SNG: Egypt plans sweeping real estate reforms to protect property buyers"':
+    - /url: /en-int/news/sng-egypt-plans-sweeping-real-estate-reforms-to-protect-property
+    - strong: "SNG: Egypt plans sweeping real estate reforms to protect property buyers"
+  - text: Public Technologies 2 hours ago
+  - link "1Komma5 analysis shows Germany public EV charging network expands 24% in past year":
+    - /url: /en-int/news/1komma5-analysis-shows-germany-public-ev-charging-network-expands-24
+    - strong: 1Komma5 analysis shows Germany public EV charging network expands 24% in past year
+  - text: Zawya 2 hours ago
+  - 'link "SNG: Saudi Arabia plans IPO, short-selling reforms within 90 days: CMA"':
+    - /url: /en-int/news/sng-saudi-arabia-plans-ipo-short-selling-reforms-within-90-days
+    - strong: "SNG: Saudi Arabia plans IPO, short-selling reforms within 90 days: CMA"
+  - text: Newsfile 2 hours ago
+  - 'link "UWMC DEADLINE: ROSEN, A LONGSTANDING FIRM, Encourages UWM Holdings Corporation Investors to Secure Counsel Before Important October 13 Deadline in Securities Class Action - UWMC"':
+    - /url: /en-int/news/uwmc-deadline-rosen-a-longstanding-firm-encourages-uwm-holdings-corporation
+    - strong: "UWMC DEADLINE: ROSEN, A LONGSTANDING FIRM, Encourages UWM Holdings Corporation Investors to Secure Counsel Before Important October 13 Deadline in Securities Class Action - UWMC"
+  - button "UWMC 0%"
+  - text: GlobeNewswire 2 hours ago
+  - 'link "XTI AEROSPACE DEADLINE: ROSEN, NATIONALLY REGARDED INVESTOR COUNSEL, Encourages XTI Aerospace, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - XTIA"':
+    - /url: /en-int/news/xti-aerospace-deadline-rosen-nationally-regarded-investor-counsel-encourages-xti
+    - strong: "XTI AEROSPACE DEADLINE: ROSEN, NATIONALLY REGARDED INVESTOR COUNSEL, Encourages XTI Aerospace, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - XTIA"
+  - text: Reuters News 3 hours ago
+  - link "Freeport LNG Reports Maintenance Of Train 2 At Texas Plant":
+    - /url: /en-int/news/freeport-lng-reports-maintenance-of-train-2-at-texas-plant
+    - strong: Freeport LNG Reports Maintenance Of Train 2 At Texas Plant
+  - button "Natural Gas +0.4%"
+  - button
+  - text: Public Technologies 3 hours ago
+  - link "Darma Henwa names Devan Peterendy Cesario Pasaribu, DR. Mulyono to audit committee":
+    - /url: /en-int/news/darma-henwa-names-devan-peterendy-cesario-pasaribu-dr-mulyono-to
+    - strong: Darma Henwa names Devan Peterendy Cesario Pasaribu, DR. Mulyono to audit committee
+  - text: Zawya 3 hours ago
+  - 'link "SNG: Egypt’s food industry exports to China rise 21% YoY in 8 months"':
+    - /url: /en-int/news/sng-egypt-s-food-industry-exports-to-china-rise-21-yoy
+    - strong: "SNG: Egypt’s food industry exports to China rise 21% YoY in 8 months"
+  - button "HIMS 0%"
+  - button "IBRX 0%"
+  - button
+  - text: Public Technologies 3 hours ago
+  - link "Farm Price Holdings declares 0.6 sen single-tier interim dividend per share":
+    - /url: /en-int/news/farm-price-holdings-declares-0-6-sen-single-tier-interim-dividend-per
+    - strong: Farm Price Holdings declares 0.6 sen single-tier interim dividend per share
+  - text: Zawya 3 hours ago
+  - 'link "SNG: GCC remittances soar to record $161bln in 2025, up 13.6%"':
+    - /url: /en-int/news/sng-gcc-remittances-soar-to-record-161bln-in-2025-up
+    - strong: "SNG: GCC remittances soar to record $161bln in 2025, up 13.6%"
+  - button "GME +3.95%"
+  - button "AMZN -0.11%"
+  - text: Reuters News 3 hours ago
+  - link "Japan's Nikkei hits 3-month high as AI shares rally":
+    - /url: /en-int/news/japan-s-nikkei-hits-3-month-high-as-ai-shares-rally
+    - strong: Japan's Nikkei hits 3-month high as AI shares rally
+  - button "GME +3.95%"
+  - button "AMZN -0.11%"
+  - button "9984 -0.2%"
+  - text: GlobeNewswire 3 hours ago
+  - link "Elevate Holistics Launches Telehealth Platform for At-Home, Low-Dose Ketamine Care":
+    - /url: /en-int/news/elevate-holistics-launches-telehealth-platform-for-at-home-low-dose-ketamine-care
+    - strong: Elevate Holistics Launches Telehealth Platform for At-Home, Low-Dose Ketamine Care
+  - button "HIMS 0%"
+  - button "GLW +2.4%"
+  - button "IBRX 0%"
+  - text: GlobeNewswire 3 hours ago
+  - link "Elevate Holistics Launches Telehealth Platform for At-Home, Low-Dose Ketamine Care":
+    - /url: /en-int/news/elevate-holistics-launches-telehealth-platform-for-at-home-low-dose-ketamine-care
+    - strong: Elevate Holistics Launches Telehealth Platform for At-Home, Low-Dose Ketamine Care
+  - button "HIMS 0%"
+  - button "GLW +2.4%"
+  - button "IBRX 0%"
+  - text: Reuters News 3 hours ago
+  - link "Vietnam dong, gold rates - October 5":
+    - /url: /en-int/news/vietnam-dong-gold-rates-october-5
+    - strong: Vietnam dong, gold rates - October 5
+  - button "Gold -0.13%"
+  - text: Zawya 3 hours ago
+  - 'link "SNG: Kenya electricity demand up, fuels more power imports"':
+    - /url: /en-int/news/sng-kenya-electricity-demand-up-fuels-more-power-imports
+    - strong: "SNG: Kenya electricity demand up, fuels more power imports"
+  - button
+  - text: Reuters News 3 hours ago
+  - link "Thailand plans to sell up to $10.7 billion of government bonds from October to December":
+    - /url: /en-int/news/thailand-plans-to-sell-up-to-10-7-billion-of-government
+    - strong: Thailand plans to sell up to $10.7 billion of government bonds from October to December
+  - button
+  - text: Zawya 3 hours ago
+  - 'link "SNG: Oman’s real GDP grows 5.1% in second quarter"':
+    - /url: /en-int/news/sng-oman-s-real-gdp-grows-5-1-in-second-quarter
+    - strong: "SNG: Oman’s real GDP grows 5.1% in second quarter"
+  - text: Newsfile 3 hours ago
+  - link "ROSEN, TRUSTED INVESTOR COUNSEL, Encourages Hims & Hers Health, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - HIMS":
+    - /url: /en-int/news/rosen-trusted-investor-counsel-encourages-hims-hers-health-inc
+    - strong: ROSEN, TRUSTED INVESTOR COUNSEL, Encourages Hims & Hers Health, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - HIMS
+  - button "HIMS 0%"
+  - button
+  - text: Reuters News 3 hours ago
+  - link "INDIA RUPEE-Indian rupee set for mild relief from dip in oil, fading Fed October hike bets":
+    - /url: /en-int/news/india-rupee-indian-rupee-set-for-mild-relief-from-dip-in
+    - strong: INDIA RUPEE-Indian rupee set for mild relief from dip in oil, fading Fed October hike bets
+  - button "MS +2.06%"
+  - button "USD/INR -0.11%"
+  - button
+  - text: Reuters News 3 hours ago
+  - link "Palm slightly recovers after six-session slide on firmer Chicago soyoil":
+    - /url: /en-int/news/palm-slightly-recovers-after-six-session-slide-on-firmer-chicago-soyoil
+    - strong: Palm slightly recovers after six-session slide on firmer Chicago soyoil
+  - button "Soybean 0%"
+  - button "Soybean Oil 0%"
+  - text: Newsfile 3 hours ago
+  - link "ROSEN, NATIONAL TRIAL COUNSEL, Encourages Barclays PLC Investors to Inquire About Securities Class Action Investigation - BCS":
+    - /url: /en-int/news/rosen-national-trial-counsel-encourages-barclays-plc-investors-to-inquire
+    - strong: ROSEN, NATIONAL TRIAL COUNSEL, Encourages Barclays PLC Investors to Inquire About Securities Class Action Investigation - BCS
+  - button "BARC 0%"
+  - text: Newsfile 3 hours ago
+  - link "ROSEN, GLOBAL INVESTOR COUNSEL, Encourages Honeywell Aerospace Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - HONA":
+    - /url: /en-int/news/rosen-global-investor-counsel-encourages-honeywell-aerospace-inc-investors-to
+    - strong: ROSEN, GLOBAL INVESTOR COUNSEL, Encourages Honeywell Aerospace Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - HONA
+  - text: Newsfile 3 hours ago
+  - 'link "TABOOLA.COM DEADLINE: ROSEN, NATIONAL INVESTOR RIGHTS COUNSEL, Encourages Taboola.com Ltd. Investors to Secure Counsel Before Important Deadline in Securities Class Action - TBLA"':
+    - /url: /en-int/news/taboola-com-deadline-rosen-national-investor-rights-counsel-encourages-taboola-com-ltd
+    - strong: "TABOOLA.COM DEADLINE: ROSEN, NATIONAL INVESTOR RIGHTS COUNSEL, Encourages Taboola.com Ltd. Investors to Secure Counsel Before Important Deadline in Securities Class Action - TBLA"
+  - button "GME +3.95%"
+  - button "AMZN -0.11%"
+  - text: Newsfile 3 hours ago
+  - 'link "SMARTSHEET DEADLINE: ROSEN, A TOP-RANKED LAW FIRM, Encourages Smartsheet Inc. Investors to Secure Counsel Before Important October 5 Deadline in Securities Class Action - SMAR"':
+    - /url: /en-int/news/smartsheet-deadline-rosen-a-top-ranked-law-firm-encourages-smartsheet-inc
+    - strong: "SMARTSHEET DEADLINE: ROSEN, A TOP-RANKED LAW FIRM, Encourages Smartsheet Inc. Investors to Secure Counsel Before Important October 5 Deadline in Securities Class Action - SMAR"
+  - button "GME +3.95%"
+  - button "AMZN -0.11%"
+  - button
+  - text: Reuters News 3 hours ago
+  - link "IMF reaches staff-level agreement with Sri Lanka on $345 million in funding":
+    - /url: /en-int/news/imf-reaches-staff-level-agreement-with-sri-lanka-on-345-million
+    - strong: IMF reaches staff-level agreement with Sri Lanka on $345 million in funding
+  - button
+  - text: Reuters News 3 hours ago
+  - link "US accuses California woman of spying for China, surveilling Taiwan leader's son":
+    - /url: /en-int/news/us-accuses-california-woman-of-spying-for-china-surveilling-taiwan
+    - strong: US accuses California woman of spying for China, surveilling Taiwan leader's son
+  - text: Newsfile 3 hours ago
+  - link "ROSEN, A TRUSTED AND LEADING LAW FIRM, Encourages TruBridge, Inc. Investors to Inquire About Securities Class Action Investigation - TBRG":
+    - /url: /en-int/news/rosen-a-trusted-and-leading-law-firm-encourages-trubridge-inc
+    - strong: ROSEN, A TRUSTED AND LEADING LAW FIRM, Encourages TruBridge, Inc. Investors to Inquire About Securities Class Action Investigation - TBRG
+  - button "DB1 0%"
+  - button "SXRWd 0%"
+  - button "SXRYd 0%"
+  - text: Reuters News 3 hours ago
+  - link "CBOT corn may fall into $4.89-1/4 to $4.92 range":
+    - /url: /en-int/news/cbot-corn-may-fall-into-4-89-1/4-to-4-92-range
+    - strong: CBOT corn may fall into $4.89-1/4 to $4.92 range
+  - button "LSE +0.02%"
+  - button "VHVG +0.49%"
+  - text: Newsfile 3 hours ago
+  - link "ROSEN, A LEADING LAW FIRM, Encourages FuelCell Energy, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - FCEL":
+    - /url: /en-int/news/rosen-a-leading-law-firm-encourages-fuelcell-energy-inc-investors
+    - strong: ROSEN, A LEADING LAW FIRM, Encourages FuelCell Energy, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - FCEL
+  - button "FCEL 0%"
+  - text: Reuters News 3 hours ago
+  - link "Inflation tailwind for Australian supermarkets as cost pressures build, Jefferies says":
+    - /url: /en-int/news/inflation-tailwind-for-australian-supermarkets-as-cost-pressures-build-jefferies
+    - strong: Inflation tailwind for Australian supermarkets as cost pressures build, Jefferies says
+  - button "COLau -0.48%"
+  - button "WOWau -0.91%"
+  - button
+  - text: Newsfile 3 hours ago
+  - link "ROSEN, LEADING INVESTOR COUNSEL, Encourages Qfin Holdings, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - QFIN":
+    - /url: /en-int/news/rosen-leading-investor-counsel-encourages-qfin-holdings-inc-investors-to
+    - strong: ROSEN, LEADING INVESTOR COUNSEL, Encourages Qfin Holdings, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - QFIN
+  - button "QFIN 0%"
+  - text: Reuters News 3 hours ago
+  - link "Australia's Capricorn Metals gains on higher gold production":
+    - /url: /en-int/news/australia-s-capricorn-metals-gains-on-higher-gold-production
+    - strong: Australia's Capricorn Metals gains on higher gold production
+  - button "MINau -0.76%"
+  - button "CMM 0%"
+  - button "Gold -0.13%"
+  - button
+  - text: Public Technologies 3 hours ago
+  - link "Yaskawa Vice Chairman Masahiro Ogawa dies, steps down as executive officer":
+    - /url: /en-int/news/yaskawa-vice-chairman-masahiro-ogawa-dies-steps-down-as-executive
+    - strong: Yaskawa Vice Chairman Masahiro Ogawa dies, steps down as executive officer
+  - button "6506 +0.9%"
+  - text: Reuters News 3 hours ago
+  - link "US military says it struck vessel in Caribbean, killing four":
+    - /url: /en-int/news/us-military-says-it-struck-vessel-in-caribbean-killing-four
+    - strong: US military says it struck vessel in Caribbean, killing four
+  - text: Reuters News 3 hours ago
+  - link "INDIA STOCKS-Indian shares poised to rebound as Fed-hike fears, oil prices ease":
+    - /url: /en-int/news/india-stocks-indian-shares-poised-to-rebound-as-fed-hike-fears-oil
+    - strong: INDIA STOCKS-Indian shares poised to rebound as Fed-hike fears, oil prices ease
+  - button "HIMS 0%"
+  - button "IBRX 0%"
+  - button "HDB -0.53%"
+  - text: Newsfile 3 hours ago
+  - link "ROSEN, A LEADING LAW FIRM, Encourages Papa John's International, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - PZZA":
+    - /url: /en-int/news/rosen-a-leading-law-firm-encourages-papa-john-s-international-inc
+    - strong: ROSEN, A LEADING LAW FIRM, Encourages Papa John's International, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - PZZA
+  - button "HIMS 0%"
+  - button "PZZA +0.05%"
+  - button "IBRX 0%"
+  - text: ACN Newswire 3 hours ago
+  - link "Cheche Group Looks to Australia as Home Batteries Take on a Bigger Grid Role":
+    - /url: /en-int/news/cheche-group-looks-to-australia-as-home-batteries-take-on
+    - strong: Cheche Group Looks to Australia as Home Batteries Take on a Bigger Grid Role
+  - text: Newsfile 3 hours ago
+  - 'link "INV DEADLINE: ROSEN, A LONGSTANDING FIRM, Encourages Innventure, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - INV"':
+    - /url: /en-int/news/inv-deadline-rosen-a-longstanding-firm-encourages-innventure-inc-investors
+    - strong: "INV DEADLINE: ROSEN, A LONGSTANDING FIRM, Encourages Innventure, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - INV"
+  - button "INV +5.94%"
+  - text: Reuters News 3 hours ago
+  - link "Australia's Rox Resources rises after securing $243 million debt package for Youanmi mine":
+    - /url: /en-int/news/australia-s-rox-resources-rises-after-securing-243-million-debt-package
+    - strong: Australia's Rox Resources rises after securing $243 million debt package for Youanmi mine
+  - button "MINau -0.76%"
+  - button "Gold -0.13%"
+  - text: Reuters News 3 hours ago
+  - link "US Coast Guard suspends search for people on crashed medical aircraft":
+    - /url: /en-int/news/us-coast-guard-suspends-search-for-people-on-crashed-medical
+    - strong: US Coast Guard suspends search for people on crashed medical aircraft
+  - text: Reuters News 3 hours ago
+  - link "EMERGING MARKETS-Taiwan dollar gains most among muted Asian currencies":
+    - /url: /en-int/news/emerging-markets-taiwan-dollar-gains-most-among-muted-asian-currencies
+    - strong: EMERGING MARKETS-Taiwan dollar gains most among muted Asian currencies
+  - text: Reuters News 3 hours ago
+  - link "Australia's OD6 Metals falls on discounted placement":
+    - /url: /en-int/news/australia-s-od6-metals-falls-on-discounted-placement
+    - strong: Australia's OD6 Metals falls on discounted placement
+  - button "Copper -0.27%"
+  - text: Newsfile 3 hours ago
+  - 'link "HDB FINAL DEADLINE: ROSEN, SKILLED INVESTOR COUNSEL, Encourages HDFC Bank Limited Investors to Secure Counsel Before Important October 13 Deadline in Securities Class Action - HDB"':
+    - /url: /en-int/news/hdb-final-deadline-rosen-skilled-investor-counsel-encourages-hdfc-bank
+    - strong: "HDB FINAL DEADLINE: ROSEN, SKILLED INVESTOR COUNSEL, Encourages HDFC Bank Limited Investors to Secure Counsel Before Important October 13 Deadline in Securities Class Action - HDB"
+  - button "HDB -0.53%"
+  - button
+  - text: Reuters News 3 hours ago
+  - link "Cambodia-based NagaCorp hits 1-1/2-year low as gaming revenue drops":
+    - /url: /en-int/news/cambodia-based-nagacorp-hits-1-1/2-year-low-as-gaming-revenue-drops
+    - strong: Cambodia-based NagaCorp hits 1-1/2-year low as gaming revenue drops
+  - button "HIMS 0%"
+  - button "IBRX 0%"
+  - button "HK50 +0.3%"
+  - text: Reuters News 3 hours ago
+  - link "CBOT soybeans may retest support at $12.74-3/4":
+    - /url: /en-int/news/cbot-soybeans-may-retest-support-at-12-74-3/4
+    - strong: CBOT soybeans may retest support at $12.74-3/4
+  - button "LSE +0.02%"
+  - button "VHVG +0.49%"
+  - text: Reuters News 3 hours ago
+  - link "Thai baht/US dollar weaker on Monday":
+    - /url: /en-int/news/thai-baht/us-dollar-weaker-on-monday
+    - strong: Thai baht/US dollar weaker on Monday
+  - button "Gold -0.13%"
+  - button
+  - text: Reuters News 3 hours ago
+  - link "Gold gains as October Fed rate hike prospects fade":
+    - /url: /en-int/news/gold-gains-as-october-fed-rate-hike-prospects-fade
+    - strong: Gold gains as October Fed rate hike prospects fade
+  - button "Gold -0.13%"
+  - button "Silver +0.41%"
+  - button "Palladium +0.39%"
+  - text: Reuters News 3 hours ago
+  - link "TSMC shares rise 3% after Elon Musk confirms TeraFab talks":
+    - /url: /en-int/news/tsmc-shares-rise-3-after-elon-musk-confirms-terafab-talks
+    - strong: TSMC shares rise 3% after Elon Musk confirms TeraFab talks
+  - button "TSLA -0.11%"
+  - button "SPCX 0%"
+  - button "GME +3.95%"
+  - text: Newsfile 3 hours ago
+  - 'link "GDDY DEADLINE: ROSEN, TOP-RANKED TRIAL ATTORNEYS, Encourages GoDaddy Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - GDDY"':
+    - /url: /en-int/news/gddy-deadline-rosen-top-ranked-trial-attorneys-encourages-godaddy-inc-investors
+    - strong: "GDDY DEADLINE: ROSEN, TOP-RANKED TRIAL ATTORNEYS, Encourages GoDaddy Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - GDDY"
+  - button "GME +3.95%"
+  - button "MSTR +0.56%"
+  - button "AMZN -0.11%"
+  - text: Public Technologies 3 hours ago
+  - link "Dexerials to exhibit at Glasstec 2026 trade fair":
+    - /url: /en-int/news/dexerials-to-exhibit-at-glasstec-2026-trade-fair
+    - strong: Dexerials to exhibit at Glasstec 2026 trade fair
+  - button "GME +3.95%"
+  - button "AMZN -0.11%"
+  - button "CAR 0%"
+  - text: Reuters News 3 hours ago
+  - link "Spot gold may retest support at $4,110":
+    - /url: /en-int/news/spot-gold-may-retest-support-at-4-110
+    - strong: Spot gold may retest support at $4,110
+  - button "MINau -0.76%"
+  - button "LSE +0.02%"
+  - button "VHVG +0.49%"
+  - text: Reuters News 4 hours ago
+  - link "OKX files with SEC to launch tokenized US stock trading platform - Bloomberg News":
+    - /url: /en-int/news/okx-files-with-sec-to-launch-tokenized-us-stock-trading
+    - strong: OKX files with SEC to launch tokenized US stock trading platform - Bloomberg News
+  - button "GME +3.95%"
+  - button "AMZN -0.11%"
+  - button
+  - text: Reuters News 4 hours ago
+  - link "Japan's 30-year bond yields hit record high ahead of PM's remarks":
+    - /url: /en-int/news/japan-s-30-year-bond-yields-hit-record-high-ahead-of-pm-s
+    - strong: Japan's 30-year bond yields hit record high ahead of PM's remarks
+  - button "USD/JPY 0%"
+  - button
+  - text: Reuters News 4 hours ago
+  - link "Suncor to sell offshore Canada oil stakes to Ithaca for $842 million":
+    - /url: /en-int/news/suncor-to-sell-offshore-canada-oil-stakes-to-ithaca-for
+    - strong: Suncor to sell offshore Canada oil stakes to Ithaca for $842 million
+  - button "SUca 0%"
+  - button "TRPca 0%"
+  - button "OTEX 0%"
+  - button
+  - text: Reuters News 4 hours ago
+  - link "China's Chery Automobile climbs as September sales volume rises":
+    - /url: /en-int/news/china-s-chery-automobile-climbs-as-september-sales-volume-rises
+    - strong: China's Chery Automobile climbs as September sales volume rises
+  - button "HIMS 0%"
+  - button "IBRX 0%"
+  - button "9973 -1.13%"
+  - text: Reuters News 4 hours ago
+  - link "US accuses California woman of spying for China, surveilling Taiwan leader's son":
+    - /url: /en-int/news/us-accuses-california-woman-of-spying-for-china-surveilling-taiwan
+    - strong: US accuses California woman of spying for China, surveilling Taiwan leader's son
+  - text: Reuters News 4 hours ago
+  - link "Dollar holds firm as French fiscal woes keep euro on back foot":
+    - /url: /en-int/news/dollar-holds-firm-as-french-fiscal-woes-keep-euro-on
+    - strong: Dollar holds firm as French fiscal woes keep euro on back foot
+  - button "EUR/USD 0%"
+  - button "USD/JPY 0%"
+  - button "GBP/USD 0%"
+  - text: Reuters News 4 hours ago
+  - link "US oil may retest support at $88.78":
+    - /url: /en-int/news/us-oil-may-retest-support-at-88-78
+    - strong: US oil may retest support at $88.78
+  - button "GME +3.95%"
+  - button "AMZN -0.11%"
+  - button "HIMS 0%"
+  - text: Public Technologies 4 hours ago
+  - link "Indonesia Stock Exchange halts PP shares after coupon and/or principal payment failure":
+    - /url: /en-int/news/indonesia-stock-exchange-halts-pp-shares-after-coupon-and/or-principal
+    - strong: Indonesia Stock Exchange halts PP shares after coupon and/or principal payment failure
+  - text: Public Technologies 4 hours ago
+  - link "Landmarks Bhd shares on Bursa Malaysia briefly halted, set to resume at 10:20 a.m. Monday":
+    - /url: /en-int/news/landmarks-bhd-shares-on-bursa-malaysia-briefly-halted-set-to
+    - strong: Landmarks Bhd shares on Bursa Malaysia briefly halted, set to resume at 10:20 a.m. Monday
+  - button "HIMS 0%"
+  - button "IBRX 0%"
+  - button
+  - text: Newsfile 4 hours ago
+  - link "ROSEN, NATIONAL INVESTOR COUNSEL, Encourages PennyMac Financial Services, Inc. Investors to Inquire About Securities Class Action Investigation - PFSI":
+    - /url: /en-int/news/rosen-national-investor-counsel-encourages-pennymac-financial-services-inc-investors
+    - strong: ROSEN, NATIONAL INVESTOR COUNSEL, Encourages PennyMac Financial Services, Inc. Investors to Inquire About Securities Class Action Investigation - PFSI
+  - button "DB1 0%"
+  - button "PFSI 0%"
+  - button "PMT 0%"
+  - button
+  - text: Reuters News 4 hours ago
+  - link "Oil slips as Middle East crude exports rise, G7 to release stocks":
+    - /url: /en-int/news/oil-slips-as-middle-east-crude-exports-rise-g7-to
+    - strong: Oil slips as Middle East crude exports rise, G7 to release stocks
+  - button "2222 +0.2%"
+  - button "Oil - Crude 0%"
+  - button "Oil - Brent -1.24%"
+  - text: Public Technologies 4 hours ago
+  - link "Metropolitan Kentjana announces extraordinary shareholder meeting":
+    - /url: /en-int/news/metropolitan-kentjana-announces-extraordinary-shareholder-meeting
+    - strong: Metropolitan Kentjana announces extraordinary shareholder meeting
+  - button
+  - text: Reuters News 4 hours ago
+  - link "Seatrium Limited And Karpowership Extend Collaboration With Ninth FSRU Conversion":
+    - /url: /en-int/news/seatrium-limited-and-karpowership-extend-collaboration-with-ninth-fsru-conversion
+    - strong: Seatrium Limited And Karpowership Extend Collaboration With Ninth FSRU Conversion
+  - button "5E2 -0.2%"
+  - button
+  - text: Reuters News 4 hours ago
+  - link "Wheat jumps on Black Sea disruptions, corn eases":
+    - /url: /en-int/news/wheat-jumps-on-black-sea-disruptions-corn-eases
+    - strong: Wheat jumps on Black Sea disruptions, corn eases
+  - button "Corn +0.39%"
+  - button "Soybean 0%"
+  - text: Reuters News 4 hours ago
+  - link "Indian rupee and bonds brace for RBI policy decision, track oil prices":
+    - /url: /en-int/news/indian-rupee-and-bonds-brace-for-rbi-policy-decision-track
+    - strong: Indian rupee and bonds brace for RBI policy decision, track oil prices
+  - button "GS 0%"
+  - text: Reuters News 4 hours ago
+  - link "Palm oil may test support at 4,499 ringgit":
+    - /url: /en-int/news/palm-oil-may-test-support-at-4-499-ringgit
+    - strong: Palm oil may test support at 4,499 ringgit
+  - button "LSE +0.02%"
+  - button "VHVG +0.49%"
+  - button
+  - text: Public Technologies 4 hours ago
+  - link "CDL sells 350 Lucerne Grand units on launch weekend at average S$ 2,480 psf":
+    - /url: /en-int/news/cdl-sells-350-lucerne-grand-units-on-launch-weekend-at
+    - strong: CDL sells 350 Lucerne Grand units on launch weekend at average S$ 2,480 psf
+  - button "C09sg 0%"
+  - text: Public Technologies 4 hours ago
+  - link "Zetrix shares on Bursa Malaysia halt trading, set to resume at 10 a.m. Monday":
+    - /url: /en-int/news/zetrix-shares-on-bursa-malaysia-halt-trading-set-to-resume
+    - strong: Zetrix shares on Bursa Malaysia halt trading, set to resume at 10 a.m. Monday
+  - button "GME +3.95%"
+  - button "MSTR +0.56%"
+  - button "AMZN -0.11%"
+  - button
+  - text: Public Technologies 4 hours ago
+  - link "Landmarks faces Bursa Malaysia suspension, delisting after missing regularisation plan deadline":
+    - /url: /en-int/news/landmarks-faces-bursa-malaysia-suspension-delisting-after-missing-regularisation-plan
+    - strong: Landmarks faces Bursa Malaysia suspension, delisting after missing regularisation plan deadline
+  - button "HIMS 0%"
+  - button "IBRX 0%"
+  - text: Reuters News 4 hours ago
+  - link "GLOBAL MARKETS-Stocks upbeat, dollar wobbles as Fed hike bets recede":
+    - /url: /en-int/news/global-markets-stocks-upbeat-dollar-wobbles-as-fed-hike-bets-recede
+    - strong: GLOBAL MARKETS-Stocks upbeat, dollar wobbles as Fed hike bets recede
+  - button "2222 +0.2%"
+  - button "Gold -0.13%"
+  - button "Oil - Crude 0%"
+  - text: Reuters News 4 hours ago
+  - link "Suncor to sell Canadian offshore assets to Ithaca for $1.08 billion":
+    - /url: /en-int/news/suncor-to-sell-canadian-offshore-assets-to-ithaca-for-1-08
+    - strong: Suncor to sell Canadian offshore assets to Ithaca for $1.08 billion
+  - button "SUca 0%"
+  - button "TRPca 0%"
+  - button "OTEX 0%"
+  - button
+  - text: Reuters News 4 hours ago
+  - link "Ecograf Requests Trading Halt":
+    - /url: /en-int/news/ecograf-requests-trading-halt
+    - strong: Ecograf Requests Trading Halt
+  - button "EGR 0%"
+  - button
+  - text: Reuters News 4 hours ago
+  - link "Middle East crude oil exports exceed pre-war levels but tanker attacks increase":
+    - /url: /en-int/news/middle-east-crude-oil-exports-exceed-pre-war-levels-but-tanker
+    - strong: Middle East crude oil exports exceed pre-war levels but tanker attacks increase
+  - button "Natural Gas +0.4%"
+  - text: Public Technologies 4 hours ago
+  - link "Nichirei unit Thermotraffic expands Wrexham distribution center, lifts capacity to 33,150 pallets":
+    - /url: /en-int/news/nichirei-unit-thermotraffic-expands-wrexham-distribution-center-lifts-capacity-to
+    - strong: Nichirei unit Thermotraffic expands Wrexham distribution center, lifts capacity to 33,150 pallets
+  - button
+  - button
+  - text: Reuters News 4 hours ago
+  - link "PDI Gold Says Combined Gold Poured Totalled 52,866OZ AU In September Quarter":
+    - /url: /en-int/news/pdi-gold-says-combined-gold-poured-totalled-52-866oz-au-in
+    - strong: PDI Gold Says Combined Gold Poured Totalled 52,866OZ AU In September Quarter
+  - button "MINau -0.76%"
+  - button "Gold -0.13%"
+  - button
+  - text: Reuters News 4 hours ago
+  - link "Etherstack To Reorganise Share Premium Account To Create Distributable Reserves":
+    - /url: /en-int/news/etherstack-to-reorganise-share-premium-account-to-create-distributable-reserves
+    - strong: Etherstack To Reorganise Share Premium Account To Create Distributable Reserves
+  - button "GME +3.95%"
+  - button "AMZN -0.11%"
+  - text: Reuters News 4 hours ago
+  - link "Australia's Kalgoorlie rises most in a year on gold find":
+    - /url: /en-int/news/australia-s-kalgoorlie-rises-most-in-a-year-on-gold-find
+    - strong: Australia's Kalgoorlie rises most in a year on gold find
+  - button "MINau -0.76%"
+  - button "Gold -0.13%"
+  - button
+  - button
+  - text: Reuters News 4 hours ago
+  - link "Ithaca Energy Announces Strategic Acquisition Of Offshore Canada Assets From Suncor":
+    - /url: /en-int/news/ithaca-energy-announces-strategic-acquisition-of-offshore-canada-assets-from
+    - strong: Ithaca Energy Announces Strategic Acquisition Of Offshore Canada Assets From Suncor
+  - button "SUca 0%"
+  - button "TRPca 0%"
+  - button "OTEX 0%"
+  - text: Reuters News 5 hours ago
+  - link "Australia's Cleanaway rises after EQT re-confirms buyout deal":
+    - /url: /en-int/news/australia-s-cleanaway-rises-after-eqt-re-confirms-buyout-deal
+    - strong: Australia's Cleanaway rises after EQT re-confirms buyout deal
+  - button "DRO 0%"
+  - button "CWYau 0%"
+  - button "WAFau 0%"
+  - button
+  - text: Reuters News 5 hours ago
+  - link "Zetrix AI Bhd Clarifies News Article":
+    - /url: /en-int/news/zetrix-ai-bhd-clarifies-news-article
+    - strong: Zetrix AI Bhd Clarifies News Article
+  - button "GME +3.95%"
+  - button "MSTR +0.56%"
+  - button "AMZN -0.11%"
+  - button
+  - text: Public Technologies 5 hours ago
+  - link "Zetrix Ai says Malaysia Road Transport Department services face suspension from Oct. 5":
+    - /url: /en-int/news/zetrix-ai-says-malaysia-road-transport-department-services-face-suspension
+    - strong: Zetrix Ai says Malaysia Road Transport Department services face suspension from Oct. 5
+  - button "GME +3.95%"
+  - button "MSTR +0.56%"
+  - button "AMZN -0.11%"
+  - button
+  - text: Reuters News 5 hours ago
+  - link "Soccer-Portugal coach, federation open door for Ronaldo return":
+    - /url: /en-int/news/soccer-portugal-coach-federation-open-door-for-ronaldo-return
+    - strong: Soccer-Portugal coach, federation open door for Ronaldo return
+  - text: Public Technologies 5 hours ago
+  - link "AkzoNobel sells Southeast Asia decorative paints business to Nippon Paint for $1.35 billion":
+    - /url: /en-int/news/akzonobel-sells-southeast-asia-decorative-paints-business-to-nippon-paint
+    - strong: AkzoNobel sells Southeast Asia decorative paints business to Nippon Paint for $1.35 billion
+  - button "AKZO 0%"
+  - button
+  - text: Reuters News 5 hours ago
+  - link "Panasonic Manufacturing Philippines Says Entered Agreement With Philippine Economic Zone Authority":
+    - /url: /en-int/news/panasonic-manufacturing-philippines-says-entered-agreement-with-philippine-economic-zone
+    - strong: Panasonic Manufacturing Philippines Says Entered Agreement With Philippine Economic Zone Authority
+  - button "RKLB 0%"
+  - button "DVLT 2.17%"
+  - button "QBTS -3.62%"
+  - button
+  - text: Reuters News 5 hours ago
+  - link "Taiwan foreign minister visits US for opening of new Arizona office":
+    - /url: /en-int/news/taiwan-foreign-minister-visits-us-for-opening-of-new-arizona
+    - strong: Taiwan foreign minister visits US for opening of new Arizona office
+  - button "GME +3.95%"
+  - button "AMZN -0.11%"
+  - button "TSM 0%"
+  - button
+  - text: Reuters News 5 hours ago
+  - link "Far East Orchard Acquires Shares In Managers Of Far East Hospitality Trust":
+    - /url: /en-int/news/far-east-orchard-acquires-shares-in-managers-of-far-east
+    - strong: Far East Orchard Acquires Shares In Managers Of Far East Hospitality Trust
+  - button "O10sg +1.16%"
+  - text: Reuters News 5 hours ago
+  - link "Australian shares rise as commodity-linked stocks advance":
+    - /url: /en-int/news/australian-shares-rise-as-commodity-linked-stocks-advance
+    - strong: Australian shares rise as commodity-linked stocks advance
+  - button "RIOau +0.11%"
+  - button "BHPau -0.24%"
+  - button "CSLau +0.5%"
+  - button
+  - text: Reuters News 5 hours ago
+  - link "Japan's Rapidus To Help 17 Companies Design Chips For Clients, Nikkei Says":
+    - /url: /en-int/news/japan-s-rapidus-to-help-17-companies-design-chips-for-clients
+    - strong: Japan's Rapidus To Help 17 Companies Design Chips For Clients, Nikkei Says
+  - button "GME +3.95%"
+  - button "AMZN -0.11%"
+  - text: Reuters News 5 hours ago
+  - link "Woman at center of Cornell rape allegations targeted with threats, lawyer says":
+    - /url: /en-int/news/woman-at-center-of-cornell-rape-allegations-targeted-with-threats
+    - strong: Woman at center of Cornell rape allegations targeted with threats, lawyer says
+  - text: Reuters News 5 hours ago
+  - link "Soybeans, corn down on US harvest pressure; wheat falls":
+    - /url: /en-int/news/soybeans-corn-down-on-us-harvest-pressure-wheat-falls
+    - strong: Soybeans, corn down on US harvest pressure; wheat falls
+  - button "Corn +0.39%"
+  - button "Soybean 0%"
+  - text: Public Technologies 5 hours ago
+  - link "Dayang substantial shareholder Aberdeen Group lifts deemed stake to 6.93%":
+    - /url: /en-int/news/dayang-substantial-shareholder-aberdeen-group-lifts-deemed-stake-to-6-93
+    - strong: Dayang substantial shareholder Aberdeen Group lifts deemed stake to 6.93%
+  - button "ABDN +1.11%"
+  - button
+  - text: Reuters News 5 hours ago
+  - link "BOJ's Uchida flags AI's mixed impacts on productivity":
+    - /url: /en-int/news/boj-s-uchida-flags-ai-s-mixed-impacts-on-productivity
+    - strong: BOJ's Uchida flags AI's mixed impacts on productivity
+  - text: Reuters News 5 hours ago
+  - link "Coast Guard suspends search for people on crashed medical aircraft":
+    - /url: /en-int/news/coast-guard-suspends-search-for-people-on-crashed-medical-aircraft
+    - strong: Coast Guard suspends search for people on crashed medical aircraft
+  - button
+  - text: Reuters News 5 hours ago
+  - link "Markets bet on RBI rate hike as inflation pressure builds":
+    - /url: /en-int/news/markets-bet-on-rbi-rate-hike-as-inflation-pressure-builds
+    - strong: Markets bet on RBI rate hike as inflation pressure builds
+  - button "ANZau 0%"
+  - button "GYG 0%"
+  - button "USD/INR -0.11%"
+  - text: Reuters News 5 hours ago
+  - link "Paraguay opposition candidate wins Asuncion mayor's race in gauge of 2028 vote":
+    - /url: /en-int/news/paraguay-opposition-candidate-wins-asuncion-mayor-s-race-in-gauge-of
+    - strong: Paraguay opposition candidate wins Asuncion mayor's race in gauge of 2028 vote
+  - button
+  - text: Reuters News 5 hours ago
+  - link "Gold inches up as October Fed rate hike prospects fade":
+    - /url: /en-int/news/gold-inches-up-as-october-fed-rate-hike-prospects-fade
+    - strong: Gold inches up as October Fed rate hike prospects fade
+  - button "Gold -0.13%"
+  - button "Silver +0.41%"
+  - button "Palladium +0.39%"
+  - text: Reuters News 5 hours ago
+  - link "Lachlan Star hits over 1-week high on gold find at Western Australia project":
+    - /url: /en-int/news/lachlan-star-hits-over-1-week-high-on-gold-find-at
+    - strong: Lachlan Star hits over 1-week high on gold find at Western Australia project
+  - button "MINau -0.76%"
+  - text: Newsfile 5 hours ago
+  - link "ROSEN, RECOGNIZED INVESTOR COUNSEL, Encourages Dun & Bradstreet Holdings, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - DNB":
+    - /url: /en-int/news/rosen-recognized-investor-counsel-encourages-dun-bradstreet-holdings-inc
+    - strong: ROSEN, RECOGNIZED INVESTOR COUNSEL, Encourages Dun & Bradstreet Holdings, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - DNB
+  - text: Newsfile 5 hours ago
+  - link "ROSEN, A RANKED AND LEADING LAW FIRM, Encourages Fluence Energy, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - FLNC":
+    - /url: /en-int/news/rosen-a-ranked-and-leading-law-firm-encourages-fluence-energy
+    - strong: ROSEN, A RANKED AND LEADING LAW FIRM, Encourages Fluence Energy, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - FLNC
+  - button "FLNC -0.39%"
+  - button
+  - text: Reuters News 5 hours ago
+  - link "Bremworth Declares Partial Takeover As Unconditional":
+    - /url: /en-int/news/bremworth-declares-partial-takeover-as-unconditional
+    - strong: Bremworth Declares Partial Takeover As Unconditional
+  - button "RKLB 0%"
+  - button "DVLT 2.17%"
+  - button "QBTS -3.62%"
+  - text: Reuters News 5 hours ago
+  - link "PRESS DIGEST-British Business - October 5":
+    - /url: /en-int/news/press-digest-british-business-october-5
+    - strong: PRESS DIGEST-British Business - October 5
+  - button "GME +3.95%"
+  - button "AMZN -0.11%"
+  - button "DVLT 2.17%"
+  - text: Public Technologies 5 hours ago
+  - link "Lockheed Martin says MORFIUS X-Rotor HPM system neutralizes 50-plus drones per flight":
+    - /url: /en-int/news/lockheed-martin-says-morfius-x-rotor-hpm-system-neutralizes-50-plus-drones
+    - strong: Lockheed Martin says MORFIUS X-Rotor HPM system neutralizes 50-plus drones per flight
+  - button "GME +3.95%"
+  - button "MSTR +0.56%"
+  - button "AMZN -0.11%"
+  - text: Reuters News 5 hours ago
+  - link "hld-Reflationist ex-BOJ policymaker calls end to low rates, big spending":
+    - /url: /en-int/news/hld-reflationist-ex-boj-policymaker-calls-end-to-low-rates-big-spending
+    - strong: hld-Reflationist ex-BOJ policymaker calls end to low rates, big spending
+  - button "USD/JPY 0%"
+  - text: Public Technologies 5 hours ago
+  - link "Shikoku Alliance Capital’s Shikoku Sosei No. 2 Fund exits Niihama Driving School after tie-up with Hirosawa Driving School":
+    - /url: /en-int/news/shikoku-alliance-capital-s-shikoku-sosei-no-2-fund-exits-niihama
+    - strong: Shikoku Alliance Capital’s Shikoku Sosei No. 2 Fund exits Niihama Driving School after tie-up with Hirosawa Driving School
+  - button
+  - text: Reuters News 5 hours ago
+  - link "Australia's Macmahon Holdings gains on securing $68 million gold mine contract extension":
+    - /url: /en-int/news/australia-s-macmahon-holdings-gains-on-securing-68-million-gold-mine
+    - strong: Australia's Macmahon Holdings gains on securing $68 million gold mine contract extension
+  - button "Gold -0.13%"
+  - text: GlobeNewswire 5 hours ago
+  - link "Canoe EIT Income Fund Announces 2026 Voluntary Cash Redemption":
+    - /url: /en-int/news/canoe-eit-income-fund-announces-2026-voluntary-cash-redemption
+    - strong: Canoe EIT Income Fund Announces 2026 Voluntary Cash Redemption
+  - button "ORCL -0.1%"
+  - button "MSFT -0.44%"
+  - button "PLTR -0.49%"
+  - text: Reuters News 5 hours ago
+  - link "Georgia block party shooting kills two, injures dozens":
+    - /url: /en-int/news/georgia-block-party-shooting-kills-two-injures-dozens
+    - strong: Georgia block party shooting kills two, injures dozens
+  - button
+  - text: Reuters News 5 hours ago
+  - link "Brazil's Flavio Bolsonaro beats polls in presidential vote, faces Lula in runoff":
+    - /url: /en-int/news/brazil-s-flavio-bolsonaro-beats-polls-in-presidential-vote-faces-lula
+    - strong: Brazil's Flavio Bolsonaro beats polls in presidential vote, faces Lula in runoff
+  - text: Reuters News 5 hours ago
+  - link "Australia's FMR Resources jumps on diamond find in Chile gold-copper project":
+    - /url: /en-int/news/australia-s-fmr-resources-jumps-on-diamond-find-in-chile-gold-copper
+    - strong: Australia's FMR Resources jumps on diamond find in Chile gold-copper project
+  - button "Gold -0.13%"
+  - button "Copper -0.27%"
+  - text: Reuters News 6 hours ago
+  - link "Australia's Tivan gains on advancement of joint venture for tungsten project":
+    - /url: /en-int/news/australia-s-tivan-gains-on-advancement-of-joint-venture-for-tungsten
+    - strong: Australia's Tivan gains on advancement of joint venture for tungsten project
+  - button "8053 0%"
+  - button
+  - text: Public Technologies 6 hours ago
+  - link "Goldman Sachs appoints Shigeru Ariizumi as international advisor in Japan":
+    - /url: /en-int/news/goldman-sachs-appoints-shigeru-ariizumi-as-international-advisor-in-japan
+    - strong: Goldman Sachs appoints Shigeru Ariizumi as international advisor in Japan
+  - button "GS 0%"
+  - button
+  - text: Reuters News 6 hours ago
+  - link "Amiyaki Tei <2753.T>- 6-MTH group results":
+    - /url: /en-int/news/amiyaki-tei-2753-t-6-mth-group-results
+    - strong: Amiyaki Tei <2753.T>- 6-MTH group results
+  - button "HIMS 0%"
+  - button "IBRX 0%"
+  - text: ACCESS Newswire 6 hours ago
+  - link "Bora Biologics and Protect Animal Health Enter Strategic, Long-Term Multi-Project Collaboration to Advance Antibody-Based Animal Health Products":
+    - /url: /en-int/news/bora-biologics-and-protect-animal-health-enter-strategic-long-term-multi-project
+    - strong: Bora Biologics and Protect Animal Health Enter Strategic, Long-Term Multi-Project Collaboration to Advance Antibody-Based Animal Health Products
+  - text: ACCESS Newswire 6 hours ago
+  - link "Pomerantz LLP Issues Important Reminder to Shareholders in Hims & Hers Health, Inc. of Class Action Lawsuit – HIMS":
+    - /url: /en-int/news/pomerantz-llp-issues-important-reminder-to-shareholders-in-hims
+    - strong: Pomerantz LLP Issues Important Reminder to Shareholders in Hims & Hers Health, Inc. of Class Action Lawsuit – HIMS
+  - button "META -0.27%"
+  - button "HIMS 0%"
+  - button "SNAP -0.18%"
+  - text: ACCESS Newswire 6 hours ago
+  - 'link "Investor Alert: Deadline Approaching to Join Fluence Energy, Inc. (FLNC) Class Action – Contact Levi & Korsinsky"':
+    - /url: /en-int/news/investor-alert-deadline-approaching-to-join-fluence-energy-inc-flnc
+    - strong: "Investor Alert: Deadline Approaching to Join Fluence Energy, Inc. (FLNC) Class Action – Contact Levi & Korsinsky"
+  - button "FLNC -0.39%"
+  - text: Reuters News 6 hours ago
+  - 'link "The energy transition is starting to feed itself: Maguire"':
+    - /url: /en-int/news/the-energy-transition-is-starting-to-feed-itself-maguire
+    - strong: "The energy transition is starting to feed itself: Maguire"
+  - button "TSLA -0.11%"
+  - button "VIE +0.86%"
+  - button "NUE +0.25%"
+  - text: Reuters News 6 hours ago
+  - link "PRESS DIGEST-Financial Times - October 5":
+    - /url: /en-int/news/press-digest-financial-times-october-5
+    - strong: PRESS DIGEST-Financial Times - October 5
+  - button "GME +3.95%"
+  - button "AMZN -0.11%"
+  - button "SUp +1.89%"
+  - text: Public Technologies 6 hours ago
+  - link "Hansoh Pharma says Phase III LIGHTEN trial shows 19.3% weight loss at week 48 with olatorepatide 15 mg":
+    - /url: /en-int/news/hansoh-pharma-says-phase-iii-lighten-trial-shows-19-3-weight
+    - strong: Hansoh Pharma says Phase III LIGHTEN trial shows 19.3% weight loss at week 48 with olatorepatide 15 mg
+  - button "3692 +0.85%"
+  - text: Reuters News 6 hours ago
+  - link "Brent oil may test support at $101.77":
+    - /url: /en-int/news/brent-oil-may-test-support-at-101-77
+    - strong: Brent oil may test support at $101.77
+  - button "HIMS 0%"
+  - button "IBRX 0%"
+  - button "LSE +0.02%"
+  - button
+  - text: Reuters News 6 hours ago
+  - link "Akzo Nobel NV Akzonobel To Sell Decorative Paints South East Asia Business To Nippon Paint For $1.35 Billion":
+    - /url: /en-int/news/akzo-nobel-nv-akzonobel-to-sell-decorative-paints-south-east
+    - strong: Akzo Nobel NV Akzonobel To Sell Decorative Paints South East Asia Business To Nippon Paint For $1.35 Billion
+  - button "AKZO 0%"
+  - text: Reuters News 6 hours ago
+  - link "Australia's HealthCo REIT jumps as Healthscope resolution clears way for distribution reinstatement":
+    - /url: /en-int/news/australia-s-healthco-reit-jumps-as-healthscope-resolution-clears-way-for
+    - strong: Australia's HealthCo REIT jumps as Healthscope resolution clears way for distribution reinstatement
+  - button "BAM +0.3%"
+  - text: Newsfile 6 hours ago
+  - link "ROSEN, SKILLED INVESTOR COUNSEL, Encourages Doximity, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - DOCS":
+    - /url: /en-int/news/rosen-skilled-investor-counsel-encourages-doximity-inc-investors-to-secure
+    - strong: ROSEN, SKILLED INVESTOR COUNSEL, Encourages Doximity, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - DOCS
+  - button "GME +3.95%"
+  - button "AMZN -0.11%"
+  - button "DOCS -2.12%"
+  - text: Reuters News 6 hours ago
+  - link "Australia's archTIS rises on securing US defence contract":
+    - /url: /en-int/news/australia-s-archtis-rises-on-securing-us-defence-contract
+    - strong: Australia's archTIS rises on securing US defence contract
+  - button "GME +3.95%"
+  - button "AMZN -0.11%"
+  - text: Newsfile 6 hours ago
+  - link "ROSEN, NATIONAL INVESTOR COUNSEL, Encourages Celsius Holdings, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - CELH":
+    - /url: /en-int/news/rosen-national-investor-counsel-encourages-celsius-holdings-inc-investors-to
+    - strong: ROSEN, NATIONAL INVESTOR COUNSEL, Encourages Celsius Holdings, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - CELH
+  - button "CELH 0%"
+  - text: Reuters News 6 hours ago
+  - link "Commodities intraday targets/key levels":
+    - /url: /en-int/news/commodities-intraday-targets/key-levels
+    - strong: Commodities intraday targets/key levels
+  - button "LSE +0.02%"
+  - button "VHVG +0.49%"
+  - text: Public Technologies 6 hours ago
+  - link "Far East Orchard to buy 42% stake in Far East Hospitality Trust managers for S$28.3 million":
+    - /url: /en-int/news/far-east-orchard-to-buy-42-stake-in-far-east
+    - strong: Far East Orchard to buy 42% stake in Far East Hospitality Trust managers for S$28.3 million
+  - button "HIMS 0%"
+  - button "IBRX 0%"
+  - button "S68sg +0.19%"
+  - text: Public Technologies 6 hours ago
+  - link "Far East Orchard raises stake in FEHT managers to 75% for S$ 28.3 million":
+    - /url: /en-int/news/far-east-orchard-raises-stake-in-feht-managers-to-75
+    - strong: Far East Orchard raises stake in FEHT managers to 75% for S$ 28.3 million
+  - button "S68sg +0.19%"
+  - button "O10sg +1.16%"
+  - text: Newsfile 6 hours ago
+  - link "ROSEN, TRUSTED INVESTOR COUNSEL, Encourages DICK'S Sporting Goods, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - DKS":
+    - /url: /en-int/news/rosen-trusted-investor-counsel-encourages-dick-s-sporting-goods-inc-investors
+    - strong: ROSEN, TRUSTED INVESTOR COUNSEL, Encourages DICK'S Sporting Goods, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - DKS
+  - button "HIMS 0%"
+  - button "IBRX 0%"
+  - button "DKS 0%"
+  - text: Reuters News 6 hours ago
+  - link "Australia's Ingenia Communities gains as Warburg Pincus wins due diligence access":
+    - /url: /en-int/news/australia-s-ingenia-communities-gains-as-warburg-pincus-wins-due-diligence
+    - strong: Australia's Ingenia Communities gains as Warburg Pincus wins due diligence access
+  - text: Reuters News 6 hours ago
+  - link "FlexiRoam rises after Big Four bank adopts roaming benefit for premium cards":
+    - /url: /en-int/news/flexiroam-rises-after-big-four-bank-adopts-roaming-benefit-for
+    - strong: FlexiRoam rises after Big Four bank adopts roaming benefit for premium cards
+  - button "GME +3.95%"
+  - button "AMZN -0.11%"
+  - text: Newsfile 6 hours ago
+  - 'link "BZAI DEADLINE: ROSEN, LEADING INVESTOR COUNSEL, Encourages Blaize Holdings, Inc. Investors to Secure Counsel Before Important October 5 Deadline in Securities Class Action First Filed by the Firm - BZAI"':
+    - /url: /en-int/news/bzai-deadline-rosen-leading-investor-counsel-encourages-blaize-holdings-inc
+    - strong: "BZAI DEADLINE: ROSEN, LEADING INVESTOR COUNSEL, Encourages Blaize Holdings, Inc. Investors to Secure Counsel Before Important October 5 Deadline in Securities Class Action First Filed by the Firm - BZAI"
+  - button "GME +3.95%"
+  - button "MSTR +0.56%"
+  - button "AMZN -0.11%"
+  - text: Reuters News 6 hours ago
+  - link "Australia's Ingenia Communities opens books to Warburg Pincus after rejecting two prior bids":
+    - /url: /en-int/news/australia-s-ingenia-communities-opens-books-to-warburg-pincus-after-rejecting
+    - strong: Australia's Ingenia Communities opens books to Warburg Pincus after rejecting two prior bids
+  - button "PPCau 0%"
+  - strong: Market movers
+  - text: Tracking the stocks, indices, and assets making major moves.
+  - button "Most traded markets" [disabled]
+  - button "Top risers" [disabled]
+  - button "Top fallers" [disabled]
+  - button "Most volatile" [disabled]
+  - text: Share prices are indicative and may differ from live market prices.
+- heading "Market Analysis" [level=2]
+- paragraph: Expert insights and commentary on what’s driving the markets.
+- tablist:
+  - tab "Capital.com"
+- link "View all":
+  - /url: /en-int/analysis
+- tabpanel:
+  - button "Capital.com Analysts":
+    - heading "Capital.com Analysts" [level=3]
+  - text: Get regular commentary on key markets from our experts
+  - link "Daniela Hathorn Daniela is an experienced market commentator with a demonstrable history of delivering high-impact macroeconomic and technical analysis to clients. With Capital.com and formerly IG, she has built expertise in areas ranging from equities and forex to commodities and beyond, with an advanced ability to bring markets to life for retail traders.":
+    - /url: analysis/daniela-hathorn
+    - text: Daniela Hathorn
+    - paragraph: Daniela is an experienced market commentator with a demonstrable history of delivering high-impact macroeconomic and technical analysis to clients. With Capital.com and formerly IG, she has built expertise in areas ranging from equities and forex to commodities and beyond, with an advanced ability to bring markets to life for retail traders.
+  - link "Kyle Rodda Kyle is one of Australia's prominent market commentators, appearing across local and international media as an analyst and reporter. Having covered the full spectrum of financial market topics for ausbiz TV, IG Group and Capital.com, Kyle’s passion is analysing indices, commodities and the FX markets through the lens of macroeconomics and central bank policies.":
+    - /url: analysis/kyle-rodda
+    - text: Kyle Rodda
+    - paragraph: Kyle is one of Australia's prominent market commentators, appearing across local and international media as an analyst and reporter. Having covered the full spectrum of financial market topics for ausbiz TV, IG Group and Capital.com, Kyle’s passion is analysing indices, commodities and the FX markets through the lens of macroeconomics and central bank policies.
+  - link "Dan Mitchell Dan is an experienced financial writer and market commentator with a background in digital assets and cryptocurrency markets. Blending macro fundamentals with technical chart work, he distils market developments into practical commentary for retail traders.":
+    - /url: analysis/daniel-mitchell
+    - text: Dan Mitchell
+    - paragraph: Dan is an experienced financial writer and market commentator with a background in digital assets and cryptocurrency markets. Blending macro fundamentals with technical chart work, he distils market developments into practical commentary for retail traders.
+  - link "Monte Safieddine":
+    - /url: analysis/monte-safieddine
+  - link "Rocket Lab stock forecast":
+    - /url: /en-int/analysis/rocket-lab-stock-forecast
+    - img "Rocket Lab stock forecast"
+  - img
+  - text: Dan Mitchell 13:42 (UTC), 2 October 2026
+  - 'link "Rocket Lab stock forecast: Iridium acquisition equity funding"':
+    - /url: /en-int/analysis/rocket-lab-stock-forecast
+  - text: Rocket Lab is a US space company listed on Nasdaq. On 15 September, it completed a $1.944bn equity offering to fund its pending acquisition of Iridium Communications. Explore third-party RKLB price targets. Past performance is not a reliable indicator of future results.
+  - button "RKLB 0%"
+  - link "Bitfarms stock forecast":
+    - /url: /en-int/analysis/bitfarms-stock-forecast
+    - img "Bitfarms stock forecast"
+  - img
+  - text: Dan Mitchell 12:38 (UTC), 2 October 2026
+  - 'link "Bitfarms stock forecast: $819m liquidity, no tenant yet"':
+    - /url: /en-int/analysis/bitfarms-stock-forecast
+  - text: Keel Infrastructure became Bitfarms’ parent company in April 2026, with the group shifting towards data-centre development. Explore third-party KEEL price targets and technical analysis. Past performance is not a reliable indicator of future results.
+  - button "KEEL +5.5%"
+  - link "Air Liquide stock forecast":
+    - /url: /en-int/analysis/air-liquide-stock-forecast
+    - img "Air Liquide stock forecast"
+  - img
+  - text: Dan Mitchell 12:15 (UTC), 2 October 2026
+  - 'link "Air Liquide stock forecast: Elliott stake, hydrogen initiative"':
+    - /url: /en-int/analysis/air-liquide-stock-forecast
+  - text: Air Liquide is a French industrial gases group. Reuters reported that Elliott Investment Management built a stake, while Air Liquide joined a European hydrogen mobility initiative. Explore third-party AI price targets. Past performance is not a reliable indicator of future results.
+  - button "AIfr +2.22%"
+  - link "Atos stock forecast":
+    - /url: /en-int/analysis/atos-stock-forecast
+    - img "Atos stock forecast"
+  - img
+  - text: Dan Mitchell 14:30 (UTC), 30 September 2026
+  - 'link "Atos stock forecast: sovereign Cloud, AI expansion"':
+    - /url: /en-int/analysis/atos-stock-forecast
+  - text: Atos is a French technology group listed in Paris. Its recent updates include a sovereign cloud partnership with Schwarz Digits and new AI-related projects. Explore third-party ATO price targets and technical analysis. Past performance is not a reliable indicator of future results.
+  - button "ATOp +0.5699%"
+  - link:
+    - /url: /en-int/analysis/allianz-stock-forecast
+  - img
+  - text: Dan Mitchell 13:26 (UTC), 30 September 2026
+  - 'link "Allianz stock forecast: record H1 profit, Q3 earnings ahead"':
+    - /url: /en-int/analysis/allianz-stock-forecast
+  - text: Allianz is a German insurer whose shares are trading near record levels following record first-half operating profit and reports of a possible €5.8 billion acquisition of AA. Explore third-party ALV targets and technicals. Past performance is not a reliable indicator of future results.
+  - button "ALVd +1.09%"
+- contentinfo:
+  - link:
+    - /url: /en-int
+    - img
+  - link:
+    - /url: https://twitter.com/capitalcom
+  - link:
+    - /url: https://www.linkedin.com/company/capital.com/
+  - link:
+    - /url: https://www.instagram.com/capitalcom/
+  - link:
+    - /url: https://www.tiktok.com/@capitalcom_international
+  - link:
+    - /url: https://www.facebook.com/capitalcom/
+  - link:
+    - /url: https://www.reddit.com/r/capitalcom/
+  - link:
+    - /url: https://app.appsflyer.com/id1230088754?cp_device_id=0ad6e23e-3c4c-4311-b67f-b706602acb64&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - link:
+    - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=0ad6e23e-3c4c-4311-b67f-b706602acb64&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - link:
+    - /url: https://app.appsflyer.com/com.capital.trading.huawei-huawei?cp_device_id=0ad6e23e-3c4c-4311-b67f-b706602acb64&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - text: "Country / Region:"
+  - button "Hong Kong"
+  - text: "• Language:"
+  - button "English"
+  - text: "Also you can contact us:"
+  - link "+442080899989":
+    - /url: tel:+442080899989
+    - strong: "+442080899989"
+    - strong
+  - text: •
+  - link "support@capital.com":
+    - /url: mailto:support@capital.com
+    - strong: support@capital.com
+  - strong: Trading
+  - text: Trading
+  - link "Trade CFDs":
+    - /url: /en-int/ways-to-trade/cfd-trading
+  - link "Get demo account":
+    - /url: /en-int/trading-platforms/demo-account
+  - link "Get pro account":
+    - /url: /en-int/professional
+  - text: Platforms
+  - link "Web platform":
+    - /url: /en-int/trading-platforms/web-platform
+  - link "Mobile app":
+    - /url: /en-int/trading-platforms/mobile-apps
+  - link "TradingView":
+    - /url: /en-int/trading-platforms/trading-view
+  - link "MT4":
+    - /url: /en-int/trading-platforms/mt4
+  - link "MT5":
+    - /url: /en-int/trading-platforms/mt5
+  - link "AI Integration":
+    - /url: /en-int/trading-platforms/ai-integration
+  - link "API access":
+    - /url: /en-int/trading-platforms/api-development-guide
+  - text: Learn
+  - link "Trading strategies":
+    - /url: /en-int/learn/trading-strategies
+  - link "Technical analysis":
+    - /url: /en-int/learn/technical-analysis
+  - link "Trading psychology":
+    - /url: /en-int/learn/trading-psychology
+  - link "All resources":
+    - /url: /en-int/learn
+  - strong: Markets
+  - text: Our markets
+  - link "Markets overview":
+    - /url: /en-int/markets
+  - link "Shares":
+    - /url: /en-int/markets/shares
+  - link "Forex":
+    - /url: /en-int/markets/forex
+  - link "Indices":
+    - /url: /en-int/markets/indices
+  - link "Commodities":
+    - /url: /en-int/markets/commodities
+  - link "Cryptocurrencies":
+    - /url: /en-int/markets/cryptocurrencies
+  - link "Bonds":
+    - /url: /en-int/markets/bonds
+  - link "Interest rates":
+    - /url: /en-int/markets/interest-rates
+  - text: Market info
+  - link "Market analysis":
+    - /url: /en-int/analysis
+  - link "Finance news":
+    - /url: /en-int/news
+  - link "Pricing":
+    - /url: /en-int/ways-to-trade/fees-and-charges
+    - strong: Pricing
+  - strong: About
+  - text: Who we are
+  - link "Company":
+    - /url: /en-int/about-us
+  - link "Our offices":
+    - /url: /en-int/about-us/our-offices
+  - link "Press centre":
+    - /url: /en-int//media-centre
+  - link "Investor Relations":
+    - /url: /en-int/about-us/investor-relations
+  - link "Is Capital.com safe?":
+    - /url: /en-int/security-measures
+  - link "Our business model":
+    - /url: /en-int/about-us/how-capital-makes-money
+  - text: Work with us
+  - link "Careers":
+    - /url: /en-int//about-us/careers
+  - link "Partnerships":
+    - /url: /en-int/partnerships
+  - link "Refer a friend":
+    - /url: /en-int/refer-a-friend
+  - text: Help
+  - link "Help centre":
+    - /url: /en-int/help
+  - link "Client vulnerability":
+    - /url: /en-int/help/client-vulnerability
+  - link "Contact us":
+    - /url: /en-int/contact-us
+  - text: Legal
+  - link "Terms & policies":
+    - /url: /en-int/terms-and-policies
+  - link "Complaints":
+    - /url: /en-int/help/complaints
+  - paragraph:
+    - text: CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage.
+    - strong: 79.75% of retail investor accounts lose money when trading CFDs with this provider.
+    - text: You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money.
+  - paragraph
+  - paragraph: "Capital Com Online Investments Ltd is a limited liability company with company number 209236B. Capital Com Online Investments Ltd is a Company registered in the Commonwealth of The Bahamas and authorised by the Securities Commission of The Bahamas with license number SIA-F245. The Company’s registered office is at #3 Bayside Executive Park, Blake Road and West Bay Street, P. O. Box CB 13012, Nassau, The Bahamas."
+  - paragraph: © 2026 Capital Com Online Investments Ltd
+  - link "Sitemap":
+    - /url: /en-int/sitemap
+  - link "Cookie Settings":
+    - /url: ""
+  - link:
+    - /url: /en-int
+  - link "Terms and Policies":
+    - /url: /en-int/terms-and-policies
+  - link "Complaints Procedure (SCB)":
+    - /url: /en-int/help/complaints
+- button
+- alert
+```
+
+# Test source
+
+```ts
+  1   | import { expect } from "@playwright/test";
+  2   | 
+  3   | export class CTAComponent {
+  4   |   constructor(page, sectionConfig) {
+  5   |     this.page = page;
+  6   |     // this.root = page.locator(sectionConfig.root);
+  7   |     this.actions = sectionConfig.actions || {};
+  8   |     this.helpers = sectionConfig.helpers || {};
+  9   |     this.setup = sectionConfig.setup;
+  10  |     // this.skipRootValidation = sectionConfig.skipRootValidation;
+  11  |     this.root = this.resolveLocator(sectionConfig.root);
+  12  |   }
+  13  | 
+  14  |   async expectVisible() {
+  15  |     await expect(this.root).toBeVisible({ timeout: 20000 });
+  16  |   }
+  17  | 
+  18  |   resolveLocator(locatorConfig) {
+  19  |     if (!locatorConfig) {
+  20  |       throw new Error("Locator is undefined in CTA config");
+  21  |     }
+  22  | 
+  23  |     if (
+  24  |       typeof locatorConfig !== "string" &&
+  25  |       typeof locatorConfig !== "function"
+  26  |     ) {
+  27  |       throw new Error(
+  28  |         `Invalid locator type: ${typeof locatorConfig}. Value: ${JSON.stringify(locatorConfig)}`,
+  29  |       );
+  30  |     }
+  31  | 
+  32  |     if (typeof locatorConfig === "function") {
+  33  |       return locatorConfig(this.page);
+  34  |     }
+  35  | 
+  36  |     if (
+  37  |       locatorConfig.startsWith(":scope") ||
+  38  |       locatorConfig.startsWith("xpath=")
+  39  |     ) {
+  40  |       return this.root.locator(locatorConfig);
+  41  |     }
+  42  | 
+  43  |     return this.page.locator(locatorConfig);
+  44  |   }
+  45  | 
+  46  |   getActionLocator(actionName) {
+  47  |     return this.resolveLocator(this.actions[actionName].locator);
+  48  |   }
+  49  | 
+  50  |   getHelper(helperName) {
+  51  |     return this.resolveLocator(this.helpers[helperName]);
+  52  |   }
+  53  | 
+  54  |   async runSetup() {
+  55  |     if (!this.setup) {
+  56  |       return;
+  57  |     }
+  58  | 
+  59  |     await this.setup({
+  60  |       page: this.page,
+  61  |       getHelper: this.getHelper.bind(this),
+  62  |     });
+  63  |   }
+  64  | 
+  65  |   async runActionSetup(actionName) {
+  66  |     const action = this.actions[actionName];
+  67  | 
+  68  |     if (!action?.setup) {
+  69  |       return;
+  70  |     }
+  71  | 
+  72  |     await action.setup({
+  73  |       page: this.page,
+  74  |       getHelper: this.getHelper.bind(this),
+  75  |     });
+  76  | 
+  77  |     // console.log("ACTION SETUP DONE:", actionName);
+  78  |     // console.log("URL:", this.page.url());
+  79  |   }
+  80  | 
+  81  |   async click(actionName, { waitForNewPage = false } = {}) {
+  82  |     console.log("START CLICK", actionName);
+  83  | 
+  84  |     await this.runSetup();
+  85  |     await this.runActionSetup(actionName);
+  86  | 
+  87  |     const action = this.actions[actionName];
+  88  |     let locator = this.getActionLocator(actionName);
+  89  | 
+  90  |     if (action.locatorIndex !== undefined) {
+  91  |       locator = locator.nth(action.locatorIndex);
+  92  |     }
+  93  | 
+  94  |     const count = await locator.count();
+  95  |     console.log("COUNT", actionName, count);
+  96  | 
+  97  |     if (action.optional && count === 0) {
+  98  |       return { skipped: true };
+  99  |     }
+  100 | 
+> 101 |     await expect(locator).toBeVisible();
+      |                           ^ Error: expect(locator).toBeVisible() failed
+  102 |     await expect(locator).toBeEnabled();
+  103 | 
+  104 |     let newPagePromise;
+  105 | 
+  106 |     if (waitForNewPage) {
+  107 |       // newPagePromise = this.page.context().waitForEvent("page");
+  108 |       newPagePromise = this.page.waitForEvent("popup");
+  109 |     }
+  110 | 
+  111 |     // console.log(
+  112 |     //   await locator.evaluate((el) => {
+  113 |     //     const rect = el.getBoundingClientRect();
+  114 |     //     const center = {
+  115 |     //       x: rect.left + rect.width / 2,
+  116 |     //       y: rect.top + rect.height / 2,
+  117 |     //     };
+  118 | 
+  119 |     //     return {
+  120 |     //       text: el.textContent,
+  121 |     //       center,
+  122 |     //       elementAtPoint: document.elementFromPoint(center.x, center.y)
+  123 |     //         ?.outerHTML,
+  124 |     //     };
+  125 |     //   }),
+  126 |     // );
+  127 | 
+  128 |     await locator.click({ timeout: 2000 });
+  129 |     const newPage = newPagePromise ? await newPagePromise : null;
+  130 | 
+  131 |     return { skipped: false, locator, newPage };
+  132 |   }
+  133 | }
+  134 | 
+```

@@ -1,0 +1,6 @@
+USER: unauthorised
+EXPECTATION:  shows signup form
+START CLICK addToFavouriteBtn
+COUNT addToFavouriteBtn 1
+URL AFTER CLICK: https://capital.com/fr-fr/markets/forex/euro-us-dollar-taux-2
+EXPECTATION ASSERTIONS shows signup form
