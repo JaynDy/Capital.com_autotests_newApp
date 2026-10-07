@@ -1,0 +1,6 @@
+USER: unregistered
+EXPECTATION:  opens external link
+START CLICK linkedinIcon
+COUNT linkedinIcon 1
+URL AFTER CLICK: https://capital.com/en-au
+EXPECTATION ASSERTIONS opens external link

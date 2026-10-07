@@ -1,0 +1,3 @@
+USER: unregistered
+EXPECTATION:  opens regional settings window
+START CLICK langSwitcherBtn

@@ -1,0 +1,6 @@
+USER: unauthorised
+EXPECTATION:  opens external link
+START CLICK instagramIcon
+COUNT instagramIcon 1
+URL AFTER CLICK: https://capital.com/zh-hant
+EXPECTATION ASSERTIONS opens external link

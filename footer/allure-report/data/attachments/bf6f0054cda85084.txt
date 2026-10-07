@@ -1,0 +1,6 @@
+USER: unregistered
+EXPECTATION:  opens external link
+START CLICK tiktokIcon
+COUNT tiktokIcon 1
+URL AFTER CLICK: https://capital.com/en-ae
+EXPECTATION ASSERTIONS opens external link
