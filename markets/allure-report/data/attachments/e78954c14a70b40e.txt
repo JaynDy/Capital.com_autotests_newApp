@@ -1,0 +1,6 @@
+USER: unregistered
+EXPECTATION:  shows signup form
+START CLICK alertBtn
+COUNT alertBtn 1
+URL AFTER CLICK: https://capital.com/fr-fr/markets/commodities/produit-de-base-gold-spot
+EXPECTATION ASSERTIONS shows signup form
