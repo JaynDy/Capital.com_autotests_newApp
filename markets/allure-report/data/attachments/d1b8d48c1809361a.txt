@@ -1,0 +1,5 @@
+Button enabled: true
+USER: unauthorised
+EXPECTATION:  shows signup form
+START CLICK tradedBtn
+COUNT tradedBtn 0

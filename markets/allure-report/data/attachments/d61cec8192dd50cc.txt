@@ -1,0 +1,6 @@
+USER: unauthorised
+EXPECTATION:  shows signup form
+START CLICK tradedBtn
+COUNT tradedBtn 0
+URL AFTER CLICK: https://capital.com/es-int/markets/commodities/gold-spot-materia-prima
+EXPECTATION ASSERTIONS shows signup form
