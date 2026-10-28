@@ -1,0 +1,6 @@
+USER: unregistered
+EXPECTATION:  opens external link
+START CLICK facebookIcon
+COUNT facebookIcon 1
+URL AFTER CLICK: https://capital.com/es-int
+EXPECTATION ASSERTIONS opens external link

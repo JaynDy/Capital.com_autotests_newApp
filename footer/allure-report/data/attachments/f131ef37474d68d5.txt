@@ -1,0 +1,6 @@
+USER: authorised
+EXPECTATION:  opens external link
+START CLICK getGooglePlayBtn
+COUNT getGooglePlayBtn 1
+URL AFTER CLICK: https://capital.com/de-at
+EXPECTATION ASSERTIONS opens external link
