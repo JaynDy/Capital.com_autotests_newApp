@@ -1,5 +1,0 @@
-START CLICK countrySwitcherBtn
-COUNT countrySwitcherBtn 1
-USER: unregistered
-EXPECTATION:  opens regional settings window
-EXPECTATION ASSERTIONS opens regional settings window

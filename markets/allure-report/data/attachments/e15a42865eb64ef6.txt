@@ -1,3 +1,0 @@
-USER: unauthorised
-EXPECTATION:  shows login form
-START CLICK sellBtn

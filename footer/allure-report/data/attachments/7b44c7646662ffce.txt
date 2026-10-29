@@ -1,3 +1,0 @@
-START CLICK sitemapLink
-COUNT sitemapLink 0
-URL AFTER CLICK: https://capital.com/vi-int

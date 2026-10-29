@@ -1,5 +1,0 @@
-START CLICK complaintsProcedureLink
-COUNT complaintsProcedureLink 1
-USER: unauthorised
-EXPECTATION:  { type: 'redirect', page: 'complaints' }
-EXPECTATION ASSERTIONS { type: 'redirect', page: 'complaints' }

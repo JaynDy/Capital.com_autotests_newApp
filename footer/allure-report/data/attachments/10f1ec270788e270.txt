@@ -1,4 +1,0 @@
-BASE URL: https://capital.com/fr-int
-PATH: 
-PAGE CLOSED: false
-youtubeIcon 0

@@ -1,4 +1,0 @@
-BASE URL: https://capital.com/el-gr
-PATH: 
-PAGE CLOSED: false
-instagramIcon 0

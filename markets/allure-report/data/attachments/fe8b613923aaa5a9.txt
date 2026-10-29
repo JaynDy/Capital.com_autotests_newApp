@@ -1,4 +1,0 @@
-sellBtn 1
-USER: authorised
-EXPECTATION:  redirects to platform
-EXPECTATION ASSERTIONS redirects to platform

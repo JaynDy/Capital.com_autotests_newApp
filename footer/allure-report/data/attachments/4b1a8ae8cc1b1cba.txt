@@ -1,4 +1,0 @@
-BASE URL: https://capital.com/en-au
-PATH: 
-PAGE CLOSED: false
-redditIcon 0

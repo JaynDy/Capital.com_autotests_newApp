@@ -1,4 +1,0 @@
-redditIcon 1
-USER: unregistered
-EXPECTATION:  opens external link
-EXPECTATION ASSERTIONS opens external link

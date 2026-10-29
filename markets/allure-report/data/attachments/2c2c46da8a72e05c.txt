@@ -1,4 +1,0 @@
-BASE URL: https://capital.com/fr-int
-PATH: markets
-PAGE CLOSED: false
-tradedBtn 0

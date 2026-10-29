@@ -1,4 +1,0 @@
-BASE URL: https://capital.com/en-eu
-PATH: 
-PAGE CLOSED: false
-facebookIcon 0

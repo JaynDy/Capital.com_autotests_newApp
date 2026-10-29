@@ -1,4 +1,0 @@
-BASE URL: https://capital.com/ru-int
-PATH: markets/indices
-PAGE CLOSED: false
-tradedBtn 0

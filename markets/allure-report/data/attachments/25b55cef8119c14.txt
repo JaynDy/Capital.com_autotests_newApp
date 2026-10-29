@@ -1,3 +1,0 @@
-Button enabled: true
-START CLICK buyBtn
-COUNT buyBtn 1

@@ -1,3 +1,0 @@
-USER: unregistered
-EXPECTATION:  opens external link
-START CLICK exploreAppGalleryBtn

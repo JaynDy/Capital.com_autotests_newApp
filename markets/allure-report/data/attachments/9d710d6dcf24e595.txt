@@ -1,1 +1,0 @@
-longPositionGoToPlatformBtn 1

@@ -1,4 +1,0 @@
-twitterIcon 1
-USER: authorised
-EXPECTATION:  opens external link
-EXPECTATION ASSERTIONS opens external link

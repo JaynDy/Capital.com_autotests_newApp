@@ -1,4 +1,0 @@
-termsAndPoliciesLink 1
-USER: unregistered
-EXPECTATION:  { type: 'redirect', page: 'termsAndPolicies' }
-EXPECTATION ASSERTIONS { type: 'redirect', page: 'termsAndPolicies' }

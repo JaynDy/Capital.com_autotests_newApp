@@ -1,3 +1,0 @@
-BASE URL: https://capital.com/zh-hans
-PATH: markets/shares
-PAGE CLOSED: true

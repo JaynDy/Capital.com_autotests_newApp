@@ -1,4 +1,0 @@
-BASE URL: https://capital.com/ar-ae
-PATH: 
-PAGE CLOSED: false
-riskDisclosureStatementLink 0

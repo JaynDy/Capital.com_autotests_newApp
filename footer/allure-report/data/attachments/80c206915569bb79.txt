@@ -1,4 +1,0 @@
-BASE URL: https://capital.com/zh-hant
-PATH: 
-PAGE CLOSED: false
-youtubeIcon 0

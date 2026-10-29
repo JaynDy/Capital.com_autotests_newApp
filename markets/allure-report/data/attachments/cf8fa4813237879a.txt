@@ -1,4 +1,0 @@
-BASE URL: https://capital.com/ar-ae
-PATH: markets/forex
-PAGE CLOSED: false
-tradedBtn 0

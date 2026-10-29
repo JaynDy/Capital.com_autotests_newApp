@@ -1,3 +1,0 @@
-USER: authorised
-EXPECTATION:  opens cookie menu
-START CLICK cookieSettingsLink

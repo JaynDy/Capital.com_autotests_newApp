@@ -1,2 +1,0 @@
-START CLICK youtubeIcon
-COUNT youtubeIcon 0

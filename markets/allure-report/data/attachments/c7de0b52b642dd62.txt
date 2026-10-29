@@ -1,4 +1,0 @@
-readyToJoinSignUpBtn 1
-USER: unregistered
-EXPECTATION:  shows signup form
-EXPECTATION ASSERTIONS shows signup form

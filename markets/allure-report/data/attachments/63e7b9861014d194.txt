@@ -1,2 +1,0 @@
-START CLICK sellBtn
-COUNT sellBtn 0

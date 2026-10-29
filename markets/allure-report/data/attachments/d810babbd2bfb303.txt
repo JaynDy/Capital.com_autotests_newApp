@@ -1,3 +1,0 @@
-USER: unregistered
-EXPECTATION:  shows signup form
-START CLICK addToFavouriteBtn

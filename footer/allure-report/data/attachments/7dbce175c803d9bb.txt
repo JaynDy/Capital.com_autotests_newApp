@@ -1,4 +1,0 @@
-BASE URL: https://capital.com/ro-ro
-PATH: 
-PAGE CLOSED: false
-linkedinIcon 0

@@ -1,3 +1,0 @@
-Button enabled: true
-START CLICK shortPositionGoToPlatformBtn
-COUNT shortPositionGoToPlatformBtn 1

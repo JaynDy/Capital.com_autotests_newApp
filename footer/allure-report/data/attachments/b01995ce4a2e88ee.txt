@@ -1,4 +1,0 @@
-BASE URL: https://capital.com/de-de
-PATH: 
-PAGE CLOSED: false
-twitterIcon 0

@@ -1,2 +1,0 @@
-START CLICK viewDetailedChartBtn
-COUNT viewDetailedChartBtn 0

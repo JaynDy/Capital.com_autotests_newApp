@@ -1,5 +1,0 @@
-USER: unregistered
-EXPECTATION:  shows login form
-START CLICK buyBtn
-COUNT buyBtn 0
-URL AFTER CLICK: https://capital.com/it-it/markets/commodities/gold-spot-materie-prime

@@ -1,4 +1,0 @@
-BASE URL: https://capital.com/ar-ae
-PATH: markets/interest-rates
-PAGE CLOSED: false
-tradedBtn 0

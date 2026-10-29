@@ -1,5 +1,0 @@
-USER: unauthorised
-EXPECTATION:  shows login form
-START CLICK sellBtn
-COUNT sellBtn 0
-URL AFTER CLICK: https://capital.com/fr-fr/markets/commodities/produit-de-base-gold-spot

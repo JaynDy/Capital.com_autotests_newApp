@@ -1,3 +1,0 @@
-Button enabled: true
-START CLICK sellBtn
-COUNT sellBtn 0
