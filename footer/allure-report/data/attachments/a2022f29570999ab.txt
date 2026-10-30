@@ -1,0 +1,7 @@
+Button enabled: true
+USER: unauthorised
+EXPECTATION:  opens external link
+START CLICK downloadAppStoreBtn
+COUNT downloadAppStoreBtn 1
+URL AFTER CLICK: https://capital.com/zh-hans
+EXPECTATION ASSERTIONS opens external link

@@ -1,0 +1,6 @@
+USER: authorised
+EXPECTATION:  opens external link
+START CLICK downloadAppStoreBtn
+COUNT downloadAppStoreBtn 1
+URL AFTER CLICK: https://capital.com/en-int
+EXPECTATION ASSERTIONS opens external link
