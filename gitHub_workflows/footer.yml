@@ -1,11 +1,14 @@
-name: Markets Tests
+name: Footer Tests
 
 on:
   push:
     branches: [main, master, dev, "ci/**"]
   pull_request:
     branches: [main, master, dev, "ci/**"]
-  workflow_dispatch:
+    workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   # 1. TESTS
@@ -22,7 +25,6 @@ jobs:
       CI: true
       TEST_BROWSER: ${{ matrix.browser }}
       TEST_LICENSE: ${{ matrix.license }}
-      TEST_USER: unauthorised,unregistered
 
     steps:
       - uses: actions/checkout@v4
@@ -37,7 +39,7 @@ jobs:
         run: rm -rf allure-results allure-report test-results
 
       - name: Run tests
-        run: npm run test:markets
+        run: npm run test:footer
 
       - name: Upload Allure results
         if: always()
@@ -45,11 +47,12 @@ jobs:
         with:
           name: allure-results-${{ matrix.license }}
           path: allure-results/
+          if-no-files-found: warn
 
   # 2. REPORT (single job)
   report:
     needs: test
-    if: always()
+    if: always() && github.event_name != 'pull_request'
     runs-on: ubuntu-latest
 
     steps:
@@ -67,6 +70,9 @@ jobs:
 
       - name: Merge results
         run: |
+          # mkdir merged-results
+          # cp -R allure-results/*/* merged-results/ 2>/dev/null || true
+          # cp -R allure-results/* merged-results/ 2>/dev/null || true
           mkdir -p merged-results
           find allure-results -type f -exec cp -n {} merged-results/ \;
 
@@ -76,14 +82,40 @@ jobs:
       - name: Generate Allure report
         run: allure generate merged-results -o allure-report --clean
 
-      - name: Prepare Pages structure
-        run: |
-          mkdir -p public/markets
-          mv allure-report public/markets
-
-      - name: Deploy report
-        uses: peaceiris/actions-gh-pages@v3
+      # 3. DEPLOY FOOTER REPORT ONLY
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: public
-          # keep_files: true
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Update Footer report
+        run: |
+          rm -rf gh-pages/footer
+          mkdir -p gh-pages/footer
+
+          cp -R allure-report/. gh-pages/footer/
+
+          cd gh-pages
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+
+          if ! git diff --cached --quiet; then
+            git commit -m "Update Footer Allure report"
+            git push origin HEAD:gh-pages
+          fi
+
+      # - name: Prepare Pages structure
+      #   run: |
+      #     mkdir -p public/footer
+      #     mv allure-report public/footer
+
+      # - name: Deploy report
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: public
+      # keep_files: true
