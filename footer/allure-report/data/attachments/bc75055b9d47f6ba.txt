@@ -1,3 +1,0 @@
-USER: unauthorised
-EXPECTATION:  opens external link
-START CLICK exploreAppGalleryBtn
