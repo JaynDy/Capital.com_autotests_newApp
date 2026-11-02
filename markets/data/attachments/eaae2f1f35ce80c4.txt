@@ -1,0 +1,6 @@
+USER: unregistered
+EXPECTATION:  shows signup form
+START CLICK viewDetailedChartBtn
+COUNT viewDetailedChartBtn 1
+URL AFTER CLICK: https://capital.com/nl-nl/markets/forex/euro-us-dollar-koers-2
+EXPECTATION ASSERTIONS shows signup form

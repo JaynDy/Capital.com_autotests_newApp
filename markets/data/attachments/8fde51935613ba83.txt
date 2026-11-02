@@ -1,5 +1,0 @@
-USER: unregistered
-EXPECTATION:  shows signup form
-START CLICK viewDetailedChartBtn
-COUNT viewDetailedChartBtn 0
-URL AFTER CLICK: https://capital.com/vi-int/markets/interest-rates/euribor-future
