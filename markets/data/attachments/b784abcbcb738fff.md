@@ -1,0 +1,1676 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: cta/generated.cta.spec.js >> financeNews page | mostTradedMarketsBlock | tradedBtn
+- Location: tests/cta/generated.cta.spec.js:37:7
+
+# Error details
+
+```
+Error: expect(locator).toBeVisible() failed
+
+Locator: locator('[data-type="wdg_most_traded_btn"]').first()
+Expected: visible
+Timeout: 5000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 5000ms
+  - waiting for locator('[data-type="wdg_most_traded_btn"]').first()
+
+```
+
+```yaml
+- banner:
+  - text: CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage.
+  - strong: 80.96% of retail investor accounts lose money when trading CFDs with this provider.
+  - text: You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money.
+  - link:
+    - /url: /en-int
+    - img
+  - navigation:
+    - button "Trading":
+      - button "Trading"
+    - button "Markets":
+      - button "Markets"
+    - link "Pricing":
+      - /url: /en-int/ways-to-trade/fees-and-charges
+    - button "About":
+      - button "About"
+  - button "en"
+  - button "Log In"
+  - button "Open account"
+- paragraph:
+  - link "Home":
+    - /url: /en-int
+  - text: •Finance news
+- heading "News and Analysis" [level=1]
+- paragraph: Latest updates on markets, finance, politics, and more — all in one place.
+- link "All":
+  - /url: /en-int/news
+- link "Forex":
+  - /url: /en-int/news?category=forex
+- link "Shares":
+  - /url: /en-int/news?category=stocks
+- link "Indices":
+  - /url: /en-int/news?category=indices
+- link "Commodities":
+  - /url: /en-int/news?category=commodities
+- link "Cryptocurrencies":
+  - /url: /en-int/news?category=cryptocurrencies
+- main:
+  - heading "News roundup" [level=2]
+  - text: The top business and political stories moving markets and making headlines worldwide.
+  - button
+  - text: Reuters News an hour ago
+  - link "Alibaba AI chip unit T-Head files for Hong Kong IPO":
+    - /url: /en-int/news/alibaba-ai-chip-unit-t-head-files-for-hong-kong-ipo
+    - strong: Alibaba AI chip unit T-Head files for Hong Kong IPO
+  - button "NVDA -2.04%"
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button
+  - text: Reuters News 3 hours ago
+  - link "Gold drops 1% on hawkish Fed comments ahead of US inflation data":
+    - /url: /en-int/news/gold-drops-1-on-hawkish-fed-comments-ahead-of-us
+    - strong: Gold drops 1% on hawkish Fed comments ahead of US inflation data
+  - button "Gold -2.12%"
+  - button "Silver -2.74%"
+  - button "Palladium -0.44%"
+  - button
+  - text: Reuters News 5 hours ago
+  - link "South Africa's unemployment rate edges up, highlighting key voter concern":
+    - /url: /en-int/news/south-africa-s-unemployment-rate-edges-up-highlighting-key-voter-concern
+    - strong: South Africa's unemployment rate edges up, highlighting key voter concern
+  - button
+  - text: Reuters News 5 hours ago
+  - link "Myanmar lobbies US to invest in its rare earths sector, dominated by China":
+    - /url: /en-int/news/myanmar-lobbies-us-to-invest-in-its-rare-earths-sector
+    - strong: Myanmar lobbies US to invest in its rare earths sector, dominated by China
+  - button
+  - text: Reuters News 6 hours ago
+  - link "GLOBAL MARKETS-Stocks climb as oil prices dip heading into US CPI print":
+    - /url: /en-int/news/global-markets-stocks-climb-as-oil-prices-dip-heading-into-us
+    - strong: GLOBAL MARKETS-Stocks climb as oil prices dip heading into US CPI print
+  - button "NVDA -2.04%"
+  - button "CRWV -5.76%"
+  - button "Gold -2.12%"
+  - button
+  - text: Reuters News 6 hours ago
+  - link "Sweden's Riksbank may raise its key rate again in the months ahead, minutes show":
+    - /url: /en-int/news/sweden-s-riksbank-may-raise-its-key-rate-again-in-the-months
+    - strong: Sweden's Riksbank may raise its key rate again in the months ahead, minutes show
+  - button
+  - text: Reuters News 8 hours ago
+  - link "EMERGING MARKETS-EM Asia equities rally as oil slides after Trump's Iran remarks":
+    - /url: /en-int/news/emerging-markets-em-asia-equities-rally-as-oil-slides-after-trump-s
+    - strong: EMERGING MARKETS-EM Asia equities rally as oil slides after Trump's Iran remarks
+  - button "TSM -1.33%"
+  - button "SKHY -4.26%"
+  - button "SMSN -2.25%"
+  - button
+  - text: Reuters News 11 hours ago
+  - link "Three workers die of asphyxiation at Indian iPhone parts factory, source says":
+    - /url: /en-int/news/three-workers-die-of-asphyxiation-at-indian-iphone-parts-factory
+    - strong: Three workers die of asphyxiation at Indian iPhone parts factory, source says
+  - button "AAPL +0.41%"
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button
+  - text: Reuters News 12 hours ago
+  - link "China's trade surplus soars past $1 trillion as AI boom powers exports":
+    - /url: /en-int/news/china-s-trade-surplus-soars-past-1-trillion-as-ai-boom
+    - strong: China's trade surplus soars past $1 trillion as AI boom powers exports
+  - button
+  - text: Reuters News 12 hours ago
+  - link "Oil falls as Trump downplays prospect of escalation with Iran":
+    - /url: /en-int/news/oil-falls-as-trump-downplays-prospect-of-escalation-with-iran
+    - strong: Oil falls as Trump downplays prospect of escalation with Iran
+  - button "Load more"
+- complementary:
+  - strong: Latest News
+  - text: Reuters News 55 minutes ago
+  - link "Path Robotics quadruples valuation to $2.5 billion in latest funding round- Bloomberg News":
+    - /url: /en-int/news/path-robotics-quadruples-valuation-to-2-5-billion-in-latest-funding
+    - strong: Path Robotics quadruples valuation to $2.5 billion in latest funding round- Bloomberg News
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - text: GlobeNewswire 55 minutes ago
+  - link "Zoom's new AI Launchpad offers up to $150K in complimentary credits to build next-gen apps":
+    - /url: /en-int/news/zoom-s-new-ai-launchpad-offers-up-to-150k-in-complimentary
+    - strong: Zoom's new AI Launchpad offers up to $150K in complimentary credits to build next-gen apps
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "ZM +1.08%"
+  - text: GlobeNewswire 55 minutes ago
+  - link "Zoom's new AI Launchpad offers up to $150K in complimentary credits to build next-gen apps":
+    - /url: /en-int/news/zoom-s-new-ai-launchpad-offers-up-to-150k-in-complimentary
+    - strong: Zoom's new AI Launchpad offers up to $150K in complimentary credits to build next-gen apps
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "ZM +1.08%"
+  - button
+  - text: Public Technologies 55 minutes ago
+  - link "Yibin City Commercial Bank Installs New Board for Three-Year Term":
+    - /url: /en-int/news/yibin-city-commercial-bank-installs-new-board-for-three-year-term
+    - strong: Yibin City Commercial Bank Installs New Board for Three-Year Term
+  - text: Reuters News 55 minutes ago
+  - link "Amazon's Ring launches flying camera, autonomous security robot":
+    - /url: /en-int/news/amazon-s-ring-launches-flying-camera-autonomous-security-robot
+    - strong: Amazon's Ring launches flying camera, autonomous security robot
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "HIMS +0.98%"
+  - button
+  - text: Newsfile 55 minutes ago
+  - link "Wildsky Announces Update to Acquisition of NewRidge Gold Project":
+    - /url: /en-int/news/wildsky-announces-update-to-acquisition-of-newridge-gold-project
+    - strong: Wildsky Announces Update to Acquisition of NewRidge Gold Project
+  - button "HIMS +0.98%"
+  - button "IBRX -1.69%"
+  - text: Public Technologies 55 minutes ago
+  - link "Ibex to Present at RBC Global TIMT Conference":
+    - /url: /en-int/news/ibex-to-present-at-rbc-global-timt-conference
+    - strong: Ibex to Present at RBC Global TIMT Conference
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "NDAQ +0.11%"
+  - text: Public Technologies 55 minutes ago
+  - link "Intel Partners With Altera to Develop Sensor Integration Solutions for Edge AI":
+    - /url: /en-int/news/intel-partners-with-altera-to-develop-sensor-integration-solutions-for
+    - strong: Intel Partners With Altera to Develop Sensor Integration Solutions for Edge AI
+  - button "INTC -4.08%"
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - text: Public Technologies 55 minutes ago
+  - link "Adobe Expands Google Partnership to Integrate Creative Tools and AI Models":
+    - /url: /en-int/news/adobe-expands-google-partnership-to-integrate-creative-tools-and-ai
+    - strong: Adobe Expands Google Partnership to Integrate Creative Tools and AI Models
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "MSFT -0.44%"
+  - text: Public Technologies 56 minutes ago
+  - 'link "Fastea Capital: Chip stocks slide as data center curbs fuel AI spending concerns"':
+    - /url: /en-int/news/fastea-capital-chip-stocks-slide-as-data-center-curbs-fuel
+    - strong: "Fastea Capital: Chip stocks slide as data center curbs fuel AI spending concerns"
+  - button "IFX +2.38%"
+  - button "SMHNd +4.059%"
+  - button "KBCA +1.25%"
+  - text: Reuters News 56 minutes ago
+  - link "PepGen more than doubles as muscle disease drug tops expectations":
+    - /url: /en-int/news/pepgen-more-than-doubles-as-muscle-disease-drug-tops-expectations
+    - strong: PepGen more than doubles as muscle disease drug tops expectations
+  - button "PEPG -3.25%"
+  - text: Public Technologies 56 minutes ago
+  - link "Qualys Participates in UBS Global Technology and AI Conference":
+    - /url: /en-int/news/qualys-participates-in-ubs-global-technology-and-ai-conference
+    - strong: Qualys Participates in UBS Global Technology and AI Conference
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "MSTR -2.87%"
+  - button
+  - text: Reuters News 56 minutes ago
+  - link "Exsitec Holding Takes Over Visma Software's Control Edge Business Unit":
+    - /url: /en-int/news/exsitec-holding-takes-over-visma-software-s-control-edge-business-unit
+    - strong: Exsitec Holding Takes Over Visma Software's Control Edge Business Unit
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "MSTR -2.87%"
+  - text: Public Technologies 56 minutes ago
+  - link "CIBC sets final preference share-linked note issuance at GBP 701,245":
+    - /url: /en-int/news/cibc-sets-final-preference-share-linked-note-issuance-at-gbp-701-245
+    - strong: CIBC sets final preference share-linked note issuance at GBP 701,245
+  - button "CMus +1.01%"
+  - button "IMO -1.02%"
+  - button "CMca +1.33%"
+  - text: GlobeNewswire 56 minutes ago
+  - link "TETmedical Appoints Dr. Hooman Kamel and Dr. Evan Gerber as Medical Advisors":
+    - /url: /en-int/news/tetmedical-appoints-dr-hooman-kamel-and-dr-evan-gerber-as
+    - strong: TETmedical Appoints Dr. Hooman Kamel and Dr. Evan Gerber as Medical Advisors
+  - text: Public Technologies an hour ago
+  - link "AGC Biologics partners with Child's Cure to develop mRNA therapy for CDKL5 deficiency disorder":
+    - /url: /en-int/news/agc-biologics-partners-with-child-s-cure-to-develop-mrna-therapy
+    - strong: AGC Biologics partners with Child's Cure to develop mRNA therapy for CDKL5 deficiency disorder
+  - button "QBTS -8.15%"
+  - button "HIMS +0.98%"
+  - button "NDAQ +0.11%"
+  - text: Reuters News an hour ago
+  - link "Paysafe Ltd <PSFE.N> expected to post earnings of 55 cents a share - Earnings Preview":
+    - /url: /en-int/news/paysafe-ltd-psfe-n-expected-to-post-earnings-of-55-cents-a-share
+    - strong: Paysafe Ltd <PSFE.N> expected to post earnings of 55 cents a share - Earnings Preview
+  - button "PSFE +6.47%"
+  - button
+  - text: Reuters News an hour ago
+  - link "Brazil retailer Magazine Luiza soars on strong October sales data":
+    - /url: /en-int/news/brazil-retailer-magazine-luiza-soars-on-strong-october-sales-data
+    - strong: Brazil retailer Magazine Luiza soars on strong October sales data
+  - button "HIMS +0.98%"
+  - button "JPM +0.28%"
+  - button "IBRX -1.69%"
+  - text: GlobeNewswire an hour ago
+  - link "CHERRiSH Hits the Ground Running as Official Recovery Drink Partner of the Novant Health Charlotte Marathon":
+    - /url: /en-int/news/cherrish-hits-the-ground-running-as-official-recovery-drink-partner
+    - strong: CHERRiSH Hits the Ground Running as Official Recovery Drink Partner of the Novant Health Charlotte Marathon
+  - text: GlobeNewswire an hour ago
+  - link "Sprout Social Launches AI Sentiment Analysis in NewsWhip to Measure the Real Reputational Impact of News Coverage":
+    - /url: /en-int/news/sprout-social-launches-ai-sentiment-analysis-in-newswhip-to-measure
+    - strong: Sprout Social Launches AI Sentiment Analysis in NewsWhip to Measure the Real Reputational Impact of News Coverage
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "SPT +0.64%"
+  - text: Pressetext an hour ago
+  - 'link "News: German Tech Holding GmbH & Co. KGaA: Another emergence of anonymous defamatory letters"':
+    - /url: /en-int/news/news-german-tech-holding-gmbh-co-kgaa-another-emergence
+    - strong: "News: German Tech Holding GmbH & Co. KGaA: Another emergence of anonymous defamatory letters"
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "MSTR -2.87%"
+  - text: Pressetext an hour ago
+  - link "Another emergence of anonymous defamatory letters":
+    - /url: /en-int/news/another-emergence-of-anonymous-defamatory-letters
+    - strong: Another emergence of anonymous defamatory letters
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "MSTR -2.87%"
+  - button
+  - text: Public Technologies an hour ago
+  - link "NextBoat Sets Third-Quarter Results Announcement":
+    - /url: /en-int/news/nextboat-sets-third-quarter-results-announcement
+    - strong: NextBoat Sets Third-Quarter Results Announcement
+  - button "QBTS -8.15%"
+  - button "HIMS +0.98%"
+  - button "DVLT -3.02%"
+  - button
+  - text: Reuters News an hour ago
+  - link "INSTANT VIEW-Hot October inflation report rattles markets":
+    - /url: /en-int/news/instant-view-hot-october-inflation-report-rattles-markets
+    - strong: INSTANT VIEW-Hot October inflation report rattles markets
+  - button "Gold -2.12%"
+  - button "US500 -0.2%"
+  - button "ESZ2026 -0.2%"
+  - text: Reuters News an hour ago
+  - link "REUTERS SPORTS SCHEDULE AT 2 p.m. GMT/ 9 a.m. ET":
+    - /url: /en-int/news/reuters-sports-schedule-at-2-p-m-gmt/-9-a-m-et
+    - strong: REUTERS SPORTS SCHEDULE AT 2 p.m. GMT/ 9 a.m. ET
+  - button "POW +1.2%"
+  - text: Newsfile an hour ago
+  - link "TMX Group Equity Financing Statistics - October 2026":
+    - /url: /en-int/news/tmx-group-equity-financing-statistics-october-2026
+    - strong: TMX Group Equity Financing Statistics - October 2026
+  - button "RKLB -6.9%"
+  - button "BE -6.63%"
+  - button "CRML +3.08%"
+  - text: Newsfile an hour ago
+  - link "Sandhurst Consulting Facilitates Large Scale Emergency Exercise for the Yukon Government - Operation Nanook-Tatiglit 2026":
+    - /url: /en-int/news/sandhurst-consulting-facilitates-large-scale-emergency-exercise-for-the-yukon
+    - strong: Sandhurst Consulting Facilitates Large Scale Emergency Exercise for the Yukon Government - Operation Nanook-Tatiglit 2026
+  - text: Newsfile an hour ago
+  - link "Go Lime Acquires Select Plumbing & Heating, Expanding Commercial Plumbing and HVAC Services Across the Greater Toronto Area":
+    - /url: /en-int/news/go-lime-acquires-select-plumbing-heating-expanding-commercial-plumbing
+    - strong: Go Lime Acquires Select Plumbing & Heating, Expanding Commercial Plumbing and HVAC Services Across the Greater Toronto Area
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - text: Newsfile an hour ago
+  - link "Fruggr Launches Automatic Shadow AI Detection as 88% of Employees with Enterprise AI Also Use Their Own":
+    - /url: /en-int/news/fruggr-launches-automatic-shadow-ai-detection-as-88-of-employees
+    - strong: Fruggr Launches Automatic Shadow AI Detection as 88% of Employees with Enterprise AI Also Use Their Own
+  - button
+  - text: Reuters News an hour ago
+  - link "CANADA FX DEBT - Canadian dollar weakens, benchmark yield climbs":
+    - /url: /en-int/news/canada-fx-debt-canadian-dollar-weakens-benchmark-yield-climbs
+    - strong: CANADA FX DEBT - Canadian dollar weakens, benchmark yield climbs
+  - button "USD/CAD +0.39%"
+  - text: Newsfile an hour ago
+  - link "cCarbon to Host Canada's Maturing Environmental Marketplace During Canada Climate Week Xchange 2026":
+    - /url: /en-int/news/ccarbon-to-host-canada-s-maturing-environmental-marketplace-during-canada-climate
+    - strong: cCarbon to Host Canada's Maturing Environmental Marketplace During Canada Climate Week Xchange 2026
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - text: GlobeNewswire an hour ago
+  - link "Rakovina Therapeutics Secures Exclusive Worldwide Licence to Artemis.AI™ Platform for DNA-Damage Response Oncology Drug Discovery":
+    - /url: /en-int/news/rakovina-therapeutics-secures-exclusive-worldwide-licence-to-artemis-aitm-platform-for
+    - strong: Rakovina Therapeutics Secures Exclusive Worldwide Licence to Artemis.AI™ Platform for DNA-Damage Response Oncology Drug Discovery
+  - button "AZNl -0.27%"
+  - button "AZN +1.7%"
+  - button "MWRL 0.00%"
+  - text: GlobeNewswire an hour ago
+  - link "HealthEx Partners with Oscar Insurance to Bring Members’ Medical Records Into the Oscar App":
+    - /url: /en-int/news/healthex-partners-with-oscar-insurance-to-bring-members-medical-records
+    - strong: HealthEx Partners with Oscar Insurance to Bring Members’ Medical Records Into the Oscar App
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "OSCR +0.94%"
+  - button
+  - text: GlobeNewswire an hour ago
+  - link "Cloudastructure Schedules Q3 2026 Earnings Call":
+    - /url: /en-int/news/cloudastructure-schedules-q3-2026-earnings-call
+    - strong: Cloudastructure Schedules Q3 2026 Earnings Call
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - text: GlobeNewswire an hour ago
+  - link "Nu-Tek BioSciences Successfully Completes ISO 9001 Certification Review, Reinforcing Commitment to Raw Material Quality":
+    - /url: /en-int/news/nu-tek-biosciences-successfully-completes-iso-9001-certification-review-reinforcing-commitment
+    - strong: Nu-Tek BioSciences Successfully Completes ISO 9001 Certification Review, Reinforcing Commitment to Raw Material Quality
+  - text: GlobeNewswire an hour ago
+  - link "Opensity Spent a Year Pressure-Testing Its Own Methodology for Operational Transformation":
+    - /url: /en-int/news/opensity-spent-a-year-pressure-testing-its-own-methodology-for-operational
+    - strong: Opensity Spent a Year Pressure-Testing Its Own Methodology for Operational Transformation
+  - text: ACCESS Newswire an hour ago
+  - link "NextBoat Inc. to Announce Third Quarter 2026 Financial and Operating Results on Monday, November 16, 2026":
+    - /url: /en-int/news/nextboat-inc-to-announce-third-quarter-2026-financial-and-operating
+    - strong: NextBoat Inc. to Announce Third Quarter 2026 Financial and Operating Results on Monday, November 16, 2026
+  - button "QBTS -8.15%"
+  - button "HIMS +0.98%"
+  - button "DVLT -3.02%"
+  - text: GlobeNewswire an hour ago
+  - link "project44 Turns Supply Chain Data Into AI-Powered Decisions with Snowflake":
+    - /url: /en-int/news/project44-turns-supply-chain-data-into-ai-powered-decisions-with-snowflake
+    - strong: project44 Turns Supply Chain Data Into AI-Powered Decisions with Snowflake
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "F -1.36%"
+  - text: GlobeNewswire an hour ago
+  - link "ROTH to Host 13th Annual Solar & Storage Symposium at RE+ 2026":
+    - /url: /en-int/news/roth-to-host-13th-annual-solar-storage-symposium-at
+    - strong: ROTH to Host 13th Annual Solar & Storage Symposium at RE+ 2026
+  - button "ENPH +2.08%"
+  - button "SEDG +0.11%"
+  - button "FSLR -1.69%"
+  - button
+  - text: ACCESS Newswire an hour ago
+  - link "Envision Pharma Group appoints Leigh Anne Siino as Senior Vice President of Commercial, Two Labs and Riparian":
+    - /url: /en-int/news/envision-pharma-group-appoints-leigh-anne-siino-as-senior-vice
+    - strong: Envision Pharma Group appoints Leigh Anne Siino as Senior Vice President of Commercial, Two Labs and Riparian
+  - button "MRK +0.64%"
+  - text: GlobeNewswire an hour ago
+  - link "Only One in Six Enterprises Treats Indirect Tax as a Standing Board Item":
+    - /url: /en-int/news/only-one-in-six-enterprises-treats-indirect-tax-as-a
+    - strong: Only One in Six Enterprises Treats Indirect Tax as a Standing Board Item
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "VERX +1.35%"
+  - text: GlobeNewswire an hour ago
+  - link "Nu-Tek BioSciences Successfully Completes ISO 9001 Certification Review, Reinforcing Commitment to Raw Material Quality":
+    - /url: /en-int/news/nu-tek-biosciences-successfully-completes-iso-9001-certification-review-reinforcing-commitment
+    - strong: Nu-Tek BioSciences Successfully Completes ISO 9001 Certification Review, Reinforcing Commitment to Raw Material Quality
+  - text: Cision an hour ago
+  - link "Kriptown SAS publishes supplement II to the offer document regarding the recommended public cash offer to the shareholders of Spotlight Group AB (publ)":
+    - /url: /en-int/news/kriptown-sas-publishes-supplement-ii-to-the-offer-document-regarding
+    - strong: Kriptown SAS publishes supplement II to the offer document regarding the recommended public cash offer to the shareholders of Spotlight Group AB (publ)
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - text: GlobeNewswire an hour ago
+  - link "Cayosoft Launches AI-Assisted Forensics and Group Policy Management to Strengthen Ransomware Resilience":
+    - /url: /en-int/news/cayosoft-launches-ai-assisted-forensics-and-group-policy-management-to-strengthen
+    - strong: Cayosoft Launches AI-Assisted Forensics and Group Policy Management to Strengthen Ransomware Resilience
+  - button "MSFT -0.44%"
+  - text: GlobeNewswire an hour ago
+  - link "The King Center Welcomes Six New Board Members to Honor the Legacy and Build for the Next Generation":
+    - /url: /en-int/news/the-king-center-welcomes-six-new-board-members-to-honor
+    - strong: The King Center Welcomes Six New Board Members to Honor the Legacy and Build for the Next Generation
+  - button "DAL +0.15%"
+  - text: GlobeNewswire an hour ago
+  - link "The New Michelin X-Ice Snow+ Tire is Designed for Improved Braking, Longer Tread Life and Optimized Fuel and EV Range":
+    - /url: /en-int/news/the-new-michelin-x-ice-snow-tire-is-designed-for-improved
+    - strong: The New Michelin X-Ice Snow+ Tire is Designed for Improved Braking, Longer Tread Life and Optimized Fuel and EV Range
+  - button "HIMS +0.98%"
+  - button "IBRX -1.69%"
+  - text: GlobeNewswire an hour ago
+  - link "Inventors of ACT! Return With Contatta!, a Contact Manager Built for the Person, Not the Pipeline":
+    - /url: /en-int/news/inventors-of-act-return-with-contatta-a-contact-manager-built
+    - strong: Inventors of ACT! Return With Contatta!, a Contact Manager Built for the Person, Not the Pipeline
+  - button "GOOGL -0.93%"
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button
+  - text: GlobeNewswire an hour ago
+  - link "LiqTech Secures New DPF Orders, Driving Backlog to Highest Level in Years":
+    - /url: /en-int/news/liqtech-secures-new-dpf-orders-driving-backlog-to-highest-level
+    - strong: LiqTech Secures New DPF Orders, Driving Backlog to Highest Level in Years
+  - text: GlobeNewswire an hour ago
+  - 'link "AppLovin Corporation (NASDAQ:APP) SHAREHOLDER ALERT: Investors With Losses May Seek to Lead the Class Action in AppLovin Corporation Securities Lawsuit - Contact Portnoy Law Firm"':
+    - /url: /en-int/news/applovin-corporation-nasdaq-app-shareholder-alert-investors-with-losses-may-seek
+    - strong: "AppLovin Corporation (NASDAQ:APP) SHAREHOLDER ALERT: Investors With Losses May Seek to Lead the Class Action in AppLovin Corporation Securities Lawsuit - Contact Portnoy Law Firm"
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "APP -2.13%"
+  - text: GlobeNewswire an hour ago
+  - link "Altera Jacaranda Celebrates Grand Opening with Unveiling of Signature Mural":
+    - /url: /en-int/news/altera-jacaranda-celebrates-grand-opening-with-unveiling-of-signature-mural
+    - strong: Altera Jacaranda Celebrates Grand Opening with Unveiling of Signature Mural
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - text: GlobeNewswire an hour ago
+  - link "RDCY Leaders to Headline AI and Legal Technology Sessions Alongside Parambil in New York City":
+    - /url: /en-int/news/rdcy-leaders-to-headline-ai-and-legal-technology-sessions-alongside
+    - strong: RDCY Leaders to Headline AI and Legal Technology Sessions Alongside Parambil in New York City
+  - text: GlobeNewswire an hour ago
+  - 'link "Anavex Life Sciences, Corp. (NASDAQ: AVXL) SHAREHOLDER ALERT: Investors With Losses May Seek to Lead the Class Action in Anavex Life Sciences, Corp. Securities Lawsuit - Contact Portnoy Law Firm"':
+    - /url: /en-int/news/anavex-life-sciences-corp-nasdaq-avxl-shareholder-alert-investors-with-losses-may-seek-to
+    - strong: "Anavex Life Sciences, Corp. (NASDAQ: AVXL) SHAREHOLDER ALERT: Investors With Losses May Seek to Lead the Class Action in Anavex Life Sciences, Corp. Securities Lawsuit - Contact Portnoy Law Firm"
+  - text: GlobeNewswire an hour ago
+  - link "While Most Construction Firms Are Still Piloting AI, Contractors Are Finding Real-World Results with Bluebeam Max":
+    - /url: /en-int/news/while-most-construction-firms-are-still-piloting-ai-contractors-are
+    - strong: While Most Construction Firms Are Still Piloting AI, Contractors Are Finding Real-World Results with Bluebeam Max
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "NEMde -1.29%"
+  - text: GlobeNewswire an hour ago
+  - link "Illumio Puts Breach Containment at the Center of AI Resilience with WWT’s ARMOR":
+    - /url: /en-int/news/illumio-puts-breach-containment-at-the-center-of-ai-resilience
+    - strong: Illumio Puts Breach Containment at the Center of AI Resilience with WWT’s ARMOR
+  - button "NVDA -2.04%"
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - text: GlobeNewswire an hour ago
+  - link "Franciscan Health and Ossium Health Perform World's First Organ Donor Bone Marrow Transplant for Non-Malignant Disease":
+    - /url: /en-int/news/franciscan-health-and-ossium-health-perform-world-s-first-organ-donor
+    - strong: Franciscan Health and Ossium Health Perform World's First Organ Donor Bone Marrow Transplant for Non-Malignant Disease
+  - text: GlobeNewswire an hour ago
+  - 'link "FuelCell Energy, Inc. (NASDAQ:FCEL) SHAREHOLDER ALERT: Investors With Losses May Seek to Lead the Class Action in FuelCell Energy, Inc. Securities Lawsuit - Contact Portnoy Law Firm"':
+    - /url: /en-int/news/fuelcell-energy-inc-nasdaq-fcel-shareholder-alert-investors-with-losses-may-seek-to-lead
+    - strong: "FuelCell Energy, Inc. (NASDAQ:FCEL) SHAREHOLDER ALERT: Investors With Losses May Seek to Lead the Class Action in FuelCell Energy, Inc. Securities Lawsuit - Contact Portnoy Law Firm"
+  - button "FCEL +8.44%"
+  - text: GlobeNewswire an hour ago
+  - 'link "Honeywell Aerospace, Inc. (NASDAQ: HONA) SHAREHOLDER ALERT: Investors With Losses May Seek to Lead the Class Action in Honeywell Aerospace, Inc. Securities Lawsuit - Contact Portnoy Law Firm"':
+    - /url: /en-int/news/honeywell-aerospace-inc-nasdaq-hona-shareholder-alert-investors-with-losses
+    - strong: "Honeywell Aerospace, Inc. (NASDAQ: HONA) SHAREHOLDER ALERT: Investors With Losses May Seek to Lead the Class Action in Honeywell Aerospace, Inc. Securities Lawsuit - Contact Portnoy Law Firm"
+  - button "HON +4.07%"
+  - text: GlobeNewswire an hour ago
+  - link "Heliene and Caelux Bring Next-Generation Hybrid-Tandem™ Solar Modules to U.S. Commercial Manufacturing":
+    - /url: /en-int/news/heliene-and-caelux-bring-next-generation-hybrid-tandemtm-solar-modules-to-u-s
+    - strong: Heliene and Caelux Bring Next-Generation Hybrid-Tandem™ Solar Modules to U.S. Commercial Manufacturing
+  - button "SEPL -2.25%"
+  - text: GlobeNewswire an hour ago
+  - link "NewLake Capital Partners CEO, Anthony Coniglio, to Speak at IgniteIt Cannabis Capital and Policy Summit 2026 on November 18th":
+    - /url: /en-int/news/newlake-capital-partners-ceo-anthony-coniglio-to-speak-at-igniteit
+    - strong: NewLake Capital Partners CEO, Anthony Coniglio, to Speak at IgniteIt Cannabis Capital and Policy Summit 2026 on November 18th
+  - text: GlobeNewswire an hour ago
+  - link "Tive Honors 10 Supply Chain Leaders Driving Circular Logistics with 2026 Green Impact Leader Awards":
+    - /url: /en-int/news/tive-honors-10-supply-chain-leaders-driving-circular-logistics-with
+    - strong: Tive Honors 10 Supply Chain Leaders Driving Circular Logistics with 2026 Green Impact Leader Awards
+  - button "CHRW +2.8%"
+  - text: GlobeNewswire an hour ago
+  - link "Globaledit Helps Brands Meet AI Disclosure Expectations With New Brand Protection System Built on C2PA":
+    - /url: /en-int/news/globaledit-helps-brands-meet-ai-disclosure-expectations-with-new-brand
+    - strong: Globaledit Helps Brands Meet AI Disclosure Expectations With New Brand Protection System Built on C2PA
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - text: GlobeNewswire an hour ago
+  - link "Nelipak Healthcare Packaging Acquires Technipaq, Inc.":
+    - /url: /en-int/news/nelipak-healthcare-packaging-acquires-technipaq-inc
+    - strong: Nelipak Healthcare Packaging Acquires Technipaq, Inc.
+  - text: GlobeNewswire an hour ago
+  - link "Metabolon Expands Verus™ Metabolomics Profiling Kit Availability to Europe and Adds New Rodent Sample Types":
+    - /url: /en-int/news/metabolon-expands-verustm-metabolomics-profiling-kit-availability-to-europe-and
+    - strong: Metabolon Expands Verus™ Metabolomics Profiling Kit Availability to Europe and Adds New Rodent Sample Types
+  - text: GlobeNewswire an hour ago
+  - link "New Financial Health Network Report Finds Rising Home Insurance Costs Put Financial Stability at Risk for Households Across the U.S.":
+    - /url: /en-int/news/new-financial-health-network-report-finds-rising-home-insurance-costs
+    - strong: New Financial Health Network Report Finds Rising Home Insurance Costs Put Financial Stability at Risk for Households Across the U.S.
+  - button "JPM +0.28%"
+  - text: GlobeNewswire an hour ago
+  - link "AGC Biologics partners with Child’s Cure Genetic Research to pursue mRNA-based therapeutic for severe epileptic disorder":
+    - /url: /en-int/news/agc-biologics-partners-with-child-s-cure-genetic-research-to-pursue
+    - strong: AGC Biologics partners with Child’s Cure Genetic Research to pursue mRNA-based therapeutic for severe epileptic disorder
+  - button "QBTS -8.15%"
+  - button "HIMS +0.98%"
+  - button "DVLT -3.02%"
+  - text: GlobeNewswire an hour ago
+  - link "Yamaha Motor University Celebrates Technical Excellence at the 21st Annual Barber Vintage Festival":
+    - /url: /en-int/news/yamaha-motor-university-celebrates-technical-excellence-at-the-21st-annual
+    - strong: Yamaha Motor University Celebrates Technical Excellence at the 21st Annual Barber Vintage Festival
+  - text: ACCESS Newswire an hour ago
+  - link "Shooting Victim Lawyer in Philadelphia David P. Thiruselvam Explains When Property Owners and Businesses Can Face Civil Claims After a Shooting":
+    - /url: /en-int/news/shooting-victim-lawyer-in-philadelphia-david-p-thiruselvam-explains-when
+    - strong: Shooting Victim Lawyer in Philadelphia David P. Thiruselvam Explains When Property Owners and Businesses Can Face Civil Claims After a Shooting
+  - text: GlobeNewswire an hour ago
+  - link "CloudBolt Launches GPU Optimization and Bill-Accurate GPU Allocation for Kubernetes at KubeCon + CloudNativeCon North America":
+    - /url: /en-int/news/cloudbolt-launches-gpu-optimization-and-bill-accurate-gpu-allocation-for-kubernetes
+    - strong: CloudBolt Launches GPU Optimization and Bill-Accurate GPU Allocation for Kubernetes at KubeCon + CloudNativeCon North America
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "MSTR -2.87%"
+  - text: GlobeNewswire an hour ago
+  - 'link "Dun & Bradstreet Holdings, Inc. (NYSE:DNB) SHAREHOLDER ALERT: Investors With Losses May Seek to Lead the Class Action in Dun & Bradstreet Holdings, Inc. Securities Lawsuit - Contact Portnoy Law Firm"':
+    - /url: /en-int/news/dun-bradstreet-holdings-inc-nyse-dnb-shareholder-alert-investors-with-losses-may-seek
+    - strong: "Dun & Bradstreet Holdings, Inc. (NYSE:DNB) SHAREHOLDER ALERT: Investors With Losses May Seek to Lead the Class Action in Dun & Bradstreet Holdings, Inc. Securities Lawsuit - Contact Portnoy Law Firm"
+  - button "BAC +0.18%"
+  - button
+  - text: GlobeNewswire an hour ago
+  - 'link "Doximity, Inc. (NYSE: DOCS) SHAREHOLDER ALERT: Investors With Losses May Seek to Lead the Class Action in Doximity, Inc. Securities Lawsuit - Contact Portnoy Law Firm"':
+    - /url: /en-int/news/doximity-inc-nyse-docs-shareholder-alert-investors-with-losses-may
+    - strong: "Doximity, Inc. (NYSE: DOCS) SHAREHOLDER ALERT: Investors With Losses May Seek to Lead the Class Action in Doximity, Inc. Securities Lawsuit - Contact Portnoy Law Firm"
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "DOCS +1.42%"
+  - text: GlobeNewswire an hour ago
+  - link "Operative Appoints Brian Beirne as Senior Vice President, Commercial Growth to Accelerate Unified Platform Momentum":
+    - /url: /en-int/news/operative-appoints-brian-beirne-as-senior-vice-president-commercial-growth
+    - strong: Operative Appoints Brian Beirne as Senior Vice President, Commercial Growth to Accelerate Unified Platform Momentum
+  - text: GlobeNewswire an hour ago
+  - link "ESO Launches Pre-Bill Assist to Streamline and Scale EMS Billing":
+    - /url: /en-int/news/eso-launches-pre-bill-assist-to-streamline-and-scale-ems-billing
+    - strong: ESO Launches Pre-Bill Assist to Streamline and Scale EMS Billing
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - text: GlobeNewswire an hour ago
+  - link "Johanna Mason Named Recipient of OHI’s 2026 Outdoor Hospitality Industry Leadership Award":
+    - /url: /en-int/news/johanna-mason-named-recipient-of-ohi-s-2026-outdoor-hospitality-industry
+    - strong: Johanna Mason Named Recipient of OHI’s 2026 Outdoor Hospitality Industry Leadership Award
+  - button "QBTS -8.15%"
+  - button "HIMS +0.98%"
+  - button "DVLT -3.02%"
+  - text: GlobeNewswire an hour ago
+  - link "WatchGuard Global Survey Reveals Employee Trust Rises in the Deepfake Era, But Verification Still Lags":
+    - /url: /en-int/news/watchguard-global-survey-reveals-employee-trust-rises-in-the-deepfake
+    - strong: WatchGuard Global Survey Reveals Employee Trust Rises in the Deepfake Era, But Verification Still Lags
+  - text: ACCESS Newswire an hour ago
+  - link "Research from Loyalty360 and Engage People Reveals 90% of Consumers Would Pay with Points at Checkout, If It Were Seamless":
+    - /url: /en-int/news/research-from-loyalty360-and-engage-people-reveals-90-of-consumers
+    - strong: Research from Loyalty360 and Engage People Reveals 90% of Consumers Would Pay with Points at Checkout, If It Were Seamless
+  - text: GlobeNewswire an hour ago
+  - link "AGC Biologics partners with Child’s Cure Genetic Research to pursue mRNA-based therapeutic for severe epileptic disorder":
+    - /url: /en-int/news/agc-biologics-partners-with-child-s-cure-genetic-research-to-pursue
+    - strong: AGC Biologics partners with Child’s Cure Genetic Research to pursue mRNA-based therapeutic for severe epileptic disorder
+  - button "QBTS -8.15%"
+  - button "HIMS +0.98%"
+  - button "DVLT -3.02%"
+  - text: GlobeNewswire an hour ago
+  - link "iQor Wins HR.com's 2026 Career Development Program of the Year Award":
+    - /url: /en-int/news/iqor-wins-hr-com-s-2026-career-development-program-of-the-year
+    - strong: iQor Wins HR.com's 2026 Career Development Program of the Year Award
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - text: GlobeNewswire an hour ago
+  - 'link "Rakuten Kobo 2026 Book Report: Hockey Boyfriends, Trad Wives, Classics and the End of the World"':
+    - /url: /en-int/news/rakuten-kobo-2026-book-report-hockey-boyfriends-trad-wives-classics
+    - strong: "Rakuten Kobo 2026 Book Report: Hockey Boyfriends, Trad Wives, Classics and the End of the World"
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "AES +0.27%"
+  - text: GlobeNewswire an hour ago
+  - link "FluidCloud Achieves the AWS Resilience Software Competency in the Resilience Recovery Category":
+    - /url: /en-int/news/fluidcloud-achieves-the-aws-resilience-software-competency-in-the-resilience
+    - strong: FluidCloud Achieves the AWS Resilience Software Competency in the Resilience Recovery Category
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - text: ACCESS Newswire an hour ago
+  - 'link "From Hype to Commercial Reality: ABI Research Reveals 60 Technology Predictions for 2027, Including AI Data Center Consolidation and Robotics Growth"':
+    - /url: /en-int/news/from-hype-to-commercial-reality-abi-research-reveals-60-technology
+    - strong: "From Hype to Commercial Reality: ABI Research Reveals 60 Technology Predictions for 2027, Including AI Data Center Consolidation and Robotics Growth"
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - text: GlobeNewswire an hour ago
+  - link "ibex to Present at the RBC 2026 Global TIMT Conference":
+    - /url: /en-int/news/ibex-to-present-at-the-rbc-2026-global-timt-conference
+    - strong: ibex to Present at the RBC 2026 Global TIMT Conference
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "RYca +1.47%"
+  - text: GlobeNewswire an hour ago
+  - link "Singulr Named a CRN® 2026 Stellar Startup in AI":
+    - /url: /en-int/news/singulr-named-a-crn-r-2026-stellar-startup-in-ai
+    - strong: Singulr Named a CRN® 2026 Stellar Startup in AI
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "MSTR -2.87%"
+  - text: ACCESS Newswire an hour ago
+  - link "The Integrous Companies Announces Launch of Growth Advisory to Further Support Founders and Investors":
+    - /url: /en-int/news/the-integrous-companies-announces-launch-of-growth-advisory-to-further
+    - strong: The Integrous Companies Announces Launch of Growth Advisory to Further Support Founders and Investors
+  - button
+  - text: GlobeNewswire an hour ago
+  - link "Alpha Pro Tech, Ltd. Announces Third Quarter 2026 Financial Results":
+    - /url: /en-int/news/alpha-pro-tech-ltd-announces-third-quarter-2026-financial-results
+    - strong: Alpha Pro Tech, Ltd. Announces Third Quarter 2026 Financial Results
+  - text: GlobeNewswire an hour ago
+  - link "BambooHR Appoints Derek Keller as Chief Revenue Officer to Lead Its Next Phase of Growth":
+    - /url: /en-int/news/bamboohr-appoints-derek-keller-as-chief-revenue-officer-to-lead
+    - strong: BambooHR Appoints Derek Keller as Chief Revenue Officer to Lead Its Next Phase of Growth
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "RNG +0.72%"
+  - text: GlobeNewswire an hour ago
+  - link "Daré Bioscience to Host Third Quarter 2026 Financial Results and Company Update Conference Call and Webcast on November 16, 2026":
+    - /url: /en-int/news/dare-bioscience-to-host-third-quarter-2026-financial-results-and
+    - strong: Daré Bioscience to Host Third Quarter 2026 Financial Results and Company Update Conference Call and Webcast on November 16, 2026
+  - text: GlobeNewswire an hour ago
+  - link "Netskope Appoints Carrie Francey as Global Channel Chief":
+    - /url: /en-int/news/netskope-appoints-carrie-francey-as-global-channel-chief
+    - strong: Netskope Appoints Carrie Francey as Global Channel Chief
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "MSFT -0.44%"
+  - text: GlobeNewswire an hour ago
+  - 'link "Payscale''s AI Workforce Impact Report: AI Is Boosting Productivity, but Employers Struggle to Put a Price on It"':
+    - /url: /en-int/news/payscale-s-ai-workforce-impact-report-ai-is-boosting-productivity-but
+    - strong: "Payscale's AI Workforce Impact Report: AI Is Boosting Productivity, but Employers Struggle to Put a Price on It"
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "TJX +1.86%"
+  - button
+  - text: GlobeNewswire an hour ago
+  - 'link "Qfin Holdings, Inc. (NASDAQ: QFIN) SHAREHOLDER ALERT: Investors With Losses May Seek to Lead the Class Action in Qfin Holdings, Inc. Securities Lawsuit - Contact Portnoy Law Firm"':
+    - /url: /en-int/news/qfin-holdings-inc-nasdaq-qfin-shareholder-alert-investors-with-losses-may-seek-to-lead
+    - strong: "Qfin Holdings, Inc. (NASDAQ: QFIN) SHAREHOLDER ALERT: Investors With Losses May Seek to Lead the Class Action in Qfin Holdings, Inc. Securities Lawsuit - Contact Portnoy Law Firm"
+  - button "BAC +0.18%"
+  - button "QFIN +0.72%"
+  - button
+  - text: GlobeNewswire an hour ago
+  - link "TierPoint Names Craig Cowden CEO":
+    - /url: /en-int/news/tierpoint-names-craig-cowden-ceo
+    - strong: TierPoint Names Craig Cowden CEO
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "MSTR -2.87%"
+  - text: GlobeNewswire an hour ago
+  - link "Schurz Broadband Group Advances its Enterprise Fiber Network with Cisco 8000 Series Next-Generation Routing":
+    - /url: /en-int/news/schurz-broadband-group-advances-its-enterprise-fiber-network-with-cisco
+    - strong: Schurz Broadband Group Advances its Enterprise Fiber Network with Cisco 8000 Series Next-Generation Routing
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "MUV2 +2.23%"
+  - text: ACCESS Newswire an hour ago
+  - link "Modulate Accelerates Enterprise Voice AI With Twilio Ventures Investment and New Real-Time Audio Intelligence Capabilities":
+    - /url: /en-int/news/modulate-accelerates-enterprise-voice-ai-with-twilio-ventures-investment-and
+    - strong: Modulate Accelerates Enterprise Voice AI With Twilio Ventures Investment and New Real-Time Audio Intelligence Capabilities
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "QBTS -8.15%"
+  - text: GlobeNewswire an hour ago
+  - link "Wilson & Myers opens Thanksgiving luxury oven repair priority window":
+    - /url: /en-int/news/wilson-myers-opens-thanksgiving-luxury-oven-repair-priority-window
+    - strong: Wilson & Myers opens Thanksgiving luxury oven repair priority window
+  - button "MIDD +0.99%"
+  - text: GlobeNewswire an hour ago
+  - link "Nelipak Healthcare Packaging Acquires Technipaq, Inc.":
+    - /url: /en-int/news/nelipak-healthcare-packaging-acquires-technipaq-inc
+    - strong: Nelipak Healthcare Packaging Acquires Technipaq, Inc.
+  - text: ACCESS Newswire an hour ago
+  - 'link "Guard Home Warranty Launches Claims 2.0: A Real US-Based Person in 16 Seconds, Claims Reimbursed Instantly"':
+    - /url: /en-int/news/guard-home-warranty-launches-claims-2-0-a-real-us-based-person
+    - strong: "Guard Home Warranty Launches Claims 2.0: A Real US-Based Person in 16 Seconds, Claims Reimbursed Instantly"
+  - button "NVDA -2.04%"
+  - button "MU -3.32%"
+  - button "SOXL -9.23%"
+  - text: GlobeNewswire an hour ago
+  - link "Seedless Names Briordy Meyers Head of Legal Data Intelligence and Customer Success":
+    - /url: /en-int/news/seedless-names-briordy-meyers-head-of-legal-data-intelligence-and
+    - strong: Seedless Names Briordy Meyers Head of Legal Data Intelligence and Customer Success
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "COF -1.63%"
+  - text: GlobeNewswire an hour ago
+  - link "The New Michelin X-Ice Snow+ Tire is Designed for Improved Braking, Longer Tread Life and Optimized Fuel and EV Range":
+    - /url: /en-int/news/the-new-michelin-x-ice-snow-tire-is-designed-for-improved
+    - strong: The New Michelin X-Ice Snow+ Tire is Designed for Improved Braking, Longer Tread Life and Optimized Fuel and EV Range
+  - button "HIMS +0.98%"
+  - button "IBRX -1.69%"
+  - button "MLfr +1.64%"
+  - text: GlobeNewswire an hour ago
+  - link "Fleetio Invests in the People Behind Fleet Performance With Second Annual ASE Scholarship Program":
+    - /url: /en-int/news/fleetio-invests-in-the-people-behind-fleet-performance-with-second
+    - strong: Fleetio Invests in the People Behind Fleet Performance With Second Annual ASE Scholarship Program
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - text: ACCESS Newswire an hour ago
+  - link "SMX Expands Into AI-Driven Material Science With New Scientific Intelligence Platform":
+    - /url: /en-int/news/smx-expands-into-ai-driven-material-science-with-new-scientific-intelligence
+    - strong: SMX Expands Into AI-Driven Material Science With New Scientific Intelligence Platform
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - text: Reuters News an hour ago
+  - link "US solar firms Heliene, Caelux launch tandem panel":
+    - /url: /en-int/news/us-solar-firms-heliene-caelux-launch-tandem-panel
+    - strong: US solar firms Heliene, Caelux launch tandem panel
+  - text: GlobeNewswire an hour ago
+  - link "Nortech Systems Secures Patents for Optical Interconnects Built for MRI and Aerospace Environments":
+    - /url: /en-int/news/nortech-systems-secures-patents-for-optical-interconnects-built-for-mri
+    - strong: Nortech Systems Secures Patents for Optical Interconnects Built for MRI and Aerospace Environments
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - text: GlobeNewswire an hour ago
+  - link "Planet DDS Enters Canada with Landmark Canadian Dental Services Partnership":
+    - /url: /en-int/news/planet-dds-enters-canada-with-landmark-canadian-dental-services-partnership
+    - strong: Planet DDS Enters Canada with Landmark Canadian Dental Services Partnership
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - text: GlobeNewswire an hour ago
+  - link "Meritage Homes Welcomes Navy Veteran to Brand-New, Mortgage-Free Home in Gulfport, Mississippi":
+    - /url: /en-int/news/meritage-homes-welcomes-navy-veteran-to-brand-new-mortgage-free-home-in
+    - strong: Meritage Homes Welcomes Navy Veteran to Brand-New, Mortgage-Free Home in Gulfport, Mississippi
+  - button "QBTS -8.15%"
+  - button "HIMS +0.98%"
+  - button "DVLT -3.02%"
+  - text: GlobeNewswire an hour ago
+  - link "Kratos and Seagate Space Partner to Advance Mobile Offshore Launch Capabilities for National Security Missions":
+    - /url: /en-int/news/kratos-and-seagate-space-partner-to-advance-mobile-offshore-launch
+    - strong: Kratos and Seagate Space Partner to Advance Mobile Offshore Launch Capabilities for National Security Missions
+  - button "KTOS +7.36%"
+  - text: GlobeNewswire an hour ago
+  - link "Dreeze Emerges From Stealth With $33M to Pioneer Cloud Application Revival":
+    - /url: /en-int/news/dreeze-emerges-from-stealth-with-33m-to-pioneer-cloud-application
+    - strong: Dreeze Emerges From Stealth With $33M to Pioneer Cloud Application Revival
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "MSFT -0.44%"
+  - text: GlobeNewswire an hour ago
+  - 'link "Premier Graphene Inc. (OTC: BIEI) Announces Prioritizing its Fulfillment of its Current Military Supply Contract"':
+    - /url: /en-int/news/premier-graphene-inc-otc-biei-announces-prioritizing-its-fulfillment-of
+    - strong: "Premier Graphene Inc. (OTC: BIEI) Announces Prioritizing its Fulfillment of its Current Military Supply Contract"
+  - text: GlobeNewswire an hour ago
+  - link "Personar and Carahsoft Partner to Deliver Real-Time Audio Intelligence for Education and Sports Organizations":
+    - /url: /en-int/news/personar-and-carahsoft-partner-to-deliver-real-time-audio-intelligence-for
+    - strong: Personar and Carahsoft Partner to Deliver Real-Time Audio Intelligence for Education and Sports Organizations
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - text: GlobeNewswire an hour ago
+  - link "Verizon Business, Thames Freeport complete one of Europe’s largest Private 5G implementations":
+    - /url: /en-int/news/verizon-business-thames-freeport-complete-one-of-europe-s-largest-private
+    - strong: Verizon Business, Thames Freeport complete one of Europe’s largest Private 5G implementations
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "VZ 0.00%"
+  - text: GlobeNewswire an hour ago
+  - link "Hasbro’s Sixth Wall Studio and Dynamic Creatures Partner to Develop Robotic Characters that Greet and Engage Visitors at Theme Parks and Resorts":
+    - /url: /en-int/news/hasbro-s-sixth-wall-studio-and-dynamic-creatures-partner-to-develop
+    - strong: Hasbro’s Sixth Wall Studio and Dynamic Creatures Partner to Develop Robotic Characters that Greet and Engage Visitors at Theme Parks and Resorts
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "QBTS -8.15%"
+  - text: GlobeNewswire an hour ago
+  - link "Onex to Present at the TD Cowen 2026 Financials & Fintech Conference":
+    - /url: /en-int/news/onex-to-present-at-the-td-cowen-2026-financials
+    - strong: Onex to Present at the TD Cowen 2026 Financials & Fintech Conference
+  - text: GlobeNewswire an hour ago
+  - link "H2O Innovation Acquires the Emory WaterHub®, Expanding Its Model for Owning and Operating Water & Wastewater Infrastructure":
+    - /url: /en-int/news/h2o-innovation-acquires-the-emory-waterhub-r-expanding-its-model-for
+    - strong: H2O Innovation Acquires the Emory WaterHub®, Expanding Its Model for Owning and Operating Water & Wastewater Infrastructure
+  - button
+  - text: GlobeNewswire an hour ago
+  - link "Leading AI Builders Make Massive Commitments on VAST-Powered Infrastructure":
+    - /url: /en-int/news/leading-ai-builders-make-massive-commitments-on-vast-powered-infrastructure
+    - strong: Leading AI Builders Make Massive Commitments on VAST-Powered Infrastructure
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - text: GlobeNewswire an hour ago
+  - link "IncQuery Founder and CEO Felipe Ochoa Named CEO of the Year by the 2026 Tech Ascension Awards":
+    - /url: /en-int/news/incquery-founder-and-ceo-felipe-ochoa-named-ceo-of-the
+    - strong: IncQuery Founder and CEO Felipe Ochoa Named CEO of the Year by the 2026 Tech Ascension Awards
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - text: GlobeNewswire an hour ago
+  - link "Opensity Spent a Year Pressure-Testing Its Own Methodology for Operational Transformation":
+    - /url: /en-int/news/opensity-spent-a-year-pressure-testing-its-own-methodology-for-operational
+    - strong: Opensity Spent a Year Pressure-Testing Its Own Methodology for Operational Transformation
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - text: GlobeNewswire an hour ago
+  - 'link "Baidu, Inc. (NASDAQ:BIDU) SHAREHOLDER ALERT: Investors With Losses May Seek to Lead the Class Action in Baidu, Inc. Securities Lawsuit - Contact Portnoy Law Firm"':
+    - /url: /en-int/news/baidu-inc-nasdaq-bidu-shareholder-alert-investors-with-losses-may-seek-to-lead-the
+    - strong: "Baidu, Inc. (NASDAQ:BIDU) SHAREHOLDER ALERT: Investors With Losses May Seek to Lead the Class Action in Baidu, Inc. Securities Lawsuit - Contact Portnoy Law Firm"
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "BIDU -1.26%"
+  - button
+  - text: GlobeNewswire an hour ago
+  - 'link "Ardelyx, Inc. (NASDAQ:ARDX) SHAREHOLDER ALERT: Investors With Losses May Seek to Lead the Class Action in Ardelyx, Inc. Securities Lawsuit - Contact Portnoy Law Firm"':
+    - /url: /en-int/news/ardelyx-inc-nasdaq-ardx-shareholder-alert-investors-with-losses-may-seek
+    - strong: "Ardelyx, Inc. (NASDAQ:ARDX) SHAREHOLDER ALERT: Investors With Losses May Seek to Lead the Class Action in Ardelyx, Inc. Securities Lawsuit - Contact Portnoy Law Firm"
+  - button "ARDX +2.09%"
+  - text: GlobeNewswire an hour ago
+  - link "DataKrypto Collaborates with Intel to Make Encrypted Execution a Standard Property of AI Infrastructure":
+    - /url: /en-int/news/datakrypto-collaborates-with-intel-to-make-encrypted-execution-a-standard
+    - strong: DataKrypto Collaborates with Intel to Make Encrypted Execution a Standard Property of AI Infrastructure
+  - button "INTC -4.08%"
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - text: GlobeNewswire an hour ago
+  - link "Advisory Services Network Welcomes Mosaic Wealth Partners":
+    - /url: /en-int/news/advisory-services-network-welcomes-mosaic-wealth-partners
+    - strong: Advisory Services Network Welcomes Mosaic Wealth Partners
+  - button "MSFT -0.44%"
+  - button "LPLA +3.49%"
+  - text: GlobeNewswire an hour ago
+  - link "Genius Group Announces Share Consolidation to Support Exchange Listing Compliance":
+    - /url: /en-int/news/genius-group-announces-share-consolidation-to-support-exchange-listing-compliance
+    - strong: Genius Group Announces Share Consolidation to Support Exchange Listing Compliance
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - text: GlobeNewswire an hour ago
+  - link "Apify Unveils New AI Agent Capabilities and Server Actors to Support Growing Demand":
+    - /url: /en-int/news/apify-unveils-new-ai-agent-capabilities-and-server-actors-to
+    - strong: Apify Unveils New AI Agent Capabilities and Server Actors to Support Growing Demand
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "IBM -0.5%"
+  - text: GlobeNewswire an hour ago
+  - link "Veritext Legal Solutions Announces 7th Annual CLE-Xtreme Webinar Series":
+    - /url: /en-int/news/veritext-legal-solutions-announces-7th-annual-cle-xtreme-webinar-series
+    - strong: Veritext Legal Solutions Announces 7th Annual CLE-Xtreme Webinar Series
+  - text: GlobeNewswire an hour ago
+  - link "Food Lion Opens New Grocery Store in Hilton Head Island, S.C., on Nov. 11":
+    - /url: /en-int/news/food-lion-opens-new-grocery-store-in-hilton-head-island
+    - strong: Food Lion Opens New Grocery Store in Hilton Head Island, S.C., on Nov. 11
+  - text: GlobeNewswire an hour ago
+  - 'link "AST SpaceMobile, Inc. (NASDAQ:ASTS) SHAREHOLDER ALERT: Investors With Losses May Seek to Lead the Class Action in AST SpaceMobile, Inc. Securities Lawsuit - Contact Portnoy Law Firm"':
+    - /url: /en-int/news/ast-spacemobile-inc-nasdaq-asts-shareholder-alert-investors-with-losses-may-seek-to-lead
+    - strong: "AST SpaceMobile, Inc. (NASDAQ:ASTS) SHAREHOLDER ALERT: Investors With Losses May Seek to Lead the Class Action in AST SpaceMobile, Inc. Securities Lawsuit - Contact Portnoy Law Firm"
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "ASTS -9.3%"
+  - text: GlobeNewswire an hour ago
+  - link "AGIX, the First ETF to Own Anthropic, Highlights Private Holdings Performance as Anthropic IPO Nears":
+    - /url: /en-int/news/agix-the-first-etf-to-own-anthropic-highlights-private-holdings
+    - strong: AGIX, the First ETF to Own Anthropic, Highlights Private Holdings Performance as Anthropic IPO Nears
+  - button "ORCL -2.49%"
+  - button "PLTR -2.04%"
+  - button "MSFT -0.44%"
+  - text: GlobeNewswire an hour ago
+  - link "Ontra Expands AI-Native Services to Accelerate Outbound KYC, LP Transfers":
+    - /url: /en-int/news/ontra-expands-ai-native-services-to-accelerate-outbound-kyc-lp-transfers
+    - strong: Ontra Expands AI-Native Services to Accelerate Outbound KYC, LP Transfers
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - text: GlobeNewswire an hour ago
+  - link "Researchers Demonstrate that Dynamic Digital Radiography Provides Quantitative Assessment of Shoulder Kinematics Accurately and More Consistently Than Currently Accepted Methods":
+    - /url: /en-int/news/researchers-demonstrate-that-dynamic-digital-radiography-provides-quantitative-assessment-of
+    - strong: Researchers Demonstrate that Dynamic Digital Radiography Provides Quantitative Assessment of Shoulder Kinematics Accurately and More Consistently Than Currently Accepted Methods
+  - button "4902 +3.5%"
+  - text: GlobeNewswire an hour ago
+  - link "GROWNSY Makes Healthy Baby Feeding Easier with Auggie, Solid Starts, Babylist, and Tinybeans, Bringing Parents Expert Guidance and Everyday Recipe Inspiration":
+    - /url: /en-int/news/grownsy-makes-healthy-baby-feeding-easier-with-auggie-solid-starts
+    - strong: GROWNSY Makes Healthy Baby Feeding Easier with Auggie, Solid Starts, Babylist, and Tinybeans, Bringing Parents Expert Guidance and Everyday Recipe Inspiration
+  - button "YUM -0.16%"
+  - text: GlobeNewswire an hour ago
+  - link "Cribl Acquires Tero to Lead Observability Into the AI Era":
+    - /url: /en-int/news/cribl-acquires-tero-to-lead-observability-into-the-ai-era
+    - strong: Cribl Acquires Tero to Lead Observability Into the AI Era
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - text: GlobeNewswire an hour ago
+  - link "zerohash Acquires Agent-Identity Infrastructure Stack including IP Portfolio, with Creator Mark Meadows as Head of Applied AI":
+    - /url: /en-int/news/zerohash-acquires-agent-identity-infrastructure-stack-including-ip-portfolio-with-creator
+    - strong: zerohash Acquires Agent-Identity Infrastructure Stack including IP Portfolio, with Creator Mark Meadows as Head of Applied AI
+  - text: GlobeNewswire an hour ago
+  - link "Metabolon Expands Verus™ Metabolomics Profiling Kit Availability to Europe and Adds New Rodent Sample Types":
+    - /url: /en-int/news/metabolon-expands-verustm-metabolomics-profiling-kit-availability-to-europe-and
+    - strong: Metabolon Expands Verus™ Metabolomics Profiling Kit Availability to Europe and Adds New Rodent Sample Types
+  - text: GlobeNewswire an hour ago
+  - 'link "Endava Plc (NYSE: DAVA) SHAREHOLDER ALERT: Investors With Losses May Seek to Lead the Class Action in Endava Plc Securities Lawsuit - Contact Portnoy Law Firm"':
+    - /url: /en-int/news/endava-plc-nyse-dava-shareholder-alert-investors-with-losses-may-seek-to-lead-the
+    - strong: "Endava Plc (NYSE: DAVA) SHAREHOLDER ALERT: Investors With Losses May Seek to Lead the Class Action in Endava Plc Securities Lawsuit - Contact Portnoy Law Firm"
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "MSTR -2.87%"
+  - button
+  - text: GlobeNewswire an hour ago
+  - 'link "Fluence Energy, Inc. (NASDAQ: FLNC) SHAREHOLDER ALERT: Investors With Losses May Seek to Lead the Class Action in Fluence Energy, Inc. Securities Lawsuit - Contact Portnoy Law Firm"':
+    - /url: /en-int/news/fluence-energy-inc-nasdaq-flnc-shareholder-alert-investors-with-losses-may-seek-to
+    - strong: "Fluence Energy, Inc. (NASDAQ: FLNC) SHAREHOLDER ALERT: Investors With Losses May Seek to Lead the Class Action in Fluence Energy, Inc. Securities Lawsuit - Contact Portnoy Law Firm"
+  - button "FLNC +2.87%"
+  - button "AES +0.27%"
+  - text: GlobeNewswire an hour ago
+  - link "ROTH to Host 13th Annual Solar & Storage Symposium at RE+ 2026":
+    - /url: /en-int/news/roth-to-host-13th-annual-solar-storage-symposium-at
+    - strong: ROTH to Host 13th Annual Solar & Storage Symposium at RE+ 2026
+  - text: GlobeNewswire an hour ago
+  - link "SUN CRUISER LAUNCHES THE ‘CRUISIN' HOME FUND’ TO HELP COVER DRINKERS' HOLIDAY AIRFARE":
+    - /url: /en-int/news/sun-cruiser-launches-the-cruisin-home-fund-to-help-cover
+    - strong: SUN CRUISER LAUNCHES THE ‘CRUISIN' HOME FUND’ TO HELP COVER DRINKERS' HOLIDAY AIRFARE
+  - button "SAM -1.76%"
+  - text: GlobeNewswire an hour ago
+  - 'link "Lincoln Education Services Corp. (NASDAQ:LINC) SHAREHOLDER ALERT: Investors With Losses May Seek to Lead the Class Action in Lincoln Education Services Corp. Securities Lawsuit - Contact Portnoy Law Firm"':
+    - /url: /en-int/news/lincoln-education-services-corp-nasdaq-linc-shareholder-alert-investors-with-losses-may-seek-to
+    - strong: "Lincoln Education Services Corp. (NASDAQ:LINC) SHAREHOLDER ALERT: Investors With Losses May Seek to Lead the Class Action in Lincoln Education Services Corp. Securities Lawsuit - Contact Portnoy Law Firm"
+  - text: GlobeNewswire an hour ago
+  - 'link "Tigo Energy, Inc. (NASDAQ: TYGO) SHAREHOLDER ALERT: Investors With Losses May Seek to Lead the Class Action in Tigo Energy, Inc. Securities Lawsuit - Contact Portnoy Law Firm"':
+    - /url: /en-int/news/tigo-energy-inc-nasdaq-tygo-shareholder-alert-investors-with-losses
+    - strong: "Tigo Energy, Inc. (NASDAQ: TYGO) SHAREHOLDER ALERT: Investors With Losses May Seek to Lead the Class Action in Tigo Energy, Inc. Securities Lawsuit - Contact Portnoy Law Firm"
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - text: GlobeNewswire an hour ago
+  - link "AvePoint Deepens Strategic Partnership with Microsoft to Advance Trusted AI Adoption":
+    - /url: /en-int/news/avepoint-deepens-strategic-partnership-with-microsoft-to-advance-trusted-ai
+    - strong: AvePoint Deepens Strategic Partnership with Microsoft to Advance Trusted AI Adoption
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "MSTR -2.87%"
+  - text: GlobeNewswire an hour ago
+  - link "JenaValve Presents Late-Breaking JENA-VAD Data at TCT 2026, Demonstrating High Technical Success and 30 Day Safety of the Trilogy System in LVAD Patients Under IDE":
+    - /url: /en-int/news/jenavalve-presents-late-breaking-jena-vad-data-at-tct-2026-demonstrating-high
+    - strong: JenaValve Presents Late-Breaking JENA-VAD Data at TCT 2026, Demonstrating High Technical Success and 30 Day Safety of the Trilogy System in LVAD Patients Under IDE
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "JENd -2.22%"
+  - button
+  - text: Public Technologies an hour ago
+  - link "Copenhagen Capital nine-month 2026 EBIT rises 35% to kr. 38.9 million":
+    - /url: /en-int/news/copenhagen-capital-nine-month-2026-ebit-rises-35-to-kr-38-9
+    - strong: Copenhagen Capital nine-month 2026 EBIT rises 35% to kr. 38.9 million
+  - text: Public Technologies an hour ago
+  - link "Kimball Electronics outlines medical CDMO growth strategy in investor presentation":
+    - /url: /en-int/news/kimball-electronics-outlines-medical-cdmo-growth-strategy-in-investor-presentation
+    - strong: Kimball Electronics outlines medical CDMO growth strategy in investor presentation
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "KE +3.28%"
+  - text: Reuters News an hour ago
+  - link "EyePoint Inc <EYPT.OQ> expected to post a loss of 93 cents a share - Earnings Preview":
+    - /url: /en-int/news/eyepoint-inc-eypt-oq-expected-to-post-a-loss-of-93-cents-a
+    - strong: EyePoint Inc <EYPT.OQ> expected to post a loss of 93 cents a share - Earnings Preview
+  - button "EYPT 0.00%"
+  - button
+  - text: Public Technologies an hour ago
+  - link "Agnico Eagle Expects 2026 Shareholder Returns to Exceed 50% of Free Cash Flow":
+    - /url: /en-int/news/agnico-eagle-expects-2026-shareholder-returns-to-exceed-50-of
+    - strong: Agnico Eagle Expects 2026 Shareholder Returns to Exceed 50% of Free Cash Flow
+  - button "MINau +5.57%"
+  - button "AEM +5.15%"
+  - button "Gold -2.12%"
+  - button
+  - text: Reuters News an hour ago
+  - link "GLOBAL MARKETS-Stocks cut gains, dollar and yields up as US CPI cements December rate hike bets":
+    - /url: /en-int/news/global-markets-stocks-cut-gains-dollar-and-yields-up-as-us
+    - strong: GLOBAL MARKETS-Stocks cut gains, dollar and yields up as US CPI cements December rate hike bets
+  - button "NVDA -2.04%"
+  - button "CRWV -5.76%"
+  - button "Gold -2.12%"
+  - text: Public Technologies an hour ago
+  - link "Frasers Property Retail Trust Holdings Cuts Stake in Frasers Centrepoint Trust to 31.98% From 32.08%":
+    - /url: /en-int/news/frasers-property-retail-trust-holdings-cuts-stake-in-frasers-centrepoint
+    - strong: Frasers Property Retail Trust Holdings Cuts Stake in Frasers Centrepoint Trust to 31.98% From 32.08%
+  - button "S68sg +0.54%"
+  - button "J69Usg +0.94%"
+  - button "TQ5sg +1.11%"
+  - text: Public Technologies an hour ago
+  - link "Associate of Directa Sim Chairman Massimo Segre Buys Ordinary Shares for EUR 7,560":
+    - /url: /en-int/news/associate-of-directa-sim-chairman-massimo-segre-buys-ordinary-shares
+    - strong: Associate of Directa Sim Chairman Massimo Segre Buys Ordinary Shares for EUR 7,560
+  - text: Public Technologies an hour ago
+  - link "Parsons’ Altamira Wins Four-Year Order Worth Up to $63 Million From NASIC":
+    - /url: /en-int/news/parsons-altamira-wins-four-year-order-worth-up-to-63-million
+    - strong: Parsons’ Altamira Wins Four-Year Order Worth Up to $63 Million From NASIC
+  - text: Public Technologies an hour ago
+  - link "Jinhui Holdings Subsidiary Buys CNH 5 Million in Equity Index-Linked Notes":
+    - /url: /en-int/news/jinhui-holdings-subsidiary-buys-cnh-5-million-in-equity-index-linked
+    - strong: Jinhui Holdings Subsidiary Buys CNH 5 Million in Equity Index-Linked Notes
+  - button "6030 +1.68%"
+  - text: GlobeNewswire an hour ago
+  - link "BitDelta Pro named Title Sponsor of Yas Lions for Abu Dhabi T10 2026":
+    - /url: /en-int/news/bitdelta-pro-named-title-sponsor-of-yas-lions-for-abu
+    - strong: BitDelta Pro named Title Sponsor of Yas Lions for Abu Dhabi T10 2026
+  - text: Iceland Stock Exchange an hour ago
+  - link "Nasdaq CSD in Iceland monthly report on the 20 largest shareholders and shares held by issuer - October 2026":
+    - /url: /en-int/news/nasdaq-csd-in-iceland-monthly-report-on-the-20-largest
+    - strong: Nasdaq CSD in Iceland monthly report on the 20 largest shareholders and shares held by issuer - October 2026
+  - text: Public Technologies an hour ago
+  - link "Edding Genor Files Next Day Disclosure Return With HKEX Announcing Share Buyback":
+    - /url: /en-int/news/edding-genor-files-next-day-disclosure-return-with-hkex-announcing
+    - strong: Edding Genor Files Next Day Disclosure Return With HKEX Announcing Share Buyback
+  - text: Public Technologies an hour ago
+  - link "DFW Capital Partners invests in American Equipment Holdings":
+    - /url: /en-int/news/dfw-capital-partners-invests-in-american-equipment-holdings
+    - strong: DFW Capital Partners invests in American Equipment Holdings
+  - button
+  - text: Public Technologies an hour ago
+  - link "Patrick Industries Expects 2027 Adjusted Operating Margin to Rise 30–50 Basis Points":
+    - /url: /en-int/news/patrick-industries-expects-2027-adjusted-operating-margin-to-rise-30-50
+    - strong: Patrick Industries Expects 2027 Adjusted Operating Margin to Rise 30–50 Basis Points
+  - button "QBTS -8.15%"
+  - button "HIMS +0.98%"
+  - button "DVLT -3.02%"
+  - text: ACCESS Newswire an hour ago
+  - link "Retired Army Officer Earns Two Degrees While Navigating Family Health Challenges":
+    - /url: /en-int/news/retired-army-officer-earns-two-degrees-while-navigating-family-health
+    - strong: Retired Army Officer Earns Two Degrees While Navigating Family Health Challenges
+  - text: GlobeNewswire an hour ago
+  - link "LPL Financial Welcomes FHT Advisors and Impel Wealth Management":
+    - /url: /en-int/news/lpl-financial-welcomes-fht-advisors-and-impel-wealth-management
+    - strong: LPL Financial Welcomes FHT Advisors and Impel Wealth Management
+  - button "LPLA +3.49%"
+  - button "DRW8 -1.32%"
+  - button "IS3Gd 0.00%"
+  - text: GlobeNewswire an hour ago
+  - 'link "Two-thirds of Canadians on fertility journeys regret waiting to get help, one in three unsure of where to begin: new data"':
+    - /url: /en-int/news/two-thirds-of-canadians-on-fertility-journeys-regret-waiting-to-get
+    - strong: "Two-thirds of Canadians on fertility journeys regret waiting to get help, one in three unsure of where to begin: new data"
+  - text: ACCESS Newswire an hour ago
+  - link "Remergify Opens Waitlist for AI Allowance, a Plain-English Way to Let AI Assistants Shop Within Limits You Set":
+    - /url: /en-int/news/remergify-opens-waitlist-for-ai-allowance-a-plain-english-way-to
+    - strong: Remergify Opens Waitlist for AI Allowance, a Plain-English Way to Let AI Assistants Shop Within Limits You Set
+  - button "HIMS +0.98%"
+  - button "V +0.93%"
+  - button "MA +1.29%"
+  - text: GlobeNewswire an hour ago
+  - link "Form 8.3 -Irish Residential Properties REIT plc":
+    - /url: /en-int/news/form-8-3-irish-residential-properties-reit-plc
+    - strong: Form 8.3 -Irish Residential Properties REIT plc
+  - button "STT +3.28%"
+  - button "IRES 0.00%"
+  - text: Public Technologies an hour ago
+  - link "dLocal Says Interoperable QR Payments Can Reduce Checkout Friction in APAC":
+    - /url: /en-int/news/dlocal-says-interoperable-qr-payments-can-reduce-checkout-friction-in
+    - strong: dLocal Says Interoperable QR Payments Can Reduce Checkout Friction in APAC
+  - button "DLO +3.23%"
+  - text: Public Technologies an hour ago
+  - link "BRBI BR Partners Declares R$ 12.6 Million in Interim Dividends":
+    - /url: /en-int/news/brbi-br-partners-declares-r-12-6-million-in-interim-dividends
+    - strong: BRBI BR Partners Declares R$ 12.6 Million in Interim Dividends
+  - text: Reuters News an hour ago
+  - link "InspireMD Inc <NSPR.OQ> expected to post a loss of 15 cents a share - Earnings Preview":
+    - /url: /en-int/news/inspiremd-inc-nspr-oq-expected-to-post-a-loss-of-15-cents-a
+    - strong: InspireMD Inc <NSPR.OQ> expected to post a loss of 15 cents a share - Earnings Preview
+  - button
+  - text: Reuters News an hour ago
+  - link "Digital Research Gets Award Notification From CST Commission":
+    - /url: /en-int/news/digital-research-gets-award-notification-from-cst-commission
+    - strong: Digital Research Gets Award Notification From CST Commission
+  - button "HIMS +0.98%"
+  - button "IBRX -1.69%"
+  - button
+  - text: Public Technologies an hour ago
+  - link "ANY Biztonsági Nyomda schedules Q1-Q3 results release":
+    - /url: /en-int/news/any-biztonsagi-nyomda-schedules-q1-q3-results-release
+    - strong: ANY Biztonsági Nyomda schedules Q1-Q3 results release
+  - text: Iceland Stock Exchange an hour ago
+  - link "Nasdaq CSD in Iceland monthly report on the 20 largest shareholders and shares held by issuer - October 2026":
+    - /url: /en-int/news/nasdaq-csd-in-iceland-monthly-report-on-the-20-largest
+    - strong: Nasdaq CSD in Iceland monthly report on the 20 largest shareholders and shares held by issuer - October 2026
+  - text: ACCESS Newswire an hour ago
+  - link "Are You Budgeting for ESOS in 2027?":
+    - /url: /en-int/news/are-you-budgeting-for-esos-in-2027
+    - strong: Are You Budgeting for ESOS in 2027?
+  - text: GlobeNewswire an hour ago
+  - link "Form 8.3 -DCC Energy plc":
+    - /url: /en-int/news/form-8-3-dcc-energy-plc
+    - strong: Form 8.3 -DCC Energy plc
+  - button "STT +3.28%"
+  - text: Reuters News an hour ago
+  - link "HONDA MOTOR CO., LTD. reports results for the quarter ended September 30 - Earnings Summary":
+    - /url: /en-int/news/honda-motor-co-ltd-reports-results-for-the-quarter-ended
+    - strong: HONDA MOTOR CO., LTD. reports results for the quarter ended September 30 - Earnings Summary
+  - button "HMC +0.53%"
+  - button "7267 -1.23%"
+  - button
+  - text: Reuters News an hour ago
+  - link "Mercor Raises $750 Million Series D At $20 Billion Valuation To Help Enterprises Own Their Intelligence":
+    - /url: /en-int/news/mercor-raises-750-million-series-d-at-20-billion-valuation
+    - strong: Mercor Raises $750 Million Series D At $20 Billion Valuation To Help Enterprises Own Their Intelligence
+  - button "NVDA -2.04%"
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - text: Public Technologies an hour ago
+  - link "BrandPilot AI Joins Search Engine Land Webinar on Invalid Ad Traffic":
+    - /url: /en-int/news/brandpilot-ai-joins-search-engine-land-webinar-on-invalid-ad
+    - strong: BrandPilot AI Joins Search Engine Land Webinar on Invalid Ad Traffic
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "HIMS +0.98%"
+  - text: Reuters News an hour ago
+  - link "Dropbox shares fall on $1.1 bln convertible bond sale":
+    - /url: /en-int/news/dropbox-shares-fall-on-1-1-bln-convertible-bond-sale
+    - strong: Dropbox shares fall on $1.1 bln convertible bond sale
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "DBX -6.01%"
+  - button
+  - text: Reuters News an hour ago
+  - link "INSTANT VIEW-Hot October inflation report rattles markets":
+    - /url: /en-int/news/instant-view-hot-october-inflation-report-rattles-markets
+    - strong: INSTANT VIEW-Hot October inflation report rattles markets
+  - button "Gold -2.12%"
+  - button "US500 -0.2%"
+  - button "ESZ2026 -0.2%"
+  - button
+  - text: Public Technologies an hour ago
+  - 'link "Highwood Asset Management Management Commentary: Commodity Contract Losses Drive Q3 2026 Loss"':
+    - /url: /en-int/news/highwood-asset-management-management-commentary-commodity-contract-losses-drive-q3
+    - strong: "Highwood Asset Management Management Commentary: Commodity Contract Losses Drive Q3 2026 Loss"
+  - text: Reuters News an hour ago
+  - link "Sterling nudges lower as Waller comments, US data underpin dollar":
+    - /url: /en-int/news/sterling-nudges-lower-as-waller-comments-us-data-underpin-dollar
+    - strong: Sterling nudges lower as Waller comments, US data underpin dollar
+  - button "EUR/USD -0.33%"
+  - button "GBP/USD -0.41%"
+  - button "EUR/GBP +0.17%"
+  - button
+  - text: Reuters News an hour ago
+  - link "EDGE Says UAE's SIRB-1 Programme Completes Critical Design Review":
+    - /url: /en-int/news/edge-says-uae-s-sirb-1-programme-completes-critical-design-review
+    - strong: EDGE Says UAE's SIRB-1 Programme Completes Critical Design Review
+  - button
+  - text: Reuters News an hour ago
+  - link "Purple Biotech Ltd <PPBT.OQ> expected to post earnings of 35 cents a share - Earnings Preview":
+    - /url: /en-int/news/purple-biotech-ltd-ppbt-oq-expected-to-post-earnings-of-35-cents-a
+    - strong: Purple Biotech Ltd <PPBT.OQ> expected to post earnings of 35 cents a share - Earnings Preview
+  - text: Public Technologies an hour ago
+  - link "Coronation Clients Cut Stake in Aspen Pharmacare to 12.66%":
+    - /url: /en-int/news/coronation-clients-cut-stake-in-aspen-pharmacare-to-12-66
+    - strong: Coronation Clients Cut Stake in Aspen Pharmacare to 12.66%
+  - button
+  - text: Public Technologies an hour ago
+  - link "Truist Names Stephen Kersey Alabama Regional President":
+    - /url: /en-int/news/truist-names-stephen-kersey-alabama-regional-president
+    - strong: Truist Names Stephen Kersey Alabama Regional President
+  - button "PNC +2.62%"
+  - button "TFC +1.95%"
+  - text: Reuters News an hour ago
+  - link "UNICEF says Israel blocks Gaza basin repairs, warns of flood risk":
+    - /url: /en-int/news/unicef-says-israel-blocks-gaza-basin-repairs-warns-of-flood
+    - strong: UNICEF says Israel blocks Gaza basin repairs, warns of flood risk
+  - text: GlobeNewswire an hour ago
+  - link "DeleteMe Warns of Growing Information Privacy Crisis in America Following Federal Data Breaches":
+    - /url: /en-int/news/deleteme-warns-of-growing-information-privacy-crisis-in-america-following
+    - strong: DeleteMe Warns of Growing Information Privacy Crisis in America Following Federal Data Breaches
+  - text: Reuters News an hour ago
+  - link "Truckers block roads in Chile protesting fuel price hikes":
+    - /url: /en-int/news/truckers-block-roads-in-chile-protesting-fuel-price-hikes
+    - strong: Truckers block roads in Chile protesting fuel price hikes
+  - button "Gasoline -1.74%"
+  - text: GlobeNewswire an hour ago
+  - link "In Light of New FDA Warning for GLP-1s, Doctors Offer Research-Backed Dietary Intervention for Weight Loss":
+    - /url: /en-int/news/in-light-of-new-fda-warning-for-glp-1s-doctors-offer
+    - strong: In Light of New FDA Warning for GLP-1s, Doctors Offer Research-Backed Dietary Intervention for Weight Loss
+  - text: Reuters News an hour ago
+  - link "Portugal braces for Storm Charles; to shut schools, ready rescue teams":
+    - /url: /en-int/news/portugal-braces-for-storm-charles-to-shut-schools-ready-rescue
+    - strong: Portugal braces for Storm Charles; to shut schools, ready rescue teams
+  - text: Newsfile an hour ago
+  - link "BrandPilot AI to Address Invalid Ad Traffic at Search Engine Land Webinar":
+    - /url: /en-int/news/brandpilot-ai-to-address-invalid-ad-traffic-at-search-engine
+    - strong: BrandPilot AI to Address Invalid Ad Traffic at Search Engine Land Webinar
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "HIMS +0.98%"
+  - text: GlobeNewswire an hour ago
+  - link "NCPL Stock Drop – Robbins LLP Reminds Investors They May Be Eligible to Lead the Class Action Lawsuit Against Netcapital Inc.":
+    - /url: /en-int/news/ncpl-stock-drop-robbins-llp-reminds-investors-they-may
+    - strong: NCPL Stock Drop – Robbins LLP Reminds Investors They May Be Eligible to Lead the Class Action Lawsuit Against Netcapital Inc.
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - text: GlobeNewswire an hour ago
+  - link "PureCars Launches Automotive's First Unified Customer Data and Marketing Platform":
+    - /url: /en-int/news/purecars-launches-automotive-s-first-unified-customer-data-and-marketing-platform
+    - strong: PureCars Launches Automotive's First Unified Customer Data and Marketing Platform
+  - text: Reuters News an hour ago
+  - link "Skydance Corporation reports results for the quarter ended September 30 - Earnings Summary":
+    - /url: /en-int/news/skydance-corporation-reports-results-for-the-quarter-ended-september-30
+    - strong: Skydance Corporation reports results for the quarter ended September 30 - Earnings Summary
+  - button "SKYD +8.39%"
+  - button
+  - text: Public Technologies an hour ago
+  - link "Super Copper reports up to 2.56% copper equivalent in initial El Alto drill assays":
+    - /url: /en-int/news/super-copper-reports-up-to-2-56-copper-equivalent-in-initial
+    - strong: Super Copper reports up to 2.56% copper equivalent in initial El Alto drill assays
+  - button "Silver -2.74%"
+  - text: Reuters News an hour ago
+  - link "Accelerant Holdings <ARX.N> expected to post earnings of 20 cents a share - Earnings Preview":
+    - /url: /en-int/news/accelerant-holdings-arx-n-expected-to-post-earnings-of-20-cents-a-share
+    - strong: Accelerant Holdings <ARX.N> expected to post earnings of 20 cents a share - Earnings Preview
+  - button "ARX 0.00%"
+  - button
+  - text: Reuters News an hour ago
+  - link "United Maritime Corp <USEA.OQ> expected to post earnings of 26 cents a share - Earnings Preview":
+    - /url: /en-int/news/united-maritime-corp-usea-oq-expected-to-post-earnings-of-26-cents-a
+    - strong: United Maritime Corp <USEA.OQ> expected to post earnings of 26 cents a share - Earnings Preview
+  - button
+  - button
+  - text: Reuters News an hour ago
+  - link "Development Works Food Q3 Loss SAR 2.57714 Mln":
+    - /url: /en-int/news/development-works-food-q3-loss-sar-2-57714-mln
+    - strong: Development Works Food Q3 Loss SAR 2.57714 Mln
+  - button "HIMS +0.98%"
+  - button "IBRX -1.69%"
+  - text: Public Technologies an hour ago
+  - link "CriticalPoint Opens Office in Midtown Manhattan":
+    - /url: /en-int/news/criticalpoint-opens-office-in-midtown-manhattan
+    - strong: CriticalPoint Opens Office in Midtown Manhattan
+  - text: ACN Newswire an hour ago
+  - link "BOXABL Targets More Home Sales With Proposed Mortgage Financing Venture":
+    - /url: /en-int/news/boxabl-targets-more-home-sales-with-proposed-mortgage-financing-venture
+    - strong: BOXABL Targets More Home Sales With Proposed Mortgage Financing Venture
+  - button "QBTS -8.15%"
+  - button "HIMS +0.98%"
+  - button "DVLT -3.02%"
+  - button
+  - text: Reuters News an hour ago
+  - link "Amazon Ring Announces Ring Robotics, Ushering In A New Era Of Security":
+    - /url: /en-int/news/amazon-ring-announces-ring-robotics-ushering-in-a-new-era
+    - strong: Amazon Ring Announces Ring Robotics, Ushering In A New Era Of Security
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "HIMS +0.98%"
+  - text: Public Technologies an hour ago
+  - link "Sanoma Media Finland starts employee talks over planned advertising operations overhaul":
+    - /url: /en-int/news/sanoma-media-finland-starts-employee-talks-over-planned-advertising-operations
+    - strong: Sanoma Media Finland starts employee talks over planned advertising operations overhaul
+  - button "HIMS +0.98%"
+  - button "IBRX -1.69%"
+  - button
+  - text: Reuters News an hour ago
+  - link "Baltic index hits a month high as panamax segment strengthens":
+    - /url: /en-int/news/baltic-index-hits-a-month-high-as-panamax-segment-strengthens
+    - strong: Baltic index hits a month high as panamax segment strengthens
+  - button "HIMS +0.98%"
+  - button "IBRX -1.69%"
+  - button
+  - text: Reuters News an hour ago
+  - link "Meta VR Glasses To Be First IMAX Enhanced Certified VR Device":
+    - /url: /en-int/news/meta-vr-glasses-to-be-first-imax-enhanced-certified-vr
+    - strong: Meta VR Glasses To Be First IMAX Enhanced Certified VR Device
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button "META -0.81%"
+  - text: Reuters News an hour ago
+  - link "Dangote Cement scraps London listing, blames market conditions in blow to LSE":
+    - /url: /en-int/news/dangote-cement-scraps-london-listing-blames-market-conditions-in-blow
+    - strong: Dangote Cement scraps London listing, blames market conditions in blow to LSE
+  - button "UK100 -0.3%"
+  - button "FFIZ2026 -0.3%"
+  - button
+  - text: Reuters News an hour ago
+  - link "Alibaba AI chip unit T-Head files for Hong Kong IPO":
+    - /url: /en-int/news/alibaba-ai-chip-unit-t-head-files-for-hong-kong-ipo
+    - strong: Alibaba AI chip unit T-Head files for Hong Kong IPO
+  - button "NVDA -2.04%"
+  - button "GME -1.41%"
+  - button "AMZN -0.92%"
+  - button
+  - text: Public Technologies an hour ago
+  - link "NanoViricides plans Phase II trial of NV-387 for measles":
+    - /url: /en-int/news/nanoviricides-plans-phase-ii-trial-of-nv-387-for-measles
+    - strong: NanoViricides plans Phase II trial of NV-387 for measles
+  - button "NNVC -0.76%"
+  - text: Public Technologies an hour ago
+  - link "ERM wins environmental support contract for Blue Gem Wind's Erebus offshore wind project":
+    - /url: /en-int/news/erm-wins-environmental-support-contract-for-blue-gem-wind-s-erebus
+    - strong: ERM wins environmental support contract for Blue Gem Wind's Erebus offshore wind project
+  - button "TTEF -1.6%"
+  - button "TTE +0.15%"
+  - button
+  - text: Reuters News an hour ago
+  - link "US aims for Europe to join trilateral Ukraine talks, Rubio says":
+    - /url: /en-int/news/us-aims-for-europe-to-join-trilateral-ukraine-talks-rubio
+    - strong: US aims for Europe to join trilateral Ukraine talks, Rubio says
+  - strong: Market movers
+  - text: Tracking the stocks, indices, and assets making major moves.
+  - button "Most traded markets" [disabled]
+  - button "Top risers" [disabled]
+  - button "Top fallers" [disabled]
+  - button "Most volatile" [disabled]
+  - text: Share prices are indicative and may differ from live market prices.
+- heading "Market Analysis" [level=2]
+- paragraph: Expert insights and commentary on what’s driving the markets.
+- tablist:
+  - tab "Capital.com"
+- link "View all":
+  - /url: /en-int/analysis
+- tabpanel:
+  - button "Capital.com Analysts":
+    - heading "Capital.com Analysts" [level=3]
+  - text: Get regular commentary on key markets from our experts
+  - link "Daniela Hathorn":
+    - /url: analysis/daniela-hathorn
+  - link "Kyle Rodda Kyle Rodda is a Senior Financial Market Analyst at Capital.com and a prominent Australian market commentator. As a market commentator, Kyle contributes to local and international media; he has covered financial markets for ausbiz TV, IG Group and Capital.com – focusing on indices, commodities and FX markets through the lens of macroeconomics and central bank policy. Based in Australia, Kyle produces daily market commentary for Capital.com's global audience.":
+    - /url: analysis/kyle-rodda
+    - text: Kyle Rodda
+    - paragraph: Kyle Rodda is a Senior Financial Market Analyst at Capital.com and a prominent Australian market commentator.
+    - paragraph: As a market commentator, Kyle contributes to local and international media; he has covered financial markets for ausbiz TV, IG Group and Capital.com – focusing on indices, commodities and FX markets through the lens of macroeconomics and central bank policy.
+    - paragraph: Based in Australia, Kyle produces daily market commentary for Capital.com's global audience.
+  - link "Dan Mitchell Dan is an experienced financial writer and market commentator with a background in digital assets and cryptocurrency markets. Blending macro fundamentals with technical chart work, he distils market developments into practical commentary for retail traders.":
+    - /url: analysis/daniel-mitchell
+    - text: Dan Mitchell
+    - paragraph: Dan is an experienced financial writer and market commentator with a background in digital assets and cryptocurrency markets. Blending macro fundamentals with technical chart work, he distils market developments into practical commentary for retail traders.
+  - link "Monte Safieddine":
+    - /url: analysis/monte-safieddine
+  - 'link "Bitcoin Cash price prediction 2025-2050: Third-party BCH insights"':
+    - /url: /en-int/analysis/bch-bitcoin-cash-price-prediction
+    - 'img "Bitcoin Cash price prediction 2025-2050: Third-party BCH insights"'
+  - img
+  - text: Dan Mitchell 10:09 (UTC), 6 November 2026
+  - 'link "Bitcoin Cash price prediction: THORChain Upgrade"':
+    - /url: /en-int/analysis/bch-bitcoin-cash-price-prediction
+  - text: THORChain resumed Bitcoin Cash (BCH) swaps on 4 November 2026 after its v3.21.1 upgrade, ending a suspension that began on 31 October. Explore third-party BCH forecasts and technical analysis. Past performance is not a reliable indicator of future results.
+  - button "BCH/USD -1.1%"
+  - 'link "Bitcoin price prediction: Third-party price target"':
+    - /url: /en-int/analysis/bitcoin-price-prediction-2030-2050
+    - 'img "Bitcoin price prediction: Third-party price target"'
+  - img
+  - text: Dan Mitchell 09:54 (UTC), 6 November 2026
+  - 'link "Bitcoin price prediction: $643.3m spot ETF outflows"':
+    - /url: /en-int/analysis/bitcoin-price-prediction-2030-2050
+  - text: Explore third-party Bitcoin forecasts, technical analysis, and market developments. Bitcoin fell 7.3% in October 2026, while US spot Bitcoin ETFs recorded $643.3m in net outflows on 30 October, their largest single-day outflow since June.
+  - button "BTC/USD -0.35%"
+  - link "Stellar price prediction 2025-2050":
+    - /url: /en-int/analysis/stellar-lumens-xlm-price-prediction
+    - img "Stellar price prediction 2025-2050"
+  - img
+  - text: Dan Mitchell 09:03 (UTC), 6 November 2026
+  - 'link "Stellar Lumens price prediction: MetaMask integration, Bell Upgrade Vote"':
+    - /url: /en-int/analysis/stellar-lumens-xlm-price-prediction
+  - text: Stellar is a blockchain network used for payments and asset tokenisation. Validator votes on its Bell (Protocol 30) upgrade are scheduled for 3 and 23 November 2026. Explore third-party XLM price targets and technical analysis. Past performance is not a reliable indicator of future results.
+  - button "XLM/USD -0.24%"
+  - 'link "Litecoin price prediction 2025-2050: Third-party LTC insights"':
+    - /url: /en-int/analysis/litecoin-ltc-price-prediction
+    - 'img "Litecoin price prediction 2025-2050: Third-party LTC insights"'
+  - img
+  - text: Dan Mitchell 08:48 (UTC), 6 November 2026
+  - 'link "Litecoin price prediction: AIBC World, BTCPay Server thefts"':
+    - /url: /en-int/analysis/litecoin-ltc-price-prediction
+  - text: The Litecoin Foundation co-hosted the Hall 7 speaker programme at AIBC World in Rome on 4 November 2026, as reports linked thefts of 3,405 LTC to outdated BTCPay software. Explore third-party LTC price targets and technical analysis. Past performance is not a reliable indicator of future results.
+  - button "LTC/USD +0.6%"
+  - link "Binance cryptocurrency logo on liquid texture background":
+    - /url: /en-int/analysis/binance-coin-bnb-price-prediction
+    - img "Binance cryptocurrency logo on liquid texture background"
+  - img
+  - text: Dan Mitchell 08:38 (UTC), 6 November 2026
+  - 'link "BNB price prediction: Binance breach, withdrawals resume"':
+    - /url: /en-int/analysis/binance-coin-bnb-price-prediction
+  - text: Explore third-party BNB price targets and technical analysis. Bhutan has authorised its planned Gelephu Central Bank to invest in cryptocurrencies, with BNB named in earlier reserve plans. Past performance is not a reliable indicator of future results.
+  - button "BNB/USD +0.07%"
+- contentinfo:
+  - link:
+    - /url: /en-int
+    - img
+  - link:
+    - /url: https://twitter.com/capitalcom
+  - link:
+    - /url: https://www.linkedin.com/company/capital.com/
+  - link:
+    - /url: https://www.instagram.com/capitalcom/
+  - link:
+    - /url: https://www.tiktok.com/@capitalcom_international
+  - link:
+    - /url: https://www.facebook.com/capitalcom/
+  - link:
+    - /url: https://www.reddit.com/r/capitalcom/
+  - link:
+    - /url: https://app.appsflyer.com/id1230088754?cp_device_id=edb96619-ad84-404c-a2bf-48912fd14a0e&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - link:
+    - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=edb96619-ad84-404c-a2bf-48912fd14a0e&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - link:
+    - /url: https://app.appsflyer.com/com.capital.trading.huawei-huawei?cp_device_id=edb96619-ad84-404c-a2bf-48912fd14a0e&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+  - text: "Country / Region:"
+  - button "Hong Kong"
+  - text: "• Language:"
+  - button "English"
+  - text: "Also you can contact us:"
+  - link "+442080899989":
+    - /url: tel:+442080899989
+    - strong: "+442080899989"
+    - strong
+  - text: •
+  - link "support@capital.com":
+    - /url: mailto:support@capital.com
+    - strong: support@capital.com
+  - strong: Trading
+  - text: Trading
+  - link "Trade CFDs":
+    - /url: /en-int/ways-to-trade/cfd-trading
+  - link "Get demo account":
+    - /url: /en-int/trading-platforms/demo-account
+  - link "Get pro account":
+    - /url: /en-int/professional
+  - link "24/5 index CFD trading":
+    - /url: /en-int/ways-to-trade/24h-trading
+  - text: Platforms
+  - link "Web platform":
+    - /url: /en-int/trading-platforms/web-platform
+  - link "Mobile app":
+    - /url: /en-int/trading-platforms/mobile-apps
+  - text: Integrations
+  - link "TradingView":
+    - /url: /en-int/trading-platforms/trading-view
+  - link "MT4":
+    - /url: /en-int/trading-platforms/mt4
+  - link "MT5":
+    - /url: /en-int/trading-platforms/mt5
+  - link "AI Integration":
+    - /url: /en-int/trading-platforms/ai-integration
+  - link "API access":
+    - /url: /en-int/trading-platforms/api-development-guide
+  - text: Learn
+  - link "Trading strategies":
+    - /url: /en-int/learn/trading-strategies
+  - link "Technical analysis":
+    - /url: /en-int/learn/technical-analysis
+  - link "Trading psychology":
+    - /url: /en-int/learn/trading-psychology
+  - link "IPO Trading":
+    - /url: /en-int/learn/ipo
+  - link "Market guides":
+    - /url: /en-int/learn/market-guides
+  - link "Glossary":
+    - /url: /en-int/learn/glossary
+  - link "All resources":
+    - /url: /en-int/learn
+  - text: Trading tools
+  - link "Tools & calculators":
+    - /url: /en-int/tools-and-calculators
+  - strong: Markets
+  - text: Our markets
+  - link "Markets overview":
+    - /url: /en-int/markets
+  - link "Shares":
+    - /url: /en-int/markets/shares
+  - link "Forex":
+    - /url: /en-int/markets/forex
+  - link "Indices":
+    - /url: /en-int/markets/indices
+  - link "Commodities":
+    - /url: /en-int/markets/commodities
+  - link "Cryptocurrencies":
+    - /url: /en-int/markets/cryptocurrencies
+  - link "Bonds":
+    - /url: /en-int/markets/bonds
+  - link "Interest rates":
+    - /url: /en-int/markets/interest-rates
+  - text: Market info
+  - link "Market analysis":
+    - /url: /en-int/analysis
+  - link "Finance news":
+    - /url: /en-int/news
+  - link "Pricing":
+    - /url: /en-int/ways-to-trade/fees-and-charges
+    - strong: Pricing
+  - strong: About
+  - text: Who we are
+  - link "Company":
+    - /url: /en-int/about-us
+  - link "Our offices":
+    - /url: /en-int/about-us/our-offices
+  - link "Press centre":
+    - /url: /en-int//media-centre
+  - link "Investor Relations":
+    - /url: /en-int/about-us/investor-relations
+  - link "Is Capital.com safe?":
+    - /url: /en-int/security-measures
+  - link "Our business model":
+    - /url: /en-int/about-us/how-capital-makes-money
+  - text: Work with us
+  - link "Careers":
+    - /url: /en-int//about-us/careers
+  - link "Partnerships":
+    - /url: /en-int/partnerships
+  - link "Refer a friend":
+    - /url: /en-int/refer-a-friend
+  - text: Help
+  - link "Help centre":
+    - /url: /en-int/help
+  - link "Client vulnerability":
+    - /url: /en-int/help/client-vulnerability
+  - link "Contact us":
+    - /url: /en-int/contact-us
+  - text: Legal
+  - link "Terms & policies":
+    - /url: /en-int/terms-and-policies
+  - link "Complaints":
+    - /url: /en-int/help/complaints
+  - paragraph:
+    - text: CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage.
+    - strong: 80.96% of retail investor accounts lose money when trading CFDs with this provider.
+    - text: You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money.
+  - paragraph
+  - paragraph: "Capital Com Online Investments Ltd is a limited liability company with company number 209236B. Capital Com Online Investments Ltd is a Company registered in the Commonwealth of The Bahamas and authorised by the Securities Commission of The Bahamas with license number SIA-F245. The Company’s registered office is at #3 Bayside Executive Park, Blake Road and West Bay Street, P. O. Box CB 13012, Nassau, The Bahamas."
+  - paragraph: © 2026 Capital Com Online Investments Ltd
+  - link "Sitemap":
+    - /url: /en-int/sitemap
+  - link "Cookie Settings":
+    - /url: ""
+  - link:
+    - /url: /en-int
+  - link "Terms and Policies":
+    - /url: /en-int/terms-and-policies
+  - link "Complaints Procedure (SCB)":
+    - /url: /en-int/help/complaints
+- button
+- alert
+- text: GME 0 – – one day
+```
+
+# Test source
+
+```ts
+  1   | import { expect } from "@playwright/test";
+  2   | 
+  3   | export class CTAComponent {
+  4   |   constructor(page, sectionConfig) {
+  5   |     this.page = page;
+  6   |     // this.root = page.locator(sectionConfig.root);
+  7   |     this.actions = sectionConfig.actions || {};
+  8   |     this.helpers = sectionConfig.helpers || {};
+  9   |     this.setup = sectionConfig.setup;
+  10  |     // this.skipRootValidation = sectionConfig.skipRootValidation;
+  11  |     this.root = this.resolveLocator(sectionConfig.root);
+  12  |   }
+  13  | 
+  14  |   async expectVisible() {
+  15  |     await expect(this.root).toBeVisible({ timeout: 20000 });
+  16  |   }
+  17  | 
+  18  |   resolveLocator(locatorConfig) {
+  19  |     if (!locatorConfig) {
+  20  |       throw new Error("Locator is undefined in CTA config");
+  21  |     }
+  22  | 
+  23  |     if (
+  24  |       typeof locatorConfig !== "string" &&
+  25  |       typeof locatorConfig !== "function"
+  26  |     ) {
+  27  |       throw new Error(
+  28  |         `Invalid locator type: ${typeof locatorConfig}. Value: ${JSON.stringify(locatorConfig)}`,
+  29  |       );
+  30  |     }
+  31  | 
+  32  |     if (typeof locatorConfig === "function") {
+  33  |       return locatorConfig(this.page);
+  34  |     }
+  35  | 
+  36  |     if (
+  37  |       locatorConfig.startsWith(":scope") ||
+  38  |       locatorConfig.startsWith("xpath=")
+  39  |     ) {
+  40  |       return this.root.locator(locatorConfig);
+  41  |     }
+  42  | 
+  43  |     return this.page.locator(locatorConfig);
+  44  |   }
+  45  | 
+  46  |   getActionLocator(actionName) {
+  47  |     return this.resolveLocator(this.actions[actionName].locator);
+  48  |   }
+  49  | 
+  50  |   getHelper(helperName) {
+  51  |     return this.resolveLocator(this.helpers[helperName]);
+  52  |   }
+  53  | 
+  54  |   async runSetup() {
+  55  |     if (!this.setup) {
+  56  |       return;
+  57  |     }
+  58  | 
+  59  |     await this.setup({
+  60  |       page: this.page,
+  61  |       getHelper: this.getHelper.bind(this),
+  62  |     });
+  63  |   }
+  64  | 
+  65  |   async runActionSetup(actionName) {
+  66  |     const action = this.actions[actionName];
+  67  | 
+  68  |     if (!action?.setup) {
+  69  |       return;
+  70  |     }
+  71  | 
+  72  |     await action.setup({
+  73  |       page: this.page,
+  74  |       getHelper: this.getHelper.bind(this),
+  75  |     });
+  76  | 
+  77  |     // console.log("ACTION SETUP DONE:", actionName);
+  78  |     // console.log("URL:", this.page.url());
+  79  |   }
+  80  | 
+  81  |   async click(actionName, { waitForNewPage = false } = {}) {
+  82  |     console.log("START CLICK", actionName);
+  83  | 
+  84  |     await this.runSetup();
+  85  |     await this.runActionSetup(actionName);
+  86  | 
+  87  |     const action = this.actions[actionName];
+  88  |     let locator = this.getActionLocator(actionName);
+  89  | 
+  90  |     if (action.locatorIndex !== undefined) {
+  91  |       locator = locator.nth(action.locatorIndex);
+  92  |     }
+  93  | 
+  94  |     const count = await locator.count();
+  95  |     console.log("COUNT", actionName, count);
+  96  | 
+  97  |     if (action.optional && count === 0) {
+  98  |       return { skipped: true };
+  99  |     }
+  100 | 
+> 101 |     await expect(locator).toBeVisible();
+      |                           ^ Error: expect(locator).toBeVisible() failed
+  102 |     await expect(locator).toBeEnabled();
+  103 | 
+  104 |     let newPagePromise;
+  105 | 
+  106 |     if (waitForNewPage) {
+  107 |       // newPagePromise = this.page.context().waitForEvent("page");
+  108 |       newPagePromise = this.page.waitForEvent("popup");
+  109 |     }
+  110 | 
+  111 |     // console.log(
+  112 |     //   await locator.evaluate((el) => {
+  113 |     //     const rect = el.getBoundingClientRect();
+  114 |     //     const center = {
+  115 |     //       x: rect.left + rect.width / 2,
+  116 |     //       y: rect.top + rect.height / 2,
+  117 |     //     };
+  118 | 
+  119 |     //     return {
+  120 |     //       text: el.textContent,
+  121 |     //       center,
+  122 |     //       elementAtPoint: document.elementFromPoint(center.x, center.y)
+  123 |     //         ?.outerHTML,
+  124 |     //     };
+  125 |     //   }),
+  126 |     // );
+  127 | 
+  128 |     await locator.click({ timeout: 2000 });
+  129 |     const newPage = newPagePromise ? await newPagePromise : null;
+  130 | 
+  131 |     return { skipped: false, locator, newPage };
+  132 |   }
+  133 | }
+  134 | 
+```
