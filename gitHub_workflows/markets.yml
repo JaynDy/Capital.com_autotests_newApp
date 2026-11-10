@@ -13,7 +13,7 @@ permissions:
 jobs:
   # 1. TESTS
   test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     strategy:
       fail-fast: false
@@ -54,7 +54,7 @@ jobs:
   report:
     needs: test
     if: always() && github.event_name != 'pull_request'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     concurrency:
       group: github-pages-deploy
