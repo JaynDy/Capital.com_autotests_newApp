@@ -1,0 +1,6 @@
+USER: unregistered
+EXPECTATION:  shows signup form
+START CLICK addToFavouriteBtn
+COUNT addToFavouriteBtn 1
+URL AFTER CLICK: https://capital.com/ar-ae/markets/shares/nvidia-share-price
+EXPECTATION ASSERTIONS shows signup form

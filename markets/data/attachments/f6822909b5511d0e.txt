@@ -1,0 +1,7 @@
+Button enabled: true
+USER: unregistered
+EXPECTATION:  shows signup form
+START CLICK addToFavouriteBtn
+COUNT addToFavouriteBtn 1
+URL AFTER CLICK: https://capital.com/zh-hans/markets/shares/nvidia-gu-jia
+EXPECTATION ASSERTIONS shows signup form

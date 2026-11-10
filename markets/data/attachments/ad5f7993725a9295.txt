@@ -1,0 +1,6 @@
+USER: unauthorised
+EXPECTATION:  shows signup form
+START CLICK readyToJoinSignUpBtn
+COUNT readyToJoinSignUpBtn 1
+URL AFTER CLICK: https://capital.com/de-de/markets/shares/nvidia-corp-aktienkurs-1
+EXPECTATION ASSERTIONS shows signup form
